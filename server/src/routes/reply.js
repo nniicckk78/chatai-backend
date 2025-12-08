@@ -149,19 +149,22 @@ router.post("/", async (req, res) => {
     }
   }
 
-  // Format für Extension: summaryText enthält die extrahierten Informationen
-  const summaryText = JSON.stringify(extractedInfo);
-
+  // Format für Extension: Kompatibilität mit alter Extension
+  // Die Extension erwartet: resText, summary (als Objekt), chatId
   return res.json({
-    replyText,
-    summaryText, // Wichtig: Die Extension erwartet dieses Feld
+    resText: replyText, // Extension erwartet resText statt replyText
+    replyText, // Auch für Rückwärtskompatibilität
+    summary: extractedInfo, // Extension erwartet summary als Objekt
+    summaryText: JSON.stringify(extractedInfo), // Für Rückwärtskompatibilität
+    chatId: null, // Wird von Extension gesetzt, falls benötigt
     actions: [
       {
         type: "insert_and_send"
       }
     ],
     assets: assetsToSend || [],
-    flags: { blocked: false }
+    flags: { blocked: false },
+    disableAutoSend: false
   });
 });
 
