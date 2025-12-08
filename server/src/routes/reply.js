@@ -33,7 +33,7 @@ async function extractInfoFromMessage(client, messageText) {
   if (!client || !messageText) return { user: {}, assistant: {} };
 
   try {
-    const extractionPrompt = `Analysiere die folgende Nachricht und extrahiere ALLE Informationen über den Kunden. 
+    const extractionPrompt = `Analysiere die folgende Nachricht und extrahiere NUR relevante Informationen über den Kunden für das Logbuch. 
 Gib die Antwort NUR als JSON zurück, kein zusätzlicher Text. Format:
 {
   "user": {
@@ -46,16 +46,23 @@ Gib die Antwort NUR als JSON zurück, kein zusätzlicher Text. Format:
     "Family": "Familienstand und Kinder falls erwähnt (z.B. 'geschieden, 5-jähriges Kind' oder 'verheiratet'), sonst null",
     "Health": "Gesundheit/Krankheiten falls erwähnt, sonst null",
     "Updates": "Aktualisierungen/Neuigkeiten falls erwähnt (z.B. 'geht zum Friseur', 'hat neuen Job', 'ist umgezogen'), sonst null",
-    "Other": "Sonstige allgemeine Informationen falls erwähnt (z.B. 'geht zum Friseur', 'hat Urlaub', 'ist krank'), sonst null"
+    "Other": "NUR wichtige sonstige Infos, die nicht in andere Kategorien passen, sonst null"
   },
   "assistant": {}
 }
 
-WICHTIG: 
-- Nur Informationen extrahieren, die EXPLIZIT in der Nachricht erwähnt werden
-- "Updates" ist für aktuelle Neuigkeiten/Aktivitäten (z.B. "geht zum Friseur", "hat Urlaub")
-- "Other" ist für sonstige allgemeine Infos, die nicht in andere Kategorien passen
-- Wenn nichts erwähnt wird, null verwenden
+WICHTIG - IGNORIERE folgendes (NICHT extrahieren):
+- Smalltalk (z.B. "Wetter ist schön", "Wie geht es dir?", "Hallo", "Danke")
+- Höflichkeitsfloskeln (z.B. "Bitte", "Danke", "Gern geschehen")
+- Allgemeine Kommentare ohne Informationswert
+- Fragen ohne persönliche Informationen
+
+WICHTIG - EXTRAHIERE nur:
+- Persönliche Informationen (Name, Alter, Wohnort, Beruf, etc.)
+- Relevante Neuigkeiten/Aktivitäten (z.B. "geht zum Friseur", "hat Urlaub", "ist umgezogen")
+- Wichtige Lebensumstände (Familie, Gesundheit, Arbeit, Hobbies)
+- "Other" NUR für wichtige Infos, die nicht in andere Kategorien passen (z.B. wichtige Termine, Umzüge, Jobwechsel)
+- Wenn nichts Relevantes erwähnt wird, null verwenden
 - Bei "Family": auch Beziehungsstatus extrahieren (geschieden, verheiratet, single, etc.)
 
 Nachricht: ${messageText}`;
