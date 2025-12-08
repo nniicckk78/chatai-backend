@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json({ limit: "2mb" }));
 
 app.get("/health", (_req, res) => res.json({ ok: true }));
-app.use("/api/v1/auth", authRoutes);
+   app.use("/auth", authRoutes); // Kompatibilität mit alter Extension
 app.use("/api/v1/reply", replyRoutes);
 
 const PORT = process.env.PORT || 3000;
@@ -28,4 +28,5 @@ async function start() {
 }
 
 start();
+
 
