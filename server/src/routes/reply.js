@@ -119,7 +119,25 @@ router.post("/", async (req, res) => {
   console.log("platformId:", platformId);
   console.log("userProfile:", userProfile ? "vorhanden" : "fehlt");
   console.log("assetsToSend:", assetsToSend ? assetsToSend.length : 0);
-  console.log("chatId:", chatId || "(nicht gesendet)");
+  console.log("chatId aus Request:", chatId || "(nicht gesendet)");
+
+  // Versuche chatId zu extrahieren, falls nicht im Request vorhanden
+  let finalChatId = chatId;
+  if (!finalChatId && pageUrl) {
+    // Versuche chatId aus URL zu extrahieren (z.B. "Dialogue #58784193" oder ähnliche Patterns)
+    const dialogueMatch = pageUrl.match(/[Dd]ialogue[#\s]*(\d+)/);
+    if (dialogueMatch) {
+      finalChatId = dialogueMatch[1];
+      console.log("✅ chatId aus URL extrahiert:", finalChatId);
+    }
+  }
+  
+  // Falls immer noch kein chatId, setze Default-Wert
+  // Das alte Backend hat wahrscheinlich immer einen Wert zurückgegeben
+  if (!finalChatId) {
+    finalChatId = "unknown";
+    console.log("⚠️ Kein chatId gefunden - verwende Default: 'unknown'");
+  }
 
   if (isMinorMention(messageText)) {
     return res.json({
@@ -167,6 +185,7 @@ router.post("/", async (req, res) => {
   console.log("=== ChatCompletion Response ===");
   console.log("resText:", replyText.substring(0, 100));
   console.log("summary keys:", Object.keys(extractedInfo.user || {}).length, "user,", Object.keys(extractedInfo.assistant || {}).length, "assistant");
+  console.log("chatId zurückgegeben:", finalChatId);
 
   // Format für Extension: Kompatibilität mit alter Extension
   // Die Extension erwartet: resText, summary (als Objekt), chatId
@@ -175,7 +194,7 @@ router.post("/", async (req, res) => {
     replyText, // Auch für Rückwärtskompatibilität
     summary: extractedInfo, // Extension erwartet summary als Objekt
     summaryText: JSON.stringify(extractedInfo), // Für Rückwärtskompatibilität
-    chatId: chatId || null, // Übernehme chatId aus Request, falls vorhanden
+    chatId: finalChatId, // chatId aus Request, URL oder Default
     actions: [
       {
         type: "insert_and_send"
