@@ -29,6 +29,79 @@ function isMinorMention(text) {
   return Boolean(ageMatch);
 }
 
+async function extractInfoFromMessage(client, messageText) {
+  if (!client || !messageText) return { user: {}, assistant: {} };
+
+  try {
+    const extractionPrompt = `Analysiere die folgende Nachricht und extrahiere ALLE Informationen über den Kunden. 
+Gib die Antwort NUR als JSON zurück, kein zusätzlicher Text. Format:
+{
+  "user": {
+    "Name": "Vollständiger Name falls erwähnt, sonst null",
+    "Age": "Alter als Zahl (z.B. 25) falls erwähnt, sonst null",
+    "Wohnort": "Stadt/Ort falls erwähnt (z.B. 'Köln'), sonst null",
+    "Work": "Beruf/Arbeit falls erwähnt, sonst null",
+    "Sport and Hobbies": "Sportarten und Hobbies falls erwähnt, sonst null",
+    "Sexual Preferences": "Sexuelle Vorlieben falls erwähnt, sonst null",
+    "Family": "Familienstand und Kinder falls erwähnt (z.B. 'geschieden, 5-jähriges Kind' oder 'verheiratet'), sonst null",
+    "Health": "Gesundheit/Krankheiten falls erwähnt, sonst null",
+    "Updates": "Aktualisierungen/Neuigkeiten falls erwähnt (z.B. 'geht zum Friseur', 'hat neuen Job', 'ist umgezogen'), sonst null",
+    "Other": "Sonstige allgemeine Informationen falls erwähnt (z.B. 'geht zum Friseur', 'hat Urlaub', 'ist krank'), sonst null"
+  },
+  "assistant": {}
+}
+
+WICHTIG: 
+- Nur Informationen extrahieren, die EXPLIZIT in der Nachricht erwähnt werden
+- "Updates" ist für aktuelle Neuigkeiten/Aktivitäten (z.B. "geht zum Friseur", "hat Urlaub")
+- "Other" ist für sonstige allgemeine Infos, die nicht in andere Kategorien passen
+- Wenn nichts erwähnt wird, null verwenden
+- Bei "Family": auch Beziehungsstatus extrahieren (geschieden, verheiratet, single, etc.)
+
+Nachricht: ${messageText}`;
+
+    const extraction = await client.chat.completions.create({
+      model: "gpt-3.5-turbo",
+      messages: [
+        {
+          role: "system",
+          content: "Du bist ein Daten-Extraktions-Assistent. Antworte NUR mit gültigem JSON, kein zusätzlicher Text."
+        },
+        { role: "user", content: extractionPrompt }
+      ],
+      max_tokens: 500,
+      temperature: 0.3,
+      response_format: { type: "json_object" }
+    });
+
+    const extractedText = extraction.choices?.[0]?.message?.content?.trim();
+    if (extractedText) {
+      const parsed = JSON.parse(extractedText);
+      // Entferne null-Werte
+      const cleanUser = {};
+      const cleanAssistant = {};
+      
+      Object.keys(parsed.user || {}).forEach(key => {
+        if (parsed.user[key] !== null && parsed.user[key] !== undefined && parsed.user[key] !== "") {
+          cleanUser[key] = parsed.user[key];
+        }
+      });
+      
+      Object.keys(parsed.assistant || {}).forEach(key => {
+        if (parsed.assistant[key] !== null && parsed.assistant[key] !== undefined && parsed.assistant[key] !== "") {
+          cleanAssistant[key] = parsed.assistant[key];
+        }
+      });
+      
+      return { user: cleanUser, assistant: cleanAssistant };
+    }
+  } catch (err) {
+    console.error("Fehler beim Extrahieren von Informationen:", err);
+  }
+  
+  return { user: {}, assistant: {} };
+}
+
 router.post("/", async (req, res) => {
   const { messageText = "", pageUrl, platformId, assetsToSend, userProfile } = req.body || {};
 
@@ -41,9 +114,14 @@ router.post("/", async (req, res) => {
 
   const client = getClient();
   let replyText = "Hi, ich antworte gleich freundlich und knapp.";
+  let extractedInfo = { user: {}, assistant: {} };
 
   if (client) {
     try {
+      // 1. Informationen extrahieren
+      extractedInfo = await extractInfoFromMessage(client, messageText);
+      
+      // 2. Antwort generieren
       const systemPrompt =
         "Du bist ein höflicher, knapper Chat-Moderator. Keine Fotos/Nummern anfordern, keine Off-Plattform-Kontakte. Schreibe kurz.";
       const userPrompt = `Nachricht: ${messageText}\nPlattform: ${platformId || "unbekannt"}\nURL: ${pageUrl || "unbekannt"}`;
@@ -64,8 +142,12 @@ router.post("/", async (req, res) => {
     }
   }
 
+  // Format für Extension: summaryText enthält die extrahierten Informationen
+  const summaryText = JSON.stringify(extractedInfo);
+
   return res.json({
     replyText,
+    summaryText, // Wichtig: Die Extension erwartet dieses Feld
     actions: [
       {
         type: "insert_and_send"
@@ -77,4 +159,3 @@ router.post("/", async (req, res) => {
 });
 
 module.exports = router;
-
