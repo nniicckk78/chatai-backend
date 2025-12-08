@@ -110,19 +110,60 @@ Nachricht: ${messageText}`;
 }
 
 router.post("/", async (req, res) => {
+  // Logge den kompletten Request-Body, um zu sehen, was die Extension sendet
+  console.log("=== ChatCompletion Request (COMPLETE BODY) ===");
+  console.log("Full request body:", JSON.stringify(req.body, null, 2));
+  
   const { messageText = "", pageUrl, platformId, assetsToSend, userProfile, chatId } = req.body || {};
 
   // Logging für Debugging
-  console.log("=== ChatCompletion Request ===");
+  console.log("=== ChatCompletion Request (Parsed) ===");
   console.log("messageText:", messageText ? messageText.substring(0, 100) + "..." : "(leer)");
   console.log("pageUrl:", pageUrl);
   console.log("platformId:", platformId);
-  console.log("userProfile:", userProfile ? "vorhanden" : "fehlt");
+  console.log("userProfile:", userProfile ? JSON.stringify(userProfile).substring(0, 100) : "fehlt");
   console.log("assetsToSend:", assetsToSend ? assetsToSend.length : 0);
   console.log("chatId aus Request:", chatId || "(nicht gesendet)");
+  
+  // Prüfe auch andere mögliche Feldnamen für chatId
+  const possibleChatIdFields = ['chatId', 'chat_id', 'dialogueId', 'dialogue_id', 'conversationId', 'conversation_id'];
+  let foundChatId = chatId;
+  for (const field of possibleChatIdFields) {
+    if (req.body[field] && !foundChatId) {
+      foundChatId = req.body[field];
+      console.log(`✅ chatId gefunden unter Feldname '${field}':`, foundChatId);
+    }
+  }
 
   // Versuche chatId zu extrahieren, falls nicht im Request vorhanden
-  let finalChatId = chatId;
+  let finalChatId = foundChatId || chatId;
+  
+  // Prüfe auch userProfile für chatId (verschachtelt)
+  if (!finalChatId && userProfile && typeof userProfile === 'object') {
+    if (userProfile.chatId) finalChatId = userProfile.chatId;
+    if (userProfile.chat_id) finalChatId = userProfile.chat_id;
+    if (userProfile.dialogueId) finalChatId = userProfile.dialogueId;
+    if (userProfile.dialogue_id) finalChatId = userProfile.dialogue_id;
+    // Prüfe auch verschachtelte Objekte
+    if (userProfile.meta && userProfile.meta.chatId) finalChatId = userProfile.meta.chatId;
+    if (userProfile.metadata && userProfile.metadata.chatId) finalChatId = userProfile.metadata.chatId;
+  }
+  
+  // Prüfe alle Felder im Request-Body nach chatId-ähnlichen Werten
+  if (!finalChatId) {
+    const bodyString = JSON.stringify(req.body);
+    // Suche nach Zahlen, die wie chatIds aussehen (z.B. "58636919")
+    const numberMatches = bodyString.match(/\b\d{8,}\b/g);
+    if (numberMatches && numberMatches.length > 0) {
+      // Nimm die größte Zahl, die wie ein chatId aussieht
+      const possibleChatIds = numberMatches.filter(n => n.length >= 8 && n.length <= 10);
+      if (possibleChatIds.length > 0) {
+        finalChatId = possibleChatIds[possibleChatIds.length - 1];
+        console.log("✅ Möglicher chatId aus Request-Body extrahiert:", finalChatId);
+      }
+    }
+  }
+  
   if (!finalChatId && pageUrl) {
     // Versuche chatId aus URL zu extrahieren (z.B. "Dialogue #58784193" oder ähnliche Patterns)
     const dialogueMatch = pageUrl.match(/[Dd]ialogue[#\s]*(\d+)/);
@@ -130,13 +171,77 @@ router.post("/", async (req, res) => {
       finalChatId = dialogueMatch[1];
       console.log("✅ chatId aus URL extrahiert:", finalChatId);
     }
+    // Versuche auch aus URL-Parametern
+    try {
+      const urlObj = new URL(pageUrl);
+      const dialogueParam = urlObj.searchParams.get('dialogue') || urlObj.searchParams.get('chatId') || urlObj.searchParams.get('id');
+      if (dialogueParam) {
+        finalChatId = dialogueParam;
+        console.log("✅ chatId aus URL-Parametern extrahiert:", finalChatId);
+      }
+    } catch (e) {
+      // URL parsing failed, ignore
+    }
   }
   
-  // Falls immer noch kein chatId, setze Default-Wert
-  // Das alte Backend hat wahrscheinlich immer einen Wert zurückgegeben
+  // WORKAROUND: Falls immer noch kein chatId gefunden wurde
+  // Das alte Backend hat wahrscheinlich einfach null zurückgegeben oder einen generischen Wert
+  // Da die Extension den chatId auf der Seite findet, aber nicht sendet, können wir ihn nicht kennen
+  // ABER: Vielleicht hat das alte Backend einfach null zurückgegeben und die Extension hat trotzdem funktioniert?
+  // Oder: Vielleicht sendet die Extension den chatId in einem Feld, das wir noch nicht geprüft haben?
+  // 
+  // Versuche: Prüfe ALLE Felder im Request-Body rekursiv nach chatId-ähnlichen Werten
   if (!finalChatId) {
-    finalChatId = "unknown";
-    console.log("⚠️ Kein chatId gefunden - verwende Default: 'unknown'");
+    function findChatIdInObject(obj, depth = 0) {
+      if (depth > 3) return null; // Max depth
+      if (!obj || typeof obj !== 'object') return null;
+      
+      // Prüfe direkte Felder
+      for (const key of Object.keys(obj)) {
+        const value = obj[key];
+        // Prüfe auf chatId-ähnliche Feldnamen
+        if (key.toLowerCase().includes('chat') || key.toLowerCase().includes('dialogue') || key.toLowerCase().includes('conversation')) {
+          if (typeof value === 'string' && /^\d{8,10}$/.test(value)) {
+            return value;
+          }
+          if (typeof value === 'number' && value > 10000000 && value < 9999999999) {
+            return String(value);
+          }
+        }
+        // Rekursiv in verschachtelten Objekten suchen
+        if (typeof value === 'object' && value !== null) {
+          const found = findChatIdInObject(value, depth + 1);
+          if (found) return found;
+        }
+      }
+      return null;
+    }
+    
+    const foundInBody = findChatIdInObject(req.body);
+    if (foundInBody) {
+      finalChatId = foundInBody;
+      console.log("✅ chatId rekursiv im Request-Body gefunden:", finalChatId);
+    }
+  }
+  
+  // FINAL FALLBACK: Wenn wirklich kein chatId gefunden wurde
+  // Das alte Backend hat wahrscheinlich einfach einen generischen Wert zurückgegeben
+  // oder null, und die Extension hat trotzdem funktioniert
+  // 
+  // WICHTIG: Die Extension findet den chatId auf der Seite, aber sendet ihn nicht.
+  // Da wir den chatId nicht kennen, können wir nur raten oder einen generischen Wert zurückgeben.
+  // 
+  // Versuche: Gib einen generischen Wert zurück, der die Extension nicht blockiert
+  // Oder: Gib null zurück und hoffe, dass die Extension trotzdem funktioniert
+  if (!finalChatId) {
+    // Option 1: Generischer Wert (wird wahrscheinlich nicht funktionieren, weil Extension prüft)
+    // finalChatId = "00000000";
+    
+    // Option 2: null zurückgeben (Extension blockiert, aber vielleicht hat altes Backend so funktioniert?)
+    finalChatId = null;
+    
+    console.warn("⚠️ Kein chatId gefunden - gebe null zurück.");
+    console.warn("⚠️ Falls die Extension blockiert, muss sie angepasst werden, um chatId im Request zu senden.");
   }
 
   if (isMinorMention(messageText)) {
@@ -194,7 +299,7 @@ router.post("/", async (req, res) => {
     replyText, // Auch für Rückwärtskompatibilität
     summary: extractedInfo, // Extension erwartet summary als Objekt
     summaryText: JSON.stringify(extractedInfo), // Für Rückwärtskompatibilität
-    chatId: finalChatId, // chatId aus Request, URL oder Default
+    chatId: finalChatId, // chatId aus Request, rekursiv gesucht, oder null
     actions: [
       {
         type: "insert_and_send"
