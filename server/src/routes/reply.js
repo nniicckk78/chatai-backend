@@ -110,7 +110,7 @@ Nachricht: ${messageText}`;
 }
 
 router.post("/", async (req, res) => {
-  const { messageText = "", pageUrl, platformId, assetsToSend, userProfile } = req.body || {};
+  const { messageText = "", pageUrl, platformId, assetsToSend, userProfile, chatId } = req.body || {};
 
   // Logging für Debugging
   console.log("=== ChatCompletion Request ===");
@@ -119,6 +119,7 @@ router.post("/", async (req, res) => {
   console.log("platformId:", platformId);
   console.log("userProfile:", userProfile ? "vorhanden" : "fehlt");
   console.log("assetsToSend:", assetsToSend ? assetsToSend.length : 0);
+  console.log("chatId:", chatId || "(nicht gesendet)");
 
   if (isMinorMention(messageText)) {
     return res.json({
@@ -174,7 +175,7 @@ router.post("/", async (req, res) => {
     replyText, // Auch für Rückwärtskompatibilität
     summary: extractedInfo, // Extension erwartet summary als Objekt
     summaryText: JSON.stringify(extractedInfo), // Für Rückwärtskompatibilität
-    chatId: null, // Wird von Extension gesetzt, falls benötigt
+    chatId: chatId || null, // Übernehme chatId aus Request, falls vorhanden
     actions: [
       {
         type: "insert_and_send"
