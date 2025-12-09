@@ -134,37 +134,46 @@ router.post("/", async (req, res) => {
   
   // WICHTIG: Extrahiere ALLE möglichen Felder, die die Extension senden könnte
   // Die Extension könnte den chatId oder die Nachricht in verschiedenen Formaten senden
-  const { messageText = "", pageUrl, platformId, assetsToSend, userProfile, chatId } = req.body || {};
+  // Die alte Extension hat wahrscheinlich bereits alles richtig erkannt - wir müssen nur die Felder richtig lesen
+  const { 
+    messageText = "", 
+    pageUrl, 
+    platformId, 
+    assetsToSend, 
+    userProfile, 
+    chatId,
+    // Mögliche Felder für ASA-Erkennung (von alter Extension)
+    lastMessageFromFake,
+    isASA,
+    asa,
+    lastMessageType,
+    messageType,
+    // Mögliche Felder für die letzte Nachricht
+    lastMessage,
+    last_message,
+    lastUserMessage,
+    lastCustomerMessage
+  } = req.body || {};
   
-  // Prüfe, ob die Extension vielleicht die letzte Nachricht aus dem Chat im Request-Body hat
-  // Suche nach allen String-Feldern, die wie Nachrichten aussehen
+  // WICHTIG: Die Extension sollte die richtige Nachricht in messageText senden
+  // Wir suchen NICHT mehr nach anderen Nachrichten im Body, da das zu falschen Nachrichten führen kann
+  // Nur wenn messageText wirklich leer ist, suchen wir nach alternativen Feldern
   let possibleMessageFromBody = null;
+  
+  // NUR wenn messageText wirklich leer ist, suche nach alternativen Feldern
+  // ABER: Sei vorsichtig - die Extension sollte die richtige Nachricht senden!
   if (!messageText || messageText.trim() === "") {
-    // Suche nach langen Strings im Request-Body, die wie Nachrichten aussehen
-    function findMessageInObject(obj, depth = 0) {
-      if (depth > 3) return null;
-      if (!obj || typeof obj !== 'object') return null;
-      
-      for (const key of Object.keys(obj)) {
-        const value = obj[key];
-        // Wenn es ein String ist und länger als 10 Zeichen, könnte es eine Nachricht sein
-        if (typeof value === 'string' && value.trim().length > 10 && 
-            !value.includes('http') && !value.includes('@') && 
-            !key.toLowerCase().includes('url') && !key.toLowerCase().includes('id')) {
-          return value;
-        }
-        // Rekursiv suchen
-        if (typeof value === 'object' && value !== null) {
-          const found = findMessageInObject(value, depth + 1);
-          if (found) return found;
-        }
-      }
-      return null;
-    }
+    console.warn("⚠️ messageText ist leer - suche nach alternativen Feldern (könnte problematisch sein)");
     
-    possibleMessageFromBody = findMessageInObject(req.body);
-    if (possibleMessageFromBody) {
-      console.log("✅ Mögliche Nachricht im Request-Body gefunden:", possibleMessageFromBody.substring(0, 50) + "...");
+    // Suche NUR in bekannten Feldern, nicht rekursiv im ganzen Body
+    // Das verhindert, dass wir falsche Nachrichten finden
+    const knownMessageFields = ['lastMessage', 'last_message', 'lastUserMessage', 'lastCustomerMessage', 'userMessage', 'user_message'];
+    for (const field of knownMessageFields) {
+      if (req.body[field] && typeof req.body[field] === 'string' && req.body[field].trim() !== "") {
+        possibleMessageFromBody = req.body[field];
+        console.log(`⚠️ Alternative Nachricht gefunden in '${field}':`, possibleMessageFromBody.substring(0, 100) + "...");
+        break; // Nimm die erste gefundene
+      }
     }
   }
 
@@ -172,46 +181,83 @@ router.post("/", async (req, res) => {
   // Die Extension könnte die Nachricht unter einem anderen Namen senden
   // WICHTIG: Die letzte Nachricht ist IMMER vom KUNDEN (unten im Chat)
   // Wenn die letzte Nachricht vom FAKE ist, müssen wir eine ASA-Nachricht schreiben
-  const possibleMessageFields = ['messageText', 'message', 'text', 'content', 'message_content', 'lastMessage', 'last_message', 'userMessage', 'user_message'];
+  // WICHTIG: Wir müssen die RICHTIGE letzte Nachricht vom KUNDEN finden, nicht irgendeine Nachricht!
+  const possibleMessageFields = ['messageText', 'message', 'text', 'content', 'message_content', 'lastMessage', 'last_message', 'userMessage', 'user_message', 'lastUserMessage', 'lastCustomerMessage'];
   let foundMessageText = messageText || possibleMessageFromBody;
-  for (const field of possibleMessageFields) {
-    if (req.body[field] && !foundMessageText) {
-      foundMessageText = req.body[field];
-      console.log(`✅ messageText gefunden unter Feldname '${field}':`, foundMessageText.substring(0, 50) + "...");
+  
+  // PRIORITÄT: messageText sollte die letzte Nachricht vom Kunden sein
+  // Wenn messageText vorhanden ist, verwende es (es sollte die richtige Nachricht sein)
+  if (messageText && messageText.trim() !== "") {
+    foundMessageText = messageText;
+    console.log("✅ messageText direkt verwendet:", foundMessageText.substring(0, 100) + "...");
+  } else {
+    // Nur wenn messageText leer ist, suche nach anderen Feldern
+    for (const field of possibleMessageFields) {
+      if (req.body[field] && typeof req.body[field] === 'string' && req.body[field].trim() !== "" && !foundMessageText) {
+        foundMessageText = req.body[field];
+        console.log(`✅ messageText gefunden unter Feldname '${field}':`, foundMessageText.substring(0, 100) + "...");
+      }
     }
   }
   
-  // Prüfe auch in userProfile oder anderen verschachtelten Objekten
-  if (!foundMessageText && userProfile && typeof userProfile === 'object') {
-    if (userProfile.messageText) foundMessageText = userProfile.messageText;
-    if (userProfile.message) foundMessageText = userProfile.message;
-    if (userProfile.lastMessage) foundMessageText = userProfile.lastMessage;
+  // Prüfe auch in userProfile oder anderen verschachtelten Objekten (nur wenn noch nichts gefunden)
+  if ((!foundMessageText || foundMessageText.trim() === "") && userProfile && typeof userProfile === 'object') {
+    if (userProfile.messageText && userProfile.messageText.trim() !== "") foundMessageText = userProfile.messageText;
+    if (userProfile.message && userProfile.message.trim() !== "" && !foundMessageText) foundMessageText = userProfile.message;
+    if (userProfile.lastMessage && userProfile.lastMessage.trim() !== "" && !foundMessageText) foundMessageText = userProfile.lastMessage;
+  }
+  
+  // WICHTIG: Prüfe, ob die gefundene Nachricht wirklich vom Kunden ist
+  // Wenn die Nachricht zu lang ist oder komisch klingt, könnte es eine falsche Nachricht sein
+  if (foundMessageText && foundMessageText.length > 500) {
+    console.warn("⚠️ Gefundene Nachricht ist sehr lang (>500 Zeichen) - könnte falsch sein:", foundMessageText.substring(0, 100) + "...");
   }
   
   // Prüfe, ob die letzte Nachricht vom FAKE/Moderator kommt (ASA-Fall)
-  // Die Extension sollte das als Flag senden, aber wir prüfen auch im Text
+  // Die alte Extension hat wahrscheinlich bereits erkannt, ob die letzte Nachricht vom Fake kommt
+  // Wir prüfen alle möglichen Felder, die die Extension senden könnte
   let isLastMessageFromFake = false;
-  if (req.body.lastMessageFromFake !== undefined) {
-    isLastMessageFromFake = Boolean(req.body.lastMessageFromFake);
+  
+  // Direkte Flags
+  if (lastMessageFromFake !== undefined) {
+    isLastMessageFromFake = Boolean(lastMessageFromFake);
     console.log("✅ ASA-Flag von Extension erhalten: lastMessageFromFake =", isLastMessageFromFake);
-  } else if (req.body.isASA !== undefined) {
-    isLastMessageFromFake = Boolean(req.body.isASA);
+  } else if (isASA !== undefined) {
+    isLastMessageFromFake = Boolean(isASA);
     console.log("✅ ASA-Flag von Extension erhalten: isASA =", isLastMessageFromFake);
-  } else if (req.body.asa !== undefined) {
-    isLastMessageFromFake = Boolean(req.body.asa);
+  } else if (asa !== undefined) {
+    isLastMessageFromFake = Boolean(asa);
     console.log("✅ ASA-Flag von Extension erhalten: asa =", isLastMessageFromFake);
+  } 
+  // Prüfe messageType oder lastMessageType
+  else if (lastMessageType !== undefined) {
+    // Wenn lastMessageType === "sent" oder "asa-messages", dann ist es vom Fake
+    isLastMessageFromFake = lastMessageType === "sent" || lastMessageType === "asa-messages" || lastMessageType === "sent-messages";
+    console.log("✅ ASA-Flag aus lastMessageType erkannt:", lastMessageType, "->", isLastMessageFromFake);
+  } else if (messageType !== undefined) {
+    isLastMessageFromFake = messageType === "sent" || messageType === "asa-messages" || messageType === "sent-messages";
+    console.log("✅ ASA-Flag aus messageType erkannt:", messageType, "->", isLastMessageFromFake);
+  }
+  // Prüfe, ob messageText leer ist UND es gibt eine lastMessage (vom Fake)
+  else if ((!foundMessageText || foundMessageText.trim() === "") && (lastMessage || last_message || lastUserMessage || lastCustomerMessage)) {
+    // Wenn messageText leer ist, aber es gibt eine lastMessage, könnte es sein, dass die letzte Nachricht vom Fake ist
+    // ABER: Das ist unsicher, daher nur als Hinweis loggen
+    console.log("⚠️ messageText ist leer, aber lastMessage vorhanden - könnte ASA-Fall sein");
+    // Wir machen es NICHT automatisch zu ASA, da es auch andere Gründe geben kann
   } else {
-    // Fallback: Wenn messageText leer ist, könnte es ein ASA-Fall sein
-    // Aber nur wenn die Extension explizit signalisiert, dass es eine letzte Nachricht gibt
-    // (z.B. durch ein leeres messageText aber vorhandenes lastMessageFromFake Flag)
-    // Für jetzt: Wenn messageText leer ist UND es gibt keine Nachricht, dann könnte es ASA sein
-    // ABER: Wir müssen vorsichtig sein, da leeres messageText auch andere Gründe haben kann
-    console.log("⚠️ Kein ASA-Flag von Extension - prüfe auf andere Indikatoren...");
+    console.log("⚠️ Kein ASA-Flag von Extension gefunden - prüfe auf andere Indikatoren...");
   }
   
   console.log("=== Nachrichten-Analyse ===");
-  console.log("foundMessageText:", foundMessageText ? foundMessageText.substring(0, 100) + "..." : "(leer)");
+  console.log("foundMessageText:", foundMessageText ? foundMessageText.substring(0, 200) + "..." : "(leer)");
+  console.log("foundMessageText Länge:", foundMessageText ? foundMessageText.length : 0);
   console.log("isLastMessageFromFake (ASA-Fall):", isLastMessageFromFake);
+  
+  // WICHTIG: Validiere die Nachricht - sie sollte nicht zu lang oder komisch sein
+  if (foundMessageText && foundMessageText.length > 1000) {
+    console.error("❌ FEHLER: Nachricht ist zu lang (>1000 Zeichen) - könnte falsch sein!");
+    console.error("❌ Erste 200 Zeichen:", foundMessageText.substring(0, 200));
+  }
 
   // Logging für Debugging
   console.log("=== ChatCompletion Request (Parsed) ===");
@@ -500,7 +546,9 @@ router.post("/", async (req, res) => {
 - Du antwortest als FAKE-PROFIL auf Nachrichten vom KUNDEN
 - Antworte natürlich, flirty und interessiert, aber nicht übertrieben
 - Sei konkret und persönlich, nicht generisch
-- Reagiere auf das, was der KUNDE sagt (nicht auf dich selbst!)
+- Reagiere NUR auf das, was der KUNDE in SEINER Nachricht geschrieben hat!
+- ERFINDE KEINE Informationen, Daten, Termine oder andere Dinge, die nicht in der Nachricht stehen!
+- Wenn der Kunde nur "hi" schreibt, antworte kurz und freundlich auf "hi" - erfinde keine Daten oder Termine!
 - Verwende NIEMALS deinen eigenen Namen in der Antwort
 - Keine Fotos/Nummern anfordern, keine Off-Plattform-Kontakte
 - Schreibe natürlich und menschlich - wie eine echte Person schreiben würde
@@ -508,7 +556,8 @@ router.post("/", async (req, res) => {
 - WICHTIG: Keine Bindestriche (-) verwenden! Schreibe alles ohne Bindestriche.
 - WICHTIG: Nachricht muss MINDESTENS 80 Zeichen lang sein!
 - WICHTIG: Am Ende IMMER eine passende Frage zum Kontext stellen!
-- WICHTIG: Es darf NIEMALS auffallen, dass du ein Moderator bist - sei natürlich und menschlich!`;
+- WICHTIG: Es darf NIEMALS auffallen, dass du ein Moderator bist - sei natürlich und menschlich!
+- WICHTIG: Reagiere NUR auf die Nachricht, die dir gegeben wird - erfinde nichts!`;
     
     // WICHTIG: userProfile könnte die Daten vom FAKE enthalten, nicht vom KUNDEN
     // Verwende daher NUR die extrahierten Infos vom KUNDEN (aus der Nachricht)
@@ -580,9 +629,17 @@ router.post("/", async (req, res) => {
 - Passe deinen Schreibstil entsprechend an (Frau zu Mann oder Mann zu Frau)`;
     }
     
+    // WICHTIG: Validiere die Nachricht nochmal vor dem Prompt
+    // Wenn die Nachricht zu lang oder komisch ist, könnte es eine falsche Nachricht sein
+    const validatedMessage = foundMessageText.trim();
+    if (validatedMessage.length > 500) {
+      console.error("❌ FEHLER: Nachricht ist zu lang (>500 Zeichen) - verwende nur die ersten 500 Zeichen!");
+      console.error("❌ Vollständige Nachricht:", validatedMessage);
+    }
+    
     const userPrompt = `Du antwortest als FAKE-PROFIL auf eine Nachricht vom KUNDEN.
 
-Aktuelle Nachricht vom KUNDEN: "${foundMessageText}"
+Aktuelle Nachricht vom KUNDEN: "${validatedMessage.substring(0, 500)}"
 
 ${customerName ? `Der Kunde heißt: ${customerName}\n` : ''}
 ${customerContext.length > 0 ? `Bekannte Infos über den KUNDEN:\n${customerContext.join('\n')}\n` : ''}
@@ -592,6 +649,9 @@ ${specificInstructions}
 
 WICHTIG: 
 - Die Nachricht kommt vom KUNDEN, nicht von dir!
+- Antworte NUR auf das, was der Kunde in SEINER Nachricht geschrieben hat!
+- Erfinde KEINE Informationen, die nicht in der Nachricht stehen!
+- Wenn der Kunde nur "hi" schreibt, antworte kurz und freundlich auf "hi" - erfinde keine Daten, Termine oder andere Dinge!
 - Antworte als FAKE-PROFIL auf den KUNDEN
 - Verwende NIEMALS deinen eigenen Namen (Fake-Name) in der Antwort
 - Antworte natürlich und persönlich auf die Nachricht des KUNDEN. Sei nicht generisch!
