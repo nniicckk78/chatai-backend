@@ -114,12 +114,46 @@ router.post("/", async (req, res) => {
   console.log("=== ChatCompletion Request (COMPLETE BODY) ===");
   console.log("Full request body:", JSON.stringify(req.body, null, 2));
   
+  // WICHTIG: Extrahiere ALLE möglichen Felder, die die Extension senden könnte
+  // Die Extension könnte den chatId oder die Nachricht in verschiedenen Formaten senden
   const { messageText = "", pageUrl, platformId, assetsToSend, userProfile, chatId } = req.body || {};
+  
+  // Prüfe, ob die Extension vielleicht die letzte Nachricht aus dem Chat im Request-Body hat
+  // Suche nach allen String-Feldern, die wie Nachrichten aussehen
+  let possibleMessageFromBody = null;
+  if (!messageText || messageText.trim() === "") {
+    // Suche nach langen Strings im Request-Body, die wie Nachrichten aussehen
+    function findMessageInObject(obj, depth = 0) {
+      if (depth > 3) return null;
+      if (!obj || typeof obj !== 'object') return null;
+      
+      for (const key of Object.keys(obj)) {
+        const value = obj[key];
+        // Wenn es ein String ist und länger als 10 Zeichen, könnte es eine Nachricht sein
+        if (typeof value === 'string' && value.trim().length > 10 && 
+            !value.includes('http') && !value.includes('@') && 
+            !key.toLowerCase().includes('url') && !key.toLowerCase().includes('id')) {
+          return value;
+        }
+        // Rekursiv suchen
+        if (typeof value === 'object' && value !== null) {
+          const found = findMessageInObject(value, depth + 1);
+          if (found) return found;
+        }
+      }
+      return null;
+    }
+    
+    possibleMessageFromBody = findMessageInObject(req.body);
+    if (possibleMessageFromBody) {
+      console.log("✅ Mögliche Nachricht im Request-Body gefunden:", possibleMessageFromBody.substring(0, 50) + "...");
+    }
+  }
 
   // WICHTIG: Prüfe auch andere mögliche Feldnamen für messageText
   // Die Extension könnte die Nachricht unter einem anderen Namen senden
   const possibleMessageFields = ['messageText', 'message', 'text', 'content', 'message_content', 'lastMessage', 'last_message', 'userMessage', 'user_message'];
-  let foundMessageText = messageText;
+  let foundMessageText = messageText || possibleMessageFromBody;
   for (const field of possibleMessageFields) {
     if (req.body[field] && !foundMessageText) {
       foundMessageText = req.body[field];
