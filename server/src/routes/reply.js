@@ -126,6 +126,7 @@ router.post("/", async (req, res) => {
   console.log("chatId aus Request:", chatId || "(nicht gesendet)");
   
   // Prüfe auch andere mögliche Feldnamen für chatId
+  // Die Extension generiert chatId als `${username}-${lastMessage}`, also kann es auch ein String sein
   const possibleChatIdFields = ['chatId', 'chat_id', 'dialogueId', 'dialogue_id', 'conversationId', 'conversation_id'];
   let foundChatId = chatId;
   for (const field of possibleChatIdFields) {
@@ -133,6 +134,13 @@ router.post("/", async (req, res) => {
       foundChatId = req.body[field];
       console.log(`✅ chatId gefunden unter Feldname '${field}':`, foundChatId);
     }
+  }
+  
+  // Die Extension generiert chatId manchmal als `${username}-${lastMessage}`
+  // Prüfe auch, ob es einen generierten chatId gibt (String mit Bindestrich)
+  if (!foundChatId && typeof chatId === 'string' && chatId.includes('-')) {
+    foundChatId = chatId;
+    console.log(`✅ Generierter chatId (username-lastMessage) gefunden:`, foundChatId);
   }
 
   // Versuche chatId zu extrahieren, falls nicht im Request vorhanden
@@ -264,9 +272,36 @@ router.post("/", async (req, res) => {
       extractedInfo = await extractInfoFromMessage(client, messageText);
       
       // 2. Antwort generieren
-      const systemPrompt =
-        "Du bist ein höflicher, knapper Chat-Moderator. Keine Fotos/Nummern anfordern, keine Off-Plattform-Kontakte. Schreibe kurz.";
-      const userPrompt = `Nachricht: ${messageText}\nPlattform: ${platformId || "unbekannt"}\nURL: ${pageUrl || "unbekannt"}`;
+      const systemPrompt = `Du bist ein freundlicher, natürlicher Chat-Moderator auf einer Dating-Plattform. 
+- Antworte natürlich, flirty und interessiert, aber nicht übertrieben
+- Sei konkret und persönlich, nicht generisch
+- Reagiere auf das, was der Gesprächspartner sagt
+- Keine Fotos/Nummern anfordern, keine Off-Plattform-Kontakte
+- Schreibe kurz (1-2 Sätze), aber mit Persönlichkeit
+- Verwende keine generischen Phrasen wie "Wie kann ich dir helfen?" oder "Hallo!"`;
+      
+      // Baue Kontext für bessere Antworten
+      const contextInfo = [];
+      if (userProfile && typeof userProfile === 'object') {
+        if (userProfile.name) contextInfo.push(`Name: ${userProfile.name}`);
+        if (userProfile.age) contextInfo.push(`Alter: ${userProfile.age}`);
+        if (userProfile.location) contextInfo.push(`Ort: ${userProfile.location}`);
+      }
+      
+      const extractedContext = [];
+      if (extractedInfo.user && Object.keys(extractedInfo.user).length > 0) {
+        Object.entries(extractedInfo.user).forEach(([key, value]) => {
+          if (value) extractedContext.push(`${key}: ${value}`);
+        });
+      }
+      
+      const userPrompt = `Aktuelle Nachricht vom Gesprächspartner: "${messageText}"
+
+${contextInfo.length > 0 ? `Bekannte Infos über den Gesprächspartner:\n${contextInfo.join('\n')}\n` : ''}
+${extractedContext.length > 0 ? `Neu extrahierte Infos:\n${extractedContext.join('\n')}\n` : ''}
+Plattform: ${platformId || "viluu"}
+
+Antworte natürlich und persönlich auf die Nachricht. Sei nicht generisch!`;
 
       const chat = await client.chat.completions.create({
         model: "gpt-4o-mini",
@@ -274,8 +309,8 @@ router.post("/", async (req, res) => {
           { role: "system", content: systemPrompt },
           { role: "user", content: userPrompt }
         ],
-        max_tokens: 150,
-        temperature: 0.7
+        max_tokens: 200, // Mehr Tokens für natürlichere, längere Antworten
+        temperature: 0.8 // Etwas kreativer für natürlichere Antworten
       });
       replyText = chat.choices?.[0]?.message?.content?.trim() || replyText;
       console.log("✅ Antwort generiert:", replyText.substring(0, 100));
@@ -290,7 +325,6 @@ router.post("/", async (req, res) => {
   console.log("=== ChatCompletion Response ===");
   console.log("resText:", replyText.substring(0, 100));
   console.log("summary keys:", Object.keys(extractedInfo.user || {}).length, "user,", Object.keys(extractedInfo.assistant || {}).length, "assistant");
-  console.log("chatId zurückgegeben:", finalChatId);
 
   // Format für Extension: Kompatibilität mit alter Extension
   // Die Extension erwartet: resText, summary (als Objekt), chatId
@@ -299,7 +333,7 @@ router.post("/", async (req, res) => {
     replyText, // Auch für Rückwärtskompatibilität
     summary: extractedInfo, // Extension erwartet summary als Objekt
     summaryText: JSON.stringify(extractedInfo), // Für Rückwärtskompatibilität
-    chatId: finalChatId, // chatId aus Request, rekursiv gesucht, oder null
+    chatId: finalChatId, // chatId aus Request, URL oder Default
     actions: [
       {
         type: "insert_and_send"
