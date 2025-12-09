@@ -127,10 +127,27 @@ Nachricht: ${messageText}`;
   return { user: {}, assistant: {} };
 }
 
-router.post("/", async (req, res) => {
-  // Logge den kompletten Request-Body, um zu sehen, was die Extension sendet
-  console.log("=== ChatCompletion Request (COMPLETE BODY) ===");
-  console.log("Full request body:", JSON.stringify(req.body, null, 2));
+ router.post("/", async (req, res) => {
+  // Logge die Größe des Request-Body, um zu sehen, was die Extension sendet
+  const bodySize = JSON.stringify(req.body).length;
+  console.log("=== ChatCompletion Request (SIZE CHECK) ===");
+  console.log(`Request body size: ${(bodySize / 1024 / 1024).toFixed(2)} MB`);
+  
+  // Logge nur wichtige Felder, nicht den kompletten Body (kann zu groß sein)
+  console.log("=== ChatCompletion Request (KEY FIELDS) ===");
+  console.log("messageText length:", req.body?.messageText?.length || 0);
+  console.log("userProfile keys:", req.body?.userProfile ? Object.keys(req.body.userProfile) : "none");
+  console.log("assetsToSend count:", req.body?.assetsToSend?.length || 0);
+  console.log("chatId:", req.body?.chatId || "not sent");
+  
+  // WICHTIG: Wenn der Body zu groß ist, könnte die Extension zu viele Daten senden
+  // Prüfe, ob assetsToSend oder userProfile zu groß sind
+  if (bodySize > 5 * 1024 * 1024) { // > 5MB
+    console.warn("⚠️ WARNUNG: Request body ist sehr groß (>5MB)!");
+    console.warn("⚠️ Mögliche Ursachen: Zu viele assetsToSend, zu große userProfile, oder zu viele Chat-Nachrichten");
+  }
+  
+  // ... (rest bleibt gleich, ab Zeile 135)
   
   // WICHTIG: Extrahiere ALLE möglichen Felder, die die Extension senden könnte
   // Die Extension könnte den chatId oder die Nachricht in verschiedenen Formaten senden
@@ -841,3 +858,4 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
 });
 
 module.exports = router;
+
