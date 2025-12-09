@@ -277,20 +277,18 @@ router.post("/", async (req, res) => {
   let extractedInfo = { user: {}, assistant: {} };
   let errorMessage = null;
 
-  // KEINE Fallback-Nachrichten! Nur generierte Nachrichten oder Fehler
-  // ABER: Fehlermeldungen müssen in resText zurückgegeben werden, damit die Extension sie anzeigen kann
-  // Verwende foundMessageText statt messageText
+  // WICHTIG: Wenn messageText leer ist, geben wir eine Antwort zurück, die KEINE Reloads auslöst
+  // Die Extension lädt die Seite neu, wenn flags.blocked: true ist
+  // Daher geben wir eine normale Antwort zurück, aber mit actions: [], damit nichts passiert
   if (!foundMessageText || foundMessageText.trim() === "") {
-    errorMessage = "❌ FEHLER: Keine Nachricht erhalten. Bitte versuche es erneut.";
-    console.error("❌ messageText ist leer - KEINE Fallback-Nachricht!");
+    console.warn("⚠️ messageText ist leer - gebe leere Antwort zurück (keine Reloads)");
     return res.status(200).json({
-      error: errorMessage,
-      resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
-      replyText: errorMessage,
+      resText: "", // Leer, keine Fehlermeldung
+      replyText: "",
       summary: {},
       chatId: finalChatId,
-      actions: [], // Keine Aktionen bei Fehler
-      flags: { blocked: true, reason: "no_message", isError: true, showError: true }
+      actions: [], // Keine Aktionen, damit Extension nichts macht
+      flags: { blocked: false } // NICHT blocked, damit Extension nicht neu lädt
     });
   }
   
