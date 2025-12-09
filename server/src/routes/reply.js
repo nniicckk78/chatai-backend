@@ -127,13 +127,13 @@ Nachricht: ${messageText}`;
   return { user: {}, assistant: {} };
 }
 
- router.post("/", async (req, res) => {
+router.post("/", async (req, res) => {
   // Logge die Größe des Request-Body, um zu sehen, was die Extension sendet
   const bodySize = JSON.stringify(req.body).length;
   console.log("=== ChatCompletion Request (SIZE CHECK) ===");
   console.log(`Request body size: ${(bodySize / 1024 / 1024).toFixed(2)} MB`);
   
-    // Logge nur wichtige Felder, nicht den kompletten Body (kann zu groß sein)
+  // Logge nur wichtige Felder, nicht den kompletten Body (kann zu groß sein)
   console.log("=== ChatCompletion Request (KEY FIELDS) ===");
   console.log("ALL request body keys:", Object.keys(req.body || {}));
   console.log("messageText length:", req.body?.messageText?.length || 0);
@@ -151,13 +151,14 @@ Nachricht: ${messageText}`;
   allFields.forEach(key => {
     const value = req.body[key];
     if (typeof value === 'string') {
-      console.log(`${key}: "${value.substring(0, 100)}${value.length > 100 ? '...' : ''}" (length: ${value.length})`);
+      const truncated = value.length > 100 ? value.substring(0, 100) + '...' : value;
+      console.log(key + ': "' + truncated + '" (length: ' + value.length + ')');
     } else if (Array.isArray(value)) {
-      console.log(`${key}: Array(${value.length})`);
+      console.log(key + ': Array(' + value.length + ')');
     } else if (typeof value === 'object' && value !== null) {
-      console.log(`${key}: Object with keys: ${Object.keys(value).join(', ')}`);
+      console.log(key + ': Object with keys: ' + Object.keys(value).join(', '));
     } else {
-      console.log(`${key}: ${value}`);
+      console.log(key + ': ' + value);
     }
   });
   
@@ -167,6 +168,24 @@ Nachricht: ${messageText}`;
     console.warn("⚠️ WARNUNG: Request body ist sehr groß (>5MB)!");
     console.warn("⚠️ Mögliche Ursachen: Zu viele assetsToSend, zu große userProfile, oder zu viele Chat-Nachrichten");
   }
+  
+  // WICHTIG: Extrahiere ALLE möglichen Felder, die die Extension senden könnte
+  // Die Extension könnte den chatId oder die Nachricht in verschiedenen Formaten senden
+  // Die alte Extension hat wahrscheinlich bereits alles richtig erkannt - wir müssen nur die Felder richtig lesen
+  const { 
+    messageText = "", 
+    pageUrl, 
+    platformId, 
+    assetsToSend, 
+    userProfile, 
+    chatId,
+    // Mögliche Felder für ASA-Erkennung (von alter Extension)
+    lastMessageFromFake,
+    isASA,
+    asa,
+    lastMessageType,
+    messageType,
+    // Mögliche Felder für die letzte Nachricht
     lastMessage,
     last_message,
     lastUserMessage,
@@ -411,14 +430,12 @@ Nachricht: ${messageText}`;
   // Prüfe auf Minderjährige und strafrechtliche Themen
   if (isMinorMention(foundMessageText)) {
     console.error("🚨 BLOCKIERT: Minderjährige oder strafrechtliche Themen erkannt!");
-    // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
-    const safeChatId = chatId || finalChatId || "00000000";
     return res.status(200).json({
       error: "🚨 WICHTIG: Minderjährige oder strafrechtliche Themen erkannt! Bitte manuell prüfen!",
       resText: "🚨 WICHTIG: Minderjährige oder strafrechtliche Themen erkannt! Bitte manuell prüfen!",
       replyText: "🚨 WICHTIG: Minderjährige oder strafrechtliche Themen erkannt! Bitte manuell prüfen!",
       summary: {},
-      chatId: safeChatId, // chatId aus Request, damit er sich nicht ändert
+      chatId: finalChatId,
       actions: [], // Keine Aktionen bei Blockierung
       flags: { 
         blocked: true, 
@@ -456,14 +473,12 @@ Nachricht: ${messageText}`;
   if (!client) {
     errorMessage = "❌ FEHLER: OpenAI Client nicht verfügbar. Bitte Admin kontaktieren.";
     console.error("❌ OpenAI Client nicht verfügbar - KEINE Fallback-Nachricht!");
-    // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
-    const safeChatId = chatId || finalChatId || "00000000";
     return res.status(200).json({
       error: errorMessage,
       resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
       replyText: errorMessage,
       summary: {},
-      chatId: safeChatId, // chatId aus Request, damit er sich nicht ändert
+      chatId: finalChatId,
       actions: [], // Keine Aktionen bei Fehler
       flags: { blocked: true, reason: "no_client", isError: true, showError: true }
     });
@@ -704,14 +719,12 @@ WICHTIG:
     if (!replyText || replyText.trim() === "") {
       errorMessage = "❌ FEHLER: Konnte keine Antwort generieren. Bitte versuche es erneut.";
       console.error("❌ Antwort ist leer - KEINE Fallback-Nachricht!");
-      // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
-      const safeChatId = chatId || finalChatId || "00000000";
       return res.status(200).json({
         error: errorMessage,
         resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
         replyText: errorMessage,
         summary: extractedInfo,
-        chatId: safeChatId, // chatId aus Request, damit er sich nicht ändert
+        chatId: finalChatId,
         actions: [], // Keine Aktionen bei Fehler
         flags: { blocked: true, reason: "empty_response", isError: true, showError: true }
       });
@@ -811,14 +824,12 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
   } catch (err) {
     errorMessage = `❌ FEHLER: Beim Generieren der Nachricht ist ein Fehler aufgetreten: ${err.message}`;
     console.error("❌ OpenAI Fehler", err.message);
-    // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
-    const safeChatId = chatId || finalChatId || "00000000";
     return res.status(200).json({
       error: errorMessage,
       resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
       replyText: errorMessage,
       summary: extractedInfo,
-      chatId: safeChatId, // chatId aus Request, damit er sich nicht ändert
+      chatId: finalChatId,
       actions: [], // Keine Aktionen bei Fehler
       flags: { blocked: true, reason: "generation_error", isError: true, showError: true }
     });
@@ -859,5 +870,3 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
 });
 
 module.exports = router;
-
-
