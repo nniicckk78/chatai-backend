@@ -133,12 +133,33 @@ Nachricht: ${messageText}`;
   console.log("=== ChatCompletion Request (SIZE CHECK) ===");
   console.log(`Request body size: ${(bodySize / 1024 / 1024).toFixed(2)} MB`);
   
-  // Logge nur wichtige Felder, nicht den kompletten Body (kann zu groß sein)
+    // Logge nur wichtige Felder, nicht den kompletten Body (kann zu groß sein)
   console.log("=== ChatCompletion Request (KEY FIELDS) ===");
+  console.log("ALL request body keys:", Object.keys(req.body || {}));
   console.log("messageText length:", req.body?.messageText?.length || 0);
+  console.log("messageText value:", req.body?.messageText ? req.body.messageText.substring(0, 100) : "(empty)");
   console.log("userProfile keys:", req.body?.userProfile ? Object.keys(req.body.userProfile) : "none");
+  console.log("userProfile value:", req.body?.userProfile ? JSON.stringify(req.body.userProfile).substring(0, 200) : "(empty)");
   console.log("assetsToSend count:", req.body?.assetsToSend?.length || 0);
   console.log("chatId:", req.body?.chatId || "not sent");
+  console.log("pageUrl:", req.body?.pageUrl || "not sent");
+  console.log("platformId:", req.body?.platformId || "not sent");
+  
+  // Prüfe ALLE möglichen Felder, die die Extension senden könnte
+  const allFields = Object.keys(req.body || {});
+  console.log("=== ALLE FELDER IM REQUEST ===");
+  allFields.forEach(key => {
+    const value = req.body[key];
+    if (typeof value === 'string') {
+      console.log(`${key}: "${value.substring(0, 100)}${value.length > 100 ? '...' : ''}" (length: ${value.length})`);
+    } else if (Array.isArray(value)) {
+      console.log(`${key}: Array(${value.length})`);
+    } else if (typeof value === 'object' && value !== null) {
+      console.log(`${key}: Object with keys: ${Object.keys(value).join(', ')}`);
+    } else {
+      console.log(`${key}: ${value}`);
+    }
+  });
   
   // WICHTIG: Wenn der Body zu groß ist, könnte die Extension zu viele Daten senden
   // Prüfe, ob assetsToSend oder userProfile zu groß sind
@@ -146,26 +167,6 @@ Nachricht: ${messageText}`;
     console.warn("⚠️ WARNUNG: Request body ist sehr groß (>5MB)!");
     console.warn("⚠️ Mögliche Ursachen: Zu viele assetsToSend, zu große userProfile, oder zu viele Chat-Nachrichten");
   }
-  
-  // ... (rest bleibt gleich, ab Zeile 135)
-  
-  // WICHTIG: Extrahiere ALLE möglichen Felder, die die Extension senden könnte
-  // Die Extension könnte den chatId oder die Nachricht in verschiedenen Formaten senden
-  // Die alte Extension hat wahrscheinlich bereits alles richtig erkannt - wir müssen nur die Felder richtig lesen
-  const { 
-    messageText = "", 
-    pageUrl, 
-    platformId, 
-    assetsToSend, 
-    userProfile, 
-    chatId,
-    // Mögliche Felder für ASA-Erkennung (von alter Extension)
-    lastMessageFromFake,
-    isASA,
-    asa,
-    lastMessageType,
-    messageType,
-    // Mögliche Felder für die letzte Nachricht
     lastMessage,
     last_message,
     lastUserMessage,
@@ -858,4 +859,5 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
 });
 
 module.exports = router;
+
 
