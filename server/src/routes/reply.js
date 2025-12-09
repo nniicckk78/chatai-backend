@@ -27,18 +27,12 @@ router.use((req, res, next) => {
 function isMinorMention(text) {
   if (!text) return false;
   const lower = text.toLowerCase();
-  
-  // Direkte Erwähnungen
   if (lower.includes("minderjähr")) return true;
   if (lower.includes("unter 18")) return true;
   if (lower.includes("unter achtzehn")) return true;
   if (lower.includes("jugendlich") && (lower.includes("14") || lower.includes("15") || lower.includes("16") || lower.includes("17"))) return true;
-  
-  // Altersprüfung: 10-17 Jahre
   const ageMatch = lower.match(/\b(1[0-7])\s*(jahr|jahre|j|alt)\b/i);
   if (ageMatch) return true;
-  
-  // Strafrechtliche Themen
   const illegalTerms = [
     "pädophil", "pedophil", "pedo", "kinderschänder", "kindesmissbrauch",
     "inzest", "geschwister", "mutter", "vater", "tochter", "sohn",
@@ -47,13 +41,11 @@ function isMinorMention(text) {
   for (const term of illegalTerms) {
     if (lower.includes(term)) return true;
   }
-  
   return false;
 }
 
 async function extractInfoFromMessage(client, messageText) {
   if (!client || !messageText) return { user: {}, assistant: {} };
-
   try {
     const extractionPrompt = `Analysiere die folgende Nachricht und extrahiere NUR relevante Informationen über den Kunden für das Logbuch. 
 Gib die Antwort NUR als JSON zurück, kein zusätzlicher Text. Format:
@@ -88,56 +80,44 @@ WICHTIG - EXTRAHIERE nur:
 - Bei "Family": auch Beziehungsstatus extrahieren (geschieden, verheiratet, single, etc.)
 
 Nachricht: ${messageText}`;
-
     const extraction = await client.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
-        {
-          role: "system",
-          content: "Du bist ein Daten-Extraktions-Assistent. Antworte NUR mit gültigem JSON, kein zusätzlicher Text."
-        },
+        { role: "system", content: "Du bist ein Daten-Extraktions-Assistent. Antworte NUR mit gültigem JSON, kein zusätzlicher Text." },
         { role: "user", content: extractionPrompt }
       ],
       max_tokens: 500,
       temperature: 0.3,
       response_format: { type: "json_object" }
     });
-
     const extractedText = extraction.choices?.[0]?.message?.content?.trim();
     if (extractedText) {
       const parsed = JSON.parse(extractedText);
-      // Entferne null-Werte
       const cleanUser = {};
       const cleanAssistant = {};
-      
       Object.keys(parsed.user || {}).forEach(key => {
         if (parsed.user[key] !== null && parsed.user[key] !== undefined && parsed.user[key] !== "") {
           cleanUser[key] = parsed.user[key];
         }
       });
-      
       Object.keys(parsed.assistant || {}).forEach(key => {
         if (parsed.assistant[key] !== null && parsed.assistant[key] !== undefined && parsed.assistant[key] !== "") {
           cleanAssistant[key] = parsed.assistant[key];
         }
       });
-      
       return { user: cleanUser, assistant: cleanAssistant };
     }
   } catch (err) {
     console.error("Fehler beim Extrahieren von Informationen:", err);
   }
-  
   return { user: {}, assistant: {} };
 }
 
 router.post("/", async (req, res) => {
-  // Logge die Größe des Request-Body, um zu sehen, was die Extension sendet
   const bodySize = JSON.stringify(req.body).length;
   console.log("=== ChatCompletion Request (SIZE CHECK) ===");
   console.log(`Request body size: ${(bodySize / 1024 / 1024).toFixed(2)} MB`);
-  
-  // Logge nur wichtige Felder, nicht den kompletten Body (kann zu groß sein)
+
   console.log("=== ChatCompletion Request (KEY FIELDS) ===");
   console.log("ALL request body keys:", Object.keys(req.body || {}));
   console.log("messageText length:", req.body?.messageText?.length || 0);
@@ -148,8 +128,7 @@ router.post("/", async (req, res) => {
   console.log("chatId:", req.body?.chatId || "not sent");
   console.log("pageUrl:", req.body?.pageUrl || "not sent");
   console.log("platformId:", req.body?.platformId || "not sent");
-  
-  // Prüfe ALLE möglichen Felder, die die Extension senden könnte
+
   const allFields = Object.keys(req.body || {});
   console.log("=== ALLE FELDER IM REQUEST ===");
   allFields.forEach(key => {
@@ -165,17 +144,12 @@ router.post("/", async (req, res) => {
       console.log(key + ': ' + value);
     }
   });
-  
-  // WICHTIG: Wenn der Body zu groß ist, könnte die Extension zu viele Daten senden
-  // Prüfe, ob assetsToSend oder userProfile zu groß sind
-  if (bodySize > 5 * 1024 * 1024) { // > 5MB
+
+  if (bodySize > 5 * 1024 * 1024) {
     console.warn("⚠️ WARNUNG: Request body ist sehr groß (>5MB)!");
     console.warn("⚠️ Mögliche Ursachen: Zu viele assetsToSend, zu große userProfile, oder zu viele Chat-Nachrichten");
   }
-  
-  // WICHTIG: Extrahiere ALLE möglichen Felder, die die Extension senden könnte
-  // Die Extension könnte den chatId oder die Nachricht in verschiedenen Formaten senden
-  // Die alte Extension hat wahrscheinlich bereits alles richtig erkannt - wir müssen nur die Felder richtig lesen
+
   const { 
     messageText = "", 
     pageUrl, 
@@ -183,56 +157,37 @@ router.post("/", async (req, res) => {
     assetsToSend, 
     userProfile, 
     chatId,
-    // Mögliche Felder für ASA-Erkennung (von alter Extension)
     lastMessageFromFake,
     isASA,
     asa,
     lastMessageType,
     messageType,
-    // Mögliche Felder für die letzte Nachricht
     lastMessage,
     last_message,
     lastUserMessage,
     lastCustomerMessage
   } = req.body || {};
-  
-  // WICHTIG: Die Extension sollte die richtige Nachricht in messageText senden
-  // Wir suchen NICHT mehr nach anderen Nachrichten im Body, da das zu falschen Nachrichten führen kann
-  // Nur wenn messageText wirklich leer ist, suchen wir nach alternativen Feldern
+
   let possibleMessageFromBody = null;
-  
-  // NUR wenn messageText wirklich leer ist, suche nach alternativen Feldern
-  // ABER: Sei vorsichtig - die Extension sollte die richtige Nachricht senden!
   if (!messageText || messageText.trim() === "") {
     console.warn("⚠️ messageText ist leer - suche nach alternativen Feldern (könnte problematisch sein)");
-    
-    // Suche NUR in bekannten Feldern, nicht rekursiv im ganzen Body
-    // Das verhindert, dass wir falsche Nachrichten finden
     const knownMessageFields = ['lastMessage', 'last_message', 'lastUserMessage', 'lastCustomerMessage', 'userMessage', 'user_message'];
     for (const field of knownMessageFields) {
       if (req.body[field] && typeof req.body[field] === 'string' && req.body[field].trim() !== "") {
         possibleMessageFromBody = req.body[field];
         console.log(`⚠️ Alternative Nachricht gefunden in '${field}':`, possibleMessageFromBody.substring(0, 100) + "...");
-        break; // Nimm die erste gefundene
+        break;
       }
     }
   }
 
-  // WICHTIG: Prüfe auch andere mögliche Feldnamen für messageText
-  // Die Extension könnte die Nachricht unter einem anderen Namen senden
-  // WICHTIG: Die letzte Nachricht ist IMMER vom KUNDEN (unten im Chat)
-  // Wenn die letzte Nachricht vom FAKE ist, müssen wir eine ASA-Nachricht schreiben
-  // WICHTIG: Wir müssen die RICHTIGE letzte Nachricht vom KUNDEN finden, nicht irgendeine Nachricht!
   const possibleMessageFields = ['messageText', 'message', 'text', 'content', 'message_content', 'lastMessage', 'last_message', 'userMessage', 'user_message', 'lastUserMessage', 'lastCustomerMessage'];
   let foundMessageText = messageText || possibleMessageFromBody;
-  
-  // PRIORITÄT: messageText sollte die letzte Nachricht vom Kunden sein
-  // Wenn messageText vorhanden ist, verwende es (es sollte die richtige Nachricht sein)
+
   if (messageText && messageText.trim() !== "") {
     foundMessageText = messageText;
     console.log("✅ messageText direkt verwendet:", foundMessageText.substring(0, 100) + "...");
   } else {
-    // Nur wenn messageText leer ist, suche nach anderen Feldern
     for (const field of possibleMessageFields) {
       if (req.body[field] && typeof req.body[field] === 'string' && req.body[field].trim() !== "" && !foundMessageText) {
         foundMessageText = req.body[field];
@@ -240,26 +195,39 @@ router.post("/", async (req, res) => {
       }
     }
   }
-  
-  // Prüfe auch in userProfile oder anderen verschachtelten Objekten (nur wenn noch nichts gefunden)
+
   if ((!foundMessageText || foundMessageText.trim() === "") && userProfile && typeof userProfile === 'object') {
     if (userProfile.messageText && userProfile.messageText.trim() !== "") foundMessageText = userProfile.messageText;
     if (userProfile.message && userProfile.message.trim() !== "" && !foundMessageText) foundMessageText = userProfile.message;
     if (userProfile.lastMessage && userProfile.lastMessage.trim() !== "" && !foundMessageText) foundMessageText = userProfile.lastMessage;
   }
-  
-  // WICHTIG: Prüfe, ob die gefundene Nachricht wirklich vom Kunden ist
-  // Wenn die Nachricht zu lang ist oder komisch klingt, könnte es eine falsche Nachricht sein
+
+  // Fallback: letzte Kunden-Nachricht aus siteInfos.messages holen
+  if ((!foundMessageText || foundMessageText.trim() === "") && req.body?.siteInfos?.messages) {
+    const msgs = req.body.siteInfos.messages;
+    const lastReceived = [...msgs].reverse().find(
+      m => m?.type === "received" && typeof m.text === "string" && m.text.trim() !== ""
+    );
+    if (lastReceived) {
+      foundMessageText = lastReceived.text.trim();
+      console.log("✅ Nachricht aus siteInfos.messages (received):", foundMessageText.substring(0, 100) + "...");
+    }
+    if (!foundMessageText || foundMessageText.trim() === "") {
+      const lastAny = [...msgs].reverse().find(
+        m => typeof m.text === "string" && m.text.trim() !== ""
+      );
+      if (lastAny) {
+        foundMessageText = lastAny.text.trim();
+        console.log("✅ Nachricht aus siteInfos.messages (any):", foundMessageText.substring(0, 100) + "...");
+      }
+    }
+  }
+
   if (foundMessageText && foundMessageText.length > 500) {
     console.warn("⚠️ Gefundene Nachricht ist sehr lang (>500 Zeichen) - könnte falsch sein:", foundMessageText.substring(0, 100) + "...");
   }
-  
-  // Prüfe, ob die letzte Nachricht vom FAKE/Moderator kommt (ASA-Fall)
-  // Die alte Extension hat wahrscheinlich bereits erkannt, ob die letzte Nachricht vom Fake kommt
-  // Wir prüfen alle möglichen Felder, die die Extension senden könnte
+
   let isLastMessageFromFake = false;
-  
-  // Direkte Flags
   if (lastMessageFromFake !== undefined) {
     isLastMessageFromFake = Boolean(lastMessageFromFake);
     console.log("✅ ASA-Flag von Extension erhalten: lastMessageFromFake =", isLastMessageFromFake);
@@ -269,38 +237,28 @@ router.post("/", async (req, res) => {
   } else if (asa !== undefined) {
     isLastMessageFromFake = Boolean(asa);
     console.log("✅ ASA-Flag von Extension erhalten: asa =", isLastMessageFromFake);
-  } 
-  // Prüfe messageType oder lastMessageType
-  else if (lastMessageType !== undefined) {
-    // Wenn lastMessageType === "sent" oder "asa-messages", dann ist es vom Fake
+  } else if (lastMessageType !== undefined) {
     isLastMessageFromFake = lastMessageType === "sent" || lastMessageType === "asa-messages" || lastMessageType === "sent-messages";
     console.log("✅ ASA-Flag aus lastMessageType erkannt:", lastMessageType, "->", isLastMessageFromFake);
   } else if (messageType !== undefined) {
     isLastMessageFromFake = messageType === "sent" || messageType === "asa-messages" || messageType === "sent-messages";
     console.log("✅ ASA-Flag aus messageType erkannt:", messageType, "->", isLastMessageFromFake);
-  }
-  // Prüfe, ob messageText leer ist UND es gibt eine lastMessage (vom Fake)
-  else if ((!foundMessageText || foundMessageText.trim() === "") && (lastMessage || last_message || lastUserMessage || lastCustomerMessage)) {
-    // Wenn messageText leer ist, aber es gibt eine lastMessage, könnte es sein, dass die letzte Nachricht vom Fake ist
-    // ABER: Das ist unsicher, daher nur als Hinweis loggen
+  } else if ((!foundMessageText || foundMessageText.trim() === "") && (lastMessage || last_message || lastUserMessage || lastCustomerMessage)) {
     console.log("⚠️ messageText ist leer, aber lastMessage vorhanden - könnte ASA-Fall sein");
-    // Wir machen es NICHT automatisch zu ASA, da es auch andere Gründe geben kann
   } else {
     console.log("⚠️ Kein ASA-Flag von Extension gefunden - prüfe auf andere Indikatoren...");
   }
-  
+
   console.log("=== Nachrichten-Analyse ===");
   console.log("foundMessageText:", foundMessageText ? foundMessageText.substring(0, 200) + "..." : "(leer)");
   console.log("foundMessageText Länge:", foundMessageText ? foundMessageText.length : 0);
   console.log("isLastMessageFromFake (ASA-Fall):", isLastMessageFromFake);
-  
-  // WICHTIG: Validiere die Nachricht - sie sollte nicht zu lang oder komisch sein
+
   if (foundMessageText && foundMessageText.length > 1000) {
     console.error("❌ FEHLER: Nachricht ist zu lang (>1000 Zeichen) - könnte falsch sein!");
     console.error("❌ Erste 200 Zeichen:", foundMessageText.substring(0, 200));
   }
 
-  // Logging für Debugging
   console.log("=== ChatCompletion Request (Parsed) ===");
   console.log("messageText (original):", messageText ? messageText.substring(0, 100) + "..." : "(leer)");
   console.log("messageText (gefunden):", foundMessageText ? foundMessageText.substring(0, 100) + "..." : "(leer)");
@@ -309,9 +267,14 @@ router.post("/", async (req, res) => {
   console.log("userProfile:", userProfile ? JSON.stringify(userProfile).substring(0, 100) : "fehlt");
   console.log("assetsToSend:", assetsToSend ? assetsToSend.length : 0);
   console.log("chatId aus Request:", chatId || "(nicht gesendet)");
-  
-  // Prüfe auch andere mögliche Feldnamen für chatId
-  // Die Extension generiert chatId als `${username}-${lastMessage}`, also kann es auch ein String sein
+  // Ergänze platformId/pageUrl aus siteInfos, falls noch leer
+  if (!platformId && req.body?.siteInfos?.origin) {
+    platformId = req.body.siteInfos.origin;
+  }
+  if (!pageUrl && req.body?.url) {
+    pageUrl = req.body.url;
+  }
+
   const possibleChatIdFields = ['chatId', 'chat_id', 'dialogueId', 'dialogue_id', 'conversationId', 'conversation_id'];
   let foundChatId = chatId;
   for (const field of possibleChatIdFields) {
@@ -320,35 +283,33 @@ router.post("/", async (req, res) => {
       console.log(`✅ chatId gefunden unter Feldname '${field}':`, foundChatId);
     }
   }
-  
-  // Die Extension generiert chatId manchmal als `${username}-${lastMessage}`
-  // Prüfe auch, ob es einen generierten chatId gibt (String mit Bindestrich)
+
+  // chatId aus siteInfos.chatId
+  if (!foundChatId && req.body?.siteInfos?.chatId) {
+    foundChatId = req.body.siteInfos.chatId;
+    console.log("✅ chatId aus siteInfos.chatId:", foundChatId);
+  }
+
   if (!foundChatId && typeof chatId === 'string' && chatId.includes('-')) {
     foundChatId = chatId;
     console.log(`✅ Generierter chatId (username-lastMessage) gefunden:`, foundChatId);
   }
 
-  // Versuche chatId zu extrahieren, falls nicht im Request vorhanden
   let finalChatId = foundChatId || chatId;
-  
-  // Prüfe auch userProfile für chatId (verschachtelt)
+
   if (!finalChatId && userProfile && typeof userProfile === 'object') {
     if (userProfile.chatId) finalChatId = userProfile.chatId;
     if (userProfile.chat_id) finalChatId = userProfile.chat_id;
     if (userProfile.dialogueId) finalChatId = userProfile.dialogueId;
     if (userProfile.dialogue_id) finalChatId = userProfile.dialogue_id;
-    // Prüfe auch verschachtelte Objekte
     if (userProfile.meta && userProfile.meta.chatId) finalChatId = userProfile.meta.chatId;
     if (userProfile.metadata && userProfile.metadata.chatId) finalChatId = userProfile.metadata.chatId;
   }
-  
-  // Prüfe alle Felder im Request-Body nach chatId-ähnlichen Werten
+
   if (!finalChatId) {
     const bodyString = JSON.stringify(req.body);
-    // Suche nach Zahlen, die wie chatIds aussehen (z.B. "58636919")
     const numberMatches = bodyString.match(/\b\d{8,}\b/g);
     if (numberMatches && numberMatches.length > 0) {
-      // Nimm die größte Zahl, die wie ein chatId aussieht
       const possibleChatIds = numberMatches.filter(n => n.length >= 8 && n.length <= 10);
       if (possibleChatIds.length > 0) {
         finalChatId = possibleChatIds[possibleChatIds.length - 1];
@@ -356,15 +317,13 @@ router.post("/", async (req, res) => {
       }
     }
   }
-  
+
   if (!finalChatId && pageUrl) {
-    // Versuche chatId aus URL zu extrahieren (z.B. "Dialogue #58784193" oder ähnliche Patterns)
     const dialogueMatch = pageUrl.match(/[Dd]ialogue[#\s]*(\d+)/);
     if (dialogueMatch) {
       finalChatId = dialogueMatch[1];
       console.log("✅ chatId aus URL extrahiert:", finalChatId);
     }
-    // Versuche auch aus URL-Parametern
     try {
       const urlObj = new URL(pageUrl);
       const dialogueParam = urlObj.searchParams.get('dialogue') || urlObj.searchParams.get('chatId') || urlObj.searchParams.get('id');
@@ -372,36 +331,19 @@ router.post("/", async (req, res) => {
         finalChatId = dialogueParam;
         console.log("✅ chatId aus URL-Parametern extrahiert:", finalChatId);
       }
-    } catch (e) {
-      // URL parsing failed, ignore
-    }
+    } catch (e) {}
   }
-  
-  // WORKAROUND: Falls immer noch kein chatId gefunden wurde
-  // Das alte Backend hat wahrscheinlich einfach null zurückgegeben oder einen generischen Wert
-  // Da die Extension den chatId auf der Seite findet, aber nicht sendet, können wir ihn nicht kennen
-  // ABER: Vielleicht hat das alte Backend einfach null zurückgegeben und die Extension hat trotzdem funktioniert?
-  // Oder: Vielleicht sendet die Extension den chatId in einem Feld, das wir noch nicht geprüft haben?
-  // 
-  // Versuche: Prüfe ALLE Felder im Request-Body rekursiv nach chatId-ähnlichen Werten
+
   if (!finalChatId) {
     function findChatIdInObject(obj, depth = 0) {
-      if (depth > 3) return null; // Max depth
+      if (depth > 3) return null;
       if (!obj || typeof obj !== 'object') return null;
-      
-      // Prüfe direkte Felder
       for (const key of Object.keys(obj)) {
         const value = obj[key];
-        // Prüfe auf chatId-ähnliche Feldnamen
         if (key.toLowerCase().includes('chat') || key.toLowerCase().includes('dialogue') || key.toLowerCase().includes('conversation')) {
-          if (typeof value === 'string' && /^\d{8,10}$/.test(value)) {
-            return value;
-          }
-          if (typeof value === 'number' && value > 10000000 && value < 9999999999) {
-            return String(value);
-          }
+          if (typeof value === 'string' && /^\d{8,10}$/.test(value)) return value;
+          if (typeof value === 'number' && value > 10000000 && value < 9999999999) return String(value);
         }
-        // Rekursiv in verschachtelten Objekten suchen
         if (typeof value === 'object' && value !== null) {
           const found = findChatIdInObject(value, depth + 1);
           if (found) return found;
@@ -409,29 +351,19 @@ router.post("/", async (req, res) => {
       }
       return null;
     }
-    
     const foundInBody = findChatIdInObject(req.body);
     if (foundInBody) {
       finalChatId = foundInBody;
       console.log("✅ chatId rekursiv im Request-Body gefunden:", finalChatId);
     }
   }
-  
-  // FINAL FALLBACK: Wenn wirklich kein chatId gefunden wurde
-  // WICHTIG: Die Extension prüft alle 2 Sekunden, ob sich die Chat-ID ändert
-  // Wenn chatId null ist, könnte die Extension die Seite neu laden
-  // Daher geben wir einen generischen Wert zurück, um Reloads zu vermeiden
+
   if (!finalChatId) {
-    // Verwende einen generischen Wert, um Reloads zu vermeiden
-    // Die Extension findet den chatId auf der Seite, aber sendet ihn nicht
-    // Daher können wir nur einen generischen Wert zurückgeben
     finalChatId = "00000000";
-    
     console.warn("⚠️ Kein chatId gefunden - verwende generischen Wert '00000000' um Reloads zu vermeiden.");
     console.warn("⚠️ Falls die Extension blockiert, muss sie angepasst werden, um chatId im Request zu senden.");
   }
 
-  // Prüfe auf Minderjährige und strafrechtliche Themen
   if (isMinorMention(foundMessageText)) {
     console.error("🚨 BLOCKIERT: Minderjährige oder strafrechtliche Themen erkannt!");
     return res.status(200).json({
@@ -440,13 +372,13 @@ router.post("/", async (req, res) => {
       replyText: "🚨 WICHTIG: Minderjährige oder strafrechtliche Themen erkannt! Bitte manuell prüfen!",
       summary: {},
       chatId: finalChatId,
-      actions: [], // Keine Aktionen bei Blockierung
+      actions: [],
       flags: { 
         blocked: true, 
         reason: "minor_or_illegal", 
         isError: true, 
         showError: true,
-        requiresAttention: true // Extension soll Aufmerksamkeit erregen
+        requiresAttention: true
       }
     });
   }
@@ -456,21 +388,17 @@ router.post("/", async (req, res) => {
   let extractedInfo = { user: {}, assistant: {} };
   let errorMessage = null;
 
-  // WICHTIG: Wenn messageText leer ist, geben wir eine Antwort zurück, die KEINE Reloads auslöst
-  // Die Extension lädt die Seite neu, wenn flags.blocked: true ist ODER wenn chatId sich ändert
-  // Daher geben wir eine normale Antwort zurück, aber mit actions: [], damit nichts passiert
   if (!foundMessageText || foundMessageText.trim() === "") {
     console.warn("⚠️ messageText ist leer - gebe leere Antwort zurück (keine Reloads)");
-    // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
     const safeChatId = chatId || finalChatId || "00000000";
     return res.status(200).json({
-      resText: "", // Leer, keine Fehlermeldung
+      resText: "",
       replyText: "",
       summary: {},
-      chatId: safeChatId, // Verwende den ursprünglichen chatId, damit er sich nicht ändert
-      actions: [], // Keine Aktionen, damit Extension nichts macht
-      flags: { blocked: false }, // NICHT blocked, damit Extension nicht neu lädt
-      disableAutoSend: true // Verhindere Auto-Send
+      chatId: safeChatId,
+      actions: [],
+      flags: { blocked: false },
+      disableAutoSend: true
     });
   }
   
@@ -479,23 +407,18 @@ router.post("/", async (req, res) => {
     console.error("❌ OpenAI Client nicht verfügbar - KEINE Fallback-Nachricht!");
     return res.status(200).json({
       error: errorMessage,
-      resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
+      resText: errorMessage,
       replyText: errorMessage,
       summary: {},
       chatId: finalChatId,
-      actions: [], // Keine Aktionen bei Fehler
+      actions: [],
       flags: { blocked: true, reason: "no_client", isError: true, showError: true }
     });
   }
 
-  // Versuche Nachricht zu generieren
   try {
-    // Prüfe ASA-Fall: Wenn die letzte Nachricht vom FAKE kommt, schreibe eine Reaktivierungsnachricht
-    // WICHTIG: Nur wenn explizit signalisiert, sonst könnte es andere Gründe geben
     if (isLastMessageFromFake) {
       console.log("🔄 ASA-Fall erkannt: Letzte Nachricht vom Fake, generiere Reaktivierungsnachricht...");
-      
-      // Verschiedene ASA-Nachrichten für Abwechslung
       const asaTemplates = [
         "Hey, lange nichts mehr von dir gehört, wo steckst du denn so lange? Hast du kein Interesse mehr an mir?",
         "Hallo, ich habe schon eine Weile nichts mehr von dir gehört. Ist alles okay bei dir?",
@@ -506,87 +429,54 @@ router.post("/", async (req, res) => {
         "Hey, wo steckst du denn? Ich dachte, wir hätten eine gute Verbindung.",
         "Hallo, ich hoffe, es geht dir gut. Ich würde gerne wieder von dir hören."
       ];
-      
-      // Wähle zufällig eine ASA-Nachricht
       const randomASA = asaTemplates[Math.floor(Math.random() * asaTemplates.length)];
-      
-      // Entferne Anführungszeichen am Anfang/Ende falls vorhanden
       let asaMessage = randomASA.trim();
-      if (asaMessage.startsWith('"') && asaMessage.endsWith('"')) {
-        asaMessage = asaMessage.slice(1, -1);
-      }
-      if (asaMessage.startsWith("'") && asaMessage.endsWith("'")) {
-        asaMessage = asaMessage.slice(1, -1);
-      }
-      
+      if (asaMessage.startsWith('"') && asaMessage.endsWith('"')) asaMessage = asaMessage.slice(1, -1);
+      if (asaMessage.startsWith("'") && asaMessage.endsWith("'")) asaMessage = asaMessage.slice(1, -1);
       console.log("✅ ASA-Nachricht generiert:", asaMessage);
-      
-      // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
       const asaChatId = chatId || finalChatId || "00000000";
-      
       return res.json({
         resText: asaMessage,
         replyText: asaMessage,
         summary: {},
-        chatId: asaChatId, // chatId aus Request, damit er sich nicht ändert
-        actions: [
-          {
-            type: "insert_and_send"
-          }
-        ],
+        chatId: asaChatId,
+        actions: [{ type: "insert_and_send" }],
         assets: assetsToSend || [],
-        flags: { blocked: false }, // WICHTIG: Immer false, damit Extension nicht neu lädt
+        flags: { blocked: false },
         disableAutoSend: false
       });
     }
     
-    // 1. Informationen extrahieren (nur wenn Nachricht vom Kunden vorhanden)
     extractedInfo = await extractInfoFromMessage(client, foundMessageText);
-    
-    // 2. Antwort generieren
-    // WICHTIG: Wir antworten als FAKE/MODERATOR auf den KUNDEN
-    // Die Nachricht kommt vom KUNDEN, wir antworten als FAKE
-    
-    // Prüfe auf Bot/KI-Vorwürfe
     const lowerMessage = foundMessageText.toLowerCase();
     const isBotAccusation = lowerMessage.includes("bot") || lowerMessage.includes("ki") || 
                            lowerMessage.includes("künstliche intelligenz") || 
                            lowerMessage.includes("chatgpt") || lowerMessage.includes("fake") ||
                            lowerMessage.includes("automatisch") || lowerMessage.includes("programmiert");
-    
-    // Prüfe auf sexuelle Themen
     const isSexualTopic = lowerMessage.includes("titten") || lowerMessage.includes("brüste") ||
                          lowerMessage.includes("arsch") || lowerMessage.includes("po") ||
                          lowerMessage.includes("pussy") || lowerMessage.includes("schwanz") ||
                          lowerMessage.includes("sex") || lowerMessage.includes("ficken") ||
                          lowerMessage.includes("vorlieben") || lowerMessage.includes("sexuell") ||
                          lowerMessage.includes("geil") || lowerMessage.includes("lust");
-    
-    // Prüfe auf Berufsfragen
     const isJobQuestion = lowerMessage.includes("was arbeitest") || lowerMessage.includes("beruf") ||
                          lowerMessage.includes("was machst du beruflich") || lowerMessage.includes("job") ||
                          lowerMessage.includes("wo arbeitest");
-    
-    // Prüfe auf Treffen/Termine
     const isMeetingRequest = lowerMessage.includes("treffen") || lowerMessage.includes("wann") ||
                             lowerMessage.includes("zeit") || lowerMessage.includes("kennenlernen") ||
                             lowerMessage.includes("sehen") || lowerMessage.includes("date");
     
-    // Extrahiere Geschlecht aus userProfile (falls vorhanden) - für Geschlechtererkennung
     let fakeGender = null;
     let customerGender = null;
     if (userProfile && typeof userProfile === 'object') {
-      // Versuche Geschlecht zu erkennen
       if (userProfile.gender) fakeGender = userProfile.gender.toLowerCase();
       if (userProfile.sex) fakeGender = userProfile.sex.toLowerCase();
     }
-    
-    // Versuche Geschlecht aus Nachricht zu extrahieren (falls erwähnt)
     if (lowerMessage.includes("frau") || lowerMessage.includes("weiblich") || lowerMessage.includes("sie ")) {
-      customerGender = "männlich"; // Wenn Kunde "Frau" sagt, ist er wahrscheinlich männlich
+      customerGender = "männlich";
     }
     if (lowerMessage.includes("mann") || lowerMessage.includes("männlich") || lowerMessage.includes("er ")) {
-      customerGender = "weiblich"; // Wenn Kunde "Mann" sagt, ist er wahrscheinlich weiblich
+      customerGender = "weiblich";
     }
     
     const systemPrompt = `Du bist ein freundlicher, natürlicher Chat-Moderator auf einer Dating-Plattform. 
@@ -606,11 +496,6 @@ router.post("/", async (req, res) => {
 - WICHTIG: Es darf NIEMALS auffallen, dass du ein Moderator bist - sei natürlich und menschlich!
 - WICHTIG: Reagiere NUR auf die Nachricht, die dir gegeben wird - erfinde nichts!`;
     
-    // WICHTIG: userProfile könnte die Daten vom FAKE enthalten, nicht vom KUNDEN
-    // Verwende daher NUR die extrahierten Infos vom KUNDEN (aus der Nachricht)
-    // NICHT userProfile, da das die Daten vom Fake sein könnten!
-    
-    // Baue Kontext für bessere Antworten - NUR aus extrahierten Kunden-Infos
     const customerContext = [];
     if (extractedInfo.user && Object.keys(extractedInfo.user).length > 0) {
       Object.entries(extractedInfo.user).forEach(([key, value]) => {
@@ -618,11 +503,9 @@ router.post("/", async (req, res) => {
       });
     }
     
-    // Extrahiere den Namen des KUNDEN aus der Nachricht (nicht vom userProfile!)
     const customerName = extractedInfo.user?.Name || null;
     const customerJob = extractedInfo.user?.Work || null;
     
-    // Baue spezifischen Prompt basierend auf Situation
     let specificInstructions = "";
     
     if (isBotAccusation) {
@@ -643,15 +526,12 @@ router.post("/", async (req, res) => {
     }
     
     if (isJobQuestion) {
-      // Realistische Berufe für Frauen/Männer (keine Flugzeugbegleiter, Zugkontrolleur)
       const realisticJobs = {
         "weiblich": ["Bürokauffrau", "Erzieherin", "Krankenschwester", "Verkäuferin", "Friseurin", "Köchin", "Rezeptionistin", "Marketing Managerin", "Designerin"],
         "männlich": ["Elektriker", "Mechaniker", "Verkäufer", "Koch", "Bürokaufmann", "IT-Support", "Marketing Manager", "Designer", "Handwerker"]
       };
-      
       const jobList = fakeGender === "weiblich" || fakeGender === "w" ? realisticJobs["weiblich"] : realisticJobs["männlich"];
       const randomJob = jobList[Math.floor(Math.random() * jobList.length)];
-      
       specificInstructions += `\n\n💼 BERUFSFRAGE:
 - Der Kunde fragt nach deinem Beruf
 - Falls kein Beruf im Logbuch steht, erfinde einen realistischen Beruf: "${randomJob}"
@@ -676,8 +556,6 @@ router.post("/", async (req, res) => {
 - Passe deinen Schreibstil entsprechend an (Frau zu Mann oder Mann zu Frau)`;
     }
     
-    // WICHTIG: Validiere die Nachricht nochmal vor dem Prompt
-    // Wenn die Nachricht zu lang oder komisch ist, könnte es eine falsche Nachricht sein
     const validatedMessage = foundMessageText.trim();
     if (validatedMessage.length > 500) {
       console.error("❌ FEHLER: Nachricht ist zu lang (>500 Zeichen) - verwende nur die ersten 500 Zeichen!");
@@ -713,56 +591,40 @@ WICHTIG:
         { role: "system", content: systemPrompt },
         { role: "user", content: userPrompt }
       ],
-      max_tokens: 200, // Mehr Tokens für natürlichere, längere Antworten
-      temperature: 0.8 // Etwas kreativer für natürlichere Antworten
+      max_tokens: 200,
+      temperature: 0.8
     });
     
     replyText = chat.choices?.[0]?.message?.content?.trim();
     
-    // WICHTIG: Prüfe, ob eine gültige Antwort generiert wurde
     if (!replyText || replyText.trim() === "") {
       errorMessage = "❌ FEHLER: Konnte keine Antwort generieren. Bitte versuche es erneut.";
       console.error("❌ Antwort ist leer - KEINE Fallback-Nachricht!");
       return res.status(200).json({
         error: errorMessage,
-        resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
+        resText: errorMessage,
         replyText: errorMessage,
         summary: extractedInfo,
         chatId: finalChatId,
-        actions: [], // Keine Aktionen bei Fehler
+        actions: [],
         flags: { blocked: true, reason: "empty_response", isError: true, showError: true }
       });
     }
     
-    // WICHTIG: Entferne Anführungszeichen am Anfang/Ende (falls vorhanden)
     replyText = replyText.trim();
-    if (replyText.startsWith('"') && replyText.endsWith('"')) {
-      replyText = replyText.slice(1, -1).trim();
-    }
-    if (replyText.startsWith("'") && replyText.endsWith("'")) {
-      replyText = replyText.slice(1, -1).trim();
-    }
-    // Entferne auch Anführungszeichen am Anfang, wenn sie alleine stehen
-    if (replyText.startsWith('"') && !replyText.endsWith('"')) {
-      replyText = replyText.replace(/^"/, '').trim();
-    }
-    if (replyText.startsWith("'") && !replyText.endsWith("'")) {
-      replyText = replyText.replace(/^'/, '').trim();
-    }
-    
-    // Entferne Bindestriche (falls vorhanden)
+    if (replyText.startsWith('"') && replyText.endsWith('"')) replyText = replyText.slice(1, -1).trim();
+    if (replyText.startsWith("'") && replyText.endsWith("'")) replyText = replyText.slice(1, -1).trim();
+    if (replyText.startsWith('"') && !replyText.endsWith('"')) replyText = replyText.replace(/^"/, '').trim();
+    if (replyText.startsWith("'") && !replyText.endsWith("'")) replyText = replyText.replace(/^'/, '').trim();
     replyText = replyText.replace(/-/g, " ");
     
-    // Prüfe Mindestlänge (80 Zeichen)
     if (replyText.length < 80) {
       console.warn(`⚠️ Antwort zu kurz (${replyText.length} Zeichen), versuche zu verlängern...`);
-      // Versuche Antwort zu verlängern, falls zu kurz
       const extensionPrompt = `Die folgende Antwort ist zu kurz. Erweitere sie auf mindestens 80 Zeichen, füge eine Frage am Ende hinzu und mache sie natürlicher:
 
 "${replyText}"
 
 Antworte NUR mit der erweiterten Version, keine Erklärungen.`;
-      
       try {
         const extended = await client.chat.completions.create({
           model: "gpt-4o-mini",
@@ -773,7 +635,6 @@ Antworte NUR mit der erweiterten Version, keine Erklärungen.`;
           max_tokens: 150,
           temperature: 0.7
         });
-        
         const extendedText = extended.choices?.[0]?.message?.content?.trim();
         if (extendedText && extendedText.length >= 80) {
           replyText = extendedText.replace(/-/g, " ");
@@ -784,7 +645,6 @@ Antworte NUR mit der erweiterten Version, keine Erklärungen.`;
       }
     }
     
-    // Prüfe, ob eine Frage am Ende steht
     const hasQuestion = replyText.includes("?") && (
       replyText.trim().endsWith("?") || 
       replyText.trim().endsWith("?!") || 
@@ -798,7 +658,6 @@ Antworte NUR mit der erweiterten Version, keine Erklärungen.`;
 "${replyText}"
 
 Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erklärungen.`;
-      
       try {
         const withQuestion = await client.chat.completions.create({
           model: "gpt-4o-mini",
@@ -809,7 +668,6 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
           max_tokens: 100,
           temperature: 0.7
         });
-        
         const questionText = withQuestion.choices?.[0]?.message?.content?.trim();
         if (questionText) {
           replyText = questionText.replace(/-/g, " ");
@@ -817,10 +675,7 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
         }
       } catch (err) {
         console.error("Fehler beim Hinzufügen der Frage:", err);
-        // Fallback: Füge eine generische Frage hinzu
-        if (!replyText.endsWith("?")) {
-          replyText += " Was denkst du dazu?";
-        }
+        if (!replyText.endsWith("?")) replyText += " Was denkst du dazu?";
       }
     }
     
@@ -830,48 +685,36 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
     console.error("❌ OpenAI Fehler", err.message);
     return res.status(200).json({
       error: errorMessage,
-      resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
+      resText: errorMessage,
       replyText: errorMessage,
       summary: extractedInfo,
       chatId: finalChatId,
-      actions: [], // Keine Aktionen bei Fehler
+      actions: [],
       flags: { blocked: true, reason: "generation_error", isError: true, showError: true }
     });
   }
 
-  // Wenn wir hier ankommen, wurde replyText erfolgreich generiert
   console.log("=== ChatCompletion Response ===");
   console.log("resText:", replyText.substring(0, 100));
   console.log("summary keys:", Object.keys(extractedInfo.user || {}).length, "user,", Object.keys(extractedInfo.assistant || {}).length, "assistant");
 
-  // Format für Extension: Kompatibilität mit alter Extension
-  // Die Extension erwartet: resText, summary (als Objekt), chatId
-  // NUR wenn replyText erfolgreich generiert wurde!
-  // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert und die Extension nicht neu lädt
-  // Die Extension prüft, ob sich der chatId ändert, und lädt dann neu
   const responseChatId = chatId || finalChatId || "00000000";
-  
   console.log("=== Response ChatId ===");
   console.log("chatId aus Request:", chatId || "(nicht gesendet)");
   console.log("finalChatId (extrahiert):", finalChatId);
   console.log("responseChatId (verwendet):", responseChatId);
   
   return res.json({
-    resText: replyText, // Extension erwartet resText statt replyText
-    replyText, // Auch für Rückwärtskompatibilität
-    summary: extractedInfo, // Extension erwartet summary als Objekt
-    summaryText: JSON.stringify(extractedInfo), // Für Rückwärtskompatibilität
-    chatId: responseChatId, // WICHTIG: chatId aus Request (damit er sich nicht ändert), sonst finalChatId oder Default
-    actions: [
-      {
-        type: "insert_and_send"
-      }
-    ],
+    resText: replyText,
+    replyText,
+    summary: extractedInfo,
+    summaryText: JSON.stringify(extractedInfo),
+    chatId: responseChatId,
+    actions: [{ type: "insert_and_send" }],
     assets: assetsToSend || [],
-    flags: { blocked: false }, // WICHTIG: Immer false, damit Extension nicht neu lädt
+    flags: { blocked: false },
     disableAutoSend: false
   });
 });
 
 module.exports = router;
-
