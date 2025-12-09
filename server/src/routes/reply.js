@@ -394,21 +394,31 @@ router.post("/", asyncHandler(async (req, res, next) => {
     pageUrl = req.body.url;
   }
   
-  // Prüfe auch andere mögliche Feldnamen für chatId
-  // Die Extension generiert chatId als `${username}-${lastMessage}`, also kann es auch ein String sein
-  const possibleChatIdFields = ['chatId', 'chat_id', 'dialogueId', 'dialogue_id', 'conversationId', 'conversation_id'];
-  let foundChatId = chatId;
-  for (const field of possibleChatIdFields) {
-    if (req.body[field] && !foundChatId) {
-      foundChatId = req.body[field];
-      console.log(`✅ chatId gefunden unter Feldname '${field}':`, foundChatId);
-    }
-  }
-
-  // chatId aus siteInfos.chatId
-  if (!foundChatId && req.body?.siteInfos?.chatId) {
+  // WICHTIG: PRIORITÄT: chatId aus siteInfos.chatId (das ist der chatId, den die Extension auf der Seite sieht)
+  // Das verhindert, dass die Extension die Seite neu lädt, wenn sich der chatId ändert
+  let foundChatId = null;
+  if (req.body?.siteInfos?.chatId) {
     foundChatId = req.body.siteInfos.chatId;
-    console.log("✅ chatId aus siteInfos.chatId:", foundChatId);
+    console.log("✅ chatId aus siteInfos.chatId (PRIORITÄT):", foundChatId);
+  }
+  
+  // Fallback: chatId aus Request-Body direkt
+  if (!foundChatId && chatId) {
+    foundChatId = chatId;
+    console.log("✅ chatId aus Request-Body direkt:", foundChatId);
+  }
+  
+  // Fallback: Prüfe auch andere mögliche Feldnamen für chatId
+  // Die Extension generiert chatId manchmal als `${username}-${lastMessage}`, also kann es auch ein String sein
+  if (!foundChatId) {
+    const possibleChatIdFields = ['chatId', 'chat_id', 'dialogueId', 'dialogue_id', 'conversationId', 'conversation_id'];
+    for (const field of possibleChatIdFields) {
+      if (req.body[field]) {
+        foundChatId = req.body[field];
+        console.log(`✅ chatId gefunden unter Feldname '${field}':`, foundChatId);
+        break;
+      }
+    }
   }
   
   // Die Extension generiert chatId manchmal als `${username}-${lastMessage}`
@@ -616,6 +626,11 @@ router.post("/", asyncHandler(async (req, res, next) => {
       // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
       const asaChatId = chatId || finalChatId || "00000000";
       
+      // WICHTIG: Variable Wartezeit zwischen 40-60 Sekunden auch für ASA-Nachrichten
+      const minWait = 40;
+      const maxWait = 60;
+      const asaWaitTime = Math.floor(Math.random() * (maxWait - minWait + 1)) + minWait;
+      
       return res.json({
         resText: asaMessage,
         replyText: asaMessage,
@@ -623,12 +638,14 @@ router.post("/", asyncHandler(async (req, res, next) => {
         chatId: asaChatId, // chatId aus Request, damit er sich nicht ändert
         actions: [
           {
-            type: "insert_and_send"
+            type: "insert_and_send",
+            delay: asaWaitTime // Wartezeit in Sekunden (40-60 Sekunden variabel)
           }
         ],
         assets: assetsToSend || [],
         flags: { blocked: false }, // WICHTIG: Immer false, damit Extension nicht neu lädt
-        disableAutoSend: false
+        disableAutoSend: false,
+        waitTime: asaWaitTime // Zusätzliches Flag für Rückwärtskompatibilität
       });
     }
     
@@ -974,14 +991,21 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
   // Format für Extension: Kompatibilität mit alter Extension
   // Die Extension erwartet: resText, summary (als Objekt), chatId
   // NUR wenn replyText erfolgreich generiert wurde!
-  // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert und die Extension nicht neu lädt
-  // Die Extension prüft, ob sich der chatId ändert, und lädt dann neu
-  const responseChatId = chatId || finalChatId || "00000000";
+  // WICHTIG: Verwende IMMER den chatId aus siteInfos.chatId (falls vorhanden), da das der chatId ist, den die Extension auf der Seite sieht
+  // Das verhindert, dass die Extension die Seite neu lädt, wenn sich der chatId ändert
+  // PRIORITÄT: siteInfos.chatId > chatId aus Request > finalChatId (extrahiert) > Default
+  const responseChatId = req.body?.siteInfos?.chatId || chatId || finalChatId || "00000000";
   
   console.log("=== Response ChatId ===");
   console.log("chatId aus Request:", chatId || "(nicht gesendet)");
   console.log("finalChatId (extrahiert):", finalChatId);
   console.log("responseChatId (verwendet):", responseChatId);
+  
+  // WICHTIG: Variable Wartezeit zwischen 40-60 Sekunden für alle Plattformen (FPC, iluvo, viluu)
+  // Das verhindert, dass die Seite neu lädt, bevor die Nachricht abgeschickt wird
+  const minWait = 40;
+  const maxWait = 60;
+  const waitTime = Math.floor(Math.random() * (maxWait - minWait + 1)) + minWait;
   
   return res.json({
     resText: replyText, // Extension erwartet resText statt replyText
@@ -991,12 +1015,14 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
     chatId: responseChatId, // WICHTIG: chatId aus Request (damit er sich nicht ändert), sonst finalChatId oder Default
     actions: [
       {
-        type: "insert_and_send"
+        type: "insert_and_send",
+        delay: waitTime // Wartezeit in Sekunden (40-60 Sekunden variabel)
       }
     ],
     assets: assetsToSend || [],
     flags: { blocked: false }, // WICHTIG: Immer false, damit Extension nicht neu lädt
-    disableAutoSend: false
+    disableAutoSend: false,
+    waitTime: waitTime // Zusätzliches Flag für Rückwärtskompatibilität
   });
   } catch (err) {
     console.error("❌ FEHLER IM ROUTE-HANDLER (vor asyncHandler):", err);
