@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "dev": "node src/app.js",
-    "start": "node src/app.js",
+    "start": "node ./src/app.js",
     "lint": "echo \"No linter configured\""
   },
   "dependencies": {
@@ -19,4 +19,5 @@
     "pg": "^8.12.0"
   }
 }
+
 
