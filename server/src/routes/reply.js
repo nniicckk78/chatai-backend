@@ -140,6 +140,21 @@ const asyncHandler = (fn) => (req, res, next) => {
 };
 
 router.post("/", asyncHandler(async (req, res, next) => {
+  // WICHTIG: Stelle sicher, dass req.body immer definiert ist
+  if (!req.body || typeof req.body !== 'object') {
+    console.error("❌ FEHLER: req.body ist nicht definiert oder kein Objekt!");
+    console.error("❌ req.body:", req.body);
+    return res.status(400).json({
+      error: "❌ FEHLER: Request-Body ist ungültig",
+      resText: "❌ FEHLER: Request-Body ist ungültig",
+      replyText: "❌ FEHLER: Request-Body ist ungültig",
+      summary: {},
+      chatId: "00000000",
+      actions: [],
+      flags: { blocked: true, reason: "invalid_body", isError: true, showError: true }
+    });
+  }
+  
   // Logge die Größe des Request-Body, um zu sehen, was die Extension sendet
   const bodySize = JSON.stringify(req.body).length;
   console.log("=== ChatCompletion Request (SIZE CHECK) ===");
