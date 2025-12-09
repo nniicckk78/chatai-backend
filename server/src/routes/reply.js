@@ -393,12 +393,14 @@ router.post("/", async (req, res) => {
   // Prüfe auf Minderjährige und strafrechtliche Themen
   if (isMinorMention(foundMessageText)) {
     console.error("🚨 BLOCKIERT: Minderjährige oder strafrechtliche Themen erkannt!");
+    // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
+    const safeChatId = chatId || finalChatId || "00000000";
     return res.status(200).json({
       error: "🚨 WICHTIG: Minderjährige oder strafrechtliche Themen erkannt! Bitte manuell prüfen!",
       resText: "🚨 WICHTIG: Minderjährige oder strafrechtliche Themen erkannt! Bitte manuell prüfen!",
       replyText: "🚨 WICHTIG: Minderjährige oder strafrechtliche Themen erkannt! Bitte manuell prüfen!",
       summary: {},
-      chatId: finalChatId,
+      chatId: safeChatId, // chatId aus Request, damit er sich nicht ändert
       actions: [], // Keine Aktionen bei Blockierung
       flags: { 
         blocked: true, 
@@ -416,29 +418,34 @@ router.post("/", async (req, res) => {
   let errorMessage = null;
 
   // WICHTIG: Wenn messageText leer ist, geben wir eine Antwort zurück, die KEINE Reloads auslöst
-  // Die Extension lädt die Seite neu, wenn flags.blocked: true ist
+  // Die Extension lädt die Seite neu, wenn flags.blocked: true ist ODER wenn chatId sich ändert
   // Daher geben wir eine normale Antwort zurück, aber mit actions: [], damit nichts passiert
   if (!foundMessageText || foundMessageText.trim() === "") {
     console.warn("⚠️ messageText ist leer - gebe leere Antwort zurück (keine Reloads)");
+    // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
+    const safeChatId = chatId || finalChatId || "00000000";
     return res.status(200).json({
       resText: "", // Leer, keine Fehlermeldung
       replyText: "",
       summary: {},
-      chatId: finalChatId,
+      chatId: safeChatId, // Verwende den ursprünglichen chatId, damit er sich nicht ändert
       actions: [], // Keine Aktionen, damit Extension nichts macht
-      flags: { blocked: false } // NICHT blocked, damit Extension nicht neu lädt
+      flags: { blocked: false }, // NICHT blocked, damit Extension nicht neu lädt
+      disableAutoSend: true // Verhindere Auto-Send
     });
   }
   
   if (!client) {
     errorMessage = "❌ FEHLER: OpenAI Client nicht verfügbar. Bitte Admin kontaktieren.";
     console.error("❌ OpenAI Client nicht verfügbar - KEINE Fallback-Nachricht!");
+    // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
+    const safeChatId = chatId || finalChatId || "00000000";
     return res.status(200).json({
       error: errorMessage,
       resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
       replyText: errorMessage,
       summary: {},
-      chatId: finalChatId,
+      chatId: safeChatId, // chatId aus Request, damit er sich nicht ändert
       actions: [], // Keine Aktionen bei Fehler
       flags: { blocked: true, reason: "no_client", isError: true, showError: true }
     });
@@ -477,18 +484,21 @@ router.post("/", async (req, res) => {
       
       console.log("✅ ASA-Nachricht generiert:", asaMessage);
       
+      // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
+      const asaChatId = chatId || finalChatId || "00000000";
+      
       return res.json({
         resText: asaMessage,
         replyText: asaMessage,
         summary: {},
-        chatId: finalChatId,
+        chatId: asaChatId, // chatId aus Request, damit er sich nicht ändert
         actions: [
           {
             type: "insert_and_send"
           }
         ],
         assets: assetsToSend || [],
-        flags: { blocked: false },
+        flags: { blocked: false }, // WICHTIG: Immer false, damit Extension nicht neu lädt
         disableAutoSend: false
       });
     }
@@ -676,12 +686,14 @@ WICHTIG:
     if (!replyText || replyText.trim() === "") {
       errorMessage = "❌ FEHLER: Konnte keine Antwort generieren. Bitte versuche es erneut.";
       console.error("❌ Antwort ist leer - KEINE Fallback-Nachricht!");
+      // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
+      const safeChatId = chatId || finalChatId || "00000000";
       return res.status(200).json({
         error: errorMessage,
         resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
         replyText: errorMessage,
         summary: extractedInfo,
-        chatId: finalChatId,
+        chatId: safeChatId, // chatId aus Request, damit er sich nicht ändert
         actions: [], // Keine Aktionen bei Fehler
         flags: { blocked: true, reason: "empty_response", isError: true, showError: true }
       });
@@ -781,12 +793,14 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
   } catch (err) {
     errorMessage = `❌ FEHLER: Beim Generieren der Nachricht ist ein Fehler aufgetreten: ${err.message}`;
     console.error("❌ OpenAI Fehler", err.message);
+    // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert
+    const safeChatId = chatId || finalChatId || "00000000";
     return res.status(200).json({
       error: errorMessage,
       resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
       replyText: errorMessage,
       summary: extractedInfo,
-      chatId: finalChatId,
+      chatId: safeChatId, // chatId aus Request, damit er sich nicht ändert
       actions: [], // Keine Aktionen bei Fehler
       flags: { blocked: true, reason: "generation_error", isError: true, showError: true }
     });
@@ -800,19 +814,28 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
   // Format für Extension: Kompatibilität mit alter Extension
   // Die Extension erwartet: resText, summary (als Objekt), chatId
   // NUR wenn replyText erfolgreich generiert wurde!
+  // WICHTIG: Verwende den chatId aus dem Request, damit er sich nicht ändert und die Extension nicht neu lädt
+  // Die Extension prüft, ob sich der chatId ändert, und lädt dann neu
+  const responseChatId = chatId || finalChatId || "00000000";
+  
+  console.log("=== Response ChatId ===");
+  console.log("chatId aus Request:", chatId || "(nicht gesendet)");
+  console.log("finalChatId (extrahiert):", finalChatId);
+  console.log("responseChatId (verwendet):", responseChatId);
+  
   return res.json({
     resText: replyText, // Extension erwartet resText statt replyText
     replyText, // Auch für Rückwärtskompatibilität
     summary: extractedInfo, // Extension erwartet summary als Objekt
     summaryText: JSON.stringify(extractedInfo), // Für Rückwärtskompatibilität
-    chatId: finalChatId, // chatId aus Request, URL oder Default
+    chatId: responseChatId, // WICHTIG: chatId aus Request (damit er sich nicht ändert), sonst finalChatId oder Default
     actions: [
       {
         type: "insert_and_send"
       }
     ],
     assets: assetsToSend || [],
-    flags: { blocked: false },
+    flags: { blocked: false }, // WICHTIG: Immer false, damit Extension nicht neu lädt
     disableAutoSend: false
   });
 });
