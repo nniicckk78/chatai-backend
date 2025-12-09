@@ -170,6 +170,8 @@ router.post("/", async (req, res) => {
 
   // WICHTIG: Prüfe auch andere mögliche Feldnamen für messageText
   // Die Extension könnte die Nachricht unter einem anderen Namen senden
+  // WICHTIG: Die letzte Nachricht ist IMMER vom KUNDEN (unten im Chat)
+  // Wenn die letzte Nachricht vom FAKE ist, müssen wir eine ASA-Nachricht schreiben
   const possibleMessageFields = ['messageText', 'message', 'text', 'content', 'message_content', 'lastMessage', 'last_message', 'userMessage', 'user_message'];
   let foundMessageText = messageText || possibleMessageFromBody;
   for (const field of possibleMessageFields) {
@@ -185,6 +187,31 @@ router.post("/", async (req, res) => {
     if (userProfile.message) foundMessageText = userProfile.message;
     if (userProfile.lastMessage) foundMessageText = userProfile.lastMessage;
   }
+  
+  // Prüfe, ob die letzte Nachricht vom FAKE/Moderator kommt (ASA-Fall)
+  // Die Extension sollte das als Flag senden, aber wir prüfen auch im Text
+  let isLastMessageFromFake = false;
+  if (req.body.lastMessageFromFake !== undefined) {
+    isLastMessageFromFake = Boolean(req.body.lastMessageFromFake);
+    console.log("✅ ASA-Flag von Extension erhalten: lastMessageFromFake =", isLastMessageFromFake);
+  } else if (req.body.isASA !== undefined) {
+    isLastMessageFromFake = Boolean(req.body.isASA);
+    console.log("✅ ASA-Flag von Extension erhalten: isASA =", isLastMessageFromFake);
+  } else if (req.body.asa !== undefined) {
+    isLastMessageFromFake = Boolean(req.body.asa);
+    console.log("✅ ASA-Flag von Extension erhalten: asa =", isLastMessageFromFake);
+  } else {
+    // Fallback: Wenn messageText leer ist, könnte es ein ASA-Fall sein
+    // Aber nur wenn die Extension explizit signalisiert, dass es eine letzte Nachricht gibt
+    // (z.B. durch ein leeres messageText aber vorhandenes lastMessageFromFake Flag)
+    // Für jetzt: Wenn messageText leer ist UND es gibt keine Nachricht, dann könnte es ASA sein
+    // ABER: Wir müssen vorsichtig sein, da leeres messageText auch andere Gründe haben kann
+    console.log("⚠️ Kein ASA-Flag von Extension - prüfe auf andere Indikatoren...");
+  }
+  
+  console.log("=== Nachrichten-Analyse ===");
+  console.log("foundMessageText:", foundMessageText ? foundMessageText.substring(0, 100) + "..." : "(leer)");
+  console.log("isLastMessageFromFake (ASA-Fall):", isLastMessageFromFake);
 
   // Logging für Debugging
   console.log("=== ChatCompletion Request (Parsed) ===");
@@ -373,7 +400,54 @@ router.post("/", async (req, res) => {
 
   // Versuche Nachricht zu generieren
   try {
-    // 1. Informationen extrahieren
+    // Prüfe ASA-Fall: Wenn die letzte Nachricht vom FAKE kommt, schreibe eine Reaktivierungsnachricht
+    // WICHTIG: Nur wenn explizit signalisiert, sonst könnte es andere Gründe geben
+    if (isLastMessageFromFake) {
+      console.log("🔄 ASA-Fall erkannt: Letzte Nachricht vom Fake, generiere Reaktivierungsnachricht...");
+      
+      // Verschiedene ASA-Nachrichten für Abwechslung
+      const asaTemplates = [
+        "Hey, lange nichts mehr von dir gehört, wo steckst du denn so lange? Hast du kein Interesse mehr an mir?",
+        "Hallo, ich habe schon eine Weile nichts mehr von dir gehört. Ist alles okay bei dir?",
+        "Hey, wo bist du denn geblieben? Ich dachte schon, du hättest das Interesse verloren.",
+        "Hallo, ich vermisse unsere Unterhaltung. Schreibst du mir nicht mehr?",
+        "Hey, ist etwas passiert? Ich habe schon länger nichts mehr von dir gehört.",
+        "Hallo, ich warte schon auf deine Antwort. Hast du keine Zeit mehr zum Schreiben?",
+        "Hey, wo steckst du denn? Ich dachte, wir hätten eine gute Verbindung.",
+        "Hallo, ich hoffe, es geht dir gut. Ich würde gerne wieder von dir hören."
+      ];
+      
+      // Wähle zufällig eine ASA-Nachricht
+      const randomASA = asaTemplates[Math.floor(Math.random() * asaTemplates.length)];
+      
+      // Entferne Anführungszeichen am Anfang/Ende falls vorhanden
+      let asaMessage = randomASA.trim();
+      if (asaMessage.startsWith('"') && asaMessage.endsWith('"')) {
+        asaMessage = asaMessage.slice(1, -1);
+      }
+      if (asaMessage.startsWith("'") && asaMessage.endsWith("'")) {
+        asaMessage = asaMessage.slice(1, -1);
+      }
+      
+      console.log("✅ ASA-Nachricht generiert:", asaMessage);
+      
+      return res.json({
+        resText: asaMessage,
+        replyText: asaMessage,
+        summary: {},
+        chatId: finalChatId,
+        actions: [
+          {
+            type: "insert_and_send"
+          }
+        ],
+        assets: assetsToSend || [],
+        flags: { blocked: false },
+        disableAutoSend: false
+      });
+    }
+    
+    // 1. Informationen extrahieren (nur wenn Nachricht vom Kunden vorhanden)
     extractedInfo = await extractInfoFromMessage(client, foundMessageText);
     
     // 2. Antwort generieren
@@ -551,6 +625,22 @@ WICHTIG:
         actions: [], // Keine Aktionen bei Fehler
         flags: { blocked: true, reason: "empty_response", isError: true, showError: true }
       });
+    }
+    
+    // WICHTIG: Entferne Anführungszeichen am Anfang/Ende (falls vorhanden)
+    replyText = replyText.trim();
+    if (replyText.startsWith('"') && replyText.endsWith('"')) {
+      replyText = replyText.slice(1, -1).trim();
+    }
+    if (replyText.startsWith("'") && replyText.endsWith("'")) {
+      replyText = replyText.slice(1, -1).trim();
+    }
+    // Entferne auch Anführungszeichen am Anfang, wenn sie alleine stehen
+    if (replyText.startsWith('"') && !replyText.endsWith('"')) {
+      replyText = replyText.replace(/^"/, '').trim();
+    }
+    if (replyText.startsWith("'") && !replyText.endsWith("'")) {
+      replyText = replyText.replace(/^'/, '').trim();
     }
     
     // Entferne Bindestriche (falls vorhanden)
