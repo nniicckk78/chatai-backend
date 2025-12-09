@@ -4,8 +4,12 @@ const { verifyToken } = require("../auth");
 
 const router = express.Router();
 
+// Wenn SKIP_AUTH=true gesetzt ist, Auth überspringen (nur für Tests!)
+const SKIP_AUTH = process.env.SKIP_AUTH === "true";
+
 // simple JWT middleware
 router.use((req, res, next) => {
+  if (SKIP_AUTH) return next();
   const auth = req.headers.authorization;
   if (!auth || !auth.toLowerCase().startsWith("bearer ")) {
     return res.status(401).json({ error: "Kein Token" });
@@ -870,3 +874,4 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
 });
 
 module.exports = router;
+
