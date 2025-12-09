@@ -650,7 +650,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
           noReload: true, // Explizites Flag: Nicht neu laden
           skipReload: true // Zusätzliches Flag für Rückwärtskompatibilität
         },
-        disableAutoSend: false,
+        disableAutoSend: true, // WICHTIG: Verhindere automatisches Senden durch Extension - unsere Funktion übernimmt die Kontrolle
         waitTime: asaWaitTime, // Zusätzliches Flag für Rückwärtskompatibilität
         noReload: true // Explizites Flag auf oberster Ebene
       });
@@ -1035,7 +1035,7 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
       noReload: true, // Explizites Flag: Nicht neu laden
       skipReload: true // Zusätzliches Flag für Rückwärtskompatibilität
     },
-    disableAutoSend: false,
+    disableAutoSend: true, // WICHTIG: Verhindere automatisches Senden durch Extension - unsere Funktion übernimmt die Kontrolle
     waitTime: waitTime, // Zusätzliches Flag für Rückwärtskompatibilität
     noReload: true // Explizites Flag auf oberster Ebene
   });
