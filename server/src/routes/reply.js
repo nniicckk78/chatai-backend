@@ -252,22 +252,16 @@ router.post("/", async (req, res) => {
   }
   
   // FINAL FALLBACK: Wenn wirklich kein chatId gefunden wurde
-  // Das alte Backend hat wahrscheinlich einfach einen generischen Wert zurückgegeben
-  // oder null, und die Extension hat trotzdem funktioniert
-  // 
-  // WICHTIG: Die Extension findet den chatId auf der Seite, aber sendet ihn nicht.
-  // Da wir den chatId nicht kennen, können wir nur raten oder einen generischen Wert zurückgeben.
-  // 
-  // Versuche: Gib einen generischen Wert zurück, der die Extension nicht blockiert
-  // Oder: Gib null zurück und hoffe, dass die Extension trotzdem funktioniert
+  // WICHTIG: Die Extension prüft alle 2 Sekunden, ob sich die Chat-ID ändert
+  // Wenn chatId null ist, könnte die Extension die Seite neu laden
+  // Daher geben wir einen generischen Wert zurück, um Reloads zu vermeiden
   if (!finalChatId) {
-    // Option 1: Generischer Wert (wird wahrscheinlich nicht funktionieren, weil Extension prüft)
-    // finalChatId = "00000000";
+    // Verwende einen generischen Wert, um Reloads zu vermeiden
+    // Die Extension findet den chatId auf der Seite, aber sendet ihn nicht
+    // Daher können wir nur einen generischen Wert zurückgeben
+    finalChatId = "00000000";
     
-    // Option 2: null zurückgeben (Extension blockiert, aber vielleicht hat altes Backend so funktioniert?)
-    finalChatId = null;
-    
-    console.warn("⚠️ Kein chatId gefunden - gebe null zurück.");
+    console.warn("⚠️ Kein chatId gefunden - verwende generischen Wert '00000000' um Reloads zu vermeiden.");
     console.warn("⚠️ Falls die Extension blockiert, muss sie angepasst werden, um chatId im Request zu senden.");
   }
 
