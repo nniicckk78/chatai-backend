@@ -600,14 +600,16 @@ router.post("/", asyncHandler(async (req, res, next) => {
       // Wähle zufällig eine ASA-Nachricht
       const randomASA = asaTemplates[Math.floor(Math.random() * asaTemplates.length)];
       
-      // Entferne Anführungszeichen am Anfang/Ende falls vorhanden
+      // Entferne Anführungszeichen und Bindestriche auch bei ASA-Nachrichten
       let asaMessage = randomASA.trim();
       if (asaMessage.startsWith('"') && asaMessage.endsWith('"')) {
-        asaMessage = asaMessage.slice(1, -1);
+        asaMessage = asaMessage.slice(1, -1).trim();
       }
       if (asaMessage.startsWith("'") && asaMessage.endsWith("'")) {
-        asaMessage = asaMessage.slice(1, -1);
+        asaMessage = asaMessage.slice(1, -1).trim();
       }
+      // Entferne ALLE Anführungszeichen und Bindestriche
+      asaMessage = asaMessage.replace(/"/g, "").replace(/'/g, "").replace(/-/g, " ");
       
       console.log("✅ ASA-Nachricht generiert:", asaMessage);
       
@@ -824,8 +826,9 @@ WICHTIG:
       });
     }
     
-    // WICHTIG: Entferne Anführungszeichen am Anfang/Ende (falls vorhanden)
+    // WICHTIG: Entferne ALLE Anführungszeichen (am Anfang, Ende und in der Mitte)
     replyText = replyText.trim();
+    // Entferne Anführungszeichen am Anfang/Ende
     if (replyText.startsWith('"') && replyText.endsWith('"')) {
       replyText = replyText.slice(1, -1).trim();
     }
@@ -833,21 +836,30 @@ WICHTIG:
       replyText = replyText.slice(1, -1).trim();
     }
     // Entferne auch Anführungszeichen am Anfang, wenn sie alleine stehen
-    if (replyText.startsWith('"') && !replyText.endsWith('"')) {
+    if (replyText.startsWith('"')) {
       replyText = replyText.replace(/^"/, '').trim();
     }
-    if (replyText.startsWith("'") && !replyText.endsWith("'")) {
+    if (replyText.startsWith("'")) {
       replyText = replyText.replace(/^'/, '').trim();
     }
+    // Entferne auch Anführungszeichen am Ende, wenn sie alleine stehen
+    if (replyText.endsWith('"')) {
+      replyText = replyText.slice(0, -1).trim();
+    }
+    if (replyText.endsWith("'")) {
+      replyText = replyText.slice(0, -1).trim();
+    }
+    // Entferne ALLE Anführungszeichen in der Mitte (falls vorhanden)
+    replyText = replyText.replace(/"/g, "").replace(/'/g, "");
     
-    // Entferne Bindestriche (falls vorhanden)
+    // WICHTIG: Entferne ALLE Bindestriche (auch in der Mitte)
     replyText = replyText.replace(/-/g, " ");
     
     // Prüfe Mindestlänge (80 Zeichen)
     if (replyText.length < 80) {
       console.warn(`⚠️ Antwort zu kurz (${replyText.length} Zeichen), versuche zu verlängern...`);
       // Versuche Antwort zu verlängern, falls zu kurz
-      const extensionPrompt = `Die folgende Antwort ist zu kurz. Erweitere sie auf mindestens 80 Zeichen, füge eine Frage am Ende hinzu und mache sie natürlicher:
+      const extensionPrompt = `Die folgende Antwort ist zu kurz. Erweitere sie auf mindestens 80 Zeichen, füge eine Frage am Ende hinzu und mache sie natürlicher. WICHTIG: Verwende KEINE Bindestriche (-) und KEINE Anführungszeichen (" oder ') in der Antwort!
 
 "${replyText}"
 
@@ -866,7 +878,16 @@ Antworte NUR mit der erweiterten Version, keine Erklärungen.`;
         
         const extendedText = extended.choices?.[0]?.message?.content?.trim();
         if (extendedText && extendedText.length >= 80) {
-          replyText = extendedText.replace(/-/g, " ");
+          // Entferne Anführungszeichen und Bindestriche auch bei erweiterten Antworten
+          let cleanedExtended = extendedText.trim();
+          if (cleanedExtended.startsWith('"') && cleanedExtended.endsWith('"')) {
+            cleanedExtended = cleanedExtended.slice(1, -1).trim();
+          }
+          if (cleanedExtended.startsWith("'") && cleanedExtended.endsWith("'")) {
+            cleanedExtended = cleanedExtended.slice(1, -1).trim();
+          }
+          cleanedExtended = cleanedExtended.replace(/"/g, "").replace(/'/g, "").replace(/-/g, " ");
+          replyText = cleanedExtended;
           console.log("✅ Antwort auf 80+ Zeichen erweitert");
         }
       } catch (err) {
@@ -883,7 +904,7 @@ Antworte NUR mit der erweiterten Version, keine Erklärungen.`;
     
     if (!hasQuestion) {
       console.warn("⚠️ Keine Frage am Ende, füge eine hinzu...");
-      const questionPrompt = `Die folgende Nachricht endet ohne Frage. Füge am Ende eine passende, natürliche Frage zum Kontext hinzu:
+      const questionPrompt = `Die folgende Nachricht endet ohne Frage. Füge am Ende eine passende, natürliche Frage zum Kontext hinzu. WICHTIG: Verwende KEINE Bindestriche (-) und KEINE Anführungszeichen (" oder ') in der Antwort!
 
 "${replyText}"
 
@@ -902,7 +923,16 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
         
         const questionText = withQuestion.choices?.[0]?.message?.content?.trim();
         if (questionText) {
-          replyText = questionText.replace(/-/g, " ");
+          // Entferne Anführungszeichen und Bindestriche auch bei Fragen
+          let cleanedQuestion = questionText.trim();
+          if (cleanedQuestion.startsWith('"') && cleanedQuestion.endsWith('"')) {
+            cleanedQuestion = cleanedQuestion.slice(1, -1).trim();
+          }
+          if (cleanedQuestion.startsWith("'") && cleanedQuestion.endsWith("'")) {
+            cleanedQuestion = cleanedQuestion.slice(1, -1).trim();
+          }
+          cleanedQuestion = cleanedQuestion.replace(/"/g, "").replace(/'/g, "").replace(/-/g, " ");
+          replyText = cleanedQuestion;
           console.log("✅ Frage am Ende hinzugefügt");
         }
       } catch (err) {
@@ -917,7 +947,14 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
     console.log("✅ Antwort generiert:", replyText.substring(0, 100));
   } catch (err) {
     errorMessage = `❌ FEHLER: Beim Generieren der Nachricht ist ein Fehler aufgetreten: ${err.message}`;
-    console.error("❌ OpenAI Fehler", err.message);
+    console.error("❌ OpenAI Fehler:", err.message);
+    console.error("❌ OpenAI Fehler Stack:", err.stack);
+    console.error("❌ OpenAI Fehler Details:", JSON.stringify(err, Object.getOwnPropertyNames(err)));
+    // Prüfe, ob der Fehler mit chatId zu tun hat
+    if (err.message && err.message.includes("chat ID") || err.message && err.message.includes("chatId")) {
+      console.error("⚠️ WARNUNG: Fehler scheint mit chatId zusammenzuhängen, aber wir übergeben keinen chatId an OpenAI!");
+      console.error("⚠️ finalChatId:", finalChatId);
+    }
     return res.status(200).json({
       error: errorMessage,
       resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
