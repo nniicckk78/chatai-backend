@@ -251,7 +251,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
   // WICHTIG: Die letzte Nachricht ist IMMER vom KUNDEN (unten im Chat)
   // Wenn die letzte Nachricht vom FAKE ist, müssen wir eine ASA-Nachricht schreiben
   // WICHTIG: Wir müssen die RICHTIGE letzte Nachricht vom KUNDEN finden, nicht irgendeine Nachricht!
-  const possibleMessageFields = ['messageText', 'message', 'text', 'content', 'message_content', 'lastMessage', 'last_message', 'userMessage', 'user_message', 'lastUserMessage', 'lastCustomerMessage'];
+    const possibleMessageFields = ['messageText', 'message', 'text', 'content', 'message_content', 'lastMessage', 'last_message', 'userMessage', 'user_message', 'lastUserMessage', 'lastCustomerMessage', 'reason'];
   let foundMessageText = messageText || possibleMessageFromBody;
   
   // PRIORITÄT: messageText sollte die letzte Nachricht vom Kunden sein
@@ -260,14 +260,37 @@ router.post("/", asyncHandler(async (req, res, next) => {
     foundMessageText = messageText;
     console.log("✅ messageText direkt verwendet:", foundMessageText.substring(0, 100) + "...");
   } else {
-    // Nur wenn messageText leer ist, suche nach anderen Feldern
-    for (const field of possibleMessageFields) {
+       for (const field of possibleMessageFields) {
       if (req.body[field] && typeof req.body[field] === 'string' && req.body[field].trim() !== "" && !foundMessageText) {
-        foundMessageText = req.body[field];
-        console.log(`✅ messageText gefunden unter Feldname '${field}':`, foundMessageText.substring(0, 100) + "...");
+        let extractedText = req.body[field];
+        
+        // WICHTIG: Wenn es das 'reason'-Feld ist, könnte es einen Präfix haben (z.B. "not_matching_chat_id")
+        // Versuche, die eigentliche Nachricht zu extrahieren
+        if (field === 'reason') {
+          // Entferne häufige Präfixe aus reason
+          const prefixes = ['not_matching_chat_id', 'chat_id_mismatch', 'error_'];
+          for (const prefix of prefixes) {
+            if (extractedText.toLowerCase().startsWith(prefix.toLowerCase())) {
+              extractedText = extractedText.substring(prefix.length);
+              console.log(`✅ Präfix '${prefix}' aus reason entfernt`);
+              break;
+            }
+          }
+          // Wenn reason mit einem Timestamp oder anderen Muster beginnt, versuche die Nachricht zu finden
+          // Suche nach dem ersten Wort, das wie eine echte Nachricht aussieht (nicht nur Zahlen/Zeichen)
+          const textMatch = extractedText.match(/[a-zA-ZäöüÄÖÜß]{3,}.*/);
+          if (textMatch) {
+            extractedText = textMatch[0];
+            console.log("✅ Nachricht aus reason extrahiert:", extractedText.substring(0, 100) + "...");
+          }
+        }
+        
+        if (extractedText && extractedText.trim() !== "") {
+          foundMessageText = extractedText.trim();
+          console.log(`✅ messageText gefunden unter Feldname '${field}':`, foundMessageText.substring(0, 100) + "...");
+        }
       }
     }
-  }
   
   // Prüfe auch in userProfile oder anderen verschachtelten Objekten (nur wenn noch nichts gefunden)
   if ((!foundMessageText || foundMessageText.trim() === "") && userProfile && typeof userProfile === 'object') {
@@ -958,3 +981,4 @@ router.use((err, req, res, next) => {
 });
 
 module.exports = router;
+
