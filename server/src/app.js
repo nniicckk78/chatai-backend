@@ -7,13 +7,22 @@ const authRoutes = require("./routes/auth");
 const replyRoutes = require("./routes/reply");
 
 const app = express();
-app.use(cors());
-// WICHTIG: Limit erhöht, da Extension möglicherweise große Daten sendet (Chat-Historie, Bilder, etc.)
+
+// Explizite CORS-Settings für Browser-Fetches
+const corsOptions = {
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS", "HEAD"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  optionsSuccessStatus: 204
+};
+app.use(cors(corsOptions));
+app.options("*", cors(corsOptions));
+
+// Body-Limit angehoben (große Chat-Historien/Assets)
 app.use(express.json({ limit: "10mb" }));
 
 app.get("/health", (_req, res) => res.json({ ok: true }));
 app.post("/status", (req, res) => {
-  // Logging endpoint für Extension-Status-Updates
   console.log("Status update:", req.body);
   res.json({ ok: true, received: true });
 });
