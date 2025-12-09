@@ -260,42 +260,69 @@ router.post("/", async (req, res) => {
   }
 
   const client = getClient();
-  let replyText = "Hi, ich antworte gleich freundlich und knapp.";
+  let replyText = null;
   let extractedInfo = { user: {}, assistant: {} };
+  let errorMessage = null;
 
+  // KEINE Fallback-Nachrichten! Nur generierte Nachrichten oder Fehler
   if (!messageText || messageText.trim() === "") {
-    console.warn("⚠️ messageText ist leer - verwende Fallback-Text");
-    replyText = "Hallo! Wie kann ich dir helfen?";
-  } else if (client) {
-    try {
-      // 1. Informationen extrahieren
-      extractedInfo = await extractInfoFromMessage(client, messageText);
-      
-      // 2. Antwort generieren
-      const systemPrompt = `Du bist ein freundlicher, natürlicher Chat-Moderator auf einer Dating-Plattform. 
+    errorMessage = "Fehler: Keine Nachricht erhalten. Bitte versuche es erneut.";
+    console.error("❌ messageText ist leer - KEINE Fallback-Nachricht!");
+    return res.status(400).json({
+      error: errorMessage,
+      resText: null,
+      replyText: null,
+      summary: {},
+      chatId: finalChatId,
+      actions: [],
+      flags: { blocked: true, reason: "no_message" }
+    });
+  }
+  
+  if (!client) {
+    errorMessage = "Fehler: OpenAI Client nicht verfügbar. Bitte Admin kontaktieren.";
+    console.error("❌ OpenAI Client nicht verfügbar - KEINE Fallback-Nachricht!");
+    return res.status(503).json({
+      error: errorMessage,
+      resText: null,
+      replyText: null,
+      summary: {},
+      chatId: finalChatId,
+      actions: [],
+      flags: { blocked: true, reason: "no_client" }
+    });
+  }
+
+  // Versuche Nachricht zu generieren
+  try {
+    // 1. Informationen extrahieren
+    extractedInfo = await extractInfoFromMessage(client, messageText);
+    
+    // 2. Antwort generieren
+    const systemPrompt = `Du bist ein freundlicher, natürlicher Chat-Moderator auf einer Dating-Plattform. 
 - Antworte natürlich, flirty und interessiert, aber nicht übertrieben
 - Sei konkret und persönlich, nicht generisch
 - Reagiere auf das, was der Gesprächspartner sagt
 - Keine Fotos/Nummern anfordern, keine Off-Plattform-Kontakte
 - Schreibe kurz (1-2 Sätze), aber mit Persönlichkeit
 - Verwende keine generischen Phrasen wie "Wie kann ich dir helfen?" oder "Hallo!"`;
-      
-      // Baue Kontext für bessere Antworten
-      const contextInfo = [];
-      if (userProfile && typeof userProfile === 'object') {
-        if (userProfile.name) contextInfo.push(`Name: ${userProfile.name}`);
-        if (userProfile.age) contextInfo.push(`Alter: ${userProfile.age}`);
-        if (userProfile.location) contextInfo.push(`Ort: ${userProfile.location}`);
-      }
-      
-      const extractedContext = [];
-      if (extractedInfo.user && Object.keys(extractedInfo.user).length > 0) {
-        Object.entries(extractedInfo.user).forEach(([key, value]) => {
-          if (value) extractedContext.push(`${key}: ${value}`);
-        });
-      }
-      
-      const userPrompt = `Aktuelle Nachricht vom Gesprächspartner: "${messageText}"
+    
+    // Baue Kontext für bessere Antworten
+    const contextInfo = [];
+    if (userProfile && typeof userProfile === 'object') {
+      if (userProfile.name) contextInfo.push(`Name: ${userProfile.name}`);
+      if (userProfile.age) contextInfo.push(`Alter: ${userProfile.age}`);
+      if (userProfile.location) contextInfo.push(`Ort: ${userProfile.location}`);
+    }
+    
+    const extractedContext = [];
+    if (extractedInfo.user && Object.keys(extractedInfo.user).length > 0) {
+      Object.entries(extractedInfo.user).forEach(([key, value]) => {
+        if (value) extractedContext.push(`${key}: ${value}`);
+      });
+    }
+    
+    const userPrompt = `Aktuelle Nachricht vom Gesprächspartner: "${messageText}"
 
 ${contextInfo.length > 0 ? `Bekannte Infos über den Gesprächspartner:\n${contextInfo.join('\n')}\n` : ''}
 ${extractedContext.length > 0 ? `Neu extrahierte Infos:\n${extractedContext.join('\n')}\n` : ''}
@@ -303,31 +330,56 @@ Plattform: ${platformId || "viluu"}
 
 Antworte natürlich und persönlich auf die Nachricht. Sei nicht generisch!`;
 
-      const chat = await client.chat.completions.create({
-        model: "gpt-4o-mini",
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: userPrompt }
-        ],
-        max_tokens: 200, // Mehr Tokens für natürlichere, längere Antworten
-        temperature: 0.8 // Etwas kreativer für natürlichere Antworten
+    const chat = await client.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: userPrompt }
+      ],
+      max_tokens: 200, // Mehr Tokens für natürlichere, längere Antworten
+      temperature: 0.8 // Etwas kreativer für natürlichere Antworten
+    });
+    
+    replyText = chat.choices?.[0]?.message?.content?.trim();
+    
+    // WICHTIG: Prüfe, ob eine gültige Antwort generiert wurde
+    if (!replyText || replyText.trim() === "") {
+      errorMessage = "Fehler: Konnte keine Antwort generieren. Bitte versuche es erneut.";
+      console.error("❌ Antwort ist leer - KEINE Fallback-Nachricht!");
+      return res.status(500).json({
+        error: errorMessage,
+        resText: null,
+        replyText: null,
+        summary: extractedInfo,
+        chatId: finalChatId,
+        actions: [],
+        flags: { blocked: true, reason: "empty_response" }
       });
-      replyText = chat.choices?.[0]?.message?.content?.trim() || replyText;
-      console.log("✅ Antwort generiert:", replyText.substring(0, 100));
-    } catch (err) {
-      console.error("❌ OpenAI Fehler", err.message);
-      // fallback bleibt replyText
     }
-  } else {
-    console.warn("⚠️ OpenAI Client nicht verfügbar - verwende Fallback-Text");
+    
+    console.log("✅ Antwort generiert:", replyText.substring(0, 100));
+  } catch (err) {
+    errorMessage = `Fehler beim Generieren der Nachricht: ${err.message}`;
+    console.error("❌ OpenAI Fehler", err.message);
+    return res.status(500).json({
+      error: errorMessage,
+      resText: null,
+      replyText: null,
+      summary: extractedInfo,
+      chatId: finalChatId,
+      actions: [],
+      flags: { blocked: true, reason: "generation_error" }
+    });
   }
 
+  // Wenn wir hier ankommen, wurde replyText erfolgreich generiert
   console.log("=== ChatCompletion Response ===");
   console.log("resText:", replyText.substring(0, 100));
   console.log("summary keys:", Object.keys(extractedInfo.user || {}).length, "user,", Object.keys(extractedInfo.assistant || {}).length, "assistant");
 
   // Format für Extension: Kompatibilität mit alter Extension
   // Die Extension erwartet: resText, summary (als Objekt), chatId
+  // NUR wenn replyText erfolgreich generiert wurde!
   return res.json({
     resText: replyText, // Extension erwartet resText statt replyText
     replyText, // Auch für Rückwärtskompatibilität
@@ -346,3 +398,4 @@ Antworte natürlich und persönlich auf die Nachricht. Sei nicht generisch!`;
 });
 
 module.exports = router;
+
