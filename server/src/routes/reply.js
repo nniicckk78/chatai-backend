@@ -140,8 +140,12 @@ const asyncHandler = (fn) => (req, res, next) => {
 };
 
 router.post("/", asyncHandler(async (req, res, next) => {
-  // WICHTIG: Stelle sicher, dass req.body immer definiert ist
-  if (!req.body || typeof req.body !== 'object') {
+  try {
+    console.log("✅ Route-Handler gestartet");
+    console.log("✅ SKIP_AUTH:", SKIP_AUTH);
+    
+    // WICHTIG: Stelle sicher, dass req.body immer definiert ist
+    if (!req.body || typeof req.body !== 'object') {
     console.error("❌ FEHLER: req.body ist nicht definiert oder kein Objekt!");
     console.error("❌ req.body:", req.body);
     return res.status(400).json({
@@ -199,7 +203,8 @@ router.post("/", asyncHandler(async (req, res, next) => {
   // WICHTIG: Extrahiere ALLE möglichen Felder, die die Extension senden könnte
   // Die Extension könnte den chatId oder die Nachricht in verschiedenen Formaten senden
   // Die alte Extension hat wahrscheinlich bereits alles richtig erkannt - wir müssen nur die Felder richtig lesen
-  const { 
+  // WICHTIG: pageUrl und platformId müssen als let deklariert werden, da sie später neu zugewiesen werden können
+  let { 
     messageText = "", 
     pageUrl, 
     platformId, 
@@ -930,6 +935,11 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
     flags: { blocked: false }, // WICHTIG: Immer false, damit Extension nicht neu lädt
     disableAutoSend: false
   });
+  } catch (err) {
+    console.error("❌ FEHLER IM ROUTE-HANDLER (vor asyncHandler):", err);
+    console.error("❌ Stack:", err.stack);
+    throw err; // Weiterleiten an asyncHandler
+  }
 }));
 
 // Express Error-Handler für alle unerwarteten Fehler
