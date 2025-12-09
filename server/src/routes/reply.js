@@ -251,7 +251,8 @@ router.post("/", asyncHandler(async (req, res, next) => {
   // WICHTIG: Die letzte Nachricht ist IMMER vom KUNDEN (unten im Chat)
   // Wenn die letzte Nachricht vom FAKE ist, müssen wir eine ASA-Nachricht schreiben
   // WICHTIG: Wir müssen die RICHTIGE letzte Nachricht vom KUNDEN finden, nicht irgendeine Nachricht!
-    const possibleMessageFields = ['messageText', 'message', 'text', 'content', 'message_content', 'lastMessage', 'last_message', 'userMessage', 'user_message', 'lastUserMessage', 'lastCustomerMessage', 'reason'];
+  // WICHTIG: Bei iluvo wird die Nachricht manchmal im 'reason'-Feld gesendet (z.B. "not_matching_chat_idNachricht...")
+  const possibleMessageFields = ['messageText', 'message', 'text', 'content', 'message_content', 'lastMessage', 'last_message', 'userMessage', 'user_message', 'lastUserMessage', 'lastCustomerMessage', 'reason'];
   let foundMessageText = messageText || possibleMessageFromBody;
   
   // PRIORITÄT: messageText sollte die letzte Nachricht vom Kunden sein
@@ -260,7 +261,8 @@ router.post("/", asyncHandler(async (req, res, next) => {
     foundMessageText = messageText;
     console.log("✅ messageText direkt verwendet:", foundMessageText.substring(0, 100) + "...");
   } else {
-       for (const field of possibleMessageFields) {
+    // Nur wenn messageText leer ist, suche nach anderen Feldern
+    for (const field of possibleMessageFields) {
       if (req.body[field] && typeof req.body[field] === 'string' && req.body[field].trim() !== "" && !foundMessageText) {
         let extractedText = req.body[field];
         
@@ -291,6 +293,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
         }
       }
     }
+  }
   
   // Prüfe auch in userProfile oder anderen verschachtelten Objekten (nur wenn noch nichts gefunden)
   if ((!foundMessageText || foundMessageText.trim() === "") && userProfile && typeof userProfile === 'object') {
@@ -981,4 +984,3 @@ router.use((err, req, res, next) => {
 });
 
 module.exports = router;
-
