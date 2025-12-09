@@ -23,11 +23,16 @@ app.use("/api/v1/reply", replyRoutes);
 app.use("/chatcompletion", replyRoutes); // Kompatibilität mit alter Extension
 
 const PORT = process.env.PORT || 3000;
+const hasDatabase = Boolean(process.env.DATABASE_URL);
 
 async function start() {
   try {
-    await runMigrations();
-    await ensureAdminSeed();
+    if (hasDatabase) {
+      await runMigrations();
+      await ensureAdminSeed();
+    } else {
+      console.warn("Starte ohne Datenbank (DATABASE_URL fehlt). Auth/Seed werden übersprungen.");
+    }
     app.listen(PORT, () => console.log(`API läuft auf Port ${PORT}`));
   } catch (err) {
     console.error("Startfehler", err);
