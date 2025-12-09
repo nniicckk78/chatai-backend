@@ -116,9 +116,28 @@ router.post("/", async (req, res) => {
   
   const { messageText = "", pageUrl, platformId, assetsToSend, userProfile, chatId } = req.body || {};
 
+  // WICHTIG: Prüfe auch andere mögliche Feldnamen für messageText
+  // Die Extension könnte die Nachricht unter einem anderen Namen senden
+  const possibleMessageFields = ['messageText', 'message', 'text', 'content', 'message_content', 'lastMessage', 'last_message', 'userMessage', 'user_message'];
+  let foundMessageText = messageText;
+  for (const field of possibleMessageFields) {
+    if (req.body[field] && !foundMessageText) {
+      foundMessageText = req.body[field];
+      console.log(`✅ messageText gefunden unter Feldname '${field}':`, foundMessageText.substring(0, 50) + "...");
+    }
+  }
+  
+  // Prüfe auch in userProfile oder anderen verschachtelten Objekten
+  if (!foundMessageText && userProfile && typeof userProfile === 'object') {
+    if (userProfile.messageText) foundMessageText = userProfile.messageText;
+    if (userProfile.message) foundMessageText = userProfile.message;
+    if (userProfile.lastMessage) foundMessageText = userProfile.lastMessage;
+  }
+
   // Logging für Debugging
   console.log("=== ChatCompletion Request (Parsed) ===");
-  console.log("messageText:", messageText ? messageText.substring(0, 100) + "..." : "(leer)");
+  console.log("messageText (original):", messageText ? messageText.substring(0, 100) + "..." : "(leer)");
+  console.log("messageText (gefunden):", foundMessageText ? foundMessageText.substring(0, 100) + "..." : "(leer)");
   console.log("pageUrl:", pageUrl);
   console.log("platformId:", platformId);
   console.log("userProfile:", userProfile ? JSON.stringify(userProfile).substring(0, 100) : "fehlt");
@@ -252,7 +271,7 @@ router.post("/", async (req, res) => {
     console.warn("⚠️ Falls die Extension blockiert, muss sie angepasst werden, um chatId im Request zu senden.");
   }
 
-  if (isMinorMention(messageText)) {
+  if (isMinorMention(foundMessageText)) {
     return res.json({
       flags: { blocked: true, reason: "minor" },
       actions: []
@@ -266,7 +285,8 @@ router.post("/", async (req, res) => {
 
   // KEINE Fallback-Nachrichten! Nur generierte Nachrichten oder Fehler
   // ABER: Fehlermeldungen müssen in resText zurückgegeben werden, damit die Extension sie anzeigen kann
-  if (!messageText || messageText.trim() === "") {
+  // Verwende foundMessageText statt messageText
+  if (!foundMessageText || foundMessageText.trim() === "") {
     errorMessage = "❌ FEHLER: Keine Nachricht erhalten. Bitte versuche es erneut.";
     console.error("❌ messageText ist leer - KEINE Fallback-Nachricht!");
     return res.status(200).json({
@@ -297,7 +317,7 @@ router.post("/", async (req, res) => {
   // Versuche Nachricht zu generieren
   try {
     // 1. Informationen extrahieren
-    extractedInfo = await extractInfoFromMessage(client, messageText);
+    extractedInfo = await extractInfoFromMessage(client, foundMessageText);
     
     // 2. Antwort generieren
     const systemPrompt = `Du bist ein freundlicher, natürlicher Chat-Moderator auf einer Dating-Plattform. 
@@ -323,7 +343,7 @@ router.post("/", async (req, res) => {
       });
     }
     
-    const userPrompt = `Aktuelle Nachricht vom Gesprächspartner: "${messageText}"
+    const userPrompt = `Aktuelle Nachricht vom Gesprächspartner: "${foundMessageText}"
 
 ${contextInfo.length > 0 ? `Bekannte Infos über den Gesprächspartner:\n${contextInfo.join('\n')}\n` : ''}
 ${extractedContext.length > 0 ? `Neu extrahierte Infos:\n${extractedContext.join('\n')}\n` : ''}
