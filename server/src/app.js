@@ -8,7 +8,8 @@ const replyRoutes = require("./routes/reply");
 
 const app = express();
 app.use(cors());
-app.use(express.json({ limit: "2mb" }));
+// WICHTIG: Limit erhöht, da Extension möglicherweise große Daten sendet (Chat-Historie, Bilder, etc.)
+app.use(express.json({ limit: "10mb" }));
 
 app.get("/health", (_req, res) => res.json({ ok: true }));
 app.post("/status", (req, res) => {
