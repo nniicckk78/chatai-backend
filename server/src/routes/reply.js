@@ -265,31 +265,32 @@ router.post("/", async (req, res) => {
   let errorMessage = null;
 
   // KEINE Fallback-Nachrichten! Nur generierte Nachrichten oder Fehler
+  // ABER: Fehlermeldungen müssen in resText zurückgegeben werden, damit die Extension sie anzeigen kann
   if (!messageText || messageText.trim() === "") {
-    errorMessage = "Fehler: Keine Nachricht erhalten. Bitte versuche es erneut.";
+    errorMessage = "❌ FEHLER: Keine Nachricht erhalten. Bitte versuche es erneut.";
     console.error("❌ messageText ist leer - KEINE Fallback-Nachricht!");
-    return res.status(400).json({
+    return res.status(200).json({
       error: errorMessage,
-      resText: null,
-      replyText: null,
+      resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
+      replyText: errorMessage,
       summary: {},
       chatId: finalChatId,
-      actions: [],
-      flags: { blocked: true, reason: "no_message" }
+      actions: [], // Keine Aktionen bei Fehler
+      flags: { blocked: true, reason: "no_message", isError: true, showError: true }
     });
   }
   
   if (!client) {
-    errorMessage = "Fehler: OpenAI Client nicht verfügbar. Bitte Admin kontaktieren.";
+    errorMessage = "❌ FEHLER: OpenAI Client nicht verfügbar. Bitte Admin kontaktieren.";
     console.error("❌ OpenAI Client nicht verfügbar - KEINE Fallback-Nachricht!");
-    return res.status(503).json({
+    return res.status(200).json({
       error: errorMessage,
-      resText: null,
-      replyText: null,
+      resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
+      replyText: errorMessage,
       summary: {},
       chatId: finalChatId,
-      actions: [],
-      flags: { blocked: true, reason: "no_client" }
+      actions: [], // Keine Aktionen bei Fehler
+      flags: { blocked: true, reason: "no_client", isError: true, showError: true }
     });
   }
 
@@ -344,31 +345,31 @@ Antworte natürlich und persönlich auf die Nachricht. Sei nicht generisch!`;
     
     // WICHTIG: Prüfe, ob eine gültige Antwort generiert wurde
     if (!replyText || replyText.trim() === "") {
-      errorMessage = "Fehler: Konnte keine Antwort generieren. Bitte versuche es erneut.";
+      errorMessage = "❌ FEHLER: Konnte keine Antwort generieren. Bitte versuche es erneut.";
       console.error("❌ Antwort ist leer - KEINE Fallback-Nachricht!");
-      return res.status(500).json({
+      return res.status(200).json({
         error: errorMessage,
-        resText: null,
-        replyText: null,
+        resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
+        replyText: errorMessage,
         summary: extractedInfo,
         chatId: finalChatId,
-        actions: [],
-        flags: { blocked: true, reason: "empty_response" }
+        actions: [], // Keine Aktionen bei Fehler
+        flags: { blocked: true, reason: "empty_response", isError: true, showError: true }
       });
     }
     
     console.log("✅ Antwort generiert:", replyText.substring(0, 100));
   } catch (err) {
-    errorMessage = `Fehler beim Generieren der Nachricht: ${err.message}`;
+    errorMessage = `❌ FEHLER: Beim Generieren der Nachricht ist ein Fehler aufgetreten: ${err.message}`;
     console.error("❌ OpenAI Fehler", err.message);
-    return res.status(500).json({
+    return res.status(200).json({
       error: errorMessage,
-      resText: null,
-      replyText: null,
+      resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
+      replyText: errorMessage,
       summary: extractedInfo,
       chatId: finalChatId,
-      actions: [],
-      flags: { blocked: true, reason: "generation_error" }
+      actions: [], // Keine Aktionen bei Fehler
+      flags: { blocked: true, reason: "generation_error", isError: true, showError: true }
     });
   }
 
@@ -398,4 +399,3 @@ Antworte natürlich und persönlich auf die Nachricht. Sei nicht generisch!`;
 });
 
 module.exports = router;
-
