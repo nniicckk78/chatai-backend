@@ -292,39 +292,75 @@ router.post("/", asyncHandler(async (req, res, next) => {
       if (userProfile.lastMessage && userProfile.lastMessage.trim() !== "" && !foundMessageText) foundMessageText = userProfile.lastMessage;
     }
 
+    // Fallback: letzte Kunden-Nachricht aus siteInfos.messages holen (Erkennung neueste oben/unten)
     if ((!foundMessageText || foundMessageText.trim() === "") && req.body?.siteInfos?.messages) {
       const msgs = req.body.siteInfos.messages;
-      const lastReceived = [...msgs].reverse().find(
+      let newestFirst = false;
+      try {
+        const firstTs = msgs[0]?.timestamp ? new Date(msgs[0].timestamp).getTime() : null;
+        const lastTs = msgs[msgs.length - 1]?.timestamp ? new Date(msgs[msgs.length - 1].timestamp).getTime() : null;
+        if (firstTs && lastTs && firstTs > lastTs) newestFirst = true;
+      } catch (e) { /* ignore */ }
+      const iter = newestFirst ? msgs : [...msgs].reverse();
+      const lastReceived = iter.find(
         m => m?.type === "received" && typeof m.text === "string" && m.text.trim() !== ""
       );
       if (lastReceived) {
         foundMessageText = lastReceived.text.trim();
+        console.log("✅ Nachricht aus siteInfos.messages (received):", foundMessageText.substring(0, 100) + "...");
       }
       if (!foundMessageText || foundMessageText.trim() === "") {
-        const lastAny = [...msgs].reverse().find(
+        const lastAny = iter.find(
           m => typeof m.text === "string" && m.text.trim() !== ""
         );
         if (lastAny) {
           foundMessageText = lastAny.text.trim();
+          console.log("✅ Nachricht aus siteInfos.messages (any):", foundMessageText.substring(0, 100) + "...");
         }
       }
     }
 
-    console.log("=== Nachrichten-Analyse ===");
-    console.log("foundMessageText:", foundMessageText ? foundMessageText.substring(0, 200) + "..." : "(leer)");
-    if (foundMessageText) console.log("foundMessageText (short):", foundMessageText.substring(0, 120));
+    if (foundMessageText && foundMessageText.length > 500) {
+      console.warn("⚠️ Gefundene Nachricht ist sehr lang (>500 Zeichen) - könnte falsch sein:", foundMessageText.substring(0, 100) + "...");
+    }
 
+    // ASA-Erkennung
     let isLastMessageFromFake = false;
-    if (lastMessageFromFake !== undefined) isLastMessageFromFake = Boolean(lastMessageFromFake);
-    else if (isASA !== undefined) isLastMessageFromFake = Boolean(isASA);
-    else if (asa !== undefined) isLastMessageFromFake = Boolean(asa);
-    else if (lastMessageType !== undefined) isLastMessageFromFake = ["sent", "asa-messages", "sent-messages"].includes(lastMessageType);
-    else if (messageType !== undefined) isLastMessageFromFake = ["sent", "asa-messages", "sent-messages"].includes(messageType);
 
-    console.log("isLastMessageFromFake (ASA-Fall):", isLastMessageFromFake);
-
-    if (foundMessageText && foundMessageText.length > 1000) {
-      console.error("❌ FEHLER: Nachricht ist zu lang (>1000 Zeichen)");
+    if (lastMessageFromFake !== undefined) {
+      isLastMessageFromFake = Boolean(lastMessageFromFake);
+      console.log("✅ ASA-Flag von Extension erhalten: lastMessageFromFake =", isLastMessageFromFake);
+    } else if (isASA !== undefined) {
+      isLastMessageFromFake = Boolean(isASA);
+      console.log("✅ ASA-Flag von Extension erhalten: isASA =", isLastMessageFromFake);
+    } else if (asa !== undefined) {
+      isLastMessageFromFake = Boolean(asa);
+      console.log("✅ ASA-Flag von Extension erhalten: asa =", isLastMessageFromFake);
+    } else if (lastMessageType !== undefined) {
+      isLastMessageFromFake = lastMessageType === "sent" || lastMessageType === "asa-messages" || lastMessageType === "sent-messages";
+      console.log("✅ ASA-Flag aus lastMessageType erkannt:", lastMessageType, "->", isLastMessageFromFake);
+    } else if (messageType !== undefined) {
+      isLastMessageFromFake = messageType === "sent" || messageType === "asa-messages" || messageType === "sent-messages";
+      console.log("✅ ASA-Flag aus messageType erkannt:", messageType, "->", isLastMessageFromFake);
+    } else if ((!foundMessageText || foundMessageText.trim() === "") && (lastMessage || last_message || lastUserMessage || lastCustomerMessage)) {
+      console.log("⚠️ messageText ist leer, aber lastMessage vorhanden - könnte ASA-Fall sein");
+    } else {
+      console.log("⚠️ Kein ASA-Flag von Extension gefunden - prüfe auf andere Indikatoren...");
+    }
+    // Backup: Prüfe letzte Nachricht in siteInfos.messages (richtige Reihenfolge erkennen, z.B. iluvo oben)
+    if (!isLastMessageFromFake && req.body?.siteInfos?.messages?.length) {
+      const msgs = req.body.siteInfos.messages;
+      let newestFirst = false;
+      try {
+        const firstTs = msgs[0]?.timestamp ? new Date(msgs[0].timestamp).getTime() : null;
+        const lastTs = msgs[msgs.length - 1]?.timestamp ? new Date(msgs[msgs.length - 1].timestamp).getTime() : null;
+        if (firstTs && lastTs && firstTs > lastTs) newestFirst = true;
+      } catch (e) { /* ignore */ }
+      const newestMsg = newestFirst ? msgs[0] : msgs[msgs.length - 1];
+      if (newestMsg?.type === "sent" || newestMsg?.messageType === "sent") {
+        isLastMessageFromFake = true;
+        console.log("✅ ASA erkannt über siteInfos.messages (neueste ist sent).");
+      }
     }
 
     console.log("=== ChatCompletion Request (Parsed) ===");
@@ -339,7 +375,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
     if (!platformId && req.body?.siteInfos?.origin) platformId = req.body.siteInfos.origin;
     if (!pageUrl && req.body?.url) pageUrl = req.body.url;
 
-    // chatId-Priorität: Request > siteInfos > andere Felder > Fallback
+    // chatId-Priorität
     let foundChatId = null;
     if (chatId) foundChatId = chatId;
     if (!foundChatId && req.body?.siteInfos?.chatId) foundChatId = req.body.siteInfos.chatId;
