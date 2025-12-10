@@ -391,50 +391,78 @@ router.post("/", asyncHandler(async (req, res, next) => {
     if (!platformId && req.body?.siteInfos?.origin) platformId = req.body.siteInfos.origin;
     if (!pageUrl && req.body?.url) pageUrl = req.body.url;
 
-    // chatId-Priorität: Request > siteInfos > andere Felder > Fallback
+    // chatId-Priorität: Request > siteInfos > metaData.chatId > andere Felder > Fallback
     let foundChatId = null;
-    if (chatId) foundChatId = chatId;
-    if (!foundChatId && req.body?.siteInfos?.chatId) foundChatId = req.body.siteInfos.chatId;
+    if (chatId) {
+      foundChatId = chatId;
+      console.log("✅ chatId aus Request-Body direkt (HÖCHSTE PRIORITÄT):", foundChatId);
+    }
+    if (!foundChatId && req.body?.siteInfos?.chatId) {
+      foundChatId = req.body.siteInfos.chatId;
+      console.log("✅ chatId aus siteInfos.chatId (FALLBACK):", foundChatId);
+    }
+    if (!foundChatId && req.body?.siteInfos?.metaData?.chatId) {
+      foundChatId = req.body.siteInfos.metaData.chatId;
+      console.log("✅ chatId aus siteInfos.metaData.chatId (FALLBACK):", foundChatId);
+    }
     if (!foundChatId) {
       const possibleChatIdFields = ['chatId', 'chat_id', 'dialogueId', 'dialogue_id', 'conversationId', 'conversation_id'];
       for (const field of possibleChatIdFields) {
         if (req.body[field]) {
           foundChatId = req.body[field];
+          console.log(`✅ chatId gefunden unter Feldname '${field}':`, foundChatId);
           break;
         }
       }
     }
-    if (!foundChatId && typeof chatId === 'string' && chatId.includes('-')) foundChatId = chatId;
+    if (!foundChatId && typeof chatId === 'string' && chatId.includes('-')) {
+      foundChatId = chatId;
+      console.log(`✅ Generierter chatId (username-lastMessage) gefunden:`, foundChatId);
+    }
 
     let finalChatId = foundChatId || chatId;
+
     if (!finalChatId && userProfile && typeof userProfile === 'object') {
       if (userProfile.chatId) finalChatId = userProfile.chatId;
       if (userProfile.chat_id) finalChatId = userProfile.chat_id;
       if (userProfile.dialogueId) finalChatId = userProfile.dialogueId;
       if (userProfile.dialogue_id) finalChatId = userProfile.dialogue_id;
-      if (userProfile.meta?.chatId) finalChatId = userProfile.meta.chatId;
-      if (userProfile.metadata?.chatId) finalChatId = userProfile.metadata.chatId;
+      if (userProfile.meta && userProfile.meta.chatId) finalChatId = userProfile.meta.chatId;
+      if (userProfile.metadata && userProfile.metadata.chatId) finalChatId = userProfile.metadata.chatId;
     }
+
     if (!finalChatId) {
       const bodyString = JSON.stringify(req.body);
       const numberMatches = bodyString.match(/\b\d{8,}\b/g);
-      if (numberMatches?.length) {
+      if (numberMatches && numberMatches.length > 0) {
         const possibleChatIds = numberMatches.filter(n => n.length >= 8 && n.length <= 10);
-        if (possibleChatIds.length > 0) finalChatId = possibleChatIds[possibleChatIds.length - 1];
+        if (possibleChatIds.length > 0) {
+          finalChatId = possibleChatIds[possibleChatIds.length - 1];
+          console.log("✅ Möglicher chatId aus Request-Body extrahiert:", finalChatId);
+        }
       }
     }
+
     if (!finalChatId && pageUrl) {
       const dialogueMatch = pageUrl.match(/[Dd]ialogue[#\s]*(\d+)/);
-      if (dialogueMatch) finalChatId = dialogueMatch[1];
+      if (dialogueMatch) {
+        finalChatId = dialogueMatch[1];
+        console.log("✅ chatId aus URL extrahiert:", finalChatId);
+      }
       try {
         const urlObj = new URL(pageUrl);
         const dialogueParam = urlObj.searchParams.get('dialogue') || urlObj.searchParams.get('chatId') || urlObj.searchParams.get('id');
-        if (dialogueParam) finalChatId = dialogueParam;
+        if (dialogueParam) {
+          finalChatId = dialogueParam;
+          console.log("✅ chatId aus URL-Parametern extrahiert:", finalChatId);
+        }
       } catch (e) { /* ignore */ }
     }
+
     if (!finalChatId) {
-      const foundInBody = (function findChatId(obj, depth = 0) {
-        if (depth > 3 || !obj || typeof obj !== 'object') return null;
+      function findChatIdInObject(obj, depth = 0) {
+        if (depth > 3) return null;
+        if (!obj || typeof obj !== 'object') return null;
         for (const key of Object.keys(obj)) {
           const value = obj[key];
           if (key.toLowerCase().includes('chat') || key.toLowerCase().includes('dialogue') || key.toLowerCase().includes('conversation')) {
@@ -442,14 +470,19 @@ router.post("/", asyncHandler(async (req, res, next) => {
             if (typeof value === 'number' && value > 10000000 && value < 9999999999) return String(value);
           }
           if (typeof value === 'object' && value !== null) {
-            const found = findChatId(value, depth + 1);
+            const found = findChatIdInObject(value, depth + 1);
             if (found) return found;
           }
         }
         return null;
-      })(req.body);
-      if (foundInBody) finalChatId = foundInBody;
+      }
+      const foundInBody = findChatIdInObject(req.body);
+      if (foundInBody) {
+        finalChatId = foundInBody;
+        console.log("✅ chatId rekursiv im Request-Body gefunden:", finalChatId);
+      }
     }
+
     if (!finalChatId) {
       finalChatId = "00000000";
       console.warn("⚠️ Kein chatId gefunden - verwende '00000000' um Reloads zu vermeiden.");
