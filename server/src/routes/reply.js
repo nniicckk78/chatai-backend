@@ -93,7 +93,7 @@ Nachricht: ${messageText}`;
   return { user: {}, assistant: {} };
 }
 
-// Fallback: Baue Summary aus metaData (customerInfo / moderatorInfo), falls Extraktion nichts liefert
+// Fallback: Summary aus metaData (customerInfo / moderatorInfo)
 function buildSummaryFromMeta(metaData) {
   if (!metaData || typeof metaData !== "object") return { user: {}, assistant: {} };
   const summary = { user: {}, assistant: {} };
@@ -101,7 +101,6 @@ function buildSummaryFromMeta(metaData) {
   const customer = metaData.customerInfo || {};
   const moderator = metaData.moderatorInfo || {};
 
-  // Kunde
   if (customer.name) summary.user["Name"] = customer.name;
   if (customer.birthDate?.age) summary.user["Age"] = customer.birthDate.age;
   if (customer.city) summary.user["Wohnort"] = customer.city;
@@ -111,7 +110,6 @@ function buildSummaryFromMeta(metaData) {
   if (customer.health) summary.user["Health"] = customer.health;
   if (customer.rawText) summary.user["Other"] = customer.rawText;
 
-  // Fake/Moderator
   if (moderator.name) summary.assistant["Name"] = moderator.name;
   if (moderator.birthDate?.age) summary.assistant["Age"] = moderator.birthDate.age;
   if (moderator.city) summary.assistant["Wohnort"] = moderator.city;
@@ -160,10 +158,8 @@ async function fetchImageAsBase64(url) {
   }
 }
 
-// Wrapper für async-Fehler
-const asyncHandler = (fn) => (req, res, next) => {
-  Promise.resolve(fn(req, res, next)).catch(next);
-};
+// async-Wrapper
+const asyncHandler = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
 
 // ---------------------------------------------------------------
 // POST /chatcompletion
@@ -347,7 +343,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
     } else {
       console.log("⚠️ Kein ASA-Flag von Extension gefunden - prüfe auf andere Indikatoren...");
     }
-    // Backup: Prüfe letzte Nachricht in siteInfos.messages (richtige Reihenfolge erkennen, z.B. iluvo oben)
+    // Backup: Prüfe letzte Nachricht in siteInfos.messages (richtige Reihenfolge erkennen: iluvo ggf. neueste oben)
     if (!isLastMessageFromFake && req.body?.siteInfos?.messages?.length) {
       const msgs = req.body.siteInfos.messages;
       let newestFirst = false;
@@ -361,8 +357,28 @@ router.post("/", asyncHandler(async (req, res, next) => {
         isLastMessageFromFake = true;
         console.log("✅ ASA erkannt über siteInfos.messages (neueste ist sent).");
       }
+      // Zusätzlich: wenn die letzten 2 Nachrichten (neueste zuerst) beide sent sind -> ASA
+      const ordered = newestFirst ? msgs : [...msgs].reverse();
+      if (ordered[0]?.type === "sent" && (ordered[1]?.type === "sent" || !ordered[1])) {
+        isLastMessageFromFake = true;
+        console.log("✅ ASA erkannt über letzte 2 Nachrichten (sent,sent) – neueste oben/unten berücksichtigt.");
+      }
     }
 
+    console.log("=== Nachrichten-Analyse ===");
+    console.log("foundMessageText:", foundMessageText ? foundMessageText.substring(0, 200) + "..." : "(leer)");
+    console.log("foundMessageText Länge:", foundMessageText ? foundMessageText.length : 0);
+    console.log("isLastMessageFromFake (ASA-Fall):", isLastMessageFromFake);
+
+    if (foundMessageText && foundMessageText.length > 1000) {
+      console.error("❌ FEHLER: Nachricht ist zu lang (>1000 Zeichen) - könnte falsch sein!");
+      console.error("❌ Erste 200 Zeichen:", foundMessageText.substring(0, 200));
+    }
+    if (foundMessageText) {
+      console.log("foundMessageText (short):", foundMessageText.substring(0, 120));
+    }
+
+    // Logging für Debugging
     console.log("=== ChatCompletion Request (Parsed) ===");
     console.log("messageText (original):", messageText ? messageText.substring(0, 100) + "..." : "(leer)");
     console.log("messageText (gefunden):", foundMessageText ? foundMessageText.substring(0, 100) + "..." : "(leer)");
@@ -375,7 +391,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
     if (!platformId && req.body?.siteInfos?.origin) platformId = req.body.siteInfos.origin;
     if (!pageUrl && req.body?.url) pageUrl = req.body.url;
 
-    // chatId-Priorität
+    // chatId-Priorität: Request > siteInfos > andere Felder > Fallback
     let foundChatId = null;
     if (chatId) foundChatId = chatId;
     if (!foundChatId && req.body?.siteInfos?.chatId) foundChatId = req.body.siteInfos.chatId;
