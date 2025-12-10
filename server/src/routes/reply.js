@@ -580,19 +580,20 @@ router.post("/", asyncHandler(async (req, res, next) => {
     else if (messageType !== undefined) isLastMessageFromFake = ["sent", "asa-messages", "sent-messages"].includes(messageType);
 
     if (isLastMessageFromFake) {
+      // ASA-Texte vielfältiger
       const asaTemplates = [
-        "Hey, lange nichts mehr von dir gehört, wo steckst du denn so lange? Hast du kein Interesse mehr an mir?",
-        "Hallo, ich habe schon eine Weile nichts mehr von dir gehört. Ist alles okay bei dir?",
-        "Hey, wo bist du denn geblieben? Ich dachte schon, du hättest das Interesse verloren.",
-        "Hallo, ich vermisse unsere Unterhaltung. Schreibst du mir nicht mehr?",
-        "Hey, ist etwas passiert? Ich habe schon länger nichts mehr von dir gehört.",
-        "Hallo, ich warte schon auf deine Antwort. Hast du keine Zeit mehr zum Schreiben?",
-        "Hey, wo steckst du denn? Ich dachte, wir hätten eine gute Verbindung.",
-        "Hallo, ich hoffe, es geht dir gut. Ich würde gerne wieder von dir hören."
+        "Hey, lange nichts von dir gehört. Wo bist du abgeblieben? Ich mag unsere Gespräche.",
+        "Hi, alles ok bei dir? Ich habe schon länger nichts mehr von dir gelesen und dachte, ich frag mal nach.",
+        "Hey du, ich hab dich vermisst. Hast du grad viel um die Ohren oder keine Lust mehr?",
+        "Hallo, ich hab länger nichts von dir gehört. Bist du noch da?",
+        "Hey, wollte nur anklopfen, ob alles gut ist. Hörte so lange nichts mehr.",
+        "Hi, mir fehlt ein bisschen dein Ping. Was geht gerade bei dir?",
+        "Hallo, bist du noch interessiert? Ich hab länger auf ein Lebenszeichen gewartet.",
+        "Hey, du warst so still. Geht es dir gut? Mag unsere Unterhaltung nicht verlieren."
       ];
-      let asaMessage = asaTemplates[Math.floor(Math.random() * asaTemplates.length)].trim();
-      asaMessage = asaMessage.replace(/"/g, "").replace(/'/g, "").replace(/-/g, " ");
-      const asaChatId = chatId || req.body?.siteInfos?.chatId || finalChatId || "00000000";
+      const asaMessage = asaTemplates[Math.floor(Math.random() * asaTemplates.length)];
+
+      const asaChatId = chatId || req.body?.siteInfos?.chatId || req.body?.siteInfos?.metaData?.chatId || finalChatId || "00000000";
       const minWait = 40, maxWait = 60;
       const asaWaitTime = Math.floor(Math.random() * (maxWait - minWait + 1)) + minWait;
       return res.json({
@@ -813,7 +814,7 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
     console.log("✅ Antwort generiert (short):", replyText.substring(0, 120));
     console.log("summary keys:", Object.keys(extractedInfo.user || {}).length, "user,", Object.keys(extractedInfo.assistant || {}).length, "assistant");
 
-    const responseChatId = chatId || req.body?.siteInfos?.chatId || finalChatId || "00000000";
+    const responseChatId = chatId || req.body?.siteInfos?.chatId || req.body?.siteInfos?.metaData?.chatId || finalChatId || "00000000";
     console.log("=== Response ChatId ===");
     console.log("chatId aus Request:", chatId || "(nicht gesendet)");
     console.log("siteInfos.chatId:", req.body?.siteInfos?.chatId || "(nicht gesendet)");
