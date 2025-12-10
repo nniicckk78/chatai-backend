@@ -8,7 +8,7 @@ const replyRoutes = require("./routes/reply");
 
 const app = express();
 
-// Explizite CORS-Settings
+// CORS
 const corsOptions = {
   origin: "*",
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS", "HEAD"],
@@ -18,10 +18,10 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.options("*", cors(corsOptions));
 
-// JSON-Limit erhöht
+// JSON-Limit
 app.use(express.json({ limit: "10mb" }));
 
-// JSON-Parsing-Error-Handler
+// JSON-Parsing-Error
 app.use((err, req, res, next) => {
   if (err instanceof SyntaxError && err.status === 400 && "body" in err) {
     console.error("❌ JSON-Parsing-Fehler:", err.message);
@@ -38,7 +38,7 @@ app.use((err, req, res, next) => {
   next(err);
 });
 
-// Health / Status
+// Health/Status
 app.get("/health", (_req, res) => res.json({ ok: true }));
 app.post("/status", (req, res) => {
   console.log("Status update:", req.body);
@@ -47,9 +47,9 @@ app.post("/status", (req, res) => {
 
 // Routes
 app.use("/api/v1/auth", authRoutes);
-app.use("/auth", authRoutes); // Kompatibilität
+app.use("/auth", authRoutes);
 app.use("/api/v1/reply", replyRoutes);
-app.use("/chatcompletion", replyRoutes); // Kompatibilität
+app.use("/chatcompletion", replyRoutes);
 
 // Globaler Error-Handler
 app.use((err, req, res, next) => {
@@ -75,10 +75,10 @@ const PORT = process.env.PORT || 3000;
 const hasDatabase = Boolean(process.env.DATABASE_URL);
 
 async function start() {
-  // Server sofort starten, damit Render den Healthcheck bekommt
+  // sofort starten, damit Render nicht in Timeout läuft
   app.listen(PORT, "0.0.0.0", () => console.log(`API läuft auf Port ${PORT}`));
 
-  // Migrations/Seed nur, wenn DB vorhanden; nicht blockierend
+  // Migrations/Seed nur wenn DB vorhanden; Fehler nicht tödlich
   try {
     if (hasDatabase) {
       await runMigrations();
@@ -88,7 +88,6 @@ async function start() {
     }
   } catch (err) {
     console.error("Startfehler (Migrations/Seed)", err);
-    // kein process.exit, damit Render nicht abbricht
   }
 }
 
