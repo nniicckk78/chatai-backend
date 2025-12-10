@@ -7,18 +7,41 @@ const router = express.Router();
 // Wenn SKIP_AUTH=true gesetzt ist, Auth überspringen (nur für Tests!)
 const SKIP_AUTH = process.env.SKIP_AUTH === "true";
 
+// simple JWT middleware
+router.use((req, res, next) => {
+  if (SKIP_AUTH) {
+    console.log("⚠️ SKIP_AUTH aktiv - Auth wird übersprungen");
+    return next();
+  }
+  const auth = req.headers.authorization;
+  if (!auth || !auth.toLowerCase().startsWith("bearer ")) {
+    return res.status(401).json({ error: "Kein Token" });
+  }
+  const token = auth.slice(7);
+  try {
+    const decoded = verifyToken(token);
+    req.userId = decoded.sub;
+    next();
+  } catch (err) {
+    return res.status(401).json({ error: "Token ungueltig" });
+  }
+});
+
 function isMinorMention(text) {
   if (!text) return false;
   const lower = text.toLowerCase();
-
+  
+  // Direkte Erwähnungen
   if (lower.includes("minderjähr")) return true;
   if (lower.includes("unter 18")) return true;
   if (lower.includes("unter achtzehn")) return true;
   if (lower.includes("jugendlich") && (lower.includes("14") || lower.includes("15") || lower.includes("16") || lower.includes("17"))) return true;
-
+  
+  // Altersprüfung: 10-17 Jahre
   const ageMatch = lower.match(/\b(1[0-7])\s*(jahr|jahre|j|alt)\b/i);
   if (ageMatch) return true;
-
+  
+  // Strafrechtliche Themen
   const illegalTerms = [
     "pädophil", "pedophil", "pedo", "kinderschänder", "kindesmissbrauch",
     "inzest", "geschwister", "mutter", "vater", "tochter", "sohn",
@@ -27,12 +50,13 @@ function isMinorMention(text) {
   for (const term of illegalTerms) {
     if (lower.includes(term)) return true;
   }
-
+  
   return false;
 }
 
 async function extractInfoFromMessage(client, messageText) {
   if (!client || !messageText) return { user: {}, assistant: {} };
+
   try {
     const extractionPrompt = `Analysiere die folgende Nachricht und extrahiere NUR relevante Informationen über den Kunden für das Logbuch. 
 Gib die Antwort NUR als JSON zurück, kein zusätzlicher Text. Format:
@@ -52,17 +76,29 @@ Gib die Antwort NUR als JSON zurück, kein zusätzlicher Text. Format:
   "assistant": {}
 }
 
-WICHTIG - IGNORIERE:
-- Smalltalk, Höflichkeitsfloskeln, allgemeine Kommentare ohne Info
+WICHTIG - IGNORIERE folgendes (NICHT extrahieren):
+- Smalltalk (z.B. "Wetter ist schön", "Wie geht es dir?", "Hallo", "Danke")
+- Höflichkeitsfloskeln (z.B. "Bitte", "Danke", "Gern geschehen")
+- Allgemeine Kommentare ohne Informationswert
 - Fragen ohne persönliche Informationen
 
-WICHTIG - EXTRAHIERE nur persönliche Infos, relevante Neuigkeiten, Lebensumstände, wichtige sonstige Infos. Wenn nichts, dann null.
+WICHTIG - EXTRAHIERE nur:
+- Persönliche Informationen (Name, Alter, Wohnort, Beruf, etc.)
+- Relevante Neuigkeiten/Aktivitäten (z.B. "geht zum Friseur", "hat Urlaub", "ist umgezogen")
+- Wichtige Lebensumstände (Familie, Gesundheit, Arbeit, Hobbies)
+- "Other" NUR für wichtige Infos, die nicht in andere Kategorien passen (z.B. wichtige Termine, Umzüge, Jobwechsel)
+- Wenn nichts Relevantes erwähnt wird, null verwenden
+- Bei "Family": auch Beziehungsstatus extrahieren (geschieden, verheiratet, single, etc.)
 
 Nachricht: ${messageText}`;
+
     const extraction = await client.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
-        { role: "system", content: "Du bist ein Daten-Extraktions-Assistent. Antworte NUR mit gültigem JSON, kein zusätzlicher Text." },
+        {
+          role: "system",
+          content: "Du bist ein Daten-Extraktions-Assistent. Antworte NUR mit gültigem JSON, kein zusätzlicher Text."
+        },
         { role: "user", content: extractionPrompt }
       ],
       max_tokens: 500,
@@ -73,27 +109,32 @@ Nachricht: ${messageText}`;
     const extractedText = extraction.choices?.[0]?.message?.content?.trim();
     if (extractedText) {
       const parsed = JSON.parse(extractedText);
+      // Entferne null-Werte
       const cleanUser = {};
       const cleanAssistant = {};
+      
       Object.keys(parsed.user || {}).forEach(key => {
         if (parsed.user[key] !== null && parsed.user[key] !== undefined && parsed.user[key] !== "") {
           cleanUser[key] = parsed.user[key];
         }
       });
+      
       Object.keys(parsed.assistant || {}).forEach(key => {
         if (parsed.assistant[key] !== null && parsed.assistant[key] !== undefined && parsed.assistant[key] !== "") {
           cleanAssistant[key] = parsed.assistant[key];
         }
       });
+      
       return { user: cleanUser, assistant: cleanAssistant };
     }
   } catch (err) {
     console.error("Fehler beim Extrahieren von Informationen:", err);
   }
+  
   return { user: {}, assistant: {} };
 }
 
-// Fallback: Summary aus metaData (customerInfo / moderatorInfo)
+// Fallback: Baue Summary aus metaData (customerInfo / moderatorInfo), falls Extraktion nichts liefert
 function buildSummaryFromMeta(metaData) {
   if (!metaData || typeof metaData !== "object") return { user: {}, assistant: {} };
   const summary = { user: {}, assistant: {} };
@@ -101,6 +142,7 @@ function buildSummaryFromMeta(metaData) {
   const customer = metaData.customerInfo || {};
   const moderator = metaData.moderatorInfo || {};
 
+  // Kunde
   if (customer.name) summary.user["Name"] = customer.name;
   if (customer.birthDate?.age) summary.user["Age"] = customer.birthDate.age;
   if (customer.city) summary.user["Wohnort"] = customer.city;
@@ -110,6 +152,7 @@ function buildSummaryFromMeta(metaData) {
   if (customer.health) summary.user["Health"] = customer.health;
   if (customer.rawText) summary.user["Other"] = customer.rawText;
 
+  // Fake/Moderator
   if (moderator.name) summary.assistant["Name"] = moderator.name;
   if (moderator.birthDate?.age) summary.assistant["Age"] = moderator.birthDate.age;
   if (moderator.city) summary.assistant["Wohnort"] = moderator.city;
@@ -158,18 +201,6 @@ async function fetchImageAsBase64(url) {
   }
 }
 
-// Hilfsfunktion: Info-/System-Nachrichten erkennen (z.B. Likes/Hinweise)
-function isInfoMessage(msg) {
-  if (!msg || typeof msg !== "object") return true;
-  const t = (msg.text || "").toLowerCase();
-  const type = (msg.type || "").toLowerCase();
-  const mtype = (msg.messageType || "").toLowerCase();
-  if (type === "info" || mtype === "info") return true;
-  if (t.includes("geliked") || t.includes("like erhalten") || t.includes("hat dich gelikt") || t.includes("like bekommen")) return true;
-  if (t.includes("info:") || t.includes("hinweis:")) return true;
-  return false;
-}
-
 // Verlauf komprimieren (letzte n nicht-Info-Nachrichten)
 function compressConversation(messages, limit = 10) {
   if (!Array.isArray(messages)) return "";
@@ -185,14 +216,24 @@ function compressConversation(messages, limit = 10) {
     .join("\n");
 }
 
-// async-Wrapper
+// Hilfsfunktion: Info-/System-Nachrichten erkennen (z.B. Likes/Hinweise)
+function isInfoMessage(msg) {
+  if (!msg || typeof msg !== "object") return true;
+  const t = (msg.text || "").toLowerCase();
+  const type = (msg.type || "").toLowerCase();
+  const mtype = (msg.messageType || "").toLowerCase();
+  if (type === "info" || mtype === "info") return true;
+  // Häufige Hinweise (FPC Like, System)
+  if (t.includes("geliked") || t.includes("like erhalten") || t.includes("hat dich gelikt") || t.includes("like bekommen")) return true;
+  if (t.includes("info:") || t.includes("hinweis:")) return true;
+  return false;
+}
+
+// Wrapper für async-Fehler
 const asyncHandler = (fn) => (req, res, next) => {
   Promise.resolve(fn(req, res, next)).catch(next);
 };
 
-// ---------------------------------------------------------------
-// POST /chatcompletion
-// ---------------------------------------------------------------
 router.post("/", asyncHandler(async (req, res, next) => {
   try {
     console.log("✅ Route-Handler gestartet");
@@ -246,6 +287,18 @@ router.post("/", asyncHandler(async (req, res, next) => {
       console.log(key + ': ' + value);
     }
   });
+  // Log metaData-Übersicht (falls vorhanden)
+  if (req.body?.siteInfos?.metaData) {
+    console.log("metaData keys:", Object.keys(req.body.siteInfos.metaData));
+    if (req.body.siteInfos.metaData.customerInfo) {
+      console.log("metaData.customerInfo keys:", Object.keys(req.body.siteInfos.metaData.customerInfo));
+      console.log("metaData.customerInfo.name:", req.body.siteInfos.metaData.customerInfo.name || "(none)");
+    }
+    if (req.body.siteInfos.metaData.moderatorInfo) {
+      console.log("metaData.moderatorInfo keys:", Object.keys(req.body.siteInfos.metaData.moderatorInfo));
+      console.log("metaData.moderatorInfo.name:", req.body.siteInfos.metaData.moderatorInfo.name || "(none)");
+    }
+  }
   
   // WICHTIG: Wenn der Body zu groß ist, könnte die Extension zu viele Daten senden
   // Prüfe, ob assetsToSend oder userProfile zu groß sind
@@ -356,11 +409,10 @@ router.post("/", asyncHandler(async (req, res, next) => {
     if (userProfile.lastMessage && userProfile.lastMessage.trim() !== "" && !foundMessageText) foundMessageText = userProfile.lastMessage;
   }
 
-  // Fallback: letzte Kunden-Nachricht aus siteInfos.messages holen (Erkennung neueste oben/unten, Info-Nachrichten filtern)
+  // Fallback: letzte Kunden-Nachricht aus siteInfos.messages holen
   if ((!foundMessageText || foundMessageText.trim() === "") && req.body?.siteInfos?.messages) {
-    const msgsAll = req.body.siteInfos.messages;
-    const msgsFiltered = msgsAll.filter(m => !isInfoMessage(m));
-    const msgs = msgsFiltered.length > 0 ? msgsFiltered : msgsAll;
+    const msgs = req.body.siteInfos.messages;
+    // Erkenne Reihenfolge: neueste oben oder unten
     let newestFirst = false;
     try {
       const firstTs = msgs[0]?.timestamp ? new Date(msgs[0].timestamp).getTime() : null;
@@ -368,18 +420,18 @@ router.post("/", asyncHandler(async (req, res, next) => {
       if (firstTs && lastTs && firstTs > lastTs) newestFirst = true;
     } catch (e) { /* ignore */ }
     const iter = newestFirst ? msgs : [...msgs].reverse();
-    // Kunde = type === "received"
+    // Kunde = type === "received", keine Info-Nachrichten
     const lastReceived = iter.find(
-      m => m?.type === "received" && typeof m.text === "string" && m.text.trim() !== ""
+      m => m?.type === "received" && typeof m.text === "string" && m.text.trim() !== "" && !isInfoMessage(m)
     );
     if (lastReceived) {
       foundMessageText = lastReceived.text.trim();
       console.log("✅ Nachricht aus siteInfos.messages (received):", foundMessageText.substring(0, 100) + "...");
     }
-    // Falls keine received-Nachricht gefunden: letzte beliebige Text-Nachricht
+    // Falls keine received-Nachricht gefunden: letzte beliebige Text-Nachricht (nicht Info)
     if (!foundMessageText || foundMessageText.trim() === "") {
       const lastAny = iter.find(
-        m => typeof m.text === "string" && m.text.trim() !== ""
+        m => typeof m.text === "string" && m.text.trim() !== "" && !isInfoMessage(m)
       );
       if (lastAny) {
         foundMessageText = lastAny.text.trim();
@@ -428,21 +480,21 @@ router.post("/", asyncHandler(async (req, res, next) => {
   // Backup: Prüfe letzte Nachricht in siteInfos.messages (richtige Reihenfolge erkennen: iluvo ggf. neueste oben)
   if (!isLastMessageFromFake && req.body?.siteInfos?.messages?.length) {
     const msgsAll = req.body.siteInfos.messages;
-    const msgsFiltered = msgsAll.filter(m => !isInfoMessage(m));
-    const msgs = msgsFiltered.length > 0 ? msgsFiltered : msgsAll;
+    const msgs = msgsAll.filter(m => !isInfoMessage(m));
+    const list = msgs.length > 0 ? msgs : msgsAll;
     let newestFirst = false;
     try {
-      const firstTs = msgs[0]?.timestamp ? new Date(msgs[0].timestamp).getTime() : null;
-      const lastTs = msgs[msgs.length - 1]?.timestamp ? new Date(msgs[msgs.length - 1].timestamp).getTime() : null;
+      const firstTs = list[0]?.timestamp ? new Date(list[0].timestamp).getTime() : null;
+      const lastTs = list[list.length - 1]?.timestamp ? new Date(list[list.length - 1].timestamp).getTime() : null;
       if (firstTs && lastTs && firstTs > lastTs) newestFirst = true;
     } catch (e) { /* ignore */ }
-    const newestMsg = newestFirst ? msgs[0] : msgs[msgs.length - 1];
+    const newestMsg = newestFirst ? list[0] : list[list.length - 1];
     if (newestMsg?.type === "sent" || newestMsg?.messageType === "sent") {
       isLastMessageFromFake = true;
       console.log("✅ ASA erkannt über siteInfos.messages (neueste ist sent).");
     }
     // Zusätzlich: wenn die letzten 2 Nachrichten (neueste zuerst) beide sent sind -> ASA
-    const ordered = newestFirst ? msgs : [...msgs].reverse();
+    const ordered = newestFirst ? list : [...list].reverse();
     if (ordered[0]?.type === "sent" && (ordered[1]?.type === "sent" || !ordered[1])) {
       isLastMessageFromFake = true;
       console.log("✅ ASA erkannt über letzte 2 Nachrichten (sent,sent) – neueste oben/unten berücksichtigt.");
@@ -624,10 +676,31 @@ router.post("/", asyncHandler(async (req, res, next) => {
     console.warn("⚠️ Falls die Extension blockiert, muss sie angepasst werden, um chatId im Request zu senden.");
   }
 
+  // Prüfe auf Minderjährige und strafrechtliche Themen
+  if (isMinorMention(foundMessageText)) {
+    console.error("🚨 BLOCKIERT: Minderjährige oder strafrechtliche Themen erkannt!");
+    return res.status(200).json({
+      error: "🚨 WICHTIG: Minderjährige oder strafrechtliche Themen erkannt! Bitte manuell prüfen!",
+      resText: "🚨 WICHTIG: Minderjährige oder strafrechtliche Themen erkannt! Bitte manuell prüfen!",
+      replyText: "🚨 WICHTIG: Minderjährige oder strafrechtliche Themen erkannt! Bitte manuell prüfen!",
+      summary: {},
+      chatId: finalChatId,
+      actions: [], // Keine Aktionen bei Blockierung
+      flags: { 
+        blocked: true, 
+        reason: "minor_or_illegal", 
+        isError: true, 
+        showError: true,
+        requiresAttention: true // Extension soll Aufmerksamkeit erregen
+      }
+    });
+  }
+
   const client = getClient();
   let replyText = null;
   let extractedInfo = { user: {}, assistant: {} };
   let errorMessage = null;
+  let imageDescriptions = []; // WICHTIG: Immer initialisieren, bevor es verwendet wird
 
   // WICHTIG: Wenn messageText leer ist, geben wir eine Antwort zurück, die KEINE Reloads auslöst
   // Die Extension lädt die Seite neu, wenn flags.blocked: true ist ODER wenn chatId sich ändert
@@ -688,7 +761,6 @@ router.post("/", asyncHandler(async (req, res, next) => {
           max_tokens: 120,
           temperature: 0.2
         });
-        
         const desc = vision.choices?.[0]?.message?.content?.trim();
         if (desc) {
           imageDescriptions.push(desc);
@@ -702,6 +774,11 @@ router.post("/", asyncHandler(async (req, res, next) => {
 
   // Versuche Nachricht zu generieren
   try {
+    // WICHTIG: Stelle sicher, dass imageDescriptions immer initialisiert ist
+    if (!imageDescriptions) {
+      imageDescriptions = [];
+    }
+    
     // Prüfe ASA-Fall: Wenn die letzte Nachricht vom FAKE kommt, schreibe eine Reaktivierungsnachricht
     // WICHTIG: Nur wenn explizit signalisiert, sonst könnte es andere Gründe geben
     if (isLastMessageFromFake) {
@@ -709,14 +786,14 @@ router.post("/", asyncHandler(async (req, res, next) => {
       
       // Verschiedene ASA-Nachrichten für Abwechslung
       const asaTemplates = [
-        "Hey, lange nichts von dir gehört. Wo bist du abgeblieben? Ich mag unsere Gespräche.",
-        "Hi, alles ok bei dir? Ich habe schon länger nichts mehr von dir gelesen und dachte, ich frag mal nach.",
-        "Hey du, ich hab dich vermisst. Hast du grad viel um die Ohren oder keine Lust mehr?",
-        "Hallo, ich hab länger nichts von dir gehört. Bist du noch da?",
-        "Hey, wollte nur anklopfen, ob alles gut ist. Hörte so lange nichts mehr.",
-        "Hi, mir fehlt ein bisschen dein Ping. Was geht gerade bei dir?",
-        "Hallo, bist du noch interessiert? Ich hab länger auf ein Lebenszeichen gewartet.",
-        "Hey, du warst so still. Geht es dir gut? Mag unsere Unterhaltung nicht verlieren."
+        "Hey, lange nichts mehr von dir gehört, wo steckst du denn so lange? Hast du kein Interesse mehr an mir?",
+        "Hallo, ich habe schon eine Weile nichts mehr von dir gehört. Ist alles okay bei dir?",
+        "Hey, wo bist du denn geblieben? Ich dachte schon, du hättest das Interesse verloren.",
+        "Hallo, ich vermisse unsere Unterhaltung. Schreibst du mir nicht mehr?",
+        "Hey, ist etwas passiert? Ich habe schon länger nichts mehr von dir gehört.",
+        "Hallo, ich warte schon auf deine Antwort. Hast du keine Zeit mehr zum Schreiben?",
+        "Hey, wo steckst du denn? Ich dachte, wir hätten eine gute Verbindung.",
+        "Hallo, ich hoffe, es geht dir gut. Ich würde gerne wieder von dir hören."
       ];
       
       // Wähle zufällig eine ASA-Nachricht
@@ -737,7 +814,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
       
       // WICHTIG: Verwende IMMER den chatId aus dem Request (falls vorhanden), damit er sich NICHT ändert
       // PRIORITÄT: chatId aus Request > siteInfos.chatId > finalChatId > Default
-      const asaChatId = chatId || req.body?.siteInfos?.chatId || req.body?.siteInfos?.metaData?.chatId || finalChatId || "00000000";
+      const asaChatId = chatId || req.body?.siteInfos?.chatId || finalChatId || "00000000";
       
       // WICHTIG: Variable Wartezeit zwischen 40-60 Sekunden auch für ASA-Nachrichten
       const minWait = 40;
@@ -769,6 +846,16 @@ router.post("/", asyncHandler(async (req, res, next) => {
     
     // 1. Informationen extrahieren (nur wenn Nachricht vom Kunden vorhanden)
     extractedInfo = await extractInfoFromMessage(client, foundMessageText);
+
+    // Fallback: Wenn nichts extrahiert wurde, nutze metaData (falls vorhanden)
+    if ((!extractedInfo.user || Object.keys(extractedInfo.user).length === 0) && req.body?.siteInfos?.metaData) {
+      const metaSummary = buildSummaryFromMeta(req.body.siteInfos.metaData);
+      // Nur übernehmen, wenn wirklich etwas drin ist
+      if (Object.keys(metaSummary.user).length > 0 || Object.keys(metaSummary.assistant).length > 0) {
+        extractedInfo = metaSummary;
+        console.log("✅ Summary aus metaData übernommen (Fallback)");
+      }
+    }
     
     // 2. Antwort generieren
     // WICHTIG: Wir antworten als FAKE/MODERATOR auf den KUNDEN
@@ -848,7 +935,11 @@ router.post("/", asyncHandler(async (req, res, next) => {
     // Extrahiere den Namen des KUNDEN aus der Nachricht (nicht vom userProfile!)
     const customerName = extractedInfo.user?.Name || null;
     const customerJob = extractedInfo.user?.Work || null;
-    const imageContext = imageDescriptions.length > 0 ? `Erkannte Bilder:\n- ${imageDescriptions.join('\n- ')}\n` : "";
+    // WICHTIG: Stelle sicher, dass imageDescriptions immer initialisiert ist
+    if (!imageDescriptions || !Array.isArray(imageDescriptions)) {
+      imageDescriptions = [];
+    }
+    const imageContext = imageDescriptions.length > 0 ? `Erkannte Bilder:\n- ${imageDescriptions.join("\n- ")}\n` : "";
     const convoContext = compressConversation(req.body?.siteInfos?.messages || [], 10);
     const conversationBlock = convoContext ? `Letzte Nachrichten (Kunde/Fake):\n${convoContext}\n` : "";
     
@@ -1118,7 +1209,7 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
   // Das verhindert, dass die Extension die Seite neu lädt, wenn sich der chatId ändert
   // PRIORITÄT: chatId aus Request > siteInfos.chatId > finalChatId (extrahiert) > Default
   // WICHTIG: Der chatId aus dem Request hat höchste Priorität, damit er sich nicht ändert!
-  const responseChatId = chatId || req.body?.siteInfos?.chatId || req.body?.siteInfos?.metaData?.chatId || finalChatId || "00000000";
+  const responseChatId = chatId || req.body?.siteInfos?.chatId || finalChatId || "00000000";
   
   console.log("=== Response ChatId ===");
   console.log("chatId aus Request:", chatId || "(nicht gesendet)");
@@ -1151,7 +1242,7 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
       noReload: true, // Explizites Flag: Nicht neu laden
       skipReload: true // Zusätzliches Flag für Rückwärtskompatibilität
     },
-    disableAutoSend: true, // WICHTIG: Deaktiviere Auto-Send der Extension, unsere Funktion übernimmt
+    disableAutoSend: true, // WICHTIG: Verhindere automatisches Senden durch Extension - unsere Funktion übernimmt die Kontrolle
     waitTime: waitTime, // Zusätzliches Flag für Rückwärtskompatibilität
     noReload: true // Explizites Flag auf oberster Ebene
   });
