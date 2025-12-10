@@ -93,13 +93,15 @@ Nachricht: ${messageText}`;
   return { user: {}, assistant: {} };
 }
 
-// Fallback: Summary aus metaData (customerInfo / moderatorInfo)
+// Fallback: Baue Summary aus metaData (customerInfo / moderatorInfo), falls Extraktion nichts liefert
 function buildSummaryFromMeta(metaData) {
   if (!metaData || typeof metaData !== "object") return { user: {}, assistant: {} };
   const summary = { user: {}, assistant: {} };
+
   const customer = metaData.customerInfo || {};
   const moderator = metaData.moderatorInfo || {};
 
+  // Kunde
   if (customer.name) summary.user["Name"] = customer.name;
   if (customer.birthDate?.age) summary.user["Age"] = customer.birthDate.age;
   if (customer.city) summary.user["Wohnort"] = customer.city;
@@ -109,6 +111,7 @@ function buildSummaryFromMeta(metaData) {
   if (customer.health) summary.user["Health"] = customer.health;
   if (customer.rawText) summary.user["Other"] = customer.rawText;
 
+  // Fake/Moderator
   if (moderator.name) summary.assistant["Name"] = moderator.name;
   if (moderator.birthDate?.age) summary.assistant["Age"] = moderator.birthDate.age;
   if (moderator.city) summary.assistant["Wohnort"] = moderator.city;
@@ -119,28 +122,48 @@ function buildSummaryFromMeta(metaData) {
   return summary;
 }
 
-// async-Wrapper
-const asyncHandler = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
+// Bild-URL-Erkennung im Text
+function extractImageUrls(text) {
+  if (!text || typeof text !== "string") return [];
+  const regex = /(https?:\/\/[^\s"']+\.(?:png|jpg|jpeg|gif|webp))/gi;
+  const matches = [];
+  let m;
+  while ((m = regex.exec(text)) !== null) {
+    matches.push(m[1]);
+  }
+  return matches;
+}
 
-// einfache JWT-Middleware
-router.use((req, res, next) => {
-  if (SKIP_AUTH) {
-    console.log("⚠️ SKIP_AUTH aktiv - Auth wird übersprungen");
-    return next();
-  }
-  const auth = req.headers.authorization;
-  if (!auth || !auth.toLowerCase().startsWith("bearer ")) {
-    return res.status(401).json({ error: "Kein Token" });
-  }
-  const token = auth.slice(7);
+// Bild als Base64 laden (max ~3MB)
+async function fetchImageAsBase64(url) {
   try {
-    const decoded = verifyToken(token);
-    req.userId = decoded.sub;
-    next();
+    const res = await fetch(url, { method: "GET" });
+    if (!res.ok) {
+      console.warn("fetchImageAsBase64: HTTP", res.status, url);
+      return null;
+    }
+    const buf = Buffer.from(await res.arrayBuffer());
+    if (buf.length > 3 * 1024 * 1024) {
+      console.warn("fetchImageAsBase64: Bild zu groß, übersprungen", url);
+      return null;
+    }
+    const lower = url.toLowerCase();
+    let mime = "image/jpeg";
+    if (lower.endsWith(".png")) mime = "image/png";
+    if (lower.endsWith(".webp")) mime = "image/webp";
+    if (lower.endsWith(".gif")) mime = "image/gif";
+    const base64 = buf.toString("base64");
+    return `data:${mime};base64,${base64}`;
   } catch (err) {
-    return res.status(401).json({ error: "Token ungueltig" });
+    console.warn("fetchImageAsBase64 error:", err.message);
+    return null;
   }
-});
+}
+
+// Wrapper für async-Fehler
+const asyncHandler = (fn) => (req, res, next) => {
+  Promise.resolve(fn(req, res, next)).catch(next);
+};
 
 // ---------------------------------------------------------------
 // POST /chatcompletion
@@ -150,7 +173,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
     console.log("✅ Route-Handler gestartet");
     console.log("✅ SKIP_AUTH:", SKIP_AUTH);
 
-    if (!req.body || typeof req.body !== "object") {
+    if (!req.body || typeof req.body !== 'object') {
       console.error("❌ FEHLER: req.body ist nicht definiert oder kein Objekt!");
       return res.status(400).json({
         error: "❌ FEHLER: Request-Body ist ungültig",
@@ -167,12 +190,12 @@ router.post("/", asyncHandler(async (req, res, next) => {
     console.log("=== ChatCompletion Request (SIZE CHECK) ===");
     console.log(`Request body size: ${(bodySize / 1024 / 1024).toFixed(2)} MB`);
 
-    let {
-      messageText = "",
-      pageUrl,
-      platformId,
-      assetsToSend,
-      userProfile,
+    let { 
+      messageText = "", 
+      pageUrl, 
+      platformId, 
+      assetsToSend, 
+      userProfile, 
       chatId,
       lastMessageFromFake,
       isASA,
@@ -191,7 +214,6 @@ router.post("/", asyncHandler(async (req, res, next) => {
     console.log("userProfile keys:", req.body?.userProfile ? Object.keys(req.body.userProfile) : "none");
     console.log("assetsToSend count:", req.body?.assetsToSend?.length || 0);
 
-    // metaData Kurzübersicht
     if (req.body?.siteInfos?.metaData) {
       console.log("metaData keys:", Object.keys(req.body.siteInfos.metaData));
       if (req.body.siteInfos.metaData.customerInfo) {
@@ -381,6 +403,49 @@ router.post("/", asyncHandler(async (req, res, next) => {
       console.warn("⚠️ Kein chatId gefunden - verwende '00000000' um Reloads zu vermeiden.");
     }
 
+    // Bildanalyse (falls Bild-URLs in der Nachricht sind)
+    const client = getClient();
+    let replyText = null;
+    let extractedInfo = { user: {}, assistant: {} };
+    let errorMessage = null;
+    let imageDescriptions = [];
+
+    try {
+      const imageUrls = extractImageUrls(foundMessageText);
+      if (imageUrls.length > 0) {
+        const firstUrl = imageUrls[0];
+        console.log("Bild-URL gefunden, versuche Analyse:", firstUrl);
+        const dataUrl = await fetchImageAsBase64(firstUrl);
+        if (dataUrl) {
+          const vision = await client.chat.completions.create({
+            model: "gpt-4o-mini",
+            messages: [
+              {
+                role: "system",
+                content: "Du bist die Fake-Person (meist Frau) auf der Dating-Plattform und hast dieses Bild gerade geschickt bekommen. Reagiere so, als ob du es selbst siehst: freundlich, positiv, flirty, menschlich. NIEMALS beleidigend oder negativ. Keine Ratespiele, keine Phantasie erfinden. Wenn Körper/Genitalien sichtbar: freundlich/sexuell positiv formulieren. Wenn Gesicht/Urlaub/Haustier/Haus: positiv, neugierig, charmant. Kurz halten."
+              },
+              {
+                role: "user",
+                content: [
+                  { type: "text", text: "Reagiere kurz und positiv auf das Bild, als ob du es gerade erhalten hast. Keine neutral-sachliche Beschreibung, sondern menschlich und freundlich/flirty." },
+                  { type: "image_url", image_url: { url: dataUrl } }
+                ]
+              }
+            ],
+            max_tokens: 120,
+            temperature: 0.2
+          });
+          const desc = vision.choices?.[0]?.message?.content?.trim();
+          if (desc) {
+            imageDescriptions.push(desc);
+            console.log("Bildbeschreibung:", desc.substring(0, 120));
+          }
+        }
+      }
+    } catch (err) {
+      console.warn("Bildanalyse fehlgeschlagen:", err.message);
+    }
+
     if (isMinorMention(foundMessageText)) {
       console.error("🚨 BLOCKIERT: Minderjährige oder strafrechtliche Themen erkannt!");
       return res.status(200).json({
@@ -394,9 +459,9 @@ router.post("/", asyncHandler(async (req, res, next) => {
       });
     }
 
-    const client = getClient();
     if (!client) {
-      const errorMessage = "❌ FEHLER: OpenAI Client nicht verfügbar. Bitte Admin kontaktieren.";
+      errorMessage = "❌ FEHLER: OpenAI Client nicht verfügbar. Bitte Admin kontaktieren.";
+      console.error("❌ OpenAI Client nicht verfügbar - KEINE Fallback-Nachricht!");
       return res.status(200).json({
         error: errorMessage,
         resText: errorMessage,
@@ -409,6 +474,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
     }
 
     if (!foundMessageText || foundMessageText.trim() === "") {
+      console.warn("⚠️ messageText ist leer - gebe leere Antwort zurück (keine Reloads)");
       const safeChatId = chatId || finalChatId || "00000000";
       return res.status(200).json({
         resText: "",
@@ -420,9 +486,6 @@ router.post("/", asyncHandler(async (req, res, next) => {
         disableAutoSend: true
       });
     }
-
-    let replyText = null;
-    let extractedInfo = { user: {}, assistant: {} };
 
     // ASA-Fall
     if (lastMessageFromFake !== undefined) isLastMessageFromFake = Boolean(lastMessageFromFake);
@@ -463,7 +526,6 @@ router.post("/", asyncHandler(async (req, res, next) => {
 
     // 1) Infos extrahieren
     extractedInfo = await extractInfoFromMessage(client, foundMessageText);
-    // Fallback: metaData nutzen, falls leer
     if ((!extractedInfo.user || Object.keys(extractedInfo.user).length === 0) && req.body?.siteInfos?.metaData) {
       const metaSummary = buildSummaryFromMeta(req.body.siteInfos.metaData);
       if (Object.keys(metaSummary.user).length > 0 || Object.keys(metaSummary.assistant).length > 0) {
@@ -507,6 +569,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
     }
     const customerName = extractedInfo.user?.Name || null;
     const customerJob = extractedInfo.user?.Work || null;
+    const imageContext = imageDescriptions.length > 0 ? `Erkannte Bilder:\n- ${imageDescriptions.join("\n- ")}\n` : "";
 
     let specificInstructions = "";
     if (isBotAccusation) {
@@ -550,6 +613,7 @@ Aktuelle Nachricht vom KUNDEN: "${validatedMessage.substring(0, 500)}"
 ${customerName ? `Der Kunde heißt: ${customerName}\n` : ''}
 ${customerContext.length > 0 ? `Bekannte Infos über den KUNDEN:\n${customerContext.join('\n')}\n` : ''}
 ${customerJob ? `Beruf des Kunden (falls relevant): ${customerJob}\n` : ''}
+${imageContext ? imageContext : ''}
 Plattform: ${platformId || "viluu"}
 ${specificInstructions}
 
@@ -572,7 +636,8 @@ WICHTIG:
     replyText = chat.choices?.[0]?.message?.content?.trim();
 
     if (!replyText || replyText.trim() === "") {
-      const errorMessage = "❌ FEHLER: Konnte keine Antwort generieren. Bitte versuche es erneut.";
+      errorMessage = "❌ FEHLER: Konnte keine Antwort generieren. Bitte versuche es erneut.";
+      console.error("❌ Antwort ist leer - KEINE Fallback-Nachricht!");
       return res.status(200).json({
         error: errorMessage,
         resText: errorMessage,
@@ -591,9 +656,10 @@ WICHTIG:
       .replace(/-/g, " ");
 
     if (replyText.length < 80) {
+      console.warn(`⚠️ Antwort zu kurz (${replyText.length} Zeichen), versuche zu verlängern...`);
       const extensionPrompt = `Die folgende Antwort ist zu kurz. Erweitere sie auf mindestens 80 Zeichen, füge eine Frage am Ende hinzu und mache sie natürlicher. Keine Bindestriche, keine Anführungszeichen.
 "${replyText}"
-Antworte NUR mit der erweiterten Version.`;
+Antworte NUR mit der erweiterten Version, keine Erklärungen.`;
       try {
         const extended = await client.chat.completions.create({
           model: "gpt-4o-mini",
@@ -606,11 +672,14 @@ Antworte NUR mit der erweiterten Version.`;
         });
         const extendedText = extended.choices?.[0]?.message?.content?.trim();
         if (extendedText && extendedText.length >= 80) {
-          replyText = extendedText
+          let cleanedExtended = extendedText.trim();
+          cleanedExtended = cleanedExtended
             .replace(/^"/, "").replace(/"$/, "")
             .replace(/^'/, "").replace(/'$/, "")
             .replace(/"/g, "").replace(/'/g, "")
             .replace(/-/g, " ");
+          replyText = cleanedExtended;
+          console.log("✅ Antwort auf 80+ Zeichen erweitert");
         }
       } catch (err) {
         console.error("Fehler beim Erweitern der Antwort:", err);
@@ -623,9 +692,10 @@ Antworte NUR mit der erweiterten Version.`;
       replyText.trim().endsWith("??")
     );
     if (!hasQuestion) {
-      const questionPrompt = `Füge am Ende eine passende Frage hinzu. Keine Bindestriche, keine Anführungszeichen.
+      console.warn("⚠️ Keine Frage am Ende, füge eine hinzu...");
+      const questionPrompt = `Die folgende Nachricht endet ohne Frage. Füge am Ende eine passende, natürliche Frage zum Kontext hinzu. Keine Bindestriche, keine Anführungszeichen.
 "${replyText}"
-Antworte nur mit der kompletten Nachricht inkl. Frage.`;
+Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erklärungen.`;
       try {
         const withQuestion = await client.chat.completions.create({
           model: "gpt-4o-mini",
@@ -638,20 +708,24 @@ Antworte nur mit der kompletten Nachricht inkl. Frage.`;
         });
         const questionText = withQuestion.choices?.[0]?.message?.content?.trim();
         if (questionText) {
-          replyText = questionText
+          let cleanedQuestion = questionText.trim();
+          cleanedQuestion = cleanedQuestion
             .replace(/^"/, "").replace(/"$/, "")
             .replace(/^'/, "").replace(/'$/, "")
             .replace(/"/g, "").replace(/'/g, "")
             .replace(/-/g, " ");
+          replyText = cleanedQuestion;
+          console.log("✅ Frage am Ende hinzugefügt");
         }
       } catch (err) {
         console.error("Fehler beim Hinzufügen der Frage:", err);
-        if (!replyText.endsWith("?")) replyText += " Was denkst du dazu?";
+        if (!replyText.endsWith("?")) {
+          replyText += " Was denkst du dazu?";
+        }
       }
     }
 
     console.log("✅ Antwort generiert (short):", replyText.substring(0, 120));
-
     console.log("summary keys:", Object.keys(extractedInfo.user || {}).length, "user,", Object.keys(extractedInfo.assistant || {}).length, "assistant");
 
     const responseChatId = chatId || req.body?.siteInfos?.chatId || finalChatId || "00000000";
@@ -662,7 +736,8 @@ Antworte nur mit der kompletten Nachricht inkl. Frage.`;
     console.log("responseChatId (verwendet):", responseChatId);
     console.log("⚠️ WICHTIG: responseChatId sollte IMMER gleich dem chatId aus Request sein (falls vorhanden), um Reloads zu vermeiden!");
 
-    const minWait = 40, maxWait = 60;
+    const minWait = 40;
+    const maxWait = 60;
     const waitTime = Math.floor(Math.random() * (maxWait - minWait + 1)) + minWait;
 
     return res.json({
@@ -671,24 +746,26 @@ Antworte nur mit der kompletten Nachricht inkl. Frage.`;
       summary: extractedInfo,
       summaryText: JSON.stringify(extractedInfo),
       chatId: responseChatId,
-      actions: [{ type: "insert_and_send", delay: waitTime }],
+      actions: [
+        {
+          type: "insert_and_send",
+          delay: waitTime
+        }
+      ],
       assets: assetsToSend || [],
-      flags: { blocked: false, noReload: true, skipReload: true },
+      flags: { 
+        blocked: false,
+        noReload: true,
+        skipReload: true
+      },
       disableAutoSend: true,
-      waitTime,
+      waitTime: waitTime,
       noReload: true
     });
   } catch (err) {
-    console.error("❌ FEHLER IM ROUTE-HANDLER:", err);
-    return res.status(500).json({
-      error: `❌ FEHLER: Unerwarteter Server-Fehler: ${err.message}`,
-      resText: `❌ FEHLER: Unerwarteter Server-Fehler: ${err.message}`,
-      replyText: `❌ FEHLER: Unerwarteter Server-Fehler: ${err.message}`,
-      summary: {},
-      chatId: req.body?.chatId || "00000000",
-      actions: [],
-      flags: { blocked: true, reason: "server_error", isError: true, showError: true }
-    });
+    console.error("❌ FEHLER IM ROUTE-HANDLER (vor asyncHandler):", err);
+    console.error("❌ Stack:", err.stack);
+    throw err;
   }
 }));
 
