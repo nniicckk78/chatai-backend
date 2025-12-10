@@ -185,13 +185,45 @@ router.post("/", asyncHandler(async (req, res, next) => {
       lastCustomerMessage
     } = req.body || {};
 
-    // Logging (Felder)
+    console.log("=== ChatCompletion Request (KEY FIELDS) ===");
     console.log("ALL request body keys:", Object.keys(req.body || {}));
     console.log("messageText length:", req.body?.messageText?.length || 0);
     console.log("userProfile keys:", req.body?.userProfile ? Object.keys(req.body.userProfile) : "none");
     console.log("assetsToSend count:", req.body?.assetsToSend?.length || 0);
 
-    // Nachricht finden (inkl. reason-Prefix entfernen)
+    // metaData Kurzübersicht
+    if (req.body?.siteInfos?.metaData) {
+      console.log("metaData keys:", Object.keys(req.body.siteInfos.metaData));
+      if (req.body.siteInfos.metaData.customerInfo) {
+        console.log("metaData.customerInfo keys:", Object.keys(req.body.siteInfos.metaData.customerInfo));
+        console.log("metaData.customerInfo.name:", req.body.siteInfos.metaData.customerInfo.name || "(none)");
+      }
+      if (req.body.siteInfos.metaData.moderatorInfo) {
+        console.log("metaData.moderatorInfo keys:", Object.keys(req.body.siteInfos.metaData.moderatorInfo));
+        console.log("metaData.moderatorInfo.name:", req.body.siteInfos.metaData.moderatorInfo.name || "(none)");
+      }
+    }
+
+    const allFields = Object.keys(req.body || {});
+    console.log("=== ALLE FELDER IM REQUEST ===");
+    allFields.forEach(key => {
+      const value = req.body[key];
+      if (typeof value === 'string') {
+        const truncated = value.length > 100 ? value.substring(0, 100) + '...' : value;
+        console.log(key + ': "' + truncated + '" (length: ' + value.length + ')');
+      } else if (Array.isArray(value)) {
+        console.log(key + ': Array(' + value.length + ')');
+      } else if (typeof value === 'object' && value !== null) {
+        console.log(key + ': Object with keys: ' + Object.keys(value).join(', '));
+      } else {
+        console.log(key + ': ' + value);
+      }
+    });
+
+    if (bodySize > 5 * 1024 * 1024) {
+      console.warn("⚠️ WARNUNG: Request body ist sehr groß (>5MB)!");
+    }
+
     let possibleMessageFromBody = null;
     if (!messageText || messageText.trim() === "") {
       const knownMessageFields = ['lastMessage', 'last_message', 'lastUserMessage', 'lastCustomerMessage', 'userMessage', 'user_message'];
@@ -255,6 +287,32 @@ router.post("/", asyncHandler(async (req, res, next) => {
         }
       }
     }
+
+    console.log("=== Nachrichten-Analyse ===");
+    console.log("foundMessageText:", foundMessageText ? foundMessageText.substring(0, 200) + "..." : "(leer)");
+    if (foundMessageText) console.log("foundMessageText (short):", foundMessageText.substring(0, 120));
+
+    let isLastMessageFromFake = false;
+    if (lastMessageFromFake !== undefined) isLastMessageFromFake = Boolean(lastMessageFromFake);
+    else if (isASA !== undefined) isLastMessageFromFake = Boolean(isASA);
+    else if (asa !== undefined) isLastMessageFromFake = Boolean(asa);
+    else if (lastMessageType !== undefined) isLastMessageFromFake = ["sent", "asa-messages", "sent-messages"].includes(lastMessageType);
+    else if (messageType !== undefined) isLastMessageFromFake = ["sent", "asa-messages", "sent-messages"].includes(messageType);
+
+    console.log("isLastMessageFromFake (ASA-Fall):", isLastMessageFromFake);
+
+    if (foundMessageText && foundMessageText.length > 1000) {
+      console.error("❌ FEHLER: Nachricht ist zu lang (>1000 Zeichen)");
+    }
+
+    console.log("=== ChatCompletion Request (Parsed) ===");
+    console.log("messageText (original):", messageText ? messageText.substring(0, 100) + "..." : "(leer)");
+    console.log("messageText (gefunden):", foundMessageText ? foundMessageText.substring(0, 100) + "..." : "(leer)");
+    console.log("pageUrl:", pageUrl);
+    console.log("platformId:", platformId);
+    console.log("userProfile:", userProfile ? JSON.stringify(userProfile).substring(0, 100) : "fehlt");
+    console.log("assetsToSend:", assetsToSend ? assetsToSend.length : 0);
+    console.log("chatId aus Request:", chatId || "(nicht gesendet)");
 
     if (!platformId && req.body?.siteInfos?.origin) platformId = req.body.siteInfos.origin;
     if (!pageUrl && req.body?.url) pageUrl = req.body.url;
@@ -367,7 +425,6 @@ router.post("/", asyncHandler(async (req, res, next) => {
     let extractedInfo = { user: {}, assistant: {} };
 
     // ASA-Fall
-    let isLastMessageFromFake = false;
     if (lastMessageFromFake !== undefined) isLastMessageFromFake = Boolean(lastMessageFromFake);
     else if (isASA !== undefined) isLastMessageFromFake = Boolean(isASA);
     else if (asa !== undefined) isLastMessageFromFake = Boolean(asa);
@@ -415,7 +472,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
       }
     }
 
-    // 2) Antwort generieren (Prompts wie bisher)
+    // 2) Antwort generieren
     const lowerMessage = foundMessageText.toLowerCase();
     const isBotAccusation = ["bot", "ki", "künstliche intelligenz", "chatgpt", "fake", "automatisch", "programmiert"].some(k => lowerMessage.includes(k));
     const isSexualTopic = ["titten", "brüste", "arsch", "po", "pussy", "schwanz", "sex", "ficken", "vorlieben", "sexuell", "geil", "lust"].some(k => lowerMessage.includes(k));
@@ -433,16 +490,14 @@ router.post("/", asyncHandler(async (req, res, next) => {
 
     const systemPrompt = `Du bist ein freundlicher, natürlicher Chat-Moderator auf einer Dating-Plattform. 
 - Du antwortest als FAKE-PROFIL auf Nachrichten vom KUNDEN
-- Antworte natürlich, flirty und interessiert, aber nicht übertrieben
-- Sei konkret und persönlich, nicht generisch
-- Reagiere NUR auf das, was der KUNDE in SEINER Nachricht geschrieben hat!
-- ERFINDE KEINE Informationen, Daten, Termine oder andere Dinge, die nicht in der Nachricht stehen!
-- Wenn der Kunde nur "hi" schreibt, antworte kurz und freundlich auf "hi"
-- Verwende NIEMALS deinen eigenen Namen
-- Keine Fotos/Nummern anfordern, keine Off-Plattform-Kontakte
-- Keine Bindestriche (-); keine Anführungszeichen
-- Mindestlänge 80 Zeichen; immer mit Frage enden
-- Natürlich bleiben, nicht wie Moderator klingen`;
+- Antworte natürlich, flirty und interessiert
+- Keine generischen Floskeln
+- Keine Bindestriche (-), keine Anführungszeichen
+- Mindestens 80 Zeichen, immer mit Frage enden
+- Reagiere nur auf die gegebene Nachricht, nichts erfinden
+- Keine Fotos/Nummern/Off-Platform
+- Nie den Fake-Namen nennen
+- Es darf nicht auffallen, dass du Moderator bist`;
 
     const customerContext = [];
     if (extractedInfo.user && Object.keys(extractedInfo.user).length > 0) {
@@ -456,14 +511,13 @@ router.post("/", asyncHandler(async (req, res, next) => {
     let specificInstructions = "";
     if (isBotAccusation) {
       specificInstructions = `\n\n🚨 BOT-VORWURF:
-- Emotional, verletzt reagieren
-- Klarstellen, dass du kein Bot bist
+- Emotional/abweisend reagieren, klarstellen, dass du kein Bot bist
 - Nachfragen: "Hängt mir ein Kabel aus dem Arsch oder warum denkst du das?"`;
     }
     if (isSexualTopic) {
       specificInstructions += `\n\n💋 SEXUELLE THEMEN:
 - Kompliment erwidern, flirty Frage stellen
-- Offen/flirty, aber nicht übertrieben`;
+- Offen/flirty, nicht übertreiben`;
     }
     if (isJobQuestion) {
       const realisticJobs = {
@@ -473,19 +527,18 @@ router.post("/", asyncHandler(async (req, res, next) => {
       const jobList = (fakeGender === "weiblich" || fakeGender === "w") ? realisticJobs["weiblich"] : realisticJobs["männlich"];
       const randomJob = jobList[Math.floor(Math.random() * jobList.length)];
       specificInstructions += `\n\n💼 BERUF:
-- Wenn kein Beruf im Logbuch: nimm "${randomJob}"
+- Falls kein Beruf im Logbuch: verwende "${randomJob}"
 - Keine Jobs, die Treffen nahelegen`;
     }
     if (isMeetingRequest) {
       specificInstructions += `\n\n🚫 TREFFEN:
-- Nie einem Treffen zustimmen
-- Abwimmeln: erst besser kennenlernen, später reden
+- Nie zustimmen, ablenken ("erst besser kennenlernen")
 - Keine Orte/Zeiten nennen`;
     }
     if (fakeGender && customerGender) {
       specificInstructions += `\n\n👥 GESCHLECHTERKONTEXT:
 - Du bist: ${fakeGender === "weiblich" || fakeGender === "w" ? "eine Frau" : "ein Mann"}
-- Kunde ist vermutlich: ${customerGender === "weiblich" ? "eine Frau" : "ein Mann"}
+- Kunde ist wohl: ${customerGender === "weiblich" ? "eine Frau" : "ein Mann"}
 - Schreibstil anpassen`;
     }
 
@@ -502,9 +555,9 @@ ${specificInstructions}
 
 WICHTIG:
 - Nur auf diese Nachricht reagieren
-- Keine Namen des Fakes nennen
+- Keine Fake-Namen nutzen
 - Keine Bindestriche, keine Anführungszeichen
-- Mindestens 80 Zeichen, am Ende eine Frage
+- Mindestens 80 Zeichen, immer mit Frage enden
 - Natürlich, nicht generisch`;
 
     const chat = await client.chat.completions.create({
@@ -597,9 +650,18 @@ Antworte nur mit der kompletten Nachricht inkl. Frage.`;
       }
     }
 
+    console.log("✅ Antwort generiert (short):", replyText.substring(0, 120));
+
     console.log("summary keys:", Object.keys(extractedInfo.user || {}).length, "user,", Object.keys(extractedInfo.assistant || {}).length, "assistant");
 
     const responseChatId = chatId || req.body?.siteInfos?.chatId || finalChatId || "00000000";
+    console.log("=== Response ChatId ===");
+    console.log("chatId aus Request:", chatId || "(nicht gesendet)");
+    console.log("siteInfos.chatId:", req.body?.siteInfos?.chatId || "(nicht gesendet)");
+    console.log("finalChatId (extrahiert):", finalChatId);
+    console.log("responseChatId (verwendet):", responseChatId);
+    console.log("⚠️ WICHTIG: responseChatId sollte IMMER gleich dem chatId aus Request sein (falls vorhanden), um Reloads zu vermeiden!");
+
     const minWait = 40, maxWait = 60;
     const waitTime = Math.floor(Math.random() * (maxWait - minWait + 1)) + minWait;
 
