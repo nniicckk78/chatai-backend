@@ -8,7 +8,7 @@ const replyRoutes = require("./routes/reply");
 
 const app = express();
 
-// Explizite CORS-Settings für Browser-Fetches
+// Explizite CORS-Settings
 const corsOptions = {
   origin: "*",
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS", "HEAD"],
@@ -18,12 +18,12 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.options("*", cors(corsOptions));
 
-// WICHTIG: Limit erhöht, da Extension möglicherweise große Daten sendet (Chat-Historie, Bilder, etc.)
+// JSON-Limit erhöht
 app.use(express.json({ limit: "10mb" }));
 
-// Error-Handler für JSON-Parsing-Fehler
+// JSON-Parsing-Error-Handler
 app.use((err, req, res, next) => {
-  if (err instanceof SyntaxError && err.status === 400 && 'body' in err) {
+  if (err instanceof SyntaxError && err.status === 400 && "body" in err) {
     console.error("❌ JSON-Parsing-Fehler:", err.message);
     return res.status(400).json({
       error: "❌ FEHLER: Ungültiges JSON-Format",
@@ -38,29 +38,28 @@ app.use((err, req, res, next) => {
   next(err);
 });
 
+// Health / Status
 app.get("/health", (_req, res) => res.json({ ok: true }));
 app.post("/status", (req, res) => {
-  // Logging endpoint für Extension-Status-Updates
   console.log("Status update:", req.body);
   res.json({ ok: true, received: true });
 });
-app.use("/api/v1/auth", authRoutes);
-app.use("/auth", authRoutes); // Kompatibilität mit alter Extension
-app.use("/api/v1/reply", replyRoutes);
-app.use("/chatcompletion", replyRoutes); // Kompatibilität mit alter Extension
 
-// Globaler Error-Handler für alle unerwarteten Fehler
+// Routes
+app.use("/api/v1/auth", authRoutes);
+app.use("/auth", authRoutes); // Kompatibilität
+app.use("/api/v1/reply", replyRoutes);
+app.use("/chatcompletion", replyRoutes); // Kompatibilität
+
+// Globaler Error-Handler
 app.use((err, req, res, next) => {
   console.error("❌ GLOBALER FEHLER:", err);
   console.error("❌ Stack:", err.stack);
   console.error("❌ Request URL:", req.url);
   console.error("❌ Request Method:", req.method);
-  
-  // Wenn Response bereits gesendet wurde, nichts tun
-  if (res.headersSent) {
-    return next(err);
-  }
-  
+
+  if (res.headersSent) return next(err);
+
   return res.status(err.status || 500).json({
     error: `❌ FEHLER: ${err.message || "Unerwarteter Server-Fehler"}`,
     resText: `❌ FEHLER: ${err.message || "Unerwarteter Server-Fehler"}`,
@@ -76,6 +75,10 @@ const PORT = process.env.PORT || 3000;
 const hasDatabase = Boolean(process.env.DATABASE_URL);
 
 async function start() {
+  // Server sofort starten, damit Render den Healthcheck bekommt
+  app.listen(PORT, "0.0.0.0", () => console.log(`API läuft auf Port ${PORT}`));
+
+  // Migrations/Seed nur, wenn DB vorhanden; nicht blockierend
   try {
     if (hasDatabase) {
       await runMigrations();
@@ -83,10 +86,9 @@ async function start() {
     } else {
       console.warn("Starte ohne Datenbank (DATABASE_URL fehlt). Auth/Seed werden übersprungen.");
     }
-    app.listen(PORT, () => console.log(`API läuft auf Port ${PORT}`));
   } catch (err) {
-    console.error("Startfehler", err);
-    process.exit(1);
+    console.error("Startfehler (Migrations/Seed)", err);
+    // kein process.exit, damit Render nicht abbricht
   }
 }
 
