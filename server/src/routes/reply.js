@@ -1102,6 +1102,7 @@ Antworte NUR mit der vollständigen, erweiterten Nachricht (mindestens 150 Zeich
 - Schreibe natürlich und menschlich - wie eine echte Person schreiben würde
 - Verwende keine generischen Phrasen wie "Wie kann ich dir helfen?" oder "Hallo!"
 - WICHTIG: Keine Bindestriche (-) verwenden! Schreibe alles ohne Bindestriche.
+- WICHTIG: Verwende KEINE Anführungszeichen (" oder ') am Anfang oder Ende der Nachricht! Schreibe die Nachricht direkt ohne Anführungszeichen.
 - WICHTIG: Nachricht muss MINDESTENS 80 Zeichen lang sein!
 - WICHTIG: Am Ende IMMER eine passende Frage zum Kontext stellen!
 - WICHTIG: Es darf NIEMALS auffallen, dass du ein Moderator bist - sei natürlich und menschlich!
@@ -1324,18 +1325,17 @@ WICHTIG:
     
     // WICHTIG: Entferne Anführungszeichen am Anfang/Ende (falls vorhanden)
     replyText = replyText.trim();
-    if (replyText.startsWith('"') && replyText.endsWith('"')) {
-      replyText = replyText.slice(1, -1).trim();
+    
+    // Entferne alle Arten von Anführungszeichen am Anfang und Ende mit Regex
+    // Unterstützt: " ' „ " " " (verschiedene Typen von Anführungszeichen)
+    replyText = replyText.replace(/^["'„""]+/, '').replace(/["'"""]+$/, '').trim();
+    
+    // Zusätzlich: Entferne auch einzelne Anführungszeichen am Anfang/Ende (falls noch vorhanden)
+    if (replyText.startsWith('"') || replyText.startsWith("'") || replyText.startsWith('„') || replyText.startsWith('"')) {
+      replyText = replyText.replace(/^["'„"]/, '').trim();
     }
-    if (replyText.startsWith("'") && replyText.endsWith("'")) {
-      replyText = replyText.slice(1, -1).trim();
-    }
-    // Entferne auch Anführungszeichen am Anfang, wenn sie alleine stehen
-    if (replyText.startsWith('"') && !replyText.endsWith('"')) {
-      replyText = replyText.replace(/^"/, '').trim();
-    }
-    if (replyText.startsWith("'") && !replyText.endsWith("'")) {
-      replyText = replyText.replace(/^'/, '').trim();
+    if (replyText.endsWith('"') || replyText.endsWith("'") || replyText.endsWith('"') || replyText.endsWith('"')) {
+      replyText = replyText.replace(/["'"""]$/, '').trim();
     }
     
     // Entferne Bindestriche (falls vorhanden)
@@ -1367,6 +1367,8 @@ Antworte NUR mit der erweiterten Version, keine Erklärungen.`;
         const extendedText = extended.choices?.[0]?.message?.content?.trim();
         if (extendedText && extendedText.length >= 80) {
           replyText = extendedText.replace(/-/g, " ").replace(/ß/g, "ss");
+          // Entferne Anführungszeichen auch nach dem Verlängern
+          replyText = replyText.replace(/^["'„"]+/, '').replace(/["'""]+$/, '').trim();
           console.log("✅ Antwort auf 80+ Zeichen erweitert");
         }
       } catch (err) {
@@ -1403,6 +1405,8 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
         const questionText = withQuestion.choices?.[0]?.message?.content?.trim();
         if (questionText) {
           replyText = questionText.replace(/-/g, " ").replace(/ß/g, "ss");
+          // Entferne Anführungszeichen auch nach dem Hinzufügen der Frage
+          replyText = replyText.replace(/^["'„"]+/, '').replace(/["'""]+$/, '').trim();
           console.log("✅ Frage am Ende hinzugefügt");
         }
       } catch (err) {
