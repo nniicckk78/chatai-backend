@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatAI Dashboard - Regeln & Training</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .tabs {
+            display: flex;
+            background: #f5f5f5;
+            border-bottom: 2px solid #ddd;
+        }
+        
+        .tab {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            background: #f5f5f5;
+            border: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .tab:hover {
+            background: #e0e0e0;
+        }
+        
+        .tab.active {
+            background: white;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 30px;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+        }
+        
+        .btn-danger {
+            background: #dc3545;
+        }
+        
+        .list-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .list-item-content {
+            flex: 1;
+        }
+        
+        .list-item-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        
+        .badge-success {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .badge-info {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        
+        .alert {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+        }
+        
+        .tag-input {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        
+        .tag {
+            background: #667eea;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .tag-remove {
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 ChatAI Dashboard</h1>
+            <p>Verwalte Regeln, Training-Daten und Konfigurationen</p>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('rules')">📋 Regeln</button>
+            <button class="tab" onclick="showTab('training')">📚 Training Data</button>
+            <button class="tab" onclick="showTab('settings')">⚙️ Einstellungen</button>
+        </div>
+        
+        <div id="alert-container"></div>
+        
+        <!-- Regeln Tab -->
+        <div id="rules-tab" class="tab-content active">
+            <div class="section">
+                <h2>🚫 Verbotene Wörter</h2>
+                <div class="form-group">
+                    <input type="text" id="forbidden-word-input" placeholder="Wort eingeben...">
+                    <button class="btn" onclick="addForbiddenWord()" style="margin-top: 10px;">Hinzufügen</button>
+                </div>
+                <div id="forbidden-words-list"></div>
+            </div>
+            
+            <div class="section">
+                <h2>🚫 Verbotene Phrasen</h2>
+                <div class="form-group">
+                    <textarea id="forbidden-phrase-input" placeholder="Phrase eingeben..."></textarea>
+                    <button class="btn" onclick="addForbiddenPhrase()" style="margin-top: 10px;">Hinzufügen</button>
+                </div>
+                <div id="forbidden-phrases-list"></div>
+            </div>
+            
+            <div class="section">
+                <h2>💬 Situations-spezifische Antworten</h2>
+                <p style="margin-bottom: 20px; color: #666;">Definiere, wie die KI in verschiedenen Situationen reagieren soll. Du kannst neue Situationen hinzufügen und bestehende bearbeiten.</p>
+                
+                <div id="situational-responses-list"></div>
+                
+                <div class="form-group" style="margin-top: 30px; padding: 20px; background: #f0f0f0; border-radius: 8px;">
+                    <h3 style="margin-bottom: 15px;">➕ Neue Situation hinzufügen</h3>
+                    <div class="form-group">
+                        <label>Name der Situation (z.B. "Treffen-Anfragen")</label>
+                        <input type="text" id="new-situation-name" placeholder="z.B. Treffen-Anfragen">
+                    </div>
+                    <div class="form-group">
+                        <label>Emoji (optional)</label>
+                        <input type="text" id="new-situation-emoji" placeholder="🚫" maxlength="2">
+                    </div>
+                    <div class="form-group">
+                        <label>Keywords (durch Komma getrennt) - Wörter, die diese Situation auslösen</label>
+                        <input type="text" id="new-situation-keywords" placeholder="z.B. treffen, termin, ausmachen, sehen">
+                        <small style="color: #666; display: block; margin-top: 5px;">Wenn diese Wörter in der Kunden-Nachricht vorkommen, wird diese Regel angewendet.</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Anweisungen für die KI</label>
+                        <textarea id="new-situation-instructions" placeholder="Beschreibe, wie die KI in dieser Situation reagieren soll..."></textarea>
+                    </div>
+                    <button class="btn" onclick="addNewSituation()" style="width: 100%; padding: 12px;">
+                        ➕ Situation hinzufügen
+                    </button>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>📋 Allgemeine Regeln</h2>
+                <p style="margin-bottom: 20px; color: #666;">Allgemeine Regeln, die die KI immer beachten muss (z.B. Rechtschreibung, Formatierung, etc.)</p>
+                
+                <div class="form-group">
+                    <label>Neue Regel hinzufügen</label>
+                    <textarea id="general-rule-input" placeholder="z.B. Es wird nie mit ß geschrieben, sondern mit ss" style="min-height: 80px;"></textarea>
+                    <button class="btn" onclick="addGeneralRule()" style="margin-top: 10px;">Hinzufügen</button>
+                </div>
+                <div id="general-rules-list"></div>
+            </div>
+            
+            <div class="section">
+                <h2>🔥 Bevorzugte Wörter (SOLLEN verwendet werden)</h2>
+                <p style="margin-bottom: 20px; color: #666;">Wörter, die die KI verwenden SOLL, besonders bei sexuellen/flirty Gesprächen. Diese Wörter werden aktiv in den Prompt eingebaut.</p>
+                
+                <div class="form-group">
+                    <label>💋 Sexuelle Wörter (für explizite Gespräche)</label>
+                    <input type="text" id="preferred-sexual-word-input" placeholder="z.B. Arschfotze, geiler Fickwanz, Muschisaft">
+                    <button class="btn" onclick="addPreferredSexualWord()" style="margin-top: 10px;">Hinzufügen</button>
+                    <small style="color: #666; display: block; margin-top: 5px;">Diese Wörter werden besonders bei sexuellen Themen verwendet.</small>
+                </div>
+                <div id="preferred-sexual-words-list"></div>
+                
+                <div class="form-group" style="margin-top: 30px;">
+                    <label>😘 Flirty Wörter (für lockere/flirty Gespräche)</label>
+                    <input type="text" id="preferred-flirty-word-input" placeholder="z.B. süßer, heißer, geiler">
+                    <button class="btn" onclick="addPreferredFlirtyWord()" style="margin-top: 10px;">Hinzufügen</button>
+                    <small style="color: #666; display: block; margin-top: 5px;">Diese Wörter können bei flirty Gesprächen verwendet werden.</small>
+                </div>
+                <div id="preferred-flirty-words-list"></div>
+                
+                <div class="form-group" style="margin-top: 30px;">
+                    <label>💬 Allgemeine bevorzugte Wörter</label>
+                    <input type="text" id="preferred-general-word-input" placeholder="z.B. geil, heiß, sexy">
+                    <button class="btn" onclick="addPreferredGeneralWord()" style="margin-top: 10px;">Hinzufügen</button>
+                    <small style="color: #666; display: block; margin-top: 5px;">Diese Wörter können allgemein verwendet werden.</small>
+                </div>
+                <div id="preferred-general-words-list"></div>
+            </div>
+            
+            <button class="btn" onclick="saveRules()" style="width: 100%; padding: 15px; font-size: 1.2em; margin-top: 20px;">
+                💾 Regeln speichern
+            </button>
+        </div>
+        
+        <!-- Training Data Tab -->
+        <div id="training-tab" class="tab-content">
+            <div class="section">
+                <h2>📝 Neues Gespräch hinzufügen</h2>
+                <div class="form-group">
+                    <label>Kunden-Nachricht</label>
+                    <textarea id="customer-message-input" placeholder="Was hat der Kunde geschrieben?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Moderator/Fake Antwort</label>
+                    <textarea id="moderator-response-input" placeholder="Wie hat der Moderator geantwortet?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Situation</label>
+                    <select id="situation-select">
+                        <option value="general">Allgemein</option>
+                        <option value="botAccusation">Bot-Vorwurf</option>
+                        <option value="sexualTopics">Sexuelle Themen</option>
+                        <option value="meetingRequest">Treffen-Anfrage</option>
+                        <option value="moneyTopics">Geld/Coins</option>
+                        <option value="greeting">Begrüßung</option>
+                        <option value="compliment">Kompliment</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Tags (durch Komma getrennt)</label>
+                    <input type="text" id="tags-input" placeholder="z.B. flirty, freundlich, abweisend">
+                </div>
+                <button class="btn" onclick="addTrainingData()" style="width: 100%; padding: 15px;">
+                    ➕ Gespräch hinzufügen
+                </button>
+            </div>
+            
+            <div class="section">
+                <h2>📚 Gespeicherte Gespräche (<span id="total-conversations">0</span>)</h2>
+                <div id="training-data-list"></div>
+            </div>
+        </div>
+        
+        <!-- Settings Tab -->
+        <div id="settings-tab" class="tab-content">
+            <div class="section">
+                <h2>🔄 Config Management</h2>
+                <button class="btn" onclick="reloadConfig()" style="margin-right: 10px;">
+                    🔄 Config neu laden (Hot-Reload)
+                </button>
+                <button class="btn btn-secondary" onclick="loadRules()">
+                    📥 Regeln neu laden
+                </button>
+            </div>
+            
+            <div class="section">
+                <h2>📊 Status</h2>
+                <p><strong>Letzte Aktualisierung:</strong> <span id="last-update">-</span></p>
+                <p><strong>Gespräche gespeichert:</strong> <span id="status-conversations">0</span></p>
+                <p><strong>Verbotene Wörter:</strong> <span id="status-forbidden-words">0</span></p>
+                <p><strong>Verbotene Phrasen:</strong> <span id="status-forbidden-phrases">0</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const API_BASE = window.location.origin + "/api/v1/dashboard";
+        let currentRules = null;
+        let currentTrainingData = null;
+        
+        // Tab Navigation
+        function showTab(tabName) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            
+            event.target.classList.add('active');
+            document.getElementById(tabName + '-tab').classList.add('active');
+        }
+        
+        // Alert System
+        function showAlert(message, type = 'success') {
+            const container = document.getElementById('alert-container');
+            const alert = document.createElement('div');
+            alert.className = `alert alert-${type}`;
+            alert.textContent = message;
+            container.appendChild(alert);
+            
+            setTimeout(() => {
+                alert.remove();
+            }, 5000);
+        }
+        
+        // API Helper
+        async function apiCall(endpoint, method = 'GET', data = null) {
+            try {
+                const options = {
+                    method,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                };
+                
+                if (data) {
+                    options.body = JSON.stringify(data);
+                }
+                
+                const response = await fetch(API_BASE + endpoint, options);
+                const result = await response.json();
+                
+                if (!result.success) {
+                    throw new Error(result.error || 'Unbekannter Fehler');
+                }
+                
+                return result;
+            } catch (err) {
+                showAlert('Fehler: ' + err.message, 'error');
+                throw err;
+            }
+        }
+        
+        // Load Rules
+        async function loadRules() {
+            try {
+                const result = await apiCall('/rules');
+                currentRules = result.data;
+                renderRules();
+                updateStatus();
+            } catch (err) {
+                console.error('Fehler beim Laden der Regeln:', err);
+            }
+        }
+        
+        // Render Rules
+        function renderRules() {
+            if (!currentRules) return;
+            
+            // Forbidden Words
+            const forbiddenWordsList = document.getElementById('forbidden-words-list');
+            forbiddenWordsList.innerHTML = currentRules.forbiddenWords.map(word => `
+                <div class="list-item">
+                    <div class="list-item-content">${word}</div>
+                    <div class="list-item-actions">
+                        <button class="btn btn-danger" onclick="removeForbiddenWord('${word}')">Löschen</button>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Forbidden Phrases
+            const forbiddenPhrasesList = document.getElementById('forbidden-phrases-list');
+            forbiddenPhrasesList.innerHTML = currentRules.forbiddenPhrases.map(phrase => `
+                <div class="list-item">
+                    <div class="list-item-content">${phrase}</div>
+                    <div class="list-item-actions">
+                        <button class="btn btn-danger" onclick="removeForbiddenPhrase('${phrase}')">Löschen</button>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Situational Responses - DYNAMISCH RENDERN
+            renderSituationalResponses();
+            
+            // General Rules
+            const generalRulesList = document.getElementById('general-rules-list');
+            if (currentRules.generalRules && Array.isArray(currentRules.generalRules)) {
+                generalRulesList.innerHTML = currentRules.generalRules.map((rule, index) => `
+                    <div class="list-item">
+                        <div class="list-item-content">${rule}</div>
+                        <div class="list-item-actions">
+                            <button class="btn btn-danger" onclick="removeGeneralRule(${index})">Löschen</button>
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                generalRulesList.innerHTML = '';
+            }
+        }
+        
+        // Add/Remove Functions
+        function addForbiddenWord() {
+            const input = document.getElementById('forbidden-word-input');
+            const word = input.value.trim();
+            if (!word) return;
+            
+            if (!currentRules.forbiddenWords) currentRules.forbiddenWords = [];
+            if (!currentRules.forbiddenWords.includes(word)) {
+                currentRules.forbiddenWords.push(word);
+                renderRules();
+                input.value = '';
+            }
+        }
+        
+        function removeForbiddenWord(word) {
+            currentRules.forbiddenWords = currentRules.forbiddenWords.filter(w => w !== word);
+            renderRules();
+        }
+        
+        function addForbiddenPhrase() {
+            const input = document.getElementById('forbidden-phrase-input');
+            const phrase = input.value.trim();
+            if (!phrase) return;
+            
+            if (!currentRules.forbiddenPhrases) currentRules.forbiddenPhrases = [];
+            if (!currentRules.forbiddenPhrases.includes(phrase)) {
+                currentRules.forbiddenPhrases.push(phrase);
+                renderRules();
+                input.value = '';
+            }
+        }
+        
+        function removeForbiddenPhrase(phrase) {
+            currentRules.forbiddenPhrases = currentRules.forbiddenPhrases.filter(p => p !== phrase);
+            renderRules();
+        }
+        
+        // General Rules Functions
+        function addGeneralRule() {
+            const input = document.getElementById('general-rule-input');
+            const rule = input.value.trim();
+            if (!rule) return;
+            
+            if (!currentRules.generalRules) currentRules.generalRules = [];
+            if (!currentRules.generalRules.includes(rule)) {
+                currentRules.generalRules.push(rule);
+                renderRules();
+                input.value = '';
+            }
+        }
+        
+        function removeGeneralRule(index) {
+            if (currentRules.generalRules && currentRules.generalRules[index]) {
+                currentRules.generalRules.splice(index, 1);
+                renderRules();
+            }
+        }
+        
+        // Preferred Words Functions
+        function addPreferredSexualWord() {
+            const input = document.getElementById('preferred-sexual-word-input');
+            const word = input.value.trim();
+            if (!word) return;
+            
+            if (!currentRules.preferredWords) currentRules.preferredWords = { sexual: [], flirty: [], general: [] };
+            if (!currentRules.preferredWords.sexual) currentRules.preferredWords.sexual = [];
+            if (!currentRules.preferredWords.sexual.includes(word)) {
+                currentRules.preferredWords.sexual.push(word);
+                renderRules();
+                input.value = '';
+            }
+        }
+        
+        function removePreferredSexualWord(word) {
+            if (currentRules.preferredWords && currentRules.preferredWords.sexual) {
+                currentRules.preferredWords.sexual = currentRules.preferredWords.sexual.filter(w => w !== word);
+                renderRules();
+            }
+        }
+        
+        function addPreferredFlirtyWord() {
+            const input = document.getElementById('preferred-flirty-word-input');
+            const word = input.value.trim();
+            if (!word) return;
+            
+            if (!currentRules.preferredWords) currentRules.preferredWords = { sexual: [], flirty: [], general: [] };
+            if (!currentRules.preferredWords.flirty) currentRules.preferredWords.flirty = [];
+            if (!currentRules.preferredWords.flirty.includes(word)) {
+                currentRules.preferredWords.flirty.push(word);
+                renderRules();
+                input.value = '';
+            }
+        }
+        
+        function removePreferredFlirtyWord(word) {
+            if (currentRules.preferredWords && currentRules.preferredWords.flirty) {
+                currentRules.preferredWords.flirty = currentRules.preferredWords.flirty.filter(w => w !== word);
+                renderRules();
+            }
+        }
+        
+        function addPreferredGeneralWord() {
+            const input = document.getElementById('preferred-general-word-input');
+            const word = input.value.trim();
+            if (!word) return;
+            
+            if (!currentRules.preferredWords) currentRules.preferredWords = { sexual: [], flirty: [], general: [] };
+            if (!currentRules.preferredWords.general) currentRules.preferredWords.general = [];
+            if (!currentRules.preferredWords.general.includes(word)) {
+                currentRules.preferredWords.general.push(word);
+                renderRules();
+                input.value = '';
+            }
+        }
+        
+        function removePreferredGeneralWord(word) {
+            if (currentRules.preferredWords && currentRules.preferredWords.general) {
+                currentRules.preferredWords.general = currentRules.preferredWords.general.filter(w => w !== word);
+                renderRules();
+            }
+        }
+        
+        // Render Situational Responses
+        function renderSituationalResponses() {
+            const container = document.getElementById('situational-responses-list');
+            if (!currentRules.situationalResponses || Object.keys(currentRules.situationalResponses).length === 0) {
+                container.innerHTML = '<p style="color: #666; padding: 20px;">Noch keine situations-spezifischen Antworten definiert.</p>';
+                return;
+            }
+            
+            container.innerHTML = Object.entries(currentRules.situationalResponses).map(([key, rule]) => {
+                const title = rule.title || key;
+                const emoji = rule.emoji || '⚠️';
+                const keywords = Array.isArray(rule.keywords) ? rule.keywords.join(', ') : '';
+                const instructions = rule.instructions || '';
+                const enabled = rule.enabled !== false;
+                
+                return `
+                    <div class="form-group" style="background: white; padding: 20px; border-radius: 8px; border: 2px solid #ddd; margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <h3 style="margin: 0;">${emoji} ${title}</h3>
+                            <button class="btn btn-danger" onclick="removeSituation('${key}')" style="padding: 8px 15px; font-size: 0.9em;">Löschen</button>
+                        </div>
+                        <div class="form-group">
+                            <label>Keywords (durch Komma getrennt)</label>
+                            <input type="text" id="situation-keywords-${key}" value="${keywords}" placeholder="z.B. treffen, termin, ausmachen" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                            <small style="color: #666;">Wörter, die diese Situation auslösen</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Anweisungen für die KI</label>
+                            <textarea id="situation-instructions-${key}" placeholder="Beschreibe, wie die KI in dieser Situation reagieren soll..." style="width: 100%; min-height: 100px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">${instructions}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="situation-enabled-${key}" ${enabled ? 'checked' : ''}> Aktiviert
+                            </label>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        // Add New Situation
+        function addNewSituation() {
+            const name = document.getElementById('new-situation-name').value.trim();
+            const emoji = document.getElementById('new-situation-emoji').value.trim() || '⚠️';
+            const keywordsInput = document.getElementById('new-situation-keywords').value.trim();
+            const instructions = document.getElementById('new-situation-instructions').value.trim();
+            
+            if (!name || !instructions) {
+                showAlert('Bitte fülle mindestens Name und Anweisungen aus!', 'error');
+                return;
+            }
+            
+            // Erstelle Key aus Name (lowercase, ohne Sonderzeichen)
+            const key = name.toLowerCase().replace(/[^a-z0-9]/g, '');
+            
+            if (!currentRules.situationalResponses) currentRules.situationalResponses = {};
+            
+            // Prüfe ob Key bereits existiert
+            if (currentRules.situationalResponses[key]) {
+                showAlert('Eine Situation mit diesem Namen existiert bereits!', 'error');
+                return;
+            }
+            
+            // Keywords in Array umwandeln
+            const keywords = keywordsInput ? keywordsInput.split(',').map(k => k.trim()).filter(k => k) : [];
+            
+            // Neue Situation hinzufügen
+            currentRules.situationalResponses[key] = {
+                enabled: true,
+                title: name,
+                emoji: emoji,
+                keywords: keywords,
+                instructions: instructions
+            };
+            
+            // Formular leeren
+            document.getElementById('new-situation-name').value = '';
+            document.getElementById('new-situation-emoji').value = '';
+            document.getElementById('new-situation-keywords').value = '';
+            document.getElementById('new-situation-instructions').value = '';
+            
+            renderSituationalResponses();
+            showAlert('✅ Situation hinzugefügt! Vergiss nicht zu speichern.');
+        }
+        
+        // Remove Situation
+        function removeSituation(key) {
+            if (!confirm(`Möchtest du die Situation "${key}" wirklich löschen?`)) return;
+            
+            if (currentRules.situationalResponses && currentRules.situationalResponses[key]) {
+                delete currentRules.situationalResponses[key];
+                renderSituationalResponses();
+                showAlert('✅ Situation gelöscht! Vergiss nicht zu speichern.');
+            }
+        }
+        
+        // Save Rules
+        async function saveRules() {
+            try {
+                // Sammle alle situations-spezifischen Antworten aus den Formularen
+                if (currentRules.situationalResponses) {
+                    Object.keys(currentRules.situationalResponses).forEach(key => {
+                        const keywordsInput = document.getElementById(`situation-keywords-${key}`);
+                        const instructionsInput = document.getElementById(`situation-instructions-${key}`);
+                        const enabledInput = document.getElementById(`situation-enabled-${key}`);
+                        
+                        if (keywordsInput && instructionsInput && enabledInput) {
+                            const keywords = keywordsInput.value.trim() ? 
+                                keywordsInput.value.split(',').map(k => k.trim()).filter(k => k) : [];
+                            
+                            currentRules.situationalResponses[key] = {
+                                ...currentRules.situationalResponses[key],
+                                keywords: keywords,
+                                instructions: instructionsInput.value.trim(),
+                                enabled: enabledInput.checked
+                            };
+                        }
+                    });
+                }
+                
+                await apiCall('/rules', 'POST', currentRules);
+                showAlert('✅ Regeln erfolgreich gespeichert!');
+                updateStatus();
+            } catch (err) {
+                console.error('Fehler beim Speichern:', err);
+            }
+        }
+        
+        // Training Data Functions
+        async function loadTrainingData() {
+            try {
+                const result = await apiCall('/training-data');
+                currentTrainingData = result.data;
+                renderTrainingData();
+            } catch (err) {
+                console.error('Fehler beim Laden der Training Data:', err);
+            }
+        }
+        
+        function renderTrainingData() {
+            if (!currentTrainingData || !currentTrainingData.conversations) return;
+            
+            document.getElementById('total-conversations').textContent = currentTrainingData.conversations.length;
+            document.getElementById('status-conversations').textContent = currentTrainingData.conversations.length;
+            
+            const list = document.getElementById('training-data-list');
+            list.innerHTML = currentTrainingData.conversations.map(conv => `
+                <div class="list-item">
+                    <div class="list-item-content">
+                        <strong>Kunde:</strong> ${conv.customerMessage.substring(0, 100)}${conv.customerMessage.length > 100 ? '...' : ''}<br>
+                        <strong>Moderator:</strong> ${conv.moderatorResponse.substring(0, 100)}${conv.moderatorResponse.length > 100 ? '...' : ''}<br>
+                        <span class="badge badge-info">${conv.situation}</span>
+                        ${conv.tags && conv.tags.length > 0 ? conv.tags.map(tag => `<span class="badge badge-success">${tag}</span>`).join('') : ''}
+                    </div>
+                    <div class="list-item-actions">
+                        <button class="btn btn-danger" onclick="deleteTrainingData('${conv.id}')">Löschen</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        async function addTrainingData() {
+            try {
+                const customerMessage = document.getElementById('customer-message-input').value.trim();
+                const moderatorResponse = document.getElementById('moderator-response-input').value.trim();
+                const situation = document.getElementById('situation-select').value;
+                const tags = document.getElementById('tags-input').value.split(',').map(t => t.trim()).filter(t => t);
+                
+                if (!customerMessage || !moderatorResponse) {
+                    showAlert('Bitte fülle alle Felder aus!', 'error');
+                    return;
+                }
+                
+                await apiCall('/training-data', 'POST', {
+                    customerMessage,
+                    moderatorResponse,
+                    situation,
+                    tags
+                });
+                
+                showAlert('✅ Gespräch erfolgreich hinzugefügt!');
+                document.getElementById('customer-message-input').value = '';
+                document.getElementById('moderator-response-input').value = '';
+                document.getElementById('tags-input').value = '';
+                
+                await loadTrainingData();
+            } catch (err) {
+                console.error('Fehler beim Hinzufügen:', err);
+            }
+        }
+        
+        async function deleteTrainingData(id) {
+            if (!confirm('Möchtest du dieses Gespräch wirklich löschen?')) return;
+            
+            try {
+                await apiCall('/training-data/' + id, 'DELETE');
+                showAlert('✅ Gespräch gelöscht!');
+                await loadTrainingData();
+            } catch (err) {
+                console.error('Fehler beim Löschen:', err);
+            }
+        }
+        
+        // Reload Config
+        async function reloadConfig() {
+            try {
+                await apiCall('/reload', 'POST');
+                showAlert('✅ Config erfolgreich neu geladen!');
+                await loadRules();
+                await loadTrainingData();
+            } catch (err) {
+                console.error('Fehler beim Neuladen:', err);
+            }
+        }
+        
+        // Update Status
+        function updateStatus() {
+            if (currentRules) {
+                document.getElementById('status-forbidden-words').textContent = (currentRules.forbiddenWords || []).length;
+                document.getElementById('status-forbidden-phrases').textContent = (currentRules.forbiddenPhrases || []).length;
+            }
+            
+            if (currentTrainingData) {
+                document.getElementById('last-update').textContent = currentTrainingData.lastUpdated || '-';
+            }
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadRules();
+            await loadTrainingData();
+        });
+    </script>
+</body>
+</html>
+
