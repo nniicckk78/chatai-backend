@@ -3,7 +3,6 @@ const { getClient } = require("../openaiClient");
 const { verifyToken } = require("../auth");
 const fs = require("fs");
 const path = require("path");
-
 const router = express.Router();
 
 // Wenn SKIP_AUTH=true gesetzt ist, Auth überspringen (nur für Tests!)
@@ -406,8 +405,8 @@ router.post("/", asyncHandler(async (req, res, next) => {
   // Die alte Extension hat wahrscheinlich bereits alles richtig erkannt - wir müssen nur die Felder richtig lesen
   const { 
     messageText = "", 
-    pageUrl, 
-    platformId, 
+    pageUrl: pageUrlFromBody, 
+    platformId: platformIdFromBody, 
     assetsToSend, 
     userProfile, 
     chatId,
@@ -423,6 +422,10 @@ router.post("/", asyncHandler(async (req, res, next) => {
     lastUserMessage,
     lastCustomerMessage
   } = req.body || {};
+  
+  // WICHTIG: Verwende let statt const, damit wir später Werte zuweisen können
+  let pageUrl = pageUrlFromBody;
+  let platformId = platformIdFromBody;
   
   // WICHTIG: Die Extension sollte die richtige Nachricht in messageText senden
   // Wir suchen NICHT mehr nach anderen Nachrichten im Body, da das zu falschen Nachrichten führen kann
@@ -1541,7 +1544,4 @@ router.use((err, req, res, next) => {
 });
 
 module.exports = router;
-
-
-
 
