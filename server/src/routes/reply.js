@@ -269,6 +269,47 @@ function countCustomerMessages(messages) {
   return messages.filter(m => !isInfoMessage(m) && (m.type === "received" || m.messageType === "received") && typeof m?.text === "string" && m.text.trim() !== "").length;
 }
 
+// Validiere und filtere assetsToSend, um undefined-Elemente und ungültige Objekte zu entfernen
+function validateAssets(assetsToSend) {
+  if (!Array.isArray(assetsToSend)) {
+    if (assetsToSend) {
+      console.warn("⚠️ assetsToSend ist kein Array:", typeof assetsToSend);
+    }
+    return [];
+  }
+  
+  const validAssets = assetsToSend.filter(asset => {
+    // Entferne undefined/null Elemente
+    if (!asset || typeof asset !== 'object') {
+      console.warn("⚠️ Ungültiges Asset gefunden (undefined/null/nicht-Objekt), entferne:", asset);
+      return false;
+    }
+    // Prüfe auf Template-Strings, die nicht ersetzt wurden (z.B. {{image.url}})
+    try {
+      const assetStr = JSON.stringify(asset);
+      if (assetStr.includes('{{') || assetStr.includes('}}')) {
+        console.warn("⚠️ Asset enthält nicht-ersetzte Template-Strings, entferne:", assetStr.substring(0, 100));
+        return false;
+      }
+    } catch (err) {
+      console.warn("⚠️ Fehler beim Stringify von Asset, entferne:", err.message);
+      return false;
+    }
+    // Prüfe, ob asset gültige Eigenschaften hat (mindestens url oder id sollte vorhanden sein)
+    if (!asset.url && !asset.id && !asset.src && !asset.imageUrl) {
+      console.warn("⚠️ Asset hat keine gültigen Eigenschaften (url/id/src/imageUrl), entferne:", asset);
+      return false;
+    }
+    return true;
+  });
+  
+  if (assetsToSend.length !== validAssets.length) {
+    console.log(`✅ assetsToSend validiert: ${assetsToSend.length} -> ${validAssets.length} gültige Assets`);
+  }
+  
+  return validAssets;
+}
+
 // Wrapper für async-Fehler
 const asyncHandler = (fn) => (req, res, next) => {
   Promise.resolve(fn(req, res, next)).catch(next);
@@ -934,6 +975,9 @@ Antworte NUR mit der vollständigen, erweiterten Nachricht (mindestens 150 Zeich
       const maxWait = 60;
       const asaWaitTime = Math.floor(Math.random() * (maxWait - minWait + 1)) + minWait;
       
+      // Validiere assetsToSend für ASA-Antwort
+      const asaValidAssets = validateAssets(assetsToSend);
+      
       return res.json({
         resText: asaMessage,
         replyText: asaMessage,
@@ -945,7 +989,7 @@ Antworte NUR mit der vollständigen, erweiterten Nachricht (mindestens 150 Zeich
             delay: asaWaitTime // Wartezeit in Sekunden (40-60 Sekunden variabel)
           }
         ],
-        assets: assetsToSend || [],
+        assets: asaValidAssets,
         flags: { 
           blocked: false, // WICHTIG: Immer false, damit Extension nicht neu lädt
           noReload: true, // Explizites Flag: Nicht neu laden
@@ -1389,6 +1433,10 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
   // #region agent log
   try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1314',message:'Before res.json',data:{hasReplyText:!!replyText,hasExtractedInfo:!!extractedInfo,hasAssetsToSend:!!assetsToSend,assetsToSendLength:assetsToSend?.length||0},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'E'})+'\n');}catch(e){}
   // #endregion
+  
+  // WICHTIG: Validiere und filtere assetsToSend, um undefined-Elemente und ungültige Objekte zu entfernen
+  const validAssets = validateAssets(assetsToSend);
+  
   try {
     return res.json({
       resText: replyText, // Extension erwartet resText statt replyText
@@ -1402,7 +1450,7 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
           delay: waitTime // Wartezeit in Sekunden (40-60 Sekunden variabel)
         }
       ],
-      assets: assetsToSend || [],
+      assets: validAssets, // Verwende validierte Assets
       flags: { 
         blocked: false, // WICHTIG: Immer false, damit Extension nicht neu lädt
         noReload: true, // Explizites Flag: Nicht neu laden
