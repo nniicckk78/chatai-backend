@@ -784,7 +784,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
     if (isLastMessageFromFake) {
       console.log("🔄 ASA-Fall erkannt: Letzte Nachricht vom Fake, generiere Reaktivierungsnachricht...");
       
-      // Verschiedene ASA-Nachrichten für Abwechslung
+      // Verschiedene ASA-Nachrichten für Abwechslung (Reaktivierungs-Fokus)
       const asaTemplates = [
         "Hey, lange nichts mehr von dir gehört, wo steckst du denn so lange? Hast du kein Interesse mehr an mir?",
         "Hallo, ich habe schon eine Weile nichts mehr von dir gehört. Ist alles okay bei dir?",
@@ -793,20 +793,118 @@ router.post("/", asyncHandler(async (req, res, next) => {
         "Hey, ist etwas passiert? Ich habe schon länger nichts mehr von dir gehört.",
         "Hallo, ich warte schon auf deine Antwort. Hast du keine Zeit mehr zum Schreiben?",
         "Hey, wo steckst du denn? Ich dachte, wir hätten eine gute Verbindung.",
-        "Hallo, ich hoffe, es geht dir gut. Ich würde gerne wieder von dir hören."
+        "Hallo, ich hoffe, es geht dir gut. Ich würde gerne wieder von dir hören.",
+        "Hey, was ist denn los? Ich habe schon länger nichts mehr von dir gehört. Bist du noch da?",
+        "Hallo, ich vermisse unsere Gespräche. Warum schreibst du mir nicht mehr zurück?",
+        "Hey, wo bist du denn hin? Ich dachte, wir hätten eine gute Verbindung aufgebaut.",
+        "Hallo, ich warte schon so lange auf deine Antwort. Ist alles in Ordnung bei dir?",
+        "Hey, ich habe schon eine Weile nichts mehr von dir gehört. Hast du das Interesse verloren?",
+        "Hallo, ich vermisse dich. Warum antwortest du mir nicht mehr?",
+        "Hey, wo steckst du denn gerade? Ich würde gerne wieder von dir hören.",
+        "Hallo, ich hoffe, es geht dir gut. Schreibst du mir nicht mehr, weil du keine Zeit hast?",
+        "Hey, was ist denn passiert? Ich habe schon länger nichts mehr von dir gehört.",
+        "Hallo, ich vermisse unsere Unterhaltungen. Bist du noch interessiert an mir?",
+        "Hey, wo bist du denn geblieben? Ich dachte, wir hätten eine gute Verbindung.",
+        "Hallo, ich warte schon auf deine Antwort. Hast du vielleicht keine Zeit mehr zum Schreiben?"
       ];
       
       // Wähle zufällig eine ASA-Nachricht
       let asaMessage = asaTemplates[Math.floor(Math.random() * asaTemplates.length)].trim();
-      // Entferne Anführungszeichen und Bindestriche
-      asaMessage = asaMessage.replace(/^["']|["']$/g, "").replace(/-/g, " ");
-      // Mindestlänge 150 Zeichen mit Reaktivierungs-Fokus
+      
+      // Entferne Anführungszeichen am Anfang/Ende falls vorhanden
+      if (asaMessage.startsWith('"') && asaMessage.endsWith('"')) {
+        asaMessage = asaMessage.slice(1, -1).trim();
+      }
+      if (asaMessage.startsWith("'") && asaMessage.endsWith("'")) {
+        asaMessage = asaMessage.slice(1, -1).trim();
+      }
+      
+      // Entferne alle Anführungszeichen und Bindestriche
+      asaMessage = asaMessage.replace(/"/g, "").replace(/'/g, "").replace(/-/g, " ");
+      // Ersetze ß durch ss (DACH)
+      asaMessage = asaMessage.replace(/ß/g, "ss");
+      
+      // Stelle sicher, dass ASA-Nachricht mindestens 150 Zeichen hat
+      // WICHTIG: Kein hartes slice, sondern mit KI verlängern, damit keine abgeschnittenen Sätze entstehen
       const asaMinLen = 150;
       if (asaMessage.length < asaMinLen) {
-        const filler = " Hallo? Bist du noch da? Mega schade, dass du mir nicht zurückschreibst. Ich würde mich echt freuen, wenn du mir wieder antwortest. Wo steckst du denn gerade und was hält dich ab?";
-        asaMessage = (asaMessage + filler).slice(0, asaMinLen + 30).trim();
+        console.log(`⚠️ ASA-Nachricht zu kurz (${asaMessage.length} Zeichen), verlängere mit KI...`);
+        try {
+          const asaExtensionPrompt = `Die folgende Reaktivierungsnachricht ist zu kurz. Erweitere sie auf mindestens 150 Zeichen, behalte den Reaktivierungs-Fokus bei und stelle am Ende eine passende Frage. Die Nachricht soll natürlich und menschlich klingen, nicht abgehackt. WICHTIG: Verwende KEINE Bindestriche (-), KEINE Anführungszeichen (" oder ') und KEIN "ß" (immer "ss" verwenden)!
+
+"${asaMessage}"
+
+Antworte NUR mit der vollständigen, erweiterten Nachricht (mindestens 150 Zeichen), keine Erklärungen.`;
+          
+          const asaExtended = await client.chat.completions.create({
+            model: "gpt-4o-mini",
+            messages: [
+              { 
+                role: "system", 
+                content: "Du erweiterst Reaktivierungsnachrichten auf mindestens 150 Zeichen. Fokus auf Reaktivierung, natürlicher Ton, keine Bindestriche/Anführungszeichen/ß." 
+              },
+              { role: "user", content: asaExtensionPrompt }
+            ],
+            max_tokens: 200,
+            temperature: 0.8
+          });
+          
+          const extendedText = asaExtended.choices?.[0]?.message?.content?.trim();
+          if (extendedText && extendedText.length >= asaMinLen) {
+            // Reinige die erweiterte Nachricht
+            let cleaned = extendedText.trim();
+            if (cleaned.startsWith('"') && cleaned.endsWith('"')) {
+              cleaned = cleaned.slice(1, -1).trim();
+            }
+            if (cleaned.startsWith("'") && cleaned.endsWith("'")) {
+              cleaned = cleaned.slice(1, -1).trim();
+            }
+            cleaned = cleaned.replace(/"/g, "").replace(/'/g, "").replace(/-/g, " ").replace(/ß/g, "ss");
+            
+            // Stelle sicher, dass sie mit Punkt oder Frage endet (nicht mitten im Satz)
+            if (!cleaned.match(/[.!?]$/)) {
+              // Wenn keine Interpunktion am Ende, füge eine Frage hinzu
+              if (!cleaned.endsWith("?")) {
+                cleaned += " Was denkst du?";
+              }
+            }
+            
+            asaMessage = cleaned;
+            console.log("✅ ASA-Nachricht auf 150+ Zeichen erweitert:", asaMessage.length, "Zeichen");
+          } else {
+            // Fallback: Füge einen natürlichen Zusatz hinzu
+            const fallbackFiller = " Hallo? Bist du noch da? Mega schade, dass du mir nicht zurückschreibst. Ich würde mich echt freuen, wenn du mir wieder antwortest. Wo steckst du denn gerade und was hält dich ab?";
+            asaMessage = (asaMessage + fallbackFiller).trim();
+            // Stelle sicher, dass sie mit Interpunktion endet
+            if (!asaMessage.match(/[.!?]$/)) {
+              asaMessage += "?";
+            }
+            console.log("⚠️ ASA-Nachricht mit Fallback-Filler verlängert:", asaMessage.length, "Zeichen");
+          }
+        } catch (err) {
+          console.error("Fehler beim Verlängern der ASA-Nachricht:", err);
+          // Fallback: Füge einen natürlichen Zusatz hinzu
+          const fallbackFiller = " Hallo? Bist du noch da? Mega schade, dass du mir nicht zurückschreibst. Ich würde mich echt freuen, wenn du mir wieder antwortest. Wo steckst du denn gerade und was hält dich ab?";
+          asaMessage = (asaMessage + fallbackFiller).trim();
+          if (!asaMessage.match(/[.!?]$/)) {
+            asaMessage += "?";
+          }
+        }
       }
-      console.log("✅ ASA-Nachricht generiert:", asaMessage);
+      
+      // Finale Prüfung: Mindestlänge und sauberes Ende
+      if (asaMessage.length < asaMinLen) {
+        console.warn(`⚠️ ASA-Nachricht immer noch zu kurz (${asaMessage.length} Zeichen), füge zusätzlichen Text hinzu...`);
+        const additionalFiller = " Ich würde wirklich gerne wieder von dir hören und unsere Unterhaltung fortsetzen. Was hält dich denn gerade ab, mir zu schreiben?";
+        asaMessage = (asaMessage + additionalFiller).trim();
+      }
+      
+      // Stelle sicher, dass sie mit Interpunktion endet
+      if (!asaMessage.match(/[.!?]$/)) {
+        asaMessage += "?";
+      }
+      
+      console.log("✅ ASA-Nachricht generiert:", asaMessage.substring(0, 100) + "...", `(${asaMessage.length} Zeichen)`);
       
       // WICHTIG: Verwende IMMER den chatId aus dem Request (falls vorhanden), damit er sich NICHT ändert
       // PRIORITÄT: chatId aus Request > siteInfos.chatId > finalChatId > Default
@@ -1084,14 +1182,23 @@ WICHTIG:
       replyText = replyText.slice(1, -1).trim();
     }
     // Entferne auch Anführungszeichen am Anfang, wenn sie alleine stehen
-    if (replyText.startsWith('"') && !replyText.endsWith('"')) {
+    if (replyText.startsWith('"')) {
       replyText = replyText.replace(/^"/, '').trim();
     }
-    if (replyText.startsWith("'") && !replyText.endsWith("'")) {
+    if (replyText.startsWith("'")) {
       replyText = replyText.replace(/^'/, '').trim();
     }
+    // Entferne auch Anführungszeichen am Ende, wenn sie alleine stehen
+    if (replyText.endsWith('"')) {
+      replyText = replyText.slice(0, -1).trim();
+    }
+    if (replyText.endsWith("'")) {
+      replyText = replyText.slice(0, -1).trim();
+    }
+    // Entferne ALLE Anführungszeichen in der Mitte (falls vorhanden)
+    replyText = replyText.replace(/"/g, "").replace(/'/g, "");
     
-    // Entferne Bindestriche (falls vorhanden)
+    // WICHTIG: Entferne ALLE Bindestriche (auch in der Mitte)
     replyText = replyText.replace(/-/g, " ");
     // Ersetze ß durch ss (DACH)
     replyText = replyText.replace(/ß/g, "ss");
@@ -1101,7 +1208,7 @@ WICHTIG:
       console.warn(`⚠️ Antwort zu kurz (${replyText.length} Zeichen), versuche zu verlängern...`);
       // Versuche Antwort zu verlängern, falls zu kurz
       const extensionPrompt = `Die folgende Antwort ist zu kurz. Erweitere sie auf mindestens 80 Zeichen, füge eine Frage am Ende hinzu und mache sie natürlicher. WICHTIG: Verwende KEINE Bindestriche (-) und KEINE Anführungszeichen (" oder ') in der Antwort!
-      
+
 "${replyText}"
 
 Antworte NUR mit der erweiterten Version, keine Erklärungen.`;
@@ -1146,7 +1253,7 @@ Antworte NUR mit der erweiterten Version, keine Erklärungen.`;
     if (!hasQuestion) {
       console.warn("⚠️ Keine Frage am Ende, füge eine hinzu...");
       const questionPrompt = `Die folgende Nachricht endet ohne Frage. Füge am Ende eine passende, natürliche Frage zum Kontext hinzu. WICHTIG: Verwende KEINE Bindestriche (-) und KEINE Anführungszeichen (" oder ') in der Antwort!
-      
+
 "${replyText}"
 
 Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erklärungen.`;
