@@ -201,21 +201,6 @@ async function fetchImageAsBase64(url) {
   }
 }
 
-// Verlauf komprimieren (letzte n nicht-Info-Nachrichten)
-function compressConversation(messages, limit = 10) {
-  if (!Array.isArray(messages)) return "";
-  const nonInfo = messages.filter(m => !isInfoMessage(m) && typeof m?.text === "string" && m.text.trim() !== "");
-  const slice = nonInfo.slice(-limit);
-  const chron = slice.sort((a, b) => {
-    const ta = a?.timestamp ? new Date(a.timestamp).getTime() : 0;
-    const tb = b?.timestamp ? new Date(b.timestamp).getTime() : 0;
-    return ta - tb;
-  });
-  return chron
-    .map(m => `${m.type === "received" ? "Kunde" : "Fake"}: ${m.text.trim()}`)
-    .join("\n");
-}
-
 // Hilfsfunktion: Info-/System-Nachrichten erkennen (z.B. Likes/Hinweise)
 function isInfoMessage(msg) {
   if (!msg || typeof msg !== "object") return true;
@@ -229,31 +214,65 @@ function isInfoMessage(msg) {
   return false;
 }
 
+// Verlauf komprimieren (letzte n nicht-Info-Nachrichten)
+function compressConversation(messages, limit = 30) {
+  if (!Array.isArray(messages)) return "";
+  const nonInfo = messages.filter(m => !isInfoMessage(m) && typeof m?.text === "string" && m.text.trim() !== "");
+  const slice = nonInfo.slice(-limit);
+  // Erkenne Reihenfolge: neueste oben oder unten
+  let newestFirst = false;
+  try {
+    if (slice.length > 1) {
+      const firstTs = slice[0]?.timestamp ? new Date(slice[0].timestamp).getTime() : null;
+      const lastTs = slice[slice.length - 1]?.timestamp ? new Date(slice[slice.length - 1].timestamp).getTime() : null;
+      if (firstTs && lastTs && firstTs > lastTs) newestFirst = true;
+    }
+  } catch (e) { /* ignore */ }
+  const chron = newestFirst ? [...slice].reverse() : slice;
+  return chron
+    .map(m => `${m.type === "received" ? "Kunde" : "Fake"}: ${m.text.trim()}`)
+    .join("\n");
+}
+
+// Analysiere Schreibstil der letzten Moderator-Nachrichten
+function analyzeWritingStyle(messages) {
+  if (!Array.isArray(messages)) return null;
+  const moderatorMsgs = messages
+    .filter(m => !isInfoMessage(m) && (m.type === "sent" || m.messageType === "sent") && typeof m?.text === "string" && m.text.trim() !== "")
+    .slice(-10); // Letzte 10 Moderator-Nachrichten
+  
+  if (moderatorMsgs.length === 0) return null;
+  
+  const texts = moderatorMsgs.map(m => m.text.trim());
+  const avgLength = texts.reduce((sum, t) => sum + t.length, 0) / texts.length;
+  const hasEmojis = texts.some(t => /[\u{1F300}-\u{1F9FF}]/u.test(t));
+  const hasExclamation = texts.some(t => t.includes("!"));
+  const hasQuestion = texts.some(t => t.includes("?"));
+  const casualWords = ["hey", "hallo", "hi", "okay", "ok", "ja", "nein", "mega", "geil", "wow"];
+  const hasCasual = texts.some(t => casualWords.some(w => t.toLowerCase().includes(w)));
+  
+  return {
+    avgLength: Math.round(avgLength),
+    hasEmojis,
+    hasExclamation,
+    hasQuestion,
+    hasCasual,
+    sampleTexts: texts.slice(-3).join(" | ") // Letzte 3 als Beispiel
+  };
+}
+
+// Zähle Kunden-Nachrichten (für Neukunde vs. Langzeitkunde)
+function countCustomerMessages(messages) {
+  if (!Array.isArray(messages)) return 0;
+  return messages.filter(m => !isInfoMessage(m) && (m.type === "received" || m.messageType === "received") && typeof m?.text === "string" && m.text.trim() !== "").length;
+}
+
 // Wrapper für async-Fehler
 const asyncHandler = (fn) => (req, res, next) => {
   Promise.resolve(fn(req, res, next)).catch(next);
 };
 
 router.post("/", asyncHandler(async (req, res, next) => {
-  try {
-    console.log("✅ Route-Handler gestartet");
-    console.log("✅ SKIP_AUTH:", SKIP_AUTH);
-    
-    // WICHTIG: Stelle sicher, dass req.body immer definiert ist
-    if (!req.body || typeof req.body !== 'object') {
-    console.error("❌ FEHLER: req.body ist nicht definiert oder kein Objekt!");
-    console.error("❌ req.body:", req.body);
-    return res.status(400).json({
-      error: "❌ FEHLER: Request-Body ist ungültig",
-      resText: "❌ FEHLER: Request-Body ist ungültig",
-      replyText: "❌ FEHLER: Request-Body ist ungültig",
-      summary: {},
-      chatId: "00000000",
-      actions: [],
-      flags: { blocked: true, reason: "invalid_body", isError: true, showError: true }
-    });
-  }
-  
   // Logge die Größe des Request-Body, um zu sehen, was die Extension sendet
   const bodySize = JSON.stringify(req.body).length;
   console.log("=== ChatCompletion Request (SIZE CHECK) ===");
@@ -310,8 +329,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
   // WICHTIG: Extrahiere ALLE möglichen Felder, die die Extension senden könnte
   // Die Extension könnte den chatId oder die Nachricht in verschiedenen Formaten senden
   // Die alte Extension hat wahrscheinlich bereits alles richtig erkannt - wir müssen nur die Felder richtig lesen
-  // WICHTIG: pageUrl und platformId müssen als let deklariert werden, da sie später neu zugewiesen werden können
-  let { 
+  const { 
     messageText = "", 
     pageUrl, 
     platformId, 
@@ -358,8 +376,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
   // WICHTIG: Die letzte Nachricht ist IMMER vom KUNDEN (unten im Chat)
   // Wenn die letzte Nachricht vom FAKE ist, müssen wir eine ASA-Nachricht schreiben
   // WICHTIG: Wir müssen die RICHTIGE letzte Nachricht vom KUNDEN finden, nicht irgendeine Nachricht!
-  // WICHTIG: Bei iluvo wird die Nachricht manchmal im 'reason'-Feld gesendet (z.B. "not_matching_chat_idNachricht...")
-  const possibleMessageFields = ['messageText', 'message', 'text', 'content', 'message_content', 'lastMessage', 'last_message', 'userMessage', 'user_message', 'lastUserMessage', 'lastCustomerMessage', 'reason'];
+  const possibleMessageFields = ['messageText', 'message', 'text', 'content', 'message_content', 'lastMessage', 'last_message', 'userMessage', 'user_message', 'lastUserMessage', 'lastCustomerMessage'];
   let foundMessageText = messageText || possibleMessageFromBody;
   
   // PRIORITÄT: messageText sollte die letzte Nachricht vom Kunden sein
@@ -371,33 +388,8 @@ router.post("/", asyncHandler(async (req, res, next) => {
     // Nur wenn messageText leer ist, suche nach anderen Feldern
     for (const field of possibleMessageFields) {
       if (req.body[field] && typeof req.body[field] === 'string' && req.body[field].trim() !== "" && !foundMessageText) {
-        let extractedText = req.body[field];
-        
-        // WICHTIG: Wenn es das 'reason'-Feld ist, könnte es einen Präfix haben (z.B. "not_matching_chat_id")
-        // Versuche, die eigentliche Nachricht zu extrahieren
-        if (field === 'reason') {
-          // Entferne häufige Präfixe aus reason
-          const prefixes = ['not_matching_chat_id', 'chat_id_mismatch', 'error_'];
-          for (const prefix of prefixes) {
-            if (extractedText.toLowerCase().startsWith(prefix.toLowerCase())) {
-              extractedText = extractedText.substring(prefix.length);
-              console.log(`✅ Präfix '${prefix}' aus reason entfernt`);
-              break;
-            }
-          }
-          // Wenn reason mit einem Timestamp oder anderen Muster beginnt, versuche die Nachricht zu finden
-          // Suche nach dem ersten Wort, das wie eine echte Nachricht aussieht (nicht nur Zahlen/Zeichen)
-          const textMatch = extractedText.match(/[a-zA-ZäöüÄÖÜß]{3,}.*/);
-          if (textMatch) {
-            extractedText = textMatch[0];
-            console.log("✅ Nachricht aus reason extrahiert:", extractedText.substring(0, 100) + "...");
-          }
-        }
-        
-        if (extractedText && extractedText.trim() !== "") {
-          foundMessageText = extractedText.trim();
-          console.log(`✅ messageText gefunden unter Feldname '${field}':`, foundMessageText.substring(0, 100) + "...");
-        }
+        foundMessageText = req.body[field];
+        console.log(`✅ messageText gefunden unter Feldname '${field}':`, foundMessageText.substring(0, 100) + "...");
       }
     }
   }
@@ -412,26 +404,18 @@ router.post("/", asyncHandler(async (req, res, next) => {
   // Fallback: letzte Kunden-Nachricht aus siteInfos.messages holen
   if ((!foundMessageText || foundMessageText.trim() === "") && req.body?.siteInfos?.messages) {
     const msgs = req.body.siteInfos.messages;
-    // Erkenne Reihenfolge: neueste oben oder unten
-    let newestFirst = false;
-    try {
-      const firstTs = msgs[0]?.timestamp ? new Date(msgs[0].timestamp).getTime() : null;
-      const lastTs = msgs[msgs.length - 1]?.timestamp ? new Date(msgs[msgs.length - 1].timestamp).getTime() : null;
-      if (firstTs && lastTs && firstTs > lastTs) newestFirst = true;
-    } catch (e) { /* ignore */ }
-    const iter = newestFirst ? msgs : [...msgs].reverse();
-    // Kunde = type === "received", keine Info-Nachrichten
-    const lastReceived = iter.find(
-      m => m?.type === "received" && typeof m.text === "string" && m.text.trim() !== "" && !isInfoMessage(m)
+    // Kunde = type === "received"
+    const lastReceived = [...msgs].reverse().find(
+      m => m?.type === "received" && typeof m.text === "string" && m.text.trim() !== ""
     );
     if (lastReceived) {
       foundMessageText = lastReceived.text.trim();
       console.log("✅ Nachricht aus siteInfos.messages (received):", foundMessageText.substring(0, 100) + "...");
     }
-    // Falls keine received-Nachricht gefunden: letzte beliebige Text-Nachricht (nicht Info)
+    // Falls keine received-Nachricht gefunden: letzte beliebige Text-Nachricht
     if (!foundMessageText || foundMessageText.trim() === "") {
-      const lastAny = iter.find(
-        m => typeof m.text === "string" && m.text.trim() !== "" && !isInfoMessage(m)
+      const lastAny = [...msgs].reverse().find(
+        m => typeof m.text === "string" && m.text.trim() !== ""
       );
       if (lastAny) {
         foundMessageText = lastAny.text.trim();
@@ -473,10 +457,14 @@ router.post("/", asyncHandler(async (req, res, next) => {
   }
   // Prüfe, ob messageText leer ist UND es gibt eine lastMessage (vom Fake)
   else if ((!foundMessageText || foundMessageText.trim() === "") && (lastMessage || last_message || lastUserMessage || lastCustomerMessage)) {
+    // Wenn messageText leer ist, aber es gibt eine lastMessage, könnte es sein, dass die letzte Nachricht vom Fake ist
+    // ABER: Das ist unsicher, daher nur als Hinweis loggen
     console.log("⚠️ messageText ist leer, aber lastMessage vorhanden - könnte ASA-Fall sein");
+    // Wir machen es NICHT automatisch zu ASA, da es auch andere Gründe geben kann
   } else {
     console.log("⚠️ Kein ASA-Flag von Extension gefunden - prüfe auf andere Indikatoren...");
   }
+  
   // Backup: Prüfe letzte Nachricht in siteInfos.messages (richtige Reihenfolge erkennen: iluvo ggf. neueste oben)
   if (!isLastMessageFromFake && req.body?.siteInfos?.messages?.length) {
     const msgsAll = req.body.siteInfos.messages;
@@ -484,9 +472,11 @@ router.post("/", asyncHandler(async (req, res, next) => {
     const list = msgs.length > 0 ? msgs : msgsAll;
     let newestFirst = false;
     try {
-      const firstTs = list[0]?.timestamp ? new Date(list[0].timestamp).getTime() : null;
-      const lastTs = list[list.length - 1]?.timestamp ? new Date(list[list.length - 1].timestamp).getTime() : null;
-      if (firstTs && lastTs && firstTs > lastTs) newestFirst = true;
+      if (list.length > 1) {
+        const firstTs = list[0]?.timestamp ? new Date(list[0].timestamp).getTime() : null;
+        const lastTs = list[list.length - 1]?.timestamp ? new Date(list[list.length - 1].timestamp).getTime() : null;
+        if (firstTs && lastTs && firstTs > lastTs) newestFirst = true;
+      }
     } catch (e) { /* ignore */ }
     const newestMsg = newestFirst ? list[0] : list[list.length - 1];
     if (newestMsg?.type === "sent" || newestMsg?.messageType === "sent") {
@@ -533,37 +523,27 @@ router.post("/", asyncHandler(async (req, res, next) => {
     pageUrl = req.body.url;
   }
   
-  // WICHTIG: PRIORITÄT: chatId aus Request-Body direkt (höchste Priorität!)
-  // Das verhindert, dass die Extension die Seite neu lädt, wenn sich der chatId ändert
-  // Wenn die Extension einen chatId sendet, müssen wir diesen IMMER zurückgeben!
-  let foundChatId = null;
-  if (chatId) {
-    foundChatId = chatId;
-    console.log("✅ chatId aus Request-Body direkt (HÖCHSTE PRIORITÄT):", foundChatId);
+  // Prüfe auch andere mögliche Feldnamen für chatId
+  // Die Extension generiert chatId als `${username}-${lastMessage}`, also kann es auch ein String sein
+  const possibleChatIdFields = ['chatId', 'chat_id', 'dialogueId', 'dialogue_id', 'conversationId', 'conversation_id'];
+  let foundChatId = chatId;
+  for (const field of possibleChatIdFields) {
+    if (req.body[field] && !foundChatId) {
+      foundChatId = req.body[field];
+      console.log(`✅ chatId gefunden unter Feldname '${field}':`, foundChatId);
+    }
   }
-  
-  // Fallback: chatId aus siteInfos.chatId (nur wenn kein chatId im Request vorhanden ist)
+
+  // chatId aus siteInfos.chatId
   if (!foundChatId && req.body?.siteInfos?.chatId) {
     foundChatId = req.body.siteInfos.chatId;
-    console.log("✅ chatId aus siteInfos.chatId (FALLBACK):", foundChatId);
+    console.log("✅ chatId aus siteInfos.chatId:", foundChatId);
   }
+  
   // NEU: Fallback auf metaData.chatId (falls vorhanden)
   if (!foundChatId && req.body?.siteInfos?.metaData?.chatId) {
     foundChatId = req.body.siteInfos.metaData.chatId;
     console.log("✅ chatId aus siteInfos.metaData.chatId (FALLBACK):", foundChatId);
-  }
-  
-  // Fallback: Prüfe auch andere mögliche Feldnamen für chatId
-  // Die Extension generiert chatId manchmal als `${username}-${lastMessage}`, also kann es auch ein String sein
-  if (!foundChatId) {
-    const possibleChatIdFields = ['chatId', 'chat_id', 'dialogueId', 'dialogue_id', 'conversationId', 'conversation_id'];
-    for (const field of possibleChatIdFields) {
-      if (req.body[field]) {
-        foundChatId = req.body[field];
-        console.log(`✅ chatId gefunden unter Feldname '${field}':`, foundChatId);
-        break;
-      }
-    }
   }
   
   // Die Extension generiert chatId manchmal als `${username}-${lastMessage}`
@@ -700,7 +680,6 @@ router.post("/", asyncHandler(async (req, res, next) => {
   let replyText = null;
   let extractedInfo = { user: {}, assistant: {} };
   let errorMessage = null;
-  let imageDescriptions = []; // WICHTIG: Immer initialisieren, bevor es verwendet wird
 
   // WICHTIG: Wenn messageText leer ist, geben wir eine Antwort zurück, die KEINE Reloads auslöst
   // Die Extension lädt die Seite neu, wenn flags.blocked: true ist ODER wenn chatId sich ändert
@@ -735,6 +714,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
   }
 
   // Versuche Bilder zu analysieren, falls Bild-URLs in der Nachricht sind
+  let imageDescriptions = [];
   try {
     const imageUrls = extractImageUrls(foundMessageText);
     if (imageUrls.length > 0) {
@@ -774,42 +754,48 @@ router.post("/", asyncHandler(async (req, res, next) => {
 
   // Versuche Nachricht zu generieren
   try {
-    // WICHTIG: Stelle sicher, dass imageDescriptions immer initialisiert ist
-    if (!imageDescriptions) {
-      imageDescriptions = [];
-    }
-    
     // Prüfe ASA-Fall: Wenn die letzte Nachricht vom FAKE kommt, schreibe eine Reaktivierungsnachricht
     // WICHTIG: Nur wenn explizit signalisiert, sonst könnte es andere Gründe geben
     if (isLastMessageFromFake) {
       console.log("🔄 ASA-Fall erkannt: Letzte Nachricht vom Fake, generiere Reaktivierungsnachricht...");
       
-      // Verschiedene ASA-Nachrichten für Abwechslung (Reaktivierungs-Fokus)
-      const asaTemplates = [
-        "Hey, lange nichts mehr von dir gehört, wo steckst du denn so lange? Hast du kein Interesse mehr an mir?",
-        "Hallo, ich habe schon eine Weile nichts mehr von dir gehört. Ist alles okay bei dir?",
-        "Hey, wo bist du denn geblieben? Ich dachte schon, du hättest das Interesse verloren.",
-        "Hallo, ich vermisse unsere Unterhaltung. Schreibst du mir nicht mehr?",
-        "Hey, ist etwas passiert? Ich habe schon länger nichts mehr von dir gehört.",
-        "Hallo, ich warte schon auf deine Antwort. Hast du keine Zeit mehr zum Schreiben?",
-        "Hey, wo steckst du denn? Ich dachte, wir hätten eine gute Verbindung.",
-        "Hallo, ich hoffe, es geht dir gut. Ich würde gerne wieder von dir hören.",
-        "Hey, was ist denn los? Ich habe schon länger nichts mehr von dir gehört. Bist du noch da?",
-        "Hallo, ich vermisse unsere Gespräche. Warum schreibst du mir nicht mehr zurück?",
-        "Hey, wo bist du denn hin? Ich dachte, wir hätten eine gute Verbindung aufgebaut.",
-        "Hallo, ich warte schon so lange auf deine Antwort. Ist alles in Ordnung bei dir?",
-        "Hey, ich habe schon eine Weile nichts mehr von dir gehört. Hast du das Interesse verloren?",
-        "Hallo, ich vermisse dich. Warum antwortest du mir nicht mehr?",
-        "Hey, wo steckst du denn gerade? Ich würde gerne wieder von dir hören.",
-        "Hallo, ich hoffe, es geht dir gut. Schreibst du mir nicht mehr, weil du keine Zeit hast?",
-        "Hey, was ist denn passiert? Ich habe schon länger nichts mehr von dir gehört.",
-        "Hallo, ich vermisse unsere Unterhaltungen. Bist du noch interessiert an mir?",
-        "Hey, wo bist du denn geblieben? Ich dachte, wir hätten eine gute Verbindung.",
-        "Hallo, ich warte schon auf deine Antwort. Hast du vielleicht keine Zeit mehr zum Schreiben?"
+      // Zähle Kunden-Nachrichten, um Neukunde vs. Langzeitkunde zu unterscheiden
+      const customerMessageCount = countCustomerMessages(req.body?.siteInfos?.messages || []);
+      const isLongTermCustomer = customerMessageCount >= 10;
+      console.log(`📊 Kunden-Nachrichten: ${customerMessageCount} (${isLongTermCustomer ? "Langzeitkunde" : "Neukunde"})`);
+      
+      // Analysiere Schreibstil der letzten Moderator-Nachrichten
+      const writingStyle = analyzeWritingStyle(req.body?.siteInfos?.messages || []);
+      const styleContext = writingStyle ? `\n\nSchreibstil der letzten Moderator-Nachrichten (WICHTIG: Übernehme diesen Stil!):
+- Durchschnittliche Länge: ${writingStyle.avgLength} Zeichen
+- Emojis verwendet: ${writingStyle.hasEmojis ? "Ja" : "Nein"}
+- Ausrufezeichen: ${writingStyle.hasExclamation ? "Ja" : "Nein"}
+- Fragen: ${writingStyle.hasQuestion ? "Ja" : "Nein"}
+- Umgangssprachlich: ${writingStyle.hasCasual ? "Ja" : "Nein"}
+- Beispiel-Nachrichten: ${writingStyle.sampleTexts.substring(0, 200)}` : "";
+      
+      // Verschiedene ASA-Nachrichten je nach Kunden-Typ
+      const asaTemplatesNew = [
+        "Hey, ich hatte mich eigentlich schon gefreut dich besser kennenzulernen, hast du etwa kein Interesse mehr an mir oder hast du eine andere Frau kennengelernt?",
+        "Hallo, ich dachte wir hätten eine gute Verbindung aufgebaut. Warum schreibst du mir nicht mehr zurück?",
+        "Hey, ich hatte gehofft wir können uns besser kennenlernen. Ist etwas passiert oder hast du das Interesse verloren?",
+        "Hallo, ich hatte mich schon auf unsere Unterhaltung gefreut. Schreibst du mir nicht mehr, weil du keine Zeit hast?",
+        "Hey, ich dachte wir verstehen uns gut. Warum antwortest du mir nicht mehr? Hast du vielleicht jemand anderen kennengelernt?"
       ];
       
+      const asaTemplatesLongTerm = [
+        "Wieso schreibst du mir nicht mehr? Ich bin gerade wirklich traurig, habe ich irgendwas falsch gemacht oder was ist gerade das Problem?",
+        "Hey, ich verstehe es nicht. Wir haben doch so lange geschrieben und jetzt hörst du einfach auf. Was ist los?",
+        "Hallo, ich bin wirklich enttäuscht. Nach all den Wochen, in denen wir uns geschrieben haben, antwortest du mir nicht mehr. Was ist passiert?",
+        "Hey, ich dachte wir hätten eine gute Verbindung. Warum lässt du mich jetzt einfach hängen? Habe ich etwas falsch gemacht?",
+        "Hallo, ich bin gerade wirklich traurig. Wir haben so viel geschrieben und jetzt ist einfach Funkstille. Was ist das Problem?"
+      ];
+      
+      // Wähle Template basierend auf Kunden-Typ
+      const templates = isLongTermCustomer ? asaTemplatesLongTerm : asaTemplatesNew;
+      
       // Wähle zufällig eine ASA-Nachricht
-      let asaMessage = asaTemplates[Math.floor(Math.random() * asaTemplates.length)].trim();
+      let asaMessage = templates[Math.floor(Math.random() * templates.length)].trim();
       
       // Entferne Anführungszeichen am Anfang/Ende falls vorhanden
       if (asaMessage.startsWith('"') && asaMessage.endsWith('"')) {
@@ -830,7 +816,12 @@ router.post("/", asyncHandler(async (req, res, next) => {
       if (asaMessage.length < asaMinLen) {
         console.log(`⚠️ ASA-Nachricht zu kurz (${asaMessage.length} Zeichen), verlängere mit KI...`);
         try {
-          const asaExtensionPrompt = `Die folgende Reaktivierungsnachricht ist zu kurz. Erweitere sie auf mindestens 150 Zeichen, behalte den Reaktivierungs-Fokus bei und stelle am Ende eine passende Frage. Die Nachricht soll natürlich und menschlich klingen, nicht abgehackt. WICHTIG: Verwende KEINE Bindestriche (-), KEINE Anführungszeichen (" oder ') und KEIN "ß" (immer "ss" verwenden)!
+          const asaExtensionPrompt = `Die folgende Reaktivierungsnachricht ist zu kurz. Erweitere sie auf mindestens 150 Zeichen, behalte den Reaktivierungs-Fokus bei und stelle am Ende eine passende Frage. Die Nachricht soll natürlich und menschlich klingen, nicht abgehackt.${styleContext}
+
+WICHTIG: 
+- Verwende KEINE Bindestriche (-), KEINE Anführungszeichen (" oder ') und KEIN "ß" (immer "ss" verwenden)
+- Übernehme den Schreibstil der letzten Moderator-Nachrichten (siehe oben)
+- ${isLongTermCustomer ? "Sei persönlicher und emotionaler, da es ein Langzeitkunde ist." : "Sei freundlich und hoffnungsvoll, da es ein Neukunde ist."}
 
 "${asaMessage}"
 
@@ -841,7 +832,7 @@ Antworte NUR mit der vollständigen, erweiterten Nachricht (mindestens 150 Zeich
             messages: [
               { 
                 role: "system", 
-                content: "Du erweiterst Reaktivierungsnachrichten auf mindestens 150 Zeichen. Fokus auf Reaktivierung, natürlicher Ton, keine Bindestriche/Anführungszeichen/ß." 
+                content: `Du erweiterst Reaktivierungsnachrichten auf mindestens 150 Zeichen. Fokus auf Reaktivierung, natürlicher Ton, keine Bindestriche/Anführungszeichen/ß. ${isLongTermCustomer ? "Für Langzeitkunden: persönlicher, emotionaler Ton." : "Für Neukunden: freundlich, hoffnungsvoll."} Übernehme den Schreibstil der letzten Moderator-Nachrichten.` 
               },
               { role: "user", content: asaExtensionPrompt }
             ],
@@ -1023,7 +1014,8 @@ Antworte NUR mit der vollständigen, erweiterten Nachricht (mindestens 150 Zeich
 - WICHTIG: Nutze aktuelles Datum/Zeit für DACH (Europe/Berlin): ${nowString} (${season}). Keine falschen Jahreszeiten/Wetter-Annahmen.
 - WICHTIG: Wenn der Kunde Zeiten/Wecker/Schlaf erwähnt, reagiere empathisch auf wenig Schlaf usw., aber verabschiede dich nicht.
 - WICHTIG: Auch bei "Gute Nacht" oder ähnlichem den Dialog offenhalten und eine passende Frage stellen.
-- WICHTIG: Bei Geld/Coins/Bezahlen/aufladen/kostenlos: nicht darüber reden, nicht zum Aufladen auffordern, elegant ausweichen und sofort mit einer passenden Frage zum Thema fortfahren.`;
+- WICHTIG: Bei Geld/Coins/Bezahlen/aufladen/kostenlos: nicht darüber reden, nicht zum Aufladen auffordern, elegant ausweichen und sofort mit einer passenden Frage zum Thema fortfahren.
+- WICHTIG: Übernehme den Schreibstil der letzten Moderator-Nachrichten (siehe userPrompt)! Passe Länge, Emojis, Ton und Formulierungen an, damit der Kunde nicht merkt, dass verschiedene Moderatoren schreiben!`;
     
     // WICHTIG: userProfile könnte die Daten vom FAKE enthalten, nicht vom KUNDEN
     // Verwende daher NUR die extrahierten Infos vom KUNDEN (aus der Nachricht)
@@ -1040,13 +1032,27 @@ Antworte NUR mit der vollständigen, erweiterten Nachricht (mindestens 150 Zeich
     // Extrahiere den Namen des KUNDEN aus der Nachricht (nicht vom userProfile!)
     const customerName = extractedInfo.user?.Name || null;
     const customerJob = extractedInfo.user?.Work || null;
-    // WICHTIG: Stelle sicher, dass imageDescriptions immer initialisiert ist
-    if (!imageDescriptions || !Array.isArray(imageDescriptions)) {
-      imageDescriptions = [];
-    }
-    const imageContext = imageDescriptions.length > 0 ? `Erkannte Bilder:\n- ${imageDescriptions.join("\n- ")}\n` : "";
-    const convoContext = compressConversation(req.body?.siteInfos?.messages || [], 10);
-    const conversationBlock = convoContext ? `Letzte Nachrichten (Kunde/Fake):\n${convoContext}\n` : "";
+    
+    // Analysiere Schreibstil der letzten Moderator-Nachrichten
+    const writingStyle = analyzeWritingStyle(req.body?.siteInfos?.messages || []);
+    const styleContext = writingStyle ? `\n\nSchreibstil der letzten Moderator-Nachrichten (WICHTIG: Übernehme diesen Stil!):
+- Durchschnittliche Länge: ${writingStyle.avgLength} Zeichen
+- Emojis verwendet: ${writingStyle.hasEmojis ? "Ja" : "Nein"}
+- Ausrufezeichen: ${writingStyle.hasExclamation ? "Ja" : "Nein"}
+- Fragen: ${writingStyle.hasQuestion ? "Ja" : "Nein"}
+- Umgangssprachlich: ${writingStyle.hasCasual ? "Ja" : "Nein"}
+- Beispiel-Nachrichten: ${writingStyle.sampleTexts.substring(0, 300)}` : "";
+    
+    // Komprimiere letzten 30 Nachrichten für Kontext
+    const conversationContext = compressConversation(req.body?.siteInfos?.messages || [], 30);
+    const conversationBlock = conversationContext ? `\n\nLetzte Nachrichten im Chat (Kunde/Fake):\n${conversationContext}` : "";
+    
+    // Zähle Kunden-Nachrichten für Kontext
+    const customerMessageCount = countCustomerMessages(req.body?.siteInfos?.messages || []);
+    const customerTypeContext = customerMessageCount >= 10 ? "\n\nWICHTIG: Dies ist ein Langzeitkunde (bereits viele Nachrichten ausgetauscht). Sei persönlicher und emotionaler in deiner Antwort." : customerMessageCount > 0 ? "\n\nWICHTIG: Dies ist ein Neukunde (erst wenige Nachrichten). Sei freundlich und hoffnungsvoll." : "";
+    
+    // Bild-Kontext
+    const imageContext = imageDescriptions.length > 0 ? `\n\nErkannte Bilder:\n- ${imageDescriptions.join("\n- ")}\n` : "";
     
     // Baue spezifischen Prompt basierend auf Situation
     let specificInstructions = "";
@@ -1127,8 +1133,7 @@ Aktuelle Nachricht vom KUNDEN: "${validatedMessage.substring(0, 500)}"
 ${customerName ? `Der Kunde heißt: ${customerName}\n` : ''}
 ${customerContext.length > 0 ? `Bekannte Infos über den KUNDEN:\n${customerContext.join('\n')}\n` : ''}
 ${customerJob ? `Beruf des Kunden (falls relevant): ${customerJob}\n` : ''}
-${imageContext ? imageContext : ''}
-${conversationBlock ? conversationBlock : ''}
+${imageContext}${conversationBlock}${styleContext}${customerTypeContext}
 Aktuelles Datum/Zeit (DACH): ${nowString} (${season})
 Plattform: ${platformId || "viluu"}
 ${specificInstructions}
@@ -1144,7 +1149,8 @@ WICHTIG:
 - KEINE Bindestriche (-) verwenden!
 - Nachricht muss MINDESTENS 80 Zeichen lang sein!
 - Am Ende IMMER eine passende Frage zum Kontext stellen!
-- Es darf NIEMALS auffallen, dass du ein Moderator bist - sei natürlich und menschlich!`;
+- Es darf NIEMALS auffallen, dass du ein Moderator bist - sei natürlich und menschlich!
+- WICHTIG: Übernehme den Schreibstil der letzten Moderator-Nachrichten (siehe oben)! Passe Länge, Emojis, Ton und Formulierungen an, damit der Kunde nicht merkt, dass verschiedene Moderatoren schreiben!`;
 
     const chat = await client.chat.completions.create({
       model: "gpt-4o-mini",
@@ -1182,23 +1188,14 @@ WICHTIG:
       replyText = replyText.slice(1, -1).trim();
     }
     // Entferne auch Anführungszeichen am Anfang, wenn sie alleine stehen
-    if (replyText.startsWith('"')) {
+    if (replyText.startsWith('"') && !replyText.endsWith('"')) {
       replyText = replyText.replace(/^"/, '').trim();
     }
-    if (replyText.startsWith("'")) {
+    if (replyText.startsWith("'") && !replyText.endsWith("'")) {
       replyText = replyText.replace(/^'/, '').trim();
     }
-    // Entferne auch Anführungszeichen am Ende, wenn sie alleine stehen
-    if (replyText.endsWith('"')) {
-      replyText = replyText.slice(0, -1).trim();
-    }
-    if (replyText.endsWith("'")) {
-      replyText = replyText.slice(0, -1).trim();
-    }
-    // Entferne ALLE Anführungszeichen in der Mitte (falls vorhanden)
-    replyText = replyText.replace(/"/g, "").replace(/'/g, "");
     
-    // WICHTIG: Entferne ALLE Bindestriche (auch in der Mitte)
+    // Entferne Bindestriche (falls vorhanden)
     replyText = replyText.replace(/-/g, " ");
     // Ersetze ß durch ss (DACH)
     replyText = replyText.replace(/ß/g, "ss");
@@ -1207,7 +1204,7 @@ WICHTIG:
     if (replyText.length < 80) {
       console.warn(`⚠️ Antwort zu kurz (${replyText.length} Zeichen), versuche zu verlängern...`);
       // Versuche Antwort zu verlängern, falls zu kurz
-      const extensionPrompt = `Die folgende Antwort ist zu kurz. Erweitere sie auf mindestens 80 Zeichen, füge eine Frage am Ende hinzu und mache sie natürlicher. WICHTIG: Verwende KEINE Bindestriche (-) und KEINE Anführungszeichen (" oder ') in der Antwort!
+      const extensionPrompt = `Die folgende Antwort ist zu kurz. Erweitere sie auf mindestens 80 Zeichen, füge eine Frage am Ende hinzu und mache sie natürlicher:
 
 "${replyText}"
 
@@ -1226,16 +1223,7 @@ Antworte NUR mit der erweiterten Version, keine Erklärungen.`;
         
         const extendedText = extended.choices?.[0]?.message?.content?.trim();
         if (extendedText && extendedText.length >= 80) {
-          // Entferne Anführungszeichen und Bindestriche auch bei erweiterten Antworten
-          let cleanedExtended = extendedText.trim();
-          if (cleanedExtended.startsWith('"') && cleanedExtended.endsWith('"')) {
-            cleanedExtended = cleanedExtended.slice(1, -1).trim();
-          }
-          if (cleanedExtended.startsWith("'") && cleanedExtended.endsWith("'")) {
-            cleanedExtended = cleanedExtended.slice(1, -1).trim();
-          }
-          cleanedExtended = cleanedExtended.replace(/"/g, "").replace(/'/g, "").replace(/-/g, " ").replace(/ß/g, "ss");
-          replyText = cleanedExtended;
+          replyText = extendedText.replace(/-/g, " ").replace(/ß/g, "ss");
           console.log("✅ Antwort auf 80+ Zeichen erweitert");
         }
       } catch (err) {
@@ -1252,7 +1240,7 @@ Antworte NUR mit der erweiterten Version, keine Erklärungen.`;
     
     if (!hasQuestion) {
       console.warn("⚠️ Keine Frage am Ende, füge eine hinzu...");
-      const questionPrompt = `Die folgende Nachricht endet ohne Frage. Füge am Ende eine passende, natürliche Frage zum Kontext hinzu. WICHTIG: Verwende KEINE Bindestriche (-) und KEINE Anführungszeichen (" oder ') in der Antwort!
+      const questionPrompt = `Die folgende Nachricht endet ohne Frage. Füge am Ende eine passende, natürliche Frage zum Kontext hinzu:
 
 "${replyText}"
 
@@ -1271,16 +1259,7 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
         
         const questionText = withQuestion.choices?.[0]?.message?.content?.trim();
         if (questionText) {
-          // Entferne Anführungszeichen und Bindestriche auch bei Fragen
-          let cleanedQuestion = questionText.trim();
-          if (cleanedQuestion.startsWith('"') && cleanedQuestion.endsWith('"')) {
-            cleanedQuestion = cleanedQuestion.slice(1, -1).trim();
-          }
-          if (cleanedQuestion.startsWith("'") && cleanedQuestion.endsWith("'")) {
-            cleanedQuestion = cleanedQuestion.slice(1, -1).trim();
-          }
-          cleanedQuestion = cleanedQuestion.replace(/"/g, "").replace(/'/g, "").replace(/-/g, " ").replace(/ß/g, "ss");
-          replyText = cleanedQuestion;
+          replyText = questionText.replace(/-/g, " ").replace(/ß/g, "ss");
           console.log("✅ Frage am Ende hinzugefügt");
         }
       } catch (err) {
@@ -1295,14 +1274,7 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
     console.log("✅ Antwort generiert:", replyText.substring(0, 100));
   } catch (err) {
     errorMessage = `❌ FEHLER: Beim Generieren der Nachricht ist ein Fehler aufgetreten: ${err.message}`;
-    console.error("❌ OpenAI Fehler:", err.message);
-    console.error("❌ OpenAI Fehler Stack:", err.stack);
-    console.error("❌ OpenAI Fehler Details:", JSON.stringify(err, Object.getOwnPropertyNames(err)));
-    // Prüfe, ob der Fehler mit chatId zu tun hat
-    if (err.message && err.message.includes("chat ID") || err.message && err.message.includes("chatId")) {
-      console.error("⚠️ WARNUNG: Fehler scheint mit chatId zusammenzuhängen, aber wir übergeben keinen chatId an OpenAI!");
-      console.error("⚠️ finalChatId:", finalChatId);
-    }
+    console.error("❌ OpenAI Fehler", err.message);
     return res.status(200).json({
       error: errorMessage,
       resText: errorMessage, // Fehlermeldung in resText, damit Extension sie anzeigen kann
@@ -1323,9 +1295,7 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
   // Die Extension erwartet: resText, summary (als Objekt), chatId
   // NUR wenn replyText erfolgreich generiert wurde!
   // WICHTIG: Verwende IMMER den chatId aus dem Request (falls vorhanden), damit er sich NICHT ändert
-  // Das verhindert, dass die Extension die Seite neu lädt, wenn sich der chatId ändert
-  // PRIORITÄT: chatId aus Request > siteInfos.chatId > finalChatId (extrahiert) > Default
-  // WICHTIG: Der chatId aus dem Request hat höchste Priorität, damit er sich nicht ändert!
+  // PRIORITÄT: chatId aus Request > siteInfos.chatId > finalChatId > Default
   const responseChatId = chatId || req.body?.siteInfos?.chatId || finalChatId || "00000000";
   
   console.log("=== Response ChatId ===");
@@ -1363,11 +1333,6 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
     waitTime: waitTime, // Zusätzliches Flag für Rückwärtskompatibilität
     noReload: true // Explizites Flag auf oberster Ebene
   });
-  } catch (err) {
-    console.error("❌ FEHLER IM ROUTE-HANDLER (vor asyncHandler):", err);
-    console.error("❌ Stack:", err.stack);
-    throw err; // Weiterleiten an asyncHandler
-  }
 }));
 
 // Express Error-Handler für alle unerwarteten Fehler
