@@ -111,26 +111,47 @@ Nachricht: ${messageText}`;
     const extractedText = extraction.choices?.[0]?.message?.content?.trim();
     if (extractedText) {
       const parsed = JSON.parse(extractedText);
-      // Entferne null-Werte
+      // Entferne null-Werte und stelle sicher, dass es Objekte sind
       const cleanUser = {};
       const cleanAssistant = {};
       
-      Object.keys(parsed.user || {}).forEach(key => {
-        if (parsed.user[key] !== null && parsed.user[key] !== undefined && parsed.user[key] !== "") {
-          cleanUser[key] = parsed.user[key];
-        }
-      });
+      // Stelle sicher, dass parsed.user ein Objekt ist
+      if (parsed.user && typeof parsed.user === 'object' && !Array.isArray(parsed.user)) {
+        Object.keys(parsed.user).forEach(key => {
+          if (parsed.user[key] !== null && parsed.user[key] !== undefined && parsed.user[key] !== "") {
+            // Stelle sicher, dass der Wert serialisierbar ist
+            try {
+              JSON.stringify(parsed.user[key]);
+              cleanUser[key] = parsed.user[key];
+            } catch (e) {
+              console.warn(`⚠️ Wert für '${key}' ist nicht serialisierbar, überspringe:`, e.message);
+            }
+          }
+        });
+      }
       
-      Object.keys(parsed.assistant || {}).forEach(key => {
-        if (parsed.assistant[key] !== null && parsed.assistant[key] !== undefined && parsed.assistant[key] !== "") {
-          cleanAssistant[key] = parsed.assistant[key];
-        }
-      });
+      // Stelle sicher, dass parsed.assistant ein Objekt ist
+      if (parsed.assistant && typeof parsed.assistant === 'object' && !Array.isArray(parsed.assistant)) {
+        Object.keys(parsed.assistant).forEach(key => {
+          if (parsed.assistant[key] !== null && parsed.assistant[key] !== undefined && parsed.assistant[key] !== "") {
+            // Stelle sicher, dass der Wert serialisierbar ist
+            try {
+              JSON.stringify(parsed.assistant[key]);
+              cleanAssistant[key] = parsed.assistant[key];
+            } catch (e) {
+              console.warn(`⚠️ Wert für '${key}' ist nicht serialisierbar, überspringe:`, e.message);
+            }
+          }
+        });
+      }
       
       return { user: cleanUser, assistant: cleanAssistant };
     }
   } catch (err) {
     console.error("Fehler beim Extrahieren von Informationen:", err);
+    // #region agent log
+    try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:extractInfoFromMessage',message:'extractInfoFromMessage error',data:{error:err.message,stack:err.stack?.substring(0,200)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'F'})+'\n');}catch(e){}
+    // #endregion
   }
   
   return { user: {}, assistant: {} };
@@ -1437,12 +1458,35 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
   // WICHTIG: Validiere und filtere assetsToSend, um undefined-Elemente und ungültige Objekte zu entfernen
   const validAssets = validateAssets(assetsToSend);
   
+  // WICHTIG: Stelle sicher, dass extractedInfo immer ein gültiges Objekt ist
+  let safeExtractedInfo = { user: {}, assistant: {} };
+  try {
+    if (extractedInfo && typeof extractedInfo === 'object') {
+      safeExtractedInfo = {
+        user: extractedInfo.user && typeof extractedInfo.user === 'object' ? extractedInfo.user : {},
+        assistant: extractedInfo.assistant && typeof extractedInfo.assistant === 'object' ? extractedInfo.assistant : {}
+      };
+    }
+  } catch (err) {
+    console.error("❌ Fehler beim Validieren von extractedInfo:", err.message);
+    safeExtractedInfo = { user: {}, assistant: {} };
+  }
+  
+  // WICHTIG: Stelle sicher, dass summaryText sicher serialisiert werden kann
+  let safeSummaryText = "{}";
+  try {
+    safeSummaryText = JSON.stringify(safeExtractedInfo);
+  } catch (err) {
+    console.error("❌ Fehler beim Stringify von extractedInfo:", err.message);
+    safeSummaryText = "{}";
+  }
+  
   try {
     return res.json({
       resText: replyText, // Extension erwartet resText statt replyText
       replyText, // Auch für Rückwärtskompatibilität
-      summary: extractedInfo, // Extension erwartet summary als Objekt
-      summaryText: JSON.stringify(extractedInfo), // Für Rückwärtskompatibilität
+      summary: safeExtractedInfo, // Extension erwartet summary als Objekt - verwende validiertes Objekt
+      summaryText: safeSummaryText, // Für Rückwärtskompatibilität - verwende sicher serialisierten String
       chatId: responseChatId, // WICHTIG: chatId aus Request (damit er sich nicht ändert), sonst finalChatId oder Default
       actions: [
         {
@@ -1465,6 +1509,15 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
     try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1335',message:'res.json serialization error',data:{error:err.message,stack:err.stack?.substring(0,200)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'E'})+'\n');}catch(e){}
     // #endregion
     console.error("❌ FEHLER: res.json() Serialisierung fehlgeschlagen:", err.message);
+    console.error("❌ Fehler-Details:", {
+      hasReplyText: !!replyText,
+      replyTextType: typeof replyText,
+      hasExtractedInfo: !!safeExtractedInfo,
+      extractedInfoType: typeof safeExtractedInfo,
+      hasValidAssets: !!validAssets,
+      validAssetsType: Array.isArray(validAssets),
+      responseChatId: responseChatId
+    });
     throw err; // Weiterleiten an Express Error-Handler
   }
 }));
@@ -1488,4 +1541,7 @@ router.use((err, req, res, next) => {
 });
 
 module.exports = router;
+
+
+
 
