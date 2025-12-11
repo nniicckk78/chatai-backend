@@ -1,6 +1,8 @@
 const express = require("express");
 const { getClient } = require("../openaiClient");
 const { verifyToken } = require("../auth");
+const fs = require("fs");
+const path = require("path");
 
 const router = express.Router();
 
@@ -273,8 +275,19 @@ const asyncHandler = (fn) => (req, res, next) => {
 };
 
 router.post("/", asyncHandler(async (req, res, next) => {
+  // #region agent log
+  try{const logPath=path.join(__dirname,'../../.cursor/debug.log');const logDir=path.dirname(logPath);if(!fs.existsSync(logDir))fs.mkdirSync(logDir,{recursive:true});fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:275',message:'Route handler entry',data:{hasBody:!!req.body,bodyKeys:req.body?Object.keys(req.body):[]},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})+'\n');}catch(e){}
+  // #endregion
   // Logge die Größe des Request-Body, um zu sehen, was die Extension sendet
-  const bodySize = JSON.stringify(req.body).length;
+  let bodySize = 0;
+  try {
+    bodySize = JSON.stringify(req.body).length;
+  } catch (err) {
+    // #region agent log
+    try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:282',message:'JSON.stringify req.body failed',data:{error:err.message},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})+'\n');}catch(e){}
+    // #endregion
+    console.error("❌ FEHLER: JSON.stringify(req.body) fehlgeschlagen:", err.message);
+  }
   console.log("=== ChatCompletion Request (SIZE CHECK) ===");
   console.log(`Request body size: ${(bodySize / 1024 / 1024).toFixed(2)} MB`);
   
@@ -716,12 +729,21 @@ router.post("/", asyncHandler(async (req, res, next) => {
   // Versuche Bilder zu analysieren, falls Bild-URLs in der Nachricht sind
   let imageDescriptions = [];
   try {
+    // #region agent log
+    try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:717',message:'Before image analysis',data:{foundMessageTextLength:foundMessageText?.length||0,hasClient:!!client},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})+'\n');}catch(e){}
+    // #endregion
     const imageUrls = extractImageUrls(foundMessageText);
+    // #region agent log
+    try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:720',message:'After extractImageUrls',data:{imageUrlsCount:imageUrls.length,firstUrl:imageUrls[0]?.substring(0,50)||null},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})+'\n');}catch(e){}
+    // #endregion
     if (imageUrls.length > 0) {
       // Beschränke auf 1 Bild (oder erweitern auf 2 bei Bedarf)
       const firstUrl = imageUrls[0];
       console.log("Bild-URL gefunden, versuche Analyse:", firstUrl);
       const dataUrl = await fetchImageAsBase64(firstUrl);
+      // #region agent log
+      try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:725',message:'After fetchImageAsBase64',data:{hasDataUrl:!!dataUrl,dataUrlLength:dataUrl?.length||0},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})+'\n');}catch(e){}
+      // #endregion
       if (dataUrl) {
         const vision = await client.chat.completions.create({
           model: "gpt-4o-mini",
@@ -741,6 +763,9 @@ router.post("/", asyncHandler(async (req, res, next) => {
           max_tokens: 120,
           temperature: 0.2
         });
+        // #region agent log
+        try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:744',message:'After vision API call',data:{hasChoices:!!vision.choices,choicesLength:vision.choices?.length||0,hasMessage:!!vision.choices?.[0]?.message,hasContent:!!vision.choices?.[0]?.message?.content},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})+'\n');}catch(e){}
+        // #endregion
         const desc = vision.choices?.[0]?.message?.content?.trim();
         if (desc) {
           imageDescriptions.push(desc);
@@ -749,6 +774,9 @@ router.post("/", asyncHandler(async (req, res, next) => {
       }
     }
   } catch (err) {
+    // #region agent log
+    try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:751',message:'Image analysis error caught',data:{error:err.message,stack:err.stack?.substring(0,200)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})+'\n');}catch(e){}
+    // #endregion
     console.warn("Bildanalyse fehlgeschlagen:", err.message);
   }
 
@@ -1034,21 +1062,60 @@ Antworte NUR mit der vollständigen, erweiterten Nachricht (mindestens 150 Zeich
     const customerJob = extractedInfo.user?.Work || null;
     
     // Analysiere Schreibstil der letzten Moderator-Nachrichten
-    const writingStyle = analyzeWritingStyle(req.body?.siteInfos?.messages || []);
+    // #region agent log
+    try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1037',message:'Before analyzeWritingStyle',data:{hasSiteInfos:!!req.body?.siteInfos,hasMessages:!!req.body?.siteInfos?.messages,isArray:Array.isArray(req.body?.siteInfos?.messages),messagesLength:req.body?.siteInfos?.messages?.length||0},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})+'\n');}catch(e){}
+    // #endregion
+    let writingStyle = null;
+    try {
+      writingStyle = analyzeWritingStyle(req.body?.siteInfos?.messages || []);
+      // #region agent log
+      try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1039',message:'After analyzeWritingStyle',data:{hasWritingStyle:!!writingStyle,hasSampleTexts:!!writingStyle?.sampleTexts,sampleTextsType:typeof writingStyle?.sampleTexts},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})+'\n');}catch(e){}
+      // #endregion
+    } catch (err) {
+      // #region agent log
+      try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1041',message:'analyzeWritingStyle error',data:{error:err.message,stack:err.stack?.substring(0,200)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})+'\n');}catch(e){}
+      // #endregion
+      console.error("❌ Fehler in analyzeWritingStyle:", err.message);
+    }
     const styleContext = writingStyle ? `\n\nSchreibstil der letzten Moderator-Nachrichten (WICHTIG: Übernehme diesen Stil!):
 - Durchschnittliche Länge: ${writingStyle.avgLength} Zeichen
 - Emojis verwendet: ${writingStyle.hasEmojis ? "Ja" : "Nein"}
 - Ausrufezeichen: ${writingStyle.hasExclamation ? "Ja" : "Nein"}
 - Fragen: ${writingStyle.hasQuestion ? "Ja" : "Nein"}
 - Umgangssprachlich: ${writingStyle.hasCasual ? "Ja" : "Nein"}
-- Beispiel-Nachrichten: ${writingStyle.sampleTexts.substring(0, 300)}` : "";
+- Beispiel-Nachrichten: ${writingStyle.sampleTexts ? writingStyle.sampleTexts.substring(0, 300) : ""}` : "";
     
     // Komprimiere letzten 30 Nachrichten für Kontext
-    const conversationContext = compressConversation(req.body?.siteInfos?.messages || [], 30);
+    // #region agent log
+    try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1047',message:'Before compressConversation',data:{hasMessages:!!req.body?.siteInfos?.messages,isArray:Array.isArray(req.body?.siteInfos?.messages)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})+'\n');}catch(e){}
+    // #endregion
+    let conversationContext = "";
+    try {
+      conversationContext = compressConversation(req.body?.siteInfos?.messages || [], 30);
+      // #region agent log
+      try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1050',message:'After compressConversation',data:{conversationContextLength:conversationContext?.length||0},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})+'\n');}catch(e){}
+      // #endregion
+    } catch (err) {
+      // #region agent log
+      try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1052',message:'compressConversation error',data:{error:err.message,stack:err.stack?.substring(0,200)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})+'\n');}catch(e){}
+      // #endregion
+      console.error("❌ Fehler in compressConversation:", err.message);
+    }
     const conversationBlock = conversationContext ? `\n\nLetzte Nachrichten im Chat (Kunde/Fake):\n${conversationContext}` : "";
     
     // Zähle Kunden-Nachrichten für Kontext
-    const customerMessageCount = countCustomerMessages(req.body?.siteInfos?.messages || []);
+    let customerMessageCount = 0;
+    try {
+      customerMessageCount = countCustomerMessages(req.body?.siteInfos?.messages || []);
+      // #region agent log
+      try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1055',message:'After countCustomerMessages',data:{customerMessageCount},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})+'\n');}catch(e){}
+      // #endregion
+    } catch (err) {
+      // #region agent log
+      try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1057',message:'countCustomerMessages error',data:{error:err.message,stack:err.stack?.substring(0,200)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})+'\n');}catch(e){}
+      // #endregion
+      console.error("❌ Fehler in countCustomerMessages:", err.message);
+    }
     const customerTypeContext = customerMessageCount >= 10 ? "\n\nWICHTIG: Dies ist ein Langzeitkunde (bereits viele Nachrichten ausgetauscht). Sei persönlicher und emotionaler in deiner Antwort." : customerMessageCount > 0 ? "\n\nWICHTIG: Dies ist ein Neukunde (erst wenige Nachrichten). Sei freundlich und hoffnungsvoll." : "";
     
     // Bild-Kontext
@@ -1152,6 +1219,9 @@ WICHTIG:
 - Es darf NIEMALS auffallen, dass du ein Moderator bist - sei natürlich und menschlich!
 - WICHTIG: Übernehme den Schreibstil der letzten Moderator-Nachrichten (siehe oben)! Passe Länge, Emojis, Ton und Formulierungen an, damit der Kunde nicht merkt, dass verschiedene Moderatoren schreiben!`;
 
+    // #region agent log
+    try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1155',message:'Before OpenAI chat.create',data:{hasClient:!!client,hasSystemPrompt:!!systemPrompt,hasUserPrompt:!!userPrompt},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})+'\n');}catch(e){}
+    // #endregion
     const chat = await client.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
@@ -1161,8 +1231,13 @@ WICHTIG:
       max_tokens: 200, // Mehr Tokens für natürlichere, längere Antworten
       temperature: 0.8 // Etwas kreativer für natürlichere Antworten
     });
-    
+    // #region agent log
+    try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1165',message:'After OpenAI chat.create',data:{hasChat:!!chat,hasChoices:!!chat.choices,choicesLength:chat.choices?.length||0,hasFirstChoice:!!chat.choices?.[0],hasMessage:!!chat.choices?.[0]?.message,hasContent:!!chat.choices?.[0]?.message?.content},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})+'\n');}catch(e){}
+    // #endregion
     replyText = chat.choices?.[0]?.message?.content?.trim();
+    // #region agent log
+    try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1166',message:'After extracting replyText',data:{hasReplyText:!!replyText,replyTextLength:replyText?.length||0},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})+'\n');}catch(e){}
+    // #endregion
     
     // WICHTIG: Prüfe, ob eine gültige Antwort generiert wurde
     if (!replyText || replyText.trim() === "") {
@@ -1311,32 +1386,46 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
   const maxWait = 60;
   const waitTime = Math.floor(Math.random() * (maxWait - minWait + 1)) + minWait;
   
-  return res.json({
-    resText: replyText, // Extension erwartet resText statt replyText
-    replyText, // Auch für Rückwärtskompatibilität
-    summary: extractedInfo, // Extension erwartet summary als Objekt
-    summaryText: JSON.stringify(extractedInfo), // Für Rückwärtskompatibilität
-    chatId: responseChatId, // WICHTIG: chatId aus Request (damit er sich nicht ändert), sonst finalChatId oder Default
-    actions: [
-      {
-        type: "insert_and_send",
-        delay: waitTime // Wartezeit in Sekunden (40-60 Sekunden variabel)
-      }
-    ],
-    assets: assetsToSend || [],
-    flags: { 
-      blocked: false, // WICHTIG: Immer false, damit Extension nicht neu lädt
-      noReload: true, // Explizites Flag: Nicht neu laden
-      skipReload: true // Zusätzliches Flag für Rückwärtskompatibilität
-    },
-    disableAutoSend: true, // WICHTIG: Verhindere automatisches Senden durch Extension - unsere Funktion übernimmt die Kontrolle
-    waitTime: waitTime, // Zusätzliches Flag für Rückwärtskompatibilität
-    noReload: true // Explizites Flag auf oberster Ebene
-  });
+  // #region agent log
+  try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1314',message:'Before res.json',data:{hasReplyText:!!replyText,hasExtractedInfo:!!extractedInfo,hasAssetsToSend:!!assetsToSend,assetsToSendLength:assetsToSend?.length||0},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'E'})+'\n');}catch(e){}
+  // #endregion
+  try {
+    return res.json({
+      resText: replyText, // Extension erwartet resText statt replyText
+      replyText, // Auch für Rückwärtskompatibilität
+      summary: extractedInfo, // Extension erwartet summary als Objekt
+      summaryText: JSON.stringify(extractedInfo), // Für Rückwärtskompatibilität
+      chatId: responseChatId, // WICHTIG: chatId aus Request (damit er sich nicht ändert), sonst finalChatId oder Default
+      actions: [
+        {
+          type: "insert_and_send",
+          delay: waitTime // Wartezeit in Sekunden (40-60 Sekunden variabel)
+        }
+      ],
+      assets: assetsToSend || [],
+      flags: { 
+        blocked: false, // WICHTIG: Immer false, damit Extension nicht neu lädt
+        noReload: true, // Explizites Flag: Nicht neu laden
+        skipReload: true // Zusätzliches Flag für Rückwärtskompatibilität
+      },
+      disableAutoSend: true, // WICHTIG: Verhindere automatisches Senden durch Extension - unsere Funktion übernimmt die Kontrolle
+      waitTime: waitTime, // Zusätzliches Flag für Rückwärtskompatibilität
+      noReload: true // Explizites Flag auf oberster Ebene
+    });
+  } catch (err) {
+    // #region agent log
+    try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1335',message:'res.json serialization error',data:{error:err.message,stack:err.stack?.substring(0,200)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'E'})+'\n');}catch(e){}
+    // #endregion
+    console.error("❌ FEHLER: res.json() Serialisierung fehlgeschlagen:", err.message);
+    throw err; // Weiterleiten an Express Error-Handler
+  }
 }));
 
 // Express Error-Handler für alle unerwarteten Fehler
 router.use((err, req, res, next) => {
+  // #region agent log
+  try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1339',message:'Express error handler triggered',data:{error:err.message,stack:err.stack?.substring(0,500),name:err.name,hasBody:!!req.body},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})+'\n');}catch(e){}
+  // #endregion
   console.error("❌ UNERWARTETER FEHLER im Router-Handler:", err);
   console.error("❌ Stack:", err.stack);
   return res.status(500).json({
@@ -1351,3 +1440,4 @@ router.use((err, req, res, next) => {
 });
 
 module.exports = router;
+
