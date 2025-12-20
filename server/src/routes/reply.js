@@ -3505,7 +3505,7 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
         noReload: true, // Explizites Flag auf oberster Ebene
         skipReload: true, // Zusätzliches Flag für maximale Sicherheit
         preventReload: true // Zusätzliches Flag für maximale Sicherheit
-      });
+      }));
     } catch (err) {
       // #region agent log
       try{const logPath=path.join(__dirname,'../../.cursor/debug.log');fs.appendFileSync(logPath,JSON.stringify({location:'reply.js:1335',message:'res.json serialization error',data:{error:err.message,stack:err.stack?.substring(0,200)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'E'})+'\n');}catch(e){}
