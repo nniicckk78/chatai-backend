@@ -3540,7 +3540,7 @@ router.use((err, req, res, next) => {
     actions: [],
     flags: { blocked: true, reason: "server_error", isError: true, showError: true }
   });
-}));
+});
 
 module.exports = router;
 
