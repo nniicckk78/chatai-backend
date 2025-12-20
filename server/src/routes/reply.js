@@ -3522,7 +3522,7 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
       });
       throw err; // Weiterleiten an Express Error-Handler
     }
-}));
+});
 
 // Express Error-Handler für alle unerwarteten Fehler
 router.use((err, req, res, next) => {
