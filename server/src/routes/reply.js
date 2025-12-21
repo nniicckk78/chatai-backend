@@ -1808,6 +1808,7 @@ Antworte NUR mit der vollständigen, erweiterten Reaktivierungsnachricht (mindes
       if (!asaMessage.match(/[.!?]$/)) {
         asaMessage += "?";
       }
+      }
       
       console.log("✅ ASA-Nachricht generiert:", asaMessage.substring(0, 100) + "...", `(${asaMessage.length} Zeichen)`);
       
@@ -3522,6 +3523,19 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
       });
       throw err; // Weiterleiten an Express Error-Handler
     }
+  } catch (err) {
+    // Outer try-catch für alle Fehler beim Generieren der Nachricht
+    console.error("❌ FEHLER beim Generieren der Nachricht:", err);
+    return res.status(500).json({
+      error: `❌ FEHLER: ${err.message}`,
+      resText: `❌ FEHLER: ${err.message}`,
+      replyText: `❌ FEHLER: ${err.message}`,
+      summary: {},
+      chatId: req.body?.chatId || finalChatId || "00000000",
+      actions: [],
+      flags: { blocked: true, reason: "generation_error", isError: true, showError: true }
+    });
+  }
 }));
 
 // Express Error-Handler für alle unerwarteten Fehler
