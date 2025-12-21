@@ -1596,6 +1596,7 @@ router.post("/", asyncHandler(async (req, res, next) => {
             const randomASA = filteredASAExamples[Math.floor(Math.random() * filteredASAExamples.length)];
             // KRITISCH: Verwende NUR moderatorResponse, NIEMALS customerMessage!
             asaMessage = randomASA.moderatorResponse || null;
+          }
           // Prüfe, ob moderatorResponse leer ist oder die Kunden-Nachricht enthält
           if (!asaMessage || asaMessage.trim() === "") {
             console.warn("⚠️ ASA-Beispiel hat keine moderatorResponse, überspringe...");
@@ -3522,6 +3523,19 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
       });
       throw err; // Weiterleiten an Express Error-Handler
     }
+  } catch (err) {
+    // Fehler beim Generieren der Nachricht
+    console.error("❌ FEHLER beim Generieren der Nachricht:", err);
+    return res.status(500).json({
+      error: `❌ FEHLER: ${err.message}`,
+      resText: `❌ FEHLER: ${err.message}`,
+      replyText: `❌ FEHLER: ${err.message}`,
+      summary: {},
+      chatId: req.body?.chatId || "00000000",
+      actions: [],
+      flags: { blocked: true, reason: "generation_error", isError: true, showError: true }
+    });
+  }
 }));
 
 // Express Error-Handler für alle unerwarteten Fehler
