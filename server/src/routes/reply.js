@@ -2719,6 +2719,7 @@ ZIEL: Neue Antworten sollen stilistisch nicht von echten Moderator-Antworten unt
         console.log(`📚 ${relevantExamples.length} Beispiele werden verwendet - genereller Stil wird gebildet`);
       }
     }
+    } // Close the if (isLastMessageFromFake) block from line 1451
     
     // WICHTIG: Validiere die Nachricht nochmal vor dem Prompt
     // Wenn die Nachricht zu lang oder komisch ist, könnte es eine falsche Nachricht sein
@@ -3522,6 +3523,21 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
       });
       throw err; // Weiterleiten an Express Error-Handler
     }
+  } catch (genError) {
+    // Catch block for the main try block starting at line 1431  
+    // This handles any errors during message generation, rules loading, etc.
+    console.error("❌ FEHLER bei der Nachrichtengenerierung:", genError);
+    console.error("❌ Stack:", genError.stack);
+    return res.status(500).json({
+      error: `❌ FEHLER: ${genError.message}`,
+      resText: `❌ FEHLER: ${genError.message}`,
+      replyText: `❌ FEHLER: ${genError.message}`,
+      summary: {},
+      chatId: req.body?.chatId || finalChatId || "00000000",
+      actions: [],
+      flags: { blocked: true, reason: "generation_error", isError: true, showError: true }
+    });
+  }
 }));
 
 // Express Error-Handler für alle unerwarteten Fehler
