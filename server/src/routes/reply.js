@@ -3522,6 +3522,19 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
       });
       throw err; // Weiterleiten an Express Error-Handler
     }
+  } catch (err) {
+    // Catch für den großen try-Block ab Zeile 1431
+    console.error("❌ FEHLER: Unerwarteter Fehler beim Generieren der Antwort:", err);
+    return res.status(500).json({
+      error: `❌ FEHLER: ${err.message}`,
+      resText: `❌ FEHLER: ${err.message}`,
+      replyText: `❌ FEHLER: ${err.message}`,
+      summary: {},
+      chatId: req.body?.chatId || "00000000",
+      actions: [],
+      flags: { blocked: true, reason: "server_error", isError: true, showError: true }
+    });
+  }
 }));
 
 // Express Error-Handler für alle unerwarteten Fehler
