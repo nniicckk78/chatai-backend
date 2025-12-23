@@ -3582,6 +3582,20 @@ Antworte NUR mit der vollständigen Nachricht inklusive Frage am Ende, keine Erk
       });
       throw err; // Weiterleiten an Express Error-Handler
     }
+  } catch (err) {
+    // Catch-Block für den großen try-Block ab Zeile 1431 - fängt alle unerwarteten Fehler ab
+    console.error("❌ KRITISCHER FEHLER beim Generieren der Antwort:", err);
+    console.error("❌ Stack:", err.stack);
+    return res.status(500).json({
+      error: `❌ FEHLER: ${err.message}`,
+      resText: `Es ist ein Fehler aufgetreten. Bitte versuche es erneut.`,
+      replyText: `Es ist ein Fehler aufgetreten. Bitte versuche es erneut.`,
+      summary: {},
+      chatId: req.body?.chatId || "00000000",
+      actions: [],
+      flags: { blocked: true, reason: "generation_error", isError: true, showError: true }
+    });
+  }
 }));
 
 // Express Error-Handler für alle unerwarteten Fehler
