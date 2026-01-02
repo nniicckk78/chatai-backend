@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 36,
+      "count": 37,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -51,11 +51,11 @@
       "bad": 0
     },
     "würdest": {
-      "good": 36,
+      "good": 37,
       "bad": 0
     },
     "machen": {
-      "good": 36,
+      "good": 37,
       "bad": 0
     },
     "hätte": {
@@ -84,11 +84,11 @@
     },
     "wie": {
       "good": 18,
-      "bad": 36
+      "bad": 37
     },
     "stellst": {
       "good": 0,
-      "bad": 36
+      "bad": 37
     },
     "unseren": {
       "good": 0,
@@ -127,120 +127,120 @@
       "bad": 37
     },
     "verstehen": {
-      "good": 17,
-      "bad": 17
+      "good": 18,
+      "bad": 18
     },
     "mehr": {
-      "good": 17,
-      "bad": 17
+      "good": 18,
+      "bad": 18
     },
     "wünschst": {
-      "good": 17,
-      "bad": 17
+      "good": 18,
+      "bad": 18
     },
     "geht": {
-      "good": 17,
-      "bad": 17
+      "good": 18,
+      "bad": 18
     },
     "genauso": {
-      "good": 17,
-      "bad": 17
+      "good": 18,
+      "bad": 18
     },
     "möchte": {
-      "good": 17,
-      "bad": 17
+      "good": 18,
+      "bad": 18
     },
     "auch": {
-      "good": 52,
-      "bad": 17
+      "good": 54,
+      "bad": 18
     },
     "funke": {
-      "good": 17,
-      "bad": 17
+      "good": 18,
+      "bad": 18
     },
     "nicht": {
-      "good": 35,
-      "bad": 17
+      "good": 36,
+      "bad": 18
     },
     "erlischt": {
-      "good": 17,
-      "bad": 17
+      "good": 18,
+      "bad": 18
     },
     "bruach": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "manchmal": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "nur": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "bisschen": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "damit": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "mich": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "wohl": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "fühle": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "letzter": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "zeit": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "ziemlich": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "viel": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "los": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "was": {
-      "good": 35,
+      "good": 36,
       "bad": 18
     },
     "denn": {
-      "good": 53,
+      "good": 54,
       "bad": 0
     },
     "gerne": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "wollen": {
-      "good": 17,
+      "good": 18,
       "bad": 0
     },
     "wieder": {
       "good": 0,
-      "bad": 17
+      "bad": 18
     },
     "entfachen": {
       "good": 0,
-      "bad": 17
+      "bad": 18
     },
     "vorstellen": {
       "good": 18,
@@ -357,8 +357,8 @@
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 72,
-      "total": 126
+      "good": 73,
+      "total": 128
     }
   },
   "responsePatterns": [
@@ -372,8 +372,8 @@
         "length": 132
       },
       "goodResponse": "Ich kann verstehen, dass du dir mehr wünschst. Mir geht es genauso, ich möchte auch, dass der Funke nicht erlischt. Ich bruach manchmal nur ein bisschen damit ich mich wohl fühle und war auch in letzt",
-      "successCount": 53,
-      "lastUsed": "2026-01-02T19:05:50.555Z"
+      "successCount": 54,
+      "lastUsed": "2026-01-02T19:07:00.216Z"
     },
     {
       "situation": "allgemein",
@@ -389,5 +389,5 @@
       "lastUsed": "2026-01-02T19:06:59.787Z"
     }
   ],
-  "lastUpdated": "2026-01-02T19:06:59.788Z"
+  "lastUpdated": "2026-01-02T19:07:00.216Z"
 }
