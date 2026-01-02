@@ -1,130 +1,130 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 10,
+      "count": 11,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
-      "count": 5,
+      "count": 6,
       "successRate": 0
     }
   },
   "wordFrequency": {
     "hört": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "sich": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "sehr": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "verlockend": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "würden": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "dann": {
-      "good": 10,
+      "good": 12,
       "bad": 0
     },
     "irgendwo": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "kaffe": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "trinken": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "gehen": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "würdest": {
-      "good": 10,
+      "good": 11,
       "bad": 0
     },
     "machen": {
-      "good": 10,
+      "good": 11,
       "bad": 0
     },
     "hätte": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "definitiv": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "grosse": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "lust": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "tasse": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "kaffee": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "wie": {
       "good": 5,
-      "bad": 10
+      "bad": 11
     },
     "stellst": {
       "good": 0,
-      "bad": 10
+      "bad": 11
     },
     "unseren": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "nachmittag": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "genau": {
       "good": 5,
-      "bad": 10
+      "bad": 11
     },
     "gibt": {
       "good": 5,
-      "bad": 5
+      "bad": 6
     },
     "bestimmten": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "ort": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "den": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "kopf": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "hast": {
       "good": 0,
-      "bad": 10
+      "bad": 11
     },
     "verstehen": {
       "good": 5,
@@ -357,8 +357,8 @@
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 20,
-      "total": 35
+      "good": 21,
+      "total": 37
     }
   },
   "responsePatterns": [
@@ -385,9 +385,9 @@
         "length": 59
       },
       "goodResponse": "Das hört sich sehr verlockend an, würden wir dann irgendwo einen Kaffe trinken gehen oder würdest du mir dann einen machen? 😄",
-      "successCount": 5,
-      "lastUsed": "2026-01-02T18:55:37.270Z"
+      "successCount": 6,
+      "lastUsed": "2026-01-02T18:56:22.641Z"
     }
   ],
-  "lastUpdated": "2026-01-02T18:55:38.761Z"
+  "lastUpdated": "2026-01-02T18:56:22.642Z"
 }
