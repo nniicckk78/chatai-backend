@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 1,
+      "count": 2,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -51,11 +51,11 @@
       "bad": 0
     },
     "würdest": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "machen": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "hätte": {
@@ -84,11 +84,11 @@
     },
     "wie": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "stellst": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "unseren": {
       "good": 0,
@@ -125,12 +125,128 @@
     "hast": {
       "good": 0,
       "bad": 1
+    },
+    "verstehen": {
+      "good": 1,
+      "bad": 1
+    },
+    "mehr": {
+      "good": 1,
+      "bad": 1
+    },
+    "wünschst": {
+      "good": 1,
+      "bad": 1
+    },
+    "geht": {
+      "good": 1,
+      "bad": 1
+    },
+    "genauso": {
+      "good": 1,
+      "bad": 1
+    },
+    "möchte": {
+      "good": 1,
+      "bad": 1
+    },
+    "auch": {
+      "good": 2,
+      "bad": 1
+    },
+    "funke": {
+      "good": 1,
+      "bad": 1
+    },
+    "nicht": {
+      "good": 1,
+      "bad": 1
+    },
+    "erlischt": {
+      "good": 1,
+      "bad": 1
+    },
+    "bruach": {
+      "good": 1,
+      "bad": 0
+    },
+    "manchmal": {
+      "good": 1,
+      "bad": 0
+    },
+    "nur": {
+      "good": 1,
+      "bad": 0
+    },
+    "bisschen": {
+      "good": 1,
+      "bad": 0
+    },
+    "damit": {
+      "good": 1,
+      "bad": 0
+    },
+    "mich": {
+      "good": 1,
+      "bad": 0
+    },
+    "wohl": {
+      "good": 1,
+      "bad": 0
+    },
+    "fühle": {
+      "good": 1,
+      "bad": 0
+    },
+    "letzter": {
+      "good": 1,
+      "bad": 0
+    },
+    "zeit": {
+      "good": 1,
+      "bad": 0
+    },
+    "ziemlich": {
+      "good": 1,
+      "bad": 0
+    },
+    "viel": {
+      "good": 1,
+      "bad": 0
+    },
+    "los": {
+      "good": 1,
+      "bad": 0
+    },
+    "was": {
+      "good": 1,
+      "bad": 0
+    },
+    "denn": {
+      "good": 1,
+      "bad": 0
+    },
+    "gerne": {
+      "good": 1,
+      "bad": 0
+    },
+    "wollen": {
+      "good": 1,
+      "bad": 0
+    },
+    "wieder": {
+      "good": 0,
+      "bad": 1
+    },
+    "entfachen": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 1,
-      "total": 2
+      "good": 2,
+      "total": 4
     }
   },
   "responsePatterns": [
@@ -146,7 +262,20 @@
       "goodResponse": "Das hört sich sehr verlockend an, würden wir dann irgendwo einen Kaffe trinken gehen oder würdest du mir dann einen machen? 😄",
       "successCount": 1,
       "lastUsed": "2026-01-02T18:50:44.003Z"
+    },
+    {
+      "situation": "allgemein",
+      "customerPattern": {
+        "keywords": "franziska umso länger jetzt wieder zeigst nur schreiben willst flackern",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 132
+      },
+      "goodResponse": "Ich kann verstehen, dass du dir mehr wünschst. Mir geht es genauso, ich möchte auch, dass der Funke nicht erlischt. Ich bruach manchmal nur ein bisschen damit ich mich wohl fühle und war auch in letzt",
+      "successCount": 1,
+      "lastUsed": "2026-01-02T18:50:44.490Z"
     }
   ],
-  "lastUpdated": "2026-01-02T18:50:44.004Z"
+  "lastUpdated": "2026-01-02T18:50:44.490Z"
 }
