@@ -11,6 +11,10 @@
     "das würde": {
       "count": 1,
       "successRate": 0
+    },
+    "würde ich": {
+      "count": 1,
+      "successRate": 0
     }
   },
   "wordFrequency": {
@@ -87,8 +91,8 @@
       "bad": 20
     },
     "wie": {
-      "good": 20,
-      "bad": 40
+      "good": 21,
+      "bad": 41
     },
     "stellst": {
       "good": 0,
@@ -119,8 +123,8 @@
       "bad": 20
     },
     "den": {
-      "good": 0,
-      "bad": 20
+      "good": 1,
+      "bad": 21
     },
     "kopf": {
       "good": 0,
@@ -155,8 +159,8 @@
       "bad": 19
     },
     "auch": {
-      "good": 59,
-      "bad": 19
+      "good": 60,
+      "bad": 20
     },
     "funke": {
       "good": 19,
@@ -175,8 +179,8 @@
       "bad": 0
     },
     "manchmal": {
-      "good": 19,
-      "bad": 0
+      "good": 20,
+      "bad": 1
     },
     "nur": {
       "good": 19,
@@ -231,8 +235,8 @@
       "bad": 0
     },
     "gerne": {
-      "good": 19,
-      "bad": 0
+      "good": 20,
+      "bad": 1
     },
     "wollen": {
       "good": 19,
@@ -260,7 +264,7 @@
     },
     "dein": {
       "good": 20,
-      "bad": 1
+      "bad": 2
     },
     "bestes": {
       "good": 20,
@@ -307,8 +311,8 @@
       "bad": 0
     },
     "denke": {
-      "good": 40,
-      "bad": 0
+      "good": 41,
+      "bad": 1
     },
     "denkst": {
       "good": 20,
@@ -379,8 +383,8 @@
       "bad": 0
     },
     "würde": {
-      "good": 1,
-      "bad": 0
+      "good": 2,
+      "bad": 1
     },
     "meine": {
       "good": 2,
@@ -473,12 +477,108 @@
     "moment": {
       "good": 0,
       "bad": 1
+    },
+    "hey": {
+      "good": 1,
+      "bad": 1
+    },
+    "oliver": {
+      "good": 1,
+      "bad": 1
+    },
+    "frohes": {
+      "good": 1,
+      "bad": 1
+    },
+    "neues": {
+      "good": 1,
+      "bad": 1
+    },
+    "jahr": {
+      "good": 1,
+      "bad": 1
+    },
+    "fehlern": {
+      "good": 1,
+      "bad": 1
+    },
+    "leben": {
+      "good": 1,
+      "bad": 2
+    },
+    "kenne": {
+      "good": 1,
+      "bad": 1
+    },
+    "alles": {
+      "good": 1,
+      "bad": 1
+    },
+    "neu": {
+      "good": 1,
+      "bad": 1
+    },
+    "starten": {
+      "good": 1,
+      "bad": 1
+    },
+    "jeder": {
+      "good": 1,
+      "bad": 1
+    },
+    "seine": {
+      "good": 1,
+      "bad": 1
+    },
+    "eigenen": {
+      "good": 1,
+      "bad": 1
+    },
+    "herausforderungen": {
+      "good": 1,
+      "bad": 1
+    },
+    "meinst": {
+      "good": 1,
+      "bad": 0
+    },
+    "reale": {
+      "good": 1,
+      "bad": 0
+    },
+    "chancen": {
+      "good": 1,
+      "bad": 0
+    },
+    "markt": {
+      "good": 1,
+      "bad": 0
+    },
+    "stehst": {
+      "good": 0,
+      "bad": 1
+    },
+    "dazu": {
+      "good": 0,
+      "bad": 1
+    },
+    "andere": {
+      "good": 0,
+      "bad": 1
+    },
+    "richtung": {
+      "good": 0,
+      "bad": 1
+    },
+    "lenken": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 79,
-      "total": 138
+      "good": 80,
+      "total": 140
     },
     "Bot-Vorwurf": {
       "good": 1,
@@ -495,9 +595,9 @@
         "hasSexual": false,
         "length": 132
       },
-      "goodResponse": "Ich kann verstehen, dass du dir mehr wünschst. Mir geht es genauso, ich möchte auch, dass der Funke nicht erlischt. Ich bruach manchmal nur ein bisschen damit ich mich wohl fühle und war auch in letzt",
-      "successCount": 59,
-      "lastUsed": "2026-01-02T19:07:40.049Z"
+      "goodResponse": "Hey Oliver, frohes neues Jahr! Das mit den Fehlern im Leben kenne ich, manchmal würde ich auch gerne alles neu starten. Aber ich denke, jeder hat seine eigenen Herausforderungen. Aber wie meinst du da",
+      "successCount": 60,
+      "lastUsed": "2026-01-02T19:36:27.597Z"
     },
     {
       "situation": "allgemein",
@@ -526,6 +626,6 @@
       "lastUsed": "2026-01-02T19:34:52.962Z"
     }
   ],
-  "lastUpdated": "2026-01-02T19:34:52.963Z",
+  "lastUpdated": "2026-01-02T19:36:27.598Z",
   "initialized": true
 }
