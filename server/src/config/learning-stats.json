@@ -83,7 +83,7 @@
       "bad": 15
     },
     "wie": {
-      "good": 14,
+      "good": 15,
       "bad": 29
     },
     "stellst": {
@@ -100,7 +100,7 @@
     },
     "genau": {
       "good": 15,
-      "bad": 29
+      "bad": 30
     },
     "gibt": {
       "good": 15,
@@ -124,7 +124,7 @@
     },
     "hast": {
       "good": 0,
-      "bad": 29
+      "bad": 30
     },
     "verstehen": {
       "good": 14,
@@ -151,7 +151,7 @@
       "bad": 14
     },
     "auch": {
-      "good": 42,
+      "good": 43,
       "bad": 14
     },
     "funke": {
@@ -220,10 +220,10 @@
     },
     "was": {
       "good": 29,
-      "bad": 14
+      "bad": 15
     },
     "denn": {
-      "good": 43,
+      "good": 44,
       "bad": 0
     },
     "gerne": {
@@ -295,70 +295,70 @@
       "bad": 0
     },
     "hof": {
-      "good": 14,
+      "good": 15,
       "bad": 0
     },
     "gerade": {
-      "good": 14,
+      "good": 15,
       "bad": 0
     },
     "denke": {
-      "good": 28,
+      "good": 30,
       "bad": 0
     },
     "denkst": {
-      "good": 14,
+      "good": 15,
       "bad": 0
     },
     "zweiteudig": {
-      "good": 14,
+      "good": 15,
       "bad": 0
     },
     "absolut": {
       "good": 0,
-      "bad": 14
+      "bad": 15
     },
     "finde": {
       "good": 0,
-      "bad": 14
+      "bad": 15
     },
     "grossartig": {
       "good": 0,
-      "bad": 14
+      "bad": 15
     },
     "wenn": {
       "good": 0,
-      "bad": 14
+      "bad": 15
     },
     "gegenseitig": {
       "good": 0,
-      "bad": 14
+      "bad": 15
     },
     "unterstützen": {
       "good": 0,
-      "bad": 14
+      "bad": 15
     },
     "helfen": {
       "good": 0,
-      "bad": 14
+      "bad": 15
     },
     "können": {
       "good": 0,
-      "bad": 14
+      "bad": 15
     },
     "dabei": {
       "good": 0,
-      "bad": 14
+      "bad": 15
     },
     "vorgestellt": {
       "good": 0,
-      "bad": 14
+      "bad": 15
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 58,
-      "total": 101
+      "good": 59,
+      "total": 103
     }
   },
   "responsePatterns": [
@@ -372,8 +372,8 @@
         "length": 132
       },
       "goodResponse": "Ich kann verstehen, dass du dir mehr wünschst. Mir geht es genauso, ich möchte auch, dass der Funke nicht erlischt. Ich bruach manchmal nur ein bisschen damit ich mich wohl fühle und war auch in letzt",
-      "successCount": 43,
-      "lastUsed": "2026-01-02T19:03:34.889Z"
+      "successCount": 44,
+      "lastUsed": "2026-01-02T19:03:35.292Z"
     },
     {
       "situation": "allgemein",
@@ -389,5 +389,5 @@
       "lastUsed": "2026-01-02T19:03:33.982Z"
     }
   ],
-  "lastUpdated": "2026-01-02T19:03:34.889Z"
+  "lastUpdated": "2026-01-02T19:03:35.292Z"
 }
