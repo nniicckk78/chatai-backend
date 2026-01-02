@@ -83,7 +83,7 @@
       "bad": 1
     },
     "wie": {
-      "good": 0,
+      "good": 1,
       "bad": 2
     },
     "stellst": {
@@ -100,7 +100,7 @@
     },
     "genau": {
       "good": 1,
-      "bad": 1
+      "bad": 2
     },
     "gibt": {
       "good": 1,
@@ -124,7 +124,7 @@
     },
     "hast": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "verstehen": {
       "good": 1,
@@ -151,7 +151,7 @@
       "bad": 1
     },
     "auch": {
-      "good": 2,
+      "good": 3,
       "bad": 1
     },
     "funke": {
@@ -220,10 +220,10 @@
     },
     "was": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "denn": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "gerne": {
@@ -293,12 +293,72 @@
     "hier": {
       "good": 1,
       "bad": 0
+    },
+    "hof": {
+      "good": 1,
+      "bad": 0
+    },
+    "gerade": {
+      "good": 1,
+      "bad": 0
+    },
+    "denke": {
+      "good": 2,
+      "bad": 0
+    },
+    "denkst": {
+      "good": 1,
+      "bad": 0
+    },
+    "zweiteudig": {
+      "good": 1,
+      "bad": 0
+    },
+    "absolut": {
+      "good": 0,
+      "bad": 1
+    },
+    "finde": {
+      "good": 0,
+      "bad": 1
+    },
+    "grossartig": {
+      "good": 0,
+      "bad": 1
+    },
+    "wenn": {
+      "good": 0,
+      "bad": 1
+    },
+    "gegenseitig": {
+      "good": 0,
+      "bad": 1
+    },
+    "unterstützen": {
+      "good": 0,
+      "bad": 1
+    },
+    "helfen": {
+      "good": 0,
+      "bad": 1
+    },
+    "können": {
+      "good": 0,
+      "bad": 1
+    },
+    "dabei": {
+      "good": 0,
+      "bad": 1
+    },
+    "vorgestellt": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 3,
-      "total": 5
+      "good": 4,
+      "total": 7
     }
   },
   "responsePatterns": [
@@ -312,8 +372,8 @@
         "length": 132
       },
       "goodResponse": "Ich kann verstehen, dass du dir mehr wünschst. Mir geht es genauso, ich möchte auch, dass der Funke nicht erlischt. Ich bruach manchmal nur ein bisschen damit ich mich wohl fühle und war auch in letzt",
-      "successCount": 2,
-      "lastUsed": "2026-01-02T18:50:44.928Z"
+      "successCount": 3,
+      "lastUsed": "2026-01-02T18:50:45.394Z"
     },
     {
       "situation": "allgemein",
@@ -329,5 +389,5 @@
       "lastUsed": "2026-01-02T18:50:44.003Z"
     }
   ],
-  "lastUpdated": "2026-01-02T18:50:44.928Z"
+  "lastUpdated": "2026-01-02T18:50:45.394Z"
 }
