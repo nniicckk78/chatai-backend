@@ -99,11 +99,11 @@
       "bad": 1
     },
     "genau": {
-      "good": 0,
+      "good": 1,
       "bad": 1
     },
     "gibt": {
-      "good": 0,
+      "good": 1,
       "bad": 1
     },
     "bestimmten": {
@@ -159,7 +159,7 @@
       "bad": 1
     },
     "nicht": {
-      "good": 1,
+      "good": 2,
       "bad": 1
     },
     "erlischt": {
@@ -219,11 +219,11 @@
       "bad": 0
     },
     "was": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "denn": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "gerne": {
@@ -241,15 +241,80 @@
     "entfachen": {
       "good": 0,
       "bad": 1
+    },
+    "vorstellen": {
+      "good": 1,
+      "bad": 0
+    },
+    "einfach": {
+      "good": 1,
+      "bad": 0
+    },
+    "gibst": {
+      "good": 1,
+      "bad": 0
+    },
+    "dein": {
+      "good": 1,
+      "bad": 0
+    },
+    "bestes": {
+      "good": 1,
+      "bad": 0
+    },
+    "als": {
+      "good": 1,
+      "bad": 0
+    },
+    "papa": {
+      "good": 1,
+      "bad": 0
+    },
+    "wichtigste": {
+      "good": 1,
+      "bad": 0
+    },
+    "sicher": {
+      "good": 1,
+      "bad": 0
+    },
+    "frauen": {
+      "good": 1,
+      "bad": 0
+    },
+    "schätzen": {
+      "good": 1,
+      "bad": 0
+    },
+    "suchst": {
+      "good": 1,
+      "bad": 0
+    },
+    "hier": {
+      "good": 1,
+      "bad": 0
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 2,
-      "total": 4
+      "good": 3,
+      "total": 5
     }
   },
   "responsePatterns": [
+    {
+      "situation": "allgemein",
+      "customerPattern": {
+        "keywords": "franziska umso länger jetzt wieder zeigst nur schreiben willst flackern",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 132
+      },
+      "goodResponse": "Ich kann verstehen, dass du dir mehr wünschst. Mir geht es genauso, ich möchte auch, dass der Funke nicht erlischt. Ich bruach manchmal nur ein bisschen damit ich mich wohl fühle und war auch in letzt",
+      "successCount": 2,
+      "lastUsed": "2026-01-02T18:50:44.928Z"
+    },
     {
       "situation": "allgemein",
       "customerPattern": {
@@ -262,20 +327,7 @@
       "goodResponse": "Das hört sich sehr verlockend an, würden wir dann irgendwo einen Kaffe trinken gehen oder würdest du mir dann einen machen? 😄",
       "successCount": 1,
       "lastUsed": "2026-01-02T18:50:44.003Z"
-    },
-    {
-      "situation": "allgemein",
-      "customerPattern": {
-        "keywords": "franziska umso länger jetzt wieder zeigst nur schreiben willst flackern",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 132
-      },
-      "goodResponse": "Ich kann verstehen, dass du dir mehr wünschst. Mir geht es genauso, ich möchte auch, dass der Funke nicht erlischt. Ich bruach manchmal nur ein bisschen damit ich mich wohl fühle und war auch in letzt",
-      "successCount": 1,
-      "lastUsed": "2026-01-02T18:50:44.490Z"
     }
   ],
-  "lastUpdated": "2026-01-02T18:50:44.490Z"
+  "lastUpdated": "2026-01-02T18:50:44.928Z"
 }
