@@ -1,11 +1,15 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 39,
+      "count": 40,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
       "count": 20,
+      "successRate": 0
+    },
+    "das würde": {
+      "count": 1,
       "successRate": 0
     }
   },
@@ -19,8 +23,8 @@
       "bad": 0
     },
     "sehr": {
-      "good": 20,
-      "bad": 0
+      "good": 21,
+      "bad": 1
     },
     "verlockend": {
       "good": 20,
@@ -31,7 +35,7 @@
       "bad": 0
     },
     "dann": {
-      "good": 40,
+      "good": 42,
       "bad": 0
     },
     "irgendwo": {
@@ -51,11 +55,11 @@
       "bad": 0
     },
     "würdest": {
-      "good": 39,
+      "good": 40,
       "bad": 0
     },
     "machen": {
-      "good": 39,
+      "good": 40,
       "bad": 0
     },
     "hätte": {
@@ -84,7 +88,7 @@
     },
     "wie": {
       "good": 20,
-      "bad": 39
+      "bad": 40
     },
     "stellst": {
       "good": 0,
@@ -151,7 +155,7 @@
       "bad": 19
     },
     "auch": {
-      "good": 58,
+      "good": 59,
       "bad": 19
     },
     "funke": {
@@ -187,7 +191,7 @@
       "bad": 0
     },
     "mich": {
-      "good": 19,
+      "good": 20,
       "bad": 0
     },
     "wohl": {
@@ -220,7 +224,7 @@
     },
     "was": {
       "good": 39,
-      "bad": 20
+      "bad": 22
     },
     "denn": {
       "good": 59,
@@ -244,7 +248,7 @@
     },
     "vorstellen": {
       "good": 20,
-      "bad": 0
+      "bad": 1
     },
     "einfach": {
       "good": 20,
@@ -256,7 +260,7 @@
     },
     "dein": {
       "good": 20,
-      "bad": 0
+      "bad": 1
     },
     "bestes": {
       "good": 20,
@@ -320,7 +324,7 @@
     },
     "finde": {
       "good": 0,
-      "bad": 20
+      "bad": 21
     },
     "grossartig": {
       "good": 0,
@@ -328,7 +332,7 @@
     },
     "wenn": {
       "good": 0,
-      "bad": 20
+      "bad": 21
     },
     "gegenseitig": {
       "good": 0,
@@ -353,12 +357,132 @@
     "vorgestellt": {
       "good": 0,
       "bad": 20
+    },
+    "klingt": {
+      "good": 1,
+      "bad": 1
+    },
+    "wild": {
+      "good": 1,
+      "bad": 1
+    },
+    "mein": {
+      "good": 1,
+      "bad": 0
+    },
+    "geiler": {
+      "good": 1,
+      "bad": 0
+    },
+    "hengst": {
+      "good": 1,
+      "bad": 0
+    },
+    "würde": {
+      "good": 1,
+      "bad": 0
+    },
+    "meine": {
+      "good": 2,
+      "bad": 0
+    },
+    "muschi": {
+      "good": 1,
+      "bad": 0
+    },
+    "richtig": {
+      "good": 2,
+      "bad": 0
+    },
+    "feucht": {
+      "good": 1,
+      "bad": 0
+    },
+    "kannst": {
+      "good": 1,
+      "bad": 0
+    },
+    "schön": {
+      "good": 1,
+      "bad": 0
+    },
+    "lecken": {
+      "good": 1,
+      "bad": 0
+    },
+    "arschloch": {
+      "good": 1,
+      "bad": 0
+    },
+    "gleich": {
+      "good": 1,
+      "bad": 0
+    },
+    "mitlecken": {
+      "good": 1,
+      "bad": 0
+    },
+    "peter": {
+      "good": 0,
+      "bad": 1
+    },
+    "intensiv": {
+      "good": 0,
+      "bad": 1
+    },
+    "werden": {
+      "good": 0,
+      "bad": 1
+    },
+    "könnte": {
+      "good": 0,
+      "bad": 1
+    },
+    "toll": {
+      "good": 0,
+      "bad": 1
+    },
+    "jemand": {
+      "good": 0,
+      "bad": 1
+    },
+    "weiss": {
+      "good": 0,
+      "bad": 1
+    },
+    "will": {
+      "good": 0,
+      "bad": 1
+    },
+    "wäre": {
+      "good": 0,
+      "bad": 1
+    },
+    "perfektes": {
+      "good": 0,
+      "bad": 1
+    },
+    "szenario": {
+      "good": 0,
+      "bad": 1
+    },
+    "solchen": {
+      "good": 0,
+      "bad": 1
+    },
+    "moment": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
       "good": 79,
       "total": 138
+    },
+    "Bot-Vorwurf": {
+      "good": 1,
+      "total": 2
     }
   },
   "responsePatterns": [
@@ -387,8 +511,21 @@
       "goodResponse": "Das hört sich sehr verlockend an, würden wir dann irgendwo einen Kaffe trinken gehen oder würdest du mir dann einen machen? 😄",
       "successCount": 20,
       "lastUsed": "2026-01-02T19:07:38.514Z"
+    },
+    {
+      "situation": "Bot-Vorwurf",
+      "customerPattern": {
+        "keywords": "wenn veraten tust antwort nachricht küsse dein ganzen körper mag",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 406
+      },
+      "goodResponse": "Klingt sehr wild, mein geiler Hengst. Das würde meine Muschi richtig feucht machen, kannst du mich dann auch so richtig schön lecken? Würdest du meine Arschloch dann gleich mitlecken?",
+      "successCount": 1,
+      "lastUsed": "2026-01-02T19:34:52.962Z"
     }
   ],
-  "lastUpdated": "2026-01-02T19:08:19.615Z",
+  "lastUpdated": "2026-01-02T19:34:52.963Z",
   "initialized": true
 }
