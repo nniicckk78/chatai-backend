@@ -99,11 +99,11 @@
       "bad": 10
     },
     "genau": {
-      "good": 9,
+      "good": 10,
       "bad": 19
     },
     "gibt": {
-      "good": 9,
+      "good": 10,
       "bad": 10
     },
     "bestimmten": {
@@ -159,7 +159,7 @@
       "bad": 9
     },
     "nicht": {
-      "good": 18,
+      "good": 19,
       "bad": 9
     },
     "erlischt": {
@@ -219,11 +219,11 @@
       "bad": 0
     },
     "was": {
-      "good": 18,
+      "good": 19,
       "bad": 9
     },
     "denn": {
-      "good": 27,
+      "good": 28,
       "bad": 0
     },
     "gerne": {
@@ -243,55 +243,55 @@
       "bad": 9
     },
     "vorstellen": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "einfach": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "gibst": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "dein": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "bestes": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "als": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "papa": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "wichtigste": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "sicher": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "frauen": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "schätzen": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "suchst": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "hier": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "hof": {
@@ -357,8 +357,8 @@
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 37,
-      "total": 65
+      "good": 38,
+      "total": 66
     }
   },
   "responsePatterns": [
@@ -372,8 +372,8 @@
         "length": 132
       },
       "goodResponse": "Ich kann verstehen, dass du dir mehr wünschst. Mir geht es genauso, ich möchte auch, dass der Funke nicht erlischt. Ich bruach manchmal nur ein bisschen damit ich mich wohl fühle und war auch in letzt",
-      "successCount": 27,
-      "lastUsed": "2026-01-02T18:59:37.657Z"
+      "successCount": 28,
+      "lastUsed": "2026-01-02T18:59:38.116Z"
     },
     {
       "situation": "allgemein",
@@ -389,5 +389,5 @@
       "lastUsed": "2026-01-02T18:59:37.160Z"
     }
   ],
-  "lastUpdated": "2026-01-02T18:59:37.657Z"
+  "lastUpdated": "2026-01-02T18:59:38.116Z"
 }
