@@ -1,7 +1,152 @@
 {
-  "patterns": {},
-  "wordFrequency": {},
-  "situationSuccess": {},
-  "responsePatterns": [],
-  "lastUpdated": "2024-01-01T00:00:00.000Z"
+  "patterns": {
+    "würdest du": {
+      "count": 1,
+      "successRate": 0
+    },
+    "würdest du mir dann einen machen?": {
+      "count": 1,
+      "successRate": 0
+    }
+  },
+  "wordFrequency": {
+    "hört": {
+      "good": 1,
+      "bad": 0
+    },
+    "sich": {
+      "good": 1,
+      "bad": 0
+    },
+    "sehr": {
+      "good": 1,
+      "bad": 0
+    },
+    "verlockend": {
+      "good": 1,
+      "bad": 0
+    },
+    "würden": {
+      "good": 1,
+      "bad": 0
+    },
+    "dann": {
+      "good": 2,
+      "bad": 0
+    },
+    "irgendwo": {
+      "good": 1,
+      "bad": 0
+    },
+    "kaffe": {
+      "good": 1,
+      "bad": 0
+    },
+    "trinken": {
+      "good": 1,
+      "bad": 0
+    },
+    "gehen": {
+      "good": 1,
+      "bad": 0
+    },
+    "würdest": {
+      "good": 1,
+      "bad": 0
+    },
+    "machen": {
+      "good": 1,
+      "bad": 0
+    },
+    "hätte": {
+      "good": 0,
+      "bad": 1
+    },
+    "definitiv": {
+      "good": 0,
+      "bad": 1
+    },
+    "grosse": {
+      "good": 0,
+      "bad": 1
+    },
+    "lust": {
+      "good": 0,
+      "bad": 1
+    },
+    "tasse": {
+      "good": 0,
+      "bad": 1
+    },
+    "kaffee": {
+      "good": 0,
+      "bad": 1
+    },
+    "wie": {
+      "good": 0,
+      "bad": 1
+    },
+    "stellst": {
+      "good": 0,
+      "bad": 1
+    },
+    "unseren": {
+      "good": 0,
+      "bad": 1
+    },
+    "nachmittag": {
+      "good": 0,
+      "bad": 1
+    },
+    "genau": {
+      "good": 0,
+      "bad": 1
+    },
+    "gibt": {
+      "good": 0,
+      "bad": 1
+    },
+    "bestimmten": {
+      "good": 0,
+      "bad": 1
+    },
+    "ort": {
+      "good": 0,
+      "bad": 1
+    },
+    "den": {
+      "good": 0,
+      "bad": 1
+    },
+    "kopf": {
+      "good": 0,
+      "bad": 1
+    },
+    "hast": {
+      "good": 0,
+      "bad": 1
+    }
+  },
+  "situationSuccess": {
+    "allgemein": {
+      "good": 1,
+      "total": 2
+    }
+  },
+  "responsePatterns": [
+    {
+      "situation": "allgemein",
+      "customerPattern": {
+        "keywords": "genau darf dich kaffee einladen",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 59
+      },
+      "goodResponse": "Das hört sich sehr verlockend an, würden wir dann irgendwo einen Kaffe trinken gehen oder würdest du mir dann einen machen? 😄",
+      "successCount": 1,
+      "lastUsed": "2026-01-02T18:50:44.003Z"
+    }
+  ],
+  "lastUpdated": "2026-01-02T18:50:44.004Z"
 }
