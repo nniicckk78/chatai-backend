@@ -24,7 +24,7 @@
     },
     "sich": {
       "good": 20,
-      "bad": 4
+      "bad": 5
     },
     "sehr": {
       "good": 21,
@@ -107,12 +107,12 @@
       "bad": 20
     },
     "genau": {
-      "good": 24,
+      "good": 25,
       "bad": 40
     },
     "gibt": {
       "good": 20,
-      "bad": 24
+      "bad": 25
     },
     "bestimmten": {
       "good": 0,
@@ -159,7 +159,7 @@
       "bad": 19
     },
     "auch": {
-      "good": 65,
+      "good": 66,
       "bad": 20
     },
     "funke": {
@@ -228,11 +228,11 @@
     },
     "was": {
       "good": 40,
-      "bad": 26
+      "bad": 27
     },
     "denn": {
       "good": 59,
-      "bad": 4
+      "bad": 5
     },
     "gerne": {
       "good": 20,
@@ -256,7 +256,7 @@
     },
     "einfach": {
       "good": 20,
-      "bad": 4
+      "bad": 5
     },
     "gibst": {
       "good": 20,
@@ -328,11 +328,11 @@
     },
     "finde": {
       "good": 0,
-      "bad": 25
+      "bad": 26
     },
     "grossartig": {
       "good": 0,
-      "bad": 24
+      "bad": 25
     },
     "wenn": {
       "good": 0,
@@ -371,7 +371,7 @@
       "bad": 1
     },
     "mein": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "geiler": {
@@ -395,7 +395,7 @@
       "bad": 0
     },
     "richtig": {
-      "good": 2,
+      "good": 3,
       "bad": 1
     },
     "feucht": {
@@ -403,7 +403,7 @@
       "bad": 0
     },
     "kannst": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "schön": {
@@ -604,7 +604,7 @@
     },
     "wirklich": {
       "good": 1,
-      "bad": 4
+      "bad": 5
     },
     "wünschen": {
       "good": 1,
@@ -639,31 +639,31 @@
       "bad": 1
     },
     "siehst": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "echt": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "gut": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "eigentlich": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "typ": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "sagen": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "hoffe": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "dads": {
@@ -671,50 +671,50 @@
       "bad": 0
     },
     "behaupten": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "unzählige": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "möglichkeiten": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "kreativ": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "auszudrücken": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "deine": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "hobbys": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "interessen": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "freude": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "bereiten": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 84,
-      "total": 148
+      "good": 85,
+      "total": 150
     },
     "Bot-Vorwurf": {
       "good": 1,
@@ -736,8 +736,8 @@
         "length": 132
       },
       "goodResponse": "Hey Oliver, frohes neues Jahr! Das mit den Fehlern im Leben kenne ich, manchmal würde ich auch gerne alles neu starten. Aber ich denke, jeder hat seine eigenen Herausforderungen. Aber wie meinst du da",
-      "successCount": 64,
-      "lastUsed": "2026-01-03T15:06:47.977Z"
+      "successCount": 65,
+      "lastUsed": "2026-01-03T15:07:28.847Z"
     },
     {
       "situation": "allgemein",
@@ -779,6 +779,6 @@
       "lastUsed": "2026-01-03T14:31:17.979Z"
     }
   ],
-  "lastUpdated": "2026-01-03T15:06:47.977Z",
+  "lastUpdated": "2026-01-03T15:07:28.847Z",
   "initialized": true
 }
