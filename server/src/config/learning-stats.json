@@ -135,11 +135,11 @@
       "bad": 22
     },
     "hast": {
-      "good": 2,
-      "bad": 44
+      "good": 3,
+      "bad": 45
     },
     "verstehen": {
-      "good": 21,
+      "good": 22,
       "bad": 19
     },
     "mehr": {
@@ -187,11 +187,11 @@
       "bad": 2
     },
     "nur": {
-      "good": 23,
+      "good": 24,
       "bad": 3
     },
     "bisschen": {
-      "good": 21,
+      "good": 22,
       "bad": 0
     },
     "damit": {
@@ -200,7 +200,7 @@
     },
     "mich": {
       "good": 22,
-      "bad": 2
+      "bad": 3
     },
     "wohl": {
       "good": 19,
@@ -232,7 +232,7 @@
     },
     "was": {
       "good": 48,
-      "bad": 38
+      "bad": 39
     },
     "denn": {
       "good": 67,
@@ -407,7 +407,7 @@
       "bad": 0
     },
     "kannst": {
-      "good": 8,
+      "good": 9,
       "bad": 0
     },
     "schön": {
@@ -667,7 +667,7 @@
       "bad": 0
     },
     "hoffe": {
-      "good": 8,
+      "good": 9,
       "bad": 0
     },
     "dads": {
@@ -696,7 +696,7 @@
     },
     "deine": {
       "good": 2,
-      "bad": 5
+      "bad": 6
     },
     "hobbys": {
       "good": 0,
@@ -747,7 +747,7 @@
       "bad": 0
     },
     "immer": {
-      "good": 2,
+      "good": 4,
       "bad": 2
     },
     "geniessen": {
@@ -907,7 +907,7 @@
       "bad": 2
     },
     "bin": {
-      "good": 4,
+      "good": 5,
       "bad": 3
     },
     "gemeinsam": {
@@ -1019,7 +1019,7 @@
       "bad": 1
     },
     "schon": {
-      "good": 7,
+      "good": 8,
       "bad": 0
     },
     "noch": {
@@ -1043,7 +1043,7 @@
       "bad": 3
     },
     "treffen": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "bereuuen": {
@@ -1229,6 +1229,78 @@
     "einsteigst": {
       "good": 0,
       "bad": 3
+    },
+    "recht": {
+      "good": 1,
+      "bad": 0
+    },
+    "vorsichtig": {
+      "good": 1,
+      "bad": 0
+    },
+    "dem": {
+      "good": 1,
+      "bad": 0
+    },
+    "ersten": {
+      "good": 1,
+      "bad": 0
+    },
+    "mache": {
+      "good": 1,
+      "bad": 0
+    },
+    "voll": {
+      "good": 1,
+      "bad": 0
+    },
+    "gedanken": {
+      "good": 1,
+      "bad": 0
+    },
+    "vielen": {
+      "good": 0,
+      "bad": 1
+    },
+    "lieben": {
+      "good": 0,
+      "bad": 1
+    },
+    "nachricht": {
+      "good": 0,
+      "bad": 1
+    },
+    "freue": {
+      "good": 0,
+      "bad": 1
+    },
+    "darauf": {
+      "good": 0,
+      "bad": 1
+    },
+    "weiter": {
+      "good": 0,
+      "bad": 1
+    },
+    "kontakt": {
+      "good": 0,
+      "bad": 1
+    },
+    "bleiben": {
+      "good": 0,
+      "bad": 1
+    },
+    "heute": {
+      "good": 0,
+      "bad": 1
+    },
+    "schönes": {
+      "good": 0,
+      "bad": 1
+    },
+    "geplant": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -1237,8 +1309,8 @@
       "total": 164
     },
     "Bot-Vorwurf": {
-      "good": 1,
-      "total": 2
+      "good": 2,
+      "total": 4
     },
     "Sexuelle Themen": {
       "good": 7,
@@ -1329,8 +1401,8 @@
         "length": 406
       },
       "goodResponse": "Klingt sehr wild, mein geiler Hengst. Das würde meine Muschi richtig feucht machen, kannst du mich dann auch so richtig schön lecken? Würdest du meine Arschloch dann gleich mitlecken?",
-      "successCount": 1,
-      "lastUsed": "2026-01-02T19:34:52.962Z"
+      "successCount": 2,
+      "lastUsed": "2026-01-03T16:27:57.686Z"
     },
     {
       "situation": "Wonach suchst du?",
@@ -1359,6 +1431,6 @@
       "lastUsed": "2026-01-03T15:39:46.081Z"
     }
   ],
-  "lastUpdated": "2026-01-03T16:25:19.763Z",
+  "lastUpdated": "2026-01-03T16:27:57.686Z",
   "initialized": true
 }
