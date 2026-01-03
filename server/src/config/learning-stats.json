@@ -28,7 +28,7 @@
     },
     "sich": {
       "good": 20,
-      "bad": 5
+      "bad": 6
     },
     "sehr": {
       "good": 21,
@@ -64,11 +64,11 @@
     },
     "würdest": {
       "good": 40,
-      "bad": 2
+      "bad": 3
     },
     "machen": {
       "good": 40,
-      "bad": 0
+      "bad": 1
     },
     "hätte": {
       "good": 0,
@@ -96,7 +96,7 @@
     },
     "wie": {
       "good": 24,
-      "bad": 46
+      "bad": 47
     },
     "stellst": {
       "good": 0,
@@ -128,7 +128,7 @@
     },
     "den": {
       "good": 4,
-      "bad": 21
+      "bad": 22
     },
     "kopf": {
       "good": 0,
@@ -171,7 +171,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 48,
+      "good": 49,
       "bad": 19
     },
     "erlischt": {
@@ -199,7 +199,7 @@
       "bad": 0
     },
     "mich": {
-      "good": 20,
+      "good": 22,
       "bad": 0
     },
     "wohl": {
@@ -232,7 +232,7 @@
     },
     "was": {
       "good": 43,
-      "bad": 34
+      "bad": 35
     },
     "denn": {
       "good": 64,
@@ -260,7 +260,7 @@
     },
     "einfach": {
       "good": 20,
-      "bad": 5
+      "bad": 6
     },
     "gibst": {
       "good": 20,
@@ -480,7 +480,7 @@
     },
     "moment": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "hey": {
       "good": 1,
@@ -583,11 +583,11 @@
       "bad": 0
     },
     "jeden": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "fall": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "ganz": {
@@ -667,7 +667,7 @@
       "bad": 0
     },
     "hoffe": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "dads": {
@@ -736,7 +736,7 @@
     },
     "neue": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "dinge": {
       "good": 2,
@@ -907,8 +907,8 @@
       "bad": 2
     },
     "bin": {
-      "good": 0,
-      "bad": 2
+      "good": 1,
+      "bad": 3
     },
     "gemeinsam": {
       "good": 0,
@@ -920,7 +920,83 @@
     },
     "gestalten": {
       "good": 0,
-      "bad": 2
+      "bad": 3
+    },
+    "freut": {
+      "good": 1,
+      "bad": 0
+    },
+    "wilfried": {
+      "good": 1,
+      "bad": 0
+    },
+    "jahre": {
+      "good": 1,
+      "bad": 0
+    },
+    "alt": {
+      "good": 1,
+      "bad": 0
+    },
+    "dich": {
+      "good": 1,
+      "bad": 0
+    },
+    "stört": {
+      "good": 1,
+      "bad": 0
+    },
+    "altersunterschied": {
+      "good": 1,
+      "bad": 0
+    },
+    "beiden": {
+      "good": 1,
+      "bad": 0
+    },
+    "kein": {
+      "good": 1,
+      "bad": 0
+    },
+    "problem": {
+      "good": 1,
+      "bad": 0
+    },
+    "mitte": {
+      "good": 0,
+      "bad": 1
+    },
+    "lass": {
+      "good": 0,
+      "bad": 1
+    },
+    "schauen": {
+      "good": 0,
+      "bad": 1
+    },
+    "ergibt": {
+      "good": 0,
+      "bad": 1
+    },
+    "lebe": {
+      "good": 0,
+      "bad": 1
+    },
+    "geniesse": {
+      "good": 0,
+      "bad": 1
+    },
+    "bekanntschaften": {
+      "good": 0,
+      "bad": 1
+    },
+    "entspannten": {
+      "good": 0,
+      "bad": 1
+    },
+    "abend": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -935,6 +1011,10 @@
     "Sexuelle Themen": {
       "good": 6,
       "total": 12
+    },
+    "Wonach suchst du?": {
+      "good": 1,
+      "total": 2
     }
   },
   "responsePatterns": [
@@ -1002,8 +1082,21 @@
       "goodResponse": "Klingt sehr wild, mein geiler Hengst. Das würde meine Muschi richtig feucht machen, kannst du mich dann auch so richtig schön lecken? Würdest du meine Arschloch dann gleich mitlecken?",
       "successCount": 1,
       "lastUsed": "2026-01-02T19:34:52.962Z"
+    },
+    {
+      "situation": "Wonach suchst du?",
+      "customerPattern": {
+        "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 76
+      },
+      "goodResponse": "Freut mich Wilfried, ich bin 35 Jahre alt. Ich hoffe dich stört der altersunterschied zwischen uns beiden nicht? Für mich ist das auf jeden Fall kein Problem.",
+      "successCount": 1,
+      "lastUsed": "2026-01-03T15:34:20.256Z"
     }
   ],
-  "lastUpdated": "2026-01-03T15:25:45.641Z",
+  "lastUpdated": "2026-01-03T15:34:20.257Z",
   "initialized": true
 }
