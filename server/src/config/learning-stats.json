@@ -17,7 +17,7 @@
       "successRate": 0
     },
     "finde ich": {
-      "count": 2,
+      "count": 3,
       "successRate": 0
     }
   },
@@ -84,7 +84,7 @@
     },
     "lust": {
       "good": 0,
-      "bad": 20
+      "bad": 21
     },
     "tasse": {
       "good": 0,
@@ -95,7 +95,7 @@
       "bad": 20
     },
     "wie": {
-      "good": 21,
+      "good": 22,
       "bad": 46
     },
     "stellst": {
@@ -127,7 +127,7 @@
       "bad": 20
     },
     "den": {
-      "good": 1,
+      "good": 2,
       "bad": 21
     },
     "kopf": {
@@ -144,7 +144,7 @@
     },
     "mehr": {
       "good": 19,
-      "bad": 19
+      "bad": 20
     },
     "wünschst": {
       "good": 19,
@@ -171,7 +171,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 39,
+      "good": 41,
       "bad": 19
     },
     "erlischt": {
@@ -187,8 +187,8 @@
       "bad": 1
     },
     "nur": {
-      "good": 19,
-      "bad": 0
+      "good": 21,
+      "bad": 1
     },
     "bisschen": {
       "good": 19,
@@ -231,11 +231,11 @@
       "bad": 0
     },
     "was": {
-      "good": 40,
-      "bad": 27
+      "good": 41,
+      "bad": 28
     },
     "denn": {
-      "good": 61,
+      "good": 62,
       "bad": 5
     },
     "gerne": {
@@ -268,7 +268,7 @@
     },
     "dein": {
       "good": 20,
-      "bad": 2
+      "bad": 3
     },
     "bestes": {
       "good": 20,
@@ -276,7 +276,7 @@
     },
     "als": {
       "good": 20,
-      "bad": 0
+      "bad": 1
     },
     "papa": {
       "good": 20,
@@ -311,7 +311,7 @@
       "bad": 0
     },
     "gerade": {
-      "good": 20,
+      "good": 21,
       "bad": 0
     },
     "denke": {
@@ -319,7 +319,7 @@
       "bad": 1
     },
     "denkst": {
-      "good": 20,
+      "good": 21,
       "bad": 0
     },
     "zweiteudig": {
@@ -331,7 +331,7 @@
       "bad": 20
     },
     "finde": {
-      "good": 4,
+      "good": 5,
       "bad": 26
     },
     "grossartig": {
@@ -400,7 +400,7 @@
     },
     "richtig": {
       "good": 7,
-      "bad": 3
+      "bad": 4
     },
     "feucht": {
       "good": 1,
@@ -459,20 +459,20 @@
       "bad": 1
     },
     "will": {
-      "good": 0,
+      "good": 2,
       "bad": 1
     },
     "wäre": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "perfektes": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "szenario": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "solchen": {
       "good": 0,
@@ -648,7 +648,7 @@
     },
     "echt": {
       "good": 5,
-      "bad": 0
+      "bad": 1
     },
     "gut": {
       "good": 5,
@@ -772,7 +772,7 @@
     },
     "macht": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "intensiver": {
       "good": 0,
@@ -780,7 +780,83 @@
     },
     "gefällt": {
       "good": 0,
-      "bad": 2
+      "bad": 3
+    },
+    "brieffreundschaft": {
+      "good": 1,
+      "bad": 1
+    },
+    "weil": {
+      "good": 1,
+      "bad": 0
+    },
+    "zeitlich": {
+      "good": 1,
+      "bad": 0
+    },
+    "passt": {
+      "good": 1,
+      "bad": 0
+    },
+    "doch": {
+      "good": 1,
+      "bad": 1
+    },
+    "sex": {
+      "good": 1,
+      "bad": 0
+    },
+    "nichz": {
+      "good": 1,
+      "bad": 0
+    },
+    "entegehen": {
+      "good": 1,
+      "bad": 0
+    },
+    "lassen": {
+      "good": 1,
+      "bad": 0
+    },
+    "diese": {
+      "good": 1,
+      "bad": 0
+    },
+    "anspielung": {
+      "good": 1,
+      "bad": 0
+    },
+    "nett": {
+      "good": 1,
+      "bad": 0
+    },
+    "kommst": {
+      "good": 1,
+      "bad": 0
+    },
+    "sowas": {
+      "good": 1,
+      "bad": 0
+    },
+    "direkt": {
+      "good": 0,
+      "bad": 1
+    },
+    "heisses": {
+      "good": 0,
+      "bad": 1
+    },
+    "abenteuer": {
+      "good": 0,
+      "bad": 1
+    },
+    "spass": {
+      "good": 0,
+      "bad": 1
+    },
+    "nacht": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -793,8 +869,8 @@
       "total": 2
     },
     "Sexuelle Themen": {
-      "good": 3,
-      "total": 6
+      "good": 4,
+      "total": 8
     }
   },
   "responsePatterns": [
@@ -849,8 +925,21 @@
       "goodResponse": "Klingt sehr wild, mein geiler Hengst. Das würde meine Muschi richtig feucht machen, kannst du mich dann auch so richtig schön lecken? Würdest du meine Arschloch dann gleich mitlecken?",
       "successCount": 1,
       "lastUsed": "2026-01-02T19:34:52.962Z"
+    },
+    {
+      "situation": "Sexuelle Themen",
+      "customerPattern": {
+        "keywords": "hallo sarah sag mal gerade heraus hast jetzt lust vögeln",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": true,
+        "length": 145
+      },
+      "goodResponse": "Denkst du ich will nur eine Brieffreundschaft nur weil es zeitlich bei mir gerade nicht passt oder was? Ich will mir doch den Sex mit dir nichz entegehen lassen. Diese Anspielung finde ich nicht nett.",
+      "successCount": 1,
+      "lastUsed": "2026-01-03T15:18:30.690Z"
     }
   ],
-  "lastUpdated": "2026-01-03T15:15:15.969Z",
+  "lastUpdated": "2026-01-03T15:18:30.690Z",
   "initialized": true
 }
