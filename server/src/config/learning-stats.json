@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 40,
+      "count": 41,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -63,12 +63,12 @@
       "bad": 0
     },
     "würdest": {
-      "good": 40,
-      "bad": 3
+      "good": 42,
+      "bad": 4
     },
     "machen": {
       "good": 40,
-      "bad": 1
+      "bad": 2
     },
     "hätte": {
       "good": 0,
@@ -95,7 +95,7 @@
       "bad": 20
     },
     "wie": {
-      "good": 24,
+      "good": 25,
       "bad": 47
     },
     "stellst": {
@@ -127,7 +127,7 @@
       "bad": 20
     },
     "den": {
-      "good": 4,
+      "good": 5,
       "bad": 22
     },
     "kopf": {
@@ -135,15 +135,15 @@
       "bad": 22
     },
     "hast": {
-      "good": 0,
+      "good": 1,
       "bad": 42
     },
     "verstehen": {
-      "good": 19,
+      "good": 20,
       "bad": 19
     },
     "mehr": {
-      "good": 19,
+      "good": 20,
       "bad": 22
     },
     "wünschst": {
@@ -159,11 +159,11 @@
       "bad": 19
     },
     "möchte": {
-      "good": 20,
+      "good": 21,
       "bad": 19
     },
     "auch": {
-      "good": 70,
+      "good": 71,
       "bad": 20
     },
     "funke": {
@@ -171,7 +171,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 49,
+      "good": 51,
       "bad": 19
     },
     "erlischt": {
@@ -232,15 +232,15 @@
     },
     "was": {
       "good": 43,
-      "bad": 35
+      "bad": 36
     },
     "denn": {
       "good": 64,
       "bad": 7
     },
     "gerne": {
-      "good": 20,
-      "bad": 1
+      "good": 21,
+      "bad": 2
     },
     "wollen": {
       "good": 19,
@@ -260,7 +260,7 @@
     },
     "einfach": {
       "good": 20,
-      "bad": 6
+      "bad": 7
     },
     "gibst": {
       "good": 20,
@@ -287,7 +287,7 @@
       "bad": 0
     },
     "sicher": {
-      "good": 20,
+      "good": 21,
       "bad": 2
     },
     "frauen": {
@@ -304,7 +304,7 @@
     },
     "hier": {
       "good": 20,
-      "bad": 0
+      "bad": 1
     },
     "hof": {
       "good": 20,
@@ -312,7 +312,7 @@
     },
     "gerade": {
       "good": 23,
-      "bad": 0
+      "bad": 1
     },
     "denke": {
       "good": 41,
@@ -339,8 +339,8 @@
       "bad": 25
     },
     "wenn": {
-      "good": 2,
-      "bad": 23
+      "good": 3,
+      "bad": 25
     },
     "gegenseitig": {
       "good": 0,
@@ -356,7 +356,7 @@
     },
     "können": {
       "good": 0,
-      "bad": 22
+      "bad": 23
     },
     "dabei": {
       "good": 0,
@@ -407,12 +407,12 @@
       "bad": 0
     },
     "kannst": {
-      "good": 6,
+      "good": 7,
       "bad": 0
     },
     "schön": {
       "good": 1,
-      "bad": 0
+      "bad": 1
     },
     "lecken": {
       "good": 1,
@@ -516,7 +516,7 @@
     },
     "alles": {
       "good": 2,
-      "bad": 1
+      "bad": 2
     },
     "neu": {
       "good": 1,
@@ -663,11 +663,11 @@
       "bad": 0
     },
     "sagen": {
-      "good": 7,
+      "good": 8,
       "bad": 0
     },
     "hoffe": {
-      "good": 6,
+      "good": 7,
       "bad": 0
     },
     "dads": {
@@ -764,7 +764,7 @@
     },
     "mag": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "doggi": {
       "good": 0,
@@ -864,7 +864,7 @@
     },
     "mal": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "sehen": {
       "good": 2,
@@ -939,7 +939,7 @@
       "bad": 0
     },
     "dich": {
-      "good": 1,
+      "good": 3,
       "bad": 0
     },
     "stört": {
@@ -955,7 +955,7 @@
       "bad": 0
     },
     "kein": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "problem": {
@@ -997,6 +997,90 @@
     "abend": {
       "good": 0,
       "bad": 1
+    },
+    "kaufst": {
+      "good": 1,
+      "bad": 0
+    },
+    "auto": {
+      "good": 1,
+      "bad": 0
+    },
+    "geld": {
+      "good": 1,
+      "bad": 0
+    },
+    "tank": {
+      "good": 1,
+      "bad": 0
+    },
+    "verstehe": {
+      "good": 1,
+      "bad": 0
+    },
+    "schon": {
+      "good": 1,
+      "bad": 0
+    },
+    "noch": {
+      "good": 1,
+      "bad": 0
+    },
+    "wenig": {
+      "good": 1,
+      "bad": 0
+    },
+    "ber": {
+      "good": 1,
+      "bad": 1
+    },
+    "erfahren": {
+      "good": 1,
+      "bad": 0
+    },
+    "bevor": {
+      "good": 1,
+      "bad": 0
+    },
+    "treffen": {
+      "good": 1,
+      "bad": 0
+    },
+    "bereuuen": {
+      "good": 1,
+      "bad": 0
+    },
+    "draussen": {
+      "good": 0,
+      "bad": 1
+    },
+    "zwar": {
+      "good": 0,
+      "bad": 1
+    },
+    "ungestört": {
+      "good": 0,
+      "bad": 1
+    },
+    "plaudern": {
+      "good": 0,
+      "bad": 1
+    },
+    "man": {
+      "good": 0,
+      "bad": 1
+    },
+    "reden": {
+      "good": 0,
+      "bad": 1
+    },
+    "zusammen": {
+      "good": 0,
+      "bad": 1
+    },
+    "wären": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -1013,6 +1097,10 @@
       "total": 12
     },
     "Wonach suchst du?": {
+      "good": 1,
+      "total": 2
+    },
+    "Geld/Coins": {
       "good": 1,
       "total": 2
     }
@@ -1095,8 +1183,21 @@
       "goodResponse": "Freut mich Wilfried, ich bin 35 Jahre alt. Ich hoffe dich stört der altersunterschied zwischen uns beiden nicht? Für mich ist das auf jeden Fall kein Problem.",
       "successCount": 1,
       "lastUsed": "2026-01-03T15:34:20.256Z"
+    },
+    {
+      "situation": "Geld/Coins",
+      "customerPattern": {
+        "keywords": "habe noch coin wäre lieber plaudern real",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 52
+      },
+      "goodResponse": "Das ist so wie wenn du zu mir sagen würdest du kaufst dir ein Auto hast aber kein Geld für den Tank. Ich verstehe dich, so ist es ja nicht aber ich möchte schon gerne noch ein wenig mehr über dich erf",
+      "successCount": 1,
+      "lastUsed": "2026-01-03T15:36:31.318Z"
     }
   ],
-  "lastUpdated": "2026-01-03T15:34:20.257Z",
+  "lastUpdated": "2026-01-03T15:36:31.318Z",
   "initialized": true
 }
