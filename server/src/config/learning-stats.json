@@ -132,11 +132,11 @@
     },
     "kopf": {
       "good": 0,
-      "bad": 21
+      "bad": 22
     },
     "hast": {
       "good": 0,
-      "bad": 41
+      "bad": 42
     },
     "verstehen": {
       "good": 19,
@@ -171,7 +171,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 47,
+      "good": 48,
       "bad": 19
     },
     "erlischt": {
@@ -232,11 +232,11 @@
     },
     "was": {
       "good": 43,
-      "bad": 32
+      "bad": 34
     },
     "denn": {
       "good": 64,
-      "bad": 6
+      "bad": 7
     },
     "gerne": {
       "good": 20,
@@ -288,7 +288,7 @@
     },
     "sicher": {
       "good": 20,
-      "bad": 1
+      "bad": 2
     },
     "frauen": {
       "good": 20,
@@ -320,7 +320,7 @@
     },
     "denkst": {
       "good": 23,
-      "bad": 1
+      "bad": 2
     },
     "zweiteudig": {
       "good": 20,
@@ -339,7 +339,7 @@
       "bad": 25
     },
     "wenn": {
-      "good": 1,
+      "good": 2,
       "bad": 23
     },
     "gegenseitig": {
@@ -356,7 +356,7 @@
     },
     "können": {
       "good": 0,
-      "bad": 21
+      "bad": 22
     },
     "dabei": {
       "good": 0,
@@ -400,7 +400,7 @@
     },
     "richtig": {
       "good": 7,
-      "bad": 7
+      "bad": 8
     },
     "feucht": {
       "good": 1,
@@ -695,7 +695,7 @@
       "bad": 5
     },
     "deine": {
-      "good": 1,
+      "good": 2,
       "bad": 5
     },
     "hobbys": {
@@ -815,7 +815,7 @@
       "bad": 0
     },
     "lassen": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "diese": {
@@ -859,74 +859,74 @@
       "bad": 3
     },
     "wette": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "mal": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "sehen": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "bestimmt": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "hände": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "weg": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "könntest": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "wettest": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "etwa": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "dagegen": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "ideen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "vorstellungen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "bin": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "gemeinsam": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "aufregend": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "gestalten": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 86,
-      "total": 152
+      "good": 87,
+      "total": 154
     },
     "Bot-Vorwurf": {
       "good": 1,
@@ -961,8 +961,8 @@
         "length": 59
       },
       "goodResponse": "Ich wette mit dir das wenn wir uns mal sehen du bestimmt deine Hände nicht von mir weg lassen könntest. Oder wettest du etwa dagegen?",
-      "successCount": 21,
-      "lastUsed": "2026-01-03T15:25:29.232Z"
+      "successCount": 22,
+      "lastUsed": "2026-01-03T15:25:45.641Z"
     },
     {
       "situation": "Sexuelle Themen",
@@ -1004,6 +1004,6 @@
       "lastUsed": "2026-01-02T19:34:52.962Z"
     }
   ],
-  "lastUpdated": "2026-01-03T15:25:29.232Z",
+  "lastUpdated": "2026-01-03T15:25:45.641Z",
   "initialized": true
 }
