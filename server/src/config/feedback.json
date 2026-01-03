@@ -890,6 +890,71 @@
       },
       "timestamp": "2026-01-03T16:18:39.400Z",
       "updatedAt": "2026-01-03T16:28:58.138Z"
+    },
+    {
+      "id": "feedback_1767458655706_jnjiof7r3",
+      "chatId": "37891171",
+      "customerMessage": "Hi Mareike. Frohes neues Jahr. Ich würde gerne mich mit dir treffen, aber ich habe heute leider keine Zeit. Finde dich übrigens sehr attraktiv. Gerne ein anderes Mal",
+      "aiResponse": "Danke für das Kompliment, Jonas! Das freut mich sehr. Vielleicht können wir uns ja ein anderes Mal austauschen. Was hast du bisher so gemacht, um das neue Jahr zu feiern?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "FPC",
+      "isASA": false,
+      "context": {
+        "customerInfo": {
+          "username": "JonLeo",
+          "name": "Jonas",
+          "gender": "male",
+          "city": "Leverkusen",
+          "country": "DE",
+          "birthDate": {
+            "age": 26,
+            "date": "1999-04-12T00:00:00.000Z"
+          },
+          "hasProfilePic": true,
+          "hasPictures": false,
+          "profilePicUrl": "https://www.du-kennst-mich.de/media/uploads/3/8/4/5/357279/t_photo_357279x636nnm8jdt2zotgmosp62.jpg",
+          "rawText": "- Name : \n- Alter : \n- Status: \n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+        },
+        "moderatorInfo": {
+          "username": "WohlGeformt83",
+          "name": "Mareike",
+          "gender": "female",
+          "country": "DE",
+          "birthDate": {
+            "age": 42,
+            "date": "1983-09-01T00:00:00.000Z"
+          },
+          "hasProfilePic": true,
+          "hasPictures": true,
+          "profilePicUrl": "https://www.du-kennst-mich.de/media/uploads/2/5/8/6/479573/t_photo_479573GoN9sgRUngzQlxMrlOuQ2X.jpg",
+          "rawText": "- Name : \n- Alter : \n- Status: \n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+        },
+        "customerNotes": {
+          "rawText": "- Name: \n- Alter: \n- Status: \n- Wohnsituation: \n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos: \n- Gesundheit: \n- Sucht: \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen: \n- Auto: \n- Eltern: \n_______________________\n- Musik: \n- Filme: \n- Essen: \n- Trinken: \n_______________________\n- was mag: \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+        },
+        "moderatorNotes": {
+          "rawText": "- Name: \n- Alter: \n- Status: \n- Wohnsituation: \n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos: \n- Gesundheit: \n- Sucht: \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen: \n- Auto: \n- Eltern: \n_______________________\n- Musik: \n- Filme: \n- Essen: \n- Trinken: \n_______________________\n- was mag: \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+        },
+        "customerUpdates": [],
+        "moderatorUpdates": [],
+        "sessionStart": "2026-01-03T16:40:21.000Z",
+        "extractedInfo": {
+          "user": {
+            "Name": "Jonas",
+            "Age": 26,
+            "Wohnort": "Leverkusen",
+            "Other": "- Name : \n- Alter : \n- Status: \n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+          },
+          "assistant": {
+            "Name": "Mareike",
+            "Age": 42,
+            "Other": "- Name : \n- Alter : \n- Status: \n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+          }
+        }
+      },
+      "timestamp": "2026-01-03T16:44:15.707Z",
+      "updatedAt": "2026-01-03T16:44:15.707Z"
     }
   ]
 }
