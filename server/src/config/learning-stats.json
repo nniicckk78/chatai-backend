@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 43,
+      "count": 44,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -24,11 +24,11 @@
   "wordFrequency": {
     "hört": {
       "good": 20,
-      "bad": 1
+      "bad": 2
     },
     "sich": {
       "good": 20,
-      "bad": 7
+      "bad": 8
     },
     "sehr": {
       "good": 21,
@@ -63,7 +63,7 @@
       "bad": 0
     },
     "würdest": {
-      "good": 45,
+      "good": 47,
       "bad": 5
     },
     "machen": {
@@ -128,7 +128,7 @@
     },
     "den": {
       "good": 6,
-      "bad": 23
+      "bad": 24
     },
     "kopf": {
       "good": 0,
@@ -219,7 +219,7 @@
       "bad": 0
     },
     "ziemlich": {
-      "good": 20,
+      "good": 21,
       "bad": 0
     },
     "viel": {
@@ -231,11 +231,11 @@
       "bad": 0
     },
     "was": {
-      "good": 46,
+      "good": 47,
       "bad": 38
     },
     "denn": {
-      "good": 65,
+      "good": 66,
       "bad": 8
     },
     "gerne": {
@@ -287,11 +287,11 @@
       "bad": 0
     },
     "sicher": {
-      "good": 23,
+      "good": 24,
       "bad": 2
     },
     "frauen": {
-      "good": 20,
+      "good": 21,
       "bad": 0
     },
     "schätzen": {
@@ -319,7 +319,7 @@
       "bad": 1
     },
     "denkst": {
-      "good": 25,
+      "good": 26,
       "bad": 2
     },
     "zweiteudig": {
@@ -355,7 +355,7 @@
       "bad": 20
     },
     "können": {
-      "good": 0,
+      "good": 1,
       "bad": 24
     },
     "dabei": {
@@ -544,7 +544,7 @@
     },
     "meinst": {
       "good": 1,
-      "bad": 1
+      "bad": 2
     },
     "reale": {
       "good": 1,
@@ -608,7 +608,7 @@
     },
     "wirklich": {
       "good": 1,
-      "bad": 8
+      "bad": 9
     },
     "wünschen": {
       "good": 1,
@@ -883,7 +883,7 @@
       "bad": 0
     },
     "könntest": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "wettest": {
@@ -907,7 +907,7 @@
       "bad": 2
     },
     "bin": {
-      "good": 2,
+      "good": 3,
       "bad": 3
     },
     "gemeinsam": {
@@ -1019,7 +1019,7 @@
       "bad": 1
     },
     "schon": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "noch": {
@@ -1040,7 +1040,7 @@
     },
     "bevor": {
       "good": 2,
-      "bad": 1
+      "bad": 2
     },
     "treffen": {
       "good": 2,
@@ -1191,50 +1191,50 @@
       "bad": 0
     },
     "wiederstehen": {
-      "good": 1,
+      "good": 3,
       "bad": 0
     },
     "einsteigen": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "durchdachten": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "vielversprechenden": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "plan": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "wichtig": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "zuerst": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "berblick": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "gewinnen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "einsteigst": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 90,
-      "total": 160
+      "good": 91,
+      "total": 162
     },
     "Bot-Vorwurf": {
       "good": 1,
@@ -1264,8 +1264,8 @@
         "length": 132
       },
       "goodResponse": "Hey Oliver, frohes neues Jahr! Das mit den Fehlern im Leben kenne ich, manchmal würde ich auch gerne alles neu starten. Aber ich denke, jeder hat seine eigenen Herausforderungen. Aber wie meinst du da",
-      "successCount": 68,
-      "lastUsed": "2026-01-03T16:23:48.136Z"
+      "successCount": 69,
+      "lastUsed": "2026-01-03T16:24:50.317Z"
     },
     {
       "situation": "allgemein",
@@ -1359,6 +1359,6 @@
       "lastUsed": "2026-01-03T15:39:46.081Z"
     }
   ],
-  "lastUpdated": "2026-01-03T16:23:48.136Z",
+  "lastUpdated": "2026-01-03T16:24:50.317Z",
   "initialized": true
 }
