@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 42,
+      "count": 43,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -63,7 +63,7 @@
       "bad": 0
     },
     "würdest": {
-      "good": 43,
+      "good": 44,
       "bad": 5
     },
     "machen": {
@@ -80,7 +80,7 @@
     },
     "grosse": {
       "good": 0,
-      "bad": 20
+      "bad": 21
     },
     "lust": {
       "good": 0,
@@ -95,7 +95,7 @@
       "bad": 20
     },
     "wie": {
-      "good": 26,
+      "good": 27,
       "bad": 47
     },
     "stellst": {
@@ -164,14 +164,14 @@
     },
     "auch": {
       "good": 71,
-      "bad": 20
+      "bad": 21
     },
     "funke": {
       "good": 19,
       "bad": 19
     },
     "nicht": {
-      "good": 53,
+      "good": 54,
       "bad": 19
     },
     "erlischt": {
@@ -184,7 +184,7 @@
     },
     "manchmal": {
       "good": 20,
-      "bad": 1
+      "bad": 2
     },
     "nur": {
       "good": 23,
@@ -232,11 +232,11 @@
     },
     "was": {
       "good": 43,
-      "bad": 37
+      "bad": 38
     },
     "denn": {
       "good": 64,
-      "bad": 7
+      "bad": 8
     },
     "gerne": {
       "good": 22,
@@ -319,7 +319,7 @@
       "bad": 1
     },
     "denkst": {
-      "good": 23,
+      "good": 24,
       "bad": 2
     },
     "zweiteudig": {
@@ -339,7 +339,7 @@
       "bad": 25
     },
     "wenn": {
-      "good": 4,
+      "good": 5,
       "bad": 27
     },
     "gegenseitig": {
@@ -387,7 +387,7 @@
       "bad": 0
     },
     "würde": {
-      "good": 2,
+      "good": 3,
       "bad": 3
     },
     "meine": {
@@ -412,7 +412,7 @@
     },
     "schön": {
       "good": 1,
-      "bad": 2
+      "bad": 3
     },
     "lecken": {
       "good": 1,
@@ -592,7 +592,7 @@
     },
     "ganz": {
       "good": 1,
-      "bad": 0
+      "bad": 1
     },
     "mühe": {
       "good": 1,
@@ -723,7 +723,7 @@
       "bad": 0
     },
     "bist": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "allgemein": {
@@ -780,7 +780,7 @@
     },
     "gefällt": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "brieffreundschaft": {
       "good": 3,
@@ -799,7 +799,7 @@
       "bad": 0
     },
     "doch": {
-      "good": 3,
+      "good": 4,
       "bad": 3
     },
     "sex": {
@@ -867,7 +867,7 @@
       "bad": 2
     },
     "sehen": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "bestimmt": {
@@ -1016,7 +1016,7 @@
     },
     "verstehe": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "schon": {
       "good": 2,
@@ -1024,7 +1024,7 @@
     },
     "noch": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "wenig": {
       "good": 2,
@@ -1093,6 +1093,62 @@
     "danach": {
       "good": 1,
       "bad": 0
+    },
+    "bälle": {
+      "good": 1,
+      "bad": 0
+    },
+    "glaube": {
+      "good": 1,
+      "bad": 0
+    },
+    "oben": {
+      "good": 1,
+      "bad": 0
+    },
+    "stehen": {
+      "good": 1,
+      "bad": 0
+    },
+    "trotzdem": {
+      "good": 1,
+      "bad": 0
+    },
+    "anfangen": {
+      "good": 1,
+      "bad": 0
+    },
+    "sabbern": {
+      "good": 1,
+      "bad": 0
+    },
+    "anderer": {
+      "good": 1,
+      "bad": 0
+    },
+    "meinung": {
+      "good": 1,
+      "bad": 0
+    },
+    "brüste": {
+      "good": 0,
+      "bad": 1
+    },
+    "natürlicher": {
+      "good": 0,
+      "bad": 1
+    },
+    "magst": {
+      "good": 0,
+      "bad": 1
+    },
+    "sonst": {
+      "good": 0,
+      "bad": 1
+    },
+    "frau": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -1105,8 +1161,8 @@
       "total": 2
     },
     "Sexuelle Themen": {
-      "good": 6,
-      "total": 12
+      "good": 7,
+      "total": 14
     },
     "Wonach suchst du?": {
       "good": 1,
@@ -1208,8 +1264,21 @@
       "goodResponse": "Freut mich Wilfried, ich bin 35 Jahre alt. Ich hoffe dich stört der altersunterschied zwischen uns beiden nicht? Für mich ist das auf jeden Fall kein Problem.",
       "successCount": 1,
       "lastUsed": "2026-01-03T15:34:20.256Z"
+    },
+    {
+      "situation": "Sexuelle Themen",
+      "customerPattern": {
+        "keywords": "stimmt allerdings wie gesehen habe den fotos hast ziemlich grosse",
+        "hasQuestion": false,
+        "hasMeeting": true,
+        "hasSexual": false,
+        "length": 186
+      },
+      "goodResponse": "Die sehen doch nicht aus wie Bälle? Ich glaube wenn ich oben ohne vor dir stehen würde, würdest du trotzdem anfangen zu sabbern! Oder denkst du, du bist da anderer Meinung?",
+      "successCount": 1,
+      "lastUsed": "2026-01-03T15:39:46.081Z"
     }
   ],
-  "lastUpdated": "2026-01-03T15:37:46.555Z",
+  "lastUpdated": "2026-01-03T15:39:46.081Z",
   "initialized": true
 }
