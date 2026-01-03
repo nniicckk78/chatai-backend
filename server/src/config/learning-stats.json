@@ -39,7 +39,7 @@
       "bad": 0
     },
     "dann": {
-      "good": 42,
+      "good": 44,
       "bad": 0
     },
     "irgendwo": {
@@ -92,11 +92,11 @@
     },
     "wie": {
       "good": 21,
-      "bad": 41
+      "bad": 42
     },
     "stellst": {
       "good": 0,
-      "bad": 39
+      "bad": 40
     },
     "unseren": {
       "good": 0,
@@ -155,11 +155,11 @@
       "bad": 19
     },
     "möchte": {
-      "good": 19,
+      "good": 20,
       "bad": 19
     },
     "auch": {
-      "good": 60,
+      "good": 61,
       "bad": 20
     },
     "funke": {
@@ -219,7 +219,7 @@
       "bad": 0
     },
     "viel": {
-      "good": 19,
+      "good": 20,
       "bad": 0
     },
     "los": {
@@ -227,7 +227,7 @@
       "bad": 0
     },
     "was": {
-      "good": 39,
+      "good": 40,
       "bad": 22
     },
     "denn": {
@@ -336,7 +336,7 @@
     },
     "wenn": {
       "good": 0,
-      "bad": 21
+      "bad": 23
     },
     "gegenseitig": {
       "good": 0,
@@ -396,7 +396,7 @@
     },
     "richtig": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "feucht": {
       "good": 1,
@@ -432,7 +432,7 @@
     },
     "intensiv": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "werden": {
       "good": 0,
@@ -511,7 +511,7 @@
       "bad": 1
     },
     "alles": {
-      "good": 1,
+      "good": 2,
       "bad": 1
     },
     "neu": {
@@ -573,6 +573,70 @@
     "lenken": {
       "good": 0,
       "bad": 1
+    },
+    "werde": {
+      "good": 1,
+      "bad": 0
+    },
+    "jeden": {
+      "good": 1,
+      "bad": 0
+    },
+    "fall": {
+      "good": 1,
+      "bad": 0
+    },
+    "ganz": {
+      "good": 1,
+      "bad": 0
+    },
+    "mühe": {
+      "good": 1,
+      "bad": 0
+    },
+    "geben": {
+      "good": 1,
+      "bad": 0
+    },
+    "darf": {
+      "good": 1,
+      "bad": 0
+    },
+    "wirklich": {
+      "good": 1,
+      "bad": 0
+    },
+    "wünschen": {
+      "good": 1,
+      "bad": 0
+    },
+    "deinen": {
+      "good": 0,
+      "bad": 1
+    },
+    "wunsch": {
+      "good": 0,
+      "bad": 1
+    },
+    "erfüllst": {
+      "good": 0,
+      "bad": 1
+    },
+    "versprechen": {
+      "good": 0,
+      "bad": 1
+    },
+    "geil": {
+      "good": 0,
+      "bad": 1
+    },
+    "liebe": {
+      "good": 0,
+      "bad": 1
+    },
+    "angehen": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -581,6 +645,10 @@
       "total": 140
     },
     "Bot-Vorwurf": {
+      "good": 1,
+      "total": 2
+    },
+    "Sexuelle Themen": {
       "good": 1,
       "total": 2
     }
@@ -624,8 +692,21 @@
       "goodResponse": "Klingt sehr wild, mein geiler Hengst. Das würde meine Muschi richtig feucht machen, kannst du mich dann auch so richtig schön lecken? Würdest du meine Arschloch dann gleich mitlecken?",
       "successCount": 1,
       "lastUsed": "2026-01-02T19:34:52.962Z"
+    },
+    {
+      "situation": "Sexuelle Themen",
+      "customerPattern": {
+        "keywords": "fragst sachen wenn schlucken magst dann kannst gerne spritze mal",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": true,
+        "length": 198
+      },
+      "goodResponse": "Dann werde ich mir auf jeden Fall ganz viel mühe geben und darf ich mir dann auch wirklich alles wünschen was ich möchte?",
+      "successCount": 1,
+      "lastUsed": "2026-01-03T14:31:17.979Z"
     }
   ],
-  "lastUpdated": "2026-01-02T19:36:27.598Z",
+  "lastUpdated": "2026-01-03T14:31:17.979Z",
   "initialized": true
 }
