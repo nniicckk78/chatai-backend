@@ -17,7 +17,7 @@
       "successRate": 0
     },
     "finde ich": {
-      "count": 1,
+      "count": 2,
       "successRate": 0
     }
   },
@@ -32,7 +32,7 @@
     },
     "sehr": {
       "good": 21,
-      "bad": 2
+      "bad": 3
     },
     "verlockend": {
       "good": 20,
@@ -64,7 +64,7 @@
     },
     "würdest": {
       "good": 40,
-      "bad": 1
+      "bad": 2
     },
     "machen": {
       "good": 40,
@@ -96,7 +96,7 @@
     },
     "wie": {
       "good": 21,
-      "bad": 44
+      "bad": 46
     },
     "stellst": {
       "good": 0,
@@ -112,7 +112,7 @@
     },
     "genau": {
       "good": 25,
-      "bad": 41
+      "bad": 42
     },
     "gibt": {
       "good": 20,
@@ -163,7 +163,7 @@
       "bad": 19
     },
     "auch": {
-      "good": 68,
+      "good": 70,
       "bad": 20
     },
     "funke": {
@@ -235,7 +235,7 @@
       "bad": 27
     },
     "denn": {
-      "good": 60,
+      "good": 61,
       "bad": 5
     },
     "gerne": {
@@ -256,7 +256,7 @@
     },
     "vorstellen": {
       "good": 20,
-      "bad": 2
+      "bad": 3
     },
     "einfach": {
       "good": 20,
@@ -331,7 +331,7 @@
       "bad": 20
     },
     "finde": {
-      "good": 2,
+      "good": 4,
       "bad": 26
     },
     "grossartig": {
@@ -388,7 +388,7 @@
     },
     "würde": {
       "good": 2,
-      "bad": 2
+      "bad": 3
     },
     "meine": {
       "good": 2,
@@ -399,8 +399,8 @@
       "bad": 0
     },
     "richtig": {
-      "good": 5,
-      "bad": 2
+      "good": 7,
+      "bad": 3
     },
     "feucht": {
       "good": 1,
@@ -416,7 +416,7 @@
     },
     "lecken": {
       "good": 1,
-      "bad": 1
+      "bad": 2
     },
     "arschloch": {
       "good": 1,
@@ -631,7 +631,7 @@
       "bad": 1
     },
     "geil": {
-      "good": 2,
+      "good": 4,
       "bad": 1
     },
     "liebe": {
@@ -663,7 +663,7 @@
       "bad": 0
     },
     "sagen": {
-      "good": 6,
+      "good": 7,
       "bad": 0
     },
     "hoffe": {
@@ -715,72 +715,72 @@
       "bad": 5
     },
     "tittenfick": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "doggy": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "bist": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "allgemein": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "experimentierfreudig": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "neue": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "dinge": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "auszuprobieren": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "immer": {
-      "good": 1,
-      "bad": 1
+      "good": 2,
+      "bad": 2
     },
     "geniessen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "beim": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "zeigen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "mag": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "doggi": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "macht": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "intensiver": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "gefällt": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     }
   },
   "situationSuccess": {
@@ -793,8 +793,8 @@
       "total": 2
     },
     "Sexuelle Themen": {
-      "good": 2,
-      "total": 4
+      "good": 3,
+      "total": 6
     }
   },
   "responsePatterns": [
@@ -834,8 +834,8 @@
         "length": 198
       },
       "goodResponse": "Tittenfick und doggy finde ich auch richtig geil muss ich sagen. Bist du denn allgemein auch experimentierfreudig? Ich finde neue Dinge auszuprobieren immer richtig geil.",
-      "successCount": 2,
-      "lastUsed": "2026-01-03T15:14:28.417Z"
+      "successCount": 3,
+      "lastUsed": "2026-01-03T15:15:15.969Z"
     },
     {
       "situation": "Bot-Vorwurf",
@@ -851,6 +851,6 @@
       "lastUsed": "2026-01-02T19:34:52.962Z"
     }
   ],
-  "lastUpdated": "2026-01-03T15:14:28.417Z",
+  "lastUpdated": "2026-01-03T15:15:15.969Z",
   "initialized": true
 }
