@@ -2689,6 +2689,92 @@
       },
       "timestamp": "2026-01-03T17:42:51.137Z",
       "updatedAt": "2026-01-03T17:42:51.137Z"
+    },
+    {
+      "id": "feedback_1767463275423_ly7zwzjxf",
+      "chatId": "35866197",
+      "customerMessage": "Wir verstehen uns sehr gut. Sie wohnst bereits in ihrem eignen Haus",
+      "aiResponse": "Klingt echt schön, in einem eigenen Haus zu leben. Da hat man bestimmt viel Platz für sich, oder? Wie hast du dich dort eingerichtet?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "FPC",
+      "isASA": false,
+      "context": {
+        "customerInfo": {
+          "username": "Steve",
+          "name": "Steve",
+          "gender": "male",
+          "city": "Luxemburg",
+          "country": "DE",
+          "occupation": "rente ab 10 april bis dahin urlaub",
+          "birthDate": {
+            "age": 56,
+            "date": "1969-04-10T00:00:00.000Z"
+          },
+          "profileText": "Ehrlich,Treu",
+          "hasProfilePic": false,
+          "profilePicUrl": "https://www.perfektermoment.de/_files/photo/28403_134673_s.jpg?v=5",
+          "rawText": "- Name : Steve\n- Alter : 56\n- Status: \n- Wohnsituation:\n- Sternzeichen: Widder\n- Geschwister: \n- Kinder: tochter 30\n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : bez\n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+        },
+        "moderatorInfo": {
+          "username": "Mia017",
+          "name": "Mia",
+          "gender": "female",
+          "city": "luxemburg",
+          "country": "DE",
+          "birthDate": {
+            "age": 35,
+            "date": "1990-05-17T00:00:00.000Z"
+          },
+          "profileText": "Ich bin alleinerziehende Mama eines bezaubernden 2 Jahre alten Sohn und Single seit sage und schreibe 2 1/2 Jahren. Ich suche einen Mann, der mich nimmt wie ich bin, keinen Vaterersatz für meinen Zwerg, sondern einfach einen lieben, netten Mann der sich nicht zu Schade ist es mir auch mal dreckig und hart zu besorgen :-) Sorry für die offenen Worte aber ich hatte ewig keinen Sex mehr :-(",
+          "hasProfilePic": false,
+          "profilePicUrl": "https://www.perfektermoment.de/_files/photo/26854_46392_s.jpg",
+          "rawText": "- Name : Mia\n- Alter : \n- Status: \n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+        },
+        "customerNotes": {
+          "name": "Steve",
+          "age": "56",
+          "zodiac": "Widder",
+          "children": "tochter 30",
+          "lookingFor": "bez",
+          "rawText": "- Name : Steve\n- Alter : 56\n- Status: \n- Wohnsituation: \n- Sternzeichen: Widder\n- Geschwister: \n- Kinder: tochter 30\n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos: \n- Gesundheit: \n- Sucht : bez\n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen: \n- Auto: \n- Eltern: \n_______________________\n- Musik: \n- Filme: \n- Essen: \n- Trinken: \n_______________________\n- was mag: \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+        },
+        "moderatorNotes": {
+          "name": "Mia",
+          "rawText": "- Name : Mia\n- Alter: \n- Status: \n- Wohnsituation: \n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos: \n- Gesundheit: \n- Sucht: \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen: \n- Auto: \n- Eltern: \n_______________________\n- Musik: \n- Filme: \n- Essen: \n- Trinken: \n_______________________\n- was mag: \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+        },
+        "customerUpdates": [
+          {
+            "date": "2026-01-03T17:53:52.575Z",
+            "description": "10.April wird er 57 jahre alt",
+            "text": "10.April wird er 57 jahre alt",
+            "fixed": false,
+            "moderatorId": "20154"
+          }
+        ],
+        "moderatorUpdates": [],
+        "sessionStart": "2025-07-09T06:09:25.000Z",
+        "extractedInfo": {
+          "user": {
+            "Wohnsituation": "hat eigene Wohnung",
+            "Name": "Steve",
+            "Age": 56,
+            "Wohnort": "Luxemburg",
+            "Work": "rente ab 10 april bis dahin urlaub",
+            "Other": "- Name : Steve\n- Alter : 56\n- Status: \n- Wohnsituation:\n- Sternzeichen: Widder\n- Geschwister: \n- Kinder: tochter 30\n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : bez\n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+          },
+          "assistant": {
+            "Name": "Mia",
+            "Age": 35,
+            "Wohnort": "luxemburg",
+            "Other": "- Name : Mia\n- Alter : \n- Status: \n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+          }
+        },
+        "lastModeratorMessage": "Na das ist ja schön. Und du verstehst dich gut mit ihr oder nicht so? Wohnt sie noch zu Hause?"
+      },
+      "lastModeratorMessage": "Na das ist ja schön. Und du verstehst dich gut mit ihr oder nicht so? Wohnt sie noch zu Hause?",
+      "timestamp": "2026-01-03T18:01:15.423Z",
+      "updatedAt": "2026-01-03T18:01:15.423Z"
     }
   ]
 }
