@@ -95,7 +95,7 @@
       "bad": 20
     },
     "wie": {
-      "good": 28,
+      "good": 29,
       "bad": 47
     },
     "stellst": {
@@ -144,7 +144,7 @@
     },
     "mehr": {
       "good": 21,
-      "bad": 22
+      "bad": 23
     },
     "wünschst": {
       "good": 19,
@@ -163,7 +163,7 @@
       "bad": 19
     },
     "auch": {
-      "good": 73,
+      "good": 75,
       "bad": 21
     },
     "funke": {
@@ -171,7 +171,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 56,
+      "good": 59,
       "bad": 19
     },
     "erlischt": {
@@ -199,7 +199,7 @@
       "bad": 0
     },
     "mich": {
-      "good": 22,
+      "good": 23,
       "bad": 6
     },
     "wohl": {
@@ -231,11 +231,11 @@
       "bad": 0
     },
     "was": {
-      "good": 50,
-      "bad": 42
+      "good": 51,
+      "bad": 43
     },
     "denn": {
-      "good": 69,
+      "good": 70,
       "bad": 8
     },
     "gerne": {
@@ -259,7 +259,7 @@
       "bad": 3
     },
     "einfach": {
-      "good": 20,
+      "good": 21,
       "bad": 8
     },
     "gibst": {
@@ -459,7 +459,7 @@
       "bad": 1
     },
     "will": {
-      "good": 6,
+      "good": 8,
       "bad": 1
     },
     "wäre": {
@@ -772,7 +772,7 @@
     },
     "macht": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "intensiver": {
       "good": 0,
@@ -831,7 +831,7 @@
       "bad": 0
     },
     "kommst": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "sowas": {
@@ -867,7 +867,7 @@
       "bad": 4
     },
     "sehen": {
-      "good": 3,
+      "good": 5,
       "bad": 0
     },
     "bestimmt": {
@@ -939,8 +939,8 @@
       "bad": 0
     },
     "dich": {
-      "good": 11,
-      "bad": 2
+      "good": 13,
+      "bad": 5
     },
     "stört": {
       "good": 1,
@@ -955,11 +955,11 @@
       "bad": 0
     },
     "kein": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "problem": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "mitte": {
@@ -1016,7 +1016,7 @@
     },
     "verstehe": {
       "good": 2,
-      "bad": 1
+      "bad": 2
     },
     "schon": {
       "good": 9,
@@ -1032,15 +1032,15 @@
     },
     "ber": {
       "good": 4,
-      "bad": 2
+      "bad": 3
     },
     "erfahren": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "bevor": {
       "good": 2,
-      "bad": 3
+      "bad": 4
     },
     "treffen": {
       "good": 4,
@@ -1212,7 +1212,7 @@
     },
     "wichtig": {
       "good": 0,
-      "bad": 3
+      "bad": 4
     },
     "zuerst": {
       "good": 0,
@@ -1347,7 +1347,7 @@
       "bad": 2
     },
     "bisher": {
-      "good": 0,
+      "good": 1,
       "bad": 2
     },
     "gemacht": {
@@ -1357,6 +1357,46 @@
     "feiern": {
       "good": 0,
       "bad": 2
+    },
+    "hei": {
+      "good": 1,
+      "bad": 0
+    },
+    "halt": {
+      "good": 1,
+      "bad": 0
+    },
+    "funktioniert": {
+      "good": 1,
+      "bad": 0
+    },
+    "bedeutet": {
+      "good": 1,
+      "bad": 0
+    },
+    "schwachsinn": {
+      "good": 1,
+      "bad": 0
+    },
+    "lieber": {
+      "good": 0,
+      "bad": 1
+    },
+    "erst": {
+      "good": 0,
+      "bad": 1
+    },
+    "näherkommen": {
+      "good": 0,
+      "bad": 1
+    },
+    "gelungenes": {
+      "good": 0,
+      "bad": 1
+    },
+    "wochenende": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -1381,8 +1421,8 @@
       "total": 4
     },
     "Treffen/Termine": {
-      "good": 2,
-      "total": 4
+      "good": 3,
+      "total": 6
     }
   },
   "responsePatterns": [
@@ -1452,6 +1492,19 @@
       "lastUsed": "2026-01-03T16:28:59.177Z"
     },
     {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "mareike frohes neues jahr würde gerne mich treffen habe heute",
+        "hasQuestion": false,
+        "hasMeeting": true,
+        "hasSexual": false,
+        "length": 165
+      },
+      "goodResponse": "Was heißt für mich ist das kein Problem? Ich will dich ja auch sehen. Hat bisher halt einfach nicht funktioniert aber das bedeutet ja nicht das ich dich nicht sehen will? Wie kommst du denn auch so ei",
+      "successCount": 3,
+      "lastUsed": "2026-01-03T17:06:08.945Z"
+    },
+    {
       "situation": "Geld/Coins",
       "customerPattern": {
         "keywords": "habe noch coin wäre lieber plaudern real",
@@ -1463,19 +1516,6 @@
       "goodResponse": "Das ist so wie wenn du zu mir sagen würdest du kaufst dir ein Auto hast aber kein Geld für den Tank. Ich verstehe dich, so ist es ja nicht aber ich möchte schon gerne noch ein wenig mehr über dich erf",
       "successCount": 2,
       "lastUsed": "2026-01-03T15:37:46.555Z"
-    },
-    {
-      "situation": "Treffen/Termine",
-      "customerPattern": {
-        "keywords": "mareike frohes neues jahr würde gerne mich treffen habe heute",
-        "hasQuestion": false,
-        "hasMeeting": true,
-        "hasSexual": false,
-        "length": 165
-      },
-      "goodResponse": "Danke das ist echt sehr nett von dir! Ich finde dich auch echt voll attraktiv. Ist kein Problem, was hast du denn heute noch so vor?",
-      "successCount": 2,
-      "lastUsed": "2026-01-03T17:04:27.083Z"
     },
     {
       "situation": "Wonach suchst du?",
@@ -1504,6 +1544,6 @@
       "lastUsed": "2026-01-03T15:39:46.081Z"
     }
   ],
-  "lastUpdated": "2026-01-03T17:04:27.084Z",
+  "lastUpdated": "2026-01-03T17:06:08.945Z",
   "initialized": true
 }
