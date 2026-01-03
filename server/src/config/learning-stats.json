@@ -31,8 +31,8 @@
       "bad": 9
     },
     "sehr": {
-      "good": 21,
-      "bad": 5
+      "good": 22,
+      "bad": 6
     },
     "verlockend": {
       "good": 20,
@@ -135,8 +135,8 @@
       "bad": 22
     },
     "hast": {
-      "good": 4,
-      "bad": 46
+      "good": 5,
+      "bad": 47
     },
     "verstehen": {
       "good": 23,
@@ -163,7 +163,7 @@
       "bad": 19
     },
     "auch": {
-      "good": 71,
+      "good": 72,
       "bad": 21
     },
     "funke": {
@@ -200,7 +200,7 @@
     },
     "mich": {
       "good": 22,
-      "bad": 4
+      "bad": 5
     },
     "wohl": {
       "good": 19,
@@ -231,11 +231,11 @@
       "bad": 0
     },
     "was": {
-      "good": 48,
-      "bad": 40
+      "good": 49,
+      "bad": 41
     },
     "denn": {
-      "good": 67,
+      "good": 68,
       "bad": 8
     },
     "gerne": {
@@ -331,7 +331,7 @@
       "bad": 20
     },
     "finde": {
-      "good": 7,
+      "good": 8,
       "bad": 26
     },
     "grossartig": {
@@ -356,7 +356,7 @@
     },
     "können": {
       "good": 2,
-      "bad": 24
+      "bad": 25
     },
     "dabei": {
       "good": 0,
@@ -500,7 +500,7 @@
     },
     "jahr": {
       "good": 1,
-      "bad": 1
+      "bad": 2
     },
     "fehlern": {
       "good": 1,
@@ -647,7 +647,7 @@
       "bad": 0
     },
     "echt": {
-      "good": 5,
+      "good": 7,
       "bad": 3
     },
     "gut": {
@@ -736,7 +736,7 @@
     },
     "neue": {
       "good": 2,
-      "bad": 1
+      "bad": 2
     },
     "dinge": {
       "good": 2,
@@ -827,7 +827,7 @@
       "bad": 0
     },
     "nett": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "kommst": {
@@ -864,7 +864,7 @@
     },
     "mal": {
       "good": 4,
-      "bad": 2
+      "bad": 3
     },
     "sehen": {
       "good": 3,
@@ -924,7 +924,7 @@
     },
     "freut": {
       "good": 1,
-      "bad": 2
+      "bad": 3
     },
     "wilfried": {
       "good": 1,
@@ -939,7 +939,7 @@
       "bad": 0
     },
     "dich": {
-      "good": 9,
+      "good": 10,
       "bad": 2
     },
     "stört": {
@@ -955,11 +955,11 @@
       "bad": 0
     },
     "kein": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "problem": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "mitte": {
@@ -1023,7 +1023,7 @@
       "bad": 0
     },
     "noch": {
-      "good": 2,
+      "good": 3,
       "bad": 1
     },
     "wenig": {
@@ -1251,7 +1251,7 @@
       "bad": 0
     },
     "voll": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "gedanken": {
@@ -1291,7 +1291,7 @@
       "bad": 2
     },
     "heute": {
-      "good": 0,
+      "good": 1,
       "bad": 2
     },
     "schönes": {
@@ -1317,6 +1317,46 @@
     "genug": {
       "good": 1,
       "bad": 0
+    },
+    "danke": {
+      "good": 1,
+      "bad": 1
+    },
+    "attraktiv": {
+      "good": 1,
+      "bad": 0
+    },
+    "kompliment": {
+      "good": 0,
+      "bad": 1
+    },
+    "jonas": {
+      "good": 0,
+      "bad": 1
+    },
+    "vielleicht": {
+      "good": 0,
+      "bad": 1
+    },
+    "anderes": {
+      "good": 0,
+      "bad": 1
+    },
+    "austauschen": {
+      "good": 0,
+      "bad": 1
+    },
+    "bisher": {
+      "good": 0,
+      "bad": 1
+    },
+    "gemacht": {
+      "good": 0,
+      "bad": 1
+    },
+    "feiern": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -1339,6 +1379,10 @@
     "Geld/Coins": {
       "good": 2,
       "total": 4
+    },
+    "Treffen/Termine": {
+      "good": 1,
+      "total": 2
     }
   },
   "responsePatterns": [
@@ -1445,8 +1489,21 @@
       "goodResponse": "Die sehen doch nicht aus wie Bälle? Ich glaube wenn ich oben ohne vor dir stehen würde, würdest du trotzdem anfangen zu sabbern! Oder denkst du, du bist da anderer Meinung?",
       "successCount": 1,
       "lastUsed": "2026-01-03T15:39:46.081Z"
+    },
+    {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "mareike frohes neues jahr würde gerne mich treffen habe heute",
+        "hasQuestion": false,
+        "hasMeeting": true,
+        "hasSexual": false,
+        "length": 165
+      },
+      "goodResponse": "Danke das ist echt sehr nett von dir! Ich finde dich auch echt voll attraktiv. Ist kein Problem, was hast du denn heute noch so vor?",
+      "successCount": 1,
+      "lastUsed": "2026-01-03T17:03:56.085Z"
     }
   ],
-  "lastUpdated": "2026-01-03T16:28:59.177Z",
+  "lastUpdated": "2026-01-03T17:03:56.085Z",
   "initialized": true
 }
