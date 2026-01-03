@@ -135,11 +135,11 @@
       "bad": 22
     },
     "hast": {
-      "good": 3,
-      "bad": 45
+      "good": 4,
+      "bad": 46
     },
     "verstehen": {
-      "good": 22,
+      "good": 23,
       "bad": 19
     },
     "mehr": {
@@ -171,7 +171,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 54,
+      "good": 56,
       "bad": 19
     },
     "erlischt": {
@@ -187,11 +187,11 @@
       "bad": 2
     },
     "nur": {
-      "good": 24,
+      "good": 25,
       "bad": 3
     },
     "bisschen": {
-      "good": 22,
+      "good": 23,
       "bad": 0
     },
     "damit": {
@@ -200,7 +200,7 @@
     },
     "mich": {
       "good": 22,
-      "bad": 3
+      "bad": 4
     },
     "wohl": {
       "good": 19,
@@ -215,7 +215,7 @@
       "bad": 0
     },
     "zeit": {
-      "good": 19,
+      "good": 20,
       "bad": 0
     },
     "ziemlich": {
@@ -232,7 +232,7 @@
     },
     "was": {
       "good": 48,
-      "bad": 39
+      "bad": 40
     },
     "denn": {
       "good": 67,
@@ -315,7 +315,7 @@
       "bad": 2
     },
     "denke": {
-      "good": 41,
+      "good": 42,
       "bad": 1
     },
     "denkst": {
@@ -696,7 +696,7 @@
     },
     "deine": {
       "good": 2,
-      "bad": 6
+      "bad": 7
     },
     "hobbys": {
       "good": 0,
@@ -747,7 +747,7 @@
       "bad": 0
     },
     "immer": {
-      "good": 4,
+      "good": 6,
       "bad": 2
     },
     "geniessen": {
@@ -907,7 +907,7 @@
       "bad": 2
     },
     "bin": {
-      "good": 5,
+      "good": 6,
       "bad": 3
     },
     "gemeinsam": {
@@ -1019,7 +1019,7 @@
       "bad": 1
     },
     "schon": {
-      "good": 8,
+      "good": 9,
       "bad": 0
     },
     "noch": {
@@ -1043,7 +1043,7 @@
       "bad": 3
     },
     "treffen": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "bereuuen": {
@@ -1067,7 +1067,7 @@
       "bad": 2
     },
     "man": {
-      "good": 0,
+      "good": 1,
       "bad": 2
     },
     "reden": {
@@ -1231,76 +1231,92 @@
       "bad": 3
     },
     "recht": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "vorsichtig": {
-      "good": 1,
+      "good": 3,
       "bad": 0
     },
     "dem": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "ersten": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "mache": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "voll": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "gedanken": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "vielen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "lieben": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "nachricht": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "freue": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "darauf": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "weiter": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "kontakt": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "bleiben": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "heute": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "schönes": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "geplant": {
       "good": 0,
-      "bad": 1
+      "bad": 2
+    },
+    "musst": {
+      "good": 1,
+      "bad": 0
+    },
+    "heutigen": {
+      "good": 1,
+      "bad": 0
+    },
+    "nie": {
+      "good": 1,
+      "bad": 0
+    },
+    "genug": {
+      "good": 1,
+      "bad": 0
     }
   },
   "situationSuccess": {
@@ -1309,8 +1325,8 @@
       "total": 164
     },
     "Bot-Vorwurf": {
-      "good": 2,
-      "total": 4
+      "good": 3,
+      "total": 6
     },
     "Sexuelle Themen": {
       "good": 7,
@@ -1379,6 +1395,19 @@
       "lastUsed": "2026-01-03T15:19:24.939Z"
     },
     {
+      "situation": "Bot-Vorwurf",
+      "customerPattern": {
+        "keywords": "wenn veraten tust antwort nachricht küsse dein ganzen körper mag",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 406
+      },
+      "goodResponse": "Ja da hast du ja schon recht. Ich bin nur immer ein bisschen vorsichtig vor dem ersten Treffen. Ich mache mir da immer voll die Gedanken. Du musst das nicht verstehen aber ich denke in der heutigen Ze",
+      "successCount": 3,
+      "lastUsed": "2026-01-03T16:28:59.177Z"
+    },
+    {
       "situation": "Geld/Coins",
       "customerPattern": {
         "keywords": "habe noch coin wäre lieber plaudern real",
@@ -1390,19 +1419,6 @@
       "goodResponse": "Das ist so wie wenn du zu mir sagen würdest du kaufst dir ein Auto hast aber kein Geld für den Tank. Ich verstehe dich, so ist es ja nicht aber ich möchte schon gerne noch ein wenig mehr über dich erf",
       "successCount": 2,
       "lastUsed": "2026-01-03T15:37:46.555Z"
-    },
-    {
-      "situation": "Bot-Vorwurf",
-      "customerPattern": {
-        "keywords": "wenn veraten tust antwort nachricht küsse dein ganzen körper mag",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 406
-      },
-      "goodResponse": "Klingt sehr wild, mein geiler Hengst. Das würde meine Muschi richtig feucht machen, kannst du mich dann auch so richtig schön lecken? Würdest du meine Arschloch dann gleich mitlecken?",
-      "successCount": 2,
-      "lastUsed": "2026-01-03T16:27:57.686Z"
     },
     {
       "situation": "Wonach suchst du?",
@@ -1431,6 +1447,6 @@
       "lastUsed": "2026-01-03T15:39:46.081Z"
     }
   ],
-  "lastUpdated": "2026-01-03T16:27:57.686Z",
+  "lastUpdated": "2026-01-03T16:28:59.177Z",
   "initialized": true
 }
