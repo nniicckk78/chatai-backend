@@ -729,6 +729,90 @@
       },
       "timestamp": "2026-01-03T16:16:34.012Z",
       "updatedAt": "2026-01-03T16:16:34.012Z"
+    },
+    {
+      "id": "feedback_1767457053004_vbxgv1rob",
+      "chatId": "37717778",
+      "customerMessage": "Ich schaue es mir erstmal an und dann entscheide ich ob ich mit einsteige",
+      "aiResponse": "Das hört sich nach einem wirklich durchdachten und vielversprechenden Plan an. Meinst du, es ist wichtig, zuerst den Überblick zu gewinnen, bevor du einsteigst?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "FPC",
+      "isASA": false,
+      "context": {
+        "customerInfo": {
+          "username": "Tommyottenzwerg",
+          "name": "Thomas",
+          "gender": "male",
+          "city": "Berlin",
+          "country": "DE",
+          "occupation": "Fußbodenleger",
+          "birthDate": {
+            "age": 33,
+            "date": "1992-12-02T00:00:00.000Z"
+          },
+          "hasProfilePic": true,
+          "hasPictures": true,
+          "profilePicUrl": "https://www.wirverliebenuns.de/upload/photos/2025/12/p15LFG3Otc4GdUTUwgkZ_avater.jpg",
+          "rawText": "- Name : \n- Alter : \n- Status: \n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: schmerzen\n_______________________\nSONSTIGES:"
+        },
+        "moderatorInfo": {
+          "username": "DieWilden2",
+          "name": "Lucia und Stella (v.l-n.r.r)",
+          "gender": "female",
+          "city": "Berlin",
+          "country": "DE",
+          "birthDate": {
+            "age": 27,
+            "date": "1998-12-05T00:00:00.000Z"
+          },
+          "profileText": "Hallooo wir sind Luca und Stella und möchte mal neuen Wind in unsere lesbische Beziehung bringen. Bist du unser frischer Wind?",
+          "hasProfilePic": true,
+          "hasPictures": true,
+          "height": "168cm",
+          "profilePicUrl": "https://www.wirverliebenuns.de/upload/photos/2025/11/CX4nXa47nKGVgYKCfChd_avatar.jpg",
+          "rawText": "- Name : Lucia und Stella (v.l-n.r.r)\n\n- Alter : 27\n- Status: lesbisches Pärchen\n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : Dreier\n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+        },
+        "customerNotes": {
+          "taboos": "schmerzen",
+          "rawText": "- Name: \n- Alter: \n- Status: \n- Wohnsituation: \n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos: \n- Gesundheit: \n- Sucht: \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen: \n- Auto: \n- Eltern: \n_______________________\n- Musik: \n- Filme: \n- Essen: \n- Trinken: \n_______________________\n- was mag: \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: schmerzen\n_______________________\nSONSTIGES:"
+        },
+        "moderatorNotes": {
+          "name": "Lucia und Stella (v.l-n.r.r)",
+          "age": "27",
+          "relationshipStatus": "lesbisches Pärchen",
+          "lookingFor": "Dreier",
+          "rawText": "- Name : Lucia und Stella (v.l-n.r.r)\n\n- Alter : 27\n- Status: lesbisches Pärchen\n- Wohnsituation: \n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos: \n- Gesundheit: \n- Sucht : Dreier\n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen: \n- Auto: \n- Eltern: \n_______________________\n- Musik: \n- Filme: \n- Essen: \n- Trinken: \n_______________________\n- was mag: \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+        },
+        "customerUpdates": [],
+        "moderatorUpdates": [
+          {
+            "date": "2026-01-03T16:10:19.116Z",
+            "description": "Lucia schreibt",
+            "text": "Lucia schreibt",
+            "fixed": true,
+            "moderatorId": "20768"
+          }
+        ],
+        "sessionStart": "2025-12-25T10:01:06.000Z",
+        "extractedInfo": {
+          "user": {
+            "Name": "Thomas",
+            "Age": 33,
+            "Wohnort": "Berlin",
+            "Work": "Fußbodenleger",
+            "Other": "- Name : \n- Alter : \n- Status: \n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: schmerzen\n_______________________\nSONSTIGES:"
+          },
+          "assistant": {
+            "Name": "Lucia und Stella (v.l-n.r.r)",
+            "Age": 27,
+            "Wohnort": "Berlin",
+            "Other": "- Name : Lucia und Stella (v.l-n.r.r)\n\n- Alter : 27\n- Status: lesbisches Pärchen\n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : Dreier\n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+          }
+        }
+      },
+      "timestamp": "2026-01-03T16:17:33.004Z",
+      "updatedAt": "2026-01-03T16:17:33.004Z"
     }
   ]
 }
