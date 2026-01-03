@@ -15,6 +15,10 @@
     "würde ich": {
       "count": 1,
       "successRate": 0
+    },
+    "finde ich": {
+      "count": 1,
+      "successRate": 0
     }
   },
   "wordFrequency": {
@@ -28,7 +32,7 @@
     },
     "sehr": {
       "good": 21,
-      "bad": 1
+      "bad": 2
     },
     "verlockend": {
       "good": 20,
@@ -60,7 +64,7 @@
     },
     "würdest": {
       "good": 40,
-      "bad": 0
+      "bad": 1
     },
     "machen": {
       "good": 40,
@@ -92,7 +96,7 @@
     },
     "wie": {
       "good": 21,
-      "bad": 42
+      "bad": 44
     },
     "stellst": {
       "good": 0,
@@ -108,7 +112,7 @@
     },
     "genau": {
       "good": 25,
-      "bad": 40
+      "bad": 41
     },
     "gibt": {
       "good": 20,
@@ -159,7 +163,7 @@
       "bad": 19
     },
     "auch": {
-      "good": 66,
+      "good": 68,
       "bad": 20
     },
     "funke": {
@@ -231,7 +235,7 @@
       "bad": 27
     },
     "denn": {
-      "good": 59,
+      "good": 60,
       "bad": 5
     },
     "gerne": {
@@ -252,7 +256,7 @@
     },
     "vorstellen": {
       "good": 20,
-      "bad": 1
+      "bad": 2
     },
     "einfach": {
       "good": 20,
@@ -327,7 +331,7 @@
       "bad": 20
     },
     "finde": {
-      "good": 0,
+      "good": 2,
       "bad": 26
     },
     "grossartig": {
@@ -384,7 +388,7 @@
     },
     "würde": {
       "good": 2,
-      "bad": 1
+      "bad": 2
     },
     "meine": {
       "good": 2,
@@ -395,8 +399,8 @@
       "bad": 0
     },
     "richtig": {
-      "good": 3,
-      "bad": 1
+      "good": 5,
+      "bad": 2
     },
     "feucht": {
       "good": 1,
@@ -412,7 +416,7 @@
     },
     "lecken": {
       "good": 1,
-      "bad": 0
+      "bad": 1
     },
     "arschloch": {
       "good": 1,
@@ -627,7 +631,7 @@
       "bad": 1
     },
     "geil": {
-      "good": 0,
+      "good": 2,
       "bad": 1
     },
     "liebe": {
@@ -659,7 +663,7 @@
       "bad": 0
     },
     "sagen": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "hoffe": {
@@ -709,6 +713,74 @@
     "bereiten": {
       "good": 0,
       "bad": 5
+    },
+    "tittenfick": {
+      "good": 1,
+      "bad": 0
+    },
+    "doggy": {
+      "good": 1,
+      "bad": 0
+    },
+    "bist": {
+      "good": 1,
+      "bad": 0
+    },
+    "allgemein": {
+      "good": 1,
+      "bad": 0
+    },
+    "experimentierfreudig": {
+      "good": 1,
+      "bad": 0
+    },
+    "neue": {
+      "good": 1,
+      "bad": 0
+    },
+    "dinge": {
+      "good": 1,
+      "bad": 0
+    },
+    "auszuprobieren": {
+      "good": 1,
+      "bad": 0
+    },
+    "immer": {
+      "good": 1,
+      "bad": 1
+    },
+    "geniessen": {
+      "good": 0,
+      "bad": 1
+    },
+    "beim": {
+      "good": 0,
+      "bad": 1
+    },
+    "zeigen": {
+      "good": 0,
+      "bad": 1
+    },
+    "mag": {
+      "good": 0,
+      "bad": 1
+    },
+    "doggi": {
+      "good": 0,
+      "bad": 1
+    },
+    "macht": {
+      "good": 0,
+      "bad": 1
+    },
+    "intensiver": {
+      "good": 0,
+      "bad": 1
+    },
+    "gefällt": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -721,8 +793,8 @@
       "total": 2
     },
     "Sexuelle Themen": {
-      "good": 1,
-      "total": 2
+      "good": 2,
+      "total": 4
     }
   },
   "responsePatterns": [
@@ -753,6 +825,19 @@
       "lastUsed": "2026-01-02T19:07:38.514Z"
     },
     {
+      "situation": "Sexuelle Themen",
+      "customerPattern": {
+        "keywords": "fragst sachen wenn schlucken magst dann kannst gerne spritze mal",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": true,
+        "length": 198
+      },
+      "goodResponse": "Tittenfick und doggy finde ich auch richtig geil muss ich sagen. Bist du denn allgemein auch experimentierfreudig? Ich finde neue Dinge auszuprobieren immer richtig geil.",
+      "successCount": 2,
+      "lastUsed": "2026-01-03T15:14:28.417Z"
+    },
+    {
       "situation": "Bot-Vorwurf",
       "customerPattern": {
         "keywords": "wenn veraten tust antwort nachricht küsse dein ganzen körper mag",
@@ -764,21 +849,8 @@
       "goodResponse": "Klingt sehr wild, mein geiler Hengst. Das würde meine Muschi richtig feucht machen, kannst du mich dann auch so richtig schön lecken? Würdest du meine Arschloch dann gleich mitlecken?",
       "successCount": 1,
       "lastUsed": "2026-01-02T19:34:52.962Z"
-    },
-    {
-      "situation": "Sexuelle Themen",
-      "customerPattern": {
-        "keywords": "fragst sachen wenn schlucken magst dann kannst gerne spritze mal",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": true,
-        "length": 198
-      },
-      "goodResponse": "Dann werde ich mir auf jeden Fall ganz viel mühe geben und darf ich mir dann auch wirklich alles wünschen was ich möchte?",
-      "successCount": 1,
-      "lastUsed": "2026-01-03T14:31:17.979Z"
     }
   ],
-  "lastUpdated": "2026-01-03T15:07:28.847Z",
+  "lastUpdated": "2026-01-03T15:14:28.417Z",
   "initialized": true
 }
