@@ -44,15 +44,15 @@
     },
     "verlockend": {
       "good": 20,
-      "bad": 0
+      "bad": 1
     },
     "würden": {
       "good": 20,
       "bad": 0
     },
     "dann": {
-      "good": 51,
-      "bad": 0
+      "good": 53,
+      "bad": 1
     },
     "irgendwo": {
       "good": 20,
@@ -63,11 +63,11 @@
       "bad": 0
     },
     "trinken": {
-      "good": 21,
+      "good": 22,
       "bad": 0
     },
     "gehen": {
-      "good": 21,
+      "good": 23,
       "bad": 0
     },
     "würdest": {
@@ -104,11 +104,11 @@
     },
     "wie": {
       "good": 34,
-      "bad": 53
+      "bad": 54
     },
     "stellst": {
       "good": 0,
-      "bad": 41
+      "bad": 42
     },
     "unseren": {
       "good": 0,
@@ -179,7 +179,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 82,
+      "good": 83,
       "bad": 21
     },
     "erlischt": {
@@ -207,7 +207,7 @@
       "bad": 0
     },
     "mich": {
-      "good": 32,
+      "good": 33,
       "bad": 15
     },
     "wohl": {
@@ -223,7 +223,7 @@
       "bad": 0
     },
     "zeit": {
-      "good": 24,
+      "good": 25,
       "bad": 2
     },
     "ziemlich": {
@@ -327,7 +327,7 @@
       "bad": 1
     },
     "denkst": {
-      "good": 28,
+      "good": 29,
       "bad": 2
     },
     "zweiteudig": {
@@ -348,7 +348,7 @@
     },
     "wenn": {
       "good": 8,
-      "bad": 30
+      "bad": 31
     },
     "gegenseitig": {
       "good": 0,
@@ -376,7 +376,7 @@
     },
     "klingt": {
       "good": 2,
-      "bad": 6
+      "bad": 7
     },
     "wild": {
       "good": 1,
@@ -587,7 +587,7 @@
       "bad": 1
     },
     "werde": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "jeden": {
@@ -607,7 +607,7 @@
       "bad": 0
     },
     "geben": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "darf": {
@@ -803,7 +803,7 @@
       "bad": 0
     },
     "passt": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "doch": {
@@ -823,7 +823,7 @@
       "bad": 0
     },
     "lassen": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "diese": {
@@ -871,12 +871,12 @@
       "bad": 0
     },
     "mal": {
-      "good": 6,
+      "good": 7,
       "bad": 8
     },
     "sehen": {
       "good": 5,
-      "bad": 0
+      "bad": 1
     },
     "bestimmt": {
       "good": 3,
@@ -1028,10 +1028,10 @@
     },
     "schon": {
       "good": 17,
-      "bad": 4
+      "bad": 5
     },
     "noch": {
-      "good": 12,
+      "good": 14,
       "bad": 1
     },
     "wenig": {
@@ -1083,7 +1083,7 @@
       "bad": 4
     },
     "zusammen": {
-      "good": 6,
+      "good": 7,
       "bad": 2
     },
     "wären": {
@@ -1163,7 +1163,7 @@
       "bad": 0
     },
     "etwas": {
-      "good": 2,
+      "good": 3,
       "bad": 4
     },
     "neugierig": {
@@ -1391,7 +1391,7 @@
       "bad": 1
     },
     "erst": {
-      "good": 0,
+      "good": 1,
       "bad": 1
     },
     "näherkommen": {
@@ -1491,7 +1491,7 @@
       "bad": 0
     },
     "könnten": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "tolle": {
@@ -1523,7 +1523,7 @@
       "bad": 2
     },
     "sollten": {
-      "good": 0,
+      "good": 1,
       "bad": 2
     },
     "interessiert": {
@@ -1899,7 +1899,7 @@
       "bad": 2
     },
     "wann": {
-      "good": 0,
+      "good": 1,
       "bad": 2
     },
     "hättest": {
@@ -1923,7 +1923,7 @@
       "bad": 2
     },
     "beide": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "schn": {
@@ -2163,11 +2163,11 @@
       "bad": 1
     },
     "druck": {
-      "good": 1,
+      "good": 2,
       "bad": 1
     },
     "ablassen": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "liege": {
@@ -2217,12 +2217,44 @@
     "entwickeln": {
       "good": 0,
       "bad": 1
+    },
+    "bescheid": {
+      "good": 1,
+      "bad": 0
+    },
+    "besten": {
+      "good": 1,
+      "bad": 0
+    },
+    "her": {
+      "good": 1,
+      "bad": 0
+    },
+    "essen": {
+      "good": 1,
+      "bad": 0
+    },
+    "finger": {
+      "good": 1,
+      "bad": 0
+    },
+    "leider": {
+      "good": 0,
+      "bad": 1
+    },
+    "dienstag": {
+      "good": 0,
+      "bad": 1
+    },
+    "verplant": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 109,
-      "total": 197
+      "good": 110,
+      "total": 199
     },
     "Bot-Vorwurf": {
       "good": 5,
@@ -2259,9 +2291,9 @@
         "hasSexual": false,
         "length": 132
       },
-      "goodResponse": "Da kann ich dir nur zustimmen, den Weg wollen wir ja auch zusammen gehen. Was sind denn so deine Lieblingsgetränke? Wenn ich was trinken gehe trinke ich immer sehr gerne den Mojito. Was trinkst du den",
-      "successCount": 80,
-      "lastUsed": "2026-01-04T12:38:31.722Z"
+      "goodResponse": "Ich werde dir noch bescheid geben wann es am besten für mich passt von der Zeit her. Gehen wir dann noch etwas zusammen essen oder trinken? Oder denkst du wir beide könnten die Finger nicht von uns la",
+      "successCount": 81,
+      "lastUsed": "2026-01-04T12:45:06.034Z"
     },
     {
       "situation": "allgemein",
@@ -2407,6 +2439,6 @@
       "lastUsed": "2026-01-04T10:11:19.142Z"
     }
   ],
-  "lastUpdated": "2026-01-04T12:38:31.722Z",
+  "lastUpdated": "2026-01-04T12:45:06.035Z",
   "initialized": true
 }
