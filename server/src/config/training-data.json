@@ -1439,6 +1439,36 @@
       "source": "feedback_good",
       "priority": true,
       "feedbackId": "feedback_1767540770672_e40f1jcsw"
+    },
+    {
+      "customerMessage": "Ja genau. Darf ich Dich zu einem Kaffee, oder so einladen??",
+      "moderatorResponse": "Oh, das klingt wirklich nett! Ich muss mal schauen wann es bei mir klappt und was machen wir wenn wir uns beim Kaffee trinken näher kommen möchten?",
+      "situation": "allgemein",
+      "createdAt": "2026-01-04T20:09:53.658Z",
+      "source": "feedback_generated_edited",
+      "priority": true,
+      "feedbackId": "feedback_1767374513363_qi9uxm83u",
+      "variationIndex": 0
+    },
+    {
+      "customerMessage": "Ja genau. Darf ich Dich zu einem Kaffee, oder so einladen??",
+      "moderatorResponse": "Das klingt nicht schlecht, bei mir ist gerade viel los aber ich bin auf jeden Fall nicht abgeneigt, wie trinkst du gerne deinen Kaffee?",
+      "situation": "allgemein",
+      "createdAt": "2026-01-04T20:09:53.658Z",
+      "source": "feedback_generated_edited",
+      "priority": true,
+      "feedbackId": "feedback_1767374513363_qi9uxm83u",
+      "variationIndex": 1
+    },
+    {
+      "customerMessage": "Ja genau. Darf ich Dich zu einem Kaffee, oder so einladen??",
+      "moderatorResponse": "Das ist gar nicht mal so eine schlechte Idee, hast du ein lieblings Lokal wo du immer Kaffee trinken gehst?",
+      "situation": "allgemein",
+      "createdAt": "2026-01-04T20:09:53.658Z",
+      "source": "feedback_generated_edited",
+      "priority": true,
+      "feedbackId": "feedback_1767374513363_qi9uxm83u",
+      "variationIndex": 2
     }
   ],
   "asaExamples": [
