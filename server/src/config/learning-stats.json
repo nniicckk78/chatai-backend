@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 52,
+      "count": 53,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -47,11 +47,11 @@
       "bad": 11
     },
     "verlockend": {
-      "good": 20,
-      "bad": 1
+      "good": 21,
+      "bad": 2
     },
     "würden": {
-      "good": 21,
+      "good": 22,
       "bad": 0
     },
     "dann": {
@@ -75,11 +75,11 @@
       "bad": 0
     },
     "würdest": {
-      "good": 59,
+      "good": 60,
       "bad": 11
     },
     "machen": {
-      "good": 47,
+      "good": 48,
       "bad": 7
     },
     "hätte": {
@@ -183,8 +183,8 @@
       "bad": 19
     },
     "nicht": {
-      "good": 89,
-      "bad": 21
+      "good": 90,
+      "bad": 22
     },
     "erlischt": {
       "good": 19,
@@ -243,8 +243,8 @@
       "bad": 0
     },
     "was": {
-      "good": 71,
-      "bad": 67
+      "good": 72,
+      "bad": 68
     },
     "denn": {
       "good": 98,
@@ -351,8 +351,8 @@
       "bad": 25
     },
     "wenn": {
-      "good": 10,
-      "bad": 34
+      "good": 11,
+      "bad": 35
     },
     "gegenseitig": {
       "good": 0,
@@ -379,8 +379,8 @@
       "bad": 20
     },
     "klingt": {
-      "good": 2,
-      "bad": 15
+      "good": 3,
+      "bad": 16
     },
     "wild": {
       "good": 1,
@@ -619,8 +619,8 @@
       "bad": 0
     },
     "wirklich": {
-      "good": 1,
-      "bad": 22
+      "good": 2,
+      "bad": 23
     },
     "wünschen": {
       "good": 2,
@@ -876,10 +876,10 @@
     },
     "mal": {
       "good": 10,
-      "bad": 8
+      "bad": 9
     },
     "sehen": {
-      "good": 6,
+      "good": 7,
       "bad": 2
     },
     "bestimmt": {
@@ -1056,7 +1056,7 @@
     },
     "treffen": {
       "good": 4,
-      "bad": 0
+      "bad": 1
     },
     "bereuuen": {
       "good": 1,
@@ -1303,8 +1303,8 @@
       "bad": 2
     },
     "heute": {
-      "good": 4,
-      "bad": 2
+      "good": 5,
+      "bad": 3
     },
     "schönes": {
       "good": 0,
@@ -2243,8 +2243,8 @@
       "bad": 0
     },
     "leider": {
-      "good": 1,
-      "bad": 1
+      "good": 2,
+      "bad": 2
     },
     "dienstag": {
       "good": 0,
@@ -2531,8 +2531,8 @@
       "bad": 0
     },
     "klappt": {
-      "good": 1,
-      "bad": 0
+      "good": 2,
+      "bad": 1
     },
     "wärst": {
       "good": 0,
@@ -2677,12 +2677,24 @@
     "aufregendstes": {
       "good": 0,
       "bad": 1
+    },
+    "idee": {
+      "good": 1,
+      "bad": 1
+    },
+    "schwebt": {
+      "good": 0,
+      "bad": 1
+    },
+    "nächste": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 113,
-      "total": 205
+      "good": 114,
+      "total": 207
     },
     "Bot-Vorwurf": {
       "good": 8,
@@ -2733,8 +2745,8 @@
         "length": 59
       },
       "goodResponse": "Danke, das wünsche ich dir ebenfalls. Und danke noch für das Kompliment, du machst mich auch echt neugierig! Aber nein dein alter stört mich nicht, da lege ich nicht so viel Wert drauf! Der Altersunte",
-      "successCount": 27,
-      "lastUsed": "2026-01-04T10:07:50.556Z"
+      "successCount": 28,
+      "lastUsed": "2026-01-04T20:05:32.373Z"
     },
     {
       "situation": "Bot-Vorwurf",
@@ -2932,6 +2944,6 @@
       "lastUsed": "2026-01-04T20:01:25.618Z"
     }
   ],
-  "lastUpdated": "2026-01-04T20:04:48.936Z",
+  "lastUpdated": "2026-01-04T20:05:32.373Z",
   "initialized": true
 }
