@@ -43,7 +43,7 @@
       "bad": 0
     },
     "dann": {
-      "good": 48,
+      "good": 49,
       "bad": 0
     },
     "irgendwo": {
@@ -72,7 +72,7 @@
     },
     "hätte": {
       "good": 0,
-      "bad": 20
+      "bad": 21
     },
     "definitiv": {
       "good": 0,
@@ -111,7 +111,7 @@
       "bad": 20
     },
     "genau": {
-      "good": 25,
+      "good": 26,
       "bad": 42
     },
     "gibt": {
@@ -127,7 +127,7 @@
       "bad": 22
     },
     "den": {
-      "good": 8,
+      "good": 9,
       "bad": 25
     },
     "kopf": {
@@ -135,7 +135,7 @@
       "bad": 22
     },
     "hast": {
-      "good": 9,
+      "good": 12,
       "bad": 49
     },
     "verstehen": {
@@ -171,7 +171,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 64,
+      "good": 65,
       "bad": 21
     },
     "erlischt": {
@@ -200,7 +200,7 @@
     },
     "mich": {
       "good": 23,
-      "bad": 7
+      "bad": 8
     },
     "wohl": {
       "good": 19,
@@ -231,12 +231,12 @@
       "bad": 0
     },
     "was": {
-      "good": 56,
-      "bad": 50
+      "good": 58,
+      "bad": 51
     },
     "denn": {
-      "good": 73,
-      "bad": 10
+      "good": 75,
+      "bad": 11
     },
     "gerne": {
       "good": 22,
@@ -275,8 +275,8 @@
       "bad": 0
     },
     "als": {
-      "good": 20,
-      "bad": 3
+      "good": 21,
+      "bad": 4
     },
     "papa": {
       "good": 20,
@@ -391,7 +391,7 @@
       "bad": 3
     },
     "meine": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "muschi": {
@@ -591,7 +591,7 @@
       "bad": 0
     },
     "ganz": {
-      "good": 3,
+      "good": 4,
       "bad": 1
     },
     "mühe": {
@@ -616,7 +616,7 @@
     },
     "deinen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "wunsch": {
       "good": 0,
@@ -779,8 +779,8 @@
       "bad": 2
     },
     "gefällt": {
-      "good": 2,
-      "bad": 8
+      "good": 3,
+      "bad": 9
     },
     "brieffreundschaft": {
       "good": 3,
@@ -803,7 +803,7 @@
       "bad": 3
     },
     "sex": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "nichz": {
@@ -924,7 +924,7 @@
     },
     "freut": {
       "good": 1,
-      "bad": 5
+      "bad": 6
     },
     "wilfried": {
       "good": 1,
@@ -1168,7 +1168,7 @@
     },
     "hören": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "welche": {
       "good": 0,
@@ -1351,7 +1351,7 @@
       "bad": 3
     },
     "gemacht": {
-      "good": 2,
+      "good": 3,
       "bad": 3
     },
     "feiern": {
@@ -1524,7 +1524,7 @@
     },
     "besonders": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "kommen": {
       "good": 2,
@@ -1539,7 +1539,7 @@
       "bad": 0
     },
     "schonmal": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "mobil": {
@@ -1613,6 +1613,62 @@
     "gezogen": {
       "good": 0,
       "bad": 2
+    },
+    "steifen": {
+      "good": 1,
+      "bad": 0
+    },
+    "bekommen": {
+      "good": 1,
+      "bad": 0
+    },
+    "meinem": {
+      "good": 1,
+      "bad": 0
+    },
+    "körper": {
+      "good": 1,
+      "bad": 0
+    },
+    "meisten": {
+      "good": 1,
+      "bad": 0
+    },
+    "frage": {
+      "good": 1,
+      "bad": 0
+    },
+    "jetzt": {
+      "good": 1,
+      "bad": 0
+    },
+    "beantwortet": {
+      "good": 1,
+      "bad": 0
+    },
+    "hattest": {
+      "good": 1,
+      "bad": 0
+    },
+    "scheint": {
+      "good": 0,
+      "bad": 1
+    },
+    "geschmack": {
+      "good": 0,
+      "bad": 1
+    },
+    "getroffen": {
+      "good": 0,
+      "bad": 1
+    },
+    "meinen": {
+      "good": 0,
+      "bad": 1
+    },
+    "bildern": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -1639,6 +1695,10 @@
     "Treffen/Termine": {
       "good": 4,
       "total": 8
+    },
+    "Bilder Anfrage": {
+      "good": 1,
+      "total": 2
     }
   },
   "responsePatterns": [
@@ -1758,8 +1818,21 @@
       "goodResponse": "Die sehen doch nicht aus wie Bälle? Ich glaube wenn ich oben ohne vor dir stehen würde, würdest du trotzdem anfangen zu sabbern! Oder denkst du, du bist da anderer Meinung?",
       "successCount": 1,
       "lastUsed": "2026-01-03T15:39:46.081Z"
+    },
+    {
+      "situation": "Bilder Anfrage",
+      "customerPattern": {
+        "keywords": "mal als deine bilder gesehen hab dann habe direkt steifen",
+        "hasQuestion": false,
+        "hasMeeting": true,
+        "hasSexual": false,
+        "length": 83
+      },
+      "goodResponse": "Und was hast du dann gemacht als du den steifen bekommen hast?😛Was genau an meinem Körper gefällt dir denn am meisten? Aber meine Frage hast du ja jetzt nicht ganz beantwortet! Hattest du denn schonm",
+      "successCount": 1,
+      "lastUsed": "2026-01-04T09:42:39.613Z"
     }
   ],
-  "lastUpdated": "2026-01-04T09:39:30.687Z",
+  "lastUpdated": "2026-01-04T09:42:39.613Z",
   "initialized": true
 }
