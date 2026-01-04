@@ -72,11 +72,11 @@
     },
     "würdest": {
       "good": 55,
-      "bad": 8
+      "bad": 9
     },
     "machen": {
       "good": 43,
-      "bad": 5
+      "bad": 6
     },
     "hätte": {
       "good": 0,
@@ -104,7 +104,7 @@
     },
     "wie": {
       "good": 35,
-      "bad": 54
+      "bad": 55
     },
     "stellst": {
       "good": 0,
@@ -148,7 +148,7 @@
     },
     "verstehen": {
       "good": 23,
-      "bad": 19
+      "bad": 20
     },
     "mehr": {
       "good": 25,
@@ -172,14 +172,14 @@
     },
     "auch": {
       "good": 101,
-      "bad": 22
+      "bad": 23
     },
     "funke": {
       "good": 19,
       "bad": 19
     },
     "nicht": {
-      "good": 83,
+      "good": 85,
       "bad": 21
     },
     "erlischt": {
@@ -207,7 +207,7 @@
       "bad": 0
     },
     "mich": {
-      "good": 33,
+      "good": 34,
       "bad": 15
     },
     "wohl": {
@@ -232,26 +232,26 @@
     },
     "viel": {
       "good": 24,
-      "bad": 0
+      "bad": 1
     },
     "los": {
       "good": 19,
       "bad": 0
     },
     "was": {
-      "good": 66,
-      "bad": 61
+      "good": 67,
+      "bad": 62
     },
     "denn": {
-      "good": 90,
+      "good": 92,
       "bad": 14
     },
     "gerne": {
       "good": 27,
-      "bad": 8
+      "bad": 10
     },
     "wollen": {
-      "good": 24,
+      "good": 25,
       "bad": 0
     },
     "wieder": {
@@ -295,7 +295,7 @@
       "bad": 0
     },
     "sicher": {
-      "good": 27,
+      "good": 28,
       "bad": 2
     },
     "frauen": {
@@ -311,7 +311,7 @@
       "bad": 0
     },
     "hier": {
-      "good": 20,
+      "good": 21,
       "bad": 2
     },
     "hof": {
@@ -327,7 +327,7 @@
       "bad": 1
     },
     "denkst": {
-      "good": 29,
+      "good": 31,
       "bad": 2
     },
     "zweiteudig": {
@@ -395,8 +395,8 @@
       "bad": 0
     },
     "würde": {
-      "good": 8,
-      "bad": 3
+      "good": 9,
+      "bad": 4
     },
     "meine": {
       "good": 4,
@@ -524,7 +524,7 @@
     },
     "alles": {
       "good": 2,
-      "bad": 3
+      "bad": 4
     },
     "neu": {
       "good": 1,
@@ -732,7 +732,7 @@
     },
     "bist": {
       "good": 6,
-      "bad": 0
+      "bad": 1
     },
     "allgemein": {
       "good": 3,
@@ -780,7 +780,7 @@
     },
     "macht": {
       "good": 0,
-      "bad": 8
+      "bad": 9
     },
     "intensiver": {
       "good": 0,
@@ -875,8 +875,8 @@
       "bad": 8
     },
     "sehen": {
-      "good": 5,
-      "bad": 1
+      "good": 6,
+      "bad": 2
     },
     "bestimmt": {
       "good": 3,
@@ -915,7 +915,7 @@
       "bad": 2
     },
     "bin": {
-      "good": 8,
+      "good": 9,
       "bad": 5
     },
     "gemeinsam": {
@@ -947,7 +947,7 @@
       "bad": 0
     },
     "dich": {
-      "good": 25,
+      "good": 26,
       "bad": 14
     },
     "stört": {
@@ -1039,7 +1039,7 @@
       "bad": 0
     },
     "ber": {
-      "good": 4,
+      "good": 5,
       "bad": 7
     },
     "erfahren": {
@@ -1084,7 +1084,7 @@
     },
     "zusammen": {
       "good": 7,
-      "bad": 2
+      "bad": 3
     },
     "wären": {
       "good": 1,
@@ -1740,7 +1740,7 @@
     },
     "kennenlernen": {
       "good": 1,
-      "bad": 0
+      "bad": 1
     },
     "chemie": {
       "good": 1,
@@ -2000,7 +2000,7 @@
     },
     "drauf": {
       "good": 3,
-      "bad": 0
+      "bad": 1
     },
     "ralf": {
       "good": 0,
@@ -2277,6 +2277,34 @@
     "langsam": {
       "good": 0,
       "bad": 1
+    },
+    "selbstverständlich": {
+      "good": 1,
+      "bad": 0
+    },
+    "nichtmal": {
+      "good": 1,
+      "bad": 0
+    },
+    "langeweile": {
+      "good": 1,
+      "bad": 0
+    },
+    "angemeldet": {
+      "good": 1,
+      "bad": 0
+    },
+    "warum": {
+      "good": 1,
+      "bad": 0
+    },
+    "persönliche": {
+      "good": 0,
+      "bad": 1
+    },
+    "realer": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -2289,8 +2317,8 @@
       "total": 10
     },
     "Sexuelle Themen": {
-      "good": 10,
-      "total": 20
+      "good": 11,
+      "total": 22
     },
     "Wonach suchst du?": {
       "good": 1,
@@ -2465,8 +2493,21 @@
       "goodResponse": "Eine geile Vorstellung hast du! Wie würde es denn danach weitergehen? Hast du denn bestimmte Vorlieben oder Fetische die du gerne mit uns ausleben wollen würdest? Wir haben auch einige versaute Fantas",
       "successCount": 1,
       "lastUsed": "2026-01-04T10:11:19.142Z"
+    },
+    {
+      "situation": "Sexuelle Themen",
+      "customerPattern": {
+        "keywords": "nur wenn dich echt sehen dabei geht noch gar nicht",
+        "hasQuestion": false,
+        "hasMeeting": true,
+        "hasSexual": true,
+        "length": 166
+      },
+      "goodResponse": "Aber das ist ja selbstverständlich oder nicht? Denkst du denn ich würde dich nichtmal sehen wollen oder was? Ich bin hier sicher nicht aus langeweile angemeldet! Warum denkst du denn so über mich?",
+      "successCount": 1,
+      "lastUsed": "2026-01-04T12:51:21.994Z"
     }
   ],
-  "lastUpdated": "2026-01-04T12:46:13.186Z",
+  "lastUpdated": "2026-01-04T12:51:21.994Z",
   "initialized": true
 }
