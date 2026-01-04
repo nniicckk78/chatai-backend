@@ -1457,12 +1457,16 @@
     {
       "customerMessage": "Ja genau. Darf ich Dich zu einem Kaffee, oder so einladen??",
       "moderatorResponse": "Das klingt nicht schlecht, bei mir ist gerade viel los aber ich bin auf jeden Fall nicht abgeneigt, wie trinkst du gerne deinen Kaffee?",
-      "situation": "allgemein",
+      "situation": "Treffen/Termine",
       "createdAt": "2026-01-04T20:09:53.658Z",
       "source": "feedback_generated_edited",
       "priority": true,
       "feedbackId": "feedback_1767374513363_qi9uxm83u",
-      "variationIndex": 1
+      "variationIndex": 1,
+      "situations": [
+        "Treffen/Termine"
+      ],
+      "updatedAt": "2026-01-04T20:33:27.117Z"
     },
     {
       "customerMessage": "Ja genau. Darf ich Dich zu einem Kaffee, oder so einladen??",
