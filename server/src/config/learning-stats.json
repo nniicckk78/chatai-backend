@@ -39,8 +39,8 @@
       "bad": 6
     },
     "sich": {
-      "good": 23,
-      "bad": 19
+      "good": 24,
+      "bad": 20
     },
     "sehr": {
       "good": 25,
@@ -147,7 +147,7 @@
       "bad": 23
     },
     "hast": {
-      "good": 18,
+      "good": 19,
       "bad": 52
     },
     "verstehen": {
@@ -155,8 +155,8 @@
       "bad": 20
     },
     "mehr": {
-      "good": 25,
-      "bad": 25
+      "good": 26,
+      "bad": 26
     },
     "wünschst": {
       "good": 19,
@@ -175,8 +175,8 @@
       "bad": 19
     },
     "auch": {
-      "good": 106,
-      "bad": 23
+      "good": 107,
+      "bad": 24
     },
     "funke": {
       "good": 19,
@@ -243,11 +243,11 @@
       "bad": 0
     },
     "was": {
-      "good": 70,
-      "bad": 64
+      "good": 71,
+      "bad": 65
     },
     "denn": {
-      "good": 97,
+      "good": 98,
       "bad": 14
     },
     "gerne": {
@@ -351,8 +351,8 @@
       "bad": 25
     },
     "wenn": {
-      "good": 9,
-      "bad": 33
+      "good": 10,
+      "bad": 34
     },
     "gegenseitig": {
       "good": 0,
@@ -663,8 +663,8 @@
       "bad": 7
     },
     "gut": {
-      "good": 13,
-      "bad": 5
+      "good": 14,
+      "bad": 6
     },
     "eigentlich": {
       "good": 5,
@@ -708,7 +708,7 @@
     },
     "deine": {
       "good": 5,
-      "bad": 10
+      "bad": 11
     },
     "hobbys": {
       "good": 0,
@@ -759,8 +759,8 @@
       "bad": 0
     },
     "immer": {
-      "good": 11,
-      "bad": 7
+      "good": 12,
+      "bad": 8
     },
     "geniessen": {
       "good": 0,
@@ -815,8 +815,8 @@
       "bad": 3
     },
     "sex": {
-      "good": 11,
-      "bad": 0
+      "good": 12,
+      "bad": 1
     },
     "nichz": {
       "good": 2,
@@ -863,8 +863,8 @@
       "bad": 5
     },
     "spass": {
-      "good": 0,
-      "bad": 3
+      "good": 1,
+      "bad": 4
     },
     "nacht": {
       "good": 0,
@@ -1191,7 +1191,7 @@
       "bad": 2
     },
     "vorlieben": {
-      "good": 1,
+      "good": 2,
       "bad": 2
     },
     "begeistern": {
@@ -1747,12 +1747,12 @@
       "bad": 1
     },
     "chemie": {
-      "good": 1,
-      "bad": 0
+      "good": 2,
+      "bad": 2
     },
     "stimmt": {
-      "good": 1,
-      "bad": 0
+      "good": 2,
+      "bad": 1
     },
     "herauszufinden": {
       "good": 1,
@@ -2056,7 +2056,7 @@
     },
     "liebsten": {
       "good": 2,
-      "bad": 5
+      "bad": 6
     },
     "komme": {
       "good": 2,
@@ -2219,8 +2219,8 @@
       "bad": 1
     },
     "entwickeln": {
-      "good": 0,
-      "bad": 1
+      "good": 1,
+      "bad": 2
     },
     "bescheid": {
       "good": 2,
@@ -2601,6 +2601,22 @@
     "stadt": {
       "good": 0,
       "bad": 1
+    },
+    "klingen": {
+      "good": 1,
+      "bad": 1
+    },
+    "suche": {
+      "good": 1,
+      "bad": 1
+    },
+    "aktivitäten": {
+      "good": 0,
+      "bad": 1
+    },
+    "testen": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -2613,8 +2629,8 @@
       "total": 16
     },
     "Sexuelle Themen": {
-      "good": 12,
-      "total": 24
+      "good": 13,
+      "total": 26
     },
     "Wonach suchst du?": {
       "good": 1,
@@ -2709,8 +2725,8 @@
         "length": 145
       },
       "goodResponse": "Denkst du ich will eine Brieffreundschaft nur weil es zeitlich bei mir gerade nicht passt oder was? Ich will mir doch den Sex mit dir nicht entegehen lassen. Diese Anspielung finde ich nicht nett. Wie",
-      "successCount": 3,
-      "lastUsed": "2026-01-03T15:19:24.939Z"
+      "successCount": 4,
+      "lastUsed": "2026-01-04T20:03:09.673Z"
     },
     {
       "situation": "Geld/Coins",
@@ -2856,6 +2872,6 @@
       "lastUsed": "2026-01-04T20:01:25.618Z"
     }
   ],
-  "lastUpdated": "2026-01-04T20:02:23.914Z",
+  "lastUpdated": "2026-01-04T20:03:09.673Z",
   "initialized": true
 }
