@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 47,
+      "count": 48,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -21,6 +21,10 @@
       "successRate": 0
     },
     "würde es": {
+      "count": 1,
+      "successRate": 0
+    },
+    "würdest du als erstes machen wollen?": {
       "count": 1,
       "successRate": 0
     }
@@ -67,12 +71,12 @@
       "bad": 0
     },
     "würdest": {
-      "good": 53,
-      "bad": 7
+      "good": 55,
+      "bad": 8
     },
     "machen": {
-      "good": 41,
-      "bad": 4
+      "good": 42,
+      "bad": 5
     },
     "hätte": {
       "good": 0,
@@ -99,7 +103,7 @@
       "bad": 20
     },
     "wie": {
-      "good": 33,
+      "good": 34,
       "bad": 52
     },
     "stellst": {
@@ -131,8 +135,8 @@
       "bad": 22
     },
     "den": {
-      "good": 10,
-      "bad": 28
+      "good": 11,
+      "bad": 29
     },
     "kopf": {
       "good": 1,
@@ -196,7 +200,7 @@
     },
     "bisschen": {
       "good": 23,
-      "bad": 3
+      "bad": 4
     },
     "damit": {
       "good": 19,
@@ -235,11 +239,11 @@
       "bad": 0
     },
     "was": {
-      "good": 62,
-      "bad": 59
+      "good": 63,
+      "bad": 60
     },
     "denn": {
-      "good": 86,
+      "good": 87,
       "bad": 14
     },
     "gerne": {
@@ -247,7 +251,7 @@
       "bad": 8
     },
     "wollen": {
-      "good": 22,
+      "good": 23,
       "bad": 0
     },
     "wieder": {
@@ -260,7 +264,7 @@
     },
     "vorstellen": {
       "good": 20,
-      "bad": 4
+      "bad": 5
     },
     "einfach": {
       "good": 21,
@@ -279,8 +283,8 @@
       "bad": 0
     },
     "als": {
-      "good": 25,
-      "bad": 5
+      "good": 26,
+      "bad": 6
     },
     "papa": {
       "good": 20,
@@ -372,7 +376,7 @@
     },
     "klingt": {
       "good": 2,
-      "bad": 4
+      "bad": 5
     },
     "wild": {
       "good": 1,
@@ -448,7 +452,7 @@
     },
     "könnte": {
       "good": 2,
-      "bad": 2
+      "bad": 3
     },
     "toll": {
       "good": 0,
@@ -468,7 +472,7 @@
     },
     "wäre": {
       "good": 4,
-      "bad": 7
+      "bad": 8
     },
     "perfektes": {
       "good": 0,
@@ -867,7 +871,7 @@
       "bad": 0
     },
     "mal": {
-      "good": 5,
+      "good": 6,
       "bad": 8
     },
     "sehen": {
@@ -1024,7 +1028,7 @@
     },
     "schon": {
       "good": 17,
-      "bad": 3
+      "bad": 4
     },
     "noch": {
       "good": 12,
@@ -1555,7 +1559,7 @@
       "bad": 0
     },
     "deinem": {
-      "good": 2,
+      "good": 3,
       "bad": 3
     },
     "getrieben": {
@@ -1643,7 +1647,7 @@
       "bad": 0
     },
     "jetzt": {
-      "good": 5,
+      "good": 7,
       "bad": 0
     },
     "beantwortet": {
@@ -1691,7 +1695,7 @@
       "bad": 0
     },
     "bett": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "langweilig": {
@@ -1787,7 +1791,7 @@
       "bad": 1
     },
     "stell": {
-      "good": 0,
+      "good": 1,
       "bad": 1
     },
     "anschaue": {
@@ -1851,7 +1855,7 @@
       "bad": 0
     },
     "erstes": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "ficken": {
@@ -1907,7 +1911,7 @@
       "bad": 2
     },
     "nackt": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "liegen": {
@@ -2047,8 +2051,8 @@
       "bad": 3
     },
     "liebsten": {
-      "good": 0,
-      "bad": 4
+      "good": 1,
+      "bad": 5
     },
     "komme": {
       "good": 2,
@@ -2157,12 +2161,36 @@
     "verbringst": {
       "good": 0,
       "bad": 1
+    },
+    "druck": {
+      "good": 1,
+      "bad": 1
+    },
+    "ablassen": {
+      "good": 1,
+      "bad": 0
+    },
+    "liege": {
+      "good": 1,
+      "bad": 0
+    },
+    "entspannung": {
+      "good": 0,
+      "bad": 1
+    },
+    "nötig": {
+      "good": 0,
+      "bad": 1
+    },
+    "loszuwerden": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 107,
-      "total": 193
+      "good": 108,
+      "total": 195
     },
     "Bot-Vorwurf": {
       "good": 5,
@@ -2295,6 +2323,19 @@
       "lastUsed": "2026-01-04T09:43:35.967Z"
     },
     {
+      "situation": "allgemein",
+      "customerPattern": {
+        "keywords": "sollten nicht erstmal kennenlernen dann sehen kompatibel wenn dann schon",
+        "hasQuestion": false,
+        "hasMeeting": true,
+        "hasSexual": false,
+        "length": 154
+      },
+      "goodResponse": "Wie würdest du denn jetzt am liebsten den Druck ablassen? Stell dir mal vor ich liege jetzt nackt in deinem Bett, was würdest du als erstes machen wollen? 😛",
+      "successCount": 2,
+      "lastUsed": "2026-01-04T12:36:39.157Z"
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
@@ -2321,19 +2362,6 @@
       "lastUsed": "2026-01-03T15:39:46.081Z"
     },
     {
-      "situation": "allgemein",
-      "customerPattern": {
-        "keywords": "sollten nicht erstmal kennenlernen dann sehen kompatibel wenn dann schon",
-        "hasQuestion": false,
-        "hasMeeting": true,
-        "hasSexual": false,
-        "length": 154
-      },
-      "goodResponse": "Klar, sich erstmal kennenlernen und schauen, ob die Chemie stimmt, klingt gut. Was wäre für dich wichtig, um herauszufinden, ob wir gut zusammenpassen?",
-      "successCount": 1,
-      "lastUsed": "2026-01-04T09:46:42.351Z"
-    },
-    {
       "situation": "Sexuelle Themen",
       "customerPattern": {
         "keywords": "wenn mein schwanz sitzt anderen muschi lecke",
@@ -2347,6 +2375,6 @@
       "lastUsed": "2026-01-04T10:11:19.142Z"
     }
   ],
-  "lastUpdated": "2026-01-04T10:14:06.726Z",
+  "lastUpdated": "2026-01-04T12:36:39.158Z",
   "initialized": true
 }
