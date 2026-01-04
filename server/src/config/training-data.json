@@ -1443,12 +1443,16 @@
     {
       "customerMessage": "Ja genau. Darf ich Dich zu einem Kaffee, oder so einladen??",
       "moderatorResponse": "Oh, das klingt wirklich nett! Ich muss mal schauen wann es bei mir klappt und was machen wir wenn wir uns beim Kaffee trinken näher kommen möchten?",
-      "situation": "allgemein",
+      "situation": "Treffen/Termine",
       "createdAt": "2026-01-04T20:09:53.658Z",
       "source": "feedback_generated_edited",
       "priority": true,
       "feedbackId": "feedback_1767374513363_qi9uxm83u",
-      "variationIndex": 0
+      "variationIndex": 0,
+      "situations": [
+        "Treffen/Termine"
+      ],
+      "updatedAt": "2026-01-04T20:33:21.390Z"
     },
     {
       "customerMessage": "Ja genau. Darf ich Dich zu einem Kaffee, oder so einladen??",
