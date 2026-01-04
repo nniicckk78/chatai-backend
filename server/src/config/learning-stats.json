@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 45,
+      "count": 46,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -24,11 +24,11 @@
   "wordFrequency": {
     "hört": {
       "good": 20,
-      "bad": 4
+      "bad": 5
     },
     "sich": {
       "good": 21,
-      "bad": 13
+      "bad": 14
     },
     "sehr": {
       "good": 22,
@@ -63,7 +63,7 @@
       "bad": 0
     },
     "würdest": {
-      "good": 50,
+      "good": 51,
       "bad": 5
     },
     "machen": {
@@ -171,7 +171,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 68,
+      "good": 69,
       "bad": 21
     },
     "erlischt": {
@@ -199,7 +199,7 @@
       "bad": 0
     },
     "mich": {
-      "good": 25,
+      "good": 26,
       "bad": 10
     },
     "wohl": {
@@ -232,10 +232,10 @@
     },
     "was": {
       "good": 61,
-      "bad": 52
+      "bad": 53
     },
     "denn": {
-      "good": 81,
+      "good": 82,
       "bad": 12
     },
     "gerne": {
@@ -243,7 +243,7 @@
       "bad": 3
     },
     "wollen": {
-      "good": 20,
+      "good": 21,
       "bad": 0
     },
     "wieder": {
@@ -275,7 +275,7 @@
       "bad": 0
     },
     "als": {
-      "good": 22,
+      "good": 23,
       "bad": 5
     },
     "papa": {
@@ -340,7 +340,7 @@
     },
     "wenn": {
       "good": 6,
-      "bad": 27
+      "bad": 28
     },
     "gegenseitig": {
       "good": 0,
@@ -360,7 +360,7 @@
     },
     "dabei": {
       "good": 0,
-      "bad": 22
+      "bad": 23
     },
     "vorgestellt": {
       "good": 0,
@@ -407,7 +407,7 @@
       "bad": 0
     },
     "kannst": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "schön": {
@@ -719,7 +719,7 @@
       "bad": 0
     },
     "doggy": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "bist": {
@@ -764,7 +764,7 @@
     },
     "mag": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "doggi": {
       "good": 0,
@@ -780,7 +780,7 @@
     },
     "gefällt": {
       "good": 4,
-      "bad": 10
+      "bad": 11
     },
     "brieffreundschaft": {
       "good": 3,
@@ -856,7 +856,7 @@
     },
     "nacht": {
       "good": 0,
-      "bad": 3
+      "bad": 4
     },
     "wette": {
       "good": 2,
@@ -871,7 +871,7 @@
       "bad": 0
     },
     "bestimmt": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "hände": {
@@ -939,7 +939,7 @@
       "bad": 0
     },
     "dich": {
-      "good": 17,
+      "good": 18,
       "bad": 12
     },
     "stört": {
@@ -1275,7 +1275,7 @@
       "bad": 2
     },
     "darauf": {
-      "good": 0,
+      "good": 1,
       "bad": 2
     },
     "weiter": {
@@ -1632,7 +1632,7 @@
     },
     "meisten": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "frage": {
       "good": 2,
@@ -1675,7 +1675,7 @@
       "bad": 0
     },
     "wahr": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "viele": {
@@ -1833,12 +1833,44 @@
     "ganze": {
       "good": 0,
       "bad": 1
+    },
+    "verlassen": {
+      "good": 1,
+      "bad": 0
+    },
+    "welcher": {
+      "good": 1,
+      "bad": 0
+    },
+    "stellung": {
+      "good": 1,
+      "bad": 0
+    },
+    "erstes": {
+      "good": 1,
+      "bad": 0
+    },
+    "ficken": {
+      "good": 1,
+      "bad": 0
+    },
+    "wow": {
+      "good": 0,
+      "bad": 1
+    },
+    "intensiven": {
+      "good": 0,
+      "bad": 1
+    },
+    "leidenschaftlich": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 99,
-      "total": 177
+      "good": 100,
+      "total": 179
     },
     "Bot-Vorwurf": {
       "good": 5,
@@ -1876,8 +1908,8 @@
         "length": 132
       },
       "goodResponse": "Das ist echt schade das du darin keinen Sinn siehst. Ich denke du und ich könnten zusammen eine echt tolle gemeinsame Zeit zusammen verbringen. Gibt es denn nichts mit was ich dich überzeugen könnte d",
-      "successCount": 74,
-      "lastUsed": "2026-01-04T09:51:30.660Z"
+      "successCount": 75,
+      "lastUsed": "2026-01-04T09:55:06.894Z"
     },
     {
       "situation": "allgemein",
@@ -2010,6 +2042,6 @@
       "lastUsed": "2026-01-04T09:46:42.351Z"
     }
   ],
-  "lastUpdated": "2026-01-04T09:51:30.660Z",
+  "lastUpdated": "2026-01-04T09:55:06.894Z",
   "initialized": true
 }
