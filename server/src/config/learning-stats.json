@@ -28,7 +28,7 @@
     },
     "sich": {
       "good": 21,
-      "bad": 14
+      "bad": 15
     },
     "sehr": {
       "good": 22,
@@ -171,7 +171,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 69,
+      "good": 70,
       "bad": 21
     },
     "erlischt": {
@@ -192,7 +192,7 @@
     },
     "bisschen": {
       "good": 23,
-      "bad": 1
+      "bad": 2
     },
     "damit": {
       "good": 19,
@@ -216,7 +216,7 @@
     },
     "zeit": {
       "good": 22,
-      "bad": 0
+      "bad": 1
     },
     "ziemlich": {
       "good": 22,
@@ -236,7 +236,7 @@
     },
     "denn": {
       "good": 82,
-      "bad": 12
+      "bad": 13
     },
     "gerne": {
       "good": 22,
@@ -356,7 +356,7 @@
     },
     "können": {
       "good": 2,
-      "bad": 27
+      "bad": 28
     },
     "dabei": {
       "good": 0,
@@ -399,7 +399,7 @@
       "bad": 0
     },
     "richtig": {
-      "good": 12,
+      "good": 13,
       "bad": 8
     },
     "feucht": {
@@ -412,7 +412,7 @@
     },
     "schön": {
       "good": 1,
-      "bad": 3
+      "bad": 4
     },
     "lecken": {
       "good": 1,
@@ -463,8 +463,8 @@
       "bad": 1
     },
     "wäre": {
-      "good": 2,
-      "bad": 5
+      "good": 3,
+      "bad": 6
     },
     "perfektes": {
       "good": 0,
@@ -583,11 +583,11 @@
       "bad": 0
     },
     "jeden": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "fall": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "ganz": {
@@ -608,7 +608,7 @@
     },
     "wirklich": {
       "good": 1,
-      "bad": 13
+      "bad": 14
     },
     "wünschen": {
       "good": 1,
@@ -747,7 +747,7 @@
       "bad": 0
     },
     "immer": {
-      "good": 7,
+      "good": 8,
       "bad": 5
     },
     "geniessen": {
@@ -799,11 +799,11 @@
       "bad": 0
     },
     "doch": {
-      "good": 9,
+      "good": 10,
       "bad": 3
     },
     "sex": {
-      "good": 7,
+      "good": 8,
       "bad": 0
     },
     "nichz": {
@@ -939,7 +939,7 @@
       "bad": 0
     },
     "dich": {
-      "good": 18,
+      "good": 19,
       "bad": 12
     },
     "stört": {
@@ -1440,7 +1440,7 @@
     },
     "finden": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "wohlfühlt": {
       "good": 0,
@@ -1639,7 +1639,7 @@
       "bad": 0
     },
     "jetzt": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "beantwortet": {
@@ -1675,7 +1675,7 @@
       "bad": 0
     },
     "wahr": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "viele": {
@@ -1865,12 +1865,48 @@
     "leidenschaftlich": {
       "good": 0,
       "bad": 1
+    },
+    "stimme": {
+      "good": 1,
+      "bad": 0
+    },
+    "spüren": {
+      "good": 1,
+      "bad": 1
+    },
+    "geile": {
+      "good": 2,
+      "bad": 0
+    },
+    "sache": {
+      "good": 2,
+      "bad": 0
+    },
+    "morgen": {
+      "good": 1,
+      "bad": 0
+    },
+    "endlich": {
+      "good": 0,
+      "bad": 1
+    },
+    "wann": {
+      "good": 0,
+      "bad": 1
+    },
+    "hättest": {
+      "good": 0,
+      "bad": 1
+    },
+    "möglichkeit": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 100,
-      "total": 179
+      "good": 101,
+      "total": 181
     },
     "Bot-Vorwurf": {
       "good": 5,
@@ -1908,8 +1944,8 @@
         "length": 132
       },
       "goodResponse": "Das ist echt schade das du darin keinen Sinn siehst. Ich denke du und ich könnten zusammen eine echt tolle gemeinsame Zeit zusammen verbringen. Gibt es denn nichts mit was ich dich überzeugen könnte d",
-      "successCount": 75,
-      "lastUsed": "2026-01-04T09:55:06.894Z"
+      "successCount": 76,
+      "lastUsed": "2026-01-04T09:57:13.547Z"
     },
     {
       "situation": "allgemein",
@@ -2042,6 +2078,6 @@
       "lastUsed": "2026-01-04T09:46:42.351Z"
     }
   ],
-  "lastUpdated": "2026-01-04T09:55:06.894Z",
+  "lastUpdated": "2026-01-04T09:57:13.547Z",
   "initialized": true
 }
