@@ -27,7 +27,7 @@
       "bad": 3
     },
     "sich": {
-      "good": 20,
+      "good": 21,
       "bad": 12
     },
     "sehr": {
@@ -231,7 +231,7 @@
       "bad": 0
     },
     "was": {
-      "good": 60,
+      "good": 61,
       "bad": 52
     },
     "denn": {
@@ -367,7 +367,7 @@
       "bad": 20
     },
     "klingt": {
-      "good": 1,
+      "good": 2,
       "bad": 3
     },
     "wild": {
@@ -463,7 +463,7 @@
       "bad": 1
     },
     "wäre": {
-      "good": 1,
+      "good": 2,
       "bad": 5
     },
     "perfektes": {
@@ -651,7 +651,7 @@
       "bad": 3
     },
     "gut": {
-      "good": 9,
+      "good": 11,
       "bad": 0
     },
     "eigentlich": {
@@ -939,7 +939,7 @@
       "bad": 0
     },
     "dich": {
-      "good": 16,
+      "good": 17,
       "bad": 11
     },
     "stört": {
@@ -971,7 +971,7 @@
       "bad": 1
     },
     "schauen": {
-      "good": 0,
+      "good": 1,
       "bad": 1
     },
     "ergibt": {
@@ -1211,7 +1211,7 @@
       "bad": 3
     },
     "wichtig": {
-      "good": 2,
+      "good": 3,
       "bad": 6
     },
     "zuerst": {
@@ -1431,7 +1431,7 @@
       "bad": 2
     },
     "klar": {
-      "good": 0,
+      "good": 1,
       "bad": 2
     },
     "jemanden": {
@@ -1725,12 +1725,36 @@
     "bringen": {
       "good": 0,
       "bad": 1
+    },
+    "erstmal": {
+      "good": 1,
+      "bad": 0
+    },
+    "kennenlernen": {
+      "good": 1,
+      "bad": 0
+    },
+    "chemie": {
+      "good": 1,
+      "bad": 0
+    },
+    "stimmt": {
+      "good": 1,
+      "bad": 0
+    },
+    "herauszufinden": {
+      "good": 1,
+      "bad": 0
+    },
+    "zusammenpassen": {
+      "good": 1,
+      "bad": 0
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 97,
-      "total": 174
+      "good": 98,
+      "total": 175
     },
     "Bot-Vorwurf": {
       "good": 5,
@@ -1887,8 +1911,21 @@
       "goodResponse": "Die sehen doch nicht aus wie Bälle? Ich glaube wenn ich oben ohne vor dir stehen würde, würdest du trotzdem anfangen zu sabbern! Oder denkst du, du bist da anderer Meinung?",
       "successCount": 1,
       "lastUsed": "2026-01-03T15:39:46.081Z"
+    },
+    {
+      "situation": "allgemein",
+      "customerPattern": {
+        "keywords": "sollten nicht erstmal kennenlernen dann sehen kompatibel wenn dann schon",
+        "hasQuestion": false,
+        "hasMeeting": true,
+        "hasSexual": false,
+        "length": 154
+      },
+      "goodResponse": "Klar, sich erstmal kennenlernen und schauen, ob die Chemie stimmt, klingt gut. Was wäre für dich wichtig, um herauszufinden, ob wir gut zusammenpassen?",
+      "successCount": 1,
+      "lastUsed": "2026-01-04T09:46:42.351Z"
     }
   ],
-  "lastUpdated": "2026-01-04T09:45:57.506Z",
+  "lastUpdated": "2026-01-04T09:46:42.351Z",
   "initialized": true
 }
