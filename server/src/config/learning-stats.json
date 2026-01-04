@@ -55,7 +55,7 @@
       "bad": 0
     },
     "dann": {
-      "good": 57,
+      "good": 58,
       "bad": 1
     },
     "irgendwo": {
@@ -107,7 +107,7 @@
       "bad": 20
     },
     "wie": {
-      "good": 36,
+      "good": 38,
       "bad": 57
     },
     "stellst": {
@@ -136,7 +136,7 @@
     },
     "ort": {
       "good": 0,
-      "bad": 22
+      "bad": 23
     },
     "den": {
       "good": 13,
@@ -196,7 +196,7 @@
     },
     "manchmal": {
       "good": 20,
-      "bad": 4
+      "bad": 5
     },
     "nur": {
       "good": 29,
@@ -216,7 +216,7 @@
     },
     "wohl": {
       "good": 19,
-      "bad": 0
+      "bad": 1
     },
     "fühle": {
       "good": 19,
@@ -247,7 +247,7 @@
       "bad": 64
     },
     "denn": {
-      "good": 96,
+      "good": 97,
       "bad": 14
     },
     "gerne": {
@@ -380,7 +380,7 @@
     },
     "klingt": {
       "good": 2,
-      "bad": 14
+      "bad": 15
     },
     "wild": {
       "good": 1,
@@ -620,7 +620,7 @@
     },
     "wirklich": {
       "good": 1,
-      "bad": 20
+      "bad": 21
     },
     "wünschen": {
       "good": 2,
@@ -663,7 +663,7 @@
       "bad": 7
     },
     "gut": {
-      "good": 12,
+      "good": 13,
       "bad": 5
     },
     "eigentlich": {
@@ -952,7 +952,7 @@
     },
     "dich": {
       "good": 27,
-      "bad": 17
+      "bad": 18
     },
     "stört": {
       "good": 7,
@@ -1031,7 +1031,7 @@
       "bad": 6
     },
     "schon": {
-      "good": 19,
+      "good": 20,
       "bad": 6
     },
     "noch": {
@@ -1475,7 +1475,7 @@
       "bad": 0
     },
     "findest": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "schade": {
@@ -1584,11 +1584,11 @@
     },
     "ruhigen": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "idyllischen": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "perfekt": {
       "good": 0,
@@ -1607,8 +1607,8 @@
       "bad": 2
     },
     "dort": {
-      "good": 0,
-      "bad": 3
+      "good": 1,
+      "bad": 4
     },
     "ansässig": {
       "good": 0,
@@ -1651,7 +1651,7 @@
       "bad": 0
     },
     "jetzt": {
-      "good": 11,
+      "good": 12,
       "bad": 0
     },
     "beantwortet": {
@@ -1935,7 +1935,7 @@
       "bad": 0
     },
     "lange": {
-      "good": 7,
+      "good": 8,
       "bad": 0
     },
     "durststrecke": {
@@ -2223,7 +2223,7 @@
       "bad": 1
     },
     "bescheid": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "besten": {
@@ -2565,12 +2565,48 @@
     "wolltest": {
       "good": 0,
       "bad": 1
+    },
+    "okay": {
+      "good": 1,
+      "bad": 0
+    },
+    "weis": {
+      "good": 1,
+      "bad": 0
+    },
+    "wohnst": {
+      "good": 1,
+      "bad": 0
+    },
+    "kaulsdorf": {
+      "good": 1,
+      "bad": 1
+    },
+    "fühlst": {
+      "good": 0,
+      "bad": 1
+    },
+    "vermisst": {
+      "good": 0,
+      "bad": 1
+    },
+    "lebhafte": {
+      "good": 0,
+      "bad": 1
+    },
+    "treiben": {
+      "good": 0,
+      "bad": 1
+    },
+    "stadt": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 111,
-      "total": 201
+      "good": 112,
+      "total": 203
     },
     "Bot-Vorwurf": {
       "good": 8,
@@ -2608,8 +2644,8 @@
         "length": 132
       },
       "goodResponse": "Freut mich das zu hören, nicht viele haben ein gutes Verhältnis zu ihren Geschwistern. Familie ist das wichtigste, findest du nicht auch? Würdest du von dir behaupten du kannst gut mit Kindern umgehen",
-      "successCount": 82,
-      "lastUsed": "2026-01-04T12:55:22.574Z"
+      "successCount": 83,
+      "lastUsed": "2026-01-04T20:02:23.914Z"
     },
     {
       "situation": "allgemein",
@@ -2820,6 +2856,6 @@
       "lastUsed": "2026-01-04T20:01:25.618Z"
     }
   ],
-  "lastUpdated": "2026-01-04T20:01:25.618Z",
+  "lastUpdated": "2026-01-04T20:02:23.914Z",
   "initialized": true
 }
