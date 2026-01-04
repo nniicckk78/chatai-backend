@@ -32,7 +32,7 @@
     },
     "sehr": {
       "good": 22,
-      "bad": 9
+      "bad": 10
     },
     "verlockend": {
       "good": 20,
@@ -124,7 +124,7 @@
     },
     "ort": {
       "good": 0,
-      "bad": 21
+      "bad": 22
     },
     "den": {
       "good": 8,
@@ -135,7 +135,7 @@
       "bad": 22
     },
     "hast": {
-      "good": 8,
+      "good": 9,
       "bad": 49
     },
     "verstehen": {
@@ -163,7 +163,7 @@
       "bad": 19
     },
     "auch": {
-      "good": 80,
+      "good": 82,
       "bad": 21
     },
     "funke": {
@@ -267,7 +267,7 @@
       "bad": 0
     },
     "dein": {
-      "good": 23,
+      "good": 24,
       "bad": 5
     },
     "bestes": {
@@ -368,7 +368,7 @@
     },
     "klingt": {
       "good": 1,
-      "bad": 2
+      "bad": 3
     },
     "wild": {
       "good": 1,
@@ -591,7 +591,7 @@
       "bad": 0
     },
     "ganz": {
-      "good": 2,
+      "good": 3,
       "bad": 1
     },
     "mühe": {
@@ -651,7 +651,7 @@
       "bad": 3
     },
     "gut": {
-      "good": 8,
+      "good": 9,
       "bad": 0
     },
     "eigentlich": {
@@ -723,7 +723,7 @@
       "bad": 0
     },
     "bist": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "allgemein": {
@@ -748,7 +748,7 @@
     },
     "immer": {
       "good": 6,
-      "bad": 3
+      "bad": 4
     },
     "geniessen": {
       "good": 0,
@@ -940,7 +940,7 @@
     },
     "dich": {
       "good": 16,
-      "bad": 10
+      "bad": 11
     },
     "stört": {
       "good": 1,
@@ -955,11 +955,11 @@
       "bad": 0
     },
     "kein": {
-      "good": 8,
+      "good": 9,
       "bad": 0
     },
     "problem": {
-      "good": 6,
+      "good": 7,
       "bad": 0
     },
     "mitte": {
@@ -1003,7 +1003,7 @@
       "bad": 0
     },
     "auto": {
-      "good": 4,
+      "good": 6,
       "bad": 0
     },
     "geld": {
@@ -1020,10 +1020,10 @@
     },
     "schon": {
       "good": 9,
-      "bad": 1
+      "bad": 2
     },
     "noch": {
-      "good": 7,
+      "good": 8,
       "bad": 1
     },
     "wenig": {
@@ -1371,7 +1371,7 @@
       "bad": 0
     },
     "bedeutet": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "schwachsinn": {
@@ -1527,98 +1527,98 @@
       "bad": 2
     },
     "kommen": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "nähe": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "entfernung": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "schonmal": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "mobil": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "shonmal": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "deinem": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "getrieben": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "jungfrau": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "apen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "tat": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "ruhigen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "idyllischen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "perfekt": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "zum": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "entspannen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "warst": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "dort": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "ansässig": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "später": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "dorthin": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "gezogen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 95,
-      "total": 170
+      "good": 96,
+      "total": 172
     },
     "Bot-Vorwurf": {
       "good": 5,
@@ -1664,9 +1664,9 @@
         "hasSexual": false,
         "length": 59
       },
-      "goodResponse": "Wir kommen auch ganz aus der Nähe. Das bedeutet die entfernung zwischen uns beiden ist schonmal kein Problem. Ist ja gut das du auch mobil bist, hast du es shonmal in deinem Auto getrieben? Oder ist d",
-      "successCount": 23,
-      "lastUsed": "2026-01-04T09:39:10.339Z"
+      "goodResponse": "Wir kommen auch ganz aus der Nähe. Das bedeutet die entfernung zwischen uns ist schonmal kein Problem. Ist ja gut das du auch mobil bist, hast du es shonmal in deinem Auto getrieben? Oder ist dein Aut",
+      "successCount": 24,
+      "lastUsed": "2026-01-04T09:39:30.687Z"
     },
     {
       "situation": "Bot-Vorwurf",
@@ -1760,6 +1760,6 @@
       "lastUsed": "2026-01-03T15:39:46.081Z"
     }
   ],
-  "lastUpdated": "2026-01-04T09:39:10.339Z",
+  "lastUpdated": "2026-01-04T09:39:30.687Z",
   "initialized": true
 }
