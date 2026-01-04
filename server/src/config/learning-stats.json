@@ -55,7 +55,7 @@
       "bad": 0
     },
     "dann": {
-      "good": 53,
+      "good": 54,
       "bad": 1
     },
     "irgendwo": {
@@ -128,7 +128,7 @@
     },
     "gibt": {
       "good": 23,
-      "bad": 27
+      "bad": 28
     },
     "bestimmten": {
       "good": 0,
@@ -175,7 +175,7 @@
       "bad": 19
     },
     "auch": {
-      "good": 103,
+      "good": 104,
       "bad": 23
     },
     "funke": {
@@ -199,7 +199,7 @@
       "bad": 4
     },
     "nur": {
-      "good": 28,
+      "good": 29,
       "bad": 3
     },
     "bisschen": {
@@ -247,12 +247,12 @@
       "bad": 64
     },
     "denn": {
-      "good": 95,
+      "good": 96,
       "bad": 14
     },
     "gerne": {
       "good": 28,
-      "bad": 11
+      "bad": 12
     },
     "wollen": {
       "good": 26,
@@ -380,7 +380,7 @@
     },
     "klingt": {
       "good": 2,
-      "bad": 11
+      "bad": 12
     },
     "wild": {
       "good": 1,
@@ -620,7 +620,7 @@
     },
     "wirklich": {
       "good": 1,
-      "bad": 18
+      "bad": 19
     },
     "wünschen": {
       "good": 2,
@@ -679,7 +679,7 @@
       "bad": 0
     },
     "hoffe": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "dads": {
@@ -799,7 +799,7 @@
       "bad": 3
     },
     "weil": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "zeitlich": {
@@ -875,7 +875,7 @@
       "bad": 0
     },
     "mal": {
-      "good": 8,
+      "good": 10,
       "bad": 8
     },
     "sehen": {
@@ -920,7 +920,7 @@
     },
     "bin": {
       "good": 9,
-      "bad": 5
+      "bad": 6
     },
     "gemeinsam": {
       "good": 0,
@@ -1156,7 +1156,7 @@
     },
     "sonst": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "frau": {
       "good": 0,
@@ -1172,7 +1172,7 @@
     },
     "neugierig": {
       "good": 5,
-      "bad": 2
+      "bad": 3
     },
     "betrifft": {
       "good": 2,
@@ -1184,7 +1184,7 @@
     },
     "welche": {
       "good": 0,
-      "bad": 3
+      "bad": 4
     },
     "anderen": {
       "good": 0,
@@ -1220,7 +1220,7 @@
     },
     "plan": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "wichtig": {
       "good": 3,
@@ -1651,7 +1651,7 @@
       "bad": 0
     },
     "jetzt": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "beantwortet": {
@@ -1659,7 +1659,7 @@
       "bad": 0
     },
     "hattest": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "scheint": {
@@ -1783,7 +1783,7 @@
       "bad": 1
     },
     "gefallen": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "heiss": {
@@ -1976,7 +1976,7 @@
     },
     "bestimmtes": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "ebenfalls": {
       "good": 3,
@@ -2103,7 +2103,7 @@
       "bad": 1
     },
     "ins": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "gerutscht": {
@@ -2457,6 +2457,46 @@
     "verwöhnst": {
       "good": 0,
       "bad": 1
+    },
+    "film": {
+      "good": 1,
+      "bad": 0
+    },
+    "gehst": {
+      "good": 1,
+      "bad": 0
+    },
+    "fters": {
+      "good": 1,
+      "bad": 0
+    },
+    "kino": {
+      "good": 1,
+      "bad": 1
+    },
+    "gutschein": {
+      "good": 1,
+      "bad": 0
+    },
+    "wunderbaren": {
+      "good": 0,
+      "bad": 1
+    },
+    "art": {
+      "good": 0,
+      "bad": 1
+    },
+    "filmen": {
+      "good": 0,
+      "bad": 1
+    },
+    "ansiehst": {
+      "good": 0,
+      "bad": 1
+    },
+    "genre": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -2465,8 +2505,8 @@
       "total": 201
     },
     "Bot-Vorwurf": {
-      "good": 5,
-      "total": 10
+      "good": 6,
+      "total": 12
     },
     "Sexuelle Themen": {
       "good": 12,
@@ -2526,8 +2566,8 @@
         "length": 406
       },
       "goodResponse": "Dann lass es uns doch herausfinden ob du und ich für einander gemacht sind? Das mit den Kindern ist mir gar nicht so wichtig, Kinder sind nicht das einizige was zählt. Es gibt noch genug andere wichti",
-      "successCount": 5,
-      "lastUsed": "2026-01-04T09:32:55.864Z"
+      "successCount": 6,
+      "lastUsed": "2026-01-04T14:57:25.350Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -2699,6 +2739,6 @@
       "lastUsed": "2026-01-04T14:55:41.943Z"
     }
   ],
-  "lastUpdated": "2026-01-04T14:55:41.943Z",
+  "lastUpdated": "2026-01-04T14:57:25.350Z",
   "initialized": true
 }
