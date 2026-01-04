@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 50,
+      "count": 51,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -47,7 +47,7 @@
       "bad": 1
     },
     "würden": {
-      "good": 20,
+      "good": 21,
       "bad": 0
     },
     "dann": {
@@ -71,11 +71,11 @@
       "bad": 0
     },
     "würdest": {
-      "good": 57,
+      "good": 58,
       "bad": 10
     },
     "machen": {
-      "good": 44,
+      "good": 45,
       "bad": 6
     },
     "hätte": {
@@ -116,7 +116,7 @@
     },
     "nachmittag": {
       "good": 0,
-      "bad": 20
+      "bad": 21
     },
     "genau": {
       "good": 27,
@@ -136,7 +136,7 @@
     },
     "den": {
       "good": 13,
-      "bad": 29
+      "bad": 30
     },
     "kopf": {
       "good": 1,
@@ -152,7 +152,7 @@
     },
     "mehr": {
       "good": 25,
-      "bad": 23
+      "bad": 24
     },
     "wünschst": {
       "good": 19,
@@ -239,19 +239,19 @@
       "bad": 0
     },
     "was": {
-      "good": 67,
-      "bad": 62
+      "good": 68,
+      "bad": 63
     },
     "denn": {
       "good": 94,
       "bad": 14
     },
     "gerne": {
-      "good": 27,
-      "bad": 10
+      "good": 28,
+      "bad": 11
     },
     "wollen": {
-      "good": 25,
+      "good": 26,
       "bad": 0
     },
     "wieder": {
@@ -283,7 +283,7 @@
       "bad": 0
     },
     "als": {
-      "good": 26,
+      "good": 27,
       "bad": 6
     },
     "papa": {
@@ -347,7 +347,7 @@
       "bad": 25
     },
     "wenn": {
-      "good": 8,
+      "good": 9,
       "bad": 31
     },
     "gegenseitig": {
@@ -376,7 +376,7 @@
     },
     "klingt": {
       "good": 2,
-      "bad": 9
+      "bad": 10
     },
     "wild": {
       "good": 1,
@@ -396,7 +396,7 @@
     },
     "würde": {
       "good": 9,
-      "bad": 4
+      "bad": 5
     },
     "meine": {
       "good": 4,
@@ -492,7 +492,7 @@
     },
     "hey": {
       "good": 2,
-      "bad": 1
+      "bad": 2
     },
     "oliver": {
       "good": 1,
@@ -704,11 +704,11 @@
     },
     "deine": {
       "good": 5,
-      "bad": 8
+      "bad": 9
     },
     "hobbys": {
       "good": 0,
-      "bad": 5
+      "bad": 6
     },
     "interessen": {
       "good": 0,
@@ -948,7 +948,7 @@
     },
     "dich": {
       "good": 26,
-      "bad": 15
+      "bad": 16
     },
     "stört": {
       "good": 7,
@@ -1000,7 +1000,7 @@
     },
     "entspannten": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "abend": {
       "good": 0,
@@ -1040,11 +1040,11 @@
     },
     "ber": {
       "good": 5,
-      "bad": 7
+      "bad": 8
     },
     "erfahren": {
       "good": 2,
-      "bad": 3
+      "bad": 4
     },
     "bevor": {
       "good": 2,
@@ -1087,7 +1087,7 @@
       "bad": 3
     },
     "wären": {
-      "good": 1,
+      "good": 2,
       "bad": 2
     },
     "bereuen": {
@@ -1299,7 +1299,7 @@
       "bad": 2
     },
     "heute": {
-      "good": 3,
+      "good": 4,
       "bad": 2
     },
     "schönes": {
@@ -1532,7 +1532,7 @@
     },
     "besonders": {
       "good": 0,
-      "bad": 8
+      "bad": 9
     },
     "kommen": {
       "good": 2,
@@ -1640,7 +1640,7 @@
     },
     "meisten": {
       "good": 2,
-      "bad": 1
+      "bad": 2
     },
     "frage": {
       "good": 2,
@@ -1812,7 +1812,7 @@
     },
     "daran": {
       "good": 1,
-      "bad": 1
+      "bad": 2
     },
     "bestrafen": {
       "good": 1,
@@ -1855,7 +1855,7 @@
       "bad": 0
     },
     "erstes": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "ficken": {
@@ -2239,7 +2239,7 @@
       "bad": 0
     },
     "leider": {
-      "good": 0,
+      "good": 1,
       "bad": 1
     },
     "dienstag": {
@@ -2413,6 +2413,22 @@
     "eingerichtet": {
       "good": 0,
       "bad": 1
+    },
+    "spontan": {
+      "good": 1,
+      "bad": 0
+    },
+    "maximilian": {
+      "good": 0,
+      "bad": 1
+    },
+    "fussball": {
+      "good": 0,
+      "bad": 1
+    },
+    "fasziniert": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -2437,8 +2453,8 @@
       "total": 4
     },
     "Treffen/Termine": {
-      "good": 5,
-      "total": 10
+      "good": 6,
+      "total": 12
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -2627,8 +2643,21 @@
       "goodResponse": "Gerade ist schlecht mit Fotos senden tut mir leid. Da musst du jetzt dein Kopfkino ein bisschen anstrengen.😛Klar in alle löcher warum denn nicht, hattest du denn schonmal Analsex oder würdest du das ",
       "successCount": 1,
       "lastUsed": "2026-01-04T12:53:14.674Z"
+    },
+    {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "hier was macht hier gerade wie sieht dem treffen langenfeld",
+        "hasQuestion": true,
+        "hasMeeting": true,
+        "hasSexual": false,
+        "length": 88
+      },
+      "goodResponse": "Wir würden gerne aber heute ist das leider zu spontan, was würdest du aber mit uns als erstes machen wollen wenn wir bei dir wären?",
+      "successCount": 1,
+      "lastUsed": "2026-01-04T13:26:24.375Z"
     }
   ],
-  "lastUpdated": "2026-01-04T12:55:22.574Z",
+  "lastUpdated": "2026-01-04T13:26:24.375Z",
   "initialized": true
 }
