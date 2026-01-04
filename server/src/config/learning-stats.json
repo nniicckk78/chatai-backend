@@ -43,7 +43,7 @@
       "bad": 0
     },
     "dann": {
-      "good": 50,
+      "good": 51,
       "bad": 0
     },
     "irgendwo": {
@@ -95,12 +95,12 @@
       "bad": 20
     },
     "wie": {
-      "good": 30,
-      "bad": 49
+      "good": 32,
+      "bad": 50
     },
     "stellst": {
       "good": 0,
-      "bad": 40
+      "bad": 41
     },
     "unseren": {
       "good": 0,
@@ -112,7 +112,7 @@
     },
     "genau": {
       "good": 27,
-      "bad": 42
+      "bad": 43
     },
     "gibt": {
       "good": 23,
@@ -199,7 +199,7 @@
       "bad": 0
     },
     "mich": {
-      "good": 23,
+      "good": 25,
       "bad": 10
     },
     "wohl": {
@@ -235,7 +235,7 @@
       "bad": 52
     },
     "denn": {
-      "good": 80,
+      "good": 81,
       "bad": 12
     },
     "gerne": {
@@ -315,7 +315,7 @@
       "bad": 4
     },
     "denke": {
-      "good": 44,
+      "good": 45,
       "bad": 1
     },
     "denkst": {
@@ -339,7 +339,7 @@
       "bad": 25
     },
     "wenn": {
-      "good": 5,
+      "good": 6,
       "bad": 27
     },
     "gegenseitig": {
@@ -368,7 +368,7 @@
     },
     "klingt": {
       "good": 2,
-      "bad": 3
+      "bad": 4
     },
     "wild": {
       "good": 1,
@@ -399,7 +399,7 @@
       "bad": 0
     },
     "richtig": {
-      "good": 11,
+      "good": 12,
       "bad": 8
     },
     "feucht": {
@@ -579,7 +579,7 @@
       "bad": 1
     },
     "werde": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "jeden": {
@@ -608,7 +608,7 @@
     },
     "wirklich": {
       "good": 1,
-      "bad": 12
+      "bad": 13
     },
     "wünschen": {
       "good": 1,
@@ -631,7 +631,7 @@
       "bad": 1
     },
     "geil": {
-      "good": 4,
+      "good": 5,
       "bad": 1
     },
     "liebe": {
@@ -656,7 +656,7 @@
     },
     "eigentlich": {
       "good": 5,
-      "bad": 0
+      "bad": 1
     },
     "typ": {
       "good": 5,
@@ -787,7 +787,7 @@
       "bad": 3
     },
     "weil": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "zeitlich": {
@@ -840,7 +840,7 @@
     },
     "direkt": {
       "good": 0,
-      "bad": 3
+      "bad": 4
     },
     "heisses": {
       "good": 0,
@@ -916,7 +916,7 @@
     },
     "aufregend": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "gestalten": {
       "good": 0,
@@ -1019,7 +1019,7 @@
       "bad": 6
     },
     "schon": {
-      "good": 10,
+      "good": 11,
       "bad": 3
     },
     "noch": {
@@ -1087,7 +1087,7 @@
       "bad": 0
     },
     "wirst": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "danach": {
@@ -1793,12 +1793,52 @@
     "nimmst": {
       "good": 0,
       "bad": 1
+    },
+    "willst": {
+      "good": 1,
+      "bad": 0
+    },
+    "betrafen": {
+      "good": 1,
+      "bad": 0
+    },
+    "daran": {
+      "good": 1,
+      "bad": 0
+    },
+    "bestrafen": {
+      "good": 1,
+      "bad": 0
+    },
+    "unartige": {
+      "good": 1,
+      "bad": 0
+    },
+    "schülerin": {
+      "good": 1,
+      "bad": 0
+    },
+    "spannend": {
+      "good": 0,
+      "bad": 1
+    },
+    "bekomme": {
+      "good": 0,
+      "bad": 1
+    },
+    "gänsehaut": {
+      "good": 0,
+      "bad": 1
+    },
+    "ganze": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 98,
-      "total": 175
+      "good": 99,
+      "total": 177
     },
     "Bot-Vorwurf": {
       "good": 5,
@@ -1836,8 +1876,8 @@
         "length": 132
       },
       "goodResponse": "Das ist echt schade das du darin keinen Sinn siehst. Ich denke du und ich könnten zusammen eine echt tolle gemeinsame Zeit zusammen verbringen. Gibt es denn nichts mit was ich dich überzeugen könnte d",
-      "successCount": 73,
-      "lastUsed": "2026-01-04T09:45:57.506Z"
+      "successCount": 74,
+      "lastUsed": "2026-01-04T09:51:30.660Z"
     },
     {
       "situation": "allgemein",
@@ -1970,6 +2010,6 @@
       "lastUsed": "2026-01-04T09:46:42.351Z"
     }
   ],
-  "lastUpdated": "2026-01-04T09:49:13.949Z",
+  "lastUpdated": "2026-01-04T09:51:30.660Z",
   "initialized": true
 }
