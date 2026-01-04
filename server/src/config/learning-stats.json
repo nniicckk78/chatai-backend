@@ -115,7 +115,7 @@
       "bad": 42
     },
     "gibt": {
-      "good": 21,
+      "good": 22,
       "bad": 25
     },
     "bestimmten": {
@@ -184,7 +184,7 @@
     },
     "manchmal": {
       "good": 20,
-      "bad": 2
+      "bad": 3
     },
     "nur": {
       "good": 25,
@@ -215,7 +215,7 @@
       "bad": 0
     },
     "zeit": {
-      "good": 20,
+      "good": 21,
       "bad": 0
     },
     "ziemlich": {
@@ -231,11 +231,11 @@
       "bad": 0
     },
     "was": {
-      "good": 54,
-      "bad": 48
+      "good": 55,
+      "bad": 49
     },
     "denn": {
-      "good": 71,
+      "good": 72,
       "bad": 10
     },
     "gerne": {
@@ -260,7 +260,7 @@
     },
     "einfach": {
       "good": 21,
-      "bad": 8
+      "bad": 9
     },
     "gibst": {
       "good": 20,
@@ -312,10 +312,10 @@
     },
     "gerade": {
       "good": 23,
-      "bad": 2
+      "bad": 3
     },
     "denke": {
-      "good": 42,
+      "good": 43,
       "bad": 1
     },
     "denkst": {
@@ -331,7 +331,7 @@
       "bad": 20
     },
     "finde": {
-      "good": 10,
+      "good": 11,
       "bad": 26
     },
     "grossartig": {
@@ -443,7 +443,7 @@
       "bad": 1
     },
     "könnte": {
-      "good": 0,
+      "good": 1,
       "bad": 1
     },
     "toll": {
@@ -643,11 +643,11 @@
       "bad": 1
     },
     "siehst": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "echt": {
-      "good": 9,
+      "good": 10,
       "bad": 3
     },
     "gut": {
@@ -695,7 +695,7 @@
       "bad": 5
     },
     "deine": {
-      "good": 2,
+      "good": 3,
       "bad": 7
     },
     "hobbys": {
@@ -939,8 +939,8 @@
       "bad": 0
     },
     "dich": {
-      "good": 14,
-      "bad": 7
+      "good": 15,
+      "bad": 8
     },
     "stört": {
       "good": 1,
@@ -1016,7 +1016,7 @@
     },
     "verstehe": {
       "good": 2,
-      "bad": 4
+      "bad": 5
     },
     "schon": {
       "good": 9,
@@ -1032,7 +1032,7 @@
     },
     "ber": {
       "good": 4,
-      "bad": 3
+      "bad": 4
     },
     "erfahren": {
       "good": 2,
@@ -1072,10 +1072,10 @@
     },
     "reden": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "zusammen": {
-      "good": 0,
+      "good": 2,
       "bad": 2
     },
     "wären": {
@@ -1127,7 +1127,7 @@
       "bad": 0
     },
     "meinung": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "brüste": {
@@ -1156,7 +1156,7 @@
     },
     "etwas": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "neugierig": {
       "good": 2,
@@ -1336,11 +1336,11 @@
     },
     "vielleicht": {
       "good": 0,
-      "bad": 3
+      "bad": 4
     },
     "anderes": {
       "good": 0,
-      "bad": 3
+      "bad": 4
     },
     "austauschen": {
       "good": 0,
@@ -1465,12 +1465,72 @@
     "findest": {
       "good": 1,
       "bad": 0
+    },
+    "schade": {
+      "good": 1,
+      "bad": 0
+    },
+    "darin": {
+      "good": 1,
+      "bad": 0
+    },
+    "keinen": {
+      "good": 1,
+      "bad": 0
+    },
+    "sinn": {
+      "good": 1,
+      "bad": 0
+    },
+    "könnten": {
+      "good": 1,
+      "bad": 0
+    },
+    "tolle": {
+      "good": 1,
+      "bad": 0
+    },
+    "gemeinsame": {
+      "good": 1,
+      "bad": 0
+    },
+    "verbringen": {
+      "good": 1,
+      "bad": 0
+    },
+    "nichts": {
+      "good": 1,
+      "bad": 0
+    },
+    "berzeugen": {
+      "good": 1,
+      "bad": 0
+    },
+    "ndern": {
+      "good": 1,
+      "bad": 0
+    },
+    "frustrierend": {
+      "good": 0,
+      "bad": 1
+    },
+    "sollten": {
+      "good": 0,
+      "bad": 1
+    },
+    "interessiert": {
+      "good": 0,
+      "bad": 1
+    },
+    "besonders": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 92,
-      "total": 164
+      "good": 93,
+      "total": 166
     },
     "Bot-Vorwurf": {
       "good": 5,
@@ -1503,9 +1563,9 @@
         "hasSexual": false,
         "length": 132
       },
-      "goodResponse": "Hey Oliver, frohes neues Jahr! Das mit den Fehlern im Leben kenne ich, manchmal würde ich auch gerne alles neu starten. Aber ich denke, jeder hat seine eigenen Herausforderungen. Aber wie meinst du da",
-      "successCount": 70,
-      "lastUsed": "2026-01-03T16:25:19.763Z"
+      "goodResponse": "Ich finde es schade das du darin keinen Sinn siehst. Ich denke du und ich könnten zusammen eine echt tolle gemeinsame Zeit zusammen verbringen. Gibt es denn nichts mit was ich dich überzeugen könnte d",
+      "successCount": 71,
+      "lastUsed": "2026-01-04T09:35:19.531Z"
     },
     {
       "situation": "allgemein",
@@ -1612,6 +1672,6 @@
       "lastUsed": "2026-01-03T15:39:46.081Z"
     }
   ],
-  "lastUpdated": "2026-01-04T09:32:55.864Z",
+  "lastUpdated": "2026-01-04T09:35:19.531Z",
   "initialized": true
 }
