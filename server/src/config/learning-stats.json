@@ -55,7 +55,7 @@
       "bad": 0
     },
     "dann": {
-      "good": 54,
+      "good": 55,
       "bad": 1
     },
     "irgendwo": {
@@ -76,11 +76,11 @@
     },
     "würdest": {
       "good": 58,
-      "bad": 10
+      "bad": 11
     },
     "machen": {
       "good": 46,
-      "bad": 6
+      "bad": 7
     },
     "hätte": {
       "good": 0,
@@ -143,12 +143,12 @@
       "bad": 30
     },
     "kopf": {
-      "good": 1,
-      "bad": 22
+      "good": 2,
+      "bad": 23
     },
     "hast": {
       "good": 18,
-      "bad": 51
+      "bad": 52
     },
     "verstehen": {
       "good": 23,
@@ -175,7 +175,7 @@
       "bad": 19
     },
     "auch": {
-      "good": 104,
+      "good": 105,
       "bad": 23
     },
     "funke": {
@@ -183,7 +183,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 88,
+      "good": 89,
       "bad": 21
     },
     "erlischt": {
@@ -212,7 +212,7 @@
     },
     "mich": {
       "good": 35,
-      "bad": 15
+      "bad": 16
     },
     "wohl": {
       "good": 19,
@@ -252,7 +252,7 @@
     },
     "gerne": {
       "good": 28,
-      "bad": 12
+      "bad": 13
     },
     "wollen": {
       "good": 26,
@@ -327,11 +327,11 @@
       "bad": 4
     },
     "denke": {
-      "good": 45,
+      "good": 46,
       "bad": 1
     },
     "denkst": {
-      "good": 31,
+      "good": 32,
       "bad": 2
     },
     "zweiteudig": {
@@ -352,7 +352,7 @@
     },
     "wenn": {
       "good": 9,
-      "bad": 32
+      "bad": 33
     },
     "gegenseitig": {
       "good": 0,
@@ -380,14 +380,14 @@
     },
     "klingt": {
       "good": 2,
-      "bad": 12
+      "bad": 13
     },
     "wild": {
       "good": 1,
       "bad": 2
     },
     "mein": {
-      "good": 6,
+      "good": 7,
       "bad": 0
     },
     "geiler": {
@@ -400,7 +400,7 @@
     },
     "würde": {
       "good": 9,
-      "bad": 6
+      "bad": 7
     },
     "meine": {
       "good": 4,
@@ -424,7 +424,7 @@
     },
     "schön": {
       "good": 2,
-      "bad": 6
+      "bad": 7
     },
     "lecken": {
       "good": 1,
@@ -451,7 +451,7 @@
       "bad": 3
     },
     "werden": {
-      "good": 0,
+      "good": 1,
       "bad": 1
     },
     "könnte": {
@@ -660,7 +660,7 @@
     },
     "echt": {
       "good": 17,
-      "bad": 6
+      "bad": 7
     },
     "gut": {
       "good": 12,
@@ -883,7 +883,7 @@
       "bad": 2
     },
     "bestimmt": {
-      "good": 3,
+      "good": 4,
       "bad": 1
     },
     "hände": {
@@ -963,11 +963,11 @@
       "bad": 0
     },
     "beiden": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "kein": {
-      "good": 11,
+      "good": 12,
       "bad": 0
     },
     "problem": {
@@ -1035,7 +1035,7 @@
       "bad": 5
     },
     "noch": {
-      "good": 14,
+      "good": 15,
       "bad": 1
     },
     "wenig": {
@@ -1400,7 +1400,7 @@
     },
     "näherkommen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "gelungenes": {
       "good": 0,
@@ -1496,7 +1496,7 @@
     },
     "könnten": {
       "good": 3,
-      "bad": 0
+      "bad": 1
     },
     "tolle": {
       "good": 2,
@@ -1772,7 +1772,7 @@
     },
     "bestimmte": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "siehts": {
       "good": 1,
@@ -1987,7 +1987,7 @@
       "bad": 3
     },
     "nein": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "alter": {
@@ -2051,7 +2051,7 @@
       "bad": 3
     },
     "tag": {
-      "good": 0,
+      "good": 1,
       "bad": 3
     },
     "liebsten": {
@@ -2497,6 +2497,34 @@
     "genre": {
       "good": 0,
       "bad": 1
+    },
+    "engel": {
+      "good": 1,
+      "bad": 0
+    },
+    "habe": {
+      "good": 1,
+      "bad": 0
+    },
+    "schän": {
+      "good": 1,
+      "bad": 0
+    },
+    "mario": {
+      "good": 0,
+      "bad": 1
+    },
+    "freuen": {
+      "good": 0,
+      "bad": 1
+    },
+    "bald": {
+      "good": 0,
+      "bad": 1
+    },
+    "aktivität": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -2505,8 +2533,8 @@
       "total": 201
     },
     "Bot-Vorwurf": {
-      "good": 6,
-      "total": 12
+      "good": 7,
+      "total": 14
     },
     "Sexuelle Themen": {
       "good": 12,
@@ -2566,8 +2594,8 @@
         "length": 406
       },
       "goodResponse": "Dann lass es uns doch herausfinden ob du und ich für einander gemacht sind? Das mit den Kindern ist mir gar nicht so wichtig, Kinder sind nicht das einizige was zählt. Es gibt noch genug andere wichti",
-      "successCount": 6,
-      "lastUsed": "2026-01-04T14:57:25.350Z"
+      "successCount": 7,
+      "lastUsed": "2026-01-04T20:00:11.265Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -2739,6 +2767,6 @@
       "lastUsed": "2026-01-04T14:55:41.943Z"
     }
   ],
-  "lastUpdated": "2026-01-04T14:57:25.350Z",
+  "lastUpdated": "2026-01-04T20:00:11.265Z",
   "initialized": true
 }
