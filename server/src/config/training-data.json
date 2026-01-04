@@ -1350,12 +1350,16 @@
     {
       "customerMessage": "hi hier 2 was macht hier gerade? wie sieht es aus mit dem Treffen bei mir in Langenfeld,",
       "moderatorResponse": "Hey du! Heute passt es bei uns leider nicht so gut, aber wir wären echt gerne gekommen. Was hast du denn geplant, wenn wir kommen würden?",
-      "situation": "allgemein",
+      "situation": "Treffen/Termine",
       "createdAt": "2026-01-04T13:30:04.286Z",
       "source": "feedback_generated_edited",
       "priority": true,
       "feedbackId": "feedback_1767532993969_fqfex439r",
-      "variationIndex": 0
+      "variationIndex": 0,
+      "situations": [
+        "Treffen/Termine"
+      ],
+      "updatedAt": "2026-01-04T14:00:21.747Z"
     },
     {
       "customerMessage": "hi hier 2 was macht hier gerade? wie sieht es aus mit dem Treffen bei mir in Langenfeld,",
