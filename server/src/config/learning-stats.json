@@ -55,7 +55,7 @@
       "bad": 0
     },
     "dann": {
-      "good": 60,
+      "good": 61,
       "bad": 1
     },
     "irgendwo": {
@@ -147,7 +147,7 @@
       "bad": 23
     },
     "hast": {
-      "good": 19,
+      "good": 20,
       "bad": 52
     },
     "verstehen": {
@@ -235,7 +235,7 @@
       "bad": 0
     },
     "viel": {
-      "good": 24,
+      "good": 25,
       "bad": 2
     },
     "los": {
@@ -243,11 +243,11 @@
       "bad": 0
     },
     "was": {
-      "good": 72,
+      "good": 73,
       "bad": 68
     },
     "denn": {
-      "good": 98,
+      "good": 99,
       "bad": 14
     },
     "gerne": {
@@ -311,11 +311,11 @@
       "bad": 0
     },
     "suchst": {
-      "good": 20,
+      "good": 21,
       "bad": 0
     },
     "hier": {
-      "good": 21,
+      "good": 22,
       "bad": 2
     },
     "hof": {
@@ -351,7 +351,7 @@
       "bad": 25
     },
     "wenn": {
-      "good": 11,
+      "good": 13,
       "bad": 35
     },
     "gegenseitig": {
@@ -1027,7 +1027,7 @@
       "bad": 0
     },
     "verstehe": {
-      "good": 2,
+      "good": 3,
       "bad": 6
     },
     "schon": {
@@ -2127,7 +2127,7 @@
       "bad": 0
     },
     "keine": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "geheimnisse": {
@@ -2323,11 +2323,11 @@
       "bad": 0
     },
     "tut": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "leid": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "kopfkino": {
@@ -2567,7 +2567,7 @@
       "bad": 1
     },
     "okay": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "weis": {
@@ -2689,6 +2689,14 @@
     "nächste": {
       "good": 0,
       "bad": 1
+    },
+    "sexuellen": {
+      "good": 1,
+      "bad": 0
+    },
+    "absichten": {
+      "good": 1,
+      "bad": 0
     }
   },
   "situationSuccess": {
@@ -2701,8 +2709,8 @@
       "total": 16
     },
     "Sexuelle Themen": {
-      "good": 13,
-      "total": 26
+      "good": 14,
+      "total": 27
     },
     "Wonach suchst du?": {
       "good": 1,
@@ -2762,6 +2770,19 @@
       "lastUsed": "2026-01-04T20:00:11.265Z"
     },
     {
+      "situation": "Sexuelle Themen",
+      "customerPattern": {
+        "keywords": "fragst sachen wenn schlucken magst dann kannst gerne spritze mal",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": true,
+        "length": 198
+      },
+      "goodResponse": "Allein bei der Vorstellung werde ich schon richtig feucht! Hast du denn auch bestimmte Dinge die du mal beim Sex ausprobieren wollen würdest? Wie siehts denn auch mit einem Rollenspiel aus? Würde dir ",
+      "successCount": 6,
+      "lastUsed": "2026-01-04T20:05:45.090Z"
+    },
+    {
       "situation": "Treffen/Termine",
       "customerPattern": {
         "keywords": "mareike frohes neues jahr würde gerne mich treffen habe heute",
@@ -2773,19 +2794,6 @@
       "goodResponse": "Wir wünschen dir auch ein frohes neues Jahr, wir wären auch echt sehr gerne mit dir zusammen ins neue Jahr gerutscht. Aber das wird sicher noch!😉Wir denken auch echt sehr viel an dich! Klar behalten ",
       "successCount": 5,
       "lastUsed": "2026-01-04T10:14:06.726Z"
-    },
-    {
-      "situation": "Sexuelle Themen",
-      "customerPattern": {
-        "keywords": "fragst sachen wenn schlucken magst dann kannst gerne spritze mal",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": true,
-        "length": 198
-      },
-      "goodResponse": "Allein bei der Vorstellung werde ich schon richtig feucht! Hast du denn auch bestimmte Dinge die du mal beim Sex ausprobieren wollen würdest? Wie siehts denn auch mit einem Rollenspiel aus? Würde dir ",
-      "successCount": 5,
-      "lastUsed": "2026-01-04T12:46:13.186Z"
     },
     {
       "situation": "Sexuelle Themen",
@@ -2944,6 +2952,6 @@
       "lastUsed": "2026-01-04T20:01:25.618Z"
     }
   ],
-  "lastUpdated": "2026-01-04T20:05:32.373Z",
+  "lastUpdated": "2026-01-04T20:05:45.090Z",
   "initialized": true
 }
