@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 56,
+      "count": 57,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -63,7 +63,7 @@
       "bad": 2
     },
     "würden": {
-      "good": 22,
+      "good": 23,
       "bad": 1
     },
     "dann": {
@@ -87,12 +87,12 @@
       "bad": 0
     },
     "würdest": {
-      "good": 63,
-      "bad": 22
+      "good": 64,
+      "bad": 23
     },
     "machen": {
-      "good": 52,
-      "bad": 9
+      "good": 53,
+      "bad": 10
     },
     "hätte": {
       "good": 0,
@@ -255,8 +255,8 @@
       "bad": 0
     },
     "was": {
-      "good": 99,
-      "bad": 112
+      "good": 100,
+      "bad": 113
     },
     "denn": {
       "good": 114,
@@ -283,8 +283,8 @@
       "bad": 9
     },
     "einfach": {
-      "good": 23,
-      "bad": 19
+      "good": 24,
+      "bad": 20
     },
     "gibst": {
       "good": 20,
@@ -299,8 +299,8 @@
       "bad": 0
     },
     "als": {
-      "good": 30,
-      "bad": 8
+      "good": 31,
+      "bad": 9
     },
     "papa": {
       "good": 20,
@@ -311,8 +311,8 @@
       "bad": 0
     },
     "sicher": {
-      "good": 28,
-      "bad": 2
+      "good": 29,
+      "bad": 3
     },
     "frauen": {
       "good": 22,
@@ -363,8 +363,8 @@
       "bad": 25
     },
     "wenn": {
-      "good": 23,
-      "bad": 47
+      "good": 25,
+      "bad": 49
     },
     "gegenseitig": {
       "good": 0,
@@ -747,8 +747,8 @@
       "bad": 0
     },
     "bist": {
-      "good": 11,
-      "bad": 4
+      "good": 12,
+      "bad": 5
     },
     "allgemein": {
       "good": 3,
@@ -891,8 +891,8 @@
       "bad": 16
     },
     "sehen": {
-      "good": 8,
-      "bad": 2
+      "good": 9,
+      "bad": 3
     },
     "bestimmt": {
       "good": 6,
@@ -963,8 +963,8 @@
       "bad": 2
     },
     "dich": {
-      "good": 29,
-      "bad": 26
+      "good": 30,
+      "bad": 27
     },
     "stört": {
       "good": 7,
@@ -1799,8 +1799,8 @@
       "bad": 0
     },
     "heiss": {
-      "good": 2,
-      "bad": 4
+      "good": 3,
+      "bad": 5
     },
     "alfons": {
       "good": 0,
@@ -1871,8 +1871,8 @@
       "bad": 0
     },
     "erstes": {
-      "good": 5,
-      "bad": 1
+      "good": 6,
+      "bad": 2
     },
     "ficken": {
       "good": 2,
@@ -1895,8 +1895,8 @@
       "bad": 0
     },
     "spüren": {
-      "good": 2,
-      "bad": 3
+      "good": 3,
+      "bad": 4
     },
     "geile": {
       "good": 4,
@@ -1912,7 +1912,7 @@
     },
     "endlich": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "wann": {
       "good": 2,
@@ -2539,8 +2539,8 @@
       "bad": 1
     },
     "total": {
-      "good": 2,
-      "bad": 3
+      "good": 3,
+      "bad": 4
     },
     "klappt": {
       "good": 2,
@@ -2999,8 +2999,8 @@
       "bad": 1
     },
     "nah": {
-      "good": 0,
-      "bad": 1
+      "good": 1,
+      "bad": 2
     },
     "quatschen": {
       "good": 0,
@@ -3351,12 +3351,12 @@
       "bad": 1
     },
     "kaum": {
-      "good": 1,
-      "bad": 2
+      "good": 2,
+      "bad": 3
     },
     "erwarten": {
-      "good": 1,
-      "bad": 2
+      "good": 2,
+      "bad": 3
     },
     "anstrengend": {
       "good": 1,
@@ -3621,12 +3621,16 @@
     "restaurants": {
       "good": 1,
       "bad": 0
+    },
+    "wahnsinn": {
+      "good": 1,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 139,
-      "total": 254
+      "good": 140,
+      "total": 256
     },
     "Bot-Vorwurf": {
       "good": 9,
@@ -3668,8 +3672,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 99,
-      "lastUsed": "2026-01-05T23:06:46.509Z"
+      "successCount": 100,
+      "lastUsed": "2026-01-05T23:08:57.112Z"
     },
     {
       "situation": "allgemein",
@@ -3932,7 +3936,7 @@
       "lastUsed": "2026-01-05T22:07:03.348Z"
     }
   ],
-  "lastUpdated": "2026-01-05T23:06:46.509Z",
+  "lastUpdated": "2026-01-05T23:08:57.112Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4022,6 +4026,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-05T23:05:40.517Z"
+    },
+    {
+      "text": "\"Wenn wir uns endlich sehen\" Klingt wieder zu sehr danach als ob man dem Kunde verpsricht das es passieren wird",
+      "count": 1,
+      "situations": [
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-05T23:08:57.112Z"
     }
   ],
   "messageStats": {
@@ -4130,7 +4142,8 @@
           112,
           163,
           168,
-          180
+          180,
+          195
         ],
         "exclamationMarks": [
           1,
@@ -4145,6 +4158,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4172,13 +4186,14 @@
           1,
           2,
           1,
+          1,
           1
         ],
-        "count": 19,
-        "avgLength": 155,
+        "count": 20,
+        "avgLength": 157,
         "minLength": 106,
         "maxLength": 232,
-        "medianLength": 151,
+        "medianLength": 163,
         "avgExclamationMarks": 0.4,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
@@ -4189,16 +4204,16 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 32,
-          "120-150": 16,
-          "150-200": 42,
-          "200-250": 11,
+          "100-120": 30,
+          "120-150": 15,
+          "150-200": 45,
+          "200-250": 10,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 79,
-          "2": 16,
+          "1": 80,
+          "2": 15,
           "3+": 5
         }
       },
@@ -4219,9 +4234,11 @@
           213,
           234,
           222,
-          155
+          155,
+          196
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -4255,10 +4272,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 16,
-        "avgLength": 176,
+        "count": 17,
+        "avgLength": 177,
         "minLength": 115,
         "maxLength": 234,
         "medianLength": 200,
@@ -4272,15 +4290,15 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 19,
-          "120-150": 13,
-          "150-200": 13,
-          "200-250": 56,
+          "100-120": 18,
+          "120-150": 12,
+          "150-200": 18,
+          "200-250": 53,
           "250+": 0
         },
         "questionDistribution": {
-          "0": 25,
-          "1": 75,
+          "0": 24,
+          "1": 76,
           "2": 0,
           "3+": 0
         }
