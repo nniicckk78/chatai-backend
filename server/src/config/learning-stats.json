@@ -63,7 +63,7 @@
       "bad": 0
     },
     "dann": {
-      "good": 62,
+      "good": 63,
       "bad": 1
     },
     "irgendwo": {
@@ -152,11 +152,11 @@
     },
     "kopf": {
       "good": 2,
-      "bad": 24
+      "bad": 25
     },
     "hast": {
       "good": 22,
-      "bad": 53
+      "bad": 54
     },
     "verstehen": {
       "good": 24,
@@ -184,14 +184,14 @@
     },
     "auch": {
       "good": 111,
-      "bad": 26
+      "bad": 27
     },
     "funke": {
       "good": 19,
       "bad": 19
     },
     "nicht": {
-      "good": 98,
+      "good": 99,
       "bad": 24
     },
     "erlischt": {
@@ -219,8 +219,8 @@
       "bad": 0
     },
     "mich": {
-      "good": 40,
-      "bad": 18
+      "good": 41,
+      "bad": 19
     },
     "wohl": {
       "good": 19,
@@ -251,8 +251,8 @@
       "bad": 0
     },
     "was": {
-      "good": 81,
-      "bad": 86
+      "good": 82,
+      "bad": 88
     },
     "denn": {
       "good": 105,
@@ -427,7 +427,7 @@
       "bad": 0
     },
     "kannst": {
-      "good": 14,
+      "good": 15,
       "bad": 0
     },
     "schön": {
@@ -636,7 +636,7 @@
     },
     "deinen": {
       "good": 1,
-      "bad": 5
+      "bad": 6
     },
     "wunsch": {
       "good": 0,
@@ -883,7 +883,7 @@
       "bad": 0
     },
     "mal": {
-      "good": 15,
+      "good": 16,
       "bad": 13
     },
     "sehen": {
@@ -927,8 +927,8 @@
       "bad": 2
     },
     "bin": {
-      "good": 15,
-      "bad": 11
+      "good": 16,
+      "bad": 12
     },
     "gemeinsam": {
       "good": 0,
@@ -1175,7 +1175,7 @@
       "bad": 0
     },
     "etwas": {
-      "good": 4,
+      "good": 5,
       "bad": 5
     },
     "neugierig": {
@@ -1356,7 +1356,7 @@
     },
     "vielleicht": {
       "good": 0,
-      "bad": 7
+      "bad": 8
     },
     "anderes": {
       "good": 0,
@@ -1451,8 +1451,8 @@
       "bad": 2
     },
     "klar": {
-      "good": 7,
-      "bad": 7
+      "good": 8,
+      "bad": 8
     },
     "jemanden": {
       "good": 0,
@@ -1659,7 +1659,7 @@
       "bad": 0
     },
     "jetzt": {
-      "good": 18,
+      "good": 19,
       "bad": 0
     },
     "beantwortet": {
@@ -1967,8 +1967,8 @@
       "bad": 0
     },
     "gespannt": {
-      "good": 3,
-      "bad": 3
+      "good": 4,
+      "bad": 4
     },
     "chance": {
       "good": 0,
@@ -2072,7 +2072,7 @@
     },
     "erzählst": {
       "good": 1,
-      "bad": 3
+      "bad": 4
     },
     "erzählen": {
       "good": 2,
@@ -2100,7 +2100,7 @@
     },
     "fantasien": {
       "good": 1,
-      "bad": 3
+      "bad": 4
     },
     "erlebnis": {
       "good": 0,
@@ -2307,7 +2307,7 @@
       "bad": 0
     },
     "warum": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "persönliche": {
@@ -3087,38 +3087,38 @@
       "bad": 1
     },
     "natürlich": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "intimes": {
-      "good": 1,
-      "bad": 1
+      "good": 2,
+      "bad": 2
     },
     "fragen": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "kommt": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "frag": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "ruhig": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "geheimen": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 122,
-      "total": 223
+      "good": 123,
+      "total": 225
     },
     "Bot-Vorwurf": {
       "good": 8,
@@ -3169,8 +3169,8 @@
         "length": 59
       },
       "goodResponse": "Danke, das wünsche ich dir ebenfalls. Und danke noch für das Kompliment, du machst mich auch echt neugierig! Aber nein dein alter stört mich nicht, da lege ich nicht so viel Wert drauf! Der Altersunte",
-      "successCount": 30,
-      "lastUsed": "2026-01-05T20:05:16.803Z"
+      "successCount": 31,
+      "lastUsed": "2026-01-05T20:05:45.511Z"
     },
     {
       "situation": "Bot-Vorwurf",
@@ -3381,7 +3381,7 @@
       "lastUsed": "2026-01-05T17:33:22.442Z"
     }
   ],
-  "lastUpdated": "2026-01-05T20:05:16.803Z",
+  "lastUpdated": "2026-01-05T20:05:45.511Z",
   "initialized": true,
   "reasoningPrinciples": [],
   "messageStats": {
@@ -3467,62 +3467,68 @@
       "positive": {
         "lengths": [
           192,
-          108
+          108,
+          109
         ],
         "exclamationMarks": [
           1,
+          0,
           0
         ],
         "questions": [
           2,
+          1,
           1
         ],
-        "count": 2,
-        "avgLength": 150,
+        "count": 3,
+        "avgLength": 136,
         "minLength": 108,
         "maxLength": 192,
-        "medianLength": 192,
-        "avgExclamationMarks": 0.5,
+        "medianLength": 109,
+        "avgExclamationMarks": 0.3,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
-        "medianExclamationMarks": 1,
-        "avgQuestions": 1.5,
+        "medianExclamationMarks": 0,
+        "avgQuestions": 1.3,
         "minQuestions": 1,
         "maxQuestions": 2,
-        "medianQuestions": 2,
+        "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 50,
+          "100-120": 67,
           "120-150": 0,
-          "150-200": 50,
+          "150-200": 33,
           "200-250": 0,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 50,
-          "2": 50,
+          "1": 67,
+          "2": 33,
           "3+": 0
         }
       },
       "negative": {
         "lengths": [
           207,
+          136,
           136
         ],
         "exclamationMarks": [
+          0,
           0,
           0
         ],
         "questions": [
           1,
+          1,
           1
         ],
-        "count": 2,
-        "avgLength": 172,
+        "count": 3,
+        "avgLength": 160,
         "minLength": 136,
         "maxLength": 207,
-        "medianLength": 207,
+        "medianLength": 136,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
@@ -3534,9 +3540,9 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 50,
+          "120-150": 67,
           "150-200": 0,
-          "200-250": 50,
+          "200-250": 33,
           "250+": 0
         },
         "questionDistribution": {
