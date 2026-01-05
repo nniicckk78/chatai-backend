@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 54,
+      "count": 55,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -87,12 +87,12 @@
       "bad": 0
     },
     "würdest": {
-      "good": 61,
-      "bad": 20
+      "good": 62,
+      "bad": 21
     },
     "machen": {
-      "good": 50,
-      "bad": 8
+      "good": 51,
+      "bad": 9
     },
     "hätte": {
       "good": 0,
@@ -187,8 +187,8 @@
       "bad": 19
     },
     "auch": {
-      "good": 134,
-      "bad": 32
+      "good": 135,
+      "bad": 33
     },
     "funke": {
       "good": 19,
@@ -255,12 +255,12 @@
       "bad": 0
     },
     "was": {
-      "good": 94,
-      "bad": 108
+      "good": 95,
+      "bad": 109
     },
     "denn": {
-      "good": 112,
-      "bad": 28
+      "good": 113,
+      "bad": 29
     },
     "gerne": {
       "good": 33,
@@ -299,8 +299,8 @@
       "bad": 0
     },
     "als": {
-      "good": 29,
-      "bad": 7
+      "good": 30,
+      "bad": 8
     },
     "papa": {
       "good": 20,
@@ -363,8 +363,8 @@
       "bad": 25
     },
     "wenn": {
-      "good": 21,
-      "bad": 46
+      "good": 22,
+      "bad": 47
     },
     "gegenseitig": {
       "good": 0,
@@ -379,8 +379,8 @@
       "bad": 20
     },
     "können": {
-      "good": 3,
-      "bad": 31
+      "good": 4,
+      "bad": 32
     },
     "dabei": {
       "good": 3,
@@ -391,8 +391,8 @@
       "bad": 20
     },
     "klingt": {
-      "good": 3,
-      "bad": 18
+      "good": 4,
+      "bad": 19
     },
     "wild": {
       "good": 1,
@@ -423,8 +423,8 @@
       "bad": 1
     },
     "richtig": {
-      "good": 19,
-      "bad": 13
+      "good": 20,
+      "bad": 14
     },
     "feucht": {
       "good": 3,
@@ -487,7 +487,7 @@
       "bad": 1
     },
     "wäre": {
-      "good": 12,
+      "good": 13,
       "bad": 18
     },
     "perfektes": {
@@ -655,8 +655,8 @@
       "bad": 1
     },
     "geil": {
-      "good": 11,
-      "bad": 3
+      "good": 12,
+      "bad": 4
     },
     "liebe": {
       "good": 2,
@@ -767,8 +767,8 @@
       "bad": 2
     },
     "auszuprobieren": {
-      "good": 2,
-      "bad": 0
+      "good": 3,
+      "bad": 1
     },
     "immer": {
       "good": 14,
@@ -1799,8 +1799,8 @@
       "bad": 0
     },
     "heiss": {
-      "good": 1,
-      "bad": 3
+      "good": 2,
+      "bad": 4
     },
     "alfons": {
       "good": 0,
@@ -1871,8 +1871,8 @@
       "bad": 0
     },
     "erstes": {
-      "good": 4,
-      "bad": 0
+      "good": 5,
+      "bad": 1
     },
     "ficken": {
       "good": 2,
@@ -2539,8 +2539,8 @@
       "bad": 1
     },
     "total": {
-      "good": 1,
-      "bad": 2
+      "good": 2,
+      "bad": 3
     },
     "klappt": {
       "good": 2,
@@ -3351,12 +3351,12 @@
       "bad": 1
     },
     "kaum": {
-      "good": 0,
-      "bad": 1
+      "good": 1,
+      "bad": 2
     },
     "erwarten": {
-      "good": 0,
-      "bad": 1
+      "good": 1,
+      "bad": 2
     },
     "anstrengend": {
       "good": 1,
@@ -3553,6 +3553,14 @@
     "hinnehmen": {
       "good": 1,
       "bad": 0
+    },
+    "dreier": {
+      "good": 1,
+      "bad": 1
+    },
+    "soweit": {
+      "good": 1,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -3577,8 +3585,8 @@
       "total": 4
     },
     "Treffen/Termine": {
-      "good": 8,
-      "total": 16
+      "good": 9,
+      "total": 18
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -3734,6 +3742,19 @@
       "lastUsed": "2026-01-05T20:07:39.725Z"
     },
     {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "hallo wunderschönen hei frauen bin richtig geil sagt wann treffen",
+        "hasQuestion": false,
+        "hasMeeting": true,
+        "hasSexual": true,
+        "length": 316
+      },
+      "goodResponse": "Wir sind auch richtig geil auf dich! Allein durch die Vorstellung was du mit uns machen wirst könnte ich schon abspritzen. Wie stehst du denn zu Rollenspielen nebenher? Gefällt dir sowas?",
+      "successCount": 2,
+      "lastUsed": "2026-01-05T22:59:16.524Z"
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
@@ -3799,19 +3820,6 @@
       "lastUsed": "2026-01-04T13:26:24.375Z"
     },
     {
-      "situation": "Treffen/Termine",
-      "customerPattern": {
-        "keywords": "hallo wunderschönen hei frauen bin richtig geil sagt wann treffen",
-        "hasQuestion": false,
-        "hasMeeting": true,
-        "hasSexual": true,
-        "length": 316
-      },
-      "goodResponse": "Wir sind auch richtig geil auf dich! Allein durch die Vorstellung was du mit uns machen wirst könnte ich schon abspritzen. Wie stehst du denn zu Rollenspielen nebenher? Gefällt dir sowas?",
-      "successCount": 1,
-      "lastUsed": "2026-01-04T14:55:41.943Z"
-    },
-    {
       "situation": "Bot-Vorwurf",
       "customerPattern": {
         "keywords": "bin platt solltest wirklich schnelles treffen wollen hätte dienstag donnerstag",
@@ -3864,7 +3872,7 @@
       "lastUsed": "2026-01-05T22:07:03.348Z"
     }
   ],
-  "lastUpdated": "2026-01-05T22:57:41.527Z",
+  "lastUpdated": "2026-01-05T22:59:16.524Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -3930,6 +3938,14 @@
         "Treffen/Termine"
       ],
       "lastUsed": "2026-01-05T22:07:03.347Z"
+    },
+    {
+      "text": "\"Wenn es soweit ist\" hört sich bisschen zu sehr nach verpsrechen an \"Wenn es soweit wäre\" ist besser",
+      "count": 1,
+      "situations": [
+        "Treffen/Termine"
+      ],
+      "lastUsed": "2026-01-05T22:59:16.524Z"
     }
   ],
   "messageStats": {
@@ -4434,17 +4450,20 @@
     "Treffen/Termine": {
       "positive": {
         "lengths": [
-          257
+          257,
+          180
         ],
         "exclamationMarks": [
+          0,
           0
         ],
         "questions": [
+          1,
           1
         ],
-        "count": 1,
-        "avgLength": 257,
-        "minLength": 257,
+        "count": 2,
+        "avgLength": 219,
+        "minLength": 180,
         "maxLength": 257,
         "medianLength": 257,
         "avgExclamationMarks": 0,
@@ -4459,9 +4478,9 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 0,
+          "150-200": 50,
           "200-250": 0,
-          "250+": 100
+          "250+": 50
         },
         "questionDistribution": {
           "0": 0,
@@ -4472,17 +4491,20 @@
       },
       "negative": {
         "lengths": [
-          250
+          250,
+          179
         ],
         "exclamationMarks": [
+          0,
           0
         ],
         "questions": [
+          1,
           1
         ],
-        "count": 1,
-        "avgLength": 250,
-        "minLength": 250,
+        "count": 2,
+        "avgLength": 215,
+        "minLength": 179,
         "maxLength": 250,
         "medianLength": 250,
         "avgExclamationMarks": 0,
@@ -4497,9 +4519,9 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 0,
+          "150-200": 50,
           "200-250": 0,
-          "250+": 100
+          "250+": 50
         },
         "questionDistribution": {
           "0": 0,
