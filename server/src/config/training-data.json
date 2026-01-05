@@ -2072,13 +2072,18 @@
     {
       "customerMessage": "was Möchtest Du denn?",
       "moderatorResponse": "Du beantwortest also meine Frage mit einer Gegenfrage? So kommen wir ja auch nicht ans Ziel!😆Bist du bei dem ersten Date immer ein wenig zurückhaltender oder gehst du direkt in die Offensive?",
-      "situation": "allgemein",
+      "situation": "allgemein, Treffen/Termine",
       "explanation": null,
       "createdAt": "2026-01-05T17:36:36.610Z",
       "source": "feedback_edited",
       "priority": true,
       "feedbackId": "feedback_1767632588293_gxweb27h9",
-      "originalResponse": "Ich würde gerne mit dir ein bisschen spielen und herausfinden, was uns beide richtig heiss macht. Ich mag es, wenn es ein bisschen dreckig wird. Was wäre denn dein grösster Wunsch in einer solchen Situation?"
+      "originalResponse": "Ich würde gerne mit dir ein bisschen spielen und herausfinden, was uns beide richtig heiss macht. Ich mag es, wenn es ein bisschen dreckig wird. Was wäre denn dein grösster Wunsch in einer solchen Situation?",
+      "situations": [
+        "allgemein",
+        "Treffen/Termine"
+      ],
+      "updatedAt": "2026-01-05T22:16:01.325Z"
     },
     {
       "customerMessage": "Kein Problem, mal eine Frage, wenn ich dich was intimes fragen darf?",
