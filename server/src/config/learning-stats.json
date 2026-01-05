@@ -247,8 +247,8 @@
       "bad": 0
     },
     "was": {
-      "good": 77,
-      "bad": 77
+      "good": 79,
+      "bad": 79
     },
     "denn": {
       "good": 103,
@@ -327,12 +327,12 @@
       "bad": 0
     },
     "gerade": {
-      "good": 25,
-      "bad": 4
+      "good": 26,
+      "bad": 6
     },
     "denke": {
       "good": 48,
-      "bad": 1
+      "bad": 2
     },
     "denkst": {
       "good": 34,
@@ -376,7 +376,7 @@
     },
     "dabei": {
       "good": 0,
-      "bad": 26
+      "bad": 27
     },
     "vorgestellt": {
       "good": 0,
@@ -439,7 +439,7 @@
       "bad": 0
     },
     "gleich": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "mitlecken": {
@@ -956,7 +956,7 @@
     },
     "dich": {
       "good": 27,
-      "bad": 21
+      "bad": 22
     },
     "stört": {
       "good": 7,
@@ -1263,7 +1263,7 @@
       "bad": 0
     },
     "mache": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "voll": {
@@ -1308,11 +1308,11 @@
     },
     "heute": {
       "good": 6,
-      "bad": 3
+      "bad": 4
     },
     "schönes": {
-      "good": 0,
-      "bad": 2
+      "good": 1,
+      "bad": 3
     },
     "geplant": {
       "good": 0,
@@ -1516,7 +1516,7 @@
     },
     "nichts": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "berzeugen": {
       "good": 2,
@@ -1655,7 +1655,7 @@
       "bad": 0
     },
     "jetzt": {
-      "good": 15,
+      "good": 16,
       "bad": 0
     },
     "beantwortet": {
@@ -1987,8 +1987,8 @@
       "bad": 0
     },
     "machst": {
-      "good": 3,
-      "bad": 4
+      "good": 4,
+      "bad": 5
     },
     "nein": {
       "good": 4,
@@ -2239,7 +2239,7 @@
       "bad": 0
     },
     "essen": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "finger": {
@@ -2937,12 +2937,44 @@
     "hilfsdienst": {
       "good": 0,
       "bad": 1
+    },
+    "sortiere": {
+      "good": 0,
+      "bad": 1
+    },
+    "paar": {
+      "good": 0,
+      "bad": 1
+    },
+    "akten": {
+      "good": 0,
+      "bad": 1
+    },
+    "trage": {
+      "good": 0,
+      "bad": 1
+    },
+    "bequemes": {
+      "good": 0,
+      "bad": 1
+    },
+    "jeans": {
+      "good": 0,
+      "bad": 1
+    },
+    "outfit": {
+      "good": 0,
+      "bad": 1
+    },
+    "besonderes": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 118,
-      "total": 215
+      "good": 119,
+      "total": 217
     },
     "Bot-Vorwurf": {
       "good": 8,
@@ -2980,8 +3012,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 87,
-      "lastUsed": "2026-01-05T14:00:29.038Z"
+      "successCount": 88,
+      "lastUsed": "2026-01-05T15:21:21.343Z"
     },
     {
       "situation": "allgemein",
@@ -3192,6 +3224,6 @@
       "lastUsed": "2026-01-04T20:01:25.618Z"
     }
   ],
-  "lastUpdated": "2026-01-05T14:00:29.038Z",
+  "lastUpdated": "2026-01-05T15:21:21.344Z",
   "initialized": true
 }
