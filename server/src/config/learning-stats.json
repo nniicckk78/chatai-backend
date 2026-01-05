@@ -39,6 +39,10 @@
     "das wäre": {
       "count": 1,
       "successRate": 0
+    },
+    "wäre es": {
+      "count": 1,
+      "successRate": 0
     }
   },
   "wordFrequency": {
@@ -48,7 +52,7 @@
     },
     "sich": {
       "good": 26,
-      "bad": 22
+      "bad": 23
     },
     "sehr": {
       "good": 26,
@@ -131,7 +135,7 @@
       "bad": 21
     },
     "genau": {
-      "good": 27,
+      "good": 28,
       "bad": 45
     },
     "gibt": {
@@ -172,7 +176,7 @@
     },
     "geht": {
       "good": 19,
-      "bad": 19
+      "bad": 20
     },
     "genauso": {
       "good": 19,
@@ -183,7 +187,7 @@
       "bad": 19
     },
     "auch": {
-      "good": 111,
+      "good": 112,
       "bad": 27
     },
     "funke": {
@@ -191,7 +195,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 99,
+      "good": 100,
       "bad": 24
     },
     "erlischt": {
@@ -211,7 +215,7 @@
       "bad": 3
     },
     "bisschen": {
-      "good": 26,
+      "good": 27,
       "bad": 7
     },
     "damit": {
@@ -219,7 +223,7 @@
       "bad": 0
     },
     "mich": {
-      "good": 41,
+      "good": 42,
       "bad": 19
     },
     "wohl": {
@@ -251,12 +255,12 @@
       "bad": 0
     },
     "was": {
-      "good": 82,
-      "bad": 88
+      "good": 84,
+      "bad": 90
     },
     "denn": {
       "good": 105,
-      "bad": 21
+      "bad": 22
     },
     "gerne": {
       "good": 29,
@@ -319,12 +323,12 @@
       "bad": 0
     },
     "suchst": {
-      "good": 21,
+      "good": 22,
       "bad": 1
     },
     "hier": {
-      "good": 23,
-      "bad": 3
+      "good": 24,
+      "bad": 4
     },
     "hof": {
       "good": 20,
@@ -359,8 +363,8 @@
       "bad": 25
     },
     "wenn": {
-      "good": 17,
-      "bad": 38
+      "good": 18,
+      "bad": 39
     },
     "gegenseitig": {
       "good": 0,
@@ -459,11 +463,11 @@
       "bad": 3
     },
     "werden": {
-      "good": 1,
+      "good": 2,
       "bad": 1
     },
     "könnte": {
-      "good": 4,
+      "good": 5,
       "bad": 3
     },
     "toll": {
@@ -483,7 +487,7 @@
       "bad": 1
     },
     "wäre": {
-      "good": 7,
+      "good": 8,
       "bad": 12
     },
     "perfektes": {
@@ -535,8 +539,8 @@
       "bad": 4
     },
     "alles": {
-      "good": 2,
-      "bad": 6
+      "good": 3,
+      "bad": 7
     },
     "neu": {
       "good": 1,
@@ -675,7 +679,7 @@
       "bad": 7
     },
     "eigentlich": {
-      "good": 5,
+      "good": 6,
       "bad": 1
     },
     "typ": {
@@ -927,8 +931,8 @@
       "bad": 2
     },
     "bin": {
-      "good": 16,
-      "bad": 12
+      "good": 17,
+      "bad": 13
     },
     "gemeinsam": {
       "good": 0,
@@ -996,7 +1000,7 @@
     },
     "ergibt": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "lebe": {
       "good": 0,
@@ -1176,7 +1180,7 @@
     },
     "etwas": {
       "good": 5,
-      "bad": 5
+      "bad": 6
     },
     "neugierig": {
       "good": 5,
@@ -1232,7 +1236,7 @@
     },
     "wichtig": {
       "good": 3,
-      "bad": 7
+      "bad": 8
     },
     "zuerst": {
       "good": 1,
@@ -1356,7 +1360,7 @@
     },
     "vielleicht": {
       "good": 0,
-      "bad": 8
+      "bad": 9
     },
     "anderes": {
       "good": 0,
@@ -1456,7 +1460,7 @@
     },
     "jemanden": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "finden": {
       "good": 0,
@@ -1544,7 +1548,7 @@
     },
     "besonders": {
       "good": 0,
-      "bad": 11
+      "bad": 12
     },
     "kommen": {
       "good": 3,
@@ -1756,7 +1760,7 @@
     },
     "chemie": {
       "good": 2,
-      "bad": 2
+      "bad": 3
     },
     "stimmt": {
       "good": 2,
@@ -1892,7 +1896,7 @@
     },
     "spüren": {
       "good": 2,
-      "bad": 2
+      "bad": 3
     },
     "geile": {
       "good": 4,
@@ -2552,7 +2556,7 @@
     },
     "aufregendes": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "speziellen": {
       "good": 0,
@@ -3031,8 +3035,8 @@
       "bad": 0
     },
     "offen": {
-      "good": 0,
-      "bad": 1
+      "good": 1,
+      "bad": 2
     },
     "schau": {
       "good": 0,
@@ -3113,6 +3117,38 @@
     "geheimen": {
       "good": 0,
       "bad": 2
+    },
+    "sehe": {
+      "good": 1,
+      "bad": 0
+    },
+    "berwiegend": {
+      "good": 1,
+      "bad": 0
+    },
+    "spa": {
+      "good": 1,
+      "bad": 0
+    },
+    "ernsten": {
+      "good": 1,
+      "bad": 0
+    },
+    "schlimm": {
+      "good": 1,
+      "bad": 0
+    },
+    "darum": {
+      "good": 0,
+      "bad": 1
+    },
+    "erleben": {
+      "good": 0,
+      "bad": 1
+    },
+    "kennenlernst": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -3129,8 +3165,8 @@
       "total": 29
     },
     "Wonach suchst du?": {
-      "good": 2,
-      "total": 4
+      "good": 3,
+      "total": 6
     },
     "Geld/Coins": {
       "good": 2,
@@ -3279,6 +3315,19 @@
     {
       "situation": "Wonach suchst du?",
       "customerPattern": {
+        "keywords": "hallo bin auch eben hause gekommen wie alt bist was",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 96
+      },
+      "goodResponse": "Ja das sehe ich genau so. Ich bin eigentlich offen für alles. Überwiegend um ein bisschen Spaß zu haben aber wenn es was ernsten werden könnte wäre es auch nicht schlimm für mich. Was suchst du hier s",
+      "successCount": 2,
+      "lastUsed": "2026-01-05T20:07:39.725Z"
+    },
+    {
+      "situation": "Wonach suchst du?",
+      "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
         "hasQuestion": true,
         "hasMeeting": false,
@@ -3366,47 +3415,37 @@
       "goodResponse": "Ich bin auch jetzt schon total geil aber ich muss noch schauen wann es dann am besten klappt, was würdest du dann als erstes gerne mit mir machen wollen?",
       "successCount": 1,
       "lastUsed": "2026-01-04T20:01:25.618Z"
-    },
-    {
-      "situation": "Wonach suchst du?",
-      "customerPattern": {
-        "keywords": "hallo bin auch eben hause gekommen wie alt bist was",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 96
-      },
-      "goodResponse": "Okay schön, wo warst du denn? Ich bin 23 Jahre alt komme aus Onex und du? Ich bin eigetlich nach ein bisschen Spass auf der Suche, wenn sich aber was festes daraus entwickeln sollte wäre ich davon auc",
-      "successCount": 1,
-      "lastUsed": "2026-01-05T17:33:22.442Z"
     }
   ],
-  "lastUpdated": "2026-01-05T20:05:45.511Z",
+  "lastUpdated": "2026-01-05T20:07:39.725Z",
   "initialized": true,
   "reasoningPrinciples": [],
   "messageStats": {
     "Wonach suchst du?": {
       "positive": {
         "lengths": [
-          247
+          247,
+          202
         ],
         "exclamationMarks": [
+          0,
           0
         ],
         "questions": [
-          3
+          3,
+          1
         ],
-        "count": 1,
-        "avgLength": 247,
-        "minLength": 247,
+        "count": 2,
+        "avgLength": 225,
+        "minLength": 202,
         "maxLength": 247,
         "medianLength": 247,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 3,
-        "minQuestions": 3,
+        "avgQuestions": 2,
+        "minQuestions": 1,
         "maxQuestions": 3,
         "medianQuestions": 3,
         "lengthDistribution": {
@@ -3419,26 +3458,29 @@
         },
         "questionDistribution": {
           "0": 0,
-          "1": 0,
+          "1": 50,
           "2": 0,
-          "3+": 100
+          "3+": 50
         }
       },
       "negative": {
         "lengths": [
-          122
+          122,
+          198
         ],
         "exclamationMarks": [
+          0,
           0
         ],
         "questions": [
+          1,
           1
         ],
-        "count": 1,
-        "avgLength": 122,
+        "count": 2,
+        "avgLength": 160,
         "minLength": 122,
-        "maxLength": 122,
-        "medianLength": 122,
+        "maxLength": 198,
+        "medianLength": 198,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
@@ -3450,8 +3492,8 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 100,
-          "150-200": 0,
+          "120-150": 50,
+          "150-200": 50,
           "200-250": 0,
           "250+": 0
         },
