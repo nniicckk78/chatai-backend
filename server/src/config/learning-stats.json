@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 55,
+      "count": 56,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -87,11 +87,11 @@
       "bad": 0
     },
     "würdest": {
-      "good": 62,
-      "bad": 21
+      "good": 63,
+      "bad": 22
     },
     "machen": {
-      "good": 51,
+      "good": 52,
       "bad": 9
     },
     "hätte": {
@@ -187,8 +187,8 @@
       "bad": 19
     },
     "auch": {
-      "good": 135,
-      "bad": 33
+      "good": 136,
+      "bad": 34
     },
     "funke": {
       "good": 19,
@@ -196,7 +196,7 @@
     },
     "nicht": {
       "good": 105,
-      "bad": 26
+      "bad": 27
     },
     "erlischt": {
       "good": 19,
@@ -239,8 +239,8 @@
       "bad": 0
     },
     "zeit": {
-      "good": 25,
-      "bad": 3
+      "good": 26,
+      "bad": 4
     },
     "ziemlich": {
       "good": 25,
@@ -255,16 +255,16 @@
       "bad": 0
     },
     "was": {
-      "good": 95,
-      "bad": 109
+      "good": 96,
+      "bad": 110
     },
     "denn": {
       "good": 113,
       "bad": 29
     },
     "gerne": {
-      "good": 33,
-      "bad": 24
+      "good": 34,
+      "bad": 25
     },
     "wollen": {
       "good": 28,
@@ -591,8 +591,8 @@
       "bad": 1
     },
     "andere": {
-      "good": 1,
-      "bad": 1
+      "good": 2,
+      "bad": 2
     },
     "richtung": {
       "good": 0,
@@ -763,8 +763,8 @@
       "bad": 8
     },
     "dinge": {
-      "good": 6,
-      "bad": 2
+      "good": 7,
+      "bad": 3
     },
     "auszuprobieren": {
       "good": 3,
@@ -823,8 +823,8 @@
       "bad": 0
     },
     "doch": {
-      "good": 11,
-      "bad": 3
+      "good": 12,
+      "bad": 4
     },
     "sex": {
       "good": 13,
@@ -875,8 +875,8 @@
       "bad": 6
     },
     "spass": {
-      "good": 2,
-      "bad": 7
+      "good": 3,
+      "bad": 8
     },
     "nacht": {
       "good": 0,
@@ -1135,8 +1135,8 @@
       "bad": 0
     },
     "trotzdem": {
-      "good": 1,
-      "bad": 0
+      "good": 2,
+      "bad": 1
     },
     "anfangen": {
       "good": 1,
@@ -1327,8 +1327,8 @@
       "bad": 2
     },
     "musst": {
-      "good": 4,
-      "bad": 0
+      "good": 5,
+      "bad": 1
     },
     "heutigen": {
       "good": 1,
@@ -1507,8 +1507,8 @@
       "bad": 0
     },
     "könnten": {
-      "good": 4,
-      "bad": 3
+      "good": 5,
+      "bad": 4
     },
     "tolle": {
       "good": 2,
@@ -2255,7 +2255,7 @@
       "bad": 0
     },
     "leider": {
-      "good": 3,
+      "good": 4,
       "bad": 2
     },
     "dienstag": {
@@ -2335,12 +2335,12 @@
       "bad": 0
     },
     "tut": {
-      "good": 3,
-      "bad": 1
+      "good": 4,
+      "bad": 2
     },
     "leid": {
-      "good": 3,
-      "bad": 1
+      "good": 4,
+      "bad": 2
     },
     "kopfkino": {
       "good": 1,
@@ -2515,8 +2515,8 @@
       "bad": 0
     },
     "habe": {
-      "good": 4,
-      "bad": 2
+      "good": 5,
+      "bad": 3
     },
     "schän": {
       "good": 1,
@@ -3144,7 +3144,7 @@
     },
     "erleben": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "kennenlernst": {
       "good": 0,
@@ -3561,6 +3561,30 @@
     "soweit": {
       "good": 1,
       "bad": 1
+    },
+    "schwere": {
+      "good": 1,
+      "bad": 1
+    },
+    "durchmachen": {
+      "good": 1,
+      "bad": 1
+    },
+    "kurz": {
+      "good": 1,
+      "bad": 0
+    },
+    "vergessen": {
+      "good": 1,
+      "bad": 1
+    },
+    "gehabt": {
+      "good": 1,
+      "bad": 0
+    },
+    "konzentrieren": {
+      "good": 1,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -3573,8 +3597,8 @@
       "total": 18
     },
     "Sexuelle Themen": {
-      "good": 18,
-      "total": 35
+      "good": 19,
+      "total": 37
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -3755,6 +3779,19 @@
       "lastUsed": "2026-01-05T22:59:16.524Z"
     },
     {
+      "situation": "Sexuelle Themen",
+      "customerPattern": {
+        "keywords": "zeigst nackten titten jetzt bin scharf dihc vögeln alle löcher",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 157
+      },
+      "goodResponse": "Es tut mir leid, dass du so eine schwere Zeit durchmachen musst. Ich habe das leider kurz vergessen gehabt. Aber wir könnten uns doch auch auf andere Dinge konzentrieren. Was würdest du gerne machen, ",
+      "successCount": 2,
+      "lastUsed": "2026-01-05T23:01:45.533Z"
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
@@ -3792,19 +3829,6 @@
       "goodResponse": "Aber das ist ja selbstverständlich oder nicht? Denkst du denn ich würde dich nichtmal sehen wollen oder was? Ich bin hier sicher nicht aus langeweile angemeldet! Warum denkst du denn so über mich?",
       "successCount": 1,
       "lastUsed": "2026-01-04T12:51:21.994Z"
-    },
-    {
-      "situation": "Sexuelle Themen",
-      "customerPattern": {
-        "keywords": "zeigst nackten titten jetzt bin scharf dihc vögeln alle löcher",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 157
-      },
-      "goodResponse": "Gerade ist schlecht mit Fotos senden tut mir leid. Da musst du jetzt dein Kopfkino ein bisschen anstrengen.😛Klar in alle löcher warum denn nicht, hattest du denn schonmal Analsex oder würdest du das ",
-      "successCount": 1,
-      "lastUsed": "2026-01-04T12:53:14.674Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -3872,7 +3896,7 @@
       "lastUsed": "2026-01-05T22:07:03.348Z"
     }
   ],
-  "lastUpdated": "2026-01-05T22:59:16.524Z",
+  "lastUpdated": "2026-01-05T23:01:45.533Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -3946,6 +3970,14 @@
         "Treffen/Termine"
       ],
       "lastUsed": "2026-01-05T22:59:16.524Z"
+    },
+    {
+      "text": "Sei kurz, präzise und direkt",
+      "count": 1,
+      "situations": [
+        "Sexuelle Themen"
+      ],
+      "lastUsed": "2026-01-05T23:01:45.533Z"
     }
   ],
   "messageStats": {
@@ -4206,24 +4238,27 @@
         "lengths": [
           204,
           174,
-          139
+          139,
+          227
         ],
         "exclamationMarks": [
           2,
+          0,
           0,
           0
         ],
         "questions": [
           1,
           1,
+          1,
           1
         ],
-        "count": 3,
-        "avgLength": 172,
+        "count": 4,
+        "avgLength": 186,
         "minLength": 139,
-        "maxLength": 204,
-        "medianLength": 174,
-        "avgExclamationMarks": 0.7,
+        "maxLength": 227,
+        "medianLength": 204,
+        "avgExclamationMarks": 0.5,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 2,
         "medianExclamationMarks": 0,
@@ -4234,9 +4269,9 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 33,
-          "150-200": 33,
-          "200-250": 33,
+          "120-150": 25,
+          "150-200": 25,
+          "200-250": 50,
           "250+": 0
         },
         "questionDistribution": {
@@ -4250,9 +4285,11 @@
         "lengths": [
           176,
           176,
-          183
+          183,
+          215
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0
@@ -4260,13 +4297,14 @@
         "questions": [
           1,
           1,
-          2
+          2,
+          1
         ],
-        "count": 3,
-        "avgLength": 178,
+        "count": 4,
+        "avgLength": 188,
         "minLength": 176,
-        "maxLength": 183,
-        "medianLength": 176,
+        "maxLength": 215,
+        "medianLength": 183,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
@@ -4279,14 +4317,14 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 100,
-          "200-250": 0,
+          "150-200": 75,
+          "200-250": 25,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 67,
-          "2": 33,
+          "1": 75,
+          "2": 25,
           "3+": 0
         }
       }
