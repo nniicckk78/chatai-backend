@@ -51,8 +51,8 @@
       "bad": 6
     },
     "sich": {
-      "good": 27,
-      "bad": 23
+      "good": 28,
+      "bad": 24
     },
     "sehr": {
       "good": 32,
@@ -88,7 +88,7 @@
     },
     "würdest": {
       "good": 61,
-      "bad": 18
+      "bad": 19
     },
     "machen": {
       "good": 50,
@@ -119,8 +119,8 @@
       "bad": 20
     },
     "wie": {
-      "good": 47,
-      "bad": 60
+      "good": 48,
+      "bad": 61
     },
     "stellst": {
       "good": 0,
@@ -140,7 +140,7 @@
     },
     "gibt": {
       "good": 23,
-      "bad": 29
+      "bad": 30
     },
     "bestimmten": {
       "good": 0,
@@ -255,7 +255,7 @@
       "bad": 0
     },
     "was": {
-      "good": 91,
+      "good": 92,
       "bad": 106
     },
     "denn": {
@@ -264,7 +264,7 @@
     },
     "gerne": {
       "good": 33,
-      "bad": 22
+      "bad": 23
     },
     "wollen": {
       "good": 28,
@@ -747,8 +747,8 @@
       "bad": 0
     },
     "bist": {
-      "good": 10,
-      "bad": 2
+      "good": 11,
+      "bad": 3
     },
     "allgemein": {
       "good": 3,
@@ -764,7 +764,7 @@
     },
     "dinge": {
       "good": 6,
-      "bad": 1
+      "bad": 2
     },
     "auszuprobieren": {
       "good": 2,
@@ -931,8 +931,8 @@
       "bad": 2
     },
     "bin": {
-      "good": 21,
-      "bad": 20
+      "good": 22,
+      "bad": 21
     },
     "gemeinsam": {
       "good": 1,
@@ -955,16 +955,16 @@
       "bad": 0
     },
     "jahre": {
-      "good": 2,
-      "bad": 1
+      "good": 3,
+      "bad": 2
     },
     "alt": {
-      "good": 2,
-      "bad": 1
+      "good": 3,
+      "bad": 2
     },
     "dich": {
-      "good": 27,
-      "bad": 24
+      "good": 28,
+      "bad": 25
     },
     "stört": {
       "good": 7,
@@ -1532,7 +1532,7 @@
     },
     "ndern": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "frustrierend": {
       "good": 0,
@@ -1655,7 +1655,7 @@
       "bad": 1
     },
     "meisten": {
-      "good": 5,
+      "good": 6,
       "bad": 2
     },
     "frage": {
@@ -1967,8 +1967,8 @@
       "bad": 0
     },
     "single": {
-      "good": 2,
-      "bad": 0
+      "good": 3,
+      "bad": 1
     },
     "gespannt": {
       "good": 4,
@@ -2071,8 +2071,8 @@
       "bad": 8
     },
     "komme": {
-      "good": 4,
-      "bad": 1
+      "good": 5,
+      "bad": 2
     },
     "erzählst": {
       "good": 1,
@@ -2599,7 +2599,7 @@
       "bad": 1
     },
     "vermisst": {
-      "good": 0,
+      "good": 1,
       "bad": 1
     },
     "lebhafte": {
@@ -2883,8 +2883,8 @@
       "bad": 1
     },
     "fühlt": {
-      "good": 0,
-      "bad": 1
+      "good": 1,
+      "bad": 2
     },
     "glaubst": {
       "good": 0,
@@ -3449,6 +3449,38 @@
     "natur": {
       "good": 0,
       "bad": 1
+    },
+    "heisse": {
+      "good": 1,
+      "bad": 1
+    },
+    "melanie": {
+      "good": 1,
+      "bad": 1
+    },
+    "telgte": {
+      "good": 1,
+      "bad": 1
+    },
+    "arbeite": {
+      "good": 1,
+      "bad": 1
+    },
+    "nagelstudio": {
+      "good": 1,
+      "bad": 1
+    },
+    "drei": {
+      "good": 1,
+      "bad": 1
+    },
+    "jahren": {
+      "good": 1,
+      "bad": 1
+    },
+    "beziehung": {
+      "good": 1,
+      "bad": 0
     }
   },
   "situationSuccess": {
@@ -3479,6 +3511,10 @@
     "Bilder Anfrage": {
       "good": 2,
       "total": 4
+    },
+    "Berufsfrage": {
+      "good": 1,
+      "total": 2
     }
   },
   "responsePatterns": [
@@ -3728,9 +3764,22 @@
       "goodResponse": "Ich gehe gerne shopen, spaziernen und auch gerne Schwimmen, geht du eher gerne in Therme oder lieber in ein normales Schwimmbad oder auch gerne mal an See?",
       "successCount": 1,
       "lastUsed": "2026-01-05T22:00:34.033Z"
+    },
+    {
+      "situation": "Berufsfrage",
+      "customerPattern": {
+        "keywords": "bin singel drei jahren wie schon wei hei tim bin",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 357
+      },
+      "goodResponse": "Ich heisse Melanie, bin 29 Jahre alt und komme aus Telgte. Ich arbeite in einem Nagelstudio. Du bist seit drei Jahren single, wie fühlt sich das für dich an? Was vermisst du am meisten in einer Bezieh",
+      "successCount": 1,
+      "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-05T22:00:34.033Z",
+  "lastUpdated": "2026-01-05T22:02:35.166Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -3772,6 +3821,14 @@
         "Bot-Vorwurf"
       ],
       "lastUsed": "2026-01-05T22:00:34.033Z"
+    },
+    {
+      "text": "Bessere fragen, er ist ja auf der Plattform weil er es ändern will",
+      "count": 1,
+      "situations": [
+        "Berufsfrage"
+      ],
+      "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
   "messageStats": {
@@ -4182,6 +4239,84 @@
           "0": 0,
           "1": 100,
           "2": 0,
+          "3+": 0
+        }
+      }
+    },
+    "Berufsfrage": {
+      "positive": {
+        "lengths": [
+          204
+        ],
+        "exclamationMarks": [
+          0
+        ],
+        "questions": [
+          2
+        ],
+        "count": 1,
+        "avgLength": 204,
+        "minLength": 204,
+        "maxLength": 204,
+        "medianLength": 204,
+        "avgExclamationMarks": 0,
+        "minExclamationMarks": 0,
+        "maxExclamationMarks": 0,
+        "medianExclamationMarks": 0,
+        "avgQuestions": 2,
+        "minQuestions": 2,
+        "maxQuestions": 2,
+        "medianQuestions": 2,
+        "lengthDistribution": {
+          "0-100": 0,
+          "100-120": 0,
+          "120-150": 0,
+          "150-200": 0,
+          "200-250": 100,
+          "250+": 0
+        },
+        "questionDistribution": {
+          "0": 0,
+          "1": 0,
+          "2": 100,
+          "3+": 0
+        }
+      },
+      "negative": {
+        "lengths": [
+          201
+        ],
+        "exclamationMarks": [
+          0
+        ],
+        "questions": [
+          2
+        ],
+        "count": 1,
+        "avgLength": 201,
+        "minLength": 201,
+        "maxLength": 201,
+        "medianLength": 201,
+        "avgExclamationMarks": 0,
+        "minExclamationMarks": 0,
+        "maxExclamationMarks": 0,
+        "medianExclamationMarks": 0,
+        "avgQuestions": 2,
+        "minQuestions": 2,
+        "maxQuestions": 2,
+        "medianQuestions": 2,
+        "lengthDistribution": {
+          "0-100": 0,
+          "100-120": 0,
+          "120-150": 0,
+          "150-200": 0,
+          "200-250": 100,
+          "250+": 0
+        },
+        "questionDistribution": {
+          "0": 0,
+          "1": 0,
+          "2": 100,
           "3+": 0
         }
       }
