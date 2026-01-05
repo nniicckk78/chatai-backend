@@ -55,7 +55,7 @@
       "bad": 23
     },
     "sehr": {
-      "good": 26,
+      "good": 27,
       "bad": 11
     },
     "verlockend": {
@@ -64,7 +64,7 @@
     },
     "würden": {
       "good": 22,
-      "bad": 0
+      "bad": 1
     },
     "dann": {
       "good": 63,
@@ -80,7 +80,7 @@
     },
     "trinken": {
       "good": 22,
-      "bad": 0
+      "bad": 1
     },
     "gehen": {
       "good": 23,
@@ -88,7 +88,7 @@
     },
     "würdest": {
       "good": 61,
-      "bad": 13
+      "bad": 14
     },
     "machen": {
       "good": 49,
@@ -187,8 +187,8 @@
       "bad": 19
     },
     "auch": {
-      "good": 112,
-      "bad": 27
+      "good": 114,
+      "bad": 28
     },
     "funke": {
       "good": 19,
@@ -255,12 +255,12 @@
       "bad": 0
     },
     "was": {
-      "good": 84,
-      "bad": 90
+      "good": 85,
+      "bad": 91
     },
     "denn": {
-      "good": 105,
-      "bad": 22
+      "good": 106,
+      "bad": 23
     },
     "gerne": {
       "good": 29,
@@ -271,7 +271,7 @@
       "bad": 0
     },
     "wieder": {
-      "good": 0,
+      "good": 1,
       "bad": 20
     },
     "entfachen": {
@@ -364,7 +364,7 @@
     },
     "wenn": {
       "good": 18,
-      "bad": 39
+      "bad": 40
     },
     "gegenseitig": {
       "good": 0,
@@ -616,7 +616,7 @@
     },
     "ganz": {
       "good": 6,
-      "bad": 1
+      "bad": 2
     },
     "mühe": {
       "good": 1,
@@ -636,7 +636,7 @@
     },
     "wünschen": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "deinen": {
       "good": 1,
@@ -719,7 +719,7 @@
       "bad": 5
     },
     "deine": {
-      "good": 5,
+      "good": 6,
       "bad": 13
     },
     "hobbys": {
@@ -776,7 +776,7 @@
     },
     "geniessen": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "beim": {
       "good": 1,
@@ -788,7 +788,7 @@
     },
     "mag": {
       "good": 0,
-      "bad": 6
+      "bad": 7
     },
     "doggi": {
       "good": 0,
@@ -827,7 +827,7 @@
       "bad": 3
     },
     "sex": {
-      "good": 12,
+      "good": 13,
       "bad": 1
     },
     "nichz": {
@@ -887,7 +887,7 @@
       "bad": 0
     },
     "mal": {
-      "good": 16,
+      "good": 17,
       "bad": 13
     },
     "sehen": {
@@ -1648,7 +1648,7 @@
     },
     "meinem": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "körper": {
       "good": 2,
@@ -1680,7 +1680,7 @@
     },
     "geschmack": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "getroffen": {
       "good": 0,
@@ -2167,8 +2167,8 @@
       "bad": 1
     },
     "wein": {
-      "good": 0,
-      "bad": 1
+      "good": 1,
+      "bad": 2
     },
     "gemütlich": {
       "good": 0,
@@ -2207,7 +2207,7 @@
       "bad": 0
     },
     "lieblingsgetränke": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "gehe": {
@@ -2759,7 +2759,7 @@
       "bad": 0
     },
     "hin": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "schreiben": {
@@ -3091,7 +3091,7 @@
       "bad": 1
     },
     "natürlich": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "intimes": {
@@ -3149,12 +3149,52 @@
     "kennenlernst": {
       "good": 0,
       "bad": 1
+    },
+    "unterschiedlich": {
+      "good": 1,
+      "bad": 0
+    },
+    "meistens": {
+      "good": 1,
+      "bad": 0
+    },
+    "greifen": {
+      "good": 1,
+      "bad": 0
+    },
+    "the": {
+      "good": 1,
+      "bad": 0
+    },
+    "beach": {
+      "good": 1,
+      "bad": 0
+    },
+    "wodka": {
+      "good": 1,
+      "bad": 0
+    },
+    "oranschensaft": {
+      "good": 1,
+      "bad": 0
+    },
+    "sekt": {
+      "good": 1,
+      "bad": 0
+    },
+    "gläschen": {
+      "good": 0,
+      "bad": 1
+    },
+    "cocktails": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 123,
-      "total": 225
+      "good": 124,
+      "total": 227
     },
     "Bot-Vorwurf": {
       "good": 8,
@@ -3205,8 +3245,8 @@
         "length": 59
       },
       "goodResponse": "Danke, das wünsche ich dir ebenfalls. Und danke noch für das Kompliment, du machst mich auch echt neugierig! Aber nein dein alter stört mich nicht, da lege ich nicht so viel Wert drauf! Der Altersunte",
-      "successCount": 31,
-      "lastUsed": "2026-01-05T20:05:45.511Z"
+      "successCount": 32,
+      "lastUsed": "2026-01-05T20:19:04.583Z"
     },
     {
       "situation": "Bot-Vorwurf",
@@ -3417,7 +3457,7 @@
       "lastUsed": "2026-01-04T20:01:25.618Z"
     }
   ],
-  "lastUpdated": "2026-01-05T20:07:39.725Z",
+  "lastUpdated": "2026-01-05T20:19:04.583Z",
   "initialized": true,
   "reasoningPrinciples": [],
   "messageStats": {
@@ -3510,23 +3550,26 @@
         "lengths": [
           192,
           108,
-          109
+          109,
+          199
         ],
         "exclamationMarks": [
           1,
+          0,
           0,
           0
         ],
         "questions": [
           2,
           1,
+          1,
           1
         ],
-        "count": 3,
-        "avgLength": 136,
+        "count": 4,
+        "avgLength": 152,
         "minLength": 108,
-        "maxLength": 192,
-        "medianLength": 109,
+        "maxLength": 199,
+        "medianLength": 192,
         "avgExclamationMarks": 0.3,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
@@ -3537,16 +3580,16 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 67,
+          "100-120": 50,
           "120-150": 0,
-          "150-200": 33,
+          "150-200": 50,
           "200-250": 0,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 67,
-          "2": 33,
+          "1": 75,
+          "2": 25,
           "3+": 0
         }
       },
@@ -3554,9 +3597,11 @@
         "lengths": [
           207,
           136,
-          136
+          136,
+          155
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0
@@ -3564,13 +3609,14 @@
         "questions": [
           1,
           1,
+          1,
           1
         ],
-        "count": 3,
-        "avgLength": 160,
+        "count": 4,
+        "avgLength": 159,
         "minLength": 136,
         "maxLength": 207,
-        "medianLength": 136,
+        "medianLength": 155,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
@@ -3582,9 +3628,9 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 67,
-          "150-200": 0,
-          "200-250": 33,
+          "120-150": 50,
+          "150-200": 25,
+          "200-250": 25,
           "250+": 0
         },
         "questionDistribution": {
