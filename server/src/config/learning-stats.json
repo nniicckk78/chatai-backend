@@ -147,7 +147,7 @@
       "bad": 20
     },
     "ort": {
-      "good": 0,
+      "good": 1,
       "bad": 23
     },
     "den": {
@@ -167,7 +167,7 @@
       "bad": 20
     },
     "mehr": {
-      "good": 28,
+      "good": 29,
       "bad": 27
     },
     "wünschst": {
@@ -183,7 +183,7 @@
       "bad": 19
     },
     "möchte": {
-      "good": 22,
+      "good": 23,
       "bad": 19
     },
     "auch": {
@@ -255,7 +255,7 @@
       "bad": 0
     },
     "was": {
-      "good": 98,
+      "good": 99,
       "bad": 112
     },
     "denn": {
@@ -291,7 +291,7 @@
       "bad": 0
     },
     "dein": {
-      "good": 32,
+      "good": 33,
       "bad": 8
     },
     "bestes": {
@@ -719,7 +719,7 @@
       "bad": 5
     },
     "deine": {
-      "good": 8,
+      "good": 9,
       "bad": 19
     },
     "hobbys": {
@@ -963,7 +963,7 @@
       "bad": 2
     },
     "dich": {
-      "good": 28,
+      "good": 29,
       "bad": 26
     },
     "stört": {
@@ -1047,7 +1047,7 @@
       "bad": 8
     },
     "noch": {
-      "good": 24,
+      "good": 25,
       "bad": 6
     },
     "wenig": {
@@ -1055,15 +1055,15 @@
       "bad": 0
     },
     "ber": {
-      "good": 5,
+      "good": 6,
       "bad": 9
     },
     "erfahren": {
-      "good": 3,
+      "good": 4,
       "bad": 5
     },
     "bevor": {
-      "good": 2,
+      "good": 3,
       "bad": 4
     },
     "treffen": {
@@ -1179,7 +1179,7 @@
       "bad": 0
     },
     "etwas": {
-      "good": 5,
+      "good": 6,
       "bad": 7
     },
     "neugierig": {
@@ -3593,12 +3593,40 @@
     "anschaust": {
       "good": 1,
       "bad": 0
+    },
+    "schätze": {
+      "good": 1,
+      "bad": 0
+    },
+    "angebot": {
+      "good": 1,
+      "bad": 0
+    },
+    "konkreten": {
+      "good": 1,
+      "bad": 0
+    },
+    "termin": {
+      "good": 1,
+      "bad": 0
+    },
+    "festlegen": {
+      "good": 1,
+      "bad": 0
+    },
+    "lieblingsgerichte": {
+      "good": 1,
+      "bad": 0
+    },
+    "restaurants": {
+      "good": 1,
+      "bad": 0
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 138,
-      "total": 253
+      "good": 139,
+      "total": 254
     },
     "Bot-Vorwurf": {
       "good": 9,
@@ -3640,8 +3668,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 98,
-      "lastUsed": "2026-01-05T23:05:40.517Z"
+      "successCount": 99,
+      "lastUsed": "2026-01-05T23:06:46.509Z"
     },
     {
       "situation": "allgemein",
@@ -3904,7 +3932,7 @@
       "lastUsed": "2026-01-05T22:07:03.348Z"
     }
   ],
-  "lastUpdated": "2026-01-05T23:05:40.517Z",
+  "lastUpdated": "2026-01-05T23:06:46.509Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4101,7 +4129,8 @@
           151,
           112,
           163,
-          168
+          168,
+          180
         ],
         "exclamationMarks": [
           1,
@@ -4116,6 +4145,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4141,10 +4171,11 @@
           2,
           1,
           2,
+          1,
           1
         ],
-        "count": 18,
-        "avgLength": 154,
+        "count": 19,
+        "avgLength": 155,
         "minLength": 106,
         "maxLength": 232,
         "medianLength": 151,
@@ -4158,17 +4189,17 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 33,
-          "120-150": 17,
-          "150-200": 39,
+          "100-120": 32,
+          "120-150": 16,
+          "150-200": 42,
           "200-250": 11,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 78,
-          "2": 17,
-          "3+": 6
+          "1": 79,
+          "2": 16,
+          "3+": 5
         }
       },
       "negative": {
