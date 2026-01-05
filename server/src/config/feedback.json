@@ -6380,7 +6380,7 @@
       "customerMessage": "Alles gut, verstehe ich auch. Kannst auch einfach was raussuchen(wenn du magst). Restaurant (Ort) +Tag+ Uhrzeit und dann schauen wir weiter.",
       "aiResponse": "Ich schätze dein Angebot, aber ich möchte noch etwas mehr über dich erfahren, bevor wir einen konkreten Termin und Ort festlegen. Was sind deine Lieblingsgerichte oder Restaurants?",
       "editedResponse": null,
-      "status": "pending",
+      "status": "good",
       "platform": "fpc",
       "isASA": false,
       "context": {
@@ -6400,7 +6400,11 @@
       },
       "lastModeratorMessage": "oh das tut mir dann sehr leid, aber meine Nummer tausche ich dann nur beim treffen dann aus sorry",
       "timestamp": "2026-01-05T22:40:51.976Z",
-      "updatedAt": "2026-01-05T22:40:51.976Z"
+      "updatedAt": "2026-01-05T23:06:45.195Z",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1767652918979_ejeorgv53",
