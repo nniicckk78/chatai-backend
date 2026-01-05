@@ -47,11 +47,11 @@
   },
   "wordFrequency": {
     "hört": {
-      "good": 22,
+      "good": 23,
       "bad": 6
     },
     "sich": {
-      "good": 26,
+      "good": 27,
       "bad": 23
     },
     "sehr": {
@@ -67,7 +67,7 @@
       "bad": 1
     },
     "dann": {
-      "good": 68,
+      "good": 69,
       "bad": 1
     },
     "irgendwo": {
@@ -119,7 +119,7 @@
       "bad": 20
     },
     "wie": {
-      "good": 45,
+      "good": 47,
       "bad": 60
     },
     "stellst": {
@@ -160,7 +160,7 @@
     },
     "hast": {
       "good": 25,
-      "bad": 56
+      "bad": 58
     },
     "verstehen": {
       "good": 24,
@@ -240,14 +240,14 @@
     },
     "zeit": {
       "good": 25,
-      "bad": 2
+      "bad": 3
     },
     "ziemlich": {
       "good": 25,
       "bad": 0
     },
     "viel": {
-      "good": 25,
+      "good": 26,
       "bad": 5
     },
     "los": {
@@ -256,7 +256,7 @@
     },
     "was": {
       "good": 90,
-      "bad": 104
+      "bad": 105
     },
     "denn": {
       "good": 110,
@@ -364,7 +364,7 @@
     },
     "wenn": {
       "good": 21,
-      "bad": 43
+      "bad": 44
     },
     "gegenseitig": {
       "good": 0,
@@ -488,7 +488,7 @@
     },
     "wäre": {
       "good": 11,
-      "bad": 17
+      "bad": 18
     },
     "perfektes": {
       "good": 0,
@@ -616,7 +616,7 @@
     },
     "ganz": {
       "good": 10,
-      "bad": 2
+      "bad": 3
     },
     "mühe": {
       "good": 1,
@@ -631,7 +631,7 @@
       "bad": 0
     },
     "wirklich": {
-      "good": 3,
+      "good": 4,
       "bad": 28
     },
     "wünschen": {
@@ -771,7 +771,7 @@
       "bad": 0
     },
     "immer": {
-      "good": 13,
+      "good": 14,
       "bad": 8
     },
     "geniessen": {
@@ -852,7 +852,7 @@
     },
     "nett": {
       "good": 5,
-      "bad": 0
+      "bad": 1
     },
     "kommst": {
       "good": 5,
@@ -872,15 +872,15 @@
     },
     "abenteuer": {
       "good": 1,
-      "bad": 5
+      "bad": 6
     },
     "spass": {
       "good": 2,
-      "bad": 5
+      "bad": 6
     },
     "nacht": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "wette": {
       "good": 2,
@@ -1040,10 +1040,10 @@
     },
     "verstehe": {
       "good": 4,
-      "bad": 8
+      "bad": 9
     },
     "schon": {
-      "good": 25,
+      "good": 26,
       "bad": 6
     },
     "noch": {
@@ -1180,7 +1180,7 @@
     },
     "etwas": {
       "good": 5,
-      "bad": 6
+      "bad": 7
     },
     "neugierig": {
       "good": 5,
@@ -1327,7 +1327,7 @@
       "bad": 2
     },
     "musst": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "heutigen": {
@@ -1360,7 +1360,7 @@
     },
     "vielleicht": {
       "good": 0,
-      "bad": 9
+      "bad": 10
     },
     "anderes": {
       "good": 0,
@@ -1947,7 +1947,7 @@
       "bad": 0
     },
     "lange": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "durststrecke": {
@@ -1995,7 +1995,7 @@
       "bad": 0
     },
     "machst": {
-      "good": 5,
+      "good": 6,
       "bad": 5
     },
     "nein": {
@@ -2936,7 +2936,7 @@
     },
     "arbeitstag": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "malteser": {
       "good": 0,
@@ -3240,7 +3240,7 @@
     },
     "gute": {
       "good": 1,
-      "bad": 0
+      "bad": 1
     },
     "arbeit": {
       "good": 1,
@@ -3357,12 +3357,56 @@
     "erwarten": {
       "good": 0,
       "bad": 1
+    },
+    "anstrengend": {
+      "good": 1,
+      "bad": 0
+    },
+    "uhr": {
+      "good": 1,
+      "bad": 0
+    },
+    "aufstehen": {
+      "good": 1,
+      "bad": 0
+    },
+    "anstrengenden": {
+      "good": 0,
+      "bad": 1
+    },
+    "job": {
+      "good": 0,
+      "bad": 1
+    },
+    "langen": {
+      "good": 0,
+      "bad": 1
+    },
+    "hältst": {
+      "good": 0,
+      "bad": 1
+    },
+    "kleinen": {
+      "good": 0,
+      "bad": 1
+    },
+    "süsse": {
+      "good": 0,
+      "bad": 1
+    },
+    "träume": {
+      "good": 0,
+      "bad": 1
+    },
+    "liebes": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 133,
-      "total": 245
+      "good": 134,
+      "total": 247
     },
     "Bot-Vorwurf": {
       "good": 8,
@@ -3400,8 +3444,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 93,
-      "lastUsed": "2026-01-05T20:32:56.360Z"
+      "successCount": 94,
+      "lastUsed": "2026-01-05T21:27:52.630Z"
     },
     {
       "situation": "allgemein",
@@ -3625,7 +3669,7 @@
       "lastUsed": "2026-01-04T20:01:25.618Z"
     }
   ],
-  "lastUpdated": "2026-01-05T21:26:28.371Z",
+  "lastUpdated": "2026-01-05T21:27:52.630Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -3651,6 +3695,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-05T21:26:28.370Z"
+    },
+    {
+      "text": "Sich nicht vom kunde verabschieden wenn er schlafen geht, gespräch einfach weiter führen",
+      "count": 1,
+      "situations": [
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-05T21:27:52.630Z"
     }
   ],
   "messageStats": {
@@ -3753,7 +3805,8 @@
           232,
           232,
           192,
-          106
+          106,
+          119
         ],
         "exclamationMarks": [
           1,
@@ -3768,6 +3821,7 @@
           0,
           0,
           1,
+          0,
           0
         ],
         "questions": [
@@ -3783,10 +3837,11 @@
           1,
           1,
           3,
+          1,
           1
         ],
-        "count": 13,
-        "avgLength": 158,
+        "count": 14,
+        "avgLength": 155,
         "minLength": 106,
         "maxLength": 232,
         "medianLength": 144,
@@ -3800,17 +3855,17 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 31,
-          "120-150": 23,
-          "150-200": 31,
-          "200-250": 15,
+          "100-120": 36,
+          "120-150": 21,
+          "150-200": 29,
+          "200-250": 14,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 85,
-          "2": 8,
-          "3+": 8
+          "1": 86,
+          "2": 7,
+          "3+": 7
         }
       },
       "negative": {
@@ -3827,9 +3882,11 @@
           200,
           200,
           210,
-          213
+          213,
+          234
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -3857,12 +3914,13 @@
           0,
           0,
           1,
+          1,
           1
         ],
-        "count": 13,
-        "avgLength": 169,
+        "count": 14,
+        "avgLength": 174,
         "minLength": 115,
-        "maxLength": 213,
+        "maxLength": 234,
         "medianLength": 200,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
@@ -3874,15 +3932,15 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 23,
-          "120-150": 15,
-          "150-200": 8,
-          "200-250": 54,
+          "100-120": 21,
+          "120-150": 14,
+          "150-200": 7,
+          "200-250": 57,
           "250+": 0
         },
         "questionDistribution": {
-          "0": 31,
-          "1": 69,
+          "0": 29,
+          "1": 71,
           "2": 0,
           "3+": 0
         }
