@@ -135,7 +135,7 @@
       "bad": 21
     },
     "genau": {
-      "good": 31,
+      "good": 32,
       "bad": 45
     },
     "gibt": {
@@ -159,7 +159,7 @@
       "bad": 25
     },
     "hast": {
-      "good": 29,
+      "good": 30,
       "bad": 60
     },
     "verstehen": {
@@ -255,11 +255,11 @@
       "bad": 0
     },
     "was": {
-      "good": 93,
+      "good": 94,
       "bad": 108
     },
     "denn": {
-      "good": 111,
+      "good": 112,
       "bad": 28
     },
     "gerne": {
@@ -283,7 +283,7 @@
       "bad": 9
     },
     "einfach": {
-      "good": 22,
+      "good": 23,
       "bad": 19
     },
     "gibst": {
@@ -383,11 +383,11 @@
       "bad": 31
     },
     "dabei": {
-      "good": 2,
+      "good": 3,
       "bad": 27
     },
     "vorgestellt": {
-      "good": 0,
+      "good": 1,
       "bad": 20
     },
     "klingt": {
@@ -603,7 +603,7 @@
       "bad": 1
     },
     "werde": {
-      "good": 6,
+      "good": 7,
       "bad": 0
     },
     "jeden": {
@@ -615,7 +615,7 @@
       "bad": 0
     },
     "ganz": {
-      "good": 10,
+      "good": 11,
       "bad": 3
     },
     "mühe": {
@@ -719,7 +719,7 @@
       "bad": 5
     },
     "deine": {
-      "good": 7,
+      "good": 8,
       "bad": 19
     },
     "hobbys": {
@@ -931,7 +931,7 @@
       "bad": 2
     },
     "bin": {
-      "good": 22,
+      "good": 23,
       "bad": 21
     },
     "gemeinsam": {
@@ -1043,7 +1043,7 @@
       "bad": 10
     },
     "schon": {
-      "good": 27,
+      "good": 28,
       "bad": 8
     },
     "noch": {
@@ -1971,7 +1971,7 @@
       "bad": 1
     },
     "gespannt": {
-      "good": 4,
+      "good": 5,
       "bad": 7
     },
     "chance": {
@@ -2887,7 +2887,7 @@
       "bad": 2
     },
     "glaubst": {
-      "good": 0,
+      "good": 1,
       "bad": 1
     },
     "fühlen": {
@@ -3541,12 +3541,24 @@
     "aussehen": {
       "good": 1,
       "bad": 0
+    },
+    "bestrafung": {
+      "good": 1,
+      "bad": 0
+    },
+    "peitsche": {
+      "good": 1,
+      "bad": 0
+    },
+    "hinnehmen": {
+      "good": 1,
+      "bad": 0
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 136,
-      "total": 250
+      "good": 137,
+      "total": 251
     },
     "Bot-Vorwurf": {
       "good": 9,
@@ -3588,8 +3600,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 96,
-      "lastUsed": "2026-01-05T22:05:23.224Z"
+      "successCount": 97,
+      "lastUsed": "2026-01-05T22:57:41.527Z"
     },
     {
       "situation": "allgemein",
@@ -3852,7 +3864,7 @@
       "lastUsed": "2026-01-05T22:07:03.348Z"
     }
   ],
-  "lastUpdated": "2026-01-05T22:07:03.348Z",
+  "lastUpdated": "2026-01-05T22:57:41.527Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4023,7 +4035,8 @@
           106,
           119,
           151,
-          112
+          112,
+          163
         ],
         "exclamationMarks": [
           1,
@@ -4038,6 +4051,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4059,10 +4073,11 @@
           1,
           1,
           2,
-          1
+          1,
+          2
         ],
-        "count": 16,
-        "avgLength": 152,
+        "count": 17,
+        "avgLength": 153,
         "minLength": 106,
         "maxLength": 232,
         "medianLength": 144,
@@ -4076,16 +4091,16 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 38,
-          "120-150": 19,
-          "150-200": 31,
-          "200-250": 13,
+          "100-120": 35,
+          "120-150": 18,
+          "150-200": 35,
+          "200-250": 12,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 81,
-          "2": 13,
+          "1": 76,
+          "2": 18,
           "3+": 6
         }
       },
