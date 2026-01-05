@@ -6407,8 +6407,8 @@
       "chatId": "37934957",
       "customerMessage": "hey,dein Profil gefällt mir,...habe kann kaum noch still sitzen, bei deinem anblick...",
       "aiResponse": "Ich finde es auch richtig geil, dass dir mein Profil gefällt. Was macht dich denn so neugierig auf mich? Erzähl mir mal, was dir am meisten an mir gefällt.",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Freut mich zu hören, dass dir mein Profil gefällt. Was gefällt dir denn am meisten wenn du dir mein Profil anschaust? Erzähl mir mal, was dir am meisten an mir gefällt.",
+      "status": "edited",
       "platform": "fpc",
       "isASA": false,
       "context": {
@@ -6419,7 +6419,12 @@
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-01-05T22:41:58.979Z",
-      "updatedAt": "2026-01-05T22:41:58.979Z"
+      "updatedAt": "2026-01-05T23:05:39.321Z",
+      "reasoning": "\"Ich finde es auch richtig geil\" war in dem Kontext etwas zu viel, \"Freut mich zu hören\" etwas besser. Der Kunde ist nicht neugierig, er ist eregt wegen des Profils will er mit seiner nachricht sagen. Deswegn frag ihn lieber was ihm denn am meisten gefällt bei dem anblick.",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1767653034315_wviawdtye",
