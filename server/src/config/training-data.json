@@ -2227,13 +2227,18 @@
     {
       "customerMessage": "Ich bin Kraftfahrer und liefere Getränke aus. Aber jetzt wirklich - Gute Nacht Liebes",
       "moderatorResponse": "Das hört sich wirklich anstrengend an, wie lange machst du das schon und um wie viel Uhr musst du dann immer aufstehen?",
-      "situation": "allgemein",
+      "situation": "allgemein, Berufsfrage",
       "explanation": "Sich nicht vom kunde verabschieden wenn er schlafen geht, gespräch einfach weiter führen",
       "createdAt": "2026-01-05T21:27:51.222Z",
       "source": "feedback_edited",
       "priority": true,
       "feedbackId": "feedback_1767647731941_u5grwjg7z",
-      "originalResponse": "Ich verstehe, dass du einen anstrengenden Job hast. Vielleicht wäre es ja ganz nett, nach einem langen Arbeitstag etwas Spass zu haben. Was hältst du von einem kleinen Abenteuer, wenn du Zeit hast? Gute Nacht und süsse Träume, Liebes."
+      "originalResponse": "Ich verstehe, dass du einen anstrengenden Job hast. Vielleicht wäre es ja ganz nett, nach einem langen Arbeitstag etwas Spass zu haben. Was hältst du von einem kleinen Abenteuer, wenn du Zeit hast? Gute Nacht und süsse Träume, Liebes.",
+      "situations": [
+        "allgemein",
+        "Berufsfrage"
+      ],
+      "updatedAt": "2026-01-05T22:13:00.506Z"
     },
     {
       "customerMessage": "Fotografin super dann können wir schöne pics machen. &#128522;",
