@@ -6189,8 +6189,8 @@
       "chatId": "36840158",
       "customerMessage": "ich mache nicht ich schreibe mit dir und chille auf der couch",
       "aiResponse": "Ich finde es schon mal gut, dass du entspannt auf der Couch chillst. Was würdest du denn gerne mit mir anstellen, wenn du nicht bei deinen Eltern bist? Ich kann mir vorstellen, dass wir da richtig viel Spass haben könnten.",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Hört sich entspannt an, hast du heute also keine weiteren Pläne oder hast du für heute noch was schönes geplant?",
+      "status": "edited",
       "platform": "fpc",
       "isASA": false,
       "context": {
@@ -6208,7 +6208,8 @@
       },
       "lastModeratorMessage": "Okay das klingt ja auf jeden fall gut was machst du denn gerade noch so schönes? magst du mir das eventuell vielleicht mal sagen?",
       "timestamp": "2026-01-05T20:41:10.685Z",
-      "updatedAt": "2026-01-05T20:41:10.685Z"
+      "updatedAt": "2026-01-05T22:05:22.062Z",
+      "reasoning": "Nicht das offensichtliche wiederholen und fragen ob er heute nichts mehr vor hat. Gespräch führen"
     },
     {
       "id": "feedback_1767647562385_7my8f1066",
