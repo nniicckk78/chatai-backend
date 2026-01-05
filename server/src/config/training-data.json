@@ -2061,13 +2061,18 @@
     {
       "customerMessage": "Hallo ich bin auch eben nach Hause gekommen. Wie alt bist du und was suchst du . Woher kommst du",
       "moderatorResponse": "Okay schön, wo warst du denn? Ich bin 23 Jahre alt komme aus Onex und du? Ich bin eigetlich nach ein bisschen Spass auf der Suche, wenn sich aber was festes daraus entwickeln sollte wäre ich davon auch nicht abgeneigt, wie sieht es da bei dir aus?",
-      "situation": "Wonach suchst du?",
+      "situation": "allgemein, Wonach suchst du?",
       "explanation": null,
       "createdAt": "2026-01-05T17:33:21.349Z",
       "source": "feedback_edited",
       "priority": true,
       "feedbackId": "feedback_1767632670768_6b97iqlnl",
-      "originalResponse": "Ich bin 23 Jahre alt und komme aus Onex. Ich bin offen für alles, schau mal, was sich ergibt. Was suchst du denn so genau?"
+      "originalResponse": "Ich bin 23 Jahre alt und komme aus Onex. Ich bin offen für alles, schau mal, was sich ergibt. Was suchst du denn so genau?",
+      "situations": [
+        "allgemein",
+        "Wonach suchst du?"
+      ],
+      "updatedAt": "2026-01-05T22:16:16.658Z"
     },
     {
       "customerMessage": "was Möchtest Du denn?",
