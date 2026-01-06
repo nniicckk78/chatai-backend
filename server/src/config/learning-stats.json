@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 58,
+      "count": 59,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -63,7 +63,7 @@
       "bad": 2
     },
     "würden": {
-      "good": 24,
+      "good": 25,
       "bad": 1
     },
     "dann": {
@@ -87,11 +87,11 @@
       "bad": 0
     },
     "würdest": {
-      "good": 65,
+      "good": 66,
       "bad": 24
     },
     "machen": {
-      "good": 54,
+      "good": 55,
       "bad": 11
     },
     "hätte": {
@@ -255,7 +255,7 @@
       "bad": 0
     },
     "was": {
-      "good": 101,
+      "good": 102,
       "bad": 114
     },
     "denn": {
@@ -283,7 +283,7 @@
       "bad": 9
     },
     "einfach": {
-      "good": 25,
+      "good": 26,
       "bad": 21
     },
     "gibst": {
@@ -299,7 +299,7 @@
       "bad": 0
     },
     "als": {
-      "good": 32,
+      "good": 33,
       "bad": 10
     },
     "papa": {
@@ -311,7 +311,7 @@
       "bad": 0
     },
     "sicher": {
-      "good": 30,
+      "good": 31,
       "bad": 4
     },
     "frauen": {
@@ -363,7 +363,7 @@
       "bad": 25
     },
     "wenn": {
-      "good": 27,
+      "good": 29,
       "bad": 51
     },
     "gegenseitig": {
@@ -747,7 +747,7 @@
       "bad": 0
     },
     "bist": {
-      "good": 13,
+      "good": 14,
       "bad": 6
     },
     "allgemein": {
@@ -891,7 +891,7 @@
       "bad": 16
     },
     "sehen": {
-      "good": 10,
+      "good": 11,
       "bad": 4
     },
     "bestimmt": {
@@ -963,7 +963,7 @@
       "bad": 2
     },
     "dich": {
-      "good": 31,
+      "good": 32,
       "bad": 28
     },
     "stört": {
@@ -1799,7 +1799,7 @@
       "bad": 0
     },
     "heiss": {
-      "good": 4,
+      "good": 5,
       "bad": 6
     },
     "alfons": {
@@ -1871,7 +1871,7 @@
       "bad": 0
     },
     "erstes": {
-      "good": 7,
+      "good": 8,
       "bad": 3
     },
     "ficken": {
@@ -1895,7 +1895,7 @@
       "bad": 0
     },
     "spüren": {
-      "good": 4,
+      "good": 5,
       "bad": 5
     },
     "geile": {
@@ -2539,7 +2539,7 @@
       "bad": 1
     },
     "total": {
-      "good": 4,
+      "good": 5,
       "bad": 5
     },
     "klappt": {
@@ -2999,7 +2999,7 @@
       "bad": 1
     },
     "nah": {
-      "good": 2,
+      "good": 3,
       "bad": 3
     },
     "quatschen": {
@@ -3351,11 +3351,11 @@
       "bad": 1
     },
     "kaum": {
-      "good": 3,
+      "good": 4,
       "bad": 4
     },
     "erwarten": {
-      "good": 3,
+      "good": 4,
       "bad": 4
     },
     "anstrengend": {
@@ -3623,22 +3623,22 @@
       "bad": 0
     },
     "wahnsinn": {
-      "good": 2,
+      "good": 3,
       "bad": 2
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 141,
-      "total": 257
+      "good": 142,
+      "total": 258
     },
     "Bot-Vorwurf": {
       "good": 9,
       "total": 18
     },
     "Sexuelle Themen": {
-      "good": 20,
-      "total": 38
+      "good": 21,
+      "total": 39
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -3676,8 +3676,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 101,
-      "lastUsed": "2026-01-06T00:37:54.232Z"
+      "successCount": 102,
+      "lastUsed": "2026-01-06T00:37:55.189Z"
     },
     {
       "situation": "allgemein",
@@ -3745,6 +3745,19 @@
       "lastUsed": "2026-01-04T10:14:06.726Z"
     },
     {
+      "situation": "Sexuelle Themen",
+      "customerPattern": {
+        "keywords": "wenn mein schwanz sitzt anderen muschi lecke",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 72
+      },
+      "goodResponse": "Freut mich auf jedenfall von dir zu hören Edgar! Ich kann dir leider gerade kein Foto senden da meine Handykamera kaputt gegangen ist, ich muss mir erstmal ein neues Handy kaufen. Willst du mir mal er",
+      "successCount": 4,
+      "lastUsed": "2026-01-06T00:37:55.189Z"
+    },
+    {
       "situation": "allgemein",
       "customerPattern": {
         "keywords": "sollten nicht erstmal kennenlernen dann sehen kompatibel wenn dann schon",
@@ -3756,19 +3769,6 @@
       "goodResponse": "Da hast du schon recht. Aber denkst du denn ich schreibe dir hier nur aus Langeweile oder wie? Ich will ja auch nicht nur hin und her schreiben. Schätzt du mich etwa so ein oder was? Das finde ich nic",
       "successCount": 3,
       "lastUsed": "2026-01-05T11:17:22.973Z"
-    },
-    {
-      "situation": "Sexuelle Themen",
-      "customerPattern": {
-        "keywords": "wenn mein schwanz sitzt anderen muschi lecke",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 72
-      },
-      "goodResponse": "Freut mich auf jedenfall von dir zu hören Edgar! Ich kann dir leider gerade kein Foto senden da meine Handykamera kaputt gegangen ist, ich muss mir erstmal ein neues Handy kaufen. Willst du mir mal er",
-      "successCount": 3,
-      "lastUsed": "2026-01-06T00:37:54.232Z"
     },
     {
       "situation": "Geld/Coins",
@@ -3940,17 +3940,17 @@
       "lastUsed": "2026-01-05T22:07:03.348Z"
     }
   ],
-  "lastUpdated": "2026-01-06T00:37:54.232Z",
+  "lastUpdated": "2026-01-06T00:37:55.189Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
       "text": "\"Wenn wir uns endlich sehen\" Klingt wieder zu sehr danach als ob man dem Kunde verpsricht das es passieren wird",
-      "count": 2,
+      "count": 3,
       "situations": [
         "allgemein",
         "Sexuelle Themen"
       ],
-      "lastUsed": "2026-01-06T00:37:54.232Z"
+      "lastUsed": "2026-01-06T00:37:55.189Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -4149,6 +4149,7 @@
           168,
           180,
           195,
+          195,
           195
         ],
         "exclamationMarks": [
@@ -4164,6 +4165,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4195,10 +4197,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 21,
-        "avgLength": 159,
+        "count": 22,
+        "avgLength": 161,
         "minLength": 106,
         "maxLength": 232,
         "medianLength": 163,
@@ -4212,15 +4215,15 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 29,
+          "100-120": 27,
           "120-150": 14,
-          "150-200": 48,
-          "200-250": 10,
+          "150-200": 50,
+          "200-250": 9,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 81,
+          "1": 82,
           "2": 14,
           "3+": 5
         }
