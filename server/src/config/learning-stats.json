@@ -88,11 +88,11 @@
     },
     "würdest": {
       "good": 68,
-      "bad": 26
+      "bad": 27
     },
     "machen": {
       "good": 58,
-      "bad": 14
+      "bad": 15
     },
     "hätte": {
       "good": 0,
@@ -119,8 +119,8 @@
       "bad": 20
     },
     "wie": {
-      "good": 48,
-      "bad": 61
+      "good": 49,
+      "bad": 62
     },
     "stellst": {
       "good": 0,
@@ -256,7 +256,7 @@
     },
     "was": {
       "good": 108,
-      "bad": 119
+      "bad": 120
     },
     "denn": {
       "good": 115,
@@ -264,7 +264,7 @@
     },
     "gerne": {
       "good": 34,
-      "bad": 25
+      "bad": 26
     },
     "wollen": {
       "good": 28,
@@ -363,7 +363,7 @@
       "bad": 25
     },
     "wenn": {
-      "good": 35,
+      "good": 36,
       "bad": 56
     },
     "gegenseitig": {
@@ -423,8 +423,8 @@
       "bad": 1
     },
     "richtig": {
-      "good": 22,
-      "bad": 16
+      "good": 25,
+      "bad": 18
     },
     "feucht": {
       "good": 3,
@@ -435,7 +435,7 @@
       "bad": 0
     },
     "schön": {
-      "good": 8,
+      "good": 9,
       "bad": 12
     },
     "lecken": {
@@ -583,7 +583,7 @@
       "bad": 0
     },
     "stehst": {
-      "good": 2,
+      "good": 3,
       "bad": 3
     },
     "dazu": {
@@ -775,8 +775,8 @@
       "bad": 8
     },
     "geniessen": {
-      "good": 0,
-      "bad": 8
+      "good": 1,
+      "bad": 9
     },
     "beim": {
       "good": 1,
@@ -803,8 +803,8 @@
       "bad": 2
     },
     "gefällt": {
-      "good": 12,
-      "bad": 18
+      "good": 13,
+      "bad": 19
     },
     "brieffreundschaft": {
       "good": 3,
@@ -963,8 +963,8 @@
       "bad": 2
     },
     "dich": {
-      "good": 37,
-      "bad": 31
+      "good": 39,
+      "bad": 32
     },
     "stört": {
       "good": 7,
@@ -991,8 +991,8 @@
       "bad": 1
     },
     "lass": {
-      "good": 2,
-      "bad": 1
+      "good": 3,
+      "bad": 2
     },
     "schauen": {
       "good": 2,
@@ -1048,7 +1048,7 @@
     },
     "noch": {
       "good": 27,
-      "bad": 6
+      "bad": 7
     },
     "wenig": {
       "good": 4,
@@ -1091,7 +1091,7 @@
       "bad": 2
     },
     "man": {
-      "good": 1,
+      "good": 2,
       "bad": 6
     },
     "reden": {
@@ -2015,7 +2015,7 @@
       "bad": 0
     },
     "drauf": {
-      "good": 3,
+      "good": 4,
       "bad": 2
     },
     "ralf": {
@@ -3351,12 +3351,12 @@
       "bad": 1
     },
     "kaum": {
-      "good": 6,
-      "bad": 6
+      "good": 7,
+      "bad": 7
     },
     "erwarten": {
-      "good": 6,
-      "bad": 6
+      "good": 7,
+      "bad": 7
     },
     "anstrengend": {
       "good": 1,
@@ -3697,12 +3697,28 @@
     "start": {
       "good": 0,
       "bad": 1
+    },
+    "hart": {
+      "good": 2,
+      "bad": 1
+    },
+    "ranzunehmen": {
+      "good": 1,
+      "bad": 1
+    },
+    "loslegen": {
+      "good": 1,
+      "bad": 1
+    },
+    "reitet": {
+      "good": 1,
+      "bad": 0
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 146,
-      "total": 264
+      "good": 147,
+      "total": 266
     },
     "Bot-Vorwurf": {
       "good": 9,
@@ -3748,8 +3764,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 106,
-      "lastUsed": "2026-01-06T01:11:14.055Z"
+      "successCount": 107,
+      "lastUsed": "2026-01-06T01:14:16.873Z"
     },
     {
       "situation": "allgemein",
@@ -4012,7 +4028,7 @@
       "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-06T01:11:14.055Z",
+  "lastUpdated": "2026-01-06T01:14:16.873Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4128,6 +4144,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T01:11:14.055Z"
+    },
+    {
+      "text": "Selbst etwas input gegeben und darauf eingegangen das er hart mag, darauf passende frage gestellt",
+      "count": 1,
+      "situations": [
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-06T01:14:16.872Z"
     }
   ],
   "messageStats": {
@@ -4243,7 +4267,8 @@
           195,
           195,
           178,
-          118
+          118,
+          178
         ],
         "exclamationMarks": [
           1,
@@ -4258,6 +4283,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4299,10 +4325,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 26,
-        "avgLength": 162,
+        "count": 27,
+        "avgLength": 163,
         "minLength": 106,
         "maxLength": 232,
         "medianLength": 168,
@@ -4316,16 +4343,16 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 27,
-          "120-150": 12,
-          "150-200": 54,
-          "200-250": 8,
+          "100-120": 26,
+          "120-150": 11,
+          "150-200": 56,
+          "200-250": 7,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
           "1": 85,
-          "2": 12,
+          "2": 11,
           "3+": 4
         }
       },
@@ -4351,9 +4378,11 @@
           196,
           196,
           283,
-          130
+          130,
+          163
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -4397,10 +4426,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 21,
-        "avgLength": 182,
+        "count": 22,
+        "avgLength": 181,
         "minLength": 115,
         "maxLength": 283,
         "medianLength": 196,
@@ -4416,13 +4446,13 @@
           "0-100": 0,
           "100-120": 14,
           "120-150": 14,
-          "150-200": 24,
-          "200-250": 43,
+          "150-200": 27,
+          "200-250": 41,
           "250+": 5
         },
         "questionDistribution": {
-          "0": 19,
-          "1": 81,
+          "0": 18,
+          "1": 82,
           "2": 0,
           "3+": 0
         }
