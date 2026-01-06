@@ -3964,148 +3964,148 @@
     },
     "Treffen/Termine": {
       "okay": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "dann": {
-        "good": 2,
+        "good": 4,
         "bad": 0
       },
       "wissen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "schonmal": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "bescheid": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "schauen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "einfach": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "wann": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "besser": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "alle": {
-        "good": 2,
+        "good": 4,
         "bad": 0
       },
       "passt": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "was": {
-        "good": 2,
-        "bad": 1
+        "good": 4,
+        "bad": 2
       },
       "hast": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "denn": {
-        "good": 1,
-        "bad": 1
+        "good": 2,
+        "bad": 2
       },
       "kopf": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "zusammen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "machen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "könnten": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "freitag": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "klingt": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "super": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "schon": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "ganz": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "heiss": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "darauf": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "auszuprobieren": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "versprechen": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "mega": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "geil": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "würdest": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "als": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "erstes": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "anstellen": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "wollen": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "wenn": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "treffen": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       }
     }
   },
@@ -4131,8 +4131,8 @@
       "total": 6
     },
     "Treffen/Termine": {
-      "good": 19,
-      "total": 30
+      "good": 20,
+      "total": 32
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -4266,8 +4266,8 @@
         "length": 373
       },
       "goodResponse": "Es tut mir leid, dass du das Gefühl hast, ich merke mir nichts. Ich hatte dir ja auch schon gesagt, dass ich auf innere Werte achte, und nicht nur auf Äusseres. Aber ich verstehe, dass du deine Vorlie",
-      "successCount": 4,
-      "lastUsed": "2026-01-06T16:56:54.657Z"
+      "successCount": 5,
+      "lastUsed": "2026-01-06T16:59:53.028Z"
     },
     {
       "situation": "allgemein",
@@ -4465,7 +4465,7 @@
       "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-06T16:56:54.657Z",
+  "lastUpdated": "2026-01-06T16:59:53.028Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4547,6 +4547,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T14:53:50.286Z"
+    },
+    {
+      "text": "Niemals einen Tag nennen an dem man sich treffen kann",
+      "count": 2,
+      "situations": [
+        "Treffen/Termine"
+      ],
+      "lastUsed": "2026-01-06T16:59:53.028Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -4667,14 +4675,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T14:52:48.254Z"
-    },
-    {
-      "text": "Niemals einen Tag nennen an dem man sich treffen kann",
-      "count": 1,
-      "situations": [
-        "Treffen/Termine"
-      ],
-      "lastUsed": "2026-01-06T16:56:54.657Z"
     }
   ],
   "messageStats": {
@@ -5424,9 +5424,11 @@
           180,
           180,
           210,
+          165,
           165
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -5440,10 +5442,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 6,
-        "avgLength": 195,
+        "count": 7,
+        "avgLength": 191,
         "minLength": 165,
         "maxLength": 257,
         "medianLength": 180,
@@ -5459,9 +5462,9 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 67,
-          "200-250": 17,
-          "250+": 17
+          "150-200": 71,
+          "200-250": 14,
+          "250+": 14
         },
         "questionDistribution": {
           "0": 0,
@@ -5475,9 +5478,11 @@
           250,
           179,
           262,
+          204,
           204
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -5487,18 +5492,19 @@
           1,
           1,
           1,
+          0,
           0
         ],
-        "count": 4,
-        "avgLength": 224,
+        "count": 5,
+        "avgLength": 220,
         "minLength": 179,
         "maxLength": 262,
-        "medianLength": 250,
+        "medianLength": 204,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 0.8,
+        "avgQuestions": 0.6,
         "minQuestions": 0,
         "maxQuestions": 1,
         "medianQuestions": 1,
@@ -5506,13 +5512,13 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 25,
-          "200-250": 25,
-          "250+": 50
+          "150-200": 20,
+          "200-250": 40,
+          "250+": 40
         },
         "questionDistribution": {
-          "0": 25,
-          "1": 75,
+          "0": 40,
+          "1": 60,
           "2": 0,
           "3+": 0
         }
