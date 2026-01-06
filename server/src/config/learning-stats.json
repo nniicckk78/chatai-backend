@@ -147,7 +147,7 @@
       "bad": 20
     },
     "ort": {
-      "good": 2,
+      "good": 3,
       "bad": 23
     },
     "den": {
@@ -167,7 +167,7 @@
       "bad": 20
     },
     "mehr": {
-      "good": 30,
+      "good": 31,
       "bad": 27
     },
     "wünschst": {
@@ -183,7 +183,7 @@
       "bad": 19
     },
     "möchte": {
-      "good": 24,
+      "good": 25,
       "bad": 19
     },
     "auch": {
@@ -255,7 +255,7 @@
       "bad": 0
     },
     "was": {
-      "good": 105,
+      "good": 106,
       "bad": 115
     },
     "denn": {
@@ -291,7 +291,7 @@
       "bad": 0
     },
     "dein": {
-      "good": 34,
+      "good": 35,
       "bad": 8
     },
     "bestes": {
@@ -719,7 +719,7 @@
       "bad": 5
     },
     "deine": {
-      "good": 10,
+      "good": 11,
       "bad": 19
     },
     "hobbys": {
@@ -963,7 +963,7 @@
       "bad": 2
     },
     "dich": {
-      "good": 35,
+      "good": 36,
       "bad": 29
     },
     "stört": {
@@ -1047,7 +1047,7 @@
       "bad": 8
     },
     "noch": {
-      "good": 26,
+      "good": 27,
       "bad": 6
     },
     "wenig": {
@@ -1055,15 +1055,15 @@
       "bad": 0
     },
     "ber": {
-      "good": 7,
+      "good": 8,
       "bad": 9
     },
     "erfahren": {
-      "good": 5,
+      "good": 6,
       "bad": 5
     },
     "bevor": {
-      "good": 4,
+      "good": 5,
       "bad": 4
     },
     "treffen": {
@@ -1179,7 +1179,7 @@
       "bad": 0
     },
     "etwas": {
-      "good": 7,
+      "good": 8,
       "bad": 7
     },
     "neugierig": {
@@ -3595,31 +3595,31 @@
       "bad": 0
     },
     "schätze": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "angebot": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "konkreten": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "termin": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "festlegen": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "lieblingsgerichte": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "restaurants": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "wahnsinn": {
@@ -3649,8 +3649,8 @@
       "total": 4
     },
     "Treffen/Termine": {
-      "good": 10,
-      "total": 19
+      "good": 11,
+      "total": 20
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -3771,6 +3771,19 @@
       "lastUsed": "2026-01-05T11:17:22.973Z"
     },
     {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "anscheinend hast probleme dein gedächtnis was gar nicht verstehe komisch",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 373
+      },
+      "goodResponse": "Es tut mir leid, dass du das Gefühl hast, ich merke mir nichts. Ich hatte dir ja auch schon gesagt, dass ich auf innere Werte achte, und nicht nur auf Äusseres. Aber ich verstehe, dass du deine Vorlie",
+      "successCount": 3,
+      "lastUsed": "2026-01-06T00:38:00.414Z"
+    },
+    {
       "situation": "Geld/Coins",
       "customerPattern": {
         "keywords": "habe noch coin wäre lieber plaudern real",
@@ -3834,19 +3847,6 @@
       "goodResponse": "Es tut mir leid, dass du so eine schwere Zeit durchmachen musst. Ich habe das leider kurz vergessen gehabt. Aber wir könnten uns doch auch auf andere Dinge konzentrieren. Was würdest du gerne machen, ",
       "successCount": 2,
       "lastUsed": "2026-01-05T23:01:45.533Z"
-    },
-    {
-      "situation": "Treffen/Termine",
-      "customerPattern": {
-        "keywords": "anscheinend hast probleme dein gedächtnis was gar nicht verstehe komisch",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 373
-      },
-      "goodResponse": "Es tut mir leid, dass du das Gefühl hast, ich merke mir nichts. Ich hatte dir ja auch schon gesagt, dass ich auf innere Werte achte, und nicht nur auf Äusseres. Aber ich verstehe, dass du deine Vorlie",
-      "successCount": 2,
-      "lastUsed": "2026-01-06T00:37:59.052Z"
     },
     {
       "situation": "Wonach suchst du?",
@@ -3940,7 +3940,7 @@
       "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-06T00:37:59.052Z",
+  "lastUpdated": "2026-01-06T00:38:00.414Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4584,9 +4584,11 @@
         "lengths": [
           257,
           180,
+          180,
           180
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0
@@ -4594,10 +4596,11 @@
         "questions": [
           1,
           1,
+          1,
           1
         ],
-        "count": 3,
-        "avgLength": 206,
+        "count": 4,
+        "avgLength": 199,
         "minLength": 180,
         "maxLength": 257,
         "medianLength": 180,
@@ -4613,9 +4616,9 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 67,
+          "150-200": 75,
           "200-250": 0,
-          "250+": 33
+          "250+": 25
         },
         "questionDistribution": {
           "0": 0,
