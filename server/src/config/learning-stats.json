@@ -119,11 +119,11 @@
       "bad": 20
     },
     "wie": {
-      "good": 49,
+      "good": 51,
       "bad": 62
     },
     "stellst": {
-      "good": 0,
+      "good": 1,
       "bad": 42
     },
     "unseren": {
@@ -135,7 +135,7 @@
       "bad": 21
     },
     "genau": {
-      "good": 32,
+      "good": 33,
       "bad": 45
     },
     "gibt": {
@@ -196,7 +196,7 @@
     },
     "nicht": {
       "good": 107,
-      "bad": 28
+      "bad": 29
     },
     "erlischt": {
       "good": 19,
@@ -223,8 +223,8 @@
       "bad": 0
     },
     "mich": {
-      "good": 45,
-      "bad": 29
+      "good": 46,
+      "bad": 30
     },
     "wohl": {
       "good": 19,
@@ -279,8 +279,8 @@
       "bad": 19
     },
     "vorstellen": {
-      "good": 20,
-      "bad": 9
+      "good": 21,
+      "bad": 10
     },
     "einfach": {
       "good": 28,
@@ -299,7 +299,7 @@
       "bad": 0
     },
     "als": {
-      "good": 35,
+      "good": 36,
       "bad": 11
     },
     "papa": {
@@ -411,12 +411,12 @@
       "bad": 0
     },
     "würde": {
-      "good": 13,
+      "good": 14,
       "bad": 12
     },
     "meine": {
       "good": 8,
-      "bad": 2
+      "bad": 4
     },
     "muschi": {
       "good": 1,
@@ -467,8 +467,8 @@
       "bad": 1
     },
     "könnte": {
-      "good": 5,
-      "bad": 5
+      "good": 6,
+      "bad": 6
     },
     "toll": {
       "good": 0,
@@ -839,7 +839,7 @@
       "bad": 0
     },
     "lassen": {
-      "good": 7,
+      "good": 8,
       "bad": 2
     },
     "diese": {
@@ -887,8 +887,8 @@
       "bad": 0
     },
     "mal": {
-      "good": 20,
-      "bad": 17
+      "good": 21,
+      "bad": 18
     },
     "sehen": {
       "good": 13,
@@ -1043,12 +1043,12 @@
       "bad": 10
     },
     "schon": {
-      "good": 29,
+      "good": 30,
       "bad": 9
     },
     "noch": {
       "good": 27,
-      "bad": 7
+      "bad": 8
     },
     "wenig": {
       "good": 4,
@@ -1296,7 +1296,7 @@
     },
     "freue": {
       "good": 0,
-      "bad": 3
+      "bad": 4
     },
     "darauf": {
       "good": 1,
@@ -1704,11 +1704,11 @@
     },
     "viele": {
       "good": 2,
-      "bad": 0
+      "bad": 1
     },
     "ausprobieren": {
       "good": 2,
-      "bad": 3
+      "bad": 4
     },
     "bett": {
       "good": 3,
@@ -1796,7 +1796,7 @@
     },
     "gefallen": {
       "good": 4,
-      "bad": 0
+      "bad": 1
     },
     "heiss": {
       "good": 7,
@@ -2516,7 +2516,7 @@
     },
     "habe": {
       "good": 5,
-      "bad": 3
+      "bad": 4
     },
     "schän": {
       "good": 1,
@@ -2820,7 +2820,7 @@
     },
     "bilder": {
       "good": 1,
-      "bad": 1
+      "bad": 3
     },
     "internet": {
       "good": 0,
@@ -3713,6 +3713,26 @@
     "reitet": {
       "good": 1,
       "bad": 0
+    },
+    "sexpuppe": {
+      "good": 1,
+      "bad": 1
+    },
+    "benutzen": {
+      "good": 1,
+      "bad": 0
+    },
+    "ablaufen": {
+      "good": 1,
+      "bad": 0
+    },
+    "erotische": {
+      "good": 0,
+      "bad": 1
+    },
+    "darfst": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -3725,8 +3745,8 @@
       "total": 18
     },
     "Sexuelle Themen": {
-      "good": 23,
-      "total": 41
+      "good": 24,
+      "total": 43
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -4026,9 +4046,22 @@
       "goodResponse": "Ich heisse Melanie, bin 29 Jahre alt und komme aus Telgte. Ich arbeite in einem Nagelstudio. Du bist seit drei Jahren single, wie fühlt sich das für dich an? Was vermisst du am meisten in einer Bezieh",
       "successCount": 1,
       "lastUsed": "2026-01-05T22:02:35.166Z"
+    },
+    {
+      "situation": "Sexuelle Themen",
+      "customerPattern": {
+        "keywords": "hey hab gerade deine bilder angesehen gefrage wann den mal",
+        "hasQuestion": true,
+        "hasMeeting": true,
+        "hasSexual": true,
+        "length": 129
+      },
+      "goodResponse": "hm könnte mir schon vorstellen mich mal als Sexpuppe benutzen zu lassen, wie genau würde das ablaufen und wie stellst du dir das vor?",
+      "successCount": 1,
+      "lastUsed": "2026-01-06T01:16:26.894Z"
     }
   ],
-  "lastUpdated": "2026-01-06T01:14:16.873Z",
+  "lastUpdated": "2026-01-06T01:16:26.895Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4152,6 +4185,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T01:14:16.872Z"
+    },
+    {
+      "text": "haupthema war sexpuppe für ihn zu sein, besser darauf eingegangen und ihn gefargt wie er sich das vorstellt und wie er vorgehen würde",
+      "count": 1,
+      "situations": [
+        "Sexuelle Themen"
+      ],
+      "lastUsed": "2026-01-06T01:16:26.894Z"
     }
   ],
   "messageStats": {
@@ -4464,10 +4505,12 @@
           204,
           174,
           139,
-          227
+          227,
+          133
         ],
         "exclamationMarks": [
           2,
+          0,
           0,
           0,
           0
@@ -4476,14 +4519,15 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 4,
-        "avgLength": 186,
-        "minLength": 139,
+        "count": 5,
+        "avgLength": 175,
+        "minLength": 133,
         "maxLength": 227,
-        "medianLength": 204,
-        "avgExclamationMarks": 0.5,
+        "medianLength": 174,
+        "avgExclamationMarks": 0.4,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 2,
         "medianExclamationMarks": 0,
@@ -4494,9 +4538,9 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 25,
-          "150-200": 25,
-          "200-250": 50,
+          "120-150": 40,
+          "150-200": 20,
+          "200-250": 40,
           "250+": 0
         },
         "questionDistribution": {
@@ -4511,9 +4555,11 @@
           176,
           176,
           183,
-          215
+          215,
+          171
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -4523,33 +4569,34 @@
           1,
           1,
           2,
-          1
+          1,
+          0
         ],
-        "count": 4,
-        "avgLength": 188,
-        "minLength": 176,
+        "count": 5,
+        "avgLength": 184,
+        "minLength": 171,
         "maxLength": 215,
-        "medianLength": 183,
+        "medianLength": 176,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.3,
-        "minQuestions": 1,
+        "avgQuestions": 1,
+        "minQuestions": 0,
         "maxQuestions": 2,
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 75,
-          "200-250": 25,
+          "150-200": 80,
+          "200-250": 20,
           "250+": 0
         },
         "questionDistribution": {
-          "0": 0,
-          "1": 75,
-          "2": 25,
+          "0": 20,
+          "1": 60,
+          "2": 20,
           "3+": 0
         }
       }
