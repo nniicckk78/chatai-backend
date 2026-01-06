@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 59,
+      "count": 60,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -63,7 +63,7 @@
       "bad": 2
     },
     "würden": {
-      "good": 25,
+      "good": 26,
       "bad": 1
     },
     "dann": {
@@ -87,12 +87,12 @@
       "bad": 0
     },
     "würdest": {
-      "good": 66,
-      "bad": 24
+      "good": 67,
+      "bad": 25
     },
     "machen": {
-      "good": 55,
-      "bad": 11
+      "good": 56,
+      "bad": 12
     },
     "hätte": {
       "good": 0,
@@ -255,8 +255,8 @@
       "bad": 0
     },
     "was": {
-      "good": 102,
-      "bad": 114
+      "good": 103,
+      "bad": 115
     },
     "denn": {
       "good": 114,
@@ -283,8 +283,8 @@
       "bad": 9
     },
     "einfach": {
-      "good": 26,
-      "bad": 21
+      "good": 27,
+      "bad": 22
     },
     "gibst": {
       "good": 20,
@@ -299,8 +299,8 @@
       "bad": 0
     },
     "als": {
-      "good": 33,
-      "bad": 10
+      "good": 34,
+      "bad": 11
     },
     "papa": {
       "good": 20,
@@ -311,8 +311,8 @@
       "bad": 0
     },
     "sicher": {
-      "good": 31,
-      "bad": 4
+      "good": 32,
+      "bad": 5
     },
     "frauen": {
       "good": 22,
@@ -363,8 +363,8 @@
       "bad": 25
     },
     "wenn": {
-      "good": 29,
-      "bad": 51
+      "good": 31,
+      "bad": 53
     },
     "gegenseitig": {
       "good": 0,
@@ -747,8 +747,8 @@
       "bad": 0
     },
     "bist": {
-      "good": 14,
-      "bad": 6
+      "good": 15,
+      "bad": 7
     },
     "allgemein": {
       "good": 3,
@@ -891,8 +891,8 @@
       "bad": 16
     },
     "sehen": {
-      "good": 11,
-      "bad": 4
+      "good": 12,
+      "bad": 5
     },
     "bestimmt": {
       "good": 6,
@@ -963,8 +963,8 @@
       "bad": 2
     },
     "dich": {
-      "good": 32,
-      "bad": 28
+      "good": 33,
+      "bad": 29
     },
     "stört": {
       "good": 7,
@@ -1799,8 +1799,8 @@
       "bad": 0
     },
     "heiss": {
-      "good": 5,
-      "bad": 6
+      "good": 6,
+      "bad": 7
     },
     "alfons": {
       "good": 0,
@@ -1871,8 +1871,8 @@
       "bad": 0
     },
     "erstes": {
-      "good": 8,
-      "bad": 3
+      "good": 9,
+      "bad": 4
     },
     "ficken": {
       "good": 2,
@@ -1895,8 +1895,8 @@
       "bad": 0
     },
     "spüren": {
-      "good": 5,
-      "bad": 5
+      "good": 6,
+      "bad": 6
     },
     "geile": {
       "good": 4,
@@ -1912,7 +1912,7 @@
     },
     "endlich": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "wann": {
       "good": 2,
@@ -2539,8 +2539,8 @@
       "bad": 1
     },
     "total": {
-      "good": 5,
-      "bad": 5
+      "good": 6,
+      "bad": 6
     },
     "klappt": {
       "good": 2,
@@ -2999,8 +2999,8 @@
       "bad": 1
     },
     "nah": {
-      "good": 3,
-      "bad": 3
+      "good": 4,
+      "bad": 4
     },
     "quatschen": {
       "good": 0,
@@ -3351,12 +3351,12 @@
       "bad": 1
     },
     "kaum": {
-      "good": 4,
-      "bad": 4
+      "good": 5,
+      "bad": 5
     },
     "erwarten": {
-      "good": 4,
-      "bad": 4
+      "good": 5,
+      "bad": 5
     },
     "anstrengend": {
       "good": 1,
@@ -3623,22 +3623,22 @@
       "bad": 0
     },
     "wahnsinn": {
-      "good": 3,
-      "bad": 2
+      "good": 4,
+      "bad": 3
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 142,
-      "total": 258
+      "good": 143,
+      "total": 259
     },
     "Bot-Vorwurf": {
       "good": 9,
       "total": 18
     },
     "Sexuelle Themen": {
-      "good": 21,
-      "total": 39
+      "good": 22,
+      "total": 40
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -3662,7 +3662,7 @@
     },
     "allgemein, Sexuelle Themen": {
       "good": 0,
-      "total": 1
+      "total": 2
     }
   },
   "responsePatterns": [
@@ -3676,8 +3676,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 102,
-      "lastUsed": "2026-01-06T00:37:55.189Z"
+      "successCount": 103,
+      "lastUsed": "2026-01-06T00:37:56.234Z"
     },
     {
       "situation": "allgemein",
@@ -3754,8 +3754,8 @@
         "length": 72
       },
       "goodResponse": "Freut mich auf jedenfall von dir zu hören Edgar! Ich kann dir leider gerade kein Foto senden da meine Handykamera kaputt gegangen ist, ich muss mir erstmal ein neues Handy kaufen. Willst du mir mal er",
-      "successCount": 4,
-      "lastUsed": "2026-01-06T00:37:55.189Z"
+      "successCount": 5,
+      "lastUsed": "2026-01-06T00:37:56.234Z"
     },
     {
       "situation": "allgemein",
@@ -3940,17 +3940,17 @@
       "lastUsed": "2026-01-05T22:07:03.348Z"
     }
   ],
-  "lastUpdated": "2026-01-06T00:37:55.189Z",
+  "lastUpdated": "2026-01-06T00:37:56.234Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
       "text": "\"Wenn wir uns endlich sehen\" Klingt wieder zu sehr danach als ob man dem Kunde verpsricht das es passieren wird",
-      "count": 3,
+      "count": 4,
       "situations": [
         "allgemein",
         "Sexuelle Themen"
       ],
-      "lastUsed": "2026-01-06T00:37:55.189Z"
+      "lastUsed": "2026-01-06T00:37:56.233Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -4150,6 +4150,7 @@
           180,
           195,
           195,
+          195,
           195
         ],
         "exclamationMarks": [
@@ -4165,6 +4166,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4198,10 +4200,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 22,
-        "avgLength": 161,
+        "count": 23,
+        "avgLength": 162,
         "minLength": 106,
         "maxLength": 232,
         "medianLength": 163,
@@ -4215,17 +4218,17 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 27,
-          "120-150": 14,
-          "150-200": 50,
+          "100-120": 26,
+          "120-150": 13,
+          "150-200": 52,
           "200-250": 9,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 82,
-          "2": 14,
-          "3+": 5
+          "1": 83,
+          "2": 13,
+          "3+": 4
         }
       },
       "negative": {
@@ -4247,9 +4250,11 @@
           222,
           155,
           196,
+          196,
           196
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -4287,13 +4292,14 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 18,
-        "avgLength": 178,
+        "count": 19,
+        "avgLength": 179,
         "minLength": 115,
         "maxLength": 234,
-        "medianLength": 200,
+        "medianLength": 196,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
@@ -4304,15 +4310,15 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 17,
+          "100-120": 16,
           "120-150": 11,
-          "150-200": 22,
-          "200-250": 50,
+          "150-200": 26,
+          "200-250": 47,
           "250+": 0
         },
         "questionDistribution": {
-          "0": 22,
-          "1": 78,
+          "0": 21,
+          "1": 79,
           "2": 0,
           "3+": 0
         }
