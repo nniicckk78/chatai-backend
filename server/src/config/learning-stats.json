@@ -78,7 +78,7 @@
         "bad": 2
       },
       "dann": {
-        "good": 84,
+        "good": 86,
         "bad": 5
       },
       "irgendwo": {
@@ -102,7 +102,7 @@
         "bad": 43
       },
       "machen": {
-        "good": 62,
+        "good": 63,
         "bad": 22
       },
       "hätte": {
@@ -166,11 +166,11 @@
         "bad": 44
       },
       "kopf": {
-        "good": 4,
+        "good": 5,
         "bad": 26
       },
       "hast": {
-        "good": 44,
+        "good": 45,
         "bad": 67
       },
       "verstehen": {
@@ -266,11 +266,11 @@
         "bad": 0
       },
       "was": {
-        "good": 123,
+        "good": 125,
         "bad": 153
       },
       "denn": {
-        "good": 140,
+        "good": 141,
         "bad": 46
       },
       "gerne": {
@@ -294,7 +294,7 @@
         "bad": 16
       },
       "einfach": {
-        "good": 33,
+        "good": 34,
         "bad": 29
       },
       "gibst": {
@@ -830,7 +830,7 @@
         "bad": 0
       },
       "passt": {
-        "good": 5,
+        "good": 6,
         "bad": 0
       },
       "doch": {
@@ -1006,7 +1006,7 @@
         "bad": 2
       },
       "schauen": {
-        "good": 3,
+        "good": 4,
         "bad": 1
       },
       "ergibt": {
@@ -1110,7 +1110,7 @@
         "bad": 4
       },
       "zusammen": {
-        "good": 14,
+        "good": 15,
         "bad": 19
       },
       "wären": {
@@ -1518,7 +1518,7 @@
         "bad": 1
       },
       "könnten": {
-        "good": 6,
+        "good": 7,
         "bad": 4
       },
       "tolle": {
@@ -1574,7 +1574,7 @@
         "bad": 0
       },
       "schonmal": {
-        "good": 13,
+        "good": 14,
         "bad": 0
       },
       "mobil": {
@@ -1926,7 +1926,7 @@
         "bad": 6
       },
       "wann": {
-        "good": 3,
+        "good": 4,
         "bad": 2
       },
       "hättest": {
@@ -2246,7 +2246,7 @@
         "bad": 2
       },
       "bescheid": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "besten": {
@@ -2362,7 +2362,7 @@
         "bad": 0
       },
       "alle": {
-        "good": 3,
+        "good": 5,
         "bad": 0
       },
       "löcher": {
@@ -2590,7 +2590,7 @@
         "bad": 1
       },
       "okay": {
-        "good": 11,
+        "good": 12,
         "bad": 0
       },
       "weis": {
@@ -2678,7 +2678,7 @@
         "bad": 0
       },
       "wissen": {
-        "good": 2,
+        "good": 3,
         "bad": 1
       },
       "ging": {
@@ -3870,7 +3870,7 @@
         "bad": 0
       },
       "besser": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "kennengelernt": {
@@ -4696,7 +4696,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-06T17:16:18.973Z",
+  "lastUpdated": "2026-01-06T17:16:20.159Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4717,6 +4717,15 @@
         "Sexuelle Themen"
       ],
       "lastUsed": "2026-01-06T00:37:57.465Z"
+    },
+    {
+      "text": "Niemals einen Tag nennen an dem man sich treffen kann",
+      "count": 4,
+      "situations": [
+        "Treffen/Termine",
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-06T17:16:20.159Z"
     },
     {
       "text": "Nich viel verändert, nur denn ersten satz entfernt weil die nachricht des Kunden zu sehr bewertet wurde",
@@ -4778,15 +4787,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T14:53:50.286Z"
-    },
-    {
-      "text": "Niemals einen Tag nennen an dem man sich treffen kann",
-      "count": 3,
-      "situations": [
-        "Treffen/Termine",
-        "allgemein"
-      ],
-      "lastUsed": "2026-01-06T17:16:18.972Z"
     },
     {
       "text": "Mische nicht zu viele Themen durcheinander, arbeite diese Themen Schritt für Schritt ab",
@@ -5072,6 +5072,7 @@
           136,
           136,
           136,
+          165,
           165
         ],
         "exclamationMarks": [
@@ -5111,6 +5112,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -5196,9 +5198,10 @@
           2,
           2,
           2,
+          1,
           1
         ],
-        "count": 60,
+        "count": 61,
         "avgLength": 154,
         "minLength": 106,
         "maxLength": 248,
@@ -5215,7 +5218,7 @@
           "0-100": 0,
           "100-120": 20,
           "120-150": 38,
-          "150-200": 37,
+          "150-200": 38,
           "200-250": 5,
           "250+": 0
         },
