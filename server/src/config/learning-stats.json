@@ -130,7 +130,7 @@
         "bad": 34
       },
       "wie": {
-        "good": 78,
+        "good": 79,
         "bad": 70
       },
       "stellst": {
@@ -270,7 +270,7 @@
         "bad": 152
       },
       "denn": {
-        "good": 138,
+        "good": 139,
         "bad": 45
       },
       "gerne": {
@@ -302,7 +302,7 @@
         "bad": 0
       },
       "dein": {
-        "good": 40,
+        "good": 41,
         "bad": 9
       },
       "bestes": {
@@ -534,7 +534,7 @@
         "bad": 4
       },
       "jahr": {
-        "good": 15,
+        "good": 16,
         "bad": 11
       },
       "fehlern": {
@@ -686,7 +686,7 @@
         "bad": 9
       },
       "gut": {
-        "good": 37,
+        "good": 38,
         "bad": 26
       },
       "eigentlich": {
@@ -770,7 +770,7 @@
         "bad": 0
       },
       "neue": {
-        "good": 11,
+        "good": 12,
         "bad": 8
       },
       "dinge": {
@@ -942,7 +942,7 @@
         "bad": 2
       },
       "bin": {
-        "good": 32,
+        "good": 33,
         "bad": 26
       },
       "gemeinsam": {
@@ -1574,7 +1574,7 @@
         "bad": 0
       },
       "schonmal": {
-        "good": 11,
+        "good": 12,
         "bad": 0
       },
       "mobil": {
@@ -1626,7 +1626,7 @@
         "bad": 3
       },
       "warst": {
-        "good": 4,
+        "good": 5,
         "bad": 2
       },
       "dort": {
@@ -1674,7 +1674,7 @@
         "bad": 0
       },
       "jetzt": {
-        "good": 24,
+        "good": 25,
         "bad": 1
       },
       "beantwortet": {
@@ -2062,7 +2062,7 @@
         "bad": 3
       },
       "freunden": {
-        "good": 3,
+        "good": 4,
         "bad": 3
       },
       "entspanne": {
@@ -2422,7 +2422,7 @@
         "bad": 0
       },
       "familie": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "umgehen": {
@@ -3706,7 +3706,7 @@
         "bad": 1
       },
       "start": {
-        "good": 3,
+        "good": 4,
         "bad": 1
       },
       "hart": {
@@ -4002,7 +4002,7 @@
         "bad": 4
       },
       "erleichert": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "menschen": {
@@ -4688,7 +4688,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-06T17:14:12.831Z",
+  "lastUpdated": "2026-01-06T17:14:13.960Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5061,6 +5061,7 @@
           123,
           136,
           136,
+          136,
           136
         ],
         "exclamationMarks": [
@@ -5100,6 +5101,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -5181,9 +5183,10 @@
           1,
           2,
           2,
+          2,
           2
         ],
-        "count": 58,
+        "count": 59,
         "avgLength": 154,
         "minLength": 106,
         "maxLength": 248,
@@ -5198,16 +5201,16 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 21,
-          "120-150": 38,
+          "100-120": 20,
+          "120-150": 39,
           "150-200": 36,
           "200-250": 5,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 81,
-          "2": 17,
+          "1": 80,
+          "2": 19,
           "3+": 2
         }
       },
