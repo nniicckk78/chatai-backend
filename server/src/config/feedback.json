@@ -7218,8 +7218,8 @@
       "chatId": "37947128",
       "customerMessage": "Ja genau. Und was machst du so schönes",
       "aiResponse": "Es tut mir leid, aber ich möchte nicht zu viel über meinen Job verraten. Ich arbeite in einem Büro, was manchmal ganz nett ist. Ich interessiere mich aber auch für viele andere Dinge. Ich finde es super spannend, über Fantasien und Vorlieben zu quatschen. Was magst du denn so?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Ich arbeite im Kundendienst, etwas langweiliger als dein Beruf haha. Und was hast du heute Abend noch so schönes vor?",
+      "status": "edited",
       "platform": "fpc",
       "isASA": false,
       "context": {
@@ -7237,7 +7237,12 @@
       },
       "lastModeratorMessage": "Das ist aber auch ein wunderschöner beruf, dann bist du ja immer in der Natur, oder?",
       "timestamp": "2026-01-06T18:23:03.815Z",
-      "updatedAt": "2026-01-06T18:23:03.815Z"
+      "updatedAt": "2026-01-06T18:32:20.945Z",
+      "reasoning": "Auf die Frage eingenagen und beantwortet, smalltalk weitergeführt",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     }
   ]
 }
