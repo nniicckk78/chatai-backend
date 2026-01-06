@@ -127,8 +127,8 @@
       "bad": 34
     },
     "wie": {
-      "good": 71,
-      "bad": 69
+      "good": 72,
+      "bad": 70
     },
     "stellst": {
       "good": 3,
@@ -167,8 +167,8 @@
       "bad": 26
     },
     "hast": {
-      "good": 38,
-      "bad": 64
+      "good": 39,
+      "bad": 65
     },
     "verstehen": {
       "good": 24,
@@ -291,7 +291,7 @@
       "bad": 16
     },
     "einfach": {
-      "good": 31,
+      "good": 32,
       "bad": 29
     },
     "gibst": {
@@ -347,7 +347,7 @@
       "bad": 6
     },
     "denke": {
-      "good": 49,
+      "good": 50,
       "bad": 2
     },
     "denkst": {
@@ -463,8 +463,8 @@
       "bad": 0
     },
     "peter": {
-      "good": 0,
-      "bad": 1
+      "good": 1,
+      "bad": 2
     },
     "intensiv": {
       "good": 0,
@@ -515,8 +515,8 @@
       "bad": 2
     },
     "hey": {
-      "good": 3,
-      "bad": 3
+      "good": 4,
+      "bad": 4
     },
     "oliver": {
       "good": 1,
@@ -647,8 +647,8 @@
       "bad": 2
     },
     "deinen": {
-      "good": 15,
-      "bad": 7
+      "good": 16,
+      "bad": 8
     },
     "wunsch": {
       "good": 0,
@@ -895,7 +895,7 @@
       "bad": 0
     },
     "mal": {
-      "good": 29,
+      "good": 30,
       "bad": 27
     },
     "sehen": {
@@ -939,8 +939,8 @@
       "bad": 2
     },
     "bin": {
-      "good": 28,
-      "bad": 25
+      "good": 29,
+      "bad": 26
     },
     "gemeinsam": {
       "good": 2,
@@ -1023,7 +1023,7 @@
       "bad": 1
     },
     "entspannten": {
-      "good": 0,
+      "good": 1,
       "bad": 3
     },
     "abend": {
@@ -1187,8 +1187,8 @@
       "bad": 0
     },
     "etwas": {
-      "good": 11,
-      "bad": 7
+      "good": 12,
+      "bad": 8
     },
     "neugierig": {
       "good": 8,
@@ -1279,7 +1279,7 @@
       "bad": 0
     },
     "mache": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "voll": {
@@ -1323,7 +1323,7 @@
       "bad": 2
     },
     "heute": {
-      "good": 12,
+      "good": 13,
       "bad": 12
     },
     "schönes": {
@@ -1351,8 +1351,8 @@
       "bad": 0
     },
     "danke": {
-      "good": 15,
-      "bad": 10
+      "good": 16,
+      "bad": 11
     },
     "attraktiv": {
       "good": 3,
@@ -2183,8 +2183,8 @@
       "bad": 1
     },
     "verbringst": {
-      "good": 0,
-      "bad": 1
+      "good": 1,
+      "bad": 2
     },
     "druck": {
       "good": 2,
@@ -2983,8 +2983,8 @@
       "bad": 1
     },
     "besonderes": {
-      "good": 0,
-      "bad": 1
+      "good": 1,
+      "bad": 2
     },
     "couch": {
       "good": 1,
@@ -3945,12 +3945,24 @@
     "berlege": {
       "good": 0,
       "bad": 1
+    },
+    "berlin": {
+      "good": 1,
+      "bad": 1
+    },
+    "zuhause": {
+      "good": 1,
+      "bad": 1
+    },
+    "feiertag": {
+      "good": 1,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 170,
-      "total": 301
+      "good": 171,
+      "total": 303
     },
     "Bot-Vorwurf": {
       "good": 9,
@@ -4013,8 +4025,8 @@
         "length": 59
       },
       "goodResponse": "Danke für das Angebot aber das wäre mir jetzt zu spontan und ich sollte mich mal ein wenig ausruhen. Heute war wieder so ein Tag wo man einfach hätte zu Hause bleiben sollen. Aber sowas gibts halt mal",
-      "successCount": 48,
-      "lastUsed": "2026-01-06T14:32:10.016Z"
+      "successCount": 49,
+      "lastUsed": "2026-01-06T14:53:50.286Z"
     },
     {
       "situation": "Sexuelle Themen",
@@ -4303,7 +4315,7 @@
       "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-06T14:52:48.255Z",
+  "lastUpdated": "2026-01-06T14:53:50.287Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4379,12 +4391,12 @@
     },
     {
       "text": "Sei kurz, präzise und direkt",
-      "count": 2,
+      "count": 3,
       "situations": [
         "Sexuelle Themen",
         "allgemein"
       ],
-      "lastUsed": "2026-01-06T01:09:32.341Z"
+      "lastUsed": "2026-01-06T14:53:50.286Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -4644,7 +4656,8 @@
           248,
           144,
           183,
-          142
+          142,
+          173
         ],
         "exclamationMarks": [
           1,
@@ -4683,6 +4696,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4748,9 +4762,10 @@
           1,
           1,
           2,
+          2,
           2
         ],
-        "count": 50,
+        "count": 51,
         "avgLength": 156,
         "minLength": 106,
         "maxLength": 248,
@@ -4766,15 +4781,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 24,
-          "120-150": 30,
-          "150-200": 40,
+          "120-150": 29,
+          "150-200": 41,
           "200-250": 6,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 86,
-          "2": 12,
+          "1": 84,
+          "2": 14,
           "3+": 2
         }
       },
@@ -4817,9 +4832,11 @@
           298,
           298,
           298,
-          156
+          156,
+          117
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -4897,10 +4914,11 @@
           2,
           2,
           2,
+          2,
           2
         ],
-        "count": 38,
-        "avgLength": 200,
+        "count": 39,
+        "avgLength": 198,
         "minLength": 115,
         "maxLength": 298,
         "medianLength": 200,
@@ -4914,16 +4932,16 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 8,
+          "100-120": 10,
           "120-150": 8,
-          "150-200": 32,
-          "200-250": 34,
+          "150-200": 31,
+          "200-250": 33,
           "250+": 18
         },
         "questionDistribution": {
-          "0": 11,
-          "1": 68,
-          "2": 21,
+          "0": 10,
+          "1": 67,
+          "2": 23,
           "3+": 0
         }
       }
@@ -5420,8 +5438,8 @@
       "pattern": "eigene_erfahrung",
       "situation": "allgemein",
       "example": "Ja alles gut hat sich schon erledigt heheich würde gerne vorbei kommen aber leider ist das zu spontan, wie trinkst du denn gerne deinen Kaffee?",
-      "count": 7,
-      "lastUsed": "2026-01-06T14:32:09.009Z"
+      "count": 8,
+      "lastUsed": "2026-01-06T14:53:50.286Z"
     },
     {
       "pattern": "eigene_erfahrung",
