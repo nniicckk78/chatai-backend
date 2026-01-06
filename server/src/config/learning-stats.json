@@ -183,7 +183,7 @@
       "bad": 19
     },
     "geht": {
-      "good": 20,
+      "good": 21,
       "bad": 23
     },
     "genauso": {
@@ -263,11 +263,11 @@
       "bad": 0
     },
     "was": {
-      "good": 115,
+      "good": 116,
       "bad": 140
     },
     "denn": {
-      "good": 130,
+      "good": 131,
       "bad": 41
     },
     "gerne": {
@@ -279,7 +279,7 @@
       "bad": 0
     },
     "wieder": {
-      "good": 2,
+      "good": 3,
       "bad": 20
     },
     "entfachen": {
@@ -291,7 +291,7 @@
       "bad": 16
     },
     "einfach": {
-      "good": 28,
+      "good": 29,
       "bad": 27
     },
     "gibst": {
@@ -903,7 +903,7 @@
       "bad": 5
     },
     "bestimmt": {
-      "good": 9,
+      "good": 10,
       "bad": 1
     },
     "hände": {
@@ -1051,11 +1051,11 @@
       "bad": 10
     },
     "schon": {
-      "good": 39,
+      "good": 40,
       "bad": 9
     },
     "noch": {
-      "good": 30,
+      "good": 31,
       "bad": 12
     },
     "wenig": {
@@ -1143,7 +1143,7 @@
       "bad": 2
     },
     "trotzdem": {
-      "good": 2,
+      "good": 3,
       "bad": 1
     },
     "anfangen": {
@@ -1323,11 +1323,11 @@
       "bad": 2
     },
     "heute": {
-      "good": 8,
+      "good": 9,
       "bad": 9
     },
     "schönes": {
-      "good": 2,
+      "good": 3,
       "bad": 3
     },
     "geplant": {
@@ -1351,7 +1351,7 @@
       "bad": 0
     },
     "danke": {
-      "good": 13,
+      "good": 14,
       "bad": 10
     },
     "attraktiv": {
@@ -1531,7 +1531,7 @@
       "bad": 4
     },
     "nichts": {
-      "good": 3,
+      "good": 4,
       "bad": 2
     },
     "berzeugen": {
@@ -2003,7 +2003,7 @@
       "bad": 0
     },
     "machst": {
-      "good": 6,
+      "good": 7,
       "bad": 8
     },
     "nein": {
@@ -3811,7 +3811,7 @@
       "bad": 0
     },
     "läuft": {
-      "good": 0,
+      "good": 1,
       "bad": 5
     },
     "quatscht": {
@@ -3889,12 +3889,36 @@
     "freizeit": {
       "good": 0,
       "bad": 2
+    },
+    "mittlerweile": {
+      "good": 1,
+      "bad": 0
+    },
+    "kennst": {
+      "good": 1,
+      "bad": 0
+    },
+    "manchen": {
+      "good": 1,
+      "bad": 0
+    },
+    "tagen": {
+      "good": 1,
+      "bad": 0
+    },
+    "brauch": {
+      "good": 1,
+      "bad": 0
+    },
+    "themawechseln": {
+      "good": 1,
+      "bad": 0
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 164,
-      "total": 294
+      "good": 165,
+      "total": 295
     },
     "Bot-Vorwurf": {
       "good": 9,
@@ -3913,8 +3937,8 @@
       "total": 6
     },
     "Treffen/Termine": {
-      "good": 13,
-      "total": 23
+      "good": 14,
+      "total": 24
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -3957,8 +3981,8 @@
         "length": 59
       },
       "goodResponse": "Ich wünsche dir auch noch ein frohes neues Jahr, danke. Das hoffe ich auch das wir gemeinsame Wege gehen werden und das wäre bestimmt ein echt toller Abend mit dir zusammen geworden.🙂 Ich bin ganz gu",
-      "successCount": 43,
-      "lastUsed": "2026-01-06T14:31:51.344Z"
+      "successCount": 44,
+      "lastUsed": "2026-01-06T14:31:52.410Z"
     },
     {
       "situation": "Sexuelle Themen",
@@ -4143,6 +4167,19 @@
       "lastUsed": "2026-01-06T14:30:43.570Z"
     },
     {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "hallo mein was los warum bist besorgt was kleine schwierigkeiten",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 327
+      },
+      "goodResponse": "Es geht mittlerweile schon wieder trotzdem danke. Du kennst das bestimmt, an manchen Tagen läuft einfach nichts. Ich brauch einen Themawechseln, was machst du denn heute noch so schönes?",
+      "successCount": 2,
+      "lastUsed": "2026-01-06T14:31:52.410Z"
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
@@ -4232,22 +4269,9 @@
       "goodResponse": "Ich heisse Melanie, bin 29 Jahre alt und komme aus Telgte. Ich arbeite in einem Nagelstudio. Du bist seit drei Jahren single, wie fühlt sich das für dich an? Was vermisst du am meisten in einer Bezieh",
       "successCount": 1,
       "lastUsed": "2026-01-05T22:02:35.166Z"
-    },
-    {
-      "situation": "Treffen/Termine",
-      "customerPattern": {
-        "keywords": "hallo mein was los warum bist besorgt was kleine schwierigkeiten",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 327
-      },
-      "goodResponse": "Ja alles gut hat sich schon erledigt hehe ich würde gerne vorbei kommen aber leider ist das zu spontan, wie trinkst du denn gerne deinen Kaffee?",
-      "successCount": 1,
-      "lastUsed": "2026-01-06T14:31:51.344Z"
     }
   ],
-  "lastUpdated": "2026-01-06T14:31:51.344Z",
+  "lastUpdated": "2026-01-06T14:31:52.410Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4574,7 +4598,8 @@
           145,
           144,
           144,
-          144
+          144,
+          186
         ],
         "exclamationMarks": [
           1,
@@ -4613,6 +4638,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4666,9 +4692,10 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 44,
+        "count": 45,
         "avgLength": 154,
         "minLength": 106,
         "maxLength": 232,
@@ -4685,8 +4712,8 @@
           "0-100": 0,
           "100-120": 27,
           "120-150": 27,
-          "150-200": 41,
-          "200-250": 5,
+          "150-200": 42,
+          "200-250": 4,
           "250+": 0
         },
         "questionDistribution": {
