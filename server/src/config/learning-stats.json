@@ -78,7 +78,7 @@
         "bad": 2
       },
       "dann": {
-        "good": 87,
+        "good": 88,
         "bad": 5
       },
       "irgendwo": {
@@ -170,7 +170,7 @@
         "bad": 26
       },
       "hast": {
-        "good": 46,
+        "good": 47,
         "bad": 67
       },
       "verstehen": {
@@ -266,7 +266,7 @@
         "bad": 0
       },
       "was": {
-        "good": 127,
+        "good": 129,
         "bad": 154
       },
       "denn": {
@@ -334,11 +334,11 @@
         "bad": 0
       },
       "suchst": {
-        "good": 27,
+        "good": 28,
         "bad": 1
       },
       "hier": {
-        "good": 34,
+        "good": 36,
         "bad": 8
       },
       "hof": {
@@ -834,7 +834,7 @@
         "bad": 0
       },
       "doch": {
-        "good": 17,
+        "good": 18,
         "bad": 4
       },
       "sex": {
@@ -898,7 +898,7 @@
         "bad": 0
       },
       "mal": {
-        "good": 35,
+        "good": 36,
         "bad": 27
       },
       "sehen": {
@@ -974,7 +974,7 @@
         "bad": 2
       },
       "dich": {
-        "good": 55,
+        "good": 57,
         "bad": 35
       },
       "stört": {
@@ -1066,7 +1066,7 @@
         "bad": 0
       },
       "ber": {
-        "good": 13,
+        "good": 14,
         "bad": 16
       },
       "erfahren": {
@@ -1222,7 +1222,7 @@
         "bad": 2
       },
       "erzähl": {
-        "good": 7,
+        "good": 8,
         "bad": 1
       },
       "wiederstehen": {
@@ -2318,11 +2318,11 @@
         "bad": 0
       },
       "angemeldet": {
-        "good": 6,
+        "good": 7,
         "bad": 0
       },
       "warum": {
-        "good": 9,
+        "good": 10,
         "bad": 0
       },
       "persönliche": {
@@ -2590,7 +2590,7 @@
         "bad": 1
       },
       "okay": {
-        "good": 13,
+        "good": 14,
         "bad": 0
       },
       "weis": {
@@ -3962,7 +3962,7 @@
         "bad": 1
       },
       "erleichtert": {
-        "good": 5,
+        "good": 6,
         "bad": 0
       },
       "vertreibst": {
@@ -4696,7 +4696,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-06T17:16:47.775Z",
+  "lastUpdated": "2026-01-06T17:16:49.074Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4726,6 +4726,15 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T17:16:20.159Z"
+    },
+    {
+      "text": "Thema natürlich wechseln/lenken",
+      "count": 4,
+      "situations": [
+        "allgemein",
+        "Wonach suchst du?"
+      ],
+      "lastUsed": "2026-01-06T17:16:49.074Z"
     },
     {
       "text": "Nich viel verändert, nur denn ersten satz entfernt weil die nachricht des Kunden zu sehr bewertet wurde",
@@ -4787,15 +4796,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T14:53:50.286Z"
-    },
-    {
-      "text": "Thema natürlich wechseln/lenken",
-      "count": 3,
-      "situations": [
-        "allgemein",
-        "Wonach suchst du?"
-      ],
-      "lastUsed": "2026-01-06T17:16:47.775Z"
     },
     {
       "text": "Mische nicht zu viele Themen durcheinander, arbeite diese Themen Schritt für Schritt ab",
@@ -5075,6 +5075,7 @@
           136,
           165,
           165,
+          123,
           123
         ],
         "exclamationMarks": [
@@ -5114,6 +5115,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -5203,10 +5205,11 @@
           2,
           1,
           1,
+          1,
           1
         ],
-        "count": 62,
-        "avgLength": 154,
+        "count": 63,
+        "avgLength": 153,
         "minLength": 106,
         "maxLength": 248,
         "medianLength": 144,
@@ -5221,7 +5224,7 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 19,
-          "120-150": 39,
+          "120-150": 40,
           "150-200": 37,
           "200-250": 5,
           "250+": 0
@@ -5229,7 +5232,7 @@
         "questionDistribution": {
           "0": 0,
           "1": 81,
-          "2": 18,
+          "2": 17,
           "3+": 2
         }
       },
