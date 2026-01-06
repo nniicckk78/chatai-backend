@@ -143,7 +143,7 @@
       "bad": 21
     },
     "genau": {
-      "good": 35,
+      "good": 36,
       "bad": 47
     },
     "gibt": {
@@ -263,11 +263,11 @@
       "bad": 0
     },
     "was": {
-      "good": 114,
+      "good": 115,
       "bad": 132
     },
     "denn": {
-      "good": 124,
+      "good": 125,
       "bad": 38
     },
     "gerne": {
@@ -331,11 +331,11 @@
       "bad": 0
     },
     "suchst": {
-      "good": 24,
+      "good": 25,
       "bad": 1
     },
     "hier": {
-      "good": 26,
+      "good": 27,
       "bad": 8
     },
     "hof": {
@@ -687,7 +687,7 @@
       "bad": 20
     },
     "eigentlich": {
-      "good": 18,
+      "good": 19,
       "bad": 1
     },
     "typ": {
@@ -1055,7 +1055,7 @@
       "bad": 9
     },
     "noch": {
-      "good": 29,
+      "good": 30,
       "bad": 11
     },
     "wenig": {
@@ -1187,7 +1187,7 @@
       "bad": 0
     },
     "etwas": {
-      "good": 10,
+      "good": 11,
       "bad": 7
     },
     "neugierig": {
@@ -3859,19 +3859,19 @@
       "bad": 1
     },
     "sage": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "sobald": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "besser": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "kennengelernt": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "leipzig": {
@@ -3893,8 +3893,8 @@
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 158,
-      "total": 287
+      "good": 159,
+      "total": 288
     },
     "Bot-Vorwurf": {
       "good": 9,
@@ -3940,8 +3940,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 115,
-      "lastUsed": "2026-01-06T14:30:08.410Z"
+      "successCount": 116,
+      "lastUsed": "2026-01-06T14:30:09.494Z"
     },
     {
       "situation": "allgemein",
@@ -4217,7 +4217,7 @@
       "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-06T14:30:08.410Z",
+  "lastUpdated": "2026-01-06T14:30:09.494Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4256,6 +4256,14 @@
       "lastUsed": "2026-01-06T12:05:01.445Z"
     },
     {
+      "text": "Details aus welchem Stadtteil in Leipzig waren nicht vorhanden, deswegen gesagt \"Sag ich dir wenn wir uns besser kennen\" anschliessend eine gute frage gestellt",
+      "count": 3,
+      "situations": [
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-06T14:30:09.494Z"
+    },
+    {
       "text": "Sei kurz, präzise und direkt",
       "count": 2,
       "situations": [
@@ -4271,14 +4279,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T14:25:25.561Z"
-    },
-    {
-      "text": "Details aus welchem Stadtteil in Leipzig waren nicht vorhanden, deswegen gesagt \"Sag ich dir wenn wir uns besser kennen\" anschliessend eine gute frage gestellt",
-      "count": 2,
-      "situations": [
-        "allgemein"
-      ],
-      "lastUsed": "2026-01-06T14:30:08.410Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -4534,6 +4534,7 @@
           145,
           159,
           112,
+          112,
           112
         ],
         "exclamationMarks": [
@@ -4573,6 +4574,7 @@
           0,
           0,
           1,
+          0,
           0,
           0
         ],
@@ -4614,13 +4616,14 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 38,
-        "avgLength": 156,
+        "count": 39,
+        "avgLength": 155,
         "minLength": 106,
         "maxLength": 232,
-        "medianLength": 152,
+        "medianLength": 151,
         "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
@@ -4631,16 +4634,16 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 29,
+          "100-120": 31,
           "120-150": 18,
-          "150-200": 47,
+          "150-200": 46,
           "200-250": 5,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
           "1": 87,
-          "2": 11,
+          "2": 10,
           "3+": 3
         }
       },
