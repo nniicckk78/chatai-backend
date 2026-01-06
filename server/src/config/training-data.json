@@ -2981,12 +2981,17 @@
     {
       "customerMessage": "Hallo mein Süße, was ist los? Warum bist du so besorgt? Was für kleine Schwierigkeiten hast du denn, und was ist dir schon wieder peinlich? Mach dir keine Sorgen. Ich sitze ganz allein zu Hause und bin überhaupt nicht gestresst. Ich trinke gerade Kaffee. Wenn du magst, kannst du gerne voebei kommen zusammen Kaffee trinken.Lg☺",
       "moderatorResponse": "Danke für das Angebot aber das wäre mir jetzt zu spontan und ich sollte mich mal ein wenig ausruhen. Heute war wieder so ein Tag wo man einfach hätte zu Hause bleiben sollen. Aber sowas gibts halt mal. Wie trinkst du denn am liebsten deinen Kaffee?",
-      "situation": "allgemein",
+      "situation": "allgemein, Treffen/Termine",
       "createdAt": "2026-01-06T14:31:18.830Z",
       "source": "feedback_generated_edited",
       "priority": true,
       "feedbackId": "feedback_1767708198752_irh5f3c5q",
-      "variationIndex": 2
+      "variationIndex": 2,
+      "situations": [
+        "allgemein",
+        "Treffen/Termine"
+      ],
+      "updatedAt": "2026-01-06T14:32:00.437Z"
     }
   ],
   "asaExamples": [
