@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 61,
+      "count": 62,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -67,8 +67,8 @@
       "bad": 1
     },
     "dann": {
-      "good": 71,
-      "bad": 3
+      "good": 72,
+      "bad": 4
     },
     "irgendwo": {
       "good": 20,
@@ -87,12 +87,12 @@
       "bad": 0
     },
     "würdest": {
-      "good": 68,
-      "bad": 30
+      "good": 69,
+      "bad": 32
     },
     "machen": {
       "good": 58,
-      "bad": 15
+      "bad": 16
     },
     "hätte": {
       "good": 0,
@@ -159,8 +159,8 @@
       "bad": 26
     },
     "hast": {
-      "good": 32,
-      "bad": 61
+      "good": 33,
+      "bad": 62
     },
     "verstehen": {
       "good": 24,
@@ -263,8 +263,8 @@
       "bad": 31
     },
     "gerne": {
-      "good": 34,
-      "bad": 27
+      "good": 36,
+      "bad": 29
     },
     "wollen": {
       "good": 28,
@@ -356,7 +356,7 @@
     },
     "finde": {
       "good": 14,
-      "bad": 38
+      "bad": 39
     },
     "grossartig": {
       "good": 0,
@@ -415,12 +415,12 @@
       "bad": 12
     },
     "meine": {
-      "good": 9,
-      "bad": 5
+      "good": 10,
+      "bad": 6
     },
     "muschi": {
-      "good": 2,
-      "bad": 2
+      "good": 3,
+      "bad": 3
     },
     "richtig": {
       "good": 25,
@@ -439,8 +439,8 @@
       "bad": 12
     },
     "lecken": {
-      "good": 1,
-      "bad": 6
+      "good": 2,
+      "bad": 7
     },
     "arschloch": {
       "good": 2,
@@ -591,8 +591,8 @@
       "bad": 1
     },
     "andere": {
-      "good": 2,
-      "bad": 3
+      "good": 3,
+      "bad": 4
     },
     "richtung": {
       "good": 0,
@@ -1239,8 +1239,8 @@
       "bad": 9
     },
     "zuerst": {
-      "good": 1,
-      "bad": 5
+      "good": 2,
+      "bad": 6
     },
     "berblick": {
       "good": 0,
@@ -1687,8 +1687,8 @@
       "bad": 2
     },
     "meinen": {
-      "good": 0,
-      "bad": 5
+      "good": 1,
+      "bad": 6
     },
     "bildern": {
       "good": 0,
@@ -1780,7 +1780,7 @@
     },
     "vorstellung": {
       "good": 3,
-      "bad": 2
+      "bad": 3
     },
     "bestimmte": {
       "good": 2,
@@ -1800,7 +1800,7 @@
     },
     "heiss": {
       "good": 7,
-      "bad": 8
+      "bad": 9
     },
     "alfons": {
       "good": 0,
@@ -2091,8 +2091,8 @@
       "bad": 0
     },
     "ausleben": {
-      "good": 1,
-      "bad": 0
+      "good": 2,
+      "bad": 1
     },
     "einige": {
       "good": 1,
@@ -2367,8 +2367,8 @@
       "bad": 0
     },
     "fantasie": {
-      "good": 0,
-      "bad": 2
+      "good": 1,
+      "bad": 3
     },
     "verwöhnen": {
       "good": 0,
@@ -2540,7 +2540,7 @@
     },
     "total": {
       "good": 7,
-      "bad": 7
+      "bad": 8
     },
     "klappt": {
       "good": 2,
@@ -2743,8 +2743,8 @@
       "bad": 0
     },
     "brüsten": {
-      "good": 0,
-      "bad": 2
+      "good": 1,
+      "bad": 3
     },
     "meiner": {
       "good": 0,
@@ -3739,8 +3739,8 @@
       "bad": 0
     },
     "saugen": {
-      "good": 0,
-      "bad": 1
+      "good": 1,
+      "bad": 2
     },
     "verraten": {
       "good": 0,
@@ -3765,12 +3765,20 @@
     "nächstes": {
       "good": 0,
       "bad": 1
+    },
+    "möchtest": {
+      "good": 1,
+      "bad": 1
+    },
+    "beides": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 148,
-      "total": 268
+      "good": 149,
+      "total": 270
     },
     "Bot-Vorwurf": {
       "good": 9,
@@ -3816,8 +3824,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 108,
-      "lastUsed": "2026-01-06T11:02:28.830Z"
+      "successCount": 109,
+      "lastUsed": "2026-01-06T11:08:05.923Z"
     },
     {
       "situation": "allgemein",
@@ -4093,7 +4101,7 @@
       "lastUsed": "2026-01-06T01:16:26.894Z"
     }
   ],
-  "lastUpdated": "2026-01-06T11:02:28.830Z",
+  "lastUpdated": "2026-01-06T11:08:05.924Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4233,6 +4241,14 @@
         "Sexuelle Themen"
       ],
       "lastUsed": "2026-01-06T10:59:40.768Z"
+    },
+    {
+      "text": "Nich viel verändert, nur denn ersten satz entfernt weil die nachricht des Kunden zu sehr bewertet wurde",
+      "count": 1,
+      "situations": [
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-06T11:08:05.923Z"
     }
   ],
   "messageStats": {
@@ -4350,7 +4366,8 @@
           178,
           118,
           178,
-          137
+          137,
+          152
         ],
         "exclamationMarks": [
           1,
@@ -4365,6 +4382,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4410,14 +4428,15 @@
           1,
           1,
           1,
-          1
+          1,
+          2
         ],
-        "count": 28,
+        "count": 29,
         "avgLength": 162,
         "minLength": 106,
         "maxLength": 232,
-        "medianLength": 168,
-        "avgExclamationMarks": 0.3,
+        "medianLength": 163,
+        "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
         "medianExclamationMarks": 0,
@@ -4427,17 +4446,17 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 25,
+          "100-120": 24,
           "120-150": 14,
-          "150-200": 54,
+          "150-200": 55,
           "200-250": 7,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 86,
-          "2": 11,
-          "3+": 4
+          "1": 83,
+          "2": 14,
+          "3+": 3
         }
       },
       "negative": {
@@ -4464,9 +4483,11 @@
           283,
           130,
           163,
-          183
+          183,
+          222
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -4514,10 +4535,11 @@
           1,
           1,
           1,
-          1
+          1,
+          2
         ],
-        "count": 23,
-        "avgLength": 181,
+        "count": 24,
+        "avgLength": 183,
         "minLength": 115,
         "maxLength": 283,
         "medianLength": 196,
@@ -4525,22 +4547,22 @@
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 0.8,
+        "avgQuestions": 0.9,
         "minQuestions": 0,
-        "maxQuestions": 1,
+        "maxQuestions": 2,
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 13,
           "120-150": 13,
-          "150-200": 30,
-          "200-250": 39,
+          "150-200": 29,
+          "200-250": 42,
           "250+": 4
         },
         "questionDistribution": {
           "0": 17,
-          "1": 83,
-          "2": 0,
+          "1": 79,
+          "2": 4,
           "3+": 0
         }
       }
