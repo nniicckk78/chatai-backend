@@ -3961,6 +3961,152 @@
         "good": 1,
         "bad": 1
       }
+    },
+    "Treffen/Termine": {
+      "okay": {
+        "good": 1,
+        "bad": 0
+      },
+      "dann": {
+        "good": 2,
+        "bad": 0
+      },
+      "wissen": {
+        "good": 1,
+        "bad": 0
+      },
+      "schonmal": {
+        "good": 1,
+        "bad": 0
+      },
+      "bescheid": {
+        "good": 1,
+        "bad": 0
+      },
+      "schauen": {
+        "good": 1,
+        "bad": 0
+      },
+      "einfach": {
+        "good": 1,
+        "bad": 0
+      },
+      "wann": {
+        "good": 1,
+        "bad": 0
+      },
+      "besser": {
+        "good": 1,
+        "bad": 0
+      },
+      "alle": {
+        "good": 2,
+        "bad": 0
+      },
+      "passt": {
+        "good": 1,
+        "bad": 0
+      },
+      "was": {
+        "good": 2,
+        "bad": 1
+      },
+      "hast": {
+        "good": 1,
+        "bad": 0
+      },
+      "denn": {
+        "good": 1,
+        "bad": 1
+      },
+      "kopf": {
+        "good": 1,
+        "bad": 0
+      },
+      "zusammen": {
+        "good": 1,
+        "bad": 0
+      },
+      "machen": {
+        "good": 1,
+        "bad": 0
+      },
+      "könnten": {
+        "good": 1,
+        "bad": 0
+      },
+      "freitag": {
+        "good": 0,
+        "bad": 1
+      },
+      "klingt": {
+        "good": 0,
+        "bad": 1
+      },
+      "super": {
+        "good": 0,
+        "bad": 1
+      },
+      "schon": {
+        "good": 0,
+        "bad": 1
+      },
+      "ganz": {
+        "good": 0,
+        "bad": 1
+      },
+      "heiss": {
+        "good": 0,
+        "bad": 1
+      },
+      "darauf": {
+        "good": 0,
+        "bad": 1
+      },
+      "auszuprobieren": {
+        "good": 0,
+        "bad": 1
+      },
+      "versprechen": {
+        "good": 0,
+        "bad": 1
+      },
+      "mega": {
+        "good": 0,
+        "bad": 1
+      },
+      "geil": {
+        "good": 0,
+        "bad": 1
+      },
+      "würdest": {
+        "good": 0,
+        "bad": 1
+      },
+      "als": {
+        "good": 0,
+        "bad": 1
+      },
+      "erstes": {
+        "good": 0,
+        "bad": 1
+      },
+      "anstellen": {
+        "good": 0,
+        "bad": 1
+      },
+      "wollen": {
+        "good": 0,
+        "bad": 1
+      },
+      "wenn": {
+        "good": 0,
+        "bad": 1
+      },
+      "treffen": {
+        "good": 0,
+        "bad": 1
+      }
     }
   },
   "situationSuccess": {
@@ -3985,8 +4131,8 @@
       "total": 6
     },
     "Treffen/Termine": {
-      "good": 18,
-      "total": 28
+      "good": 19,
+      "total": 30
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -4111,6 +4257,19 @@
       "lastUsed": "2026-01-06T14:32:10.016Z"
     },
     {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "anscheinend hast probleme dein gedächtnis was gar nicht verstehe komisch",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 373
+      },
+      "goodResponse": "Es tut mir leid, dass du das Gefühl hast, ich merke mir nichts. Ich hatte dir ja auch schon gesagt, dass ich auf innere Werte achte, und nicht nur auf Äusseres. Aber ich verstehe, dass du deine Vorlie",
+      "successCount": 4,
+      "lastUsed": "2026-01-06T16:56:54.657Z"
+    },
+    {
       "situation": "allgemein",
       "customerPattern": {
         "keywords": "sollten nicht erstmal kennenlernen dann sehen kompatibel wenn dann schon",
@@ -4122,19 +4281,6 @@
       "goodResponse": "Da hast du schon recht. Aber denkst du denn ich schreibe dir hier nur aus Langeweile oder wie? Ich will ja auch nicht nur hin und her schreiben. Schätzt du mich etwa so ein oder was? Das finde ich nic",
       "successCount": 3,
       "lastUsed": "2026-01-05T11:17:22.973Z"
-    },
-    {
-      "situation": "Treffen/Termine",
-      "customerPattern": {
-        "keywords": "anscheinend hast probleme dein gedächtnis was gar nicht verstehe komisch",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 373
-      },
-      "goodResponse": "Es tut mir leid, dass du das Gefühl hast, ich merke mir nichts. Ich hatte dir ja auch schon gesagt, dass ich auf innere Werte achte, und nicht nur auf Äusseres. Aber ich verstehe, dass du deine Vorlie",
-      "successCount": 3,
-      "lastUsed": "2026-01-06T00:38:00.414Z"
     },
     {
       "situation": "Geld/Coins",
@@ -4319,7 +4465,7 @@
       "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-06T16:56:54.210Z",
+  "lastUpdated": "2026-01-06T16:56:54.657Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4521,6 +4667,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T14:52:48.254Z"
+    },
+    {
+      "text": "Niemals einen Tag nennen an dem man sich treffen kann",
+      "count": 1,
+      "situations": [
+        "Treffen/Termine"
+      ],
+      "lastUsed": "2026-01-06T16:56:54.657Z"
     }
   ],
   "messageStats": {
@@ -5269,9 +5423,11 @@
           180,
           180,
           180,
-          210
+          210,
+          165
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -5283,11 +5439,12 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 5,
-        "avgLength": 201,
-        "minLength": 180,
+        "count": 6,
+        "avgLength": 195,
+        "minLength": 165,
         "maxLength": 257,
         "medianLength": 180,
         "avgExclamationMarks": 0,
@@ -5302,9 +5459,9 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 60,
-          "200-250": 20,
-          "250+": 20
+          "150-200": 67,
+          "200-250": 17,
+          "250+": 17
         },
         "questionDistribution": {
           "0": 0,
@@ -5317,9 +5474,11 @@
         "lengths": [
           250,
           179,
-          262
+          262,
+          204
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0
@@ -5327,10 +5486,11 @@
         "questions": [
           1,
           1,
-          1
+          1,
+          0
         ],
-        "count": 3,
-        "avgLength": 230,
+        "count": 4,
+        "avgLength": 224,
         "minLength": 179,
         "maxLength": 262,
         "medianLength": 250,
@@ -5338,21 +5498,21 @@
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1,
-        "minQuestions": 1,
+        "avgQuestions": 0.8,
+        "minQuestions": 0,
         "maxQuestions": 1,
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 33,
-          "200-250": 0,
-          "250+": 67
+          "150-200": 25,
+          "200-250": 25,
+          "250+": 50
         },
         "questionDistribution": {
-          "0": 0,
-          "1": 100,
+          "0": 25,
+          "1": 75,
           "2": 0,
           "3+": 0
         }
@@ -5454,5 +5614,6 @@
     }
   ],
   "migrated": true,
-  "migratedSaved": true
+  "migratedSaved": true,
+  "migratedSavedToGitHub": true
 }
