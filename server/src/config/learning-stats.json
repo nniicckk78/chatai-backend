@@ -128,7 +128,7 @@
     },
     "wie": {
       "good": 61,
-      "bad": 66
+      "bad": 67
     },
     "stellst": {
       "good": 3,
@@ -143,8 +143,8 @@
       "bad": 21
     },
     "genau": {
-      "good": 34,
-      "bad": 46
+      "good": 35,
+      "bad": 47
     },
     "gibt": {
       "good": 23,
@@ -263,12 +263,12 @@
       "bad": 0
     },
     "was": {
-      "good": 113,
-      "bad": 131
+      "good": 114,
+      "bad": 132
     },
     "denn": {
-      "good": 123,
-      "bad": 37
+      "good": 124,
+      "bad": 38
     },
     "gerne": {
       "good": 44,
@@ -331,12 +331,12 @@
       "bad": 0
     },
     "suchst": {
-      "good": 23,
+      "good": 24,
       "bad": 1
     },
     "hier": {
-      "good": 25,
-      "bad": 7
+      "good": 26,
+      "bad": 8
     },
     "hof": {
       "good": 20,
@@ -687,7 +687,7 @@
       "bad": 20
     },
     "eigentlich": {
-      "good": 17,
+      "good": 18,
       "bad": 1
     },
     "typ": {
@@ -1016,7 +1016,7 @@
     },
     "geniesse": {
       "good": 0,
-      "bad": 3
+      "bad": 4
     },
     "bekanntschaften": {
       "good": 0,
@@ -1055,7 +1055,7 @@
       "bad": 9
     },
     "noch": {
-      "good": 28,
+      "good": 29,
       "bad": 11
     },
     "wenig": {
@@ -1187,7 +1187,7 @@
       "bad": 0
     },
     "etwas": {
-      "good": 9,
+      "good": 10,
       "bad": 7
     },
     "neugierig": {
@@ -2004,7 +2004,7 @@
     },
     "machst": {
       "good": 6,
-      "bad": 7
+      "bad": 8
     },
     "nein": {
       "good": 5,
@@ -2080,7 +2080,7 @@
     },
     "komme": {
       "good": 5,
-      "bad": 3
+      "bad": 4
     },
     "erzählst": {
       "good": 1,
@@ -2396,7 +2396,7 @@
     },
     "deiner": {
       "good": 2,
-      "bad": 2
+      "bad": 3
     },
     "anbieten": {
       "good": 0,
@@ -2620,7 +2620,7 @@
     },
     "stadt": {
       "good": 0,
-      "bad": 2
+      "bad": 3
     },
     "klingen": {
       "good": 1,
@@ -3472,7 +3472,7 @@
     },
     "arbeite": {
       "good": 1,
-      "bad": 2
+      "bad": 3
     },
     "nagelstudio": {
       "good": 1,
@@ -3859,42 +3859,42 @@
       "bad": 1
     },
     "sage": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "sobald": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "besser": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "kennengelernt": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "leipzig": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "einzelhandel": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "erkunden": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "freizeit": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 157,
-      "total": 285
+      "good": 158,
+      "total": 287
     },
     "Bot-Vorwurf": {
       "good": 9,
@@ -3940,8 +3940,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 114,
-      "lastUsed": "2026-01-06T14:29:56.252Z"
+      "successCount": 115,
+      "lastUsed": "2026-01-06T14:30:08.410Z"
     },
     {
       "situation": "allgemein",
@@ -4217,7 +4217,7 @@
       "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-06T14:29:56.252Z",
+  "lastUpdated": "2026-01-06T14:30:08.410Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4271,6 +4271,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T14:25:25.561Z"
+    },
+    {
+      "text": "Details aus welchem Stadtteil in Leipzig waren nicht vorhanden, deswegen gesagt \"Sag ich dir wenn wir uns besser kennen\" anschliessend eine gute frage gestellt",
+      "count": 2,
+      "situations": [
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-06T14:30:08.410Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -4399,14 +4407,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T14:27:52.650Z"
-    },
-    {
-      "text": "Details aus welchem Stadtteil in Leipzig waren nicht vorhanden, deswegen gesagt \"Sag ich dir wenn wir uns besser kennen\" anschliessend eine gute frage gestellt",
-      "count": 1,
-      "situations": [
-        "allgemein"
-      ],
-      "lastUsed": "2026-01-06T14:29:56.252Z"
     }
   ],
   "messageStats": {
@@ -4533,6 +4533,7 @@
           144,
           145,
           159,
+          112,
           112
         ],
         "exclamationMarks": [
@@ -4572,6 +4573,7 @@
           0,
           0,
           1,
+          0,
           0
         ],
         "questions": [
@@ -4611,10 +4613,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 37,
-        "avgLength": 157,
+        "count": 38,
+        "avgLength": 156,
         "minLength": 106,
         "maxLength": 232,
         "medianLength": 152,
@@ -4628,15 +4631,15 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 27,
-          "120-150": 19,
-          "150-200": 49,
+          "100-120": 29,
+          "120-150": 18,
+          "150-200": 47,
           "200-250": 5,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 86,
+          "1": 87,
           "2": 11,
           "3+": 3
         }
@@ -4673,9 +4676,11 @@
           298,
           200,
           177,
+          151,
           151
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -4739,10 +4744,11 @@
           2,
           1,
           1,
+          1,
           1
         ],
-        "count": 31,
-        "avgLength": 190,
+        "count": 32,
+        "avgLength": 189,
         "minLength": 115,
         "maxLength": 298,
         "medianLength": 196,
@@ -4756,16 +4762,16 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 10,
-          "120-150": 10,
-          "150-200": 32,
-          "200-250": 39,
-          "250+": 10
+          "100-120": 9,
+          "120-150": 9,
+          "150-200": 34,
+          "200-250": 38,
+          "250+": 9
         },
         "questionDistribution": {
           "0": 13,
-          "1": 77,
-          "2": 10,
+          "1": 78,
+          "2": 9,
           "3+": 0
         }
       }
