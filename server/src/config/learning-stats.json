@@ -53,6 +53,20 @@
         "count": 3,
         "successRate": 0
       }
+    },
+    "Sexuelle Themen": {
+      "würde ich": {
+        "count": 1,
+        "successRate": 0
+      },
+      "würdest du": {
+        "count": 1,
+        "successRate": 0
+      },
+      "das würde": {
+        "count": 1,
+        "successRate": 0
+      }
     }
   },
   "wordFrequency": {
@@ -4325,6 +4339,180 @@
         "good": 0,
         "bad": 1
       }
+    },
+    "Sexuelle Themen": {
+      "ohja": {
+        "good": 1,
+        "bad": 0
+      },
+      "würde": {
+        "good": 1,
+        "bad": 0
+      },
+      "wirklich": {
+        "good": 1,
+        "bad": 0
+      },
+      "sehr": {
+        "good": 1,
+        "bad": 0
+      },
+      "geniesen": {
+        "good": 1,
+        "bad": 0
+      },
+      "währen": {
+        "good": 1,
+        "bad": 0
+      },
+      "mich": {
+        "good": 2,
+        "bad": 2
+      },
+      "leckst": {
+        "good": 1,
+        "bad": 0
+      },
+      "lutsche": {
+        "good": 1,
+        "bad": 0
+      },
+      "schön": {
+        "good": 1,
+        "bad": 0
+      },
+      "deinen": {
+        "good": 1,
+        "bad": 0
+      },
+      "geilen": {
+        "good": 1,
+        "bad": 0
+      },
+      "schwanz": {
+        "good": 1,
+        "bad": 0
+      },
+      "würdest": {
+        "good": 1,
+        "bad": 1
+      },
+      "dann": {
+        "good": 1,
+        "bad": 1
+      },
+      "gerne": {
+        "good": 1,
+        "bad": 0
+      },
+      "noch": {
+        "good": 1,
+        "bad": 0
+      },
+      "doggy": {
+        "good": 1,
+        "bad": 1
+      },
+      "den": {
+        "good": 1,
+        "bad": 0
+      },
+      "arsch": {
+        "good": 1,
+        "bad": 0
+      },
+      "ficken": {
+        "good": 1,
+        "bad": 0
+      },
+      "hört": {
+        "good": 0,
+        "bad": 1
+      },
+      "sich": {
+        "good": 0,
+        "bad": 1
+      },
+      "total": {
+        "good": 0,
+        "bad": 1
+      },
+      "geil": {
+        "good": 0,
+        "bad": 1
+      },
+      "wie": {
+        "good": 0,
+        "bad": 2
+      },
+      "beschreibst": {
+        "good": 0,
+        "bad": 1
+      },
+      "liebe": {
+        "good": 0,
+        "bad": 1
+      },
+      "wenn": {
+        "good": 0,
+        "bad": 1
+      },
+      "jemand": {
+        "good": 0,
+        "bad": 1
+      },
+      "verwöhnt": {
+        "good": 0,
+        "bad": 1
+      },
+      "langsam": {
+        "good": 0,
+        "bad": 1
+      },
+      "entblättert": {
+        "good": 0,
+        "bad": 1
+      },
+      "könnte": {
+        "good": 0,
+        "bad": 1
+      },
+      "gut": {
+        "good": 0,
+        "bad": 1
+      },
+      "vorstellen": {
+        "good": 0,
+        "bad": 1
+      },
+      "dabei": {
+        "good": 0,
+        "bad": 1
+      },
+      "lecken": {
+        "good": 0,
+        "bad": 1
+      },
+      "dich": {
+        "good": 0,
+        "bad": 1
+      },
+      "nehme": {
+        "good": 0,
+        "bad": 1
+      },
+      "stellst": {
+        "good": 0,
+        "bad": 1
+      },
+      "weiter": {
+        "good": 0,
+        "bad": 1
+      },
+      "ausleben": {
+        "good": 0,
+        "bad": 1
+      }
     }
   },
   "situationSuccess": {
@@ -4337,8 +4525,8 @@
       "total": 20
     },
     "Sexuelle Themen": {
-      "good": 35,
-      "total": 60
+      "good": 36,
+      "total": 62
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -4445,8 +4633,8 @@
         "length": 198
       },
       "goodResponse": "Allein bei der Vorstellung werde ich schon richtig feucht! Hast du denn auch bestimmte Dinge die du mal beim Sex ausprobieren wollen würdest? Wie siehts denn auch mit einem Rollenspiel aus? Würde dir ",
-      "successCount": 6,
-      "lastUsed": "2026-01-04T20:05:45.090Z"
+      "successCount": 7,
+      "lastUsed": "2026-01-06T17:49:19.572Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -4696,7 +4884,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-06T17:16:49.074Z",
+  "lastUpdated": "2026-01-06T17:49:19.572Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4924,6 +5112,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T14:52:48.254Z"
+    },
+    {
+      "text": "Sexuellere Nachricht, bessere frage, gesagt was ich machen würde während er leckt",
+      "count": 1,
+      "situations": [
+        "Sexuelle Themen"
+      ],
+      "lastUsed": "2026-01-06T17:49:19.572Z"
     }
   ],
   "messageStats": {
@@ -5429,7 +5625,8 @@
           207,
           207,
           159,
-          159
+          159,
+          167
         ],
         "exclamationMarks": [
           2,
@@ -5445,7 +5642,8 @@
           0,
           0,
           1,
-          1
+          1,
+          0
         ],
         "questions": [
           1,
@@ -5461,9 +5659,10 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 14,
+        "count": 15,
         "avgLength": 165,
         "minLength": 124,
         "maxLength": 227,
@@ -5479,15 +5678,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 36,
-          "150-200": 36,
-          "200-250": 29,
+          "120-150": 33,
+          "150-200": 40,
+          "200-250": 27,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 86,
-          "2": 14,
+          "1": 87,
+          "2": 13,
           "3+": 0
         }
       },
@@ -5503,9 +5702,11 @@
           183,
           171,
           171,
-          177
+          177,
+          282
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -5529,13 +5730,14 @@
           1,
           0,
           0,
+          1,
           1
         ],
-        "count": 11,
-        "avgLength": 186,
+        "count": 12,
+        "avgLength": 194,
         "minLength": 171,
-        "maxLength": 222,
-        "medianLength": 177,
+        "maxLength": 282,
+        "medianLength": 183,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
@@ -5548,14 +5750,14 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 73,
-          "200-250": 27,
-          "250+": 0
+          "150-200": 67,
+          "200-250": 25,
+          "250+": 8
         },
         "questionDistribution": {
-          "0": 27,
-          "1": 45,
-          "2": 27,
+          "0": 25,
+          "1": 50,
+          "2": 25,
           "3+": 0
         }
       }
