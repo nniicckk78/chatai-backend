@@ -6979,8 +6979,8 @@
       "chatId": "37944497",
       "customerMessage": "Heij schönen Feiertag , soory das ich dich gleich frage  :) wo bist du zuhause  liebe Marina ? Mit freundlichen Grüßen. Peter",
       "aiResponse": "Hey Peter, danke dir. Ich bin in Berlin zuhause. Und wie verbringst du deinen Feiertag? Hast du etwas Besonderes vor?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Hey Peter, danke dir. Ich bin in Berlin zuhause. Und wie verbringst du deinen Feiertag? Hast du etwas Besonderes vor? Ich denke ich mache heute einfach mal einen entspannten",
+      "status": "edited",
       "platform": "fpc",
       "isASA": false,
       "context": {
@@ -6991,7 +6991,12 @@
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-01-06T14:42:43.557Z",
-      "updatedAt": "2026-01-06T14:42:43.557Z"
+      "updatedAt": "2026-01-06T14:53:49.008Z",
+      "reasoning": "Nachricht war zu kurz, hab noch was dazu geschrieben",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1767710643162_z5f9vu4c2",
