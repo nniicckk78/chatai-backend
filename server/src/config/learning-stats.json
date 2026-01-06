@@ -55,7 +55,7 @@
       "bad": 24
     },
     "sehr": {
-      "good": 32,
+      "good": 33,
       "bad": 15
     },
     "verlockend": {
@@ -67,8 +67,8 @@
       "bad": 1
     },
     "dann": {
-      "good": 70,
-      "bad": 2
+      "good": 71,
+      "bad": 3
     },
     "irgendwo": {
       "good": 20,
@@ -88,7 +88,7 @@
     },
     "würdest": {
       "good": 68,
-      "bad": 27
+      "bad": 29
     },
     "machen": {
       "good": 58,
@@ -119,7 +119,7 @@
       "bad": 20
     },
     "wie": {
-      "good": 51,
+      "good": 52,
       "bad": 62
     },
     "stellst": {
@@ -152,15 +152,15 @@
     },
     "den": {
       "good": 14,
-      "bad": 41
+      "bad": 42
     },
     "kopf": {
       "good": 3,
-      "bad": 25
+      "bad": 26
     },
     "hast": {
       "good": 31,
-      "bad": 60
+      "bad": 61
     },
     "verstehen": {
       "good": 24,
@@ -176,7 +176,7 @@
     },
     "geht": {
       "good": 20,
-      "bad": 20
+      "bad": 21
     },
     "genauso": {
       "good": 19,
@@ -256,15 +256,15 @@
     },
     "was": {
       "good": 108,
-      "bad": 120
+      "bad": 121
     },
     "denn": {
-      "good": 115,
+      "good": 116,
       "bad": 31
     },
     "gerne": {
       "good": 34,
-      "bad": 26
+      "bad": 27
     },
     "wollen": {
       "good": 28,
@@ -384,7 +384,7 @@
     },
     "dabei": {
       "good": 3,
-      "bad": 27
+      "bad": 28
     },
     "vorgestellt": {
       "good": 1,
@@ -415,12 +415,12 @@
       "bad": 12
     },
     "meine": {
-      "good": 8,
-      "bad": 4
+      "good": 9,
+      "bad": 5
     },
     "muschi": {
-      "good": 1,
-      "bad": 1
+      "good": 2,
+      "bad": 2
     },
     "richtig": {
       "good": 25,
@@ -435,12 +435,12 @@
       "bad": 0
     },
     "schön": {
-      "good": 9,
+      "good": 10,
       "bad": 12
     },
     "lecken": {
       "good": 1,
-      "bad": 5
+      "bad": 6
     },
     "arschloch": {
       "good": 2,
@@ -583,7 +583,7 @@
       "bad": 0
     },
     "stehst": {
-      "good": 3,
+      "good": 4,
       "bad": 3
     },
     "dazu": {
@@ -592,7 +592,7 @@
     },
     "andere": {
       "good": 2,
-      "bad": 2
+      "bad": 3
     },
     "richtung": {
       "good": 0,
@@ -639,7 +639,7 @@
       "bad": 1
     },
     "deinen": {
-      "good": 1,
+      "good": 2,
       "bad": 7
     },
     "wunsch": {
@@ -655,7 +655,7 @@
       "bad": 1
     },
     "geil": {
-      "good": 13,
+      "good": 14,
       "bad": 7
     },
     "liebe": {
@@ -679,7 +679,7 @@
       "bad": 15
     },
     "eigentlich": {
-      "good": 9,
+      "good": 10,
       "bad": 1
     },
     "typ": {
@@ -932,7 +932,7 @@
     },
     "bin": {
       "good": 24,
-      "bad": 22
+      "bad": 23
     },
     "gemeinsam": {
       "good": 2,
@@ -1184,7 +1184,7 @@
     },
     "neugierig": {
       "good": 5,
-      "bad": 6
+      "bad": 7
     },
     "betrifft": {
       "good": 2,
@@ -1240,7 +1240,7 @@
     },
     "zuerst": {
       "good": 1,
-      "bad": 4
+      "bad": 5
     },
     "berblick": {
       "good": 0,
@@ -1688,7 +1688,7 @@
     },
     "meinen": {
       "good": 0,
-      "bad": 4
+      "bad": 5
     },
     "bildern": {
       "good": 0,
@@ -2271,11 +2271,11 @@
       "bad": 1
     },
     "schwanz": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "blasen": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "reiten": {
@@ -2368,7 +2368,7 @@
     },
     "fantasie": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "verwöhnen": {
       "good": 0,
@@ -2744,7 +2744,7 @@
     },
     "brüsten": {
       "good": 0,
-      "bad": 1
+      "bad": 2
     },
     "meiner": {
       "good": 0,
@@ -3733,6 +3733,18 @@
     "darfst": {
       "good": 0,
       "bad": 1
+    },
+    "leckst": {
+      "good": 1,
+      "bad": 0
+    },
+    "saugen": {
+      "good": 0,
+      "bad": 1
+    },
+    "verraten": {
+      "good": 0,
+      "bad": 1
     }
   },
   "situationSuccess": {
@@ -3745,8 +3757,8 @@
       "total": 18
     },
     "Sexuelle Themen": {
-      "good": 24,
-      "total": 43
+      "good": 25,
+      "total": 45
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -3829,6 +3841,19 @@
     {
       "situation": "Sexuelle Themen",
       "customerPattern": {
+        "keywords": "wenn mein schwanz sitzt anderen muschi lecke",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 72
+      },
+      "goodResponse": "Freut mich auf jedenfall von dir zu hören Edgar! Ich kann dir leider gerade kein Foto senden da meine Handykamera kaputt gegangen ist, ich muss mir erstmal ein neues Handy kaufen. Willst du mir mal er",
+      "successCount": 7,
+      "lastUsed": "2026-01-06T10:59:40.769Z"
+    },
+    {
+      "situation": "Sexuelle Themen",
+      "customerPattern": {
         "keywords": "fragst sachen wenn schlucken magst dann kannst gerne spritze mal",
         "hasQuestion": false,
         "hasMeeting": false,
@@ -3838,19 +3863,6 @@
       "goodResponse": "Allein bei der Vorstellung werde ich schon richtig feucht! Hast du denn auch bestimmte Dinge die du mal beim Sex ausprobieren wollen würdest? Wie siehts denn auch mit einem Rollenspiel aus? Würde dir ",
       "successCount": 6,
       "lastUsed": "2026-01-04T20:05:45.090Z"
-    },
-    {
-      "situation": "Sexuelle Themen",
-      "customerPattern": {
-        "keywords": "wenn mein schwanz sitzt anderen muschi lecke",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 72
-      },
-      "goodResponse": "Freut mich auf jedenfall von dir zu hören Edgar! Ich kann dir leider gerade kein Foto senden da meine Handykamera kaputt gegangen ist, ich muss mir erstmal ein neues Handy kaufen. Willst du mir mal er",
-      "successCount": 6,
-      "lastUsed": "2026-01-06T00:37:57.465Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -4061,7 +4073,7 @@
       "lastUsed": "2026-01-06T01:16:26.894Z"
     }
   ],
-  "lastUpdated": "2026-01-06T01:16:26.895Z",
+  "lastUpdated": "2026-01-06T10:59:40.769Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4193,6 +4205,14 @@
         "Sexuelle Themen"
       ],
       "lastUsed": "2026-01-06T01:16:26.894Z"
+    },
+    {
+      "text": "Der kunde hat schon gesagt was er machen würden, deshalb neue frage und weitere eigene Vorlieben nennen und gefragt ob das ihm gefällt",
+      "count": 1,
+      "situations": [
+        "Sexuelle Themen"
+      ],
+      "lastUsed": "2026-01-06T10:59:40.768Z"
     }
   ],
   "messageStats": {
@@ -4506,10 +4526,12 @@
           174,
           139,
           227,
-          133
+          133,
+          124
         ],
         "exclamationMarks": [
           2,
+          0,
           0,
           0,
           0,
@@ -4520,14 +4542,15 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 5,
-        "avgLength": 175,
-        "minLength": 133,
+        "count": 6,
+        "avgLength": 167,
+        "minLength": 124,
         "maxLength": 227,
         "medianLength": 174,
-        "avgExclamationMarks": 0.4,
+        "avgExclamationMarks": 0.3,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 2,
         "medianExclamationMarks": 0,
@@ -4538,9 +4561,9 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 40,
-          "150-200": 20,
-          "200-250": 40,
+          "120-150": 50,
+          "150-200": 17,
+          "200-250": 33,
           "250+": 0
         },
         "questionDistribution": {
@@ -4556,9 +4579,11 @@
           176,
           183,
           215,
-          171
+          171,
+          206
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -4570,18 +4595,19 @@
           1,
           2,
           1,
-          0
+          0,
+          2
         ],
-        "count": 5,
-        "avgLength": 184,
+        "count": 6,
+        "avgLength": 188,
         "minLength": 171,
         "maxLength": 215,
-        "medianLength": 176,
+        "medianLength": 183,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1,
+        "avgQuestions": 1.2,
         "minQuestions": 0,
         "maxQuestions": 2,
         "medianQuestions": 1,
@@ -4589,14 +4615,14 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 80,
-          "200-250": 20,
+          "150-200": 67,
+          "200-250": 33,
           "250+": 0
         },
         "questionDistribution": {
-          "0": 20,
-          "1": 60,
-          "2": 20,
+          "0": 17,
+          "1": 50,
+          "2": 33,
           "3+": 0
         }
       }
