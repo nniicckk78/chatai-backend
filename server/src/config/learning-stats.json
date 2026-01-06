@@ -207,7 +207,7 @@
       "bad": 0
     },
     "manchmal": {
-      "good": 22,
+      "good": 23,
       "bad": 5
     },
     "nur": {
@@ -215,7 +215,7 @@
       "bad": 4
     },
     "bisschen": {
-      "good": 30,
+      "good": 31,
       "bad": 7
     },
     "damit": {
@@ -255,11 +255,11 @@
       "bad": 0
     },
     "was": {
-      "good": 110,
+      "good": 111,
       "bad": 123
     },
     "denn": {
-      "good": 118,
+      "good": 119,
       "bad": 33
     },
     "gerne": {
@@ -895,7 +895,7 @@
       "bad": 5
     },
     "bestimmt": {
-      "good": 8,
+      "good": 9,
       "bad": 1
     },
     "hände": {
@@ -1039,7 +1039,7 @@
       "bad": 0
     },
     "verstehe": {
-      "good": 7,
+      "good": 8,
       "bad": 10
     },
     "schon": {
@@ -1171,7 +1171,7 @@
       "bad": 2
     },
     "frau": {
-      "good": 2,
+      "good": 3,
       "bad": 2
     },
     "erzzähl": {
@@ -1235,7 +1235,7 @@
       "bad": 5
     },
     "wichtig": {
-      "good": 6,
+      "good": 7,
       "bad": 9
     },
     "zuerst": {
@@ -2579,7 +2579,7 @@
       "bad": 1
     },
     "okay": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "weis": {
@@ -2875,7 +2875,7 @@
       "bad": 1
     },
     "schwer": {
-      "good": 2,
+      "good": 3,
       "bad": 1
     },
     "erklären": {
@@ -3775,7 +3775,7 @@
       "bad": 2
     },
     "ansonsten": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "momentan": {
@@ -3793,8 +3793,8 @@
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 150,
-      "total": 272
+      "good": 151,
+      "total": 273
     },
     "Bot-Vorwurf": {
       "good": 9,
@@ -3840,8 +3840,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 110,
-      "lastUsed": "2026-01-06T11:31:52.008Z"
+      "successCount": 111,
+      "lastUsed": "2026-01-06T11:31:53.010Z"
     },
     {
       "situation": "allgemein",
@@ -4117,7 +4117,7 @@
       "lastUsed": "2026-01-06T01:16:26.894Z"
     }
   ],
-  "lastUpdated": "2026-01-06T11:31:52.008Z",
+  "lastUpdated": "2026-01-06T11:31:53.010Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4139,6 +4139,15 @@
       "lastUsed": "2026-01-06T11:08:21.385Z"
     },
     {
+      "text": "Kein Sexueller kontext, drauf eingegangen das von Solzialhilfe zu leben bestimmt manchmal schwer sein kann und ihn dann gefragt was ihm wichtig an einer Frau ist",
+      "count": 3,
+      "situations": [
+        "Geld/Coins",
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-06T11:31:53.009Z"
+    },
+    {
       "text": "Sei kurz, präzise und direkt",
       "count": 2,
       "situations": [
@@ -4146,15 +4155,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T01:09:32.341Z"
-    },
-    {
-      "text": "Kein Sexueller kontext, drauf eingegangen das von Solzialhilfe zu leben bestimmt manchmal schwer sein kann und ihn dann gefragt was ihm wichtig an einer Frau ist",
-      "count": 2,
-      "situations": [
-        "Geld/Coins",
-        "allgemein"
-      ],
-      "lastUsed": "2026-01-06T11:31:52.008Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -4394,6 +4394,7 @@
           178,
           137,
           152,
+          116,
           116
         ],
         "exclamationMarks": [
@@ -4409,6 +4410,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4458,10 +4460,11 @@
           1,
           1,
           2,
+          1,
           1
         ],
-        "count": 30,
-        "avgLength": 160,
+        "count": 31,
+        "avgLength": 159,
         "minLength": 106,
         "maxLength": 232,
         "medianLength": 163,
@@ -4475,15 +4478,15 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 27,
+          "100-120": 29,
           "120-150": 13,
-          "150-200": 53,
-          "200-250": 7,
+          "150-200": 52,
+          "200-250": 6,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 83,
+          "1": 84,
           "2": 13,
           "3+": 3
         }
