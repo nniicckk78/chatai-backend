@@ -1,3962 +1,3966 @@
 {
   "patterns": {
-    "würdest du": {
-      "count": 67,
-      "successRate": 0
-    },
-    "würdest du mir dann einen machen?": {
-      "count": 20,
-      "successRate": 0
-    },
-    "das würde": {
-      "count": 5,
-      "successRate": 0
-    },
-    "würde ich": {
-      "count": 3,
-      "successRate": 0
-    },
-    "finde ich": {
-      "count": 6,
-      "successRate": 0
-    },
-    "würde es": {
-      "count": 2,
-      "successRate": 0
-    },
-    "würdest du als erstes machen wollen?": {
-      "count": 1,
-      "successRate": 0
-    },
-    "könnte ich": {
-      "count": 1,
-      "successRate": 0
-    },
-    "das finde": {
-      "count": 1,
-      "successRate": 0
-    },
-    "das wäre": {
-      "count": 5,
-      "successRate": 0
-    },
-    "wäre es": {
-      "count": 1,
-      "successRate": 0
-    },
-    "würde gerne": {
-      "count": 9,
-      "successRate": 0
-    },
-    "würdest du das am liebsten machen wollen?": {
-      "count": 3,
-      "successRate": 0
+    "allgemein": {
+      "würdest du": {
+        "count": 67,
+        "successRate": 0
+      },
+      "würdest du mir dann einen machen?": {
+        "count": 20,
+        "successRate": 0
+      },
+      "das würde": {
+        "count": 5,
+        "successRate": 0
+      },
+      "würde ich": {
+        "count": 3,
+        "successRate": 0
+      },
+      "finde ich": {
+        "count": 6,
+        "successRate": 0
+      },
+      "würde es": {
+        "count": 2,
+        "successRate": 0
+      },
+      "würdest du als erstes machen wollen?": {
+        "count": 1,
+        "successRate": 0
+      },
+      "könnte ich": {
+        "count": 1,
+        "successRate": 0
+      },
+      "das finde": {
+        "count": 1,
+        "successRate": 0
+      },
+      "das wäre": {
+        "count": 5,
+        "successRate": 0
+      },
+      "wäre es": {
+        "count": 1,
+        "successRate": 0
+      },
+      "würde gerne": {
+        "count": 9,
+        "successRate": 0
+      },
+      "würdest du das am liebsten machen wollen?": {
+        "count": 3,
+        "successRate": 0
+      }
     }
   },
   "wordFrequency": {
-    "hört": {
-      "good": 24,
-      "bad": 6
-    },
-    "sich": {
-      "good": 38,
-      "bad": 24
-    },
-    "sehr": {
-      "good": 34,
-      "bad": 15
-    },
-    "verlockend": {
-      "good": 21,
-      "bad": 2
-    },
-    "würden": {
-      "good": 27,
-      "bad": 2
-    },
-    "dann": {
-      "good": 78,
-      "bad": 5
-    },
-    "irgendwo": {
-      "good": 20,
-      "bad": 0
-    },
-    "kaffe": {
-      "good": 20,
-      "bad": 0
-    },
-    "trinken": {
-      "good": 22,
-      "bad": 9
-    },
-    "gehen": {
-      "good": 26,
-      "bad": 0
-    },
-    "würdest": {
-      "good": 74,
-      "bad": 42
-    },
-    "machen": {
-      "good": 61,
-      "bad": 22
-    },
-    "hätte": {
-      "good": 1,
-      "bad": 22
-    },
-    "definitiv": {
-      "good": 0,
-      "bad": 20
-    },
-    "grosse": {
-      "good": 0,
-      "bad": 21
-    },
-    "lust": {
-      "good": 0,
-      "bad": 25
-    },
-    "tasse": {
-      "good": 0,
-      "bad": 20
-    },
-    "kaffee": {
-      "good": 10,
-      "bad": 34
-    },
-    "wie": {
-      "good": 72,
-      "bad": 70
-    },
-    "stellst": {
-      "good": 3,
-      "bad": 42
-    },
-    "unseren": {
-      "good": 0,
-      "bad": 20
-    },
-    "nachmittag": {
-      "good": 0,
-      "bad": 21
-    },
-    "genau": {
-      "good": 36,
-      "bad": 47
-    },
-    "gibt": {
-      "good": 23,
-      "bad": 30
-    },
-    "bestimmten": {
-      "good": 0,
-      "bad": 20
-    },
-    "ort": {
-      "good": 3,
-      "bad": 23
-    },
-    "den": {
-      "good": 14,
-      "bad": 42
-    },
-    "kopf": {
-      "good": 3,
-      "bad": 26
-    },
-    "hast": {
-      "good": 39,
-      "bad": 65
-    },
-    "verstehen": {
-      "good": 24,
-      "bad": 20
-    },
-    "mehr": {
-      "good": 31,
-      "bad": 29
-    },
-    "wünschst": {
-      "good": 19,
-      "bad": 19
-    },
-    "geht": {
-      "good": 22,
-      "bad": 23
-    },
-    "genauso": {
-      "good": 19,
-      "bad": 19
-    },
-    "möchte": {
-      "good": 25,
-      "bad": 19
-    },
-    "auch": {
-      "good": 139,
-      "bad": 41
-    },
-    "funke": {
-      "good": 19,
-      "bad": 19
-    },
-    "nicht": {
-      "good": 115,
-      "bad": 40
-    },
-    "erlischt": {
-      "good": 19,
-      "bad": 19
-    },
-    "bruach": {
-      "good": 19,
-      "bad": 0
-    },
-    "manchmal": {
-      "good": 23,
-      "bad": 5
-    },
-    "nur": {
-      "good": 36,
-      "bad": 4
-    },
-    "bisschen": {
-      "good": 31,
-      "bad": 8
-    },
-    "damit": {
-      "good": 20,
-      "bad": 0
-    },
-    "mich": {
-      "good": 47,
-      "bad": 39
-    },
-    "wohl": {
-      "good": 19,
-      "bad": 1
-    },
-    "fühle": {
-      "good": 19,
-      "bad": 0
-    },
-    "letzter": {
-      "good": 19,
-      "bad": 0
-    },
-    "zeit": {
-      "good": 26,
-      "bad": 6
-    },
-    "ziemlich": {
-      "good": 25,
-      "bad": 0
-    },
-    "viel": {
-      "good": 27,
-      "bad": 6
-    },
-    "los": {
-      "good": 19,
-      "bad": 0
-    },
-    "was": {
-      "good": 116,
-      "bad": 146
-    },
-    "denn": {
-      "good": 135,
-      "bad": 43
-    },
-    "gerne": {
-      "good": 58,
-      "bad": 42
-    },
-    "wollen": {
-      "good": 31,
-      "bad": 0
-    },
-    "wieder": {
-      "good": 5,
-      "bad": 20
-    },
-    "entfachen": {
-      "good": 0,
-      "bad": 19
-    },
-    "vorstellen": {
-      "good": 22,
-      "bad": 16
-    },
-    "einfach": {
-      "good": 32,
-      "bad": 29
-    },
-    "gibst": {
-      "good": 20,
-      "bad": 0
-    },
-    "dein": {
-      "good": 37,
-      "bad": 9
-    },
-    "bestes": {
-      "good": 20,
-      "bad": 0
-    },
-    "als": {
-      "good": 38,
-      "bad": 13
-    },
-    "papa": {
-      "good": 20,
-      "bad": 0
-    },
-    "wichtigste": {
-      "good": 21,
-      "bad": 0
-    },
-    "sicher": {
-      "good": 33,
-      "bad": 6
-    },
-    "frauen": {
-      "good": 22,
-      "bad": 0
-    },
-    "schätzen": {
-      "good": 20,
-      "bad": 0
-    },
-    "suchst": {
-      "good": 25,
-      "bad": 1
-    },
-    "hier": {
-      "good": 27,
-      "bad": 8
-    },
-    "hof": {
-      "good": 20,
-      "bad": 0
-    },
-    "gerade": {
-      "good": 30,
-      "bad": 6
-    },
-    "denke": {
-      "good": 50,
-      "bad": 2
-    },
-    "denkst": {
-      "good": 34,
-      "bad": 3
-    },
-    "zweiteudig": {
-      "good": 20,
-      "bad": 0
-    },
-    "absolut": {
-      "good": 0,
-      "bad": 20
-    },
-    "finde": {
-      "good": 14,
-      "bad": 49
-    },
-    "grossartig": {
-      "good": 0,
-      "bad": 25
-    },
-    "wenn": {
-      "good": 39,
-      "bad": 71
-    },
-    "gegenseitig": {
-      "good": 0,
-      "bad": 21
-    },
-    "unterstützen": {
-      "good": 0,
-      "bad": 20
-    },
-    "helfen": {
-      "good": 0,
-      "bad": 20
-    },
-    "können": {
-      "good": 4,
-      "bad": 32
-    },
-    "dabei": {
-      "good": 3,
-      "bad": 28
-    },
-    "vorgestellt": {
-      "good": 1,
-      "bad": 20
-    },
-    "klingt": {
-      "good": 4,
-      "bad": 21
-    },
-    "wild": {
-      "good": 1,
-      "bad": 2
-    },
-    "mein": {
-      "good": 13,
-      "bad": 1
-    },
-    "geiler": {
-      "good": 1,
-      "bad": 0
-    },
-    "hengst": {
-      "good": 1,
-      "bad": 0
-    },
-    "würde": {
-      "good": 25,
-      "bad": 21
-    },
-    "meine": {
-      "good": 16,
-      "bad": 11
-    },
-    "muschi": {
-      "good": 5,
-      "bad": 4
-    },
-    "richtig": {
-      "good": 28,
-      "bad": 22
-    },
-    "feucht": {
-      "good": 3,
-      "bad": 0
-    },
-    "kannst": {
-      "good": 15,
-      "bad": 0
-    },
-    "schön": {
-      "good": 13,
-      "bad": 12
-    },
-    "lecken": {
-      "good": 4,
-      "bad": 8
-    },
-    "arschloch": {
-      "good": 2,
-      "bad": 0
-    },
-    "gleich": {
-      "good": 2,
-      "bad": 0
-    },
-    "mitlecken": {
-      "good": 1,
-      "bad": 0
-    },
-    "peter": {
-      "good": 1,
-      "bad": 2
-    },
-    "intensiv": {
-      "good": 0,
-      "bad": 4
-    },
-    "werden": {
-      "good": 7,
-      "bad": 1
-    },
-    "könnte": {
-      "good": 6,
-      "bad": 11
-    },
-    "toll": {
-      "good": 0,
-      "bad": 2
-    },
-    "jemand": {
-      "good": 0,
-      "bad": 3
-    },
-    "weiss": {
-      "good": 2,
-      "bad": 2
-    },
-    "will": {
-      "good": 15,
-      "bad": 1
-    },
-    "wäre": {
-      "good": 15,
-      "bad": 19
-    },
-    "perfektes": {
-      "good": 0,
-      "bad": 4
-    },
-    "szenario": {
-      "good": 0,
-      "bad": 4
-    },
-    "solchen": {
-      "good": 0,
-      "bad": 2
-    },
-    "moment": {
-      "good": 0,
-      "bad": 2
-    },
-    "hey": {
-      "good": 4,
-      "bad": 4
-    },
-    "oliver": {
-      "good": 1,
-      "bad": 1
-    },
-    "frohes": {
-      "good": 7,
-      "bad": 4
-    },
-    "neues": {
-      "good": 8,
-      "bad": 4
-    },
-    "jahr": {
-      "good": 12,
-      "bad": 11
-    },
-    "fehlern": {
-      "good": 1,
-      "bad": 1
-    },
-    "leben": {
-      "good": 1,
-      "bad": 5
-    },
-    "kenne": {
-      "good": 1,
-      "bad": 4
-    },
-    "alles": {
-      "good": 12,
-      "bad": 9
-    },
-    "neu": {
-      "good": 1,
-      "bad": 1
-    },
-    "starten": {
-      "good": 1,
-      "bad": 1
-    },
-    "jeder": {
-      "good": 1,
-      "bad": 1
-    },
-    "seine": {
-      "good": 1,
-      "bad": 1
-    },
-    "eigenen": {
-      "good": 1,
-      "bad": 2
-    },
-    "herausforderungen": {
-      "good": 1,
-      "bad": 2
-    },
-    "meinst": {
-      "good": 2,
-      "bad": 3
-    },
-    "reale": {
-      "good": 1,
-      "bad": 0
-    },
-    "chancen": {
-      "good": 1,
-      "bad": 0
-    },
-    "markt": {
-      "good": 1,
-      "bad": 0
-    },
-    "stehst": {
-      "good": 7,
-      "bad": 3
-    },
-    "dazu": {
-      "good": 0,
-      "bad": 8
-    },
-    "andere": {
-      "good": 6,
-      "bad": 5
-    },
-    "richtung": {
-      "good": 0,
-      "bad": 1
-    },
-    "lenken": {
-      "good": 0,
-      "bad": 1
-    },
-    "werde": {
-      "good": 10,
-      "bad": 0
-    },
-    "jeden": {
-      "good": 4,
-      "bad": 7
-    },
-    "fall": {
-      "good": 4,
-      "bad": 7
-    },
-    "ganz": {
-      "good": 12,
-      "bad": 5
-    },
-    "mühe": {
-      "good": 1,
-      "bad": 0
-    },
-    "geben": {
-      "good": 5,
-      "bad": 0
-    },
-    "darf": {
-      "good": 4,
-      "bad": 0
-    },
-    "wirklich": {
-      "good": 8,
-      "bad": 28
-    },
-    "wünschen": {
-      "good": 2,
-      "bad": 2
-    },
-    "deinen": {
-      "good": 16,
-      "bad": 8
-    },
-    "wunsch": {
-      "good": 0,
-      "bad": 2
-    },
-    "erfüllst": {
-      "good": 0,
-      "bad": 1
-    },
-    "versprechen": {
-      "good": 0,
-      "bad": 1
-    },
-    "geil": {
-      "good": 14,
-      "bad": 20
-    },
-    "liebe": {
-      "good": 2,
-      "bad": 5
-    },
-    "angehen": {
-      "good": 0,
-      "bad": 1
-    },
-    "siehst": {
-      "good": 7,
-      "bad": 0
-    },
-    "echt": {
-      "good": 25,
-      "bad": 9
-    },
-    "gut": {
-      "good": 34,
-      "bad": 26
-    },
-    "eigentlich": {
-      "good": 19,
-      "bad": 1
-    },
-    "typ": {
-      "good": 8,
-      "bad": 1
-    },
-    "sagen": {
-      "good": 9,
-      "bad": 8
-    },
-    "hoffe": {
-      "good": 18,
-      "bad": 0
-    },
-    "dads": {
-      "good": 1,
-      "bad": 0
-    },
-    "behaupten": {
-      "good": 6,
-      "bad": 0
-    },
-    "unzählige": {
-      "good": 0,
-      "bad": 5
-    },
-    "möglichkeiten": {
-      "good": 0,
-      "bad": 5
-    },
-    "kreativ": {
-      "good": 0,
-      "bad": 5
-    },
-    "auszudrücken": {
-      "good": 0,
-      "bad": 5
-    },
-    "deine": {
-      "good": 13,
-      "bad": 28
-    },
-    "hobbys": {
-      "good": 0,
-      "bad": 6
-    },
-    "interessen": {
-      "good": 0,
-      "bad": 7
-    },
-    "freude": {
-      "good": 0,
-      "bad": 5
-    },
-    "bereiten": {
-      "good": 0,
-      "bad": 5
-    },
-    "tittenfick": {
-      "good": 2,
-      "bad": 0
-    },
-    "doggy": {
-      "good": 3,
-      "bad": 4
-    },
-    "bist": {
-      "good": 20,
-      "bad": 12
-    },
     "allgemein": {
-      "good": 3,
-      "bad": 0
-    },
-    "experimentierfreudig": {
-      "good": 2,
-      "bad": 0
-    },
-    "neue": {
-      "good": 8,
-      "bad": 8
-    },
-    "dinge": {
-      "good": 7,
-      "bad": 5
-    },
-    "auszuprobieren": {
-      "good": 3,
-      "bad": 1
-    },
-    "immer": {
-      "good": 14,
-      "bad": 8
-    },
-    "geniessen": {
-      "good": 1,
-      "bad": 12
-    },
-    "beim": {
-      "good": 1,
-      "bad": 14
-    },
-    "zeigen": {
-      "good": 0,
-      "bad": 2
-    },
-    "mag": {
-      "good": 0,
-      "bad": 9
-    },
-    "doggi": {
-      "good": 0,
-      "bad": 2
-    },
-    "macht": {
-      "good": 2,
-      "bad": 17
-    },
-    "intensiver": {
-      "good": 0,
-      "bad": 2
-    },
-    "gefällt": {
-      "good": 15,
-      "bad": 19
-    },
-    "brieffreundschaft": {
-      "good": 3,
-      "bad": 3
-    },
-    "weil": {
-      "good": 6,
-      "bad": 0
-    },
-    "zeitlich": {
-      "good": 3,
-      "bad": 0
-    },
-    "passt": {
-      "good": 4,
-      "bad": 0
-    },
-    "doch": {
-      "good": 12,
-      "bad": 4
-    },
-    "sex": {
-      "good": 17,
-      "bad": 1
-    },
-    "nichz": {
-      "good": 2,
-      "bad": 0
-    },
-    "entegehen": {
-      "good": 3,
-      "bad": 0
-    },
-    "lassen": {
-      "good": 8,
-      "bad": 2
-    },
-    "diese": {
-      "good": 5,
-      "bad": 0
-    },
-    "anspielung": {
-      "good": 3,
-      "bad": 0
-    },
-    "nett": {
-      "good": 6,
-      "bad": 1
-    },
-    "kommst": {
-      "good": 5,
-      "bad": 2
-    },
-    "sowas": {
-      "good": 7,
-      "bad": 0
-    },
-    "direkt": {
-      "good": 1,
-      "bad": 4
-    },
-    "heisses": {
-      "good": 0,
-      "bad": 3
-    },
-    "abenteuer": {
-      "good": 1,
-      "bad": 6
-    },
-    "spass": {
-      "good": 5,
-      "bad": 11
-    },
-    "nacht": {
-      "good": 0,
-      "bad": 5
-    },
-    "wette": {
-      "good": 2,
-      "bad": 0
-    },
-    "mal": {
-      "good": 30,
-      "bad": 27
-    },
-    "sehen": {
-      "good": 13,
-      "bad": 5
-    },
-    "bestimmt": {
-      "good": 10,
-      "bad": 1
-    },
-    "hände": {
-      "good": 2,
-      "bad": 0
-    },
-    "weg": {
-      "good": 3,
-      "bad": 0
-    },
-    "könntest": {
-      "good": 5,
-      "bad": 0
-    },
-    "wettest": {
-      "good": 2,
-      "bad": 0
-    },
-    "etwa": {
-      "good": 3,
-      "bad": 0
-    },
-    "dagegen": {
-      "good": 2,
-      "bad": 0
-    },
-    "ideen": {
-      "good": 0,
-      "bad": 2
-    },
-    "vorstellungen": {
-      "good": 0,
-      "bad": 2
-    },
-    "bin": {
-      "good": 29,
-      "bad": 26
-    },
-    "gemeinsam": {
-      "good": 2,
-      "bad": 3
-    },
-    "aufregend": {
-      "good": 0,
-      "bad": 6
-    },
-    "gestalten": {
-      "good": 0,
-      "bad": 3
-    },
-    "freut": {
-      "good": 5,
-      "bad": 10
-    },
-    "wilfried": {
-      "good": 1,
-      "bad": 0
-    },
-    "jahre": {
-      "good": 3,
-      "bad": 2
-    },
-    "alt": {
-      "good": 3,
-      "bad": 2
-    },
-    "dich": {
-      "good": 45,
-      "bad": 35
-    },
-    "stört": {
-      "good": 7,
-      "bad": 0
-    },
-    "altersunterschied": {
-      "good": 4,
-      "bad": 0
-    },
-    "beiden": {
-      "good": 7,
-      "bad": 3
-    },
-    "kein": {
-      "good": 14,
-      "bad": 0
-    },
-    "problem": {
-      "good": 8,
-      "bad": 0
-    },
-    "mitte": {
-      "good": 0,
-      "bad": 1
-    },
-    "lass": {
-      "good": 3,
-      "bad": 2
-    },
-    "schauen": {
-      "good": 2,
-      "bad": 1
-    },
-    "ergibt": {
-      "good": 0,
-      "bad": 3
-    },
-    "lebe": {
-      "good": 0,
-      "bad": 1
-    },
-    "geniesse": {
-      "good": 0,
-      "bad": 4
-    },
-    "bekanntschaften": {
-      "good": 0,
-      "bad": 1
-    },
-    "entspannten": {
-      "good": 1,
-      "bad": 3
-    },
-    "abend": {
-      "good": 2,
-      "bad": 7
-    },
-    "kaufst": {
-      "good": 2,
-      "bad": 0
-    },
-    "auto": {
-      "good": 7,
-      "bad": 0
-    },
-    "geld": {
-      "good": 2,
-      "bad": 0
-    },
-    "tank": {
-      "good": 2,
-      "bad": 0
-    },
-    "verstehe": {
-      "good": 8,
-      "bad": 10
-    },
-    "schon": {
-      "good": 43,
-      "bad": 9
-    },
-    "noch": {
-      "good": 31,
-      "bad": 12
-    },
-    "wenig": {
-      "good": 5,
-      "bad": 0
-    },
-    "ber": {
-      "good": 8,
-      "bad": 11
-    },
-    "erfahren": {
-      "good": 6,
-      "bad": 7
-    },
-    "bevor": {
-      "good": 5,
-      "bad": 4
-    },
-    "treffen": {
-      "good": 4,
-      "bad": 3
-    },
-    "bereuuen": {
-      "good": 1,
-      "bad": 0
-    },
-    "draussen": {
-      "good": 0,
-      "bad": 2
-    },
-    "zwar": {
-      "good": 0,
-      "bad": 2
-    },
-    "ungestört": {
-      "good": 0,
-      "bad": 2
-    },
-    "plaudern": {
-      "good": 0,
-      "bad": 2
-    },
-    "man": {
-      "good": 3,
-      "bad": 13
-    },
-    "reden": {
-      "good": 1,
-      "bad": 4
-    },
-    "zusammen": {
-      "good": 13,
-      "bad": 19
-    },
-    "wären": {
-      "good": 3,
-      "bad": 2
-    },
-    "bereuen": {
-      "good": 1,
-      "bad": 0
-    },
-    "wirst": {
-      "good": 3,
-      "bad": 0
-    },
-    "danach": {
-      "good": 5,
-      "bad": 0
-    },
-    "bälle": {
-      "good": 1,
-      "bad": 0
-    },
-    "glaube": {
-      "good": 1,
-      "bad": 0
-    },
-    "oben": {
-      "good": 1,
-      "bad": 0
-    },
-    "stehen": {
-      "good": 1,
-      "bad": 2
-    },
-    "trotzdem": {
-      "good": 3,
-      "bad": 1
-    },
-    "anfangen": {
-      "good": 1,
-      "bad": 0
-    },
-    "sabbern": {
-      "good": 1,
-      "bad": 0
-    },
-    "anderer": {
-      "good": 2,
-      "bad": 0
-    },
-    "meinung": {
-      "good": 4,
-      "bad": 0
-    },
-    "brüste": {
-      "good": 0,
-      "bad": 2
-    },
-    "natürlicher": {
-      "good": 0,
-      "bad": 1
-    },
-    "magst": {
-      "good": 1,
-      "bad": 12
-    },
-    "sonst": {
-      "good": 0,
-      "bad": 2
-    },
-    "frau": {
-      "good": 3,
-      "bad": 2
-    },
-    "erzzähl": {
-      "good": 1,
-      "bad": 0
-    },
-    "etwas": {
-      "good": 12,
-      "bad": 8
-    },
-    "neugierig": {
-      "good": 8,
-      "bad": 7
-    },
-    "betrifft": {
-      "good": 2,
-      "bad": 0
-    },
-    "hören": {
-      "good": 4,
-      "bad": 6
-    },
-    "welche": {
-      "good": 0,
-      "bad": 4
-    },
-    "anderen": {
-      "good": 1,
-      "bad": 2
-    },
-    "vorlieben": {
-      "good": 6,
-      "bad": 11
-    },
-    "begeistern": {
-      "good": 0,
-      "bad": 2
-    },
-    "erzähl": {
-      "good": 2,
-      "bad": 1
-    },
-    "wiederstehen": {
-      "good": 5,
-      "bad": 0
-    },
-    "einsteigen": {
-      "good": 3,
-      "bad": 0
-    },
-    "durchdachten": {
-      "good": 0,
-      "bad": 3
-    },
-    "vielversprechenden": {
-      "good": 0,
-      "bad": 4
-    },
-    "plan": {
-      "good": 0,
-      "bad": 5
-    },
-    "wichtig": {
-      "good": 7,
-      "bad": 9
-    },
-    "zuerst": {
-      "good": 4,
-      "bad": 7
-    },
-    "berblick": {
-      "good": 0,
-      "bad": 3
-    },
-    "gewinnen": {
-      "good": 0,
-      "bad": 3
-    },
-    "einsteigst": {
-      "good": 0,
-      "bad": 3
-    },
-    "recht": {
-      "good": 6,
-      "bad": 0
-    },
-    "vorsichtig": {
-      "good": 3,
-      "bad": 0
-    },
-    "dem": {
-      "good": 3,
-      "bad": 4
-    },
-    "ersten": {
-      "good": 3,
-      "bad": 0
-    },
-    "mache": {
-      "good": 5,
-      "bad": 0
-    },
-    "voll": {
-      "good": 6,
-      "bad": 0
-    },
-    "gedanken": {
-      "good": 3,
-      "bad": 0
-    },
-    "vielen": {
-      "good": 3,
-      "bad": 2
-    },
-    "lieben": {
-      "good": 0,
-      "bad": 2
-    },
-    "nachricht": {
-      "good": 0,
-      "bad": 2
-    },
-    "freue": {
-      "good": 0,
-      "bad": 6
-    },
-    "darauf": {
-      "good": 4,
-      "bad": 3
-    },
-    "weiter": {
-      "good": 1,
-      "bad": 4
-    },
-    "kontakt": {
-      "good": 0,
-      "bad": 3
-    },
-    "bleiben": {
-      "good": 1,
-      "bad": 2
-    },
-    "heute": {
-      "good": 13,
-      "bad": 12
-    },
-    "schönes": {
-      "good": 3,
-      "bad": 3
-    },
-    "geplant": {
-      "good": 1,
-      "bad": 2
-    },
-    "musst": {
-      "good": 5,
-      "bad": 1
-    },
-    "heutigen": {
-      "good": 1,
-      "bad": 0
-    },
-    "nie": {
-      "good": 1,
-      "bad": 1
-    },
-    "genug": {
-      "good": 2,
-      "bad": 0
-    },
-    "danke": {
-      "good": 16,
-      "bad": 11
-    },
-    "attraktiv": {
-      "good": 3,
-      "bad": 0
-    },
-    "kompliment": {
-      "good": 5,
-      "bad": 3
-    },
-    "jonas": {
-      "good": 0,
-      "bad": 3
-    },
-    "vielleicht": {
-      "good": 2,
-      "bad": 10
-    },
-    "anderes": {
-      "good": 0,
-      "bad": 5
-    },
-    "austauschen": {
-      "good": 0,
-      "bad": 4
-    },
-    "bisher": {
-      "good": 2,
-      "bad": 4
-    },
-    "gemacht": {
-      "good": 8,
-      "bad": 3
-    },
-    "feiern": {
-      "good": 0,
-      "bad": 3
-    },
-    "hei": {
-      "good": 1,
-      "bad": 0
-    },
-    "halt": {
-      "good": 3,
-      "bad": 0
-    },
-    "funktioniert": {
-      "good": 1,
-      "bad": 0
-    },
-    "bedeutet": {
-      "good": 3,
-      "bad": 0
-    },
-    "schwachsinn": {
-      "good": 1,
-      "bad": 0
-    },
-    "lieber": {
-      "good": 1,
-      "bad": 3
-    },
-    "erst": {
-      "good": 1,
-      "bad": 1
-    },
-    "näherkommen": {
-      "good": 0,
-      "bad": 2
-    },
-    "gelungenes": {
-      "good": 0,
-      "bad": 1
-    },
-    "wochenende": {
-      "good": 0,
-      "bad": 1
-    },
-    "wünsche": {
-      "good": 8,
-      "bad": 3
-    },
-    "herausfinden": {
-      "good": 2,
-      "bad": 1
-    },
-    "einander": {
-      "good": 2,
-      "bad": 0
-    },
-    "kindern": {
-      "good": 3,
-      "bad": 0
-    },
-    "gar": {
-      "good": 2,
-      "bad": 0
-    },
-    "kinder": {
-      "good": 2,
-      "bad": 2
-    },
-    "einizige": {
-      "good": 2,
-      "bad": 0
-    },
-    "zählt": {
-      "good": 2,
-      "bad": 2
-    },
-    "klar": {
-      "good": 8,
-      "bad": 9
-    },
-    "jemanden": {
-      "good": 0,
-      "bad": 3
-    },
-    "finden": {
-      "good": 1,
-      "bad": 6
-    },
-    "wohlfühlt": {
-      "good": 0,
-      "bad": 2
-    },
-    "einzige": {
-      "good": 0,
-      "bad": 2
-    },
-    "glücklich": {
-      "good": 0,
-      "bad": 2
-    },
-    "wichtige": {
-      "good": 1,
-      "bad": 0
-    },
-    "ankommt": {
-      "good": 1,
-      "bad": 0
-    },
-    "findest": {
-      "good": 4,
-      "bad": 0
-    },
-    "schade": {
-      "good": 2,
-      "bad": 0
-    },
-    "darin": {
-      "good": 2,
-      "bad": 0
-    },
-    "keinen": {
-      "good": 3,
-      "bad": 1
-    },
-    "sinn": {
-      "good": 3,
-      "bad": 1
-    },
-    "könnten": {
-      "good": 5,
-      "bad": 4
-    },
-    "tolle": {
-      "good": 2,
-      "bad": 0
-    },
-    "gemeinsame": {
-      "good": 5,
-      "bad": 0
-    },
-    "verbringen": {
-      "good": 2,
-      "bad": 4
-    },
-    "nichts": {
-      "good": 4,
-      "bad": 2
-    },
-    "berzeugen": {
-      "good": 2,
-      "bad": 0
-    },
-    "ndern": {
-      "good": 2,
-      "bad": 1
-    },
-    "frustrierend": {
-      "good": 0,
-      "bad": 2
-    },
-    "sollten": {
-      "good": 3,
-      "bad": 2
-    },
-    "interessiert": {
-      "good": 0,
-      "bad": 4
-    },
-    "besonders": {
-      "good": 0,
-      "bad": 16
-    },
-    "kommen": {
-      "good": 13,
-      "bad": 0
-    },
-    "nähe": {
-      "good": 4,
-      "bad": 0
-    },
-    "entfernung": {
-      "good": 2,
-      "bad": 0
-    },
-    "schonmal": {
-      "good": 8,
-      "bad": 0
-    },
-    "mobil": {
-      "good": 2,
-      "bad": 0
-    },
-    "shonmal": {
-      "good": 2,
-      "bad": 0
-    },
-    "deinem": {
-      "good": 4,
-      "bad": 3
-    },
-    "getrieben": {
-      "good": 2,
-      "bad": 0
-    },
-    "jungfrau": {
-      "good": 2,
-      "bad": 0
-    },
-    "apen": {
-      "good": 0,
-      "bad": 2
-    },
-    "tat": {
-      "good": 0,
-      "bad": 2
-    },
-    "ruhigen": {
-      "good": 0,
-      "bad": 3
-    },
-    "idyllischen": {
-      "good": 0,
-      "bad": 3
-    },
-    "perfekt": {
-      "good": 0,
-      "bad": 2
-    },
-    "zum": {
-      "good": 0,
-      "bad": 5
-    },
-    "entspannen": {
-      "good": 0,
-      "bad": 3
-    },
-    "warst": {
-      "good": 1,
-      "bad": 2
-    },
-    "dort": {
-      "good": 1,
-      "bad": 4
-    },
-    "ansässig": {
-      "good": 0,
-      "bad": 2
-    },
-    "später": {
-      "good": 0,
-      "bad": 2
-    },
-    "dorthin": {
-      "good": 0,
-      "bad": 2
-    },
-    "gezogen": {
-      "good": 0,
-      "bad": 2
-    },
-    "steifen": {
-      "good": 2,
-      "bad": 0
-    },
-    "bekommen": {
-      "good": 3,
-      "bad": 0
-    },
-    "meinem": {
-      "good": 2,
-      "bad": 2
-    },
-    "körper": {
-      "good": 2,
-      "bad": 1
-    },
-    "meisten": {
-      "good": 8,
-      "bad": 3
-    },
-    "frage": {
-      "good": 3,
-      "bad": 0
-    },
-    "jetzt": {
-      "good": 21,
-      "bad": 1
-    },
-    "beantwortet": {
-      "good": 2,
-      "bad": 0
-    },
-    "hattest": {
-      "good": 4,
-      "bad": 0
-    },
-    "scheint": {
-      "good": 0,
-      "bad": 2
-    },
-    "geschmack": {
-      "good": 2,
-      "bad": 4
-    },
-    "getroffen": {
-      "good": 0,
-      "bad": 2
-    },
-    "meinen": {
-      "good": 3,
-      "bad": 7
-    },
-    "bildern": {
-      "good": 0,
-      "bad": 2
-    },
-    "aufregent": {
-      "good": 1,
-      "bad": 0
-    },
-    "wahr": {
-      "good": 5,
-      "bad": 0
-    },
-    "viele": {
-      "good": 2,
-      "bad": 3
-    },
-    "ausprobieren": {
-      "good": 2,
-      "bad": 6
-    },
-    "bett": {
-      "good": 3,
-      "bad": 0
-    },
-    "langweilig": {
-      "good": 1,
-      "bad": 0
-    },
-    "interessante": {
-      "good": 0,
-      "bad": 1
-    },
-    "veränderung": {
-      "good": 0,
-      "bad": 1
-    },
-    "krankenhaus": {
-      "good": 0,
-      "bad": 1
-    },
-    "arbeiten": {
-      "good": 1,
-      "bad": 1
-    },
-    "einmal": {
-      "good": 0,
-      "bad": 2
-    },
-    "darüber": {
-      "good": 0,
-      "bad": 1
-    },
-    "nachgedacht": {
-      "good": 0,
-      "bad": 1
-    },
-    "bringen": {
-      "good": 0,
-      "bad": 2
-    },
-    "erstmal": {
-      "good": 2,
-      "bad": 0
-    },
-    "kennenlernen": {
-      "good": 1,
-      "bad": 1
-    },
-    "chemie": {
-      "good": 2,
-      "bad": 3
-    },
-    "stimmt": {
-      "good": 2,
-      "bad": 1
-    },
-    "herauszufinden": {
-      "good": 1,
-      "bad": 0
-    },
-    "zusammenpassen": {
-      "good": 1,
-      "bad": 0
-    },
-    "allein": {
-      "good": 2,
-      "bad": 0
-    },
-    "vorstellung": {
-      "good": 5,
-      "bad": 5
-    },
-    "bestimmte": {
-      "good": 2,
-      "bad": 2
-    },
-    "siehts": {
-      "good": 1,
-      "bad": 0
-    },
-    "rollenspiel": {
-      "good": 1,
-      "bad": 1
-    },
-    "gefallen": {
-      "good": 6,
-      "bad": 3
-    },
-    "heiss": {
-      "good": 7,
-      "bad": 10
-    },
-    "alfons": {
-      "good": 0,
-      "bad": 1
-    },
-    "stell": {
-      "good": 1,
-      "bad": 6
-    },
-    "anschaue": {
-      "good": 0,
-      "bad": 1
-    },
-    "nimmst": {
-      "good": 0,
-      "bad": 1
-    },
-    "willst": {
-      "good": 7,
-      "bad": 1
-    },
-    "betrafen": {
-      "good": 1,
-      "bad": 0
-    },
-    "daran": {
-      "good": 1,
-      "bad": 2
-    },
-    "bestrafen": {
-      "good": 1,
-      "bad": 0
-    },
-    "unartige": {
-      "good": 1,
-      "bad": 0
-    },
-    "schülerin": {
-      "good": 1,
-      "bad": 0
-    },
-    "spannend": {
-      "good": 0,
-      "bad": 1
-    },
-    "bekomme": {
-      "good": 0,
-      "bad": 1
-    },
-    "gänsehaut": {
-      "good": 0,
-      "bad": 1
-    },
-    "ganze": {
-      "good": 0,
-      "bad": 1
-    },
-    "verlassen": {
-      "good": 1,
-      "bad": 0
-    },
-    "welcher": {
-      "good": 4,
-      "bad": 0
-    },
-    "stellung": {
-      "good": 4,
-      "bad": 0
-    },
-    "erstes": {
-      "good": 10,
-      "bad": 4
-    },
-    "ficken": {
-      "good": 2,
-      "bad": 0
-    },
-    "wow": {
-      "good": 0,
-      "bad": 2
-    },
-    "intensiven": {
-      "good": 0,
-      "bad": 2
-    },
-    "leidenschaftlich": {
-      "good": 0,
-      "bad": 3
-    },
-    "stimme": {
-      "good": 2,
-      "bad": 0
-    },
-    "spüren": {
-      "good": 10,
-      "bad": 6
-    },
-    "geile": {
-      "good": 4,
-      "bad": 0
-    },
-    "sache": {
-      "good": 6,
-      "bad": 0
-    },
-    "morgen": {
-      "good": 3,
-      "bad": 0
-    },
-    "endlich": {
-      "good": 0,
-      "bad": 6
-    },
-    "wann": {
-      "good": 2,
-      "bad": 2
-    },
-    "hättest": {
-      "good": 1,
-      "bad": 7
-    },
-    "möglichkeit": {
-      "good": 0,
-      "bad": 2
-    },
-    "nackt": {
-      "good": 3,
-      "bad": 0
-    },
-    "liegen": {
-      "good": 1,
-      "bad": 1
-    },
-    "hätten": {
-      "good": 3,
-      "bad": 6
-    },
-    "beide": {
-      "good": 5,
-      "bad": 2
-    },
-    "schn": {
-      "good": 1,
-      "bad": 0
-    },
-    "lange": {
-      "good": 11,
-      "bad": 0
-    },
-    "durststrecke": {
-      "good": 2,
-      "bad": 0
-    },
-    "seite": {
-      "good": 2,
-      "bad": 0
-    },
-    "legen": {
-      "good": 3,
-      "bad": 0
-    },
-    "gab": {
-      "good": 2,
-      "bad": 0
-    },
-    "single": {
-      "good": 3,
-      "bad": 1
-    },
-    "gespannt": {
-      "good": 5,
-      "bad": 7
-    },
-    "chance": {
-      "good": 0,
-      "bad": 2
-    },
-    "näher": {
-      "good": 0,
-      "bad": 3
-    },
-    "kennenzulernen": {
-      "good": 0,
-      "bad": 3
-    },
-    "bestimmtes": {
-      "good": 0,
-      "bad": 3
-    },
-    "ebenfalls": {
-      "good": 3,
-      "bad": 0
-    },
-    "machst": {
-      "good": 7,
-      "bad": 9
-    },
-    "nein": {
-      "good": 5,
-      "bad": 0
-    },
-    "alter": {
-      "good": 3,
-      "bad": 0
-    },
-    "lege": {
-      "good": 3,
-      "bad": 0
-    },
-    "wert": {
-      "good": 3,
-      "bad": 0
-    },
-    "drauf": {
-      "good": 4,
-      "bad": 2
-    },
-    "ralf": {
-      "good": 0,
-      "bad": 3
-    },
-    "wuppertal": {
-      "good": 2,
-      "bad": 3
-    },
-    "schwebebahn": {
-      "good": 0,
-      "bad": 3
-    },
-    "berühmt": {
-      "good": 0,
-      "bad": 3
-    },
-    "mittwoch": {
-      "good": 0,
-      "bad": 3
-    },
-    "freihältst": {
-      "good": 0,
-      "bad": 3
-    },
-    "woche": {
-      "good": 0,
-      "bad": 3
-    },
-    "treffe": {
-      "good": 0,
-      "bad": 3
-    },
-    "freunden": {
-      "good": 0,
-      "bad": 3
-    },
-    "entspanne": {
-      "good": 0,
-      "bad": 3
-    },
-    "freien": {
-      "good": 0,
-      "bad": 3
-    },
-    "tag": {
-      "good": 5,
-      "bad": 4
-    },
-    "liebsten": {
-      "good": 6,
-      "bad": 11
-    },
-    "komme": {
-      "good": 5,
-      "bad": 4
-    },
-    "erzählst": {
-      "good": 1,
-      "bad": 4
-    },
-    "erzählen": {
-      "good": 2,
-      "bad": 0
-    },
-    "weitergehen": {
-      "good": 2,
-      "bad": 0
-    },
-    "fetische": {
-      "good": 1,
-      "bad": 0
-    },
-    "ausleben": {
-      "good": 4,
-      "bad": 2
-    },
-    "einige": {
-      "good": 1,
-      "bad": 0
-    },
-    "versaute": {
-      "good": 1,
-      "bad": 0
-    },
-    "fantasien": {
-      "good": 1,
-      "bad": 7
-    },
-    "erlebnis": {
-      "good": 0,
-      "bad": 4
-    },
-    "solche": {
-      "good": 0,
-      "bad": 1
-    },
-    "ins": {
-      "good": 6,
-      "bad": 5
-    },
-    "gerutscht": {
-      "good": 1,
-      "bad": 0
-    },
-    "denken": {
-      "good": 1,
-      "bad": 0
-    },
-    "behalten": {
-      "good": 2,
-      "bad": 0
-    },
-    "unsere": {
-      "good": 2,
-      "bad": 1
-    },
-    "freundschaftplus": {
-      "good": 1,
-      "bad": 0
-    },
-    "keine": {
-      "good": 5,
-      "bad": 0
-    },
-    "geheimnisse": {
-      "good": 1,
-      "bad": 0
-    },
-    "kalte": {
-      "good": 0,
-      "bad": 1
-    },
-    "jahreszeit": {
-      "good": 0,
-      "bad": 1
-    },
-    "lädt": {
-      "good": 0,
-      "bad": 1
-    },
-    "kuscheln": {
-      "good": 1,
-      "bad": 2
-    },
-    "glas": {
-      "good": 0,
-      "bad": 1
-    },
-    "wein": {
-      "good": 2,
-      "bad": 3
-    },
-    "gemütlich": {
-      "good": 0,
-      "bad": 1
-    },
-    "verbringst": {
-      "good": 1,
-      "bad": 2
-    },
-    "druck": {
-      "good": 2,
-      "bad": 1
-    },
-    "ablassen": {
-      "good": 2,
-      "bad": 0
-    },
-    "liege": {
-      "good": 1,
-      "bad": 0
-    },
-    "entspannung": {
-      "good": 0,
-      "bad": 1
-    },
-    "nötig": {
-      "good": 0,
-      "bad": 1
-    },
-    "loszuwerden": {
-      "good": 0,
-      "bad": 1
-    },
-    "zustimmen": {
-      "good": 1,
-      "bad": 0
-    },
-    "lieblingsgetränke": {
-      "good": 3,
-      "bad": 0
-    },
-    "gehe": {
-      "good": 2,
-      "bad": 1
-    },
-    "trinke": {
-      "good": 1,
-      "bad": 0
-    },
-    "mojito": {
-      "good": 1,
-      "bad": 0
-    },
-    "trinkst": {
-      "good": 11,
-      "bad": 0
-    },
-    "beobachten": {
-      "good": 0,
-      "bad": 1
-    },
-    "entwickeln": {
-      "good": 2,
-      "bad": 2
-    },
-    "bescheid": {
-      "good": 2,
-      "bad": 0
-    },
-    "besten": {
-      "good": 2,
-      "bad": 0
-    },
-    "her": {
-      "good": 2,
-      "bad": 0
-    },
-    "essen": {
-      "good": 2,
-      "bad": 0
-    },
-    "finger": {
-      "good": 1,
-      "bad": 0
-    },
-    "leider": {
-      "good": 13,
-      "bad": 2
-    },
-    "dienstag": {
-      "good": 0,
-      "bad": 1
-    },
-    "verplant": {
-      "good": 0,
-      "bad": 1
-    },
-    "geilen": {
-      "good": 1,
-      "bad": 1
-    },
-    "schwanz": {
-      "good": 2,
-      "bad": 0
-    },
-    "blasen": {
-      "good": 3,
-      "bad": 0
-    },
-    "reiten": {
-      "good": 1,
-      "bad": 1
-    },
-    "ekstase": {
-      "good": 0,
-      "bad": 1
-    },
-    "eher": {
-      "good": 1,
-      "bad": 9
-    },
-    "langsam": {
-      "good": 0,
-      "bad": 1
-    },
-    "selbstverständlich": {
-      "good": 1,
-      "bad": 0
-    },
-    "nichtmal": {
-      "good": 1,
-      "bad": 0
-    },
-    "langeweile": {
-      "good": 2,
-      "bad": 0
-    },
-    "angemeldet": {
-      "good": 1,
-      "bad": 0
-    },
-    "warum": {
-      "good": 4,
-      "bad": 0
-    },
-    "persönliche": {
-      "good": 0,
-      "bad": 1
-    },
-    "realer": {
-      "good": 0,
-      "bad": 1
-    },
-    "schlecht": {
-      "good": 1,
-      "bad": 0
-    },
-    "fotos": {
-      "good": 2,
-      "bad": 0
-    },
-    "senden": {
-      "good": 2,
-      "bad": 0
-    },
-    "tut": {
-      "good": 4,
-      "bad": 11
-    },
-    "leid": {
-      "good": 4,
-      "bad": 11
-    },
-    "kopfkino": {
-      "good": 1,
-      "bad": 0
-    },
-    "anstrengen": {
-      "good": 1,
-      "bad": 0
-    },
-    "alle": {
-      "good": 1,
-      "bad": 0
-    },
-    "löcher": {
-      "good": 1,
-      "bad": 1
-    },
-    "analsex": {
-      "good": 1,
-      "bad": 0
-    },
-    "erste": {
-      "good": 1,
-      "bad": 0
-    },
-    "fantasie": {
-      "good": 3,
-      "bad": 4
-    },
-    "verwöhnen": {
-      "good": 0,
-      "bad": 7
-    },
-    "leidenschaft": {
-      "good": 0,
-      "bad": 1
-    },
-    "steigt": {
-      "good": 0,
-      "bad": 1
-    },
-    "welches": {
-      "good": 0,
-      "bad": 1
-    },
-    "deiner": {
-      "good": 2,
-      "bad": 3
-    },
-    "anbieten": {
-      "good": 0,
-      "bad": 1
-    },
-    "gutes": {
-      "good": 1,
-      "bad": 0
-    },
-    "verhältnis": {
-      "good": 1,
-      "bad": 0
-    },
-    "ihren": {
-      "good": 1,
-      "bad": 0
-    },
-    "geschwistern": {
-      "good": 1,
-      "bad": 0
-    },
-    "familie": {
-      "good": 1,
-      "bad": 0
-    },
-    "umgehen": {
-      "good": 1,
-      "bad": 0
-    },
-    "haus": {
-      "good": 0,
-      "bad": 1
-    },
-    "platz": {
-      "good": 0,
-      "bad": 1
-    },
-    "eingerichtet": {
-      "good": 0,
-      "bad": 1
-    },
-    "spontan": {
-      "good": 11,
-      "bad": 0
-    },
-    "maximilian": {
-      "good": 0,
-      "bad": 1
-    },
-    "fussball": {
-      "good": 0,
-      "bad": 1
-    },
-    "fasziniert": {
-      "good": 0,
-      "bad": 1
-    },
-    "abspritzen": {
-      "good": 1,
-      "bad": 0
-    },
-    "rollenspielen": {
-      "good": 1,
-      "bad": 0
-    },
-    "nebenher": {
-      "good": 1,
-      "bad": 0
-    },
-    "aufregenden": {
-      "good": 0,
-      "bad": 1
-    },
-    "olaf": {
-      "good": 0,
-      "bad": 1
-    },
-    "verwöhnst": {
-      "good": 0,
-      "bad": 1
-    },
-    "film": {
-      "good": 1,
-      "bad": 0
-    },
-    "gehst": {
-      "good": 2,
-      "bad": 0
-    },
-    "fters": {
-      "good": 1,
-      "bad": 0
-    },
-    "kino": {
-      "good": 1,
-      "bad": 3
-    },
-    "gutschein": {
-      "good": 1,
-      "bad": 0
-    },
-    "wunderbaren": {
-      "good": 0,
-      "bad": 1
-    },
-    "art": {
-      "good": 0,
-      "bad": 1
-    },
-    "filmen": {
-      "good": 0,
-      "bad": 1
-    },
-    "ansiehst": {
-      "good": 0,
-      "bad": 1
-    },
-    "genre": {
-      "good": 0,
-      "bad": 1
-    },
-    "engel": {
-      "good": 1,
-      "bad": 0
-    },
-    "habe": {
-      "good": 5,
-      "bad": 7
-    },
-    "schän": {
-      "good": 1,
-      "bad": 0
-    },
-    "mario": {
-      "good": 0,
-      "bad": 1
-    },
-    "freuen": {
-      "good": 0,
-      "bad": 1
-    },
-    "bald": {
-      "good": 0,
-      "bad": 1
-    },
-    "aktivität": {
-      "good": 0,
-      "bad": 1
-    },
-    "total": {
-      "good": 7,
-      "bad": 16
-    },
-    "klappt": {
-      "good": 2,
-      "bad": 1
-    },
-    "wärst": {
-      "good": 0,
-      "bad": 1
-    },
-    "bereit": {
-      "good": 0,
-      "bad": 1
-    },
-    "aufregendes": {
-      "good": 0,
-      "bad": 2
-    },
-    "speziellen": {
-      "good": 0,
-      "bad": 1
-    },
-    "szenarien": {
-      "good": 0,
-      "bad": 1
-    },
-    "erlebnisse": {
-      "good": 0,
-      "bad": 1
-    },
-    "reizen": {
-      "good": 0,
-      "bad": 2
-    },
-    "wolltest": {
-      "good": 0,
-      "bad": 1
-    },
-    "okay": {
-      "good": 6,
-      "bad": 0
-    },
-    "weis": {
-      "good": 2,
-      "bad": 0
-    },
-    "wohnst": {
-      "good": 1,
-      "bad": 0
-    },
-    "kaulsdorf": {
-      "good": 1,
-      "bad": 1
-    },
-    "fühlst": {
-      "good": 0,
-      "bad": 1
-    },
-    "vermisst": {
-      "good": 1,
-      "bad": 1
-    },
-    "lebhafte": {
-      "good": 0,
-      "bad": 1
-    },
-    "treiben": {
-      "good": 0,
-      "bad": 1
-    },
-    "stadt": {
-      "good": 0,
-      "bad": 3
-    },
-    "klingen": {
-      "good": 1,
-      "bad": 1
-    },
-    "suche": {
-      "good": 2,
-      "bad": 1
-    },
-    "aktivitäten": {
-      "good": 0,
-      "bad": 1
-    },
-    "testen": {
-      "good": 0,
-      "bad": 1
-    },
-    "davon": {
-      "good": 2,
-      "bad": 0
-    },
-    "geträumt": {
-      "good": 1,
-      "bad": 0
-    },
-    "bar": {
-      "good": 1,
-      "bad": 0
-    },
-    "gegangen": {
-      "good": 3,
-      "bad": 0
-    },
-    "unbekannte": {
-      "good": 1,
-      "bad": 0
-    },
-    "person": {
-      "good": 3,
-      "bad": 1
-    },
-    "kennen": {
-      "good": 1,
-      "bad": 0
-    },
-    "gelernt": {
-      "good": 1,
-      "bad": 0
-    },
-    "verführt": {
-      "good": 1,
-      "bad": 0
-    },
-    "wissen": {
-      "good": 1,
-      "bad": 1
-    },
-    "ging": {
-      "good": 1,
-      "bad": 0
-    },
-    "abenteuern": {
-      "good": 0,
-      "bad": 1
-    },
-    "erlebst": {
-      "good": 0,
-      "bad": 1
-    },
-    "interessieren": {
-      "good": 0,
-      "bad": 1
-    },
-    "aufregendstes": {
-      "good": 0,
-      "bad": 1
-    },
-    "idee": {
-      "good": 1,
-      "bad": 1
-    },
-    "schwebt": {
-      "good": 0,
-      "bad": 1
-    },
-    "nächste": {
-      "good": 0,
-      "bad": 1
-    },
-    "sexuellen": {
-      "good": 1,
-      "bad": 0
-    },
-    "absichten": {
-      "good": 1,
-      "bad": 0
-    },
-    "jedenfall": {
-      "good": 1,
-      "bad": 0
-    },
-    "edgar": {
-      "good": 1,
-      "bad": 1
-    },
-    "foto": {
-      "good": 2,
-      "bad": 0
-    },
-    "handykamera": {
-      "good": 1,
-      "bad": 0
-    },
-    "kaputt": {
-      "good": 1,
-      "bad": 0
-    },
-    "handy": {
-      "good": 2,
-      "bad": 0
-    },
-    "kaufen": {
-      "good": 1,
-      "bad": 0
-    },
-    "decken": {
-      "good": 1,
-      "bad": 0
-    },
-    "brüsten": {
-      "good": 3,
-      "bad": 4
-    },
-    "meiner": {
-      "good": 0,
-      "bad": 1
-    },
-    "anstellen": {
-      "good": 0,
-      "bad": 4
-    },
-    "schreibe": {
-      "good": 1,
-      "bad": 0
-    },
-    "hin": {
-      "good": 3,
-      "bad": 0
-    },
-    "schreiben": {
-      "good": 1,
-      "bad": 0
-    },
-    "schätzt": {
-      "good": 1,
-      "bad": 0
-    },
-    "unternehmen": {
-      "good": 0,
-      "bad": 1
-    },
-    "typischer": {
-      "good": 0,
-      "bad": 1
-    },
-    "abschalten": {
-      "good": 0,
-      "bad": 1
-    },
-    "nummern": {
-      "good": 1,
-      "bad": 0
-    },
-    "tauschen": {
-      "good": 1,
-      "bad": 0
-    },
-    "berstürzt": {
-      "good": 1,
-      "bad": 0
-    },
-    "wil": {
-      "good": 1,
-      "bad": 0
-    },
-    "davor": {
-      "good": 1,
-      "bad": 0
-    },
-    "nachvollziehen": {
-      "good": 1,
-      "bad": 0
-    },
-    "nacktfoto": {
-      "good": 0,
-      "bad": 1
-    },
-    "heikel": {
-      "good": 0,
-      "bad": 1
-    },
-    "schicke": {
-      "good": 0,
-      "bad": 1
-    },
-    "bilder": {
-      "good": 3,
-      "bad": 7
-    },
-    "internet": {
-      "good": 0,
-      "bad": 1
-    },
-    "unterhalten": {
-      "good": 0,
-      "bad": 1
-    },
-    "vorstellst": {
-      "good": 0,
-      "bad": 1
-    },
-    "optisch": {
-      "good": 1,
-      "bad": 0
-    },
-    "gesehen": {
-      "good": 1,
-      "bad": 0
-    },
-    "tuen": {
-      "good": 1,
-      "bad": 0
-    },
-    "optimistische": {
-      "good": 1,
-      "bad": 0
-    },
-    "zukunft": {
-      "good": 1,
-      "bad": 0
-    },
-    "spüre": {
-      "good": 0,
-      "bad": 1
-    },
-    "besondere": {
-      "good": 0,
-      "bad": 1
-    },
-    "verbindung": {
-      "good": 0,
-      "bad": 1
-    },
-    "vorher": {
-      "good": 0,
-      "bad": 1
-    },
-    "erlebt": {
-      "good": 0,
-      "bad": 1
-    },
-    "schwer": {
-      "good": 3,
-      "bad": 1
-    },
-    "erklären": {
-      "good": 0,
-      "bad": 1
-    },
-    "fühlt": {
-      "good": 1,
-      "bad": 2
-    },
-    "glaubst": {
-      "good": 1,
-      "bad": 1
-    },
-    "fühlen": {
-      "good": 0,
-      "bad": 1
-    },
-    "richtige": {
-      "good": 0,
-      "bad": 1
-    },
-    "nummer": {
-      "good": 2,
-      "bad": 1
-    },
-    "gebe": {
-      "good": 1,
-      "bad": 1
-    },
-    "ungerne": {
-      "good": 1,
-      "bad": 0
-    },
-    "früh": {
-      "good": 1,
-      "bad": 0
-    },
-    "raus": {
-      "good": 1,
-      "bad": 0
-    },
-    "verstehst": {
-      "good": 1,
-      "bad": 0
-    },
-    "eintippen": {
-      "good": 1,
-      "bad": 0
-    },
-    "spannender": {
-      "good": 0,
-      "bad": 1
-    },
-    "sieht": {
-      "good": 1,
-      "bad": 1
-    },
-    "arbeitstag": {
-      "good": 0,
-      "bad": 2
-    },
-    "malteser": {
-      "good": 0,
-      "bad": 1
-    },
-    "hilfsdienst": {
-      "good": 0,
-      "bad": 1
-    },
-    "sortiere": {
-      "good": 0,
-      "bad": 1
-    },
-    "paar": {
-      "good": 0,
-      "bad": 1
-    },
-    "akten": {
-      "good": 0,
-      "bad": 1
-    },
-    "trage": {
-      "good": 0,
-      "bad": 1
-    },
-    "bequemes": {
-      "good": 0,
-      "bad": 1
-    },
-    "jeans": {
-      "good": 0,
-      "bad": 1
-    },
-    "outfit": {
-      "good": 0,
-      "bad": 1
-    },
-    "besonderes": {
-      "good": 1,
-      "bad": 2
-    },
-    "couch": {
-      "good": 1,
-      "bad": 1
-    },
-    "kuschlen": {
-      "good": 1,
-      "bad": 0
-    },
-    "passieren": {
-      "good": 1,
-      "bad": 0
-    },
-    "gemütlichen": {
-      "good": 0,
-      "bad": 1
-    },
-    "sofa": {
-      "good": 0,
-      "bad": 1
-    },
-    "nah": {
-      "good": 5,
-      "bad": 4
-    },
-    "quatschen": {
-      "good": 0,
-      "bad": 1
-    },
-    "stille": {
-      "good": 0,
-      "bad": 1
-    },
-    "onex": {
-      "good": 1,
-      "bad": 1
-    },
-    "eigetlich": {
-      "good": 1,
-      "bad": 0
-    },
-    "festes": {
-      "good": 1,
-      "bad": 0
-    },
-    "daraus": {
-      "good": 1,
-      "bad": 0
-    },
-    "sollte": {
-      "good": 3,
-      "bad": 1
-    },
-    "abgeneigt": {
-      "good": 1,
-      "bad": 0
-    },
-    "offen": {
-      "good": 1,
-      "bad": 2
-    },
-    "schau": {
-      "good": 0,
-      "bad": 1
-    },
-    "beantwortest": {
-      "good": 1,
-      "bad": 0
-    },
-    "also": {
-      "good": 4,
-      "bad": 0
-    },
-    "gegenfrage": {
-      "good": 1,
-      "bad": 0
-    },
-    "ans": {
-      "good": 1,
-      "bad": 0
-    },
-    "ziel": {
-      "good": 1,
-      "bad": 0
-    },
-    "date": {
-      "good": 1,
-      "bad": 0
-    },
-    "zurückhaltender": {
-      "good": 1,
-      "bad": 0
-    },
-    "offensive": {
-      "good": 1,
-      "bad": 0
-    },
-    "spielen": {
-      "good": 0,
-      "bad": 3
-    },
-    "dreckig": {
-      "good": 0,
-      "bad": 1
-    },
-    "grösster": {
-      "good": 0,
-      "bad": 1
-    },
-    "situation": {
-      "good": 0,
-      "bad": 2
-    },
-    "natürlich": {
-      "good": 4,
-      "bad": 0
-    },
-    "intimes": {
-      "good": 2,
-      "bad": 2
-    },
-    "fragen": {
-      "good": 2,
-      "bad": 0
-    },
-    "kommt": {
-      "good": 2,
-      "bad": 0
-    },
-    "frag": {
-      "good": 0,
-      "bad": 2
-    },
-    "ruhig": {
-      "good": 0,
-      "bad": 2
-    },
-    "geheimen": {
-      "good": 0,
-      "bad": 2
-    },
-    "sehe": {
-      "good": 1,
-      "bad": 0
-    },
-    "berwiegend": {
-      "good": 1,
-      "bad": 0
-    },
-    "spa": {
-      "good": 1,
-      "bad": 0
-    },
-    "ernsten": {
-      "good": 1,
-      "bad": 0
-    },
-    "schlimm": {
-      "good": 1,
-      "bad": 0
-    },
-    "darum": {
-      "good": 0,
-      "bad": 1
-    },
-    "erleben": {
-      "good": 0,
-      "bad": 2
-    },
-    "kennenlernst": {
-      "good": 0,
-      "bad": 1
-    },
-    "unterschiedlich": {
-      "good": 2,
-      "bad": 0
-    },
-    "meistens": {
-      "good": 2,
-      "bad": 0
-    },
-    "greifen": {
-      "good": 2,
-      "bad": 0
-    },
-    "the": {
-      "good": 2,
-      "bad": 0
-    },
-    "beach": {
-      "good": 2,
-      "bad": 0
-    },
-    "wodka": {
-      "good": 1,
-      "bad": 0
-    },
-    "oranschensaft": {
-      "good": 1,
-      "bad": 0
-    },
-    "sekt": {
-      "good": 2,
-      "bad": 0
-    },
-    "gläschen": {
-      "good": 0,
-      "bad": 2
-    },
-    "cocktails": {
-      "good": 1,
-      "bad": 2
-    },
-    "like": {
-      "good": 3,
-      "bad": 3
-    },
-    "gefällst": {
-      "good": 3,
-      "bad": 0
-    },
-    "antwort": {
-      "good": 0,
-      "bad": 3
-    },
-    "gekommen": {
-      "good": 4,
-      "bad": 4
-    },
-    "nachfrage": {
-      "good": 0,
-      "bad": 4
-    },
-    "gewesen": {
-      "good": 0,
-      "bad": 4
-    },
-    "armen": {
-      "good": 0,
-      "bad": 4
-    },
-    "gehalten": {
-      "good": 0,
-      "bad": 4
-    },
-    "wege": {
-      "good": 3,
-      "bad": 0
-    },
-    "toller": {
-      "good": 2,
-      "bad": 0
-    },
-    "geworden": {
-      "good": 2,
-      "bad": 0
-    },
-    "verwöhnt": {
-      "good": 1,
-      "bad": 0
-    },
-    "gute": {
-      "good": 1,
-      "bad": 1
-    },
-    "arbeit": {
-      "good": 1,
-      "bad": 0
-    },
-    "zunge": {
-      "good": 1,
-      "bad": 0
-    },
-    "geleckt": {
-      "good": 3,
-      "bad": 0
-    },
-    "fallen": {
-      "good": 0,
-      "bad": 2
-    },
-    "ohja": {
-      "good": 4,
-      "bad": 0
-    },
-    "schreibst": {
-      "good": 1,
-      "bad": 0
-    },
-    "super": {
-      "good": 1,
-      "bad": 0
-    },
-    "grenzen": {
-      "good": 1,
-      "bad": 0
-    },
-    "vorhinein": {
-      "good": 1,
-      "bad": 0
-    },
-    "klären": {
-      "good": 1,
-      "bad": 0
-    },
-    "gehorsam": {
-      "good": 0,
-      "bad": 1
-    },
-    "alte": {
-      "good": 0,
-      "bad": 1
-    },
-    "dame": {
-      "good": 0,
-      "bad": 1
-    },
-    "anschaut": {
-      "good": 0,
-      "bad": 1
-    },
-    "geniesst": {
-      "good": 0,
-      "bad": 1
-    },
-    "offenbaren": {
-      "good": 0,
-      "bad": 1
-    },
-    "unser": {
-      "good": 1,
-      "bad": 0
-    },
-    "arsch": {
-      "good": 1,
-      "bad": 0
-    },
-    "jochen": {
-      "good": 0,
-      "bad": 1
-    },
-    "gleichzeitig": {
-      "good": 0,
-      "bad": 1
-    },
-    "stellungen": {
-      "good": 1,
-      "bad": 1
-    },
-    "bezweifeln": {
-      "good": 1,
-      "bad": 0
-    },
-    "falsch": {
-      "good": 1,
-      "bad": 0
-    },
-    "geschrieben": {
-      "good": 1,
-      "bad": 1
-    },
-    "empfinde": {
-      "good": 0,
-      "bad": 1
-    },
-    "starke": {
-      "good": 0,
-      "bad": 1
-    },
-    "anziehung": {
-      "good": 0,
-      "bad": 1
-    },
-    "kaum": {
-      "good": 7,
-      "bad": 9
-    },
-    "erwarten": {
-      "good": 7,
-      "bad": 9
-    },
-    "anstrengend": {
-      "good": 1,
-      "bad": 0
-    },
-    "uhr": {
-      "good": 1,
-      "bad": 0
-    },
-    "aufstehen": {
-      "good": 1,
-      "bad": 0
-    },
-    "anstrengenden": {
-      "good": 0,
-      "bad": 1
-    },
-    "job": {
-      "good": 0,
-      "bad": 1
-    },
-    "langen": {
-      "good": 0,
-      "bad": 1
-    },
-    "hältst": {
-      "good": 0,
-      "bad": 1
-    },
-    "kleinen": {
-      "good": 0,
-      "bad": 1
-    },
-    "süsse": {
-      "good": 0,
-      "bad": 1
-    },
-    "träume": {
-      "good": 0,
-      "bad": 1
-    },
-    "liebes": {
-      "good": 0,
-      "bad": 1
-    },
-    "schöne": {
-      "good": 1,
-      "bad": 0
-    },
-    "experimentieren": {
-      "good": 1,
-      "bad": 0
-    },
-    "shopen": {
-      "good": 1,
-      "bad": 0
-    },
-    "spaziernen": {
-      "good": 1,
-      "bad": 0
-    },
-    "schwimmen": {
-      "good": 1,
-      "bad": 1
-    },
-    "therme": {
-      "good": 1,
-      "bad": 0
-    },
-    "normales": {
-      "good": 1,
-      "bad": 0
-    },
-    "schwimmbad": {
-      "good": 1,
-      "bad": 0
-    },
-    "see": {
-      "good": 1,
-      "bad": 0
-    },
-    "spaziergänge": {
-      "good": 0,
-      "bad": 1
-    },
-    "wetter": {
-      "good": 0,
-      "bad": 1
-    },
-    "natur": {
-      "good": 0,
-      "bad": 1
-    },
-    "heisse": {
-      "good": 1,
-      "bad": 3
-    },
-    "melanie": {
-      "good": 1,
-      "bad": 1
-    },
-    "telgte": {
-      "good": 1,
-      "bad": 1
-    },
-    "arbeite": {
-      "good": 1,
-      "bad": 3
-    },
-    "nagelstudio": {
-      "good": 1,
-      "bad": 1
-    },
-    "drei": {
-      "good": 1,
-      "bad": 1
-    },
-    "jahren": {
-      "good": 1,
-      "bad": 1
-    },
-    "beziehung": {
-      "good": 1,
-      "bad": 0
-    },
-    "entspannt": {
-      "good": 1,
-      "bad": 8
-    },
-    "weiteren": {
-      "good": 1,
-      "bad": 0
-    },
-    "pläne": {
-      "good": 1,
-      "bad": 0
-    },
-    "chillst": {
-      "good": 0,
-      "bad": 1
-    },
-    "eltern": {
-      "good": 0,
-      "bad": 1
-    },
-    "gefühl": {
-      "good": 1,
-      "bad": 1
-    },
-    "merke": {
-      "good": 1,
-      "bad": 1
-    },
-    "hatte": {
-      "good": 1,
-      "bad": 1
-    },
-    "gesagt": {
-      "good": 1,
-      "bad": 1
-    },
-    "innere": {
-      "good": 1,
-      "bad": 1
-    },
-    "werte": {
-      "good": 1,
-      "bad": 1
-    },
-    "achte": {
-      "good": 1,
-      "bad": 1
-    },
-    "usseres": {
-      "good": 1,
-      "bad": 1
-    },
-    "isst": {
-      "good": 1,
-      "bad": 0
-    },
-    "aussehen": {
-      "good": 1,
-      "bad": 0
-    },
-    "bestrafung": {
-      "good": 1,
-      "bad": 0
-    },
-    "peitsche": {
-      "good": 1,
-      "bad": 0
-    },
-    "hinnehmen": {
-      "good": 1,
-      "bad": 0
-    },
-    "dreier": {
-      "good": 1,
-      "bad": 1
-    },
-    "soweit": {
-      "good": 1,
-      "bad": 1
-    },
-    "schwere": {
-      "good": 1,
-      "bad": 1
-    },
-    "durchmachen": {
-      "good": 1,
-      "bad": 1
-    },
-    "kurz": {
-      "good": 2,
-      "bad": 0
-    },
-    "vergessen": {
-      "good": 1,
-      "bad": 1
-    },
-    "gehabt": {
-      "good": 1,
-      "bad": 0
-    },
-    "konzentrieren": {
-      "good": 1,
-      "bad": 1
-    },
-    "profil": {
-      "good": 2,
-      "bad": 1
-    },
-    "anschaust": {
-      "good": 1,
-      "bad": 0
-    },
-    "schätze": {
-      "good": 3,
-      "bad": 0
-    },
-    "angebot": {
-      "good": 4,
-      "bad": 0
-    },
-    "konkreten": {
-      "good": 3,
-      "bad": 0
-    },
-    "termin": {
-      "good": 3,
-      "bad": 0
-    },
-    "festlegen": {
-      "good": 3,
-      "bad": 0
-    },
-    "lieblingsgerichte": {
-      "good": 3,
-      "bad": 0
-    },
-    "restaurants": {
-      "good": 3,
-      "bad": 0
-    },
-    "wahnsinn": {
-      "good": 5,
-      "bad": 3
-    },
-    "sorge": {
-      "good": 1,
-      "bad": 0
-    },
-    "warte": {
-      "good": 1,
-      "bad": 0
-    },
-    "richtiges": {
-      "good": 1,
-      "bad": 0
-    },
-    "ausgedruckt": {
-      "good": 1,
-      "bad": 0
-    },
-    "stephan": {
-      "good": 0,
-      "bad": 1
-    },
-    "geiles": {
-      "good": 0,
-      "bad": 1
-    },
-    "all": {
-      "good": 0,
-      "bad": 1
-    },
-    "auszuleben": {
-      "good": 0,
-      "bad": 1
-    },
-    "angenehm": {
-      "good": 1,
-      "bad": 1
-    },
-    "lieblings": {
-      "good": 1,
-      "bad": 0
-    },
-    "sag": {
-      "good": 0,
-      "bad": 2
-    },
-    "langsame": {
-      "good": 0,
-      "bad": 1
-    },
-    "sinnliche": {
-      "good": 0,
-      "bad": 1
-    },
-    "sachen": {
-      "good": 0,
-      "bad": 1
-    },
-    "härter": {
-      "good": 0,
-      "bad": 1
-    },
-    "entspreche": {
-      "good": 1,
-      "bad": 0
-    },
-    "perfekte": {
-      "good": 0,
-      "bad": 1
-    },
-    "start": {
-      "good": 0,
-      "bad": 1
-    },
-    "hart": {
-      "good": 2,
-      "bad": 1
-    },
-    "ranzunehmen": {
-      "good": 1,
-      "bad": 1
-    },
-    "loslegen": {
-      "good": 1,
-      "bad": 1
-    },
-    "reitet": {
-      "good": 1,
-      "bad": 0
-    },
-    "sexpuppe": {
-      "good": 3,
-      "bad": 3
-    },
-    "benutzen": {
-      "good": 3,
-      "bad": 0
-    },
-    "ablaufen": {
-      "good": 3,
-      "bad": 0
-    },
-    "erotische": {
-      "good": 0,
-      "bad": 3
-    },
-    "darfst": {
-      "good": 0,
-      "bad": 3
-    },
-    "leckst": {
-      "good": 1,
-      "bad": 0
-    },
-    "saugen": {
-      "good": 3,
-      "bad": 3
-    },
-    "verraten": {
-      "good": 3,
-      "bad": 1
-    },
-    "fehlen": {
-      "good": 3,
-      "bad": 0
-    },
-    "outdoor": {
-      "good": 3,
-      "bad": 0
-    },
-    "bettrand": {
-      "good": 0,
-      "bad": 2
-    },
-    "ordentlich": {
-      "good": 0,
-      "bad": 2
-    },
-    "nächstes": {
-      "good": 0,
-      "bad": 2
-    },
-    "möchtest": {
-      "good": 6,
-      "bad": 2
-    },
-    "beides": {
-      "good": 0,
-      "bad": 2
-    },
-    "ansonsten": {
-      "good": 3,
-      "bad": 0
-    },
-    "momentan": {
-      "good": 0,
-      "bad": 2
-    },
-    "cool": {
-      "good": 0,
-      "bad": 2
-    },
-    "ehrlich": {
-      "good": 0,
-      "bad": 2
-    },
-    "erledigt": {
-      "good": 9,
-      "bad": 0
-    },
-    "heheich": {
-      "good": 1,
-      "bad": 0
-    },
-    "vorbei": {
-      "good": 9,
-      "bad": 0
-    },
-    "läuft": {
-      "good": 2,
-      "bad": 8
-    },
-    "quatscht": {
-      "good": 0,
-      "bad": 7
-    },
-    "süsses": {
-      "good": 0,
-      "bad": 7
-    },
-    "hehe": {
-      "good": 8,
-      "bad": 0
-    },
-    "stehe": {
-      "good": 3,
-      "bad": 0
-    },
-    "geheimnisvoll": {
-      "good": 3,
-      "bad": 2
-    },
-    "wenigstens": {
-      "good": 3,
-      "bad": 0
-    },
-    "laut": {
-      "good": 3,
-      "bad": 0
-    },
-    "stöhnen": {
-      "good": 3,
-      "bad": 2
-    },
-    "ganzen": {
-      "good": 3,
-      "bad": 0
-    },
-    "saft": {
-      "good": 3,
-      "bad": 0
-    },
-    "bringst": {
-      "good": 0,
-      "bad": 2
-    },
-    "sage": {
-      "good": 3,
-      "bad": 0
-    },
-    "sobald": {
-      "good": 3,
-      "bad": 0
-    },
-    "besser": {
-      "good": 3,
-      "bad": 0
-    },
-    "kennengelernt": {
-      "good": 3,
-      "bad": 0
-    },
-    "leipzig": {
-      "good": 0,
-      "bad": 2
-    },
-    "einzelhandel": {
-      "good": 0,
-      "bad": 2
-    },
-    "erkunden": {
-      "good": 0,
-      "bad": 2
-    },
-    "freizeit": {
-      "good": 0,
-      "bad": 2
-    },
-    "mittlerweile": {
-      "good": 1,
-      "bad": 0
-    },
-    "kennst": {
-      "good": 1,
-      "bad": 0
-    },
-    "manchen": {
-      "good": 1,
-      "bad": 0
-    },
-    "tagen": {
-      "good": 1,
-      "bad": 0
-    },
-    "brauch": {
-      "good": 1,
-      "bad": 0
-    },
-    "themawechseln": {
-      "good": 1,
-      "bad": 0
-    },
-    "ausruhen": {
-      "good": 1,
-      "bad": 0
-    },
-    "hause": {
-      "good": 1,
-      "bad": 0
-    },
-    "sollen": {
-      "good": 1,
-      "bad": 0
-    },
-    "gibts": {
-      "good": 2,
-      "bad": 0
-    },
-    "einigermassen": {
-      "good": 1,
-      "bad": 0
-    },
-    "brigens": {
-      "good": 1,
-      "bad": 0
-    },
-    "lisa": {
-      "good": 1,
-      "bad": 0
-    },
-    "berlege": {
-      "good": 0,
-      "bad": 1
-    },
-    "berlin": {
-      "good": 1,
-      "bad": 1
-    },
-    "zuhause": {
-      "good": 1,
-      "bad": 1
-    },
-    "feiertag": {
-      "good": 1,
-      "bad": 1
+      "hört": {
+        "good": 24,
+        "bad": 6
+      },
+      "sich": {
+        "good": 38,
+        "bad": 24
+      },
+      "sehr": {
+        "good": 34,
+        "bad": 15
+      },
+      "verlockend": {
+        "good": 21,
+        "bad": 2
+      },
+      "würden": {
+        "good": 27,
+        "bad": 2
+      },
+      "dann": {
+        "good": 78,
+        "bad": 5
+      },
+      "irgendwo": {
+        "good": 20,
+        "bad": 0
+      },
+      "kaffe": {
+        "good": 20,
+        "bad": 0
+      },
+      "trinken": {
+        "good": 22,
+        "bad": 9
+      },
+      "gehen": {
+        "good": 26,
+        "bad": 0
+      },
+      "würdest": {
+        "good": 74,
+        "bad": 42
+      },
+      "machen": {
+        "good": 61,
+        "bad": 22
+      },
+      "hätte": {
+        "good": 1,
+        "bad": 22
+      },
+      "definitiv": {
+        "good": 0,
+        "bad": 20
+      },
+      "grosse": {
+        "good": 0,
+        "bad": 21
+      },
+      "lust": {
+        "good": 0,
+        "bad": 25
+      },
+      "tasse": {
+        "good": 0,
+        "bad": 20
+      },
+      "kaffee": {
+        "good": 10,
+        "bad": 34
+      },
+      "wie": {
+        "good": 72,
+        "bad": 70
+      },
+      "stellst": {
+        "good": 3,
+        "bad": 42
+      },
+      "unseren": {
+        "good": 0,
+        "bad": 20
+      },
+      "nachmittag": {
+        "good": 0,
+        "bad": 21
+      },
+      "genau": {
+        "good": 36,
+        "bad": 47
+      },
+      "gibt": {
+        "good": 23,
+        "bad": 30
+      },
+      "bestimmten": {
+        "good": 0,
+        "bad": 20
+      },
+      "ort": {
+        "good": 3,
+        "bad": 23
+      },
+      "den": {
+        "good": 14,
+        "bad": 42
+      },
+      "kopf": {
+        "good": 3,
+        "bad": 26
+      },
+      "hast": {
+        "good": 39,
+        "bad": 65
+      },
+      "verstehen": {
+        "good": 24,
+        "bad": 20
+      },
+      "mehr": {
+        "good": 31,
+        "bad": 29
+      },
+      "wünschst": {
+        "good": 19,
+        "bad": 19
+      },
+      "geht": {
+        "good": 22,
+        "bad": 23
+      },
+      "genauso": {
+        "good": 19,
+        "bad": 19
+      },
+      "möchte": {
+        "good": 25,
+        "bad": 19
+      },
+      "auch": {
+        "good": 139,
+        "bad": 41
+      },
+      "funke": {
+        "good": 19,
+        "bad": 19
+      },
+      "nicht": {
+        "good": 115,
+        "bad": 40
+      },
+      "erlischt": {
+        "good": 19,
+        "bad": 19
+      },
+      "bruach": {
+        "good": 19,
+        "bad": 0
+      },
+      "manchmal": {
+        "good": 23,
+        "bad": 5
+      },
+      "nur": {
+        "good": 36,
+        "bad": 4
+      },
+      "bisschen": {
+        "good": 31,
+        "bad": 8
+      },
+      "damit": {
+        "good": 20,
+        "bad": 0
+      },
+      "mich": {
+        "good": 47,
+        "bad": 39
+      },
+      "wohl": {
+        "good": 19,
+        "bad": 1
+      },
+      "fühle": {
+        "good": 19,
+        "bad": 0
+      },
+      "letzter": {
+        "good": 19,
+        "bad": 0
+      },
+      "zeit": {
+        "good": 26,
+        "bad": 6
+      },
+      "ziemlich": {
+        "good": 25,
+        "bad": 0
+      },
+      "viel": {
+        "good": 27,
+        "bad": 6
+      },
+      "los": {
+        "good": 19,
+        "bad": 0
+      },
+      "was": {
+        "good": 116,
+        "bad": 146
+      },
+      "denn": {
+        "good": 135,
+        "bad": 43
+      },
+      "gerne": {
+        "good": 58,
+        "bad": 42
+      },
+      "wollen": {
+        "good": 31,
+        "bad": 0
+      },
+      "wieder": {
+        "good": 5,
+        "bad": 20
+      },
+      "entfachen": {
+        "good": 0,
+        "bad": 19
+      },
+      "vorstellen": {
+        "good": 22,
+        "bad": 16
+      },
+      "einfach": {
+        "good": 32,
+        "bad": 29
+      },
+      "gibst": {
+        "good": 20,
+        "bad": 0
+      },
+      "dein": {
+        "good": 37,
+        "bad": 9
+      },
+      "bestes": {
+        "good": 20,
+        "bad": 0
+      },
+      "als": {
+        "good": 38,
+        "bad": 13
+      },
+      "papa": {
+        "good": 20,
+        "bad": 0
+      },
+      "wichtigste": {
+        "good": 21,
+        "bad": 0
+      },
+      "sicher": {
+        "good": 33,
+        "bad": 6
+      },
+      "frauen": {
+        "good": 22,
+        "bad": 0
+      },
+      "schätzen": {
+        "good": 20,
+        "bad": 0
+      },
+      "suchst": {
+        "good": 25,
+        "bad": 1
+      },
+      "hier": {
+        "good": 27,
+        "bad": 8
+      },
+      "hof": {
+        "good": 20,
+        "bad": 0
+      },
+      "gerade": {
+        "good": 30,
+        "bad": 6
+      },
+      "denke": {
+        "good": 50,
+        "bad": 2
+      },
+      "denkst": {
+        "good": 34,
+        "bad": 3
+      },
+      "zweiteudig": {
+        "good": 20,
+        "bad": 0
+      },
+      "absolut": {
+        "good": 0,
+        "bad": 20
+      },
+      "finde": {
+        "good": 14,
+        "bad": 49
+      },
+      "grossartig": {
+        "good": 0,
+        "bad": 25
+      },
+      "wenn": {
+        "good": 39,
+        "bad": 71
+      },
+      "gegenseitig": {
+        "good": 0,
+        "bad": 21
+      },
+      "unterstützen": {
+        "good": 0,
+        "bad": 20
+      },
+      "helfen": {
+        "good": 0,
+        "bad": 20
+      },
+      "können": {
+        "good": 4,
+        "bad": 32
+      },
+      "dabei": {
+        "good": 3,
+        "bad": 28
+      },
+      "vorgestellt": {
+        "good": 1,
+        "bad": 20
+      },
+      "klingt": {
+        "good": 4,
+        "bad": 21
+      },
+      "wild": {
+        "good": 1,
+        "bad": 2
+      },
+      "mein": {
+        "good": 13,
+        "bad": 1
+      },
+      "geiler": {
+        "good": 1,
+        "bad": 0
+      },
+      "hengst": {
+        "good": 1,
+        "bad": 0
+      },
+      "würde": {
+        "good": 25,
+        "bad": 21
+      },
+      "meine": {
+        "good": 16,
+        "bad": 11
+      },
+      "muschi": {
+        "good": 5,
+        "bad": 4
+      },
+      "richtig": {
+        "good": 28,
+        "bad": 22
+      },
+      "feucht": {
+        "good": 3,
+        "bad": 0
+      },
+      "kannst": {
+        "good": 15,
+        "bad": 0
+      },
+      "schön": {
+        "good": 13,
+        "bad": 12
+      },
+      "lecken": {
+        "good": 4,
+        "bad": 8
+      },
+      "arschloch": {
+        "good": 2,
+        "bad": 0
+      },
+      "gleich": {
+        "good": 2,
+        "bad": 0
+      },
+      "mitlecken": {
+        "good": 1,
+        "bad": 0
+      },
+      "peter": {
+        "good": 1,
+        "bad": 2
+      },
+      "intensiv": {
+        "good": 0,
+        "bad": 4
+      },
+      "werden": {
+        "good": 7,
+        "bad": 1
+      },
+      "könnte": {
+        "good": 6,
+        "bad": 11
+      },
+      "toll": {
+        "good": 0,
+        "bad": 2
+      },
+      "jemand": {
+        "good": 0,
+        "bad": 3
+      },
+      "weiss": {
+        "good": 2,
+        "bad": 2
+      },
+      "will": {
+        "good": 15,
+        "bad": 1
+      },
+      "wäre": {
+        "good": 15,
+        "bad": 19
+      },
+      "perfektes": {
+        "good": 0,
+        "bad": 4
+      },
+      "szenario": {
+        "good": 0,
+        "bad": 4
+      },
+      "solchen": {
+        "good": 0,
+        "bad": 2
+      },
+      "moment": {
+        "good": 0,
+        "bad": 2
+      },
+      "hey": {
+        "good": 4,
+        "bad": 4
+      },
+      "oliver": {
+        "good": 1,
+        "bad": 1
+      },
+      "frohes": {
+        "good": 7,
+        "bad": 4
+      },
+      "neues": {
+        "good": 8,
+        "bad": 4
+      },
+      "jahr": {
+        "good": 12,
+        "bad": 11
+      },
+      "fehlern": {
+        "good": 1,
+        "bad": 1
+      },
+      "leben": {
+        "good": 1,
+        "bad": 5
+      },
+      "kenne": {
+        "good": 1,
+        "bad": 4
+      },
+      "alles": {
+        "good": 12,
+        "bad": 9
+      },
+      "neu": {
+        "good": 1,
+        "bad": 1
+      },
+      "starten": {
+        "good": 1,
+        "bad": 1
+      },
+      "jeder": {
+        "good": 1,
+        "bad": 1
+      },
+      "seine": {
+        "good": 1,
+        "bad": 1
+      },
+      "eigenen": {
+        "good": 1,
+        "bad": 2
+      },
+      "herausforderungen": {
+        "good": 1,
+        "bad": 2
+      },
+      "meinst": {
+        "good": 2,
+        "bad": 3
+      },
+      "reale": {
+        "good": 1,
+        "bad": 0
+      },
+      "chancen": {
+        "good": 1,
+        "bad": 0
+      },
+      "markt": {
+        "good": 1,
+        "bad": 0
+      },
+      "stehst": {
+        "good": 7,
+        "bad": 3
+      },
+      "dazu": {
+        "good": 0,
+        "bad": 8
+      },
+      "andere": {
+        "good": 6,
+        "bad": 5
+      },
+      "richtung": {
+        "good": 0,
+        "bad": 1
+      },
+      "lenken": {
+        "good": 0,
+        "bad": 1
+      },
+      "werde": {
+        "good": 10,
+        "bad": 0
+      },
+      "jeden": {
+        "good": 4,
+        "bad": 7
+      },
+      "fall": {
+        "good": 4,
+        "bad": 7
+      },
+      "ganz": {
+        "good": 12,
+        "bad": 5
+      },
+      "mühe": {
+        "good": 1,
+        "bad": 0
+      },
+      "geben": {
+        "good": 5,
+        "bad": 0
+      },
+      "darf": {
+        "good": 4,
+        "bad": 0
+      },
+      "wirklich": {
+        "good": 8,
+        "bad": 28
+      },
+      "wünschen": {
+        "good": 2,
+        "bad": 2
+      },
+      "deinen": {
+        "good": 16,
+        "bad": 8
+      },
+      "wunsch": {
+        "good": 0,
+        "bad": 2
+      },
+      "erfüllst": {
+        "good": 0,
+        "bad": 1
+      },
+      "versprechen": {
+        "good": 0,
+        "bad": 1
+      },
+      "geil": {
+        "good": 14,
+        "bad": 20
+      },
+      "liebe": {
+        "good": 2,
+        "bad": 5
+      },
+      "angehen": {
+        "good": 0,
+        "bad": 1
+      },
+      "siehst": {
+        "good": 7,
+        "bad": 0
+      },
+      "echt": {
+        "good": 25,
+        "bad": 9
+      },
+      "gut": {
+        "good": 34,
+        "bad": 26
+      },
+      "eigentlich": {
+        "good": 19,
+        "bad": 1
+      },
+      "typ": {
+        "good": 8,
+        "bad": 1
+      },
+      "sagen": {
+        "good": 9,
+        "bad": 8
+      },
+      "hoffe": {
+        "good": 18,
+        "bad": 0
+      },
+      "dads": {
+        "good": 1,
+        "bad": 0
+      },
+      "behaupten": {
+        "good": 6,
+        "bad": 0
+      },
+      "unzählige": {
+        "good": 0,
+        "bad": 5
+      },
+      "möglichkeiten": {
+        "good": 0,
+        "bad": 5
+      },
+      "kreativ": {
+        "good": 0,
+        "bad": 5
+      },
+      "auszudrücken": {
+        "good": 0,
+        "bad": 5
+      },
+      "deine": {
+        "good": 13,
+        "bad": 28
+      },
+      "hobbys": {
+        "good": 0,
+        "bad": 6
+      },
+      "interessen": {
+        "good": 0,
+        "bad": 7
+      },
+      "freude": {
+        "good": 0,
+        "bad": 5
+      },
+      "bereiten": {
+        "good": 0,
+        "bad": 5
+      },
+      "tittenfick": {
+        "good": 2,
+        "bad": 0
+      },
+      "doggy": {
+        "good": 3,
+        "bad": 4
+      },
+      "bist": {
+        "good": 20,
+        "bad": 12
+      },
+      "allgemein": {
+        "good": 3,
+        "bad": 0
+      },
+      "experimentierfreudig": {
+        "good": 2,
+        "bad": 0
+      },
+      "neue": {
+        "good": 8,
+        "bad": 8
+      },
+      "dinge": {
+        "good": 7,
+        "bad": 5
+      },
+      "auszuprobieren": {
+        "good": 3,
+        "bad": 1
+      },
+      "immer": {
+        "good": 14,
+        "bad": 8
+      },
+      "geniessen": {
+        "good": 1,
+        "bad": 12
+      },
+      "beim": {
+        "good": 1,
+        "bad": 14
+      },
+      "zeigen": {
+        "good": 0,
+        "bad": 2
+      },
+      "mag": {
+        "good": 0,
+        "bad": 9
+      },
+      "doggi": {
+        "good": 0,
+        "bad": 2
+      },
+      "macht": {
+        "good": 2,
+        "bad": 17
+      },
+      "intensiver": {
+        "good": 0,
+        "bad": 2
+      },
+      "gefällt": {
+        "good": 15,
+        "bad": 19
+      },
+      "brieffreundschaft": {
+        "good": 3,
+        "bad": 3
+      },
+      "weil": {
+        "good": 6,
+        "bad": 0
+      },
+      "zeitlich": {
+        "good": 3,
+        "bad": 0
+      },
+      "passt": {
+        "good": 4,
+        "bad": 0
+      },
+      "doch": {
+        "good": 12,
+        "bad": 4
+      },
+      "sex": {
+        "good": 17,
+        "bad": 1
+      },
+      "nichz": {
+        "good": 2,
+        "bad": 0
+      },
+      "entegehen": {
+        "good": 3,
+        "bad": 0
+      },
+      "lassen": {
+        "good": 8,
+        "bad": 2
+      },
+      "diese": {
+        "good": 5,
+        "bad": 0
+      },
+      "anspielung": {
+        "good": 3,
+        "bad": 0
+      },
+      "nett": {
+        "good": 6,
+        "bad": 1
+      },
+      "kommst": {
+        "good": 5,
+        "bad": 2
+      },
+      "sowas": {
+        "good": 7,
+        "bad": 0
+      },
+      "direkt": {
+        "good": 1,
+        "bad": 4
+      },
+      "heisses": {
+        "good": 0,
+        "bad": 3
+      },
+      "abenteuer": {
+        "good": 1,
+        "bad": 6
+      },
+      "spass": {
+        "good": 5,
+        "bad": 11
+      },
+      "nacht": {
+        "good": 0,
+        "bad": 5
+      },
+      "wette": {
+        "good": 2,
+        "bad": 0
+      },
+      "mal": {
+        "good": 30,
+        "bad": 27
+      },
+      "sehen": {
+        "good": 13,
+        "bad": 5
+      },
+      "bestimmt": {
+        "good": 10,
+        "bad": 1
+      },
+      "hände": {
+        "good": 2,
+        "bad": 0
+      },
+      "weg": {
+        "good": 3,
+        "bad": 0
+      },
+      "könntest": {
+        "good": 5,
+        "bad": 0
+      },
+      "wettest": {
+        "good": 2,
+        "bad": 0
+      },
+      "etwa": {
+        "good": 3,
+        "bad": 0
+      },
+      "dagegen": {
+        "good": 2,
+        "bad": 0
+      },
+      "ideen": {
+        "good": 0,
+        "bad": 2
+      },
+      "vorstellungen": {
+        "good": 0,
+        "bad": 2
+      },
+      "bin": {
+        "good": 29,
+        "bad": 26
+      },
+      "gemeinsam": {
+        "good": 2,
+        "bad": 3
+      },
+      "aufregend": {
+        "good": 0,
+        "bad": 6
+      },
+      "gestalten": {
+        "good": 0,
+        "bad": 3
+      },
+      "freut": {
+        "good": 5,
+        "bad": 10
+      },
+      "wilfried": {
+        "good": 1,
+        "bad": 0
+      },
+      "jahre": {
+        "good": 3,
+        "bad": 2
+      },
+      "alt": {
+        "good": 3,
+        "bad": 2
+      },
+      "dich": {
+        "good": 45,
+        "bad": 35
+      },
+      "stört": {
+        "good": 7,
+        "bad": 0
+      },
+      "altersunterschied": {
+        "good": 4,
+        "bad": 0
+      },
+      "beiden": {
+        "good": 7,
+        "bad": 3
+      },
+      "kein": {
+        "good": 14,
+        "bad": 0
+      },
+      "problem": {
+        "good": 8,
+        "bad": 0
+      },
+      "mitte": {
+        "good": 0,
+        "bad": 1
+      },
+      "lass": {
+        "good": 3,
+        "bad": 2
+      },
+      "schauen": {
+        "good": 2,
+        "bad": 1
+      },
+      "ergibt": {
+        "good": 0,
+        "bad": 3
+      },
+      "lebe": {
+        "good": 0,
+        "bad": 1
+      },
+      "geniesse": {
+        "good": 0,
+        "bad": 4
+      },
+      "bekanntschaften": {
+        "good": 0,
+        "bad": 1
+      },
+      "entspannten": {
+        "good": 1,
+        "bad": 3
+      },
+      "abend": {
+        "good": 2,
+        "bad": 7
+      },
+      "kaufst": {
+        "good": 2,
+        "bad": 0
+      },
+      "auto": {
+        "good": 7,
+        "bad": 0
+      },
+      "geld": {
+        "good": 2,
+        "bad": 0
+      },
+      "tank": {
+        "good": 2,
+        "bad": 0
+      },
+      "verstehe": {
+        "good": 8,
+        "bad": 10
+      },
+      "schon": {
+        "good": 43,
+        "bad": 9
+      },
+      "noch": {
+        "good": 31,
+        "bad": 12
+      },
+      "wenig": {
+        "good": 5,
+        "bad": 0
+      },
+      "ber": {
+        "good": 8,
+        "bad": 11
+      },
+      "erfahren": {
+        "good": 6,
+        "bad": 7
+      },
+      "bevor": {
+        "good": 5,
+        "bad": 4
+      },
+      "treffen": {
+        "good": 4,
+        "bad": 3
+      },
+      "bereuuen": {
+        "good": 1,
+        "bad": 0
+      },
+      "draussen": {
+        "good": 0,
+        "bad": 2
+      },
+      "zwar": {
+        "good": 0,
+        "bad": 2
+      },
+      "ungestört": {
+        "good": 0,
+        "bad": 2
+      },
+      "plaudern": {
+        "good": 0,
+        "bad": 2
+      },
+      "man": {
+        "good": 3,
+        "bad": 13
+      },
+      "reden": {
+        "good": 1,
+        "bad": 4
+      },
+      "zusammen": {
+        "good": 13,
+        "bad": 19
+      },
+      "wären": {
+        "good": 3,
+        "bad": 2
+      },
+      "bereuen": {
+        "good": 1,
+        "bad": 0
+      },
+      "wirst": {
+        "good": 3,
+        "bad": 0
+      },
+      "danach": {
+        "good": 5,
+        "bad": 0
+      },
+      "bälle": {
+        "good": 1,
+        "bad": 0
+      },
+      "glaube": {
+        "good": 1,
+        "bad": 0
+      },
+      "oben": {
+        "good": 1,
+        "bad": 0
+      },
+      "stehen": {
+        "good": 1,
+        "bad": 2
+      },
+      "trotzdem": {
+        "good": 3,
+        "bad": 1
+      },
+      "anfangen": {
+        "good": 1,
+        "bad": 0
+      },
+      "sabbern": {
+        "good": 1,
+        "bad": 0
+      },
+      "anderer": {
+        "good": 2,
+        "bad": 0
+      },
+      "meinung": {
+        "good": 4,
+        "bad": 0
+      },
+      "brüste": {
+        "good": 0,
+        "bad": 2
+      },
+      "natürlicher": {
+        "good": 0,
+        "bad": 1
+      },
+      "magst": {
+        "good": 1,
+        "bad": 12
+      },
+      "sonst": {
+        "good": 0,
+        "bad": 2
+      },
+      "frau": {
+        "good": 3,
+        "bad": 2
+      },
+      "erzzähl": {
+        "good": 1,
+        "bad": 0
+      },
+      "etwas": {
+        "good": 12,
+        "bad": 8
+      },
+      "neugierig": {
+        "good": 8,
+        "bad": 7
+      },
+      "betrifft": {
+        "good": 2,
+        "bad": 0
+      },
+      "hören": {
+        "good": 4,
+        "bad": 6
+      },
+      "welche": {
+        "good": 0,
+        "bad": 4
+      },
+      "anderen": {
+        "good": 1,
+        "bad": 2
+      },
+      "vorlieben": {
+        "good": 6,
+        "bad": 11
+      },
+      "begeistern": {
+        "good": 0,
+        "bad": 2
+      },
+      "erzähl": {
+        "good": 2,
+        "bad": 1
+      },
+      "wiederstehen": {
+        "good": 5,
+        "bad": 0
+      },
+      "einsteigen": {
+        "good": 3,
+        "bad": 0
+      },
+      "durchdachten": {
+        "good": 0,
+        "bad": 3
+      },
+      "vielversprechenden": {
+        "good": 0,
+        "bad": 4
+      },
+      "plan": {
+        "good": 0,
+        "bad": 5
+      },
+      "wichtig": {
+        "good": 7,
+        "bad": 9
+      },
+      "zuerst": {
+        "good": 4,
+        "bad": 7
+      },
+      "berblick": {
+        "good": 0,
+        "bad": 3
+      },
+      "gewinnen": {
+        "good": 0,
+        "bad": 3
+      },
+      "einsteigst": {
+        "good": 0,
+        "bad": 3
+      },
+      "recht": {
+        "good": 6,
+        "bad": 0
+      },
+      "vorsichtig": {
+        "good": 3,
+        "bad": 0
+      },
+      "dem": {
+        "good": 3,
+        "bad": 4
+      },
+      "ersten": {
+        "good": 3,
+        "bad": 0
+      },
+      "mache": {
+        "good": 5,
+        "bad": 0
+      },
+      "voll": {
+        "good": 6,
+        "bad": 0
+      },
+      "gedanken": {
+        "good": 3,
+        "bad": 0
+      },
+      "vielen": {
+        "good": 3,
+        "bad": 2
+      },
+      "lieben": {
+        "good": 0,
+        "bad": 2
+      },
+      "nachricht": {
+        "good": 0,
+        "bad": 2
+      },
+      "freue": {
+        "good": 0,
+        "bad": 6
+      },
+      "darauf": {
+        "good": 4,
+        "bad": 3
+      },
+      "weiter": {
+        "good": 1,
+        "bad": 4
+      },
+      "kontakt": {
+        "good": 0,
+        "bad": 3
+      },
+      "bleiben": {
+        "good": 1,
+        "bad": 2
+      },
+      "heute": {
+        "good": 13,
+        "bad": 12
+      },
+      "schönes": {
+        "good": 3,
+        "bad": 3
+      },
+      "geplant": {
+        "good": 1,
+        "bad": 2
+      },
+      "musst": {
+        "good": 5,
+        "bad": 1
+      },
+      "heutigen": {
+        "good": 1,
+        "bad": 0
+      },
+      "nie": {
+        "good": 1,
+        "bad": 1
+      },
+      "genug": {
+        "good": 2,
+        "bad": 0
+      },
+      "danke": {
+        "good": 16,
+        "bad": 11
+      },
+      "attraktiv": {
+        "good": 3,
+        "bad": 0
+      },
+      "kompliment": {
+        "good": 5,
+        "bad": 3
+      },
+      "jonas": {
+        "good": 0,
+        "bad": 3
+      },
+      "vielleicht": {
+        "good": 2,
+        "bad": 10
+      },
+      "anderes": {
+        "good": 0,
+        "bad": 5
+      },
+      "austauschen": {
+        "good": 0,
+        "bad": 4
+      },
+      "bisher": {
+        "good": 2,
+        "bad": 4
+      },
+      "gemacht": {
+        "good": 8,
+        "bad": 3
+      },
+      "feiern": {
+        "good": 0,
+        "bad": 3
+      },
+      "hei": {
+        "good": 1,
+        "bad": 0
+      },
+      "halt": {
+        "good": 3,
+        "bad": 0
+      },
+      "funktioniert": {
+        "good": 1,
+        "bad": 0
+      },
+      "bedeutet": {
+        "good": 3,
+        "bad": 0
+      },
+      "schwachsinn": {
+        "good": 1,
+        "bad": 0
+      },
+      "lieber": {
+        "good": 1,
+        "bad": 3
+      },
+      "erst": {
+        "good": 1,
+        "bad": 1
+      },
+      "näherkommen": {
+        "good": 0,
+        "bad": 2
+      },
+      "gelungenes": {
+        "good": 0,
+        "bad": 1
+      },
+      "wochenende": {
+        "good": 0,
+        "bad": 1
+      },
+      "wünsche": {
+        "good": 8,
+        "bad": 3
+      },
+      "herausfinden": {
+        "good": 2,
+        "bad": 1
+      },
+      "einander": {
+        "good": 2,
+        "bad": 0
+      },
+      "kindern": {
+        "good": 3,
+        "bad": 0
+      },
+      "gar": {
+        "good": 2,
+        "bad": 0
+      },
+      "kinder": {
+        "good": 2,
+        "bad": 2
+      },
+      "einizige": {
+        "good": 2,
+        "bad": 0
+      },
+      "zählt": {
+        "good": 2,
+        "bad": 2
+      },
+      "klar": {
+        "good": 8,
+        "bad": 9
+      },
+      "jemanden": {
+        "good": 0,
+        "bad": 3
+      },
+      "finden": {
+        "good": 1,
+        "bad": 6
+      },
+      "wohlfühlt": {
+        "good": 0,
+        "bad": 2
+      },
+      "einzige": {
+        "good": 0,
+        "bad": 2
+      },
+      "glücklich": {
+        "good": 0,
+        "bad": 2
+      },
+      "wichtige": {
+        "good": 1,
+        "bad": 0
+      },
+      "ankommt": {
+        "good": 1,
+        "bad": 0
+      },
+      "findest": {
+        "good": 4,
+        "bad": 0
+      },
+      "schade": {
+        "good": 2,
+        "bad": 0
+      },
+      "darin": {
+        "good": 2,
+        "bad": 0
+      },
+      "keinen": {
+        "good": 3,
+        "bad": 1
+      },
+      "sinn": {
+        "good": 3,
+        "bad": 1
+      },
+      "könnten": {
+        "good": 5,
+        "bad": 4
+      },
+      "tolle": {
+        "good": 2,
+        "bad": 0
+      },
+      "gemeinsame": {
+        "good": 5,
+        "bad": 0
+      },
+      "verbringen": {
+        "good": 2,
+        "bad": 4
+      },
+      "nichts": {
+        "good": 4,
+        "bad": 2
+      },
+      "berzeugen": {
+        "good": 2,
+        "bad": 0
+      },
+      "ndern": {
+        "good": 2,
+        "bad": 1
+      },
+      "frustrierend": {
+        "good": 0,
+        "bad": 2
+      },
+      "sollten": {
+        "good": 3,
+        "bad": 2
+      },
+      "interessiert": {
+        "good": 0,
+        "bad": 4
+      },
+      "besonders": {
+        "good": 0,
+        "bad": 16
+      },
+      "kommen": {
+        "good": 13,
+        "bad": 0
+      },
+      "nähe": {
+        "good": 4,
+        "bad": 0
+      },
+      "entfernung": {
+        "good": 2,
+        "bad": 0
+      },
+      "schonmal": {
+        "good": 8,
+        "bad": 0
+      },
+      "mobil": {
+        "good": 2,
+        "bad": 0
+      },
+      "shonmal": {
+        "good": 2,
+        "bad": 0
+      },
+      "deinem": {
+        "good": 4,
+        "bad": 3
+      },
+      "getrieben": {
+        "good": 2,
+        "bad": 0
+      },
+      "jungfrau": {
+        "good": 2,
+        "bad": 0
+      },
+      "apen": {
+        "good": 0,
+        "bad": 2
+      },
+      "tat": {
+        "good": 0,
+        "bad": 2
+      },
+      "ruhigen": {
+        "good": 0,
+        "bad": 3
+      },
+      "idyllischen": {
+        "good": 0,
+        "bad": 3
+      },
+      "perfekt": {
+        "good": 0,
+        "bad": 2
+      },
+      "zum": {
+        "good": 0,
+        "bad": 5
+      },
+      "entspannen": {
+        "good": 0,
+        "bad": 3
+      },
+      "warst": {
+        "good": 1,
+        "bad": 2
+      },
+      "dort": {
+        "good": 1,
+        "bad": 4
+      },
+      "ansässig": {
+        "good": 0,
+        "bad": 2
+      },
+      "später": {
+        "good": 0,
+        "bad": 2
+      },
+      "dorthin": {
+        "good": 0,
+        "bad": 2
+      },
+      "gezogen": {
+        "good": 0,
+        "bad": 2
+      },
+      "steifen": {
+        "good": 2,
+        "bad": 0
+      },
+      "bekommen": {
+        "good": 3,
+        "bad": 0
+      },
+      "meinem": {
+        "good": 2,
+        "bad": 2
+      },
+      "körper": {
+        "good": 2,
+        "bad": 1
+      },
+      "meisten": {
+        "good": 8,
+        "bad": 3
+      },
+      "frage": {
+        "good": 3,
+        "bad": 0
+      },
+      "jetzt": {
+        "good": 21,
+        "bad": 1
+      },
+      "beantwortet": {
+        "good": 2,
+        "bad": 0
+      },
+      "hattest": {
+        "good": 4,
+        "bad": 0
+      },
+      "scheint": {
+        "good": 0,
+        "bad": 2
+      },
+      "geschmack": {
+        "good": 2,
+        "bad": 4
+      },
+      "getroffen": {
+        "good": 0,
+        "bad": 2
+      },
+      "meinen": {
+        "good": 3,
+        "bad": 7
+      },
+      "bildern": {
+        "good": 0,
+        "bad": 2
+      },
+      "aufregent": {
+        "good": 1,
+        "bad": 0
+      },
+      "wahr": {
+        "good": 5,
+        "bad": 0
+      },
+      "viele": {
+        "good": 2,
+        "bad": 3
+      },
+      "ausprobieren": {
+        "good": 2,
+        "bad": 6
+      },
+      "bett": {
+        "good": 3,
+        "bad": 0
+      },
+      "langweilig": {
+        "good": 1,
+        "bad": 0
+      },
+      "interessante": {
+        "good": 0,
+        "bad": 1
+      },
+      "veränderung": {
+        "good": 0,
+        "bad": 1
+      },
+      "krankenhaus": {
+        "good": 0,
+        "bad": 1
+      },
+      "arbeiten": {
+        "good": 1,
+        "bad": 1
+      },
+      "einmal": {
+        "good": 0,
+        "bad": 2
+      },
+      "darüber": {
+        "good": 0,
+        "bad": 1
+      },
+      "nachgedacht": {
+        "good": 0,
+        "bad": 1
+      },
+      "bringen": {
+        "good": 0,
+        "bad": 2
+      },
+      "erstmal": {
+        "good": 2,
+        "bad": 0
+      },
+      "kennenlernen": {
+        "good": 1,
+        "bad": 1
+      },
+      "chemie": {
+        "good": 2,
+        "bad": 3
+      },
+      "stimmt": {
+        "good": 2,
+        "bad": 1
+      },
+      "herauszufinden": {
+        "good": 1,
+        "bad": 0
+      },
+      "zusammenpassen": {
+        "good": 1,
+        "bad": 0
+      },
+      "allein": {
+        "good": 2,
+        "bad": 0
+      },
+      "vorstellung": {
+        "good": 5,
+        "bad": 5
+      },
+      "bestimmte": {
+        "good": 2,
+        "bad": 2
+      },
+      "siehts": {
+        "good": 1,
+        "bad": 0
+      },
+      "rollenspiel": {
+        "good": 1,
+        "bad": 1
+      },
+      "gefallen": {
+        "good": 6,
+        "bad": 3
+      },
+      "heiss": {
+        "good": 7,
+        "bad": 10
+      },
+      "alfons": {
+        "good": 0,
+        "bad": 1
+      },
+      "stell": {
+        "good": 1,
+        "bad": 6
+      },
+      "anschaue": {
+        "good": 0,
+        "bad": 1
+      },
+      "nimmst": {
+        "good": 0,
+        "bad": 1
+      },
+      "willst": {
+        "good": 7,
+        "bad": 1
+      },
+      "betrafen": {
+        "good": 1,
+        "bad": 0
+      },
+      "daran": {
+        "good": 1,
+        "bad": 2
+      },
+      "bestrafen": {
+        "good": 1,
+        "bad": 0
+      },
+      "unartige": {
+        "good": 1,
+        "bad": 0
+      },
+      "schülerin": {
+        "good": 1,
+        "bad": 0
+      },
+      "spannend": {
+        "good": 0,
+        "bad": 1
+      },
+      "bekomme": {
+        "good": 0,
+        "bad": 1
+      },
+      "gänsehaut": {
+        "good": 0,
+        "bad": 1
+      },
+      "ganze": {
+        "good": 0,
+        "bad": 1
+      },
+      "verlassen": {
+        "good": 1,
+        "bad": 0
+      },
+      "welcher": {
+        "good": 4,
+        "bad": 0
+      },
+      "stellung": {
+        "good": 4,
+        "bad": 0
+      },
+      "erstes": {
+        "good": 10,
+        "bad": 4
+      },
+      "ficken": {
+        "good": 2,
+        "bad": 0
+      },
+      "wow": {
+        "good": 0,
+        "bad": 2
+      },
+      "intensiven": {
+        "good": 0,
+        "bad": 2
+      },
+      "leidenschaftlich": {
+        "good": 0,
+        "bad": 3
+      },
+      "stimme": {
+        "good": 2,
+        "bad": 0
+      },
+      "spüren": {
+        "good": 10,
+        "bad": 6
+      },
+      "geile": {
+        "good": 4,
+        "bad": 0
+      },
+      "sache": {
+        "good": 6,
+        "bad": 0
+      },
+      "morgen": {
+        "good": 3,
+        "bad": 0
+      },
+      "endlich": {
+        "good": 0,
+        "bad": 6
+      },
+      "wann": {
+        "good": 2,
+        "bad": 2
+      },
+      "hättest": {
+        "good": 1,
+        "bad": 7
+      },
+      "möglichkeit": {
+        "good": 0,
+        "bad": 2
+      },
+      "nackt": {
+        "good": 3,
+        "bad": 0
+      },
+      "liegen": {
+        "good": 1,
+        "bad": 1
+      },
+      "hätten": {
+        "good": 3,
+        "bad": 6
+      },
+      "beide": {
+        "good": 5,
+        "bad": 2
+      },
+      "schn": {
+        "good": 1,
+        "bad": 0
+      },
+      "lange": {
+        "good": 11,
+        "bad": 0
+      },
+      "durststrecke": {
+        "good": 2,
+        "bad": 0
+      },
+      "seite": {
+        "good": 2,
+        "bad": 0
+      },
+      "legen": {
+        "good": 3,
+        "bad": 0
+      },
+      "gab": {
+        "good": 2,
+        "bad": 0
+      },
+      "single": {
+        "good": 3,
+        "bad": 1
+      },
+      "gespannt": {
+        "good": 5,
+        "bad": 7
+      },
+      "chance": {
+        "good": 0,
+        "bad": 2
+      },
+      "näher": {
+        "good": 0,
+        "bad": 3
+      },
+      "kennenzulernen": {
+        "good": 0,
+        "bad": 3
+      },
+      "bestimmtes": {
+        "good": 0,
+        "bad": 3
+      },
+      "ebenfalls": {
+        "good": 3,
+        "bad": 0
+      },
+      "machst": {
+        "good": 7,
+        "bad": 9
+      },
+      "nein": {
+        "good": 5,
+        "bad": 0
+      },
+      "alter": {
+        "good": 3,
+        "bad": 0
+      },
+      "lege": {
+        "good": 3,
+        "bad": 0
+      },
+      "wert": {
+        "good": 3,
+        "bad": 0
+      },
+      "drauf": {
+        "good": 4,
+        "bad": 2
+      },
+      "ralf": {
+        "good": 0,
+        "bad": 3
+      },
+      "wuppertal": {
+        "good": 2,
+        "bad": 3
+      },
+      "schwebebahn": {
+        "good": 0,
+        "bad": 3
+      },
+      "berühmt": {
+        "good": 0,
+        "bad": 3
+      },
+      "mittwoch": {
+        "good": 0,
+        "bad": 3
+      },
+      "freihältst": {
+        "good": 0,
+        "bad": 3
+      },
+      "woche": {
+        "good": 0,
+        "bad": 3
+      },
+      "treffe": {
+        "good": 0,
+        "bad": 3
+      },
+      "freunden": {
+        "good": 0,
+        "bad": 3
+      },
+      "entspanne": {
+        "good": 0,
+        "bad": 3
+      },
+      "freien": {
+        "good": 0,
+        "bad": 3
+      },
+      "tag": {
+        "good": 5,
+        "bad": 4
+      },
+      "liebsten": {
+        "good": 6,
+        "bad": 11
+      },
+      "komme": {
+        "good": 5,
+        "bad": 4
+      },
+      "erzählst": {
+        "good": 1,
+        "bad": 4
+      },
+      "erzählen": {
+        "good": 2,
+        "bad": 0
+      },
+      "weitergehen": {
+        "good": 2,
+        "bad": 0
+      },
+      "fetische": {
+        "good": 1,
+        "bad": 0
+      },
+      "ausleben": {
+        "good": 4,
+        "bad": 2
+      },
+      "einige": {
+        "good": 1,
+        "bad": 0
+      },
+      "versaute": {
+        "good": 1,
+        "bad": 0
+      },
+      "fantasien": {
+        "good": 1,
+        "bad": 7
+      },
+      "erlebnis": {
+        "good": 0,
+        "bad": 4
+      },
+      "solche": {
+        "good": 0,
+        "bad": 1
+      },
+      "ins": {
+        "good": 6,
+        "bad": 5
+      },
+      "gerutscht": {
+        "good": 1,
+        "bad": 0
+      },
+      "denken": {
+        "good": 1,
+        "bad": 0
+      },
+      "behalten": {
+        "good": 2,
+        "bad": 0
+      },
+      "unsere": {
+        "good": 2,
+        "bad": 1
+      },
+      "freundschaftplus": {
+        "good": 1,
+        "bad": 0
+      },
+      "keine": {
+        "good": 5,
+        "bad": 0
+      },
+      "geheimnisse": {
+        "good": 1,
+        "bad": 0
+      },
+      "kalte": {
+        "good": 0,
+        "bad": 1
+      },
+      "jahreszeit": {
+        "good": 0,
+        "bad": 1
+      },
+      "lädt": {
+        "good": 0,
+        "bad": 1
+      },
+      "kuscheln": {
+        "good": 1,
+        "bad": 2
+      },
+      "glas": {
+        "good": 0,
+        "bad": 1
+      },
+      "wein": {
+        "good": 2,
+        "bad": 3
+      },
+      "gemütlich": {
+        "good": 0,
+        "bad": 1
+      },
+      "verbringst": {
+        "good": 1,
+        "bad": 2
+      },
+      "druck": {
+        "good": 2,
+        "bad": 1
+      },
+      "ablassen": {
+        "good": 2,
+        "bad": 0
+      },
+      "liege": {
+        "good": 1,
+        "bad": 0
+      },
+      "entspannung": {
+        "good": 0,
+        "bad": 1
+      },
+      "nötig": {
+        "good": 0,
+        "bad": 1
+      },
+      "loszuwerden": {
+        "good": 0,
+        "bad": 1
+      },
+      "zustimmen": {
+        "good": 1,
+        "bad": 0
+      },
+      "lieblingsgetränke": {
+        "good": 3,
+        "bad": 0
+      },
+      "gehe": {
+        "good": 2,
+        "bad": 1
+      },
+      "trinke": {
+        "good": 1,
+        "bad": 0
+      },
+      "mojito": {
+        "good": 1,
+        "bad": 0
+      },
+      "trinkst": {
+        "good": 11,
+        "bad": 0
+      },
+      "beobachten": {
+        "good": 0,
+        "bad": 1
+      },
+      "entwickeln": {
+        "good": 2,
+        "bad": 2
+      },
+      "bescheid": {
+        "good": 2,
+        "bad": 0
+      },
+      "besten": {
+        "good": 2,
+        "bad": 0
+      },
+      "her": {
+        "good": 2,
+        "bad": 0
+      },
+      "essen": {
+        "good": 2,
+        "bad": 0
+      },
+      "finger": {
+        "good": 1,
+        "bad": 0
+      },
+      "leider": {
+        "good": 13,
+        "bad": 2
+      },
+      "dienstag": {
+        "good": 0,
+        "bad": 1
+      },
+      "verplant": {
+        "good": 0,
+        "bad": 1
+      },
+      "geilen": {
+        "good": 1,
+        "bad": 1
+      },
+      "schwanz": {
+        "good": 2,
+        "bad": 0
+      },
+      "blasen": {
+        "good": 3,
+        "bad": 0
+      },
+      "reiten": {
+        "good": 1,
+        "bad": 1
+      },
+      "ekstase": {
+        "good": 0,
+        "bad": 1
+      },
+      "eher": {
+        "good": 1,
+        "bad": 9
+      },
+      "langsam": {
+        "good": 0,
+        "bad": 1
+      },
+      "selbstverständlich": {
+        "good": 1,
+        "bad": 0
+      },
+      "nichtmal": {
+        "good": 1,
+        "bad": 0
+      },
+      "langeweile": {
+        "good": 2,
+        "bad": 0
+      },
+      "angemeldet": {
+        "good": 1,
+        "bad": 0
+      },
+      "warum": {
+        "good": 4,
+        "bad": 0
+      },
+      "persönliche": {
+        "good": 0,
+        "bad": 1
+      },
+      "realer": {
+        "good": 0,
+        "bad": 1
+      },
+      "schlecht": {
+        "good": 1,
+        "bad": 0
+      },
+      "fotos": {
+        "good": 2,
+        "bad": 0
+      },
+      "senden": {
+        "good": 2,
+        "bad": 0
+      },
+      "tut": {
+        "good": 4,
+        "bad": 11
+      },
+      "leid": {
+        "good": 4,
+        "bad": 11
+      },
+      "kopfkino": {
+        "good": 1,
+        "bad": 0
+      },
+      "anstrengen": {
+        "good": 1,
+        "bad": 0
+      },
+      "alle": {
+        "good": 1,
+        "bad": 0
+      },
+      "löcher": {
+        "good": 1,
+        "bad": 1
+      },
+      "analsex": {
+        "good": 1,
+        "bad": 0
+      },
+      "erste": {
+        "good": 1,
+        "bad": 0
+      },
+      "fantasie": {
+        "good": 3,
+        "bad": 4
+      },
+      "verwöhnen": {
+        "good": 0,
+        "bad": 7
+      },
+      "leidenschaft": {
+        "good": 0,
+        "bad": 1
+      },
+      "steigt": {
+        "good": 0,
+        "bad": 1
+      },
+      "welches": {
+        "good": 0,
+        "bad": 1
+      },
+      "deiner": {
+        "good": 2,
+        "bad": 3
+      },
+      "anbieten": {
+        "good": 0,
+        "bad": 1
+      },
+      "gutes": {
+        "good": 1,
+        "bad": 0
+      },
+      "verhältnis": {
+        "good": 1,
+        "bad": 0
+      },
+      "ihren": {
+        "good": 1,
+        "bad": 0
+      },
+      "geschwistern": {
+        "good": 1,
+        "bad": 0
+      },
+      "familie": {
+        "good": 1,
+        "bad": 0
+      },
+      "umgehen": {
+        "good": 1,
+        "bad": 0
+      },
+      "haus": {
+        "good": 0,
+        "bad": 1
+      },
+      "platz": {
+        "good": 0,
+        "bad": 1
+      },
+      "eingerichtet": {
+        "good": 0,
+        "bad": 1
+      },
+      "spontan": {
+        "good": 11,
+        "bad": 0
+      },
+      "maximilian": {
+        "good": 0,
+        "bad": 1
+      },
+      "fussball": {
+        "good": 0,
+        "bad": 1
+      },
+      "fasziniert": {
+        "good": 0,
+        "bad": 1
+      },
+      "abspritzen": {
+        "good": 1,
+        "bad": 0
+      },
+      "rollenspielen": {
+        "good": 1,
+        "bad": 0
+      },
+      "nebenher": {
+        "good": 1,
+        "bad": 0
+      },
+      "aufregenden": {
+        "good": 0,
+        "bad": 1
+      },
+      "olaf": {
+        "good": 0,
+        "bad": 1
+      },
+      "verwöhnst": {
+        "good": 0,
+        "bad": 1
+      },
+      "film": {
+        "good": 1,
+        "bad": 0
+      },
+      "gehst": {
+        "good": 2,
+        "bad": 0
+      },
+      "fters": {
+        "good": 1,
+        "bad": 0
+      },
+      "kino": {
+        "good": 1,
+        "bad": 3
+      },
+      "gutschein": {
+        "good": 1,
+        "bad": 0
+      },
+      "wunderbaren": {
+        "good": 0,
+        "bad": 1
+      },
+      "art": {
+        "good": 0,
+        "bad": 1
+      },
+      "filmen": {
+        "good": 0,
+        "bad": 1
+      },
+      "ansiehst": {
+        "good": 0,
+        "bad": 1
+      },
+      "genre": {
+        "good": 0,
+        "bad": 1
+      },
+      "engel": {
+        "good": 1,
+        "bad": 0
+      },
+      "habe": {
+        "good": 5,
+        "bad": 7
+      },
+      "schän": {
+        "good": 1,
+        "bad": 0
+      },
+      "mario": {
+        "good": 0,
+        "bad": 1
+      },
+      "freuen": {
+        "good": 0,
+        "bad": 1
+      },
+      "bald": {
+        "good": 0,
+        "bad": 1
+      },
+      "aktivität": {
+        "good": 0,
+        "bad": 1
+      },
+      "total": {
+        "good": 7,
+        "bad": 16
+      },
+      "klappt": {
+        "good": 2,
+        "bad": 1
+      },
+      "wärst": {
+        "good": 0,
+        "bad": 1
+      },
+      "bereit": {
+        "good": 0,
+        "bad": 1
+      },
+      "aufregendes": {
+        "good": 0,
+        "bad": 2
+      },
+      "speziellen": {
+        "good": 0,
+        "bad": 1
+      },
+      "szenarien": {
+        "good": 0,
+        "bad": 1
+      },
+      "erlebnisse": {
+        "good": 0,
+        "bad": 1
+      },
+      "reizen": {
+        "good": 0,
+        "bad": 2
+      },
+      "wolltest": {
+        "good": 0,
+        "bad": 1
+      },
+      "okay": {
+        "good": 6,
+        "bad": 0
+      },
+      "weis": {
+        "good": 2,
+        "bad": 0
+      },
+      "wohnst": {
+        "good": 1,
+        "bad": 0
+      },
+      "kaulsdorf": {
+        "good": 1,
+        "bad": 1
+      },
+      "fühlst": {
+        "good": 0,
+        "bad": 1
+      },
+      "vermisst": {
+        "good": 1,
+        "bad": 1
+      },
+      "lebhafte": {
+        "good": 0,
+        "bad": 1
+      },
+      "treiben": {
+        "good": 0,
+        "bad": 1
+      },
+      "stadt": {
+        "good": 0,
+        "bad": 3
+      },
+      "klingen": {
+        "good": 1,
+        "bad": 1
+      },
+      "suche": {
+        "good": 2,
+        "bad": 1
+      },
+      "aktivitäten": {
+        "good": 0,
+        "bad": 1
+      },
+      "testen": {
+        "good": 0,
+        "bad": 1
+      },
+      "davon": {
+        "good": 2,
+        "bad": 0
+      },
+      "geträumt": {
+        "good": 1,
+        "bad": 0
+      },
+      "bar": {
+        "good": 1,
+        "bad": 0
+      },
+      "gegangen": {
+        "good": 3,
+        "bad": 0
+      },
+      "unbekannte": {
+        "good": 1,
+        "bad": 0
+      },
+      "person": {
+        "good": 3,
+        "bad": 1
+      },
+      "kennen": {
+        "good": 1,
+        "bad": 0
+      },
+      "gelernt": {
+        "good": 1,
+        "bad": 0
+      },
+      "verführt": {
+        "good": 1,
+        "bad": 0
+      },
+      "wissen": {
+        "good": 1,
+        "bad": 1
+      },
+      "ging": {
+        "good": 1,
+        "bad": 0
+      },
+      "abenteuern": {
+        "good": 0,
+        "bad": 1
+      },
+      "erlebst": {
+        "good": 0,
+        "bad": 1
+      },
+      "interessieren": {
+        "good": 0,
+        "bad": 1
+      },
+      "aufregendstes": {
+        "good": 0,
+        "bad": 1
+      },
+      "idee": {
+        "good": 1,
+        "bad": 1
+      },
+      "schwebt": {
+        "good": 0,
+        "bad": 1
+      },
+      "nächste": {
+        "good": 0,
+        "bad": 1
+      },
+      "sexuellen": {
+        "good": 1,
+        "bad": 0
+      },
+      "absichten": {
+        "good": 1,
+        "bad": 0
+      },
+      "jedenfall": {
+        "good": 1,
+        "bad": 0
+      },
+      "edgar": {
+        "good": 1,
+        "bad": 1
+      },
+      "foto": {
+        "good": 2,
+        "bad": 0
+      },
+      "handykamera": {
+        "good": 1,
+        "bad": 0
+      },
+      "kaputt": {
+        "good": 1,
+        "bad": 0
+      },
+      "handy": {
+        "good": 2,
+        "bad": 0
+      },
+      "kaufen": {
+        "good": 1,
+        "bad": 0
+      },
+      "decken": {
+        "good": 1,
+        "bad": 0
+      },
+      "brüsten": {
+        "good": 3,
+        "bad": 4
+      },
+      "meiner": {
+        "good": 0,
+        "bad": 1
+      },
+      "anstellen": {
+        "good": 0,
+        "bad": 4
+      },
+      "schreibe": {
+        "good": 1,
+        "bad": 0
+      },
+      "hin": {
+        "good": 3,
+        "bad": 0
+      },
+      "schreiben": {
+        "good": 1,
+        "bad": 0
+      },
+      "schätzt": {
+        "good": 1,
+        "bad": 0
+      },
+      "unternehmen": {
+        "good": 0,
+        "bad": 1
+      },
+      "typischer": {
+        "good": 0,
+        "bad": 1
+      },
+      "abschalten": {
+        "good": 0,
+        "bad": 1
+      },
+      "nummern": {
+        "good": 1,
+        "bad": 0
+      },
+      "tauschen": {
+        "good": 1,
+        "bad": 0
+      },
+      "berstürzt": {
+        "good": 1,
+        "bad": 0
+      },
+      "wil": {
+        "good": 1,
+        "bad": 0
+      },
+      "davor": {
+        "good": 1,
+        "bad": 0
+      },
+      "nachvollziehen": {
+        "good": 1,
+        "bad": 0
+      },
+      "nacktfoto": {
+        "good": 0,
+        "bad": 1
+      },
+      "heikel": {
+        "good": 0,
+        "bad": 1
+      },
+      "schicke": {
+        "good": 0,
+        "bad": 1
+      },
+      "bilder": {
+        "good": 3,
+        "bad": 7
+      },
+      "internet": {
+        "good": 0,
+        "bad": 1
+      },
+      "unterhalten": {
+        "good": 0,
+        "bad": 1
+      },
+      "vorstellst": {
+        "good": 0,
+        "bad": 1
+      },
+      "optisch": {
+        "good": 1,
+        "bad": 0
+      },
+      "gesehen": {
+        "good": 1,
+        "bad": 0
+      },
+      "tuen": {
+        "good": 1,
+        "bad": 0
+      },
+      "optimistische": {
+        "good": 1,
+        "bad": 0
+      },
+      "zukunft": {
+        "good": 1,
+        "bad": 0
+      },
+      "spüre": {
+        "good": 0,
+        "bad": 1
+      },
+      "besondere": {
+        "good": 0,
+        "bad": 1
+      },
+      "verbindung": {
+        "good": 0,
+        "bad": 1
+      },
+      "vorher": {
+        "good": 0,
+        "bad": 1
+      },
+      "erlebt": {
+        "good": 0,
+        "bad": 1
+      },
+      "schwer": {
+        "good": 3,
+        "bad": 1
+      },
+      "erklären": {
+        "good": 0,
+        "bad": 1
+      },
+      "fühlt": {
+        "good": 1,
+        "bad": 2
+      },
+      "glaubst": {
+        "good": 1,
+        "bad": 1
+      },
+      "fühlen": {
+        "good": 0,
+        "bad": 1
+      },
+      "richtige": {
+        "good": 0,
+        "bad": 1
+      },
+      "nummer": {
+        "good": 2,
+        "bad": 1
+      },
+      "gebe": {
+        "good": 1,
+        "bad": 1
+      },
+      "ungerne": {
+        "good": 1,
+        "bad": 0
+      },
+      "früh": {
+        "good": 1,
+        "bad": 0
+      },
+      "raus": {
+        "good": 1,
+        "bad": 0
+      },
+      "verstehst": {
+        "good": 1,
+        "bad": 0
+      },
+      "eintippen": {
+        "good": 1,
+        "bad": 0
+      },
+      "spannender": {
+        "good": 0,
+        "bad": 1
+      },
+      "sieht": {
+        "good": 1,
+        "bad": 1
+      },
+      "arbeitstag": {
+        "good": 0,
+        "bad": 2
+      },
+      "malteser": {
+        "good": 0,
+        "bad": 1
+      },
+      "hilfsdienst": {
+        "good": 0,
+        "bad": 1
+      },
+      "sortiere": {
+        "good": 0,
+        "bad": 1
+      },
+      "paar": {
+        "good": 0,
+        "bad": 1
+      },
+      "akten": {
+        "good": 0,
+        "bad": 1
+      },
+      "trage": {
+        "good": 0,
+        "bad": 1
+      },
+      "bequemes": {
+        "good": 0,
+        "bad": 1
+      },
+      "jeans": {
+        "good": 0,
+        "bad": 1
+      },
+      "outfit": {
+        "good": 0,
+        "bad": 1
+      },
+      "besonderes": {
+        "good": 1,
+        "bad": 2
+      },
+      "couch": {
+        "good": 1,
+        "bad": 1
+      },
+      "kuschlen": {
+        "good": 1,
+        "bad": 0
+      },
+      "passieren": {
+        "good": 1,
+        "bad": 0
+      },
+      "gemütlichen": {
+        "good": 0,
+        "bad": 1
+      },
+      "sofa": {
+        "good": 0,
+        "bad": 1
+      },
+      "nah": {
+        "good": 5,
+        "bad": 4
+      },
+      "quatschen": {
+        "good": 0,
+        "bad": 1
+      },
+      "stille": {
+        "good": 0,
+        "bad": 1
+      },
+      "onex": {
+        "good": 1,
+        "bad": 1
+      },
+      "eigetlich": {
+        "good": 1,
+        "bad": 0
+      },
+      "festes": {
+        "good": 1,
+        "bad": 0
+      },
+      "daraus": {
+        "good": 1,
+        "bad": 0
+      },
+      "sollte": {
+        "good": 3,
+        "bad": 1
+      },
+      "abgeneigt": {
+        "good": 1,
+        "bad": 0
+      },
+      "offen": {
+        "good": 1,
+        "bad": 2
+      },
+      "schau": {
+        "good": 0,
+        "bad": 1
+      },
+      "beantwortest": {
+        "good": 1,
+        "bad": 0
+      },
+      "also": {
+        "good": 4,
+        "bad": 0
+      },
+      "gegenfrage": {
+        "good": 1,
+        "bad": 0
+      },
+      "ans": {
+        "good": 1,
+        "bad": 0
+      },
+      "ziel": {
+        "good": 1,
+        "bad": 0
+      },
+      "date": {
+        "good": 1,
+        "bad": 0
+      },
+      "zurückhaltender": {
+        "good": 1,
+        "bad": 0
+      },
+      "offensive": {
+        "good": 1,
+        "bad": 0
+      },
+      "spielen": {
+        "good": 0,
+        "bad": 3
+      },
+      "dreckig": {
+        "good": 0,
+        "bad": 1
+      },
+      "grösster": {
+        "good": 0,
+        "bad": 1
+      },
+      "situation": {
+        "good": 0,
+        "bad": 2
+      },
+      "natürlich": {
+        "good": 4,
+        "bad": 0
+      },
+      "intimes": {
+        "good": 2,
+        "bad": 2
+      },
+      "fragen": {
+        "good": 2,
+        "bad": 0
+      },
+      "kommt": {
+        "good": 2,
+        "bad": 0
+      },
+      "frag": {
+        "good": 0,
+        "bad": 2
+      },
+      "ruhig": {
+        "good": 0,
+        "bad": 2
+      },
+      "geheimen": {
+        "good": 0,
+        "bad": 2
+      },
+      "sehe": {
+        "good": 1,
+        "bad": 0
+      },
+      "berwiegend": {
+        "good": 1,
+        "bad": 0
+      },
+      "spa": {
+        "good": 1,
+        "bad": 0
+      },
+      "ernsten": {
+        "good": 1,
+        "bad": 0
+      },
+      "schlimm": {
+        "good": 1,
+        "bad": 0
+      },
+      "darum": {
+        "good": 0,
+        "bad": 1
+      },
+      "erleben": {
+        "good": 0,
+        "bad": 2
+      },
+      "kennenlernst": {
+        "good": 0,
+        "bad": 1
+      },
+      "unterschiedlich": {
+        "good": 2,
+        "bad": 0
+      },
+      "meistens": {
+        "good": 2,
+        "bad": 0
+      },
+      "greifen": {
+        "good": 2,
+        "bad": 0
+      },
+      "the": {
+        "good": 2,
+        "bad": 0
+      },
+      "beach": {
+        "good": 2,
+        "bad": 0
+      },
+      "wodka": {
+        "good": 1,
+        "bad": 0
+      },
+      "oranschensaft": {
+        "good": 1,
+        "bad": 0
+      },
+      "sekt": {
+        "good": 2,
+        "bad": 0
+      },
+      "gläschen": {
+        "good": 0,
+        "bad": 2
+      },
+      "cocktails": {
+        "good": 1,
+        "bad": 2
+      },
+      "like": {
+        "good": 3,
+        "bad": 3
+      },
+      "gefällst": {
+        "good": 3,
+        "bad": 0
+      },
+      "antwort": {
+        "good": 0,
+        "bad": 3
+      },
+      "gekommen": {
+        "good": 4,
+        "bad": 4
+      },
+      "nachfrage": {
+        "good": 0,
+        "bad": 4
+      },
+      "gewesen": {
+        "good": 0,
+        "bad": 4
+      },
+      "armen": {
+        "good": 0,
+        "bad": 4
+      },
+      "gehalten": {
+        "good": 0,
+        "bad": 4
+      },
+      "wege": {
+        "good": 3,
+        "bad": 0
+      },
+      "toller": {
+        "good": 2,
+        "bad": 0
+      },
+      "geworden": {
+        "good": 2,
+        "bad": 0
+      },
+      "verwöhnt": {
+        "good": 1,
+        "bad": 0
+      },
+      "gute": {
+        "good": 1,
+        "bad": 1
+      },
+      "arbeit": {
+        "good": 1,
+        "bad": 0
+      },
+      "zunge": {
+        "good": 1,
+        "bad": 0
+      },
+      "geleckt": {
+        "good": 3,
+        "bad": 0
+      },
+      "fallen": {
+        "good": 0,
+        "bad": 2
+      },
+      "ohja": {
+        "good": 4,
+        "bad": 0
+      },
+      "schreibst": {
+        "good": 1,
+        "bad": 0
+      },
+      "super": {
+        "good": 1,
+        "bad": 0
+      },
+      "grenzen": {
+        "good": 1,
+        "bad": 0
+      },
+      "vorhinein": {
+        "good": 1,
+        "bad": 0
+      },
+      "klären": {
+        "good": 1,
+        "bad": 0
+      },
+      "gehorsam": {
+        "good": 0,
+        "bad": 1
+      },
+      "alte": {
+        "good": 0,
+        "bad": 1
+      },
+      "dame": {
+        "good": 0,
+        "bad": 1
+      },
+      "anschaut": {
+        "good": 0,
+        "bad": 1
+      },
+      "geniesst": {
+        "good": 0,
+        "bad": 1
+      },
+      "offenbaren": {
+        "good": 0,
+        "bad": 1
+      },
+      "unser": {
+        "good": 1,
+        "bad": 0
+      },
+      "arsch": {
+        "good": 1,
+        "bad": 0
+      },
+      "jochen": {
+        "good": 0,
+        "bad": 1
+      },
+      "gleichzeitig": {
+        "good": 0,
+        "bad": 1
+      },
+      "stellungen": {
+        "good": 1,
+        "bad": 1
+      },
+      "bezweifeln": {
+        "good": 1,
+        "bad": 0
+      },
+      "falsch": {
+        "good": 1,
+        "bad": 0
+      },
+      "geschrieben": {
+        "good": 1,
+        "bad": 1
+      },
+      "empfinde": {
+        "good": 0,
+        "bad": 1
+      },
+      "starke": {
+        "good": 0,
+        "bad": 1
+      },
+      "anziehung": {
+        "good": 0,
+        "bad": 1
+      },
+      "kaum": {
+        "good": 7,
+        "bad": 9
+      },
+      "erwarten": {
+        "good": 7,
+        "bad": 9
+      },
+      "anstrengend": {
+        "good": 1,
+        "bad": 0
+      },
+      "uhr": {
+        "good": 1,
+        "bad": 0
+      },
+      "aufstehen": {
+        "good": 1,
+        "bad": 0
+      },
+      "anstrengenden": {
+        "good": 0,
+        "bad": 1
+      },
+      "job": {
+        "good": 0,
+        "bad": 1
+      },
+      "langen": {
+        "good": 0,
+        "bad": 1
+      },
+      "hältst": {
+        "good": 0,
+        "bad": 1
+      },
+      "kleinen": {
+        "good": 0,
+        "bad": 1
+      },
+      "süsse": {
+        "good": 0,
+        "bad": 1
+      },
+      "träume": {
+        "good": 0,
+        "bad": 1
+      },
+      "liebes": {
+        "good": 0,
+        "bad": 1
+      },
+      "schöne": {
+        "good": 1,
+        "bad": 0
+      },
+      "experimentieren": {
+        "good": 1,
+        "bad": 0
+      },
+      "shopen": {
+        "good": 1,
+        "bad": 0
+      },
+      "spaziernen": {
+        "good": 1,
+        "bad": 0
+      },
+      "schwimmen": {
+        "good": 1,
+        "bad": 1
+      },
+      "therme": {
+        "good": 1,
+        "bad": 0
+      },
+      "normales": {
+        "good": 1,
+        "bad": 0
+      },
+      "schwimmbad": {
+        "good": 1,
+        "bad": 0
+      },
+      "see": {
+        "good": 1,
+        "bad": 0
+      },
+      "spaziergänge": {
+        "good": 0,
+        "bad": 1
+      },
+      "wetter": {
+        "good": 0,
+        "bad": 1
+      },
+      "natur": {
+        "good": 0,
+        "bad": 1
+      },
+      "heisse": {
+        "good": 1,
+        "bad": 3
+      },
+      "melanie": {
+        "good": 1,
+        "bad": 1
+      },
+      "telgte": {
+        "good": 1,
+        "bad": 1
+      },
+      "arbeite": {
+        "good": 1,
+        "bad": 3
+      },
+      "nagelstudio": {
+        "good": 1,
+        "bad": 1
+      },
+      "drei": {
+        "good": 1,
+        "bad": 1
+      },
+      "jahren": {
+        "good": 1,
+        "bad": 1
+      },
+      "beziehung": {
+        "good": 1,
+        "bad": 0
+      },
+      "entspannt": {
+        "good": 1,
+        "bad": 8
+      },
+      "weiteren": {
+        "good": 1,
+        "bad": 0
+      },
+      "pläne": {
+        "good": 1,
+        "bad": 0
+      },
+      "chillst": {
+        "good": 0,
+        "bad": 1
+      },
+      "eltern": {
+        "good": 0,
+        "bad": 1
+      },
+      "gefühl": {
+        "good": 1,
+        "bad": 1
+      },
+      "merke": {
+        "good": 1,
+        "bad": 1
+      },
+      "hatte": {
+        "good": 1,
+        "bad": 1
+      },
+      "gesagt": {
+        "good": 1,
+        "bad": 1
+      },
+      "innere": {
+        "good": 1,
+        "bad": 1
+      },
+      "werte": {
+        "good": 1,
+        "bad": 1
+      },
+      "achte": {
+        "good": 1,
+        "bad": 1
+      },
+      "usseres": {
+        "good": 1,
+        "bad": 1
+      },
+      "isst": {
+        "good": 1,
+        "bad": 0
+      },
+      "aussehen": {
+        "good": 1,
+        "bad": 0
+      },
+      "bestrafung": {
+        "good": 1,
+        "bad": 0
+      },
+      "peitsche": {
+        "good": 1,
+        "bad": 0
+      },
+      "hinnehmen": {
+        "good": 1,
+        "bad": 0
+      },
+      "dreier": {
+        "good": 1,
+        "bad": 1
+      },
+      "soweit": {
+        "good": 1,
+        "bad": 1
+      },
+      "schwere": {
+        "good": 1,
+        "bad": 1
+      },
+      "durchmachen": {
+        "good": 1,
+        "bad": 1
+      },
+      "kurz": {
+        "good": 2,
+        "bad": 0
+      },
+      "vergessen": {
+        "good": 1,
+        "bad": 1
+      },
+      "gehabt": {
+        "good": 1,
+        "bad": 0
+      },
+      "konzentrieren": {
+        "good": 1,
+        "bad": 1
+      },
+      "profil": {
+        "good": 2,
+        "bad": 1
+      },
+      "anschaust": {
+        "good": 1,
+        "bad": 0
+      },
+      "schätze": {
+        "good": 3,
+        "bad": 0
+      },
+      "angebot": {
+        "good": 4,
+        "bad": 0
+      },
+      "konkreten": {
+        "good": 3,
+        "bad": 0
+      },
+      "termin": {
+        "good": 3,
+        "bad": 0
+      },
+      "festlegen": {
+        "good": 3,
+        "bad": 0
+      },
+      "lieblingsgerichte": {
+        "good": 3,
+        "bad": 0
+      },
+      "restaurants": {
+        "good": 3,
+        "bad": 0
+      },
+      "wahnsinn": {
+        "good": 5,
+        "bad": 3
+      },
+      "sorge": {
+        "good": 1,
+        "bad": 0
+      },
+      "warte": {
+        "good": 1,
+        "bad": 0
+      },
+      "richtiges": {
+        "good": 1,
+        "bad": 0
+      },
+      "ausgedruckt": {
+        "good": 1,
+        "bad": 0
+      },
+      "stephan": {
+        "good": 0,
+        "bad": 1
+      },
+      "geiles": {
+        "good": 0,
+        "bad": 1
+      },
+      "all": {
+        "good": 0,
+        "bad": 1
+      },
+      "auszuleben": {
+        "good": 0,
+        "bad": 1
+      },
+      "angenehm": {
+        "good": 1,
+        "bad": 1
+      },
+      "lieblings": {
+        "good": 1,
+        "bad": 0
+      },
+      "sag": {
+        "good": 0,
+        "bad": 2
+      },
+      "langsame": {
+        "good": 0,
+        "bad": 1
+      },
+      "sinnliche": {
+        "good": 0,
+        "bad": 1
+      },
+      "sachen": {
+        "good": 0,
+        "bad": 1
+      },
+      "härter": {
+        "good": 0,
+        "bad": 1
+      },
+      "entspreche": {
+        "good": 1,
+        "bad": 0
+      },
+      "perfekte": {
+        "good": 0,
+        "bad": 1
+      },
+      "start": {
+        "good": 0,
+        "bad": 1
+      },
+      "hart": {
+        "good": 2,
+        "bad": 1
+      },
+      "ranzunehmen": {
+        "good": 1,
+        "bad": 1
+      },
+      "loslegen": {
+        "good": 1,
+        "bad": 1
+      },
+      "reitet": {
+        "good": 1,
+        "bad": 0
+      },
+      "sexpuppe": {
+        "good": 3,
+        "bad": 3
+      },
+      "benutzen": {
+        "good": 3,
+        "bad": 0
+      },
+      "ablaufen": {
+        "good": 3,
+        "bad": 0
+      },
+      "erotische": {
+        "good": 0,
+        "bad": 3
+      },
+      "darfst": {
+        "good": 0,
+        "bad": 3
+      },
+      "leckst": {
+        "good": 1,
+        "bad": 0
+      },
+      "saugen": {
+        "good": 3,
+        "bad": 3
+      },
+      "verraten": {
+        "good": 3,
+        "bad": 1
+      },
+      "fehlen": {
+        "good": 3,
+        "bad": 0
+      },
+      "outdoor": {
+        "good": 3,
+        "bad": 0
+      },
+      "bettrand": {
+        "good": 0,
+        "bad": 2
+      },
+      "ordentlich": {
+        "good": 0,
+        "bad": 2
+      },
+      "nächstes": {
+        "good": 0,
+        "bad": 2
+      },
+      "möchtest": {
+        "good": 6,
+        "bad": 2
+      },
+      "beides": {
+        "good": 0,
+        "bad": 2
+      },
+      "ansonsten": {
+        "good": 3,
+        "bad": 0
+      },
+      "momentan": {
+        "good": 0,
+        "bad": 2
+      },
+      "cool": {
+        "good": 0,
+        "bad": 2
+      },
+      "ehrlich": {
+        "good": 0,
+        "bad": 2
+      },
+      "erledigt": {
+        "good": 9,
+        "bad": 0
+      },
+      "heheich": {
+        "good": 1,
+        "bad": 0
+      },
+      "vorbei": {
+        "good": 9,
+        "bad": 0
+      },
+      "läuft": {
+        "good": 2,
+        "bad": 8
+      },
+      "quatscht": {
+        "good": 0,
+        "bad": 7
+      },
+      "süsses": {
+        "good": 0,
+        "bad": 7
+      },
+      "hehe": {
+        "good": 8,
+        "bad": 0
+      },
+      "stehe": {
+        "good": 3,
+        "bad": 0
+      },
+      "geheimnisvoll": {
+        "good": 3,
+        "bad": 2
+      },
+      "wenigstens": {
+        "good": 3,
+        "bad": 0
+      },
+      "laut": {
+        "good": 3,
+        "bad": 0
+      },
+      "stöhnen": {
+        "good": 3,
+        "bad": 2
+      },
+      "ganzen": {
+        "good": 3,
+        "bad": 0
+      },
+      "saft": {
+        "good": 3,
+        "bad": 0
+      },
+      "bringst": {
+        "good": 0,
+        "bad": 2
+      },
+      "sage": {
+        "good": 3,
+        "bad": 0
+      },
+      "sobald": {
+        "good": 3,
+        "bad": 0
+      },
+      "besser": {
+        "good": 3,
+        "bad": 0
+      },
+      "kennengelernt": {
+        "good": 3,
+        "bad": 0
+      },
+      "leipzig": {
+        "good": 0,
+        "bad": 2
+      },
+      "einzelhandel": {
+        "good": 0,
+        "bad": 2
+      },
+      "erkunden": {
+        "good": 0,
+        "bad": 2
+      },
+      "freizeit": {
+        "good": 0,
+        "bad": 2
+      },
+      "mittlerweile": {
+        "good": 1,
+        "bad": 0
+      },
+      "kennst": {
+        "good": 1,
+        "bad": 0
+      },
+      "manchen": {
+        "good": 1,
+        "bad": 0
+      },
+      "tagen": {
+        "good": 1,
+        "bad": 0
+      },
+      "brauch": {
+        "good": 1,
+        "bad": 0
+      },
+      "themawechseln": {
+        "good": 1,
+        "bad": 0
+      },
+      "ausruhen": {
+        "good": 1,
+        "bad": 0
+      },
+      "hause": {
+        "good": 1,
+        "bad": 0
+      },
+      "sollen": {
+        "good": 1,
+        "bad": 0
+      },
+      "gibts": {
+        "good": 2,
+        "bad": 0
+      },
+      "einigermassen": {
+        "good": 1,
+        "bad": 0
+      },
+      "brigens": {
+        "good": 1,
+        "bad": 0
+      },
+      "lisa": {
+        "good": 1,
+        "bad": 0
+      },
+      "berlege": {
+        "good": 0,
+        "bad": 1
+      },
+      "berlin": {
+        "good": 1,
+        "bad": 1
+      },
+      "zuhause": {
+        "good": 1,
+        "bad": 1
+      },
+      "feiertag": {
+        "good": 1,
+        "bad": 1
+      }
     }
   },
   "situationSuccess": {
@@ -4315,7 +4319,7 @@
       "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-06T14:53:50.287Z",
+  "lastUpdated": "2026-01-06T16:56:54.210Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5448,5 +5452,7 @@
       "count": 2,
       "lastUsed": "2026-01-06T14:30:43.570Z"
     }
-  ]
+  ],
+  "migrated": true,
+  "migratedSaved": true
 }
