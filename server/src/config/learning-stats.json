@@ -203,7 +203,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 112,
+      "good": 113,
       "bad": 35
     },
     "erlischt": {
@@ -343,7 +343,7 @@
       "bad": 0
     },
     "gerade": {
-      "good": 29,
+      "good": 30,
       "bad": 6
     },
     "denke": {
@@ -371,7 +371,7 @@
       "bad": 25
     },
     "wenn": {
-      "good": 38,
+      "good": 39,
       "bad": 65
     },
     "gegenseitig": {
@@ -639,7 +639,7 @@
       "bad": 0
     },
     "wirklich": {
-      "good": 7,
+      "good": 8,
       "bad": 28
     },
     "wünschen": {
@@ -755,7 +755,7 @@
       "bad": 4
     },
     "bist": {
-      "good": 19,
+      "good": 20,
       "bad": 12
     },
     "allgemein": {
@@ -939,7 +939,7 @@
       "bad": 2
     },
     "bin": {
-      "good": 26,
+      "good": 27,
       "bad": 25
     },
     "gemeinsam": {
@@ -1191,7 +1191,7 @@
       "bad": 7
     },
     "neugierig": {
-      "good": 7,
+      "good": 8,
       "bad": 7
     },
     "betrifft": {
@@ -1307,7 +1307,7 @@
       "bad": 6
     },
     "darauf": {
-      "good": 3,
+      "good": 4,
       "bad": 3
     },
     "weiter": {
@@ -1911,7 +1911,7 @@
       "bad": 0
     },
     "sache": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "morgen": {
@@ -3751,7 +3751,7 @@
       "bad": 3
     },
     "verraten": {
-      "good": 2,
+      "good": 3,
       "bad": 1
     },
     "fehlen": {
@@ -3775,7 +3775,7 @@
       "bad": 2
     },
     "möchtest": {
-      "good": 5,
+      "good": 6,
       "bad": 2
     },
     "beides": {
@@ -3827,15 +3827,15 @@
       "bad": 0
     },
     "stehe": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "geheimnisvoll": {
-      "good": 2,
+      "good": 3,
       "bad": 2
     },
     "wenigstens": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "laut": {
@@ -3893,16 +3893,16 @@
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 160,
-      "total": 289
+      "good": 161,
+      "total": 290
     },
     "Bot-Vorwurf": {
       "good": 9,
       "total": 18
     },
     "Sexuelle Themen": {
-      "good": 34,
-      "total": 59
+      "good": 35,
+      "total": 60
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -3940,8 +3940,8 @@
         "length": 132
       },
       "goodResponse": "Ja kann ich ja mal machen wenn du das willst. Wie lange musst du denn heute noch arbeiten? Und meine Nummer gebe ich ungerne so früh raus, ich denke mal du verstehst mich da? Ich könnte ja meine Numme",
-      "successCount": 117,
-      "lastUsed": "2026-01-06T14:30:31.032Z"
+      "successCount": 118,
+      "lastUsed": "2026-01-06T14:30:32.243Z"
     },
     {
       "situation": "allgemein",
@@ -3966,8 +3966,8 @@
         "length": 72
       },
       "goodResponse": "Freut mich auf jedenfall von dir zu hören Edgar! Ich kann dir leider gerade kein Foto senden da meine Handykamera kaputt gegangen ist, ich muss mir erstmal ein neues Handy kaufen. Willst du mir mal er",
-      "successCount": 14,
-      "lastUsed": "2026-01-06T14:30:31.032Z"
+      "successCount": 15,
+      "lastUsed": "2026-01-06T14:30:32.243Z"
     },
     {
       "situation": "Bot-Vorwurf",
@@ -4217,7 +4217,7 @@
       "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-06T14:30:31.032Z",
+  "lastUpdated": "2026-01-06T14:30:32.243Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4273,6 +4273,15 @@
       "lastUsed": "2026-01-06T14:30:19.091Z"
     },
     {
+      "text": "nicht seine nachricht bewertet sondern drauf eingangen und mit einer frage tiefer drauf eingegangen",
+      "count": 3,
+      "situations": [
+        "allgemein",
+        "Sexuelle Themen"
+      ],
+      "lastUsed": "2026-01-06T14:30:32.243Z"
+    },
+    {
       "text": "Sei kurz, präzise und direkt",
       "count": 2,
       "situations": [
@@ -4288,15 +4297,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T14:25:25.561Z"
-    },
-    {
-      "text": "nicht seine nachricht bewertet sondern drauf eingangen und mit einer frage tiefer drauf eingegangen",
-      "count": 2,
-      "situations": [
-        "allgemein",
-        "Sexuelle Themen"
-      ],
-      "lastUsed": "2026-01-06T14:30:31.032Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -4538,6 +4538,7 @@
           112,
           112,
           112,
+          145,
           145
         ],
         "exclamationMarks": [
@@ -4577,6 +4578,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4622,26 +4624,27 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 40,
-        "avgLength": 155,
+        "count": 41,
+        "avgLength": 154,
         "minLength": 106,
         "maxLength": 232,
-        "medianLength": 151,
+        "medianLength": 145,
         "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.2,
+        "avgQuestions": 1.1,
         "minQuestions": 1,
         "maxQuestions": 3,
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 30,
-          "120-150": 20,
-          "150-200": 45,
+          "100-120": 29,
+          "120-150": 22,
+          "150-200": 44,
           "200-250": 5,
           "250+": 0
         },
@@ -4649,7 +4652,7 @@
           "0": 0,
           "1": 88,
           "2": 10,
-          "3+": 3
+          "3+": 2
         }
       },
       "negative": {
