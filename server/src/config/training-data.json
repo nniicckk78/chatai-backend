@@ -2956,12 +2956,17 @@
     {
       "customerMessage": "Hallo mein Süße, was ist los? Warum bist du so besorgt? Was für kleine Schwierigkeiten hast du denn, und was ist dir schon wieder peinlich? Mach dir keine Sorgen. Ich sitze ganz allein zu Hause und bin überhaupt nicht gestresst. Ich trinke gerade Kaffee. Wenn du magst, kannst du gerne voebei kommen zusammen Kaffee trinken.Lg☺",
       "moderatorResponse": "Ja heute ist einfach nicht mein Tag aber sowas gibts halt mal nicht wahr? Es geht schon wieder einigermassen. Aber ich will auf andere Gedanken kommen. Wie war denn dein Tag heute so?",
-      "situation": "allgemein",
+      "situation": "allgemein, Treffen/Termine",
       "createdAt": "2026-01-06T14:31:18.829Z",
       "source": "feedback_generated_edited",
       "priority": true,
       "feedbackId": "feedback_1767708198752_irh5f3c5q",
-      "variationIndex": 0
+      "variationIndex": 0,
+      "situations": [
+        "allgemein",
+        "Treffen/Termine"
+      ],
+      "updatedAt": "2026-01-06T14:32:08.836Z"
     },
     {
       "customerMessage": "Hallo mein Süße, was ist los? Warum bist du so besorgt? Was für kleine Schwierigkeiten hast du denn, und was ist dir schon wieder peinlich? Mach dir keine Sorgen. Ich sitze ganz allein zu Hause und bin überhaupt nicht gestresst. Ich trinke gerade Kaffee. Wenn du magst, kannst du gerne voebei kommen zusammen Kaffee trinken.Lg☺",
