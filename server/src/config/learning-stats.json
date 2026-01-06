@@ -119,7 +119,7 @@
       "bad": 20
     },
     "wie": {
-      "good": 54,
+      "good": 55,
       "bad": 62
     },
     "stellst": {
@@ -159,7 +159,7 @@
       "bad": 26
     },
     "hast": {
-      "good": 36,
+      "good": 37,
       "bad": 63
     },
     "verstehen": {
@@ -195,7 +195,7 @@
       "bad": 19
     },
     "nicht": {
-      "good": 109,
+      "good": 110,
       "bad": 29
     },
     "erlischt": {
@@ -211,7 +211,7 @@
       "bad": 5
     },
     "nur": {
-      "good": 35,
+      "good": 36,
       "bad": 4
     },
     "bisschen": {
@@ -583,7 +583,7 @@
       "bad": 0
     },
     "stehst": {
-      "good": 6,
+      "good": 7,
       "bad": 3
     },
     "dazu": {
@@ -623,11 +623,11 @@
       "bad": 0
     },
     "geben": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "darf": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "wirklich": {
@@ -679,7 +679,7 @@
       "bad": 15
     },
     "eigentlich": {
-      "good": 14,
+      "good": 16,
       "bad": 1
     },
     "typ": {
@@ -827,7 +827,7 @@
       "bad": 4
     },
     "sex": {
-      "good": 15,
+      "good": 16,
       "bad": 1
     },
     "nichz": {
@@ -1255,7 +1255,7 @@
       "bad": 3
     },
     "recht": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "vorsichtig": {
@@ -1375,7 +1375,7 @@
       "bad": 3
     },
     "gemacht": {
-      "good": 7,
+      "good": 8,
       "bad": 3
     },
     "feiern": {
@@ -1563,7 +1563,7 @@
       "bad": 0
     },
     "schonmal": {
-      "good": 7,
+      "good": 8,
       "bad": 0
     },
     "mobil": {
@@ -3747,11 +3747,11 @@
       "bad": 1
     },
     "fehlen": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "outdoor": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "bettrand": {
@@ -3785,8 +3785,8 @@
       "total": 18
     },
     "Sexuelle Themen": {
-      "good": 28,
-      "total": 50
+      "good": 29,
+      "total": 51
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -3850,8 +3850,8 @@
         "length": 72
       },
       "goodResponse": "Freut mich auf jedenfall von dir zu hören Edgar! Ich kann dir leider gerade kein Foto senden da meine Handykamera kaputt gegangen ist, ich muss mir erstmal ein neues Handy kaufen. Willst du mir mal er",
-      "successCount": 10,
-      "lastUsed": "2026-01-06T11:08:31.192Z"
+      "successCount": 11,
+      "lastUsed": "2026-01-06T11:08:32.336Z"
     },
     {
       "situation": "Bot-Vorwurf",
@@ -4101,7 +4101,7 @@
       "lastUsed": "2026-01-06T01:16:26.894Z"
     }
   ],
-  "lastUpdated": "2026-01-06T11:08:31.192Z",
+  "lastUpdated": "2026-01-06T11:08:32.336Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4579,10 +4579,12 @@
           124,
           152,
           152,
+          137,
           137
         ],
         "exclamationMarks": [
           2,
+          0,
           0,
           0,
           0,
@@ -4601,10 +4603,11 @@
           1,
           2,
           2,
+          1,
           1
         ],
-        "count": 9,
-        "avgLength": 160,
+        "count": 10,
+        "avgLength": 158,
         "minLength": 124,
         "maxLength": 227,
         "medianLength": 152,
@@ -4619,15 +4622,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 44,
-          "150-200": 33,
-          "200-250": 22,
+          "120-150": 50,
+          "150-200": 30,
+          "200-250": 20,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 78,
-          "2": 22,
+          "1": 80,
+          "2": 20,
           "3+": 0
         }
       },
