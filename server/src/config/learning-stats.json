@@ -1,7 +1,7 @@
 {
   "patterns": {
     "würdest du": {
-      "count": 66,
+      "count": 67,
       "successRate": 0
     },
     "würdest du mir dann einen machen?": {
@@ -49,7 +49,7 @@
       "successRate": 0
     },
     "würdest du das am liebsten machen wollen?": {
-      "count": 2,
+      "count": 3,
       "successRate": 0
     }
   },
@@ -95,11 +95,11 @@
       "bad": 0
     },
     "würdest": {
-      "good": 73,
+      "good": 74,
       "bad": 41
     },
     "machen": {
-      "good": 60,
+      "good": 61,
       "bad": 20
     },
     "hätte": {
@@ -275,7 +275,7 @@
       "bad": 36
     },
     "wollen": {
-      "good": 30,
+      "good": 31,
       "bad": 0
     },
     "wieder": {
@@ -431,7 +431,7 @@
       "bad": 4
     },
     "richtig": {
-      "good": 27,
+      "good": 28,
       "bad": 21
     },
     "feucht": {
@@ -443,7 +443,7 @@
       "bad": 0
     },
     "schön": {
-      "good": 12,
+      "good": 13,
       "bad": 12
     },
     "lecken": {
@@ -491,7 +491,7 @@
       "bad": 2
     },
     "will": {
-      "good": 13,
+      "good": 14,
       "bad": 1
     },
     "wäre": {
@@ -611,7 +611,7 @@
       "bad": 1
     },
     "werde": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "jeden": {
@@ -647,7 +647,7 @@
       "bad": 2
     },
     "deinen": {
-      "good": 6,
+      "good": 7,
       "bad": 7
     },
     "wunsch": {
@@ -971,7 +971,7 @@
       "bad": 2
     },
     "dich": {
-      "good": 43,
+      "good": 44,
       "bad": 34
     },
     "stört": {
@@ -1871,11 +1871,11 @@
       "bad": 0
     },
     "welcher": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "stellung": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "erstes": {
@@ -1903,7 +1903,7 @@
       "bad": 0
     },
     "spüren": {
-      "good": 9,
+      "good": 10,
       "bad": 6
     },
     "geile": {
@@ -2075,7 +2075,7 @@
       "bad": 3
     },
     "liebsten": {
-      "good": 4,
+      "good": 5,
       "bad": 11
     },
     "komme": {
@@ -3267,7 +3267,7 @@
       "bad": 2
     },
     "ohja": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "schreibst": {
@@ -3839,19 +3839,19 @@
       "bad": 0
     },
     "laut": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "stöhnen": {
-      "good": 2,
+      "good": 3,
       "bad": 2
     },
     "ganzen": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "saft": {
-      "good": 2,
+      "good": 3,
       "bad": 0
     },
     "bringst": {
@@ -3901,8 +3901,8 @@
       "total": 18
     },
     "Sexuelle Themen": {
-      "good": 32,
-      "total": 57
+      "good": 33,
+      "total": 58
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -3966,8 +3966,8 @@
         "length": 72
       },
       "goodResponse": "Freut mich auf jedenfall von dir zu hören Edgar! Ich kann dir leider gerade kein Foto senden da meine Handykamera kaputt gegangen ist, ich muss mir erstmal ein neues Handy kaufen. Willst du mir mal er",
-      "successCount": 12,
-      "lastUsed": "2026-01-06T14:30:17.826Z"
+      "successCount": 13,
+      "lastUsed": "2026-01-06T14:30:19.091Z"
     },
     {
       "situation": "Bot-Vorwurf",
@@ -4217,7 +4217,7 @@
       "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-06T14:30:17.826Z",
+  "lastUpdated": "2026-01-06T14:30:19.091Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4264,6 +4264,15 @@
       "lastUsed": "2026-01-06T14:30:09.494Z"
     },
     {
+      "text": "Mehr sex-gespräch, weniger vorlieben vom kunde bewerten, bessere frage",
+      "count": 3,
+      "situations": [
+        "allgemein",
+        "Sexuelle Themen"
+      ],
+      "lastUsed": "2026-01-06T14:30:19.091Z"
+    },
+    {
       "text": "Sei kurz, präzise und direkt",
       "count": 2,
       "situations": [
@@ -4279,15 +4288,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T14:25:25.561Z"
-    },
-    {
-      "text": "Mehr sex-gespräch, weniger vorlieben vom kunde bewerten, bessere frage",
-      "count": 2,
-      "situations": [
-        "allgemein",
-        "Sexuelle Themen"
-      ],
-      "lastUsed": "2026-01-06T14:30:17.826Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -4795,6 +4795,7 @@
           137,
           207,
           207,
+          159,
           159
         ],
         "exclamationMarks": [
@@ -4810,6 +4811,7 @@
           0,
           0,
           0,
+          1,
           1
         ],
         "questions": [
@@ -4825,33 +4827,34 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 13,
-        "avgLength": 166,
+        "count": 14,
+        "avgLength": 165,
         "minLength": 124,
         "maxLength": 227,
-        "medianLength": 152,
-        "avgExclamationMarks": 0.2,
+        "medianLength": 159,
+        "avgExclamationMarks": 0.3,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 2,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.2,
+        "avgQuestions": 1.1,
         "minQuestions": 1,
         "maxQuestions": 2,
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 38,
-          "150-200": 31,
-          "200-250": 31,
+          "120-150": 36,
+          "150-200": 36,
+          "200-250": 29,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 85,
-          "2": 15,
+          "1": 86,
+          "2": 14,
           "3+": 0
         }
       },
