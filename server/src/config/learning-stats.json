@@ -45,7 +45,7 @@
       "successRate": 0
     },
     "würde gerne": {
-      "count": 5,
+      "count": 6,
       "successRate": 0
     },
     "würdest du das am liebsten machen wollen?": {
@@ -59,7 +59,7 @@
       "bad": 6
     },
     "sich": {
-      "good": 34,
+      "good": 35,
       "bad": 24
     },
     "sehr": {
@@ -123,11 +123,11 @@
       "bad": 20
     },
     "kaffee": {
-      "good": 5,
+      "good": 6,
       "bad": 28
     },
     "wie": {
-      "good": 64,
+      "good": 65,
       "bad": 68
     },
     "stellst": {
@@ -267,11 +267,11 @@
       "bad": 138
     },
     "denn": {
-      "good": 128,
+      "good": 129,
       "bad": 40
     },
     "gerne": {
-      "good": 50,
+      "good": 52,
       "bad": 39
     },
     "wollen": {
@@ -419,7 +419,7 @@
       "bad": 0
     },
     "würde": {
-      "good": 21,
+      "good": 22,
       "bad": 18
     },
     "meine": {
@@ -547,7 +547,7 @@
       "bad": 4
     },
     "alles": {
-      "good": 8,
+      "good": 9,
       "bad": 9
     },
     "neu": {
@@ -647,7 +647,7 @@
       "bad": 2
     },
     "deinen": {
-      "good": 10,
+      "good": 11,
       "bad": 7
     },
     "wunsch": {
@@ -683,7 +683,7 @@
       "bad": 9
     },
     "gut": {
-      "good": 30,
+      "good": 31,
       "bad": 23
     },
     "eigentlich": {
@@ -1051,7 +1051,7 @@
       "bad": 10
     },
     "schon": {
-      "good": 37,
+      "good": 38,
       "bad": 9
     },
     "noch": {
@@ -1559,7 +1559,7 @@
       "bad": 16
     },
     "kommen": {
-      "good": 8,
+      "good": 9,
       "bad": 0
     },
     "nähe": {
@@ -2231,7 +2231,7 @@
       "bad": 0
     },
     "trinkst": {
-      "good": 6,
+      "good": 7,
       "bad": 0
     },
     "beobachten": {
@@ -2263,7 +2263,7 @@
       "bad": 0
     },
     "leider": {
-      "good": 9,
+      "good": 10,
       "bad": 2
     },
     "dienstag": {
@@ -2439,7 +2439,7 @@
       "bad": 1
     },
     "spontan": {
-      "good": 6,
+      "good": 7,
       "bad": 0
     },
     "maximilian": {
@@ -3799,7 +3799,7 @@
       "bad": 2
     },
     "erledigt": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "heheich": {
@@ -3807,7 +3807,7 @@
       "bad": 0
     },
     "vorbei": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "läuft": {
@@ -3823,7 +3823,7 @@
       "bad": 4
     },
     "hehe": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "stehe": {
@@ -3893,8 +3893,8 @@
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 162,
-      "total": 292
+      "good": 163,
+      "total": 293
     },
     "Bot-Vorwurf": {
       "good": 9,
@@ -3953,8 +3953,8 @@
         "length": 59
       },
       "goodResponse": "Ich wünsche dir auch noch ein frohes neues Jahr, danke. Das hoffe ich auch das wir gemeinsame Wege gehen werden und das wäre bestimmt ein echt toller Abend mit dir zusammen geworden.🙂 Ich bin ganz gu",
-      "successCount": 41,
-      "lastUsed": "2026-01-06T14:30:49.656Z"
+      "successCount": 42,
+      "lastUsed": "2026-01-06T14:30:50.787Z"
     },
     {
       "situation": "Sexuelle Themen",
@@ -4230,9 +4230,18 @@
       "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-06T14:30:49.656Z",
+  "lastUpdated": "2026-01-06T14:30:50.787Z",
   "initialized": true,
   "reasoningPrinciples": [
+    {
+      "text": "Auf die nachricht drauf eingegnagen, ihm gesagt das es heute zu spontan ist und ihn gefragt wie er gerne seinen KAffee trinkt",
+      "count": 6,
+      "situations": [
+        "allgemein",
+        "Berufsfrage"
+      ],
+      "lastUsed": "2026-01-06T14:30:50.787Z"
+    },
     {
       "text": "\"Wenn wir uns endlich sehen\" Klingt wieder zu sehr danach als ob man dem Kunde verpsricht das es passieren wird",
       "count": 5,
@@ -4241,15 +4250,6 @@
         "Sexuelle Themen"
       ],
       "lastUsed": "2026-01-06T00:37:57.465Z"
-    },
-    {
-      "text": "Auf die nachricht drauf eingegnagen, ihm gesagt das es heute zu spontan ist und ihn gefragt wie er gerne seinen KAffee trinkt",
-      "count": 5,
-      "situations": [
-        "allgemein",
-        "Berufsfrage"
-      ],
-      "lastUsed": "2026-01-06T14:30:49.656Z"
     },
     {
       "text": "Nich viel verändert, nur denn ersten satz entfernt weil die nachricht des Kunden zu sehr bewertet wurde",
@@ -4554,6 +4554,7 @@
           112,
           145,
           145,
+          144,
           144
         ],
         "exclamationMarks": [
@@ -4593,6 +4594,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4642,9 +4644,10 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 42,
+        "count": 43,
         "avgLength": 154,
         "minLength": 106,
         "maxLength": 232,
@@ -4659,16 +4662,16 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 29,
-          "120-150": 24,
-          "150-200": 43,
+          "100-120": 28,
+          "120-150": 26,
+          "150-200": 42,
           "200-250": 5,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
           "1": 88,
-          "2": 10,
+          "2": 9,
           "3+": 2
         }
       },
@@ -5302,8 +5305,8 @@
       "pattern": "eigene_erfahrung",
       "situation": "allgemein",
       "example": "Ja alles gut hat sich schon erledigt heheich würde gerne vorbei kommen aber leider ist das zu spontan, wie trinkst du denn gerne deinen Kaffee?",
-      "count": 3,
-      "lastUsed": "2026-01-06T14:30:49.656Z"
+      "count": 4,
+      "lastUsed": "2026-01-06T14:30:50.786Z"
     },
     {
       "pattern": "eigene_erfahrung",
