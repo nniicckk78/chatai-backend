@@ -37,7 +37,7 @@
       "successRate": 0
     },
     "das wäre": {
-      "count": 4,
+      "count": 5,
       "successRate": 0
     },
     "wäre es": {
@@ -103,7 +103,7 @@
       "bad": 21
     },
     "hätte": {
-      "good": 0,
+      "good": 1,
       "bad": 22
     },
     "definitiv": {
@@ -123,11 +123,11 @@
       "bad": 20
     },
     "kaffee": {
-      "good": 8,
+      "good": 9,
       "bad": 32
     },
     "wie": {
-      "good": 67,
+      "good": 68,
       "bad": 68
     },
     "stellst": {
@@ -231,7 +231,7 @@
       "bad": 0
     },
     "mich": {
-      "good": 46,
+      "good": 47,
       "bad": 38
     },
     "wohl": {
@@ -267,7 +267,7 @@
       "bad": 142
     },
     "denn": {
-      "good": 132,
+      "good": 133,
       "bad": 42
     },
     "gerne": {
@@ -279,7 +279,7 @@
       "bad": 0
     },
     "wieder": {
-      "good": 3,
+      "good": 4,
       "bad": 20
     },
     "entfachen": {
@@ -291,7 +291,7 @@
       "bad": 16
     },
     "einfach": {
-      "good": 29,
+      "good": 30,
       "bad": 28
     },
     "gibst": {
@@ -495,7 +495,7 @@
       "bad": 1
     },
     "wäre": {
-      "good": 14,
+      "good": 15,
       "bad": 19
     },
     "perfektes": {
@@ -647,7 +647,7 @@
       "bad": 2
     },
     "deinen": {
-      "good": 13,
+      "good": 14,
       "bad": 7
     },
     "wunsch": {
@@ -867,7 +867,7 @@
       "bad": 2
     },
     "sowas": {
-      "good": 5,
+      "good": 6,
       "bad": 0
     },
     "direkt": {
@@ -895,7 +895,7 @@
       "bad": 0
     },
     "mal": {
-      "good": 26,
+      "good": 28,
       "bad": 26
     },
     "sehen": {
@@ -1059,7 +1059,7 @@
       "bad": 12
     },
     "wenig": {
-      "good": 4,
+      "good": 5,
       "bad": 0
     },
     "ber": {
@@ -1099,7 +1099,7 @@
       "bad": 2
     },
     "man": {
-      "good": 2,
+      "good": 3,
       "bad": 12
     },
     "reden": {
@@ -1319,11 +1319,11 @@
       "bad": 3
     },
     "bleiben": {
-      "good": 0,
+      "good": 1,
       "bad": 2
     },
     "heute": {
-      "good": 9,
+      "good": 10,
       "bad": 10
     },
     "schönes": {
@@ -1351,7 +1351,7 @@
       "bad": 0
     },
     "danke": {
-      "good": 14,
+      "good": 15,
       "bad": 10
     },
     "attraktiv": {
@@ -1395,7 +1395,7 @@
       "bad": 0
     },
     "halt": {
-      "good": 1,
+      "good": 2,
       "bad": 0
     },
     "funktioniert": {
@@ -1671,7 +1671,7 @@
       "bad": 0
     },
     "jetzt": {
-      "good": 20,
+      "good": 21,
       "bad": 1
     },
     "beantwortet": {
@@ -2071,11 +2071,11 @@
       "bad": 3
     },
     "tag": {
-      "good": 1,
+      "good": 2,
       "bad": 3
     },
     "liebsten": {
-      "good": 5,
+      "good": 6,
       "bad": 11
     },
     "komme": {
@@ -2231,7 +2231,7 @@
       "bad": 0
     },
     "trinkst": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "beobachten": {
@@ -2439,7 +2439,7 @@
       "bad": 1
     },
     "spontan": {
-      "good": 9,
+      "good": 10,
       "bad": 0
     },
     "maximilian": {
@@ -3035,7 +3035,7 @@
       "bad": 0
     },
     "sollte": {
-      "good": 2,
+      "good": 3,
       "bad": 1
     },
     "abgeneigt": {
@@ -3607,7 +3607,7 @@
       "bad": 0
     },
     "angebot": {
-      "good": 3,
+      "good": 4,
       "bad": 0
     },
     "konkreten": {
@@ -3913,12 +3913,28 @@
     "themawechseln": {
       "good": 1,
       "bad": 0
+    },
+    "ausruhen": {
+      "good": 1,
+      "bad": 0
+    },
+    "hause": {
+      "good": 1,
+      "bad": 0
+    },
+    "sollen": {
+      "good": 1,
+      "bad": 0
+    },
+    "gibts": {
+      "good": 1,
+      "bad": 0
     }
   },
   "situationSuccess": {
     "allgemein": {
-      "good": 166,
-      "total": 296
+      "good": 167,
+      "total": 297
     },
     "Bot-Vorwurf": {
       "good": 9,
@@ -3937,8 +3953,8 @@
       "total": 6
     },
     "Treffen/Termine": {
-      "good": 15,
-      "total": 25
+      "good": 16,
+      "total": 26
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -3980,9 +3996,9 @@
         "hasSexual": false,
         "length": 59
       },
-      "goodResponse": "Ich wünsche dir auch noch ein frohes neues Jahr, danke. Das hoffe ich auch das wir gemeinsame Wege gehen werden und das wäre bestimmt ein echt toller Abend mit dir zusammen geworden.🙂 Ich bin ganz gu",
-      "successCount": 45,
-      "lastUsed": "2026-01-06T14:32:00.623Z"
+      "goodResponse": "Danke für das Angebot aber das wäre mir jetzt zu spontan und ich sollte mich mal ein wenig ausruhen. Heute war wieder so ein Tag wo man einfach hätte zu Hause bleiben sollen. Aber sowas gibts halt mal",
+      "successCount": 46,
+      "lastUsed": "2026-01-06T14:32:01.740Z"
     },
     {
       "situation": "Sexuelle Themen",
@@ -4050,6 +4066,19 @@
       "lastUsed": "2026-01-06T01:07:46.380Z"
     },
     {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "hallo mein was los warum bist besorgt was kleine schwierigkeiten",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 327
+      },
+      "goodResponse": "Danke für das Angebot aber das wäre mir jetzt zu spontan und ich sollte mich mal ein wenig ausruhen. Heute war wieder so ein Tag wo man einfach hätte zu Hause bleiben sollen. Aber sowas gibts halt mal",
+      "successCount": 4,
+      "lastUsed": "2026-01-06T14:32:01.740Z"
+    },
+    {
       "situation": "allgemein",
       "customerPattern": {
         "keywords": "sollten nicht erstmal kennenlernen dann sehen kompatibel wenn dann schon",
@@ -4100,19 +4129,6 @@
       "goodResponse": "Ja dann hoffe ich mal das meine Bilder dir gefallen haben. Also die Vorstellung gefällt mir ja schon gut dich mal als meine Sexpuppe zu benutzen. Aber wie stellst du dir das vor, wie würde das dann ab",
       "successCount": 3,
       "lastUsed": "2026-01-06T12:05:01.446Z"
-    },
-    {
-      "situation": "Treffen/Termine",
-      "customerPattern": {
-        "keywords": "hallo mein was los warum bist besorgt was kleine schwierigkeiten",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 327
-      },
-      "goodResponse": "Es geht mittlerweile schon wieder trotzdem danke. Du kennst das bestimmt, an manchen Tagen läuft einfach nichts. Ich brauch einen Themawechseln, was machst du denn heute noch so schönes?",
-      "successCount": 3,
-      "lastUsed": "2026-01-06T14:32:00.623Z"
     },
     {
       "situation": "Bilder Anfrage",
@@ -4271,7 +4287,7 @@
       "lastUsed": "2026-01-05T22:02:35.166Z"
     }
   ],
-  "lastUpdated": "2026-01-06T14:32:00.623Z",
+  "lastUpdated": "2026-01-06T14:32:01.740Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -4600,7 +4616,8 @@
           144,
           144,
           186,
-          144
+          144,
+          248
         ],
         "exclamationMarks": [
           1,
@@ -4639,6 +4656,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -4696,12 +4714,13 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 46,
-        "avgLength": 154,
+        "count": 47,
+        "avgLength": 156,
         "minLength": 106,
-        "maxLength": 232,
+        "maxLength": 248,
         "medianLength": 145,
         "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
@@ -4715,8 +4734,8 @@
           "0-100": 0,
           "100-120": 26,
           "120-150": 28,
-          "150-200": 41,
-          "200-250": 4,
+          "150-200": 40,
+          "200-250": 6,
           "250+": 0
         },
         "questionDistribution": {
