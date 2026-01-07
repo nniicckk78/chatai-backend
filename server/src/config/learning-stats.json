@@ -2,7 +2,7 @@
   "patterns": {
     "allgemein": {
       "würdest du": {
-        "count": 67,
+        "count": 68,
         "successRate": 0
       },
       "würdest du mir dann einen machen?": {
@@ -18,7 +18,7 @@
         "successRate": 0
       },
       "finde ich": {
-        "count": 6,
+        "count": 7,
         "successRate": 0
       },
       "würde es": {
@@ -112,12 +112,12 @@
         "bad": 0
       },
       "würdest": {
-        "good": 74,
-        "bad": 43
+        "good": 75,
+        "bad": 46
       },
       "machen": {
-        "good": 63,
-        "bad": 22
+        "good": 64,
+        "bad": 23
       },
       "hätte": {
         "good": 1,
@@ -145,7 +145,7 @@
       },
       "wie": {
         "good": 79,
-        "bad": 71
+        "bad": 72
       },
       "stellst": {
         "good": 3,
@@ -249,7 +249,7 @@
       },
       "mich": {
         "good": 47,
-        "bad": 47
+        "bad": 49
       },
       "wohl": {
         "good": 19,
@@ -280,19 +280,19 @@
         "bad": 0
       },
       "was": {
-        "good": 132,
-        "bad": 157
+        "good": 133,
+        "bad": 158
       },
       "denn": {
-        "good": 143,
+        "good": 144,
         "bad": 48
       },
       "gerne": {
         "good": 61,
-        "bad": 47
+        "bad": 49
       },
       "wollen": {
-        "good": 31,
+        "good": 32,
         "bad": 1
       },
       "wieder": {
@@ -305,7 +305,7 @@
       },
       "vorstellen": {
         "good": 22,
-        "bad": 16
+        "bad": 17
       },
       "einfach": {
         "good": 34,
@@ -380,7 +380,7 @@
         "bad": 20
       },
       "finde": {
-        "good": 14,
+        "good": 15,
         "bad": 60
       },
       "grossartig": {
@@ -445,14 +445,14 @@
       },
       "muschi": {
         "good": 5,
-        "bad": 4
+        "bad": 5
       },
       "richtig": {
-        "good": 28,
-        "bad": 22
+        "good": 30,
+        "bad": 24
       },
       "feucht": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "kannst": {
@@ -461,7 +461,7 @@
       },
       "schön": {
         "good": 13,
-        "bad": 12
+        "bad": 13
       },
       "lecken": {
         "good": 4,
@@ -564,7 +564,7 @@
         "bad": 4
       },
       "alles": {
-        "good": 12,
+        "good": 13,
         "bad": 10
       },
       "neu": {
@@ -628,7 +628,7 @@
         "bad": 1
       },
       "werde": {
-        "good": 10,
+        "good": 11,
         "bad": 0
       },
       "jeden": {
@@ -680,8 +680,8 @@
         "bad": 2
       },
       "geil": {
-        "good": 14,
-        "bad": 21
+        "good": 15,
+        "bad": 22
       },
       "liebe": {
         "good": 2,
@@ -701,7 +701,7 @@
       },
       "gut": {
         "good": 38,
-        "bad": 26
+        "bad": 27
       },
       "eigentlich": {
         "good": 20,
@@ -821,7 +821,7 @@
       },
       "macht": {
         "good": 2,
-        "bad": 17
+        "bad": 18
       },
       "intensiver": {
         "good": 0,
@@ -1068,12 +1068,12 @@
         "bad": 10
       },
       "schon": {
-        "good": 44,
+        "good": 45,
         "bad": 11
       },
       "noch": {
-        "good": 33,
-        "bad": 12
+        "good": 34,
+        "bad": 13
       },
       "wenig": {
         "good": 5,
@@ -1800,11 +1800,11 @@
         "bad": 0
       },
       "allein": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "vorstellung": {
-        "good": 5,
+        "good": 6,
         "bad": 5
       },
       "bestimmte": {
@@ -1901,7 +1901,7 @@
       },
       "ficken": {
         "good": 2,
-        "bad": 0
+        "bad": 1
       },
       "wow": {
         "good": 0,
@@ -3169,7 +3169,7 @@
       },
       "erleben": {
         "good": 0,
-        "bad": 2
+        "bad": 3
       },
       "kennenlernst": {
         "good": 0,
@@ -4098,6 +4098,14 @@
       "interessiere": {
         "good": 0,
         "bad": 1
+      },
+      "unten": {
+        "good": 1,
+        "bad": 0
+      },
+      "rum": {
+        "good": 1,
+        "bad": 0
       }
     },
     "Treffen/Termine": {
@@ -4570,7 +4578,7 @@
   "situationSuccess": {
     "allgemein": {
       "good": 171,
-      "total": 314
+      "total": 315
     },
     "Bot-Vorwurf": {
       "good": 10,
@@ -4936,7 +4944,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-06T18:32:22.338Z",
+  "lastUpdated": "2026-01-07T10:02:02.210Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5188,6 +5196,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-06T18:32:22.337Z"
+    },
+    {
+      "text": "Den Anfang deiner Nachricht würde so kein Mnesch schreiben",
+      "count": 1,
+      "situations": [
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-07T10:02:02.209Z"
     }
   ],
   "messageStats": {
@@ -5343,7 +5359,8 @@
           123,
           180,
           113,
-          117
+          117,
+          154
         ],
         "exclamationMarks": [
           1,
@@ -5382,6 +5399,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -5479,9 +5497,10 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 66,
+        "count": 67,
         "avgLength": 153,
         "minLength": 106,
         "maxLength": 248,
@@ -5497,16 +5516,16 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 21,
-          "120-150": 38,
-          "150-200": 36,
-          "200-250": 5,
+          "120-150": 37,
+          "150-200": 37,
+          "200-250": 4,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
           "1": 82,
-          "2": 17,
-          "3+": 2
+          "2": 16,
+          "3+": 1
         }
       },
       "negative": {
@@ -5560,9 +5579,11 @@
           276,
           153,
           160,
-          277
+          277,
+          194
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -5664,9 +5685,10 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 50,
+        "count": 51,
         "avgLength": 208,
         "minLength": 115,
         "maxLength": 298,
@@ -5683,13 +5705,13 @@
           "0-100": 0,
           "100-120": 8,
           "120-150": 6,
-          "150-200": 28,
-          "200-250": 28,
-          "250+": 30
+          "150-200": 29,
+          "200-250": 27,
+          "250+": 29
         },
         "questionDistribution": {
           "0": 10,
-          "1": 72,
+          "1": 73,
           "2": 18,
           "3+": 0
         }
