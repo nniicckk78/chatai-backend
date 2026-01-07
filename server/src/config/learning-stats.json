@@ -4717,6 +4717,140 @@
         "good": 0,
         "bad": 1
       }
+    },
+    "Generische ASA (Neukunde)": {
+      "huhu": {
+        "good": 1,
+        "bad": 0
+      },
+      "bist": {
+        "good": 1,
+        "bad": 0
+      },
+      "noch": {
+        "good": 1,
+        "bad": 0
+      },
+      "würde": {
+        "good": 1,
+        "bad": 0
+      },
+      "mich": {
+        "good": 1,
+        "bad": 0
+      },
+      "freuen": {
+        "good": 1,
+        "bad": 0
+      },
+      "wenn": {
+        "good": 1,
+        "bad": 0
+      },
+      "dich": {
+        "good": 1,
+        "bad": 1
+      },
+      "mal": {
+        "good": 1,
+        "bad": 1
+      },
+      "melden": {
+        "good": 1,
+        "bad": 0
+      },
+      "könntest": {
+        "good": 1,
+        "bad": 0
+      },
+      "hast": {
+        "good": 1,
+        "bad": 0
+      },
+      "kein": {
+        "good": 1,
+        "bad": 0
+      },
+      "interesse": {
+        "good": 1,
+        "bad": 0
+      },
+      "mehr": {
+        "good": 1,
+        "bad": 0
+      },
+      "wie": {
+        "good": 1,
+        "bad": 0
+      },
+      "hey": {
+        "good": 0,
+        "bad": 1
+      },
+      "stefan": {
+        "good": 0,
+        "bad": 1
+      },
+      "hoffe": {
+        "good": 0,
+        "bad": 1
+      },
+      "geht": {
+        "good": 0,
+        "bad": 1
+      },
+      "gut": {
+        "good": 0,
+        "bad": 1
+      },
+      "was": {
+        "good": 0,
+        "bad": 2
+      },
+      "beschäftigt": {
+        "good": 0,
+        "bad": 1
+      },
+      "gerade": {
+        "good": 0,
+        "bad": 1
+      },
+      "bin": {
+        "good": 0,
+        "bad": 1
+      },
+      "neugierig": {
+        "good": 0,
+        "bad": 1
+      },
+      "machst": {
+        "good": 0,
+        "bad": 1
+      },
+      "etwas": {
+        "good": 0,
+        "bad": 1
+      },
+      "neues": {
+        "good": 0,
+        "bad": 1
+      },
+      "deinem": {
+        "good": 0,
+        "bad": 1
+      },
+      "leben": {
+        "good": 0,
+        "bad": 1
+      },
+      "gibt": {
+        "good": 0,
+        "bad": 1
+      },
+      "erzähl": {
+        "good": 0,
+        "bad": 1
+      }
     }
   },
   "situationSuccess": {
@@ -4759,6 +4893,10 @@
     "allgemein, Treffen/Termine": {
       "good": 0,
       "total": 3
+    },
+    "Generische ASA (Neukunde)": {
+      "good": 1,
+      "total": 2
     }
   },
   "responsePatterns": [
@@ -5086,9 +5224,22 @@
       "goodResponse": "Gut da bin ich ja jetzt schonmal erleichert. 🙂 Und wie war denn so dein Start in das neue Jahr? Warst du mit der Familie oder Freunden?",
       "successCount": 1,
       "lastUsed": "2026-01-06T17:13:38.718Z"
+    },
+    {
+      "situation": "Generische ASA (Neukunde)",
+      "customerPattern": {
+        "keywords": "asa reaktivierung",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 17
+      },
+      "goodResponse": "Huhu bist du noch da? Würde mich freuen wenn du dich mal melden könntest, hast du kein Interesse mehr oder wie ist das?",
+      "successCount": 1,
+      "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-07T10:07:10.183Z",
+  "lastUpdated": "2026-01-07T11:17:31.978Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5356,6 +5507,14 @@
         "Treffen/Termine"
       ],
       "lastUsed": "2026-01-07T10:07:10.182Z"
+    },
+    {
+      "text": "Bessere Animation",
+      "count": 1,
+      "situations": [
+        "Generische ASA (Neukunde)"
+      ],
+      "lastUsed": "2026-01-07T11:17:31.977Z"
     }
   ],
   "messageStats": {
@@ -6375,6 +6534,84 @@
           "120-150": 0,
           "150-200": 0,
           "200-250": 100,
+          "250+": 0
+        },
+        "questionDistribution": {
+          "0": 0,
+          "1": 100,
+          "2": 0,
+          "3+": 0
+        }
+      }
+    },
+    "Generische ASA (Neukunde)": {
+      "positive": {
+        "lengths": [
+          119
+        ],
+        "exclamationMarks": [
+          0
+        ],
+        "questions": [
+          2
+        ],
+        "count": 1,
+        "avgLength": 119,
+        "minLength": 119,
+        "maxLength": 119,
+        "medianLength": 119,
+        "avgExclamationMarks": 0,
+        "minExclamationMarks": 0,
+        "maxExclamationMarks": 0,
+        "medianExclamationMarks": 0,
+        "avgQuestions": 2,
+        "minQuestions": 2,
+        "maxQuestions": 2,
+        "medianQuestions": 2,
+        "lengthDistribution": {
+          "0-100": 0,
+          "100-120": 100,
+          "120-150": 0,
+          "150-200": 0,
+          "200-250": 0,
+          "250+": 0
+        },
+        "questionDistribution": {
+          "0": 0,
+          "1": 0,
+          "2": 100,
+          "3+": 0
+        }
+      },
+      "negative": {
+        "lengths": [
+          160
+        ],
+        "exclamationMarks": [
+          0
+        ],
+        "questions": [
+          1
+        ],
+        "count": 1,
+        "avgLength": 160,
+        "minLength": 160,
+        "maxLength": 160,
+        "medianLength": 160,
+        "avgExclamationMarks": 0,
+        "minExclamationMarks": 0,
+        "maxExclamationMarks": 0,
+        "medianExclamationMarks": 0,
+        "avgQuestions": 1,
+        "minQuestions": 1,
+        "maxQuestions": 1,
+        "medianQuestions": 1,
+        "lengthDistribution": {
+          "0-100": 0,
+          "100-120": 0,
+          "120-150": 0,
+          "150-200": 100,
+          "200-250": 0,
           "250+": 0
         },
         "questionDistribution": {
