@@ -92,7 +92,7 @@
         "bad": 2
       },
       "dann": {
-        "good": 88,
+        "good": 89,
         "bad": 5
       },
       "irgendwo": {
@@ -112,11 +112,11 @@
         "bad": 0
       },
       "würdest": {
-        "good": 75,
+        "good": 76,
         "bad": 46
       },
       "machen": {
-        "good": 64,
+        "good": 65,
         "bad": 23
       },
       "hätte": {
@@ -160,7 +160,7 @@
         "bad": 21
       },
       "genau": {
-        "good": 37,
+        "good": 38,
         "bad": 47
       },
       "gibt": {
@@ -181,11 +181,11 @@
       },
       "kopf": {
         "good": 5,
-        "bad": 26
+        "bad": 27
       },
       "hast": {
-        "good": 48,
-        "bad": 67
+        "good": 49,
+        "bad": 68
       },
       "verstehen": {
         "good": 24,
@@ -280,15 +280,15 @@
         "bad": 0
       },
       "was": {
-        "good": 133,
-        "bad": 158
+        "good": 134,
+        "bad": 160
       },
       "denn": {
-        "good": 144,
-        "bad": 48
+        "good": 145,
+        "bad": 49
       },
       "gerne": {
-        "good": 61,
+        "good": 62,
         "bad": 49
       },
       "wollen": {
@@ -308,7 +308,7 @@
         "bad": 17
       },
       "einfach": {
-        "good": 34,
+        "good": 35,
         "bad": 29
       },
       "gibst": {
@@ -513,7 +513,7 @@
       },
       "wäre": {
         "good": 15,
-        "bad": 19
+        "bad": 20
       },
       "perfektes": {
         "good": 0,
@@ -845,7 +845,7 @@
       },
       "passt": {
         "good": 6,
-        "bad": 0
+        "bad": 1
       },
       "doch": {
         "good": 18,
@@ -957,11 +957,11 @@
       },
       "bin": {
         "good": 33,
-        "bad": 26
+        "bad": 27
       },
       "gemeinsam": {
         "good": 2,
-        "bad": 3
+        "bad": 4
       },
       "aufregend": {
         "good": 0,
@@ -1017,11 +1017,11 @@
       },
       "lass": {
         "good": 3,
-        "bad": 3
+        "bad": 4
       },
       "schauen": {
-        "good": 4,
-        "bad": 1
+        "good": 5,
+        "bad": 2
       },
       "ergibt": {
         "good": 0,
@@ -1068,7 +1068,7 @@
         "bad": 10
       },
       "schon": {
-        "good": 45,
+        "good": 46,
         "bad": 11
       },
       "noch": {
@@ -1481,7 +1481,7 @@
       },
       "klar": {
         "good": 8,
-        "bad": 9
+        "bad": 10
       },
       "jemanden": {
         "good": 0,
@@ -1941,7 +1941,7 @@
       },
       "wann": {
         "good": 4,
-        "bad": 2
+        "bad": 3
       },
       "hättest": {
         "good": 1,
@@ -1965,7 +1965,7 @@
       },
       "beide": {
         "good": 5,
-        "bad": 2
+        "bad": 3
       },
       "schn": {
         "good": 1,
@@ -2093,7 +2093,7 @@
       },
       "liebsten": {
         "good": 6,
-        "bad": 13
+        "bad": 14
       },
       "komme": {
         "good": 5,
@@ -2265,7 +2265,7 @@
       },
       "besten": {
         "good": 2,
-        "bad": 0
+        "bad": 1
       },
       "her": {
         "good": 2,
@@ -2716,7 +2716,7 @@
         "bad": 1
       },
       "idee": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "schwebt": {
@@ -3061,7 +3061,7 @@
       },
       "offen": {
         "good": 1,
-        "bad": 4
+        "bad": 5
       },
       "schau": {
         "good": 0,
@@ -4106,6 +4106,14 @@
       "rum": {
         "good": 1,
         "bad": 0
+      },
+      "flexibel": {
+        "good": 0,
+        "bad": 1
+      },
+      "vorschläge": {
+        "good": 0,
+        "bad": 1
       }
     },
     "Treffen/Termine": {
@@ -4856,7 +4864,7 @@
   "situationSuccess": {
     "allgemein": {
       "good": 171,
-      "total": 315
+      "total": 316
     },
     "Bot-Vorwurf": {
       "good": 10,
@@ -5239,7 +5247,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-07T11:17:31.978Z",
+  "lastUpdated": "2026-01-07T13:32:58.654Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5515,6 +5523,14 @@
         "Generische ASA (Neukunde)"
       ],
       "lastUsed": "2026-01-07T11:17:31.977Z"
+    },
+    {
+      "text": "Etwas abgelenkt vom Tag raussuchen des treffens und mehr darauf eingangen, was er gerne machen würde",
+      "count": 1,
+      "situations": [
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-07T13:32:58.653Z"
     }
   ],
   "messageStats": {
@@ -5671,7 +5687,8 @@
           180,
           113,
           117,
-          154
+          154,
+          91
         ],
         "exclamationMarks": [
           1,
@@ -5710,6 +5727,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -5809,11 +5827,12 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 67,
-        "avgLength": 153,
-        "minLength": 106,
+        "count": 68,
+        "avgLength": 152,
+        "minLength": 91,
         "maxLength": 248,
         "medianLength": 144,
         "avgExclamationMarks": 0.1,
@@ -5825,7 +5844,7 @@
         "maxQuestions": 3,
         "medianQuestions": 1,
         "lengthDistribution": {
-          "0-100": 0,
+          "0-100": 1,
           "100-120": 21,
           "120-150": 37,
           "150-200": 37,
@@ -5891,9 +5910,11 @@
           153,
           160,
           277,
-          194
+          194,
+          167
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -5997,10 +6018,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 51,
-        "avgLength": 208,
+        "count": 52,
+        "avgLength": 207,
         "minLength": 115,
         "maxLength": 298,
         "medianLength": 200,
@@ -6016,14 +6038,14 @@
           "0-100": 0,
           "100-120": 8,
           "120-150": 6,
-          "150-200": 29,
+          "150-200": 31,
           "200-250": 27,
           "250+": 29
         },
         "questionDistribution": {
           "0": 10,
           "1": 73,
-          "2": 18,
+          "2": 17,
           "3+": 0
         }
       }
