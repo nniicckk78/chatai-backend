@@ -67,6 +67,12 @@
         "count": 1,
         "successRate": 0
       }
+    },
+    "Treffen/Termine": {
+      "würde es": {
+        "count": 1,
+        "successRate": 0
+      }
     }
   },
   "wordFrequency": {
@@ -4150,7 +4156,7 @@
         "bad": 0
       },
       "besser": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "alle": {
@@ -4163,7 +4169,7 @@
       },
       "was": {
         "good": 4,
-        "bad": 3
+        "bad": 4
       },
       "hast": {
         "good": 3,
@@ -4171,7 +4177,7 @@
       },
       "denn": {
         "good": 3,
-        "bad": 2
+        "bad": 3
       },
       "kopf": {
         "good": 2,
@@ -4179,7 +4185,7 @@
       },
       "zusammen": {
         "good": 2,
-        "bad": 0
+        "bad": 1
       },
       "machen": {
         "good": 2,
@@ -4211,7 +4217,7 @@
       },
       "heiss": {
         "good": 0,
-        "bad": 2
+        "bad": 3
       },
       "darauf": {
         "good": 0,
@@ -4235,7 +4241,7 @@
       },
       "würdest": {
         "good": 0,
-        "bad": 2
+        "bad": 3
       },
       "als": {
         "good": 0,
@@ -4254,12 +4260,12 @@
         "bad": 2
       },
       "wenn": {
-        "good": 1,
-        "bad": 2
+        "good": 3,
+        "bad": 3
       },
       "treffen": {
         "good": 0,
-        "bad": 2
+        "bad": 3
       },
       "hey": {
         "good": 1,
@@ -4318,7 +4324,7 @@
         "bad": 0
       },
       "noch": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "lust": {
@@ -4326,7 +4332,7 @@
         "bad": 0
       },
       "mich": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "hoffe": {
@@ -4371,7 +4377,7 @@
       },
       "finde": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "idee": {
         "good": 0,
@@ -4402,6 +4408,134 @@
         "bad": 1
       },
       "aussehen": {
+        "good": 0,
+        "bad": 1
+      },
+      "freut": {
+        "good": 1,
+        "bad": 0
+      },
+      "hören": {
+        "good": 1,
+        "bad": 0
+      },
+      "genau": {
+        "good": 1,
+        "bad": 1
+      },
+      "sage": {
+        "good": 1,
+        "bad": 0
+      },
+      "kennen": {
+        "good": 1,
+        "bad": 0
+      },
+      "denkst": {
+        "good": 1,
+        "bad": 0
+      },
+      "gemeinsam": {
+        "good": 1,
+        "bad": 0
+      },
+      "badewanne": {
+        "good": 1,
+        "bad": 0
+      },
+      "wären": {
+        "good": 1,
+        "bad": 0
+      },
+      "würde": {
+        "good": 1,
+        "bad": 0
+      },
+      "nur": {
+        "good": 1,
+        "bad": 0
+      },
+      "beim": {
+        "good": 1,
+        "bad": 0
+      },
+      "baden": {
+        "good": 1,
+        "bad": 0
+      },
+      "bleiben": {
+        "good": 1,
+        "bad": 0
+      },
+      "vorstellung": {
+        "good": 0,
+        "bad": 1
+      },
+      "bad": {
+        "good": 0,
+        "bad": 1
+      },
+      "nehmen": {
+        "good": 0,
+        "bad": 1
+      },
+      "dabei": {
+        "good": 0,
+        "bad": 1
+      },
+      "intim": {
+        "good": 0,
+        "bad": 1
+      },
+      "werden": {
+        "good": 0,
+        "bad": 2
+      },
+      "richtig": {
+        "good": 0,
+        "bad": 1
+      },
+      "liebe": {
+        "good": 0,
+        "bad": 1
+      },
+      "verwöhnt": {
+        "good": 0,
+        "bad": 1
+      },
+      "gerne": {
+        "good": 0,
+        "bad": 1
+      },
+      "alles": {
+        "good": 0,
+        "bad": 1
+      },
+      "zeigen": {
+        "good": 0,
+        "bad": 1
+      },
+      "wohne": {
+        "good": 0,
+        "bad": 1
+      },
+      "berlin": {
+        "good": 0,
+        "bad": 1
+      },
+      "kreuzberg": {
+        "good": 0,
+        "bad": 1
+      },
+      "bist": {
+        "good": 0,
+        "bad": 1
+      },
+      "nähe": {
+        "good": 0,
+        "bad": 1
+      },
+      "passau": {
         "good": 0,
         "bad": 1
       }
@@ -4883,8 +5017,8 @@
       "total": 6
     },
     "Treffen/Termine": {
-      "good": 21,
-      "total": 36
+      "good": 22,
+      "total": 38
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -4996,8 +5130,8 @@
         "length": 165
       },
       "goodResponse": "Ich denke wir werden richtig viel spass gemeinsam haben, und keine sorge wir lassen dich nicht lange warte. Meinst du wir bekommen ein richtiges Foto von dir ausgedruckt wo die Nackt bist? Das wäre ri",
-      "successCount": 6,
-      "lastUsed": "2026-01-06T01:07:46.380Z"
+      "successCount": 7,
+      "lastUsed": "2026-01-07T13:35:34.235Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -5247,7 +5381,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-07T13:32:58.654Z",
+  "lastUpdated": "2026-01-07T13:35:34.235Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5531,6 +5665,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-07T13:32:58.653Z"
+    },
+    {
+      "text": "Mehr auf das Thema baden drauf eingenagen und nicht so viel über Wohnort geredet",
+      "count": 1,
+      "situations": [
+        "Treffen/Termine"
+      ],
+      "lastUsed": "2026-01-07T13:35:34.234Z"
     }
   ],
   "messageStats": {
@@ -6384,9 +6526,11 @@
           210,
           165,
           165,
-          182
+          182,
+          161
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -6404,11 +6548,12 @@
           1,
           1,
           1,
-          2
+          2,
+          1
         ],
-        "count": 8,
-        "avgLength": 190,
-        "minLength": 165,
+        "count": 9,
+        "avgLength": 187,
+        "minLength": 161,
         "maxLength": 257,
         "medianLength": 180,
         "avgExclamationMarks": 0,
@@ -6423,14 +6568,14 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 75,
-          "200-250": 13,
-          "250+": 13
+          "150-200": 78,
+          "200-250": 11,
+          "250+": 11
         },
         "questionDistribution": {
           "0": 0,
-          "1": 88,
-          "2": 13,
+          "1": 89,
+          "2": 11,
           "3+": 0
         }
       },
@@ -6441,9 +6586,11 @@
           262,
           204,
           204,
-          206
+          206,
+          274
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -6457,33 +6604,34 @@
           1,
           0,
           0,
-          1
+          1,
+          2
         ],
-        "count": 6,
-        "avgLength": 218,
+        "count": 7,
+        "avgLength": 226,
         "minLength": 179,
-        "maxLength": 262,
+        "maxLength": 274,
         "medianLength": 206,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 0.7,
+        "avgQuestions": 0.9,
         "minQuestions": 0,
-        "maxQuestions": 1,
+        "maxQuestions": 2,
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 17,
-          "200-250": 50,
-          "250+": 33
+          "150-200": 14,
+          "200-250": 43,
+          "250+": 43
         },
         "questionDistribution": {
-          "0": 33,
-          "1": 67,
-          "2": 0,
+          "0": 29,
+          "1": 57,
+          "2": 14,
           "3+": 0
         }
       }
