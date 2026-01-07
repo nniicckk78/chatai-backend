@@ -4155,14 +4155,14 @@
       },
       "was": {
         "good": 4,
-        "bad": 2
+        "bad": 3
       },
       "hast": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "denn": {
-        "good": 2,
+        "good": 3,
         "bad": 2
       },
       "kopf": {
@@ -4194,7 +4194,7 @@
         "bad": 2
       },
       "schon": {
-        "good": 0,
+        "good": 1,
         "bad": 2
       },
       "ganz": {
@@ -4246,12 +4246,156 @@
         "bad": 2
       },
       "wenn": {
-        "good": 0,
+        "good": 1,
         "bad": 2
       },
       "treffen": {
         "good": 0,
         "bad": 2
+      },
+      "hey": {
+        "good": 1,
+        "bad": 1
+      },
+      "markus": {
+        "good": 1,
+        "bad": 1
+      },
+      "lange": {
+        "good": 1,
+        "bad": 0
+      },
+      "nichts": {
+        "good": 1,
+        "bad": 0
+      },
+      "mehr": {
+        "good": 1,
+        "bad": 0
+      },
+      "gehört": {
+        "good": 1,
+        "bad": 0
+      },
+      "wie": {
+        "good": 1,
+        "bad": 1
+      },
+      "beiden": {
+        "good": 1,
+        "bad": 0
+      },
+      "funktionieren": {
+        "good": 1,
+        "bad": 0
+      },
+      "dich": {
+        "good": 1,
+        "bad": 0
+      },
+      "immer": {
+        "good": 1,
+        "bad": 0
+      },
+      "sellten": {
+        "good": 1,
+        "bad": 0
+      },
+      "meldest": {
+        "good": 1,
+        "bad": 0
+      },
+      "berhaupt": {
+        "good": 1,
+        "bad": 0
+      },
+      "noch": {
+        "good": 1,
+        "bad": 0
+      },
+      "lust": {
+        "good": 1,
+        "bad": 0
+      },
+      "mich": {
+        "good": 1,
+        "bad": 0
+      },
+      "hoffe": {
+        "good": 0,
+        "bad": 1
+      },
+      "geht": {
+        "good": 0,
+        "bad": 1
+      },
+      "gut": {
+        "good": 0,
+        "bad": 1
+      },
+      "habe": {
+        "good": 0,
+        "bad": 1
+      },
+      "gerade": {
+        "good": 0,
+        "bad": 1
+      },
+      "ber": {
+        "good": 0,
+        "bad": 1
+      },
+      "unsere": {
+        "good": 0,
+        "bad": 1
+      },
+      "letzte": {
+        "good": 0,
+        "bad": 1
+      },
+      "unterhaltung": {
+        "good": 0,
+        "bad": 1
+      },
+      "nachgedacht": {
+        "good": 0,
+        "bad": 1
+      },
+      "finde": {
+        "good": 0,
+        "bad": 1
+      },
+      "idee": {
+        "good": 0,
+        "bad": 1
+      },
+      "freundschaft": {
+        "good": 0,
+        "bad": 1
+      },
+      "plus": {
+        "good": 0,
+        "bad": 1
+      },
+      "spannend": {
+        "good": 0,
+        "bad": 1
+      },
+      "meinst": {
+        "good": 0,
+        "bad": 1
+      },
+      "könnte": {
+        "good": 0,
+        "bad": 1
+      },
+      "etwas": {
+        "good": 0,
+        "bad": 1
+      },
+      "aussehen": {
+        "good": 0,
+        "bad": 1
       }
     },
     "Bot-Vorwurf": {
@@ -4597,8 +4741,8 @@
       "total": 6
     },
     "Treffen/Termine": {
-      "good": 20,
-      "total": 34
+      "good": 21,
+      "total": 36
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -4840,6 +4984,19 @@
       "lastUsed": "2026-01-06T14:30:43.570Z"
     },
     {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "hier was macht hier gerade wie sieht dem treffen langenfeld",
+        "hasQuestion": true,
+        "hasMeeting": true,
+        "hasSexual": false,
+        "length": 88
+      },
+      "goodResponse": "Hey Markus schon lange nichts mehr von dir gehört, wie soll das mit uns beiden funktionieren wenn du dich immer so sellten bei mir meldest? Hast du denn überhaupt noch Lust auf mich?",
+      "successCount": 2,
+      "lastUsed": "2026-01-07T10:07:10.182Z"
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
@@ -4877,19 +5034,6 @@
       "goodResponse": "Aber das ist ja selbstverständlich oder nicht? Denkst du denn ich würde dich nichtmal sehen wollen oder was? Ich bin hier sicher nicht aus langeweile angemeldet! Warum denkst du denn so über mich?",
       "successCount": 1,
       "lastUsed": "2026-01-04T12:51:21.994Z"
-    },
-    {
-      "situation": "Treffen/Termine",
-      "customerPattern": {
-        "keywords": "hier was macht hier gerade wie sieht dem treffen langenfeld",
-        "hasQuestion": true,
-        "hasMeeting": true,
-        "hasSexual": false,
-        "length": 88
-      },
-      "goodResponse": "Wir würden gerne aber heute ist das leider zu spontan, was würdest du aber mit uns als erstes machen wollen wenn wir bei dir wären?",
-      "successCount": 1,
-      "lastUsed": "2026-01-04T13:26:24.375Z"
     },
     {
       "situation": "Bot-Vorwurf",
@@ -4944,7 +5088,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-07T10:02:02.210Z",
+  "lastUpdated": "2026-01-07T10:07:10.183Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5204,6 +5348,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-07T10:02:02.209Z"
+    },
+    {
+      "text": "Darauf eingegangen das er sich sellten meldet und ihn gefragt ob er überhaupt noch Lust hat wie das funktionieren soll wenn er sich nie meldet",
+      "count": 1,
+      "situations": [
+        "Treffen/Termine"
+      ],
+      "lastUsed": "2026-01-07T10:07:10.182Z"
     }
   ],
   "messageStats": {
@@ -6050,9 +6202,11 @@
           180,
           210,
           165,
-          165
+          165,
+          182
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -6068,10 +6222,11 @@
           1,
           1,
           1,
-          1
+          1,
+          2
         ],
-        "count": 7,
-        "avgLength": 191,
+        "count": 8,
+        "avgLength": 190,
         "minLength": 165,
         "maxLength": 257,
         "medianLength": 180,
@@ -6079,22 +6234,22 @@
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1,
+        "avgQuestions": 1.1,
         "minQuestions": 1,
-        "maxQuestions": 1,
+        "maxQuestions": 2,
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 71,
-          "200-250": 14,
-          "250+": 14
+          "150-200": 75,
+          "200-250": 13,
+          "250+": 13
         },
         "questionDistribution": {
           "0": 0,
-          "1": 100,
-          "2": 0,
+          "1": 88,
+          "2": 13,
           "3+": 0
         }
       },
@@ -6104,9 +6259,11 @@
           179,
           262,
           204,
-          204
+          204,
+          206
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -6118,18 +6275,19 @@
           1,
           1,
           0,
-          0
+          0,
+          1
         ],
-        "count": 5,
-        "avgLength": 220,
+        "count": 6,
+        "avgLength": 218,
         "minLength": 179,
         "maxLength": 262,
-        "medianLength": 204,
+        "medianLength": 206,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 0.6,
+        "avgQuestions": 0.7,
         "minQuestions": 0,
         "maxQuestions": 1,
         "medianQuestions": 1,
@@ -6137,13 +6295,13 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 20,
-          "200-250": 40,
-          "250+": 40
+          "150-200": 17,
+          "200-250": 50,
+          "250+": 33
         },
         "questionDistribution": {
-          "0": 40,
-          "1": 60,
+          "0": 33,
+          "1": 67,
           "2": 0,
           "3+": 0
         }
