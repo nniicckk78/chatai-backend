@@ -206,7 +206,7 @@
         "bad": 19
       },
       "geht": {
-        "good": 24,
+        "good": 25,
         "bad": 26
       },
       "genauso": {
@@ -218,7 +218,7 @@
         "bad": 20
       },
       "auch": {
-        "good": 140,
+        "good": 141,
         "bad": 49
       },
       "funke": {
@@ -286,11 +286,11 @@
         "bad": 0
       },
       "was": {
-        "good": 141,
+        "good": 142,
         "bad": 164
       },
       "denn": {
-        "good": 149,
+        "good": 150,
         "bad": 50
       },
       "gerne": {
@@ -366,7 +366,7 @@
         "bad": 0
       },
       "gerade": {
-        "good": 31,
+        "good": 32,
         "bad": 6
       },
       "denke": {
@@ -706,7 +706,7 @@
         "bad": 9
       },
       "gut": {
-        "good": 40,
+        "good": 41,
         "bad": 28
       },
       "eigentlich": {
@@ -1374,7 +1374,7 @@
         "bad": 0
       },
       "danke": {
-        "good": 18,
+        "good": 19,
         "bad": 12
       },
       "attraktiv": {
@@ -2026,7 +2026,7 @@
         "bad": 0
       },
       "machst": {
-        "good": 8,
+        "good": 9,
         "bad": 9
       },
       "nein": {
@@ -3238,7 +3238,7 @@
         "bad": 4
       },
       "nachfrage": {
-        "good": 2,
+        "good": 3,
         "bad": 5
       },
       "gewesen": {
@@ -5473,7 +5473,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-08T11:09:31.078Z",
+  "lastUpdated": "2026-01-08T11:09:32.120Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5953,6 +5953,7 @@
           91,
           91,
           144,
+          72,
           72
         ],
         "exclamationMarks": [
@@ -5992,6 +5993,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -6105,10 +6107,11 @@
           1,
           1,
           2,
+          1,
           1
         ],
-        "count": 74,
-        "avgLength": 148,
+        "count": 75,
+        "avgLength": 147,
         "minLength": 72,
         "maxLength": 248,
         "medianLength": 144,
@@ -6121,16 +6124,16 @@
         "maxQuestions": 3,
         "medianQuestions": 1,
         "lengthDistribution": {
-          "0-100": 7,
+          "0-100": 8,
           "100-120": 19,
           "120-150": 36,
-          "150-200": 34,
+          "150-200": 33,
           "200-250": 4,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 82,
+          "1": 83,
           "2": 16,
           "3+": 1
         }
