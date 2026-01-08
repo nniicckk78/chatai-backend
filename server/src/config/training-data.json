@@ -3297,6 +3297,16 @@
       "priority": true,
       "feedbackId": "feedback_1767868681675_4qo95806s",
       "originalResponse": "Mir geht es gut, danke der Nachfrage. Ich geniesse den Tag und überlege, was ich heute unternehmen könnte. Vielleicht einen Spaziergang oder etwas Leckeres kochen. Was hast du für den Tag geplant?"
+    },
+    {
+      "customerMessage": "Was hast du heute noch vor?",
+      "moderatorResponse": "Ich muss heute auf jeden Fall noch die Wäsche machen und die Wohnung putzen und was hast du heute noch so vor?",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ],
+      "isNegativeExample": false,
+      "createdAt": "2026-01-08T11:01:24.886Z"
     }
   ],
   "asaExamples": [
