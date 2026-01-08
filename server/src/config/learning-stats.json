@@ -98,7 +98,7 @@
         "bad": 2
       },
       "dann": {
-        "good": 90,
+        "good": 91,
         "bad": 5
       },
       "irgendwo": {
@@ -118,11 +118,11 @@
         "bad": 0
       },
       "würdest": {
-        "good": 77,
+        "good": 78,
         "bad": 46
       },
       "machen": {
-        "good": 66,
+        "good": 67,
         "bad": 23
       },
       "hätte": {
@@ -166,7 +166,7 @@
         "bad": 21
       },
       "genau": {
-        "good": 39,
+        "good": 40,
         "bad": 47
       },
       "gibt": {
@@ -190,7 +190,7 @@
         "bad": 28
       },
       "hast": {
-        "good": 53,
+        "good": 54,
         "bad": 71
       },
       "verstehen": {
@@ -286,15 +286,15 @@
         "bad": 0
       },
       "was": {
-        "good": 138,
+        "good": 139,
         "bad": 162
       },
       "denn": {
-        "good": 146,
+        "good": 147,
         "bad": 50
       },
       "gerne": {
-        "good": 63,
+        "good": 64,
         "bad": 49
       },
       "wollen": {
@@ -314,7 +314,7 @@
         "bad": 17
       },
       "einfach": {
-        "good": 36,
+        "good": 37,
         "bad": 29
       },
       "gibst": {
@@ -1026,7 +1026,7 @@
         "bad": 5
       },
       "schauen": {
-        "good": 6,
+        "good": 7,
         "bad": 3
       },
       "ergibt": {
@@ -1074,7 +1074,7 @@
         "bad": 10
       },
       "schon": {
-        "good": 47,
+        "good": 48,
         "bad": 11
       },
       "noch": {
@@ -2722,7 +2722,7 @@
         "bad": 1
       },
       "idee": {
-        "good": 3,
+        "good": 4,
         "bad": 1
       },
       "schwebt": {
@@ -5457,7 +5457,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-08T09:33:23.152Z",
+  "lastUpdated": "2026-01-08T09:33:24.249Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5559,21 +5559,21 @@
       "lastUsed": "2026-01-06T14:53:50.286Z"
     },
     {
+      "text": "Etwas abgelenkt vom Tag raussuchen des treffens und mehr darauf eingangen, was er gerne machen würde",
+      "count": 3,
+      "situations": [
+        "allgemein",
+        "Treffen/Termine"
+      ],
+      "lastUsed": "2026-01-08T09:33:24.249Z"
+    },
+    {
       "text": "Mische nicht zu viele Themen durcheinander, arbeite diese Themen Schritt für Schritt ab",
       "count": 2,
       "situations": [
         "allgemein"
       ],
       "lastUsed": "2026-01-06T17:05:52.188Z"
-    },
-    {
-      "text": "Etwas abgelenkt vom Tag raussuchen des treffens und mehr darauf eingangen, was er gerne machen würde",
-      "count": 2,
-      "situations": [
-        "allgemein",
-        "Treffen/Termine"
-      ],
-      "lastUsed": "2026-01-08T09:33:23.152Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -5926,6 +5926,7 @@
           91,
           97,
           140,
+          91,
           91
         ],
         "exclamationMarks": [
@@ -5965,6 +5966,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -6072,10 +6074,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 71,
-        "avgLength": 150,
+        "count": 72,
+        "avgLength": 149,
         "minLength": 91,
         "maxLength": 248,
         "medianLength": 144,
@@ -6088,9 +6091,9 @@
         "maxQuestions": 3,
         "medianQuestions": 1,
         "lengthDistribution": {
-          "0-100": 4,
-          "100-120": 20,
-          "120-150": 37,
+          "0-100": 6,
+          "100-120": 19,
+          "120-150": 36,
           "150-200": 35,
           "200-250": 4,
           "250+": 0
