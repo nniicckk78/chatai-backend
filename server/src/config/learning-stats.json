@@ -68,10 +68,14 @@
         "successRate": 0
       },
       "würdest du": {
-        "count": 3,
+        "count": 4,
         "successRate": 0
       },
       "das würde": {
+        "count": 1,
+        "successRate": 0
+      },
+      "würdest du als Erstes mit mir anstellen?": {
         "count": 1,
         "successRate": 0
       }
@@ -5392,7 +5396,7 @@
         "bad": 0
       },
       "mich": {
-        "good": 3,
+        "good": 4,
         "bad": 2
       },
       "leckst": {
@@ -5420,7 +5424,7 @@
         "bad": 0
       },
       "würdest": {
-        "good": 3,
+        "good": 5,
         "bad": 3
       },
       "dann": {
@@ -5428,7 +5432,7 @@
         "bad": 1
       },
       "gerne": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "noch": {
@@ -5464,11 +5468,11 @@
         "bad": 1
       },
       "geil": {
-        "good": 3,
+        "good": 4,
         "bad": 2
       },
       "wie": {
-        "good": 1,
+        "good": 2,
         "bad": 4
       },
       "beschreibst": {
@@ -5504,11 +5508,11 @@
         "bad": 1
       },
       "gut": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "vorstellen": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "dabei": {
@@ -5536,7 +5540,7 @@
         "bad": 1
       },
       "ausleben": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "will": {
@@ -5576,11 +5580,11 @@
         "bad": 0
       },
       "wäre": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "echt": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "heiss": {
@@ -5644,7 +5648,7 @@
         "bad": 1
       },
       "richtig": {
-        "good": 2,
+        "good": 3,
         "bad": 1
       },
       "dildos": {
@@ -5660,15 +5664,15 @@
         "bad": 1
       },
       "was": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "als": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "erstes": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "spielsachen": {
@@ -5686,6 +5690,46 @@
       "helfen": {
         "good": 0,
         "bad": 1
+      },
+      "bist": {
+        "good": 1,
+        "bad": 0
+      },
+      "heisser": {
+        "good": 1,
+        "bad": 0
+      },
+      "typ": {
+        "good": 1,
+        "bad": 0
+      },
+      "macht": {
+        "good": 1,
+        "bad": 0
+      },
+      "gefickt": {
+        "good": 1,
+        "bad": 0
+      },
+      "werden": {
+        "good": 1,
+        "bad": 0
+      },
+      "anstellen": {
+        "good": 1,
+        "bad": 0
+      },
+      "hast": {
+        "good": 1,
+        "bad": 0
+      },
+      "bestimmte": {
+        "good": 1,
+        "bad": 0
+      },
+      "vorlieben": {
+        "good": 1,
+        "bad": 0
       }
     },
     "Generische ASA (Neukunde)": {
@@ -5833,8 +5877,8 @@
       "total": 22
     },
     "Sexuelle Themen": {
-      "good": 39,
-      "total": 67
+      "good": 40,
+      "total": 68
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -5905,9 +5949,9 @@
         "hasSexual": false,
         "length": 72
       },
-      "goodResponse": "Freut mich auf jedenfall von dir zu hören Edgar! Ich kann dir leider gerade kein Foto senden da meine Handykamera kaputt gegangen ist, ich muss mir erstmal ein neues Handy kaufen. Willst du mir mal er",
-      "successCount": 17,
-      "lastUsed": "2026-01-11T15:13:44.107Z"
+      "goodResponse": "Du bist echt ein heisser Typ, das macht mich richtig geil. Ich kann mir gut vorstellen, wie es wäre, von dir gefickt zu werden. Was würdest du als Erstes mit mir anstellen? Hast du bestimmte Vorlieben",
+      "successCount": 18,
+      "lastUsed": "2026-01-11T15:21:20.763Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -6209,7 +6253,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:21:13.625Z",
+  "lastUpdated": "2026-01-11T15:21:20.763Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7335,7 +7379,8 @@
           167,
           168,
           162,
-          162
+          162,
+          232
         ],
         "exclamationMarks": [
           2,
@@ -7352,6 +7397,7 @@
           0,
           1,
           1,
+          0,
           0,
           0,
           0,
@@ -7375,12 +7421,13 @@
           1,
           2,
           1,
-          1
+          1,
+          2
         ],
-        "count": 18,
-        "avgLength": 165,
+        "count": 19,
+        "avgLength": 169,
         "minLength": 124,
-        "maxLength": 227,
+        "maxLength": 232,
         "medianLength": 162,
         "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
@@ -7393,15 +7440,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 28,
-          "150-200": 50,
-          "200-250": 22,
+          "120-150": 26,
+          "150-200": 47,
+          "200-250": 26,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 83,
-          "2": 17,
+          "1": 79,
+          "2": 21,
           "3+": 0
         }
       },
