@@ -210,7 +210,7 @@
         "bad": 28
       },
       "hast": {
-        "good": 78,
+        "good": 79,
         "bad": 81
       },
       "verstehen": {
@@ -218,7 +218,7 @@
         "bad": 25
       },
       "mehr": {
-        "good": 37,
+        "good": 38,
         "bad": 42
       },
       "wünschst": {
@@ -238,7 +238,7 @@
         "bad": 23
       },
       "auch": {
-        "good": 163,
+        "good": 164,
         "bad": 61
       },
       "funke": {
@@ -246,7 +246,7 @@
         "bad": 19
       },
       "nicht": {
-        "good": 123,
+        "good": 125,
         "bad": 50
       },
       "erlischt": {
@@ -274,7 +274,7 @@
         "bad": 0
       },
       "mich": {
-        "good": 56,
+        "good": 58,
         "bad": 61
       },
       "wohl": {
@@ -310,7 +310,7 @@
         "bad": 186
       },
       "denn": {
-        "good": 177,
+        "good": 179,
         "bad": 70
       },
       "gerne": {
@@ -414,7 +414,7 @@
         "bad": 25
       },
       "wenn": {
-        "good": 54,
+        "good": 55,
         "bad": 101
       },
       "gegenseitig": {
@@ -722,7 +722,7 @@
         "bad": 2
       },
       "echt": {
-        "good": 29,
+        "good": 30,
         "bad": 13
       },
       "gut": {
@@ -742,7 +742,7 @@
         "bad": 8
       },
       "hoffe": {
-        "good": 21,
+        "good": 22,
         "bad": 2
       },
       "dads": {
@@ -838,7 +838,7 @@
         "bad": 3
       },
       "mag": {
-        "good": 3,
+        "good": 4,
         "bad": 9
       },
       "doggi": {
@@ -1014,7 +1014,7 @@
         "bad": 5
       },
       "dich": {
-        "good": 75,
+        "good": 77,
         "bad": 46
       },
       "stört": {
@@ -1142,7 +1142,7 @@
         "bad": 2
       },
       "man": {
-        "good": 9,
+        "good": 10,
         "bad": 13
       },
       "reden": {
@@ -1910,7 +1910,7 @@
         "bad": 1
       },
       "verlassen": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "welcher": {
@@ -1998,7 +1998,7 @@
         "bad": 0
       },
       "lange": {
-        "good": 17,
+        "good": 19,
         "bad": 0
       },
       "durststrecke": {
@@ -2362,7 +2362,7 @@
         "bad": 0
       },
       "warum": {
-        "good": 13,
+        "good": 14,
         "bad": 0
       },
       "persönliche": {
@@ -2970,7 +2970,7 @@
         "bad": 1
       },
       "verstehst": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "eintippen": {
@@ -4486,11 +4486,11 @@
         "bad": 2
       },
       "gemeldet": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "ignoriert": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "verabreden": {
@@ -6497,7 +6497,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:33:57.015Z",
+  "lastUpdated": "2026-01-11T15:33:58.053Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7116,6 +7116,7 @@
           187,
           325,
           187,
+          187,
           187
         ],
         "exclamationMarks": [
@@ -7155,6 +7156,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -7342,9 +7344,10 @@
           3,
           2,
           3,
+          3,
           3
         ],
-        "count": 111,
+        "count": 112,
         "avgLength": 156,
         "minLength": 72,
         "maxLength": 325,
@@ -7353,15 +7356,15 @@
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.2,
+        "avgQuestions": 1.3,
         "minQuestions": 1,
         "maxQuestions": 3,
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 6,
           "100-120": 14,
-          "120-150": 31,
-          "150-200": 35,
+          "120-150": 30,
+          "150-200": 36,
           "200-250": 13,
           "250+": 1
         },
@@ -8382,8 +8385,8 @@
       "pattern": "eigene_vorlieben_plus_frage",
       "situation": "allgemein",
       "example": "Warum hast du dich denn so lange nicht mehr bei mir gemeldet? Ich mag das echt nicht wenn man mich lange ignoriert. Ich hoffe du verstehst das? Kann i",
-      "count": 3,
-      "lastUsed": "2026-01-11T15:33:57.014Z"
+      "count": 4,
+      "lastUsed": "2026-01-11T15:33:58.053Z"
     }
   ],
   "migrated": true,
