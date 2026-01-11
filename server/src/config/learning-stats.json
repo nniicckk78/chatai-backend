@@ -5735,50 +5735,50 @@
     "Generische ASA (Neukunde)": {
       "huhu": {
         "good": 1,
-        "bad": 0
+        "bad": 1
       },
       "bist": {
         "good": 1,
-        "bad": 0
+        "bad": 1
       },
       "noch": {
         "good": 1,
-        "bad": 0
+        "bad": 2
       },
       "würde": {
         "good": 1,
-        "bad": 0
+        "bad": 1
       },
       "mich": {
-        "good": 1,
-        "bad": 0
+        "good": 2,
+        "bad": 1
       },
       "freuen": {
         "good": 1,
-        "bad": 0
+        "bad": 1
       },
       "wenn": {
         "good": 1,
-        "bad": 0
+        "bad": 1
       },
       "dich": {
         "good": 1,
-        "bad": 1
+        "bad": 2
       },
       "mal": {
         "good": 1,
-        "bad": 1
+        "bad": 2
       },
       "melden": {
         "good": 1,
-        "bad": 0
+        "bad": 1
       },
       "könntest": {
         "good": 1,
-        "bad": 0
+        "bad": 1
       },
       "hast": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "kein": {
@@ -5790,12 +5790,12 @@
         "bad": 0
       },
       "mehr": {
-        "good": 1,
+        "good": 3,
         "bad": 0
       },
       "wie": {
         "good": 1,
-        "bad": 0
+        "bad": 1
       },
       "hey": {
         "good": 0,
@@ -5818,15 +5818,15 @@
         "bad": 1
       },
       "was": {
-        "good": 0,
-        "bad": 2
+        "good": 1,
+        "bad": 4
       },
       "beschäftigt": {
         "good": 0,
         "bad": 1
       },
       "gerade": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "bin": {
@@ -5850,7 +5850,7 @@
         "bad": 1
       },
       "deinem": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "leben": {
@@ -5862,6 +5862,94 @@
         "bad": 1
       },
       "erzähl": {
+        "good": 0,
+        "bad": 1
+      },
+      "wieso": {
+        "good": 1,
+        "bad": 0
+      },
+      "schreibst": {
+        "good": 1,
+        "bad": 0
+      },
+      "nicht": {
+        "good": 2,
+        "bad": 0
+      },
+      "schon": {
+        "good": 3,
+        "bad": 0
+      },
+      "vergessen": {
+        "good": 1,
+        "bad": 0
+      },
+      "meine": {
+        "good": 2,
+        "bad": 0
+      },
+      "nachricht": {
+        "good": 1,
+        "bad": 0
+      },
+      "postfach": {
+        "good": 1,
+        "bad": 0
+      },
+      "weit": {
+        "good": 1,
+        "bad": 0
+      },
+      "unten": {
+        "good": 1,
+        "bad": 0
+      },
+      "nachrichten": {
+        "good": 1,
+        "bad": 0
+      },
+      "gar": {
+        "good": 1,
+        "bad": 0
+      },
+      "siehst": {
+        "good": 1,
+        "bad": 0
+      },
+      "eins": {
+        "good": 1,
+        "bad": 0
+      },
+      "sagen": {
+        "good": 1,
+        "bad": 0
+      },
+      "verpasst": {
+        "good": 1,
+        "bad": 0
+      },
+      "echt": {
+        "good": 1,
+        "bad": 0
+      },
+      "geiles": {
+        "good": 1,
+        "bad": 0
+      },
+      "würdest": {
+        "good": 0,
+        "bad": 2
+      },
+      "gerne": {
+        "good": 0,
+        "bad": 2
+      },
+      "machen": {
+        "good": 0,
+        "bad": 2
+      },
+      "läuft": {
         "good": 0,
         "bad": 1
       }
@@ -5909,8 +5997,8 @@
       "total": 3
     },
     "Generische ASA (Neukunde)": {
-      "good": 1,
-      "total": 2
+      "good": 2,
+      "total": 4
     }
   },
   "responsePatterns": [
@@ -6149,6 +6237,19 @@
       "lastUsed": "2026-01-06T14:30:43.570Z"
     },
     {
+      "situation": "Generische ASA (Neukunde)",
+      "customerPattern": {
+        "keywords": "asa reaktivierung",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 17
+      },
+      "goodResponse": "Wieso schreibst du mir nicht mehr? Hast du mich schon vergessen oder ist meine Nachricht in deinem Postfach schon so weit unten das du meine Nachrichten schon gar nicht mehr siehst? Eins kann ich dir ",
+      "successCount": 2,
+      "lastUsed": "2026-01-11T15:24:51.886Z"
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
@@ -6238,22 +6339,9 @@
       "goodResponse": "Gut da bin ich ja jetzt schonmal erleichert. 🙂 Und wie war denn so dein Start in das neue Jahr? Warst du mit der Familie oder Freunden?",
       "successCount": 1,
       "lastUsed": "2026-01-06T17:13:38.718Z"
-    },
-    {
-      "situation": "Generische ASA (Neukunde)",
-      "customerPattern": {
-        "keywords": "asa reaktivierung",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 17
-      },
-      "goodResponse": "Huhu bist du noch da? Würde mich freuen wenn du dich mal melden könntest, hast du kein Interesse mehr oder wie ist das?",
-      "successCount": 1,
-      "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:21:21.928Z",
+  "lastUpdated": "2026-01-11T15:24:51.886Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7947,33 +8035,36 @@
     "Generische ASA (Neukunde)": {
       "positive": {
         "lengths": [
-          119
+          119,
+          241
         ],
         "exclamationMarks": [
-          0
+          0,
+          1
         ],
         "questions": [
+          2,
           2
         ],
-        "count": 1,
-        "avgLength": 119,
+        "count": 2,
+        "avgLength": 180,
         "minLength": 119,
-        "maxLength": 119,
-        "medianLength": 119,
-        "avgExclamationMarks": 0,
+        "maxLength": 241,
+        "medianLength": 241,
+        "avgExclamationMarks": 0.5,
         "minExclamationMarks": 0,
-        "maxExclamationMarks": 0,
-        "medianExclamationMarks": 0,
+        "maxExclamationMarks": 1,
+        "medianExclamationMarks": 1,
         "avgQuestions": 2,
         "minQuestions": 2,
         "maxQuestions": 2,
         "medianQuestions": 2,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 100,
+          "100-120": 50,
           "120-150": 0,
           "150-200": 0,
-          "200-250": 0,
+          "200-250": 50,
           "250+": 0
         },
         "questionDistribution": {
@@ -7985,27 +8076,30 @@
       },
       "negative": {
         "lengths": [
-          160
+          160,
+          164
         ],
         "exclamationMarks": [
+          0,
           0
         ],
         "questions": [
-          1
+          1,
+          4
         ],
-        "count": 1,
-        "avgLength": 160,
+        "count": 2,
+        "avgLength": 162,
         "minLength": 160,
-        "maxLength": 160,
-        "medianLength": 160,
+        "maxLength": 164,
+        "medianLength": 164,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1,
+        "avgQuestions": 2.5,
         "minQuestions": 1,
-        "maxQuestions": 1,
-        "medianQuestions": 1,
+        "maxQuestions": 4,
+        "medianQuestions": 4,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
@@ -8016,9 +8110,9 @@
         },
         "questionDistribution": {
           "0": 0,
-          "1": 100,
+          "1": 50,
           "2": 0,
-          "3+": 0
+          "3+": 50
         }
       }
     }
