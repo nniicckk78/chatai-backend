@@ -4472,7 +4472,7 @@
         "bad": 0
       },
       "was": {
-        "good": 11,
+        "good": 13,
         "bad": 10
       },
       "hast": {
@@ -4480,7 +4480,7 @@
         "bad": 1
       },
       "denn": {
-        "good": 5,
+        "good": 6,
         "bad": 5
       },
       "kopf": {
@@ -4544,7 +4544,7 @@
         "bad": 3
       },
       "würdest": {
-        "good": 5,
+        "good": 6,
         "bad": 9
       },
       "als": {
@@ -4560,7 +4560,7 @@
         "bad": 4
       },
       "wollen": {
-        "good": 4,
+        "good": 5,
         "bad": 2
       },
       "wenn": {
@@ -4968,7 +4968,7 @@
         "bad": 1
       },
       "sehen": {
-        "good": 2,
+        "good": 3,
         "bad": 1
       },
       "echt": {
@@ -5016,35 +5016,35 @@
         "bad": 1
       },
       "finden": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "bestimmt": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "tage": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "mal": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "tag": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "dem": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "erste": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "mache": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "bald": {
@@ -5845,8 +5845,8 @@
       "total": 6
     },
     "Treffen/Termine": {
-      "good": 28,
-      "total": 51
+      "good": 29,
+      "total": 52
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -5997,8 +5997,8 @@
         "length": 88
       },
       "goodResponse": "Hey Markus schon lange nichts mehr von dir gehört, wie soll das mit uns beiden funktionieren wenn du dich immer so sellten bei mir meldest? Hast du denn überhaupt noch Lust auf mich?",
-      "successCount": 4,
-      "lastUsed": "2026-01-11T15:21:12.431Z"
+      "successCount": 5,
+      "lastUsed": "2026-01-11T15:21:13.625Z"
     },
     {
       "situation": "allgemein",
@@ -6209,7 +6209,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:21:12.432Z",
+  "lastUpdated": "2026-01-11T15:21:13.625Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7677,9 +7677,11 @@
           139,
           139,
           122,
+          122,
           122
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -7711,10 +7713,11 @@
           2,
           2,
           1,
+          1,
           1
         ],
-        "count": 15,
-        "avgLength": 172,
+        "count": 16,
+        "avgLength": 169,
         "minLength": 122,
         "maxLength": 257,
         "medianLength": 165,
@@ -7729,15 +7732,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 33,
-          "150-200": 47,
+          "120-150": 38,
+          "150-200": 44,
           "200-250": 13,
-          "250+": 7
+          "250+": 6
         },
         "questionDistribution": {
           "0": 0,
-          "1": 80,
-          "2": 20,
+          "1": 81,
+          "2": 19,
           "3+": 0
         }
       },
