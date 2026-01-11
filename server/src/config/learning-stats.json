@@ -170,7 +170,7 @@
         "bad": 34
       },
       "wie": {
-        "good": 100,
+        "good": 101,
         "bad": 81
       },
       "stellst": {
@@ -222,11 +222,11 @@
         "bad": 43
       },
       "wünschst": {
-        "good": 19,
+        "good": 20,
         "bad": 19
       },
       "geht": {
-        "good": 29,
+        "good": 30,
         "bad": 30
       },
       "genauso": {
@@ -238,7 +238,7 @@
         "bad": 24
       },
       "auch": {
-        "good": 167,
+        "good": 168,
         "bad": 62
       },
       "funke": {
@@ -270,7 +270,7 @@
         "bad": 22
       },
       "damit": {
-        "good": 20,
+        "good": 21,
         "bad": 0
       },
       "mich": {
@@ -306,11 +306,11 @@
         "bad": 0
       },
       "was": {
-        "good": 168,
+        "good": 169,
         "bad": 187
       },
       "denn": {
-        "good": 183,
+        "good": 184,
         "bad": 71
       },
       "gerne": {
@@ -330,7 +330,7 @@
         "bad": 19
       },
       "vorstellen": {
-        "good": 27,
+        "good": 28,
         "bad": 24
       },
       "einfach": {
@@ -406,7 +406,7 @@
         "bad": 20
       },
       "finde": {
-        "good": 23,
+        "good": 24,
         "bad": 78
       },
       "grossartig": {
@@ -474,7 +474,7 @@
         "bad": 6
       },
       "richtig": {
-        "good": 38,
+        "good": 39,
         "bad": 42
       },
       "feucht": {
@@ -518,11 +518,11 @@
         "bad": 2
       },
       "könnte": {
-        "good": 9,
+        "good": 10,
         "bad": 21
       },
       "toll": {
-        "good": 2,
+        "good": 3,
         "bad": 2
       },
       "jemand": {
@@ -590,7 +590,7 @@
         "bad": 4
       },
       "alles": {
-        "good": 17,
+        "good": 18,
         "bad": 13
       },
       "neu": {
@@ -810,7 +810,7 @@
         "bad": 0
       },
       "neue": {
-        "good": 12,
+        "good": 13,
         "bad": 8
       },
       "dinge": {
@@ -926,7 +926,7 @@
         "bad": 7
       },
       "spass": {
-        "good": 10,
+        "good": 11,
         "bad": 16
       },
       "nacht": {
@@ -982,7 +982,7 @@
         "bad": 2
       },
       "bin": {
-        "good": 34,
+        "good": 35,
         "bad": 38
       },
       "gemeinsam": {
@@ -1006,7 +1006,7 @@
         "bad": 0
       },
       "jahre": {
-        "good": 3,
+        "good": 4,
         "bad": 5
       },
       "alt": {
@@ -1094,7 +1094,7 @@
         "bad": 10
       },
       "schon": {
-        "good": 53,
+        "good": 54,
         "bad": 20
       },
       "noch": {
@@ -1150,7 +1150,7 @@
         "bad": 4
       },
       "zusammen": {
-        "good": 15,
+        "good": 16,
         "bad": 21
       },
       "wären": {
@@ -1558,7 +1558,7 @@
         "bad": 1
       },
       "könnten": {
-        "good": 14,
+        "good": 15,
         "bad": 5
       },
       "tolle": {
@@ -2034,7 +2034,7 @@
         "bad": 9
       },
       "kennenzulernen": {
-        "good": 1,
+        "good": 2,
         "bad": 4
       },
       "bestimmtes": {
@@ -3086,7 +3086,7 @@
         "bad": 0
       },
       "offen": {
-        "good": 2,
+        "good": 3,
         "bad": 6
       },
       "schau": {
@@ -4512,6 +4512,22 @@
       "küssen": {
         "good": 0,
         "bad": 1
+      },
+      "zwei": {
+        "good": 1,
+        "bad": 0
+      },
+      "leute": {
+        "good": 1,
+        "bad": 0
+      },
+      "neuen": {
+        "good": 1,
+        "bad": 0
+      },
+      "bekanntschaft": {
+        "good": 1,
+        "bad": 0
       }
     },
     "Treffen/Termine": {
@@ -6509,7 +6525,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:37:06.851Z",
+  "lastUpdated": "2026-01-11T15:37:29.892Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7132,7 +7148,8 @@
           187,
           187,
           187,
-          162
+          162,
+          261
         ],
         "exclamationMarks": [
           1,
@@ -7171,6 +7188,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -7366,13 +7384,14 @@
           3,
           3,
           3,
+          2,
           2
         ],
-        "count": 115,
-        "avgLength": 157,
+        "count": 116,
+        "avgLength": 158,
         "minLength": 72,
         "maxLength": 325,
-        "medianLength": 151,
+        "medianLength": 152,
         "avgExclamationMarks": 0.1,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
@@ -7384,15 +7403,15 @@
         "lengthDistribution": {
           "0-100": 6,
           "100-120": 14,
-          "120-150": 30,
+          "120-150": 29,
           "150-200": 37,
           "200-250": 12,
-          "250+": 1
+          "250+": 2
         },
         "questionDistribution": {
           "0": 0,
-          "1": 77,
-          "2": 17,
+          "1": 76,
+          "2": 18,
           "3+": 6
         }
       },
@@ -8377,8 +8396,8 @@
       "pattern": "eigene_erfahrung",
       "situation": "allgemein",
       "example": "Ja alles gut hat sich schon erledigt heheich würde gerne vorbei kommen aber leider ist das zu spontan, wie trinkst du denn gerne deinen Kaffee?",
-      "count": 21,
-      "lastUsed": "2026-01-11T15:33:09.440Z"
+      "count": 22,
+      "lastUsed": "2026-01-11T15:37:29.892Z"
     },
     {
       "pattern": "eigene_erfahrung",
