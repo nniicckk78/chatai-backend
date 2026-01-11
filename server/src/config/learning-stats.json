@@ -2,7 +2,7 @@
   "patterns": {
     "allgemein": {
       "würdest du": {
-        "count": 70,
+        "count": 71,
         "successRate": 0
       },
       "würdest du mir dann einen machen?": {
@@ -122,11 +122,11 @@
         "bad": 0
       },
       "würdest": {
-        "good": 80,
-        "bad": 50
+        "good": 81,
+        "bad": 51
       },
       "machen": {
-        "good": 68,
+        "good": 69,
         "bad": 27
       },
       "hätte": {
@@ -155,7 +155,7 @@
       },
       "wie": {
         "good": 88,
-        "bad": 75
+        "bad": 76
       },
       "stellst": {
         "good": 3,
@@ -186,8 +186,8 @@
         "bad": 23
       },
       "den": {
-        "good": 14,
-        "bad": 48
+        "good": 15,
+        "bad": 49
       },
       "kopf": {
         "good": 5,
@@ -222,8 +222,8 @@
         "bad": 20
       },
       "auch": {
-        "good": 153,
-        "bad": 53
+        "good": 154,
+        "bad": 54
       },
       "funke": {
         "good": 19,
@@ -290,12 +290,12 @@
         "bad": 0
       },
       "was": {
-        "good": 149,
+        "good": 150,
         "bad": 172
       },
       "denn": {
         "good": 161,
-        "bad": 57
+        "bad": 58
       },
       "gerne": {
         "good": 72,
@@ -334,7 +334,7 @@
         "bad": 0
       },
       "als": {
-        "good": 39,
+        "good": 40,
         "bad": 15
       },
       "papa": {
@@ -390,8 +390,8 @@
         "bad": 20
       },
       "finde": {
-        "good": 16,
-        "bad": 65
+        "good": 17,
+        "bad": 66
       },
       "grossartig": {
         "good": 0,
@@ -411,7 +411,7 @@
       },
       "helfen": {
         "good": 0,
-        "bad": 20
+        "bad": 21
       },
       "können": {
         "good": 4,
@@ -458,8 +458,8 @@
         "bad": 5
       },
       "richtig": {
-        "good": 30,
-        "bad": 30
+        "good": 31,
+        "bad": 31
       },
       "feucht": {
         "good": 4,
@@ -690,12 +690,12 @@
         "bad": 2
       },
       "geil": {
-        "good": 15,
-        "bad": 25
+        "good": 16,
+        "bad": 26
       },
       "liebe": {
-        "good": 2,
-        "bad": 10
+        "good": 3,
+        "bad": 11
       },
       "angehen": {
         "good": 0,
@@ -1906,7 +1906,7 @@
         "bad": 0
       },
       "erstes": {
-        "good": 10,
+        "good": 11,
         "bad": 5
       },
       "ficken": {
@@ -3442,8 +3442,8 @@
         "bad": 0
       },
       "experimentieren": {
-        "good": 1,
-        "bad": 0
+        "good": 2,
+        "bad": 1
       },
       "shopen": {
         "good": 1,
@@ -4312,6 +4312,22 @@
       "action": {
         "good": 0,
         "bad": 3
+      },
+      "spielzeuge": {
+        "good": 1,
+        "bad": 1
+      },
+      "dildos": {
+        "good": 1,
+        "bad": 1
+      },
+      "vibratoren": {
+        "good": 1,
+        "bad": 1
+      },
+      "spielsachen": {
+        "good": 1,
+        "bad": 1
       }
     },
     "Treffen/Termine": {
@@ -5414,7 +5430,7 @@
   "situationSuccess": {
     "allgemein": {
       "good": 171,
-      "total": 330
+      "total": 331
     },
     "Bot-Vorwurf": {
       "good": 10,
@@ -5797,7 +5813,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:10:59.313Z",
+  "lastUpdated": "2026-01-11T15:11:12.827Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5924,6 +5940,15 @@
       "lastUsed": "2026-01-06T17:05:52.188Z"
     },
     {
+      "text": "Bessere Frage",
+      "count": 2,
+      "situations": [
+        "Treffen/Termine",
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-11T15:11:12.827Z"
+    },
+    {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
       "count": 1,
       "situations": [
@@ -5978,14 +6003,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-05T22:05:23.223Z"
-    },
-    {
-      "text": "Bessere Frage",
-      "count": 1,
-      "situations": [
-        "Treffen/Termine"
-      ],
-      "lastUsed": "2026-01-05T22:07:03.347Z"
     },
     {
       "text": "\"Wenn es soweit ist\" hört sich bisschen zu sehr nach verpsrechen an \"Wenn es soweit wäre\" ist besser",
@@ -6370,7 +6387,8 @@
           152,
           152,
           152,
-          152
+          152,
+          162
         ],
         "exclamationMarks": [
           1,
@@ -6409,6 +6427,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -6548,9 +6567,10 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 87,
+        "count": 88,
         "avgLength": 150,
         "minLength": 72,
         "maxLength": 248,
@@ -6567,7 +6587,7 @@
           "0-100": 7,
           "100-120": 18,
           "120-150": 31,
-          "150-200": 37,
+          "150-200": 38,
           "200-250": 7,
           "250+": 0
         },
@@ -6645,9 +6665,11 @@
           187,
           210,
           210,
-          210
+          210,
+          152
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -6781,10 +6803,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 66,
-        "avgLength": 203,
+        "count": 67,
+        "avgLength": 202,
         "minLength": 115,
         "maxLength": 298,
         "medianLength": 200,
@@ -6799,15 +6822,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 6,
-          "120-150": 8,
-          "150-200": 35,
-          "200-250": 29,
-          "250+": 23
+          "120-150": 7,
+          "150-200": 36,
+          "200-250": 28,
+          "250+": 22
         },
         "questionDistribution": {
-          "0": 14,
+          "0": 13,
           "1": 73,
-          "2": 14,
+          "2": 13,
           "3+": 0
         }
       }
@@ -7436,8 +7459,8 @@
       "pattern": "eigene_erfahrung",
       "situation": "allgemein",
       "example": "Ja alles gut hat sich schon erledigt heheich würde gerne vorbei kommen aber leider ist das zu spontan, wie trinkst du denn gerne deinen Kaffee?",
-      "count": 14,
-      "lastUsed": "2026-01-11T15:10:59.313Z"
+      "count": 15,
+      "lastUsed": "2026-01-11T15:11:12.827Z"
     },
     {
       "pattern": "eigene_erfahrung",
