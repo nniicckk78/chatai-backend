@@ -5820,7 +5820,7 @@
         "bad": 2
       },
       "dich": {
-        "good": 3,
+        "good": 4,
         "bad": 4
       },
       "nehme": {
@@ -5864,7 +5864,7 @@
         "bad": 0
       },
       "magst": {
-        "good": 4,
+        "good": 5,
         "bad": 1
       },
       "wärend": {
@@ -5916,11 +5916,11 @@
         "bad": 1
       },
       "kaum": {
-        "good": 1,
+        "good": 2,
         "bad": 2
       },
       "erwarten": {
-        "good": 1,
+        "good": 2,
         "bad": 2
       },
       "berührungen": {
@@ -5940,7 +5940,7 @@
         "bad": 1
       },
       "auch": {
-        "good": 5,
+        "good": 6,
         "bad": 2
       },
       "richtig": {
@@ -5980,7 +5980,7 @@
         "bad": 1
       },
       "denn": {
-        "good": 1,
+        "good": 2,
         "bad": 2
       },
       "helfen": {
@@ -6016,11 +6016,11 @@
         "bad": 0
       },
       "hast": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "bestimmte": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "vorlieben": {
@@ -6076,7 +6076,7 @@
         "bad": 0
       },
       "sex": {
-        "good": 2,
+        "good": 3,
         "bad": 3
       },
       "auto": {
@@ -6156,35 +6156,35 @@
         "bad": 1
       },
       "fesseln": {
-        "good": 1,
-        "bad": 1
-      },
-      "all": {
-        "good": 1,
-        "bad": 1
-      },
-      "dinge": {
         "good": 2,
         "bad": 1
       },
+      "all": {
+        "good": 2,
+        "bad": 1
+      },
+      "dinge": {
+        "good": 4,
+        "bad": 1
+      },
       "auszuprobieren": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "wünschen": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "gar": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "nicht": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "beim": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "sagst": {
@@ -6481,8 +6481,8 @@
       "total": 24
     },
     "Sexuelle Themen": {
-      "good": 47,
-      "total": 80
+      "good": 48,
+      "total": 81
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -6554,8 +6554,8 @@
         "length": 72
       },
       "goodResponse": "Ich finde es richtig geil, dass du so bereit bist, mir alles zu geben. Ich würde es lieben, dich richtig verwöhnt zu werden. Was würdest du gerne mit mir machen, wenn wir uns näherkommen? Ich kann mir",
-      "successCount": 22,
-      "lastUsed": "2026-01-11T15:43:58.136Z"
+      "successCount": 23,
+      "lastUsed": "2026-01-11T15:43:59.247Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -6870,7 +6870,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:43:58.136Z",
+  "lastUpdated": "2026-01-11T15:43:59.247Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -8098,6 +8098,7 @@
           325,
           325,
           138,
+          165,
           165
         ],
         "exclamationMarks": [
@@ -8115,6 +8116,7 @@
           0,
           1,
           1,
+          0,
           0,
           0,
           0,
@@ -8150,10 +8152,11 @@
           2,
           2,
           1,
+          1,
           1
         ],
-        "count": 24,
-        "avgLength": 183,
+        "count": 25,
+        "avgLength": 182,
         "minLength": 124,
         "maxLength": 325,
         "medianLength": 165,
@@ -8168,15 +8171,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 25,
-          "150-200": 42,
-          "200-250": 25,
+          "120-150": 24,
+          "150-200": 44,
+          "200-250": 24,
           "250+": 8
         },
         "questionDistribution": {
           "0": 0,
-          "1": 71,
-          "2": 29,
+          "1": 72,
+          "2": 28,
           "3+": 0
         }
       },
