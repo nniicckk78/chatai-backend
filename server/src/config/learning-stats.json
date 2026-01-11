@@ -62,7 +62,7 @@
         "successRate": 0
       },
       "das klingt": {
-        "count": 1,
+        "count": 2,
         "successRate": 0
       }
     },
@@ -114,7 +114,7 @@
         "bad": 15
       },
       "verlockend": {
-        "good": 22,
+        "good": 23,
         "bad": 2
       },
       "würden": {
@@ -310,7 +310,7 @@
         "bad": 0
       },
       "was": {
-        "good": 170,
+        "good": 171,
         "bad": 187
       },
       "denn": {
@@ -334,7 +334,7 @@
         "bad": 19
       },
       "vorstellen": {
-        "good": 29,
+        "good": 30,
         "bad": 24
       },
       "einfach": {
@@ -346,7 +346,7 @@
         "bad": 0
       },
       "dein": {
-        "good": 43,
+        "good": 44,
         "bad": 9
       },
       "bestes": {
@@ -418,7 +418,7 @@
         "bad": 25
       },
       "wenn": {
-        "good": 58,
+        "good": 59,
         "bad": 102
       },
       "gegenseitig": {
@@ -446,7 +446,7 @@
         "bad": 21
       },
       "klingt": {
-        "good": 8,
+        "good": 9,
         "bad": 25
       },
       "wild": {
@@ -542,7 +542,7 @@
         "bad": 1
       },
       "wäre": {
-        "good": 22,
+        "good": 23,
         "bad": 22
       },
       "perfektes": {
@@ -698,7 +698,7 @@
         "bad": 8
       },
       "wunsch": {
-        "good": 1,
+        "good": 2,
         "bad": 2
       },
       "erfüllst": {
@@ -730,7 +730,7 @@
         "bad": 13
       },
       "gut": {
-        "good": 55,
+        "good": 56,
         "bad": 40
       },
       "eigentlich": {
@@ -1158,7 +1158,7 @@
         "bad": 21
       },
       "wären": {
-        "good": 4,
+        "good": 5,
         "bad": 2
       },
       "bereuen": {
@@ -1766,7 +1766,7 @@
         "bad": 6
       },
       "bett": {
-        "good": 5,
+        "good": 7,
         "bad": 1
       },
       "langweilig": {
@@ -1982,11 +1982,11 @@
         "bad": 2
       },
       "nackt": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "liegen": {
-        "good": 2,
+        "good": 3,
         "bad": 1
       },
       "hätten": {
@@ -2214,7 +2214,7 @@
         "bad": 1
       },
       "kuscheln": {
-        "good": 2,
+        "good": 3,
         "bad": 2
       },
       "glas": {
@@ -4534,11 +4534,11 @@
         "bad": 0
       },
       "warmen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "erster": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       }
     },
@@ -6537,7 +6537,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:38:33.726Z",
+  "lastUpdated": "2026-01-11T15:38:38.529Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7162,6 +7162,7 @@
           187,
           162,
           261,
+          161,
           161
         ],
         "exclamationMarks": [
@@ -7201,6 +7202,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -7400,9 +7402,10 @@
           3,
           2,
           2,
+          1,
           1
         ],
-        "count": 117,
+        "count": 118,
         "avgLength": 158,
         "minLength": 72,
         "maxLength": 325,
