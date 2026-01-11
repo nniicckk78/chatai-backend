@@ -64,7 +64,7 @@
         "successRate": 0
       },
       "würdest du": {
-        "count": 2,
+        "count": 3,
         "successRate": 0
       },
       "das würde": {
@@ -5280,7 +5280,7 @@
         "bad": 0
       },
       "würdest": {
-        "good": 2,
+        "good": 3,
         "bad": 3
       },
       "dann": {
@@ -5300,7 +5300,7 @@
         "bad": 1
       },
       "den": {
-        "good": 2,
+        "good": 3,
         "bad": 1
       },
       "arsch": {
@@ -5324,7 +5324,7 @@
         "bad": 1
       },
       "geil": {
-        "good": 2,
+        "good": 3,
         "bad": 2
       },
       "wie": {
@@ -5336,7 +5336,7 @@
         "bad": 1
       },
       "liebe": {
-        "good": 1,
+        "good": 2,
         "bad": 2
       },
       "wenn": {
@@ -5492,51 +5492,51 @@
         "bad": 1
       },
       "finde": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "spielzeuge": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "auch": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "richtig": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "dildos": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "vibratoren": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "experimentieren": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "was": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "als": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "erstes": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "spielsachen": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "machen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "denn": {
@@ -5693,8 +5693,8 @@
       "total": 22
     },
     "Sexuelle Themen": {
-      "good": 38,
-      "total": 66
+      "good": 39,
+      "total": 67
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -5766,8 +5766,8 @@
         "length": 72
       },
       "goodResponse": "Freut mich auf jedenfall von dir zu hören Edgar! Ich kann dir leider gerade kein Foto senden da meine Handykamera kaputt gegangen ist, ich muss mir erstmal ein neues Handy kaufen. Willst du mir mal er",
-      "successCount": 16,
-      "lastUsed": "2026-01-11T15:13:43.013Z"
+      "successCount": 17,
+      "lastUsed": "2026-01-11T15:13:44.107Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -6069,7 +6069,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:13:43.013Z",
+  "lastUpdated": "2026-01-11T15:13:44.107Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -6116,6 +6116,16 @@
         "Wonach suchst du?"
       ],
       "lastUsed": "2026-01-06T17:16:49.074Z"
+    },
+    {
+      "text": "Bessere Frage",
+      "count": 4,
+      "situations": [
+        "Treffen/Termine",
+        "allgemein",
+        "Sexuelle Themen"
+      ],
+      "lastUsed": "2026-01-11T15:13:44.107Z"
     },
     {
       "text": "Nich viel verändert, nur denn ersten satz entfernt weil die nachricht des Kunden zu sehr bewertet wurde",
@@ -6213,16 +6223,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-11T15:13:32.540Z"
-    },
-    {
-      "text": "Bessere Frage",
-      "count": 3,
-      "situations": [
-        "Treffen/Termine",
-        "allgemein",
-        "Sexuelle Themen"
-      ],
-      "lastUsed": "2026-01-11T15:13:43.013Z"
     },
     {
       "text": "Mische nicht zu viele Themen durcheinander, arbeite diese Themen Schritt für Schritt ab",
@@ -7149,6 +7149,7 @@
           159,
           167,
           168,
+          162,
           162
         ],
         "exclamationMarks": [
@@ -7166,6 +7167,7 @@
           0,
           1,
           1,
+          0,
           0,
           0,
           0
@@ -7187,13 +7189,14 @@
           1,
           1,
           2,
+          1,
           1
         ],
-        "count": 17,
+        "count": 18,
         "avgLength": 165,
         "minLength": 124,
         "maxLength": 227,
-        "medianLength": 159,
+        "medianLength": 162,
         "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 2,
@@ -7205,15 +7208,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 29,
-          "150-200": 47,
-          "200-250": 24,
+          "120-150": 28,
+          "150-200": 50,
+          "200-250": 22,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 82,
-          "2": 18,
+          "1": 83,
+          "2": 17,
           "3+": 0
         }
       },
@@ -7787,8 +7790,8 @@
       "pattern": "eigene_erfahrung",
       "situation": "Sexuelle Themen",
       "example": "Ich finde Spielzeuge auch richtig geil. Ich liebe es, mit Dildos oder Vibratoren zu experimentieren. Was würdest du als erstes mit den Spielsachen bei",
-      "count": 1,
-      "lastUsed": "2026-01-11T15:13:43.013Z"
+      "count": 2,
+      "lastUsed": "2026-01-11T15:13:44.107Z"
     }
   ],
   "migrated": true,
