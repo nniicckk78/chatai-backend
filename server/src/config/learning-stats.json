@@ -154,7 +154,7 @@
         "bad": 34
       },
       "wie": {
-        "good": 89,
+        "good": 90,
         "bad": 77
       },
       "stellst": {
@@ -194,15 +194,15 @@
         "bad": 28
       },
       "hast": {
-        "good": 69,
+        "good": 70,
         "bad": 76
       },
       "verstehen": {
-        "good": 26,
+        "good": 27,
         "bad": 25
       },
       "mehr": {
-        "good": 33,
+        "good": 34,
         "bad": 41
       },
       "wünschst": {
@@ -282,7 +282,7 @@
         "bad": 0
       },
       "viel": {
-        "good": 29,
+        "good": 30,
         "bad": 9
       },
       "los": {
@@ -294,7 +294,7 @@
         "bad": 172
       },
       "denn": {
-        "good": 162,
+        "good": 163,
         "bad": 58
       },
       "gerne": {
@@ -362,7 +362,7 @@
         "bad": 1
       },
       "hier": {
-        "good": 40,
+        "good": 41,
         "bad": 9
       },
       "hof": {
@@ -390,7 +390,7 @@
         "bad": 20
       },
       "finde": {
-        "good": 18,
+        "good": 19,
         "bad": 67
       },
       "grossartig": {
@@ -666,7 +666,7 @@
         "bad": 0
       },
       "wirklich": {
-        "good": 10,
+        "good": 11,
         "bad": 36
       },
       "wünschen": {
@@ -710,7 +710,7 @@
         "bad": 11
       },
       "gut": {
-        "good": 46,
+        "good": 47,
         "bad": 32
       },
       "eigentlich": {
@@ -998,7 +998,7 @@
         "bad": 4
       },
       "dich": {
-        "good": 62,
+        "good": 63,
         "bad": 39
       },
       "stört": {
@@ -1090,7 +1090,7 @@
         "bad": 0
       },
       "ber": {
-        "good": 16,
+        "good": 17,
         "bad": 22
       },
       "erfahren": {
@@ -1290,7 +1290,7 @@
         "bad": 3
       },
       "recht": {
-        "good": 13,
+        "good": 14,
         "bad": 2
       },
       "vorsichtig": {
@@ -1334,7 +1334,7 @@
         "bad": 6
       },
       "darauf": {
-        "good": 6,
+        "good": 7,
         "bad": 6
       },
       "weiter": {
@@ -1558,7 +1558,7 @@
         "bad": 4
       },
       "nichts": {
-        "good": 7,
+        "good": 8,
         "bad": 6
       },
       "berzeugen": {
@@ -1794,7 +1794,7 @@
         "bad": 2
       },
       "chemie": {
-        "good": 4,
+        "good": 5,
         "bad": 5
       },
       "stimmt": {
@@ -2038,7 +2038,7 @@
         "bad": 0
       },
       "alter": {
-        "good": 5,
+        "good": 6,
         "bad": 2
       },
       "lege": {
@@ -2742,7 +2742,7 @@
         "bad": 0
       },
       "absichten": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "jedenfall": {
@@ -3138,7 +3138,7 @@
         "bad": 0
       },
       "kommt": {
-        "good": 5,
+        "good": 6,
         "bad": 2
       },
       "frag": {
@@ -4030,7 +4030,7 @@
         "bad": 0
       },
       "menschen": {
-        "good": 2,
+        "good": 3,
         "bad": 4
       },
       "hüften": {
@@ -4114,7 +4114,7 @@
         "bad": 0
       },
       "rum": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "flexibel": {
@@ -4258,15 +4258,15 @@
         "bad": 1
       },
       "sagt": {
-        "good": 2,
+        "good": 3,
         "bad": 2
       },
       "welchen": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "treibst": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "steh": {
@@ -5813,7 +5813,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:11:22.731Z",
+  "lastUpdated": "2026-01-11T15:11:23.792Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5932,6 +5932,15 @@
       "lastUsed": "2026-01-08T09:33:24.249Z"
     },
     {
+      "text": "Ich habe eine Frage gestellt und du nicht",
+      "count": 3,
+      "situations": [
+        "allgemein",
+        "Wonach suchst du?"
+      ],
+      "lastUsed": "2026-01-11T15:11:23.792Z"
+    },
+    {
       "text": "Mische nicht zu viele Themen durcheinander, arbeite diese Themen Schritt für Schritt ab",
       "count": 2,
       "situations": [
@@ -5947,15 +5956,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-11T15:11:12.827Z"
-    },
-    {
-      "text": "Ich habe eine Frage gestellt und du nicht",
-      "count": 2,
-      "situations": [
-        "allgemein",
-        "Wonach suchst du?"
-      ],
-      "lastUsed": "2026-01-11T15:11:22.731Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -6390,6 +6390,7 @@
           152,
           152,
           162,
+          212,
           212
         ],
         "exclamationMarks": [
@@ -6429,6 +6430,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -6572,13 +6574,14 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 89,
+        "count": 90,
         "avgLength": 151,
         "minLength": 72,
         "maxLength": 248,
-        "medianLength": 144,
+        "medianLength": 145,
         "avgExclamationMarks": 0.1,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
@@ -6592,13 +6595,13 @@
           "100-120": 18,
           "120-150": 30,
           "150-200": 37,
-          "200-250": 8,
+          "200-250": 9,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
           "1": 84,
-          "2": 15,
+          "2": 14,
           "3+": 1
         }
       },
@@ -7466,8 +7469,8 @@
       "pattern": "eigene_erfahrung",
       "situation": "allgemein",
       "example": "Ja alles gut hat sich schon erledigt heheich würde gerne vorbei kommen aber leider ist das zu spontan, wie trinkst du denn gerne deinen Kaffee?",
-      "count": 16,
-      "lastUsed": "2026-01-11T15:11:22.731Z"
+      "count": 17,
+      "lastUsed": "2026-01-11T15:11:23.792Z"
     },
     {
       "pattern": "eigene_erfahrung",
