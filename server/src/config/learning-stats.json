@@ -4600,23 +4600,23 @@
         "bad": 0
       },
       "was": {
-        "good": 13,
+        "good": 15,
         "bad": 10
       },
       "hast": {
-        "good": 6,
+        "good": 7,
         "bad": 1
       },
       "denn": {
-        "good": 6,
+        "good": 8,
         "bad": 5
       },
       "kopf": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "zusammen": {
-        "good": 3,
+        "good": 4,
         "bad": 3
       },
       "machen": {
@@ -4624,7 +4624,7 @@
         "bad": 4
       },
       "könnten": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "freitag": {
@@ -4696,11 +4696,11 @@
         "bad": 4
       },
       "treffen": {
-        "good": 0,
+        "good": 1,
         "bad": 6
       },
       "hey": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "markus": {
@@ -4724,7 +4724,7 @@
         "bad": 0
       },
       "wie": {
-        "good": 2,
+        "good": 3,
         "bad": 5
       },
       "beiden": {
@@ -4764,7 +4764,7 @@
         "bad": 0
       },
       "mich": {
-        "good": 3,
+        "good": 4,
         "bad": 1
       },
       "hoffe": {
@@ -4776,7 +4776,7 @@
         "bad": 1
       },
       "gut": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "habe": {
@@ -4808,7 +4808,7 @@
         "bad": 1
       },
       "finde": {
-        "good": 0,
+        "good": 1,
         "bad": 4
       },
       "idee": {
@@ -4844,11 +4844,11 @@
         "bad": 1
       },
       "freut": {
-        "good": 2,
+        "good": 3,
         "bad": 1
       },
       "hören": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "genau": {
@@ -4924,7 +4924,7 @@
         "bad": 4
       },
       "richtig": {
-        "good": 0,
+        "good": 1,
         "bad": 4
       },
       "liebe": {
@@ -4972,7 +4972,7 @@
         "bad": 1
       },
       "auch": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "blind": {
@@ -4988,15 +4988,15 @@
         "bad": 1
       },
       "vorstellen": {
-        "good": 1,
+        "good": 2,
         "bad": 5
       },
       "viel": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "spass": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "bin": {
@@ -5024,7 +5024,7 @@
         "bad": 1
       },
       "magst": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "hinsicht": {
@@ -5124,7 +5124,7 @@
         "bad": 1
       },
       "zeit": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "total": {
@@ -5242,6 +5242,26 @@
       "situation": {
         "good": 0,
         "bad": 1
+      },
+      "ingo": {
+        "good": 1,
+        "bad": 0
+      },
+      "spontane": {
+        "good": 1,
+        "bad": 0
+      },
+      "aufregend": {
+        "good": 1,
+        "bad": 0
+      },
+      "verbringen": {
+        "good": 1,
+        "bad": 0
+      },
+      "besonders": {
+        "good": 1,
+        "bad": 0
       }
     },
     "Bot-Vorwurf": {
@@ -6345,8 +6365,8 @@
       "total": 7
     },
     "Treffen/Termine": {
-      "good": 31,
-      "total": 56
+      "good": 32,
+      "total": 57
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -6418,9 +6438,9 @@
         "hasSexual": false,
         "length": 165
       },
-      "goodResponse": "Es freut mich, dass du auch für ein Blind Date offen bist. Ich könnte mir vorstellen, dass wir viel Spass zusammen haben könnten. Ich bin gespannt, was du gerne machen würdest. Hattest du schonmal ein",
-      "successCount": 9,
-      "lastUsed": "2026-01-11T15:05:06.142Z"
+      "goodResponse": "Hey Ingo, freut mich, von dir zu hören. Ich finde spontane Treffen auch aufregend. Was hast du denn im Kopf, wie wir die Zeit zusammen verbringen könnten? Ich kann mir richtig gut vorstellen, dass wir",
+      "successCount": 10,
+      "lastUsed": "2026-01-11T15:41:06.681Z"
     },
     {
       "situation": "Bot-Vorwurf",
@@ -6722,7 +6742,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:40:22.565Z",
+  "lastUpdated": "2026-01-11T15:41:06.681Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -8301,9 +8321,11 @@
           122,
           122,
           138,
-          138
+          138,
+          247
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -8341,10 +8363,11 @@
           1,
           1,
           1,
-          1
+          1,
+          2
         ],
-        "count": 18,
-        "avgLength": 166,
+        "count": 19,
+        "avgLength": 170,
         "minLength": 122,
         "maxLength": 257,
         "medianLength": 165,
@@ -8359,15 +8382,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 44,
-          "150-200": 39,
-          "200-250": 11,
-          "250+": 6
+          "120-150": 42,
+          "150-200": 37,
+          "200-250": 16,
+          "250+": 5
         },
         "questionDistribution": {
           "0": 0,
-          "1": 83,
-          "2": 17,
+          "1": 79,
+          "2": 21,
           "3+": 0
         }
       },
@@ -8634,8 +8657,8 @@
       "pattern": "eigene_erfahrung",
       "situation": "Treffen/Termine",
       "example": "Es freut mich, dass du auch für ein Blind Date offen bist. Ich könnte mir vorstellen, dass wir viel Spass zusammen haben könnten. Ich bin gespannt, wa",
-      "count": 1,
-      "lastUsed": "2026-01-08T09:29:51.914Z"
+      "count": 2,
+      "lastUsed": "2026-01-11T15:41:06.681Z"
     },
     {
       "pattern": "eigene_erfahrung",
