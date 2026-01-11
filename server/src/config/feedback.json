@@ -7908,8 +7908,8 @@
       "chatId": "59007054",
       "customerMessage": "hey wie geht es dir gruß Martin",
       "aiResponse": "Hey Martin, danke der Nachfrage. Mir geht es gut, ich habe heute ein bisschen Zeit für mich und geniesse den Sonntag. Was hast du denn so geplant?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Hey Martin, mir geht es gut danke der Nachfrage. Was machst du denn gerade so schönes und wie geht es dir?",
+      "status": "edited",
       "platform": "viluu",
       "isASA": false,
       "context": {
@@ -7920,7 +7920,12 @@
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-01-11T10:19:40.508Z",
-      "updatedAt": "2026-01-11T10:19:40.508Z"
+      "updatedAt": "2026-01-11T12:45:28.259Z",
+      "reasoning": "Ihn auch gefragt wie es ihm geht",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     }
   ]
 }
