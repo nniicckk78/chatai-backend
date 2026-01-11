@@ -42,7 +42,7 @@
         "successRate": 0
       },
       "wäre es": {
-        "count": 3,
+        "count": 4,
         "successRate": 0
       },
       "würde gerne": {
@@ -162,7 +162,7 @@
         "bad": 34
       },
       "wie": {
-        "good": 95,
+        "good": 96,
         "bad": 78
       },
       "stellst": {
@@ -258,7 +258,7 @@
         "bad": 6
       },
       "bisschen": {
-        "good": 33,
+        "good": 34,
         "bad": 22
       },
       "damit": {
@@ -298,7 +298,7 @@
         "bad": 0
       },
       "was": {
-        "good": 161,
+        "good": 163,
         "bad": 178
       },
       "denn": {
@@ -366,11 +366,11 @@
         "bad": 0
       },
       "suchst": {
-        "good": 32,
+        "good": 33,
         "bad": 1
       },
       "hier": {
-        "good": 46,
+        "good": 47,
         "bad": 9
       },
       "hof": {
@@ -406,7 +406,7 @@
         "bad": 25
       },
       "wenn": {
-        "good": 49,
+        "good": 50,
         "bad": 93
       },
       "gegenseitig": {
@@ -530,7 +530,7 @@
         "bad": 1
       },
       "wäre": {
-        "good": 20,
+        "good": 21,
         "bad": 22
       },
       "perfektes": {
@@ -722,7 +722,7 @@
         "bad": 35
       },
       "eigentlich": {
-        "good": 26,
+        "good": 27,
         "bad": 1
       },
       "typ": {
@@ -866,7 +866,7 @@
         "bad": 2
       },
       "doch": {
-        "good": 22,
+        "good": 23,
         "bad": 4
       },
       "sex": {
@@ -1646,7 +1646,7 @@
         "bad": 3
       },
       "perfekt": {
-        "good": 2,
+        "good": 3,
         "bad": 2
       },
       "zum": {
@@ -1794,7 +1794,7 @@
         "bad": 2
       },
       "erstmal": {
-        "good": 8,
+        "good": 9,
         "bad": 0
       },
       "kennenlernen": {
@@ -2118,7 +2118,7 @@
         "bad": 7
       },
       "erzählst": {
-        "good": 3,
+        "good": 4,
         "bad": 4
       },
       "erzählen": {
@@ -2330,7 +2330,7 @@
         "bad": 1
       },
       "eher": {
-        "good": 3,
+        "good": 4,
         "bad": 9
       },
       "langsam": {
@@ -3062,7 +3062,7 @@
         "bad": 0
       },
       "festes": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "daraus": {
@@ -4410,7 +4410,7 @@
         "bad": 1
       },
       "lockers": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "ständig": {
@@ -6209,7 +6209,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:21:03.027Z",
+  "lastUpdated": "2026-01-11T15:21:04.343Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -6817,6 +6817,7 @@
           232,
           137,
           136,
+          136,
           136
         ],
         "exclamationMarks": [
@@ -6856,6 +6857,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -7021,9 +7023,10 @@
           2,
           1,
           1,
+          1,
           1
         ],
-        "count": 100,
+        "count": 101,
         "avgLength": 152,
         "minLength": 72,
         "maxLength": 248,
@@ -7039,7 +7042,7 @@
         "lengthDistribution": {
           "0-100": 7,
           "100-120": 16,
-          "120-150": 33,
+          "120-150": 34,
           "150-200": 33,
           "200-250": 11,
           "250+": 0
