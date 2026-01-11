@@ -142,7 +142,7 @@
         "bad": 0
       },
       "würdest": {
-        "good": 86,
+        "good": 87,
         "bad": 61
       },
       "machen": {
@@ -174,7 +174,7 @@
         "bad": 34
       },
       "wie": {
-        "good": 101,
+        "good": 102,
         "bad": 82
       },
       "stellst": {
@@ -202,7 +202,7 @@
         "bad": 20
       },
       "ort": {
-        "good": 6,
+        "good": 7,
         "bad": 25
       },
       "den": {
@@ -310,7 +310,7 @@
         "bad": 0
       },
       "was": {
-        "good": 172,
+        "good": 173,
         "bad": 188
       },
       "denn": {
@@ -318,7 +318,7 @@
         "bad": 72
       },
       "gerne": {
-        "good": 77,
+        "good": 78,
         "bad": 65
       },
       "wollen": {
@@ -478,7 +478,7 @@
         "bad": 6
       },
       "richtig": {
-        "good": 39,
+        "good": 40,
         "bad": 42
       },
       "feucht": {
@@ -542,7 +542,7 @@
         "bad": 1
       },
       "wäre": {
-        "good": 23,
+        "good": 24,
         "bad": 22
       },
       "perfektes": {
@@ -662,11 +662,11 @@
         "bad": 0
       },
       "jeden": {
-        "good": 4,
+        "good": 5,
         "bad": 7
       },
       "fall": {
-        "good": 4,
+        "good": 5,
         "bad": 7
       },
       "ganz": {
@@ -710,7 +710,7 @@
         "bad": 2
       },
       "geil": {
-        "good": 18,
+        "good": 19,
         "bad": 35
       },
       "liebe": {
@@ -774,7 +774,7 @@
         "bad": 5
       },
       "deine": {
-        "good": 13,
+        "good": 14,
         "bad": 39
       },
       "hobbys": {
@@ -818,7 +818,7 @@
         "bad": 8
       },
       "dinge": {
-        "good": 7,
+        "good": 8,
         "bad": 6
       },
       "auszuprobieren": {
@@ -882,7 +882,7 @@
         "bad": 4
       },
       "sex": {
-        "good": 17,
+        "good": 18,
         "bad": 5
       },
       "nichz": {
@@ -942,7 +942,7 @@
         "bad": 0
       },
       "mal": {
-        "good": 40,
+        "good": 42,
         "bad": 31
       },
       "sehen": {
@@ -1098,7 +1098,7 @@
         "bad": 10
       },
       "schon": {
-        "good": 54,
+        "good": 55,
         "bad": 20
       },
       "noch": {
@@ -1662,7 +1662,7 @@
         "bad": 2
       },
       "zum": {
-        "good": 0,
+        "good": 1,
         "bad": 5
       },
       "entspannen": {
@@ -1762,7 +1762,7 @@
         "bad": 4
       },
       "ausprobieren": {
-        "good": 2,
+        "good": 3,
         "bad": 6
       },
       "bett": {
@@ -2114,7 +2114,7 @@
         "bad": 3
       },
       "freien": {
-        "good": 0,
+        "good": 1,
         "bad": 3
       },
       "tag": {
@@ -2422,7 +2422,7 @@
         "bad": 0
       },
       "fantasie": {
-        "good": 3,
+        "good": 4,
         "bad": 4
       },
       "verwöhnen": {
@@ -2514,7 +2514,7 @@
         "bad": 0
       },
       "aufregenden": {
-        "good": 3,
+        "good": 4,
         "bad": 3
       },
       "olaf": {
@@ -2570,7 +2570,7 @@
         "bad": 0
       },
       "habe": {
-        "good": 14,
+        "good": 15,
         "bad": 14
       },
       "schän": {
@@ -2686,7 +2686,7 @@
         "bad": 1
       },
       "davon": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "geträumt": {
@@ -3006,7 +3006,7 @@
         "bad": 1
       },
       "paar": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "akten": {
@@ -3450,7 +3450,7 @@
         "bad": 1
       },
       "träume": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "liebes": {
@@ -4552,6 +4552,22 @@
       "barsinghausen": {
         "good": 0,
         "bad": 1
+      },
+      "ausprobiert": {
+        "good": 1,
+        "bad": 0
+      },
+      "waren": {
+        "good": 1,
+        "bad": 0
+      },
+      "beispiel": {
+        "good": 1,
+        "bad": 0
+      },
+      "wildeste": {
+        "good": 1,
+        "bad": 0
       }
     },
     "Treffen/Termine": {
@@ -6742,7 +6758,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:41:06.681Z",
+  "lastUpdated": "2026-01-11T15:41:37.763Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7369,7 +7385,8 @@
           261,
           161,
           161,
-          125
+          125,
+          243
         ],
         "exclamationMarks": [
           1,
@@ -7408,6 +7425,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -7611,9 +7629,10 @@
           2,
           1,
           1,
+          1,
           1
         ],
-        "count": 119,
+        "count": 120,
         "avgLength": 158,
         "minLength": 72,
         "maxLength": 325,
@@ -7631,12 +7650,12 @@
           "100-120": 13,
           "120-150": 29,
           "150-200": 38,
-          "200-250": 12,
+          "200-250": 13,
           "250+": 2
         },
         "questionDistribution": {
           "0": 0,
-          "1": 76,
+          "1": 77,
           "2": 18,
           "3+": 6
         }
