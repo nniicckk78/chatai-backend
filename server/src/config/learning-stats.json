@@ -4544,11 +4544,11 @@
     },
     "Treffen/Termine": {
       "okay": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "dann": {
-        "good": 7,
+        "good": 8,
         "bad": 0
       },
       "wissen": {
@@ -4556,11 +4556,11 @@
         "bad": 2
       },
       "schonmal": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "bescheid": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "schauen": {
@@ -4744,7 +4744,7 @@
         "bad": 0
       },
       "noch": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "lust": {
@@ -5020,7 +5020,7 @@
         "bad": 1
       },
       "jetzt": {
-        "good": 2,
+        "good": 3,
         "bad": 1
       },
       "wäre": {
@@ -5036,7 +5036,7 @@
         "bad": 0
       },
       "willst": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "nicht": {
@@ -5172,39 +5172,39 @@
         "bad": 2
       },
       "weiss": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "also": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "sex": {
-        "good": 1,
+        "good": 2,
         "bad": 2
       },
       "auto": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "hatte": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "komplett": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "freien": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "nie": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "ndern": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "man": {
@@ -6321,8 +6321,8 @@
       "total": 22
     },
     "Sexuelle Themen": {
-      "good": 45,
-      "total": 77
+      "good": 46,
+      "total": 78
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -6333,8 +6333,8 @@
       "total": 7
     },
     "Treffen/Termine": {
-      "good": 30,
-      "total": 55
+      "good": 31,
+      "total": 56
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -6606,6 +6606,19 @@
       "lastUsed": "2026-01-06T14:30:43.570Z"
     },
     {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "wochenende habe noch zeit montag gehe wieder arbeiten dann habe",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": true,
+        "length": 200
+      },
+      "goodResponse": "Okay dann weiss ich ja jetzt bescheid, also Sex im Auto hatte ich schonmal aber komplett im freien noch nie. Willst du das mit mir ändern?",
+      "successCount": 2,
+      "lastUsed": "2026-01-11T15:39:49.329Z"
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
@@ -6695,22 +6708,9 @@
       "goodResponse": "Gut da bin ich ja jetzt schonmal erleichert. 🙂 Und wie war denn so dein Start in das neue Jahr? Warst du mit der Familie oder Freunden?",
       "successCount": 1,
       "lastUsed": "2026-01-06T17:13:38.718Z"
-    },
-    {
-      "situation": "Treffen/Termine",
-      "customerPattern": {
-        "keywords": "wochenende habe noch zeit montag gehe wieder arbeiten dann habe",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": true,
-        "length": 200
-      },
-      "goodResponse": "Okay dann weiss ich ja jetzt bescheid, also Sex im Auto hatte ich schonmal aber komplett im freien noch nie. Willst du das mit mir ändern?",
-      "successCount": 1,
-      "lastUsed": "2026-01-11T15:39:48.158Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:39:48.158Z",
+  "lastUpdated": "2026-01-11T15:39:49.329Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -8282,9 +8282,11 @@
           122,
           122,
           122,
+          138,
           138
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -8320,10 +8322,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 17,
-        "avgLength": 167,
+        "count": 18,
+        "avgLength": 166,
         "minLength": 122,
         "maxLength": 257,
         "medianLength": 165,
@@ -8338,15 +8341,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 41,
-          "150-200": 41,
-          "200-250": 12,
+          "120-150": 44,
+          "150-200": 39,
+          "200-250": 11,
           "250+": 6
         },
         "questionDistribution": {
           "0": 0,
-          "1": 82,
-          "2": 18,
+          "1": 83,
+          "2": 17,
           "3+": 0
         }
       },
