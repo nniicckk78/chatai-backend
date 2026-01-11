@@ -154,7 +154,7 @@
         "bad": 34
       },
       "wie": {
-        "good": 87,
+        "good": 88,
         "bad": 75
       },
       "stellst": {
@@ -194,7 +194,7 @@
         "bad": 28
       },
       "hast": {
-        "good": 66,
+        "good": 68,
         "bad": 75
       },
       "verstehen": {
@@ -222,7 +222,7 @@
         "bad": 20
       },
       "auch": {
-        "good": 151,
+        "good": 153,
         "bad": 53
       },
       "funke": {
@@ -294,11 +294,11 @@
         "bad": 172
       },
       "denn": {
-        "good": 160,
+        "good": 161,
         "bad": 57
       },
       "gerne": {
-        "good": 71,
+        "good": 72,
         "bad": 53
       },
       "wollen": {
@@ -306,7 +306,7 @@
         "bad": 1
       },
       "wieder": {
-        "good": 9,
+        "good": 10,
         "bad": 20
       },
       "entfachen": {
@@ -1290,7 +1290,7 @@
         "bad": 3
       },
       "recht": {
-        "good": 11,
+        "good": 12,
         "bad": 1
       },
       "vorsichtig": {
@@ -2246,7 +2246,7 @@
         "bad": 0
       },
       "gehe": {
-        "good": 6,
+        "good": 7,
         "bad": 1
       },
       "trinke": {
@@ -2282,7 +2282,7 @@
         "bad": 0
       },
       "essen": {
-        "good": 6,
+        "good": 7,
         "bad": 0
       },
       "finger": {
@@ -2794,7 +2794,7 @@
         "bad": 0
       },
       "hin": {
-        "good": 7,
+        "good": 8,
         "bad": 0
       },
       "schreiben": {
@@ -2966,7 +2966,7 @@
         "bad": 1
       },
       "sieht": {
-        "good": 5,
+        "good": 6,
         "bad": 1
       },
       "arbeitstag": {
@@ -4282,15 +4282,15 @@
         "bad": 1
       },
       "wiederum": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "auswärts": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "lieblingsrestaurant": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "lkw": {
@@ -5797,7 +5797,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:10:58.124Z",
+  "lastUpdated": "2026-01-11T15:10:59.313Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5820,6 +5820,14 @@
       "lastUsed": "2026-01-06T00:37:57.465Z"
     },
     {
+      "text": "Ich habe ihn nach weiteren Hobbys gefragt und nicht geschrieben das ich LKW Tuning geil finde, keine Frau würde sowas schreiben",
+      "count": 5,
+      "situations": [
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-11T15:10:59.313Z"
+    },
+    {
       "text": "Niemals einen Tag nennen an dem man sich treffen kann",
       "count": 4,
       "situations": [
@@ -5836,14 +5844,6 @@
         "Wonach suchst du?"
       ],
       "lastUsed": "2026-01-06T17:16:49.074Z"
-    },
-    {
-      "text": "Ich habe ihn nach weiteren Hobbys gefragt und nicht geschrieben das ich LKW Tuning geil finde, keine Frau würde sowas schreiben",
-      "count": 4,
-      "situations": [
-        "allgemein"
-      ],
-      "lastUsed": "2026-01-11T15:10:58.123Z"
     },
     {
       "text": "Nich viel verändert, nur denn ersten satz entfernt weil die nachricht des Kunden zu sehr bewertet wurde",
@@ -6369,6 +6369,7 @@
           152,
           152,
           152,
+          152,
           152
         ],
         "exclamationMarks": [
@@ -6408,6 +6409,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -6545,9 +6547,10 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 86,
+        "count": 87,
         "avgLength": 150,
         "minLength": 72,
         "maxLength": 248,
@@ -6562,9 +6565,9 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 7,
-          "100-120": 19,
+          "100-120": 18,
           "120-150": 31,
-          "150-200": 36,
+          "150-200": 37,
           "200-250": 7,
           "250+": 0
         },
@@ -7433,8 +7436,8 @@
       "pattern": "eigene_erfahrung",
       "situation": "allgemein",
       "example": "Ja alles gut hat sich schon erledigt heheich würde gerne vorbei kommen aber leider ist das zu spontan, wie trinkst du denn gerne deinen Kaffee?",
-      "count": 13,
-      "lastUsed": "2026-01-11T15:10:58.119Z"
+      "count": 14,
+      "lastUsed": "2026-01-11T15:10:59.313Z"
     },
     {
       "pattern": "eigene_erfahrung",
