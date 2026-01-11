@@ -8928,8 +8928,8 @@
       "chatId": "59008086",
       "customerMessage": "Hey wie geht's dir süße",
       "aiResponse": "Hey, mir geht's gut, danke der Nachfrage. Ich geniesse die ruhigen Sonntage in Barsinghausen. Was machst du denn so, um deinen Tag zu gestalten? Wie siehst du das?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Hey, mir geht's gut, danke der Nachfrage. Ich geniesse die ruhigen Sonntage und schaue etwas TV und was machst du so schönes?",
+      "status": "edited",
       "platform": "viluu",
       "isASA": false,
       "context": {
@@ -8940,7 +8940,12 @@
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-01-11T14:03:23.345Z",
-      "updatedAt": "2026-01-11T14:03:23.345Z"
+      "updatedAt": "2026-01-11T15:40:21.054Z",
+      "reasoning": "Ort nennen war unangebracht. Ergänzt das man TV schaut und und ihn gefragt was er heute macht. und nicht gefragt wie er das sieht.",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1768140285748_l12ip82b6",
