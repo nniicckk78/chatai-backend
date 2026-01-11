@@ -178,8 +178,8 @@
         "bad": 82
       },
       "stellst": {
-        "good": 3,
-        "bad": 44
+        "good": 4,
+        "bad": 45
       },
       "unseren": {
         "good": 0,
@@ -242,16 +242,16 @@
         "bad": 24
       },
       "auch": {
-        "good": 169,
-        "bad": 62
+        "good": 170,
+        "bad": 63
       },
       "funke": {
         "good": 19,
         "bad": 19
       },
       "nicht": {
-        "good": 131,
-        "bad": 51
+        "good": 132,
+        "bad": 52
       },
       "erlischt": {
         "good": 19,
@@ -278,8 +278,8 @@
         "bad": 0
       },
       "mich": {
-        "good": 62,
-        "bad": 62
+        "good": 63,
+        "bad": 63
       },
       "wohl": {
         "good": 19,
@@ -294,8 +294,8 @@
         "bad": 0
       },
       "zeit": {
-        "good": 29,
-        "bad": 10
+        "good": 30,
+        "bad": 11
       },
       "ziemlich": {
         "good": 25,
@@ -310,12 +310,12 @@
         "bad": 0
       },
       "was": {
-        "good": 173,
-        "bad": 190
+        "good": 174,
+        "bad": 191
       },
       "denn": {
         "good": 185,
-        "bad": 73
+        "bad": 74
       },
       "gerne": {
         "good": 78,
@@ -378,11 +378,11 @@
         "bad": 0
       },
       "suchst": {
-        "good": 33,
+        "good": 34,
         "bad": 1
       },
       "hier": {
-        "good": 47,
+        "good": 48,
         "bad": 9
       },
       "hof": {
@@ -490,8 +490,8 @@
         "bad": 2
       },
       "schön": {
-        "good": 13,
-        "bad": 13
+        "good": 14,
+        "bad": 14
       },
       "lecken": {
         "good": 5,
@@ -686,8 +686,8 @@
         "bad": 0
       },
       "wirklich": {
-        "good": 14,
-        "bad": 39
+        "good": 15,
+        "bad": 40
       },
       "wünschen": {
         "good": 3,
@@ -734,7 +734,7 @@
         "bad": 41
       },
       "eigentlich": {
-        "good": 27,
+        "good": 28,
         "bad": 1
       },
       "typ": {
@@ -986,8 +986,8 @@
         "bad": 2
       },
       "bin": {
-        "good": 35,
-        "bad": 38
+        "good": 36,
+        "bad": 39
       },
       "gemeinsam": {
         "good": 4,
@@ -1034,8 +1034,8 @@
         "bad": 5
       },
       "kein": {
-        "good": 14,
-        "bad": 2
+        "good": 15,
+        "bad": 3
       },
       "problem": {
         "good": 8,
@@ -1219,7 +1219,7 @@
       },
       "magst": {
         "good": 6,
-        "bad": 19
+        "bad": 20
       },
       "sonst": {
         "good": 0,
@@ -1234,7 +1234,7 @@
         "bad": 0
       },
       "etwas": {
-        "good": 17,
+        "good": 18,
         "bad": 9
       },
       "neugierig": {
@@ -1598,8 +1598,8 @@
         "bad": 2
       },
       "interessiert": {
-        "good": 0,
-        "bad": 5
+        "good": 1,
+        "bad": 6
       },
       "besonders": {
         "good": 0,
@@ -2342,7 +2342,7 @@
         "bad": 1
       },
       "eher": {
-        "good": 4,
+        "good": 6,
         "bad": 9
       },
       "langsam": {
@@ -2686,8 +2686,8 @@
         "bad": 1
       },
       "davon": {
-        "good": 3,
-        "bad": 0
+        "good": 4,
+        "bad": 1
       },
       "geträumt": {
         "good": 1,
@@ -3074,7 +3074,7 @@
         "bad": 0
       },
       "festes": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "daraus": {
@@ -4322,8 +4322,8 @@
         "bad": 3
       },
       "fan": {
-        "good": 0,
-        "bad": 3
+        "good": 1,
+        "bad": 4
       },
       "sport": {
         "good": 0,
@@ -4414,7 +4414,7 @@
         "bad": 0
       },
       "lockeres": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "münchen": {
@@ -4575,6 +4575,22 @@
       },
       "sagst": {
         "good": 0,
+        "bad": 1
+      },
+      "hohe": {
+        "good": 1,
+        "bad": 1
+      },
+      "ansprüche": {
+        "good": 1,
+        "bad": 1
+      },
+      "jemandem": {
+        "good": 1,
+        "bad": 1
+      },
+      "verschwenden": {
+        "good": 1,
         "bad": 1
       }
     },
@@ -6474,7 +6490,7 @@
   "situationSuccess": {
     "allgemein": {
       "good": 171,
-      "total": 351
+      "total": 352
     },
     "Bot-Vorwurf": {
       "good": 12,
@@ -6870,7 +6886,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:43:59.247Z",
+  "lastUpdated": "2026-01-11T15:44:04.419Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7499,7 +7515,8 @@
           161,
           125,
           243,
-          165
+          165,
+          225
         ],
         "exclamationMarks": [
           1,
@@ -7538,6 +7555,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -7745,10 +7763,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 121,
-        "avgLength": 158,
+        "count": 122,
+        "avgLength": 159,
         "minLength": 72,
         "maxLength": 325,
         "medianLength": 152,
@@ -7765,7 +7784,7 @@
           "100-120": 13,
           "120-150": 29,
           "150-200": 38,
-          "200-250": 12,
+          "200-250": 13,
           "250+": 2
         },
         "questionDistribution": {
@@ -7863,9 +7882,11 @@
           270,
           181,
           163,
-          193
+          193,
+          178
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -8041,9 +8062,10 @@
           1,
           1,
           2,
+          1,
           1
         ],
-        "count": 87,
+        "count": 88,
         "avgLength": 209,
         "minLength": 115,
         "maxLength": 385,
@@ -8060,8 +8082,8 @@
           "0-100": 0,
           "100-120": 5,
           "120-150": 6,
-          "150-200": 34,
-          "200-250": 29,
+          "150-200": 35,
+          "200-250": 28,
           "250+": 26
         },
         "questionDistribution": {
