@@ -4883,7 +4883,7 @@
     "Bot-Vorwurf": {
       "gut": {
         "good": 1,
-        "bad": 0
+        "bad": 1
       },
       "bin": {
         "good": 1,
@@ -4902,11 +4902,11 @@
         "bad": 0
       },
       "wie": {
-        "good": 1,
-        "bad": 0
+        "good": 2,
+        "bad": 1
       },
       "denn": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "dein": {
@@ -4966,12 +4966,12 @@
         "bad": 1
       },
       "hast": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "bisschen": {
         "good": 0,
-        "bad": 2
+        "bad": 3
       },
       "mehr": {
         "good": 0,
@@ -4990,8 +4990,8 @@
         "bad": 1
       },
       "auch": {
-        "good": 0,
-        "bad": 1
+        "good": 1,
+        "bad": 2
       },
       "selbstbewusstsein": {
         "good": 0,
@@ -5002,8 +5002,8 @@
         "bad": 1
       },
       "was": {
-        "good": 0,
-        "bad": 1
+        "good": 1,
+        "bad": 2
       },
       "magst": {
         "good": 0,
@@ -5022,6 +5022,170 @@
         "bad": 1
       },
       "geht": {
+        "good": 0,
+        "bad": 1
+      },
+      "hört": {
+        "good": 1,
+        "bad": 0
+      },
+      "sich": {
+        "good": 1,
+        "bad": 0
+      },
+      "wirklich": {
+        "good": 1,
+        "bad": 1
+      },
+      "toll": {
+        "good": 1,
+        "bad": 0
+      },
+      "dann": {
+        "good": 2,
+        "bad": 1
+      },
+      "eigentlich": {
+        "good": 1,
+        "bad": 0
+      },
+      "eigenes": {
+        "good": 1,
+        "bad": 0
+      },
+      "segelboot": {
+        "good": 1,
+        "bad": 0
+      },
+      "macht": {
+        "good": 1,
+        "bad": 0
+      },
+      "man": {
+        "good": 1,
+        "bad": 0
+      },
+      "leihst": {
+        "good": 1,
+        "bad": 0
+      },
+      "klingt": {
+        "good": 0,
+        "bad": 1
+      },
+      "tollen": {
+        "good": 0,
+        "bad": 1
+      },
+      "zeit": {
+        "good": 0,
+        "bad": 1
+      },
+      "draussen": {
+        "good": 0,
+        "bad": 1
+      },
+      "verbringst": {
+        "good": 0,
+        "bad": 1
+      },
+      "liebe": {
+        "good": 0,
+        "bad": 1
+      },
+      "sonne": {
+        "good": 0,
+        "bad": 1
+      },
+      "spüren": {
+        "good": 0,
+        "bad": 1
+      },
+      "aktiv": {
+        "good": 0,
+        "bad": 1
+      },
+      "radfahren": {
+        "good": 0,
+        "bad": 1
+      },
+      "segeln": {
+        "good": 0,
+        "bad": 1
+      },
+      "machen": {
+        "good": 0,
+        "bad": 2
+      },
+      "echt": {
+        "good": 0,
+        "bad": 1
+      },
+      "spass": {
+        "good": 0,
+        "bad": 1
+      },
+      "könnte": {
+        "good": 0,
+        "bad": 1
+      },
+      "vorstellen": {
+        "good": 0,
+        "bad": 1
+      },
+      "heiss": {
+        "good": 0,
+        "bad": 1
+      },
+      "wäre": {
+        "good": 0,
+        "bad": 1
+      },
+      "gemeinsam": {
+        "good": 0,
+        "bad": 1
+      },
+      "abenteuer": {
+        "good": 0,
+        "bad": 1
+      },
+      "erleben": {
+        "good": 0,
+        "bad": 1
+      },
+      "vielleicht": {
+        "good": 0,
+        "bad": 1
+      },
+      "langen": {
+        "good": 0,
+        "bad": 1
+      },
+      "tag": {
+        "good": 0,
+        "bad": 1
+      },
+      "frischen": {
+        "good": 0,
+        "bad": 1
+      },
+      "luft": {
+        "good": 0,
+        "bad": 1
+      },
+      "entspannen": {
+        "good": 0,
+        "bad": 1
+      },
+      "würdest": {
+        "good": 0,
+        "bad": 1
+      },
+      "gerne": {
+        "good": 0,
+        "bad": 1
+      },
+      "noch": {
         "good": 0,
         "bad": 1
       }
@@ -5433,8 +5597,8 @@
       "total": 333
     },
     "Bot-Vorwurf": {
-      "good": 10,
-      "total": 20
+      "good": 11,
+      "total": 22
     },
     "Sexuelle Themen": {
       "good": 37,
@@ -5536,8 +5700,8 @@
         "length": 406
       },
       "goodResponse": "Dann lass es uns doch herausfinden ob du und ich für einander gemacht sind? Das mit den Kindern ist mir gar nicht so wichtig, Kinder sind nicht das einizige was zählt. Es gibt noch genug andere wichti",
-      "successCount": 7,
-      "lastUsed": "2026-01-04T20:00:11.265Z"
+      "successCount": 8,
+      "lastUsed": "2026-01-11T15:13:20.067Z"
     },
     {
       "situation": "Sexuelle Themen",
@@ -5813,7 +5977,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:12:06.519Z",
+  "lastUpdated": "2026-01-11T15:13:20.067Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -6213,6 +6377,14 @@
         "Sexuelle Themen"
       ],
       "lastUsed": "2026-01-11T15:10:04.787Z"
+    },
+    {
+      "text": "etwas bessere fragen gestellt",
+      "count": 1,
+      "situations": [
+        "Bot-Vorwurf"
+      ],
+      "lastUsed": "2026-01-11T15:13:20.066Z"
     }
   ],
   "messageStats": {
@@ -7018,61 +7190,67 @@
       "positive": {
         "lengths": [
           155,
-          136
+          136,
+          139
         ],
         "exclamationMarks": [
+          0,
           0,
           0
         ],
         "questions": [
           1,
+          2,
           2
         ],
-        "count": 2,
-        "avgLength": 146,
+        "count": 3,
+        "avgLength": 143,
         "minLength": 136,
         "maxLength": 155,
-        "medianLength": 155,
+        "medianLength": 139,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.5,
+        "avgQuestions": 1.7,
         "minQuestions": 1,
         "maxQuestions": 2,
         "medianQuestions": 2,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 50,
-          "150-200": 50,
+          "120-150": 67,
+          "150-200": 33,
           "200-250": 0,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 50,
-          "2": 50,
+          "1": 33,
+          "2": 67,
           "3+": 0
         }
       },
       "negative": {
         "lengths": [
           179,
-          257
+          257,
+          385
         ],
         "exclamationMarks": [
+          0,
           0,
           0
         ],
         "questions": [
           1,
+          1,
           1
         ],
-        "count": 2,
-        "avgLength": 218,
+        "count": 3,
+        "avgLength": 274,
         "minLength": 179,
-        "maxLength": 257,
+        "maxLength": 385,
         "medianLength": 257,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
@@ -7086,9 +7264,9 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 50,
+          "150-200": 33,
           "200-250": 0,
-          "250+": 50
+          "250+": 67
         },
         "questionDistribution": {
           "0": 0,
