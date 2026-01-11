@@ -82,11 +82,11 @@
   "wordFrequency": {
     "allgemein": {
       "hört": {
-        "good": 25,
+        "good": 26,
         "bad": 6
       },
       "sich": {
-        "good": 40,
+        "good": 41,
         "bad": 26
       },
       "sehr": {
@@ -102,7 +102,7 @@
         "bad": 2
       },
       "dann": {
-        "good": 93,
+        "good": 95,
         "bad": 6
       },
       "irgendwo": {
@@ -154,7 +154,7 @@
         "bad": 34
       },
       "wie": {
-        "good": 91,
+        "good": 92,
         "bad": 78
       },
       "stellst": {
@@ -194,7 +194,7 @@
         "bad": 28
       },
       "hast": {
-        "good": 71,
+        "good": 72,
         "bad": 76
       },
       "verstehen": {
@@ -222,7 +222,7 @@
         "bad": 20
       },
       "auch": {
-        "good": 155,
+        "good": 156,
         "bad": 55
       },
       "funke": {
@@ -290,11 +290,11 @@
         "bad": 0
       },
       "was": {
-        "good": 153,
+        "good": 154,
         "bad": 173
       },
       "denn": {
-        "good": 166,
+        "good": 167,
         "bad": 58
       },
       "gerne": {
@@ -506,7 +506,7 @@
         "bad": 15
       },
       "toll": {
-        "good": 1,
+        "good": 2,
         "bad": 2
       },
       "jemand": {
@@ -666,7 +666,7 @@
         "bad": 0
       },
       "wirklich": {
-        "good": 12,
+        "good": 13,
         "bad": 37
       },
       "wünschen": {
@@ -714,7 +714,7 @@
         "bad": 33
       },
       "eigentlich": {
-        "good": 23,
+        "good": 24,
         "bad": 1
       },
       "typ": {
@@ -830,7 +830,7 @@
         "bad": 2
       },
       "macht": {
-        "good": 3,
+        "good": 4,
         "bad": 20
       },
       "intensiver": {
@@ -1126,7 +1126,7 @@
         "bad": 2
       },
       "man": {
-        "good": 5,
+        "good": 6,
         "bad": 13
       },
       "reden": {
@@ -4330,15 +4330,15 @@
         "bad": 1
       },
       "eigenes": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "segelboot": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "leihst": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "tollen": {
@@ -6013,7 +6013,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:13:31.447Z",
+  "lastUpdated": "2026-01-11T15:13:32.540Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -6150,6 +6150,15 @@
       "lastUsed": "2026-01-11T15:12:06.519Z"
     },
     {
+      "text": "etwas bessere fragen gestellt",
+      "count": 3,
+      "situations": [
+        "Bot-Vorwurf",
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-11T15:13:32.540Z"
+    },
+    {
       "text": "Mische nicht zu viele Themen durcheinander, arbeite diese Themen Schritt für Schritt ab",
       "count": 2,
       "situations": [
@@ -6165,15 +6174,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-11T15:11:12.827Z"
-    },
-    {
-      "text": "etwas bessere fragen gestellt",
-      "count": 2,
-      "situations": [
-        "Bot-Vorwurf",
-        "allgemein"
-      ],
-      "lastUsed": "2026-01-11T15:13:31.446Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -6604,6 +6604,7 @@
           212,
           237,
           237,
+          139,
           139
         ],
         "exclamationMarks": [
@@ -6643,6 +6644,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -6794,9 +6796,10 @@
           1,
           1,
           1,
+          2,
           2
         ],
-        "count": 93,
+        "count": 94,
         "avgLength": 153,
         "minLength": 72,
         "maxLength": 248,
@@ -6812,15 +6815,15 @@
         "lengthDistribution": {
           "0-100": 6,
           "100-120": 17,
-          "120-150": 30,
+          "120-150": 31,
           "150-200": 35,
           "200-250": 11,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 84,
-          "2": 15,
+          "1": 83,
+          "2": 16,
           "3+": 1
         }
       },
