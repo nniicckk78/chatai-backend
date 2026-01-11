@@ -178,7 +178,7 @@
         "bad": 82
       },
       "stellst": {
-        "good": 4,
+        "good": 5,
         "bad": 45
       },
       "unseren": {
@@ -242,7 +242,7 @@
         "bad": 24
       },
       "auch": {
-        "good": 170,
+        "good": 171,
         "bad": 63
       },
       "funke": {
@@ -250,7 +250,7 @@
         "bad": 19
       },
       "nicht": {
-        "good": 132,
+        "good": 133,
         "bad": 52
       },
       "erlischt": {
@@ -278,7 +278,7 @@
         "bad": 0
       },
       "mich": {
-        "good": 63,
+        "good": 64,
         "bad": 63
       },
       "wohl": {
@@ -294,7 +294,7 @@
         "bad": 0
       },
       "zeit": {
-        "good": 30,
+        "good": 31,
         "bad": 11
       },
       "ziemlich": {
@@ -310,7 +310,7 @@
         "bad": 0
       },
       "was": {
-        "good": 174,
+        "good": 175,
         "bad": 191
       },
       "denn": {
@@ -378,11 +378,11 @@
         "bad": 0
       },
       "suchst": {
-        "good": 34,
+        "good": 35,
         "bad": 1
       },
       "hier": {
-        "good": 48,
+        "good": 49,
         "bad": 9
       },
       "hof": {
@@ -490,7 +490,7 @@
         "bad": 2
       },
       "schön": {
-        "good": 14,
+        "good": 15,
         "bad": 14
       },
       "lecken": {
@@ -686,7 +686,7 @@
         "bad": 0
       },
       "wirklich": {
-        "good": 15,
+        "good": 16,
         "bad": 40
       },
       "wünschen": {
@@ -734,7 +734,7 @@
         "bad": 41
       },
       "eigentlich": {
-        "good": 28,
+        "good": 29,
         "bad": 1
       },
       "typ": {
@@ -986,7 +986,7 @@
         "bad": 2
       },
       "bin": {
-        "good": 36,
+        "good": 37,
         "bad": 39
       },
       "gemeinsam": {
@@ -1034,7 +1034,7 @@
         "bad": 5
       },
       "kein": {
-        "good": 15,
+        "good": 16,
         "bad": 3
       },
       "problem": {
@@ -1234,7 +1234,7 @@
         "bad": 0
       },
       "etwas": {
-        "good": 18,
+        "good": 19,
         "bad": 9
       },
       "neugierig": {
@@ -1598,7 +1598,7 @@
         "bad": 2
       },
       "interessiert": {
-        "good": 1,
+        "good": 2,
         "bad": 6
       },
       "besonders": {
@@ -2342,7 +2342,7 @@
         "bad": 1
       },
       "eher": {
-        "good": 6,
+        "good": 8,
         "bad": 9
       },
       "langsam": {
@@ -2686,7 +2686,7 @@
         "bad": 1
       },
       "davon": {
-        "good": 4,
+        "good": 5,
         "bad": 1
       },
       "geträumt": {
@@ -3074,7 +3074,7 @@
         "bad": 0
       },
       "festes": {
-        "good": 5,
+        "good": 6,
         "bad": 0
       },
       "daraus": {
@@ -4322,7 +4322,7 @@
         "bad": 3
       },
       "fan": {
-        "good": 1,
+        "good": 2,
         "bad": 4
       },
       "sport": {
@@ -4414,7 +4414,7 @@
         "bad": 0
       },
       "lockeres": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "münchen": {
@@ -4578,19 +4578,19 @@
         "bad": 1
       },
       "hohe": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "ansprüche": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "jemandem": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "verschwenden": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       }
     },
@@ -6886,7 +6886,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:44:04.419Z",
+  "lastUpdated": "2026-01-11T15:44:05.666Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7516,6 +7516,7 @@
           125,
           243,
           165,
+          225,
           225
         ],
         "exclamationMarks": [
@@ -7555,6 +7556,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -7764,10 +7766,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 122,
-        "avgLength": 159,
+        "count": 123,
+        "avgLength": 160,
         "minLength": 72,
         "maxLength": 325,
         "medianLength": 152,
@@ -7782,9 +7785,9 @@
         "lengthDistribution": {
           "0-100": 6,
           "100-120": 13,
-          "120-150": 29,
-          "150-200": 38,
-          "200-250": 13,
+          "120-150": 28,
+          "150-200": 37,
+          "200-250": 14,
           "250+": 2
         },
         "questionDistribution": {
