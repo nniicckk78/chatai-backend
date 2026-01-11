@@ -2,7 +2,7 @@
   "patterns": {
     "allgemein": {
       "würdest du": {
-        "count": 68,
+        "count": 69,
         "successRate": 0
       },
       "würdest du mir dann einen machen?": {
@@ -52,6 +52,10 @@
       "würdest du das am liebsten machen wollen?": {
         "count": 3,
         "successRate": 0
+      },
+      "würdest du gerne auswander?": {
+        "count": 1,
+        "successRate": 0
       }
     },
     "Sexuelle Themen": {
@@ -82,8 +86,8 @@
         "bad": 6
       },
       "sich": {
-        "good": 38,
-        "bad": 24
+        "good": 39,
+        "bad": 25
       },
       "sehr": {
         "good": 34,
@@ -118,7 +122,7 @@
         "bad": 0
       },
       "würdest": {
-        "good": 78,
+        "good": 79,
         "bad": 46
       },
       "machen": {
@@ -151,11 +155,11 @@
       },
       "wie": {
         "good": 81,
-        "bad": 72
+        "bad": 73
       },
       "stellst": {
         "good": 3,
-        "bad": 42
+        "bad": 43
       },
       "unseren": {
         "good": 0,
@@ -226,8 +230,8 @@
         "bad": 19
       },
       "nicht": {
-        "good": 116,
-        "bad": 44
+        "good": 117,
+        "bad": 45
       },
       "erlischt": {
         "good": 19,
@@ -286,15 +290,15 @@
         "bad": 0
       },
       "was": {
-        "good": 144,
-        "bad": 166
+        "good": 145,
+        "bad": 167
       },
       "denn": {
         "good": 152,
         "bad": 52
       },
       "gerne": {
-        "good": 64,
+        "good": 65,
         "bad": 49
       },
       "wollen": {
@@ -778,8 +782,8 @@
         "bad": 4
       },
       "bist": {
-        "good": 21,
-        "bad": 19
+        "good": 22,
+        "bad": 20
       },
       "allgemein": {
         "good": 3,
@@ -1294,8 +1298,8 @@
         "bad": 0
       },
       "dem": {
-        "good": 3,
-        "bad": 4
+        "good": 4,
+        "bad": 5
       },
       "ersten": {
         "good": 3,
@@ -2414,7 +2418,7 @@
         "bad": 1
       },
       "welches": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "deiner": {
@@ -2546,8 +2550,8 @@
         "bad": 0
       },
       "habe": {
-        "good": 6,
-        "bad": 12
+        "good": 8,
+        "bad": 14
       },
       "schän": {
         "good": 1,
@@ -2702,8 +2706,8 @@
         "bad": 1
       },
       "ging": {
-        "good": 1,
-        "bad": 0
+        "good": 2,
+        "bad": 1
       },
       "abenteuern": {
         "good": 0,
@@ -3118,8 +3122,8 @@
         "bad": 1
       },
       "situation": {
-        "good": 0,
-        "bad": 2
+        "good": 1,
+        "bad": 3
       },
       "natürlich": {
         "good": 4,
@@ -3534,8 +3538,8 @@
         "bad": 1
       },
       "gefühl": {
-        "good": 1,
-        "bad": 1
+        "good": 2,
+        "bad": 2
       },
       "merke": {
         "good": 1,
@@ -3546,8 +3550,8 @@
         "bad": 1
       },
       "gesagt": {
-        "good": 1,
-        "bad": 1
+        "good": 2,
+        "bad": 2
       },
       "innere": {
         "good": 1,
@@ -4160,6 +4164,30 @@
       "sonntag": {
         "good": 0,
         "bad": 2
+      },
+      "gegenteil": {
+        "good": 1,
+        "bad": 1
+      },
+      "deutschland": {
+        "good": 1,
+        "bad": 1
+      },
+      "verbessert": {
+        "good": 1,
+        "bad": 1
+      },
+      "optimistisch": {
+        "good": 1,
+        "bad": 1
+      },
+      "land": {
+        "good": 1,
+        "bad": 0
+      },
+      "auswander": {
+        "good": 1,
+        "bad": 0
       }
     },
     "Treffen/Termine": {
@@ -5098,7 +5126,7 @@
   "situationSuccess": {
     "allgemein": {
       "good": 171,
-      "total": 322
+      "total": 323
     },
     "Bot-Vorwurf": {
       "good": 10,
@@ -5481,7 +5509,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T12:46:21.113Z",
+  "lastUpdated": "2026-01-11T14:59:37.294Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5814,6 +5842,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-11T12:46:21.113Z"
+    },
+    {
+      "text": "Eine bessere frage, nicht fragen wie er es sich vorstellt, sondern fragen wo er gerne auswandern würde",
+      "count": 1,
+      "situations": [
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-11T14:59:37.293Z"
     }
   ],
   "messageStats": {
@@ -5980,7 +6016,8 @@
           72,
           72,
           106,
-          106
+          106,
+          206
         ],
         "exclamationMarks": [
           1,
@@ -6019,6 +6056,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -6138,10 +6176,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 77,
-        "avgLength": 146,
+        "count": 78,
+        "avgLength": 147,
         "minLength": 72,
         "maxLength": 248,
         "medianLength": 144,
@@ -6158,13 +6197,13 @@
           "100-120": 21,
           "120-150": 35,
           "150-200": 32,
-          "200-250": 4,
+          "200-250": 5,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
           "1": 83,
-          "2": 16,
+          "2": 15,
           "3+": 1
         }
       },
@@ -6227,9 +6266,11 @@
           167,
           196,
           146,
-          146
+          146,
+          190
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -6347,13 +6388,14 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 58,
+        "count": 59,
         "avgLength": 204,
         "minLength": 115,
         "maxLength": 298,
-        "medianLength": 200,
+        "medianLength": 199,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
@@ -6365,15 +6407,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 7,
-          "120-150": 9,
-          "150-200": 34,
+          "120-150": 8,
+          "150-200": 36,
           "200-250": 24,
-          "250+": 26
+          "250+": 25
         },
         "questionDistribution": {
           "0": 12,
-          "1": 72,
-          "2": 16,
+          "1": 73,
+          "2": 15,
           "3+": 0
         }
       }
