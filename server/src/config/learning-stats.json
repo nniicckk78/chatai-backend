@@ -78,7 +78,7 @@
         "successRate": 0
       },
       "würdest du": {
-        "count": 1,
+        "count": 2,
         "successRate": 0
       }
     }
@@ -4388,7 +4388,7 @@
         "bad": 0
       },
       "dann": {
-        "good": 5,
+        "good": 6,
         "bad": 0
       },
       "wissen": {
@@ -4432,7 +4432,7 @@
         "bad": 8
       },
       "hast": {
-        "good": 5,
+        "good": 6,
         "bad": 1
       },
       "denn": {
@@ -4448,7 +4448,7 @@
         "bad": 3
       },
       "machen": {
-        "good": 4,
+        "good": 5,
         "bad": 2
       },
       "könnten": {
@@ -4468,7 +4468,7 @@
         "bad": 2
       },
       "schon": {
-        "good": 3,
+        "good": 4,
         "bad": 3
       },
       "ganz": {
@@ -4500,7 +4500,7 @@
         "bad": 3
       },
       "würdest": {
-        "good": 2,
+        "good": 3,
         "bad": 5
       },
       "als": {
@@ -4516,11 +4516,11 @@
         "bad": 2
       },
       "wollen": {
-        "good": 1,
+        "good": 2,
         "bad": 2
       },
       "wenn": {
-        "good": 4,
+        "good": 5,
         "bad": 3
       },
       "treffen": {
@@ -4640,7 +4640,7 @@
         "bad": 3
       },
       "idee": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "freundschaft": {
@@ -4764,7 +4764,7 @@
         "bad": 1
       },
       "gerne": {
-        "good": 2,
+        "good": 3,
         "bad": 2
       },
       "alles": {
@@ -4864,7 +4864,7 @@
         "bad": 1
       },
       "wäre": {
-        "good": 3,
+        "good": 5,
         "bad": 0
       },
       "spontan": {
@@ -4932,19 +4932,19 @@
         "bad": 1
       },
       "heute": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "abend": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "ndoch": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "spotan": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "heisse": {
@@ -5761,8 +5761,8 @@
       "total": 6
     },
     "Treffen/Termine": {
-      "good": 25,
-      "total": 46
+      "good": 26,
+      "total": 47
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -5880,6 +5880,19 @@
     {
       "situation": "Treffen/Termine",
       "customerPattern": {
+        "keywords": "anscheinend hast probleme dein gedächtnis was gar nicht verstehe komisch",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 373
+      },
+      "goodResponse": "Es tut mir leid, dass du das Gefühl hast, ich merke mir nichts. Ich hatte dir ja auch schon gesagt, dass ich auf innere Werte achte, und nicht nur auf Äusseres. Aber ich verstehe, dass du deine Vorlie",
+      "successCount": 7,
+      "lastUsed": "2026-01-11T15:17:08.853Z"
+    },
+    {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
         "keywords": "hallo mein was los warum bist besorgt was kleine schwierigkeiten",
         "hasQuestion": true,
         "hasMeeting": false,
@@ -5889,19 +5902,6 @@
       "goodResponse": "Danke für das Angebot aber das wäre mir jetzt zu spontan und ich sollte mich mal ein wenig ausruhen. Heute war wieder so ein Tag wo man einfach hätte zu Hause bleiben sollen. Aber sowas gibts halt mal",
       "successCount": 6,
       "lastUsed": "2026-01-06T14:32:10.016Z"
-    },
-    {
-      "situation": "Treffen/Termine",
-      "customerPattern": {
-        "keywords": "anscheinend hast probleme dein gedächtnis was gar nicht verstehe komisch",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 373
-      },
-      "goodResponse": "Es tut mir leid, dass du das Gefühl hast, ich merke mir nichts. Ich hatte dir ja auch schon gesagt, dass ich auf innere Werte achte, und nicht nur auf Äusseres. Aber ich verstehe, dass du deine Vorlie",
-      "successCount": 6,
-      "lastUsed": "2026-01-11T15:17:07.668Z"
     },
     {
       "situation": "allgemein",
@@ -6125,7 +6125,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:17:07.668Z",
+  "lastUpdated": "2026-01-11T15:17:08.853Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -6281,21 +6281,21 @@
       "lastUsed": "2026-01-11T15:13:32.540Z"
     },
     {
+      "text": "Höfflich sagen das es heute zu spontan ist dann gefragt was er gerne machen würde und schon eine Idee hat",
+      "count": 3,
+      "situations": [
+        "allgemein",
+        "Treffen/Termine"
+      ],
+      "lastUsed": "2026-01-11T15:17:08.853Z"
+    },
+    {
       "text": "Mische nicht zu viele Themen durcheinander, arbeite diese Themen Schritt für Schritt ab",
       "count": 2,
       "situations": [
         "allgemein"
       ],
       "lastUsed": "2026-01-06T17:05:52.188Z"
-    },
-    {
-      "text": "Höfflich sagen das es heute zu spontan ist dann gefragt was er gerne machen würde und schon eine Idee hat",
-      "count": 2,
-      "situations": [
-        "allgemein",
-        "Treffen/Termine"
-      ],
-      "lastUsed": "2026-01-11T15:17:07.668Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -7560,9 +7560,11 @@
           161,
           243,
           141,
+          139,
           139
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -7588,10 +7590,11 @@
           1,
           1,
           1,
+          2,
           2
         ],
-        "count": 12,
-        "avgLength": 184,
+        "count": 13,
+        "avgLength": 180,
         "minLength": 139,
         "maxLength": 257,
         "medianLength": 180,
@@ -7606,15 +7609,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 17,
-          "150-200": 58,
-          "200-250": 17,
+          "120-150": 23,
+          "150-200": 54,
+          "200-250": 15,
           "250+": 8
         },
         "questionDistribution": {
           "0": 0,
-          "1": 83,
-          "2": 17,
+          "1": 77,
+          "2": 23,
           "3+": 0
         }
       },
