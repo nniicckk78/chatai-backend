@@ -64,7 +64,7 @@
         "successRate": 0
       },
       "würdest du": {
-        "count": 1,
+        "count": 2,
         "successRate": 0
       },
       "das würde": {
@@ -5280,8 +5280,8 @@
         "bad": 0
       },
       "würdest": {
-        "good": 1,
-        "bad": 2
+        "good": 2,
+        "bad": 3
       },
       "dann": {
         "good": 2,
@@ -5300,8 +5300,8 @@
         "bad": 1
       },
       "den": {
-        "good": 1,
-        "bad": 0
+        "good": 2,
+        "bad": 1
       },
       "arsch": {
         "good": 1,
@@ -5324,20 +5324,20 @@
         "bad": 1
       },
       "geil": {
-        "good": 1,
-        "bad": 1
+        "good": 2,
+        "bad": 2
       },
       "wie": {
         "good": 1,
-        "bad": 3
+        "bad": 4
       },
       "beschreibst": {
         "good": 0,
         "bad": 1
       },
       "liebe": {
-        "good": 0,
-        "bad": 1
+        "good": 1,
+        "bad": 2
       },
       "wenn": {
         "good": 0,
@@ -5490,6 +5490,62 @@
       "spüren": {
         "good": 0,
         "bad": 1
+      },
+      "finde": {
+        "good": 1,
+        "bad": 1
+      },
+      "spielzeuge": {
+        "good": 1,
+        "bad": 1
+      },
+      "auch": {
+        "good": 1,
+        "bad": 1
+      },
+      "richtig": {
+        "good": 1,
+        "bad": 1
+      },
+      "dildos": {
+        "good": 1,
+        "bad": 1
+      },
+      "vibratoren": {
+        "good": 1,
+        "bad": 1
+      },
+      "experimentieren": {
+        "good": 1,
+        "bad": 1
+      },
+      "was": {
+        "good": 1,
+        "bad": 0
+      },
+      "als": {
+        "good": 1,
+        "bad": 0
+      },
+      "erstes": {
+        "good": 1,
+        "bad": 0
+      },
+      "spielsachen": {
+        "good": 1,
+        "bad": 1
+      },
+      "machen": {
+        "good": 1,
+        "bad": 0
+      },
+      "denn": {
+        "good": 0,
+        "bad": 1
+      },
+      "helfen": {
+        "good": 0,
+        "bad": 1
       }
     },
     "Generische ASA (Neukunde)": {
@@ -5637,8 +5693,8 @@
       "total": 22
     },
     "Sexuelle Themen": {
-      "good": 37,
-      "total": 64
+      "good": 38,
+      "total": 66
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -5710,8 +5766,8 @@
         "length": 72
       },
       "goodResponse": "Freut mich auf jedenfall von dir zu hören Edgar! Ich kann dir leider gerade kein Foto senden da meine Handykamera kaputt gegangen ist, ich muss mir erstmal ein neues Handy kaufen. Willst du mir mal er",
-      "successCount": 15,
-      "lastUsed": "2026-01-06T14:30:32.243Z"
+      "successCount": 16,
+      "lastUsed": "2026-01-11T15:13:43.013Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -6013,7 +6069,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:13:32.540Z",
+  "lastUpdated": "2026-01-11T15:13:43.013Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -6159,21 +6215,22 @@
       "lastUsed": "2026-01-11T15:13:32.540Z"
     },
     {
+      "text": "Bessere Frage",
+      "count": 3,
+      "situations": [
+        "Treffen/Termine",
+        "allgemein",
+        "Sexuelle Themen"
+      ],
+      "lastUsed": "2026-01-11T15:13:43.013Z"
+    },
+    {
       "text": "Mische nicht zu viele Themen durcheinander, arbeite diese Themen Schritt für Schritt ab",
       "count": 2,
       "situations": [
         "allgemein"
       ],
       "lastUsed": "2026-01-06T17:05:52.188Z"
-    },
-    {
-      "text": "Bessere Frage",
-      "count": 2,
-      "situations": [
-        "Treffen/Termine",
-        "allgemein"
-      ],
-      "lastUsed": "2026-01-11T15:11:12.827Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -7091,7 +7148,8 @@
           159,
           159,
           167,
-          168
+          168,
+          162
         ],
         "exclamationMarks": [
           2,
@@ -7108,6 +7166,7 @@
           0,
           1,
           1,
+          0,
           0,
           0
         ],
@@ -7127,14 +7186,15 @@
           1,
           1,
           1,
-          2
+          2,
+          1
         ],
-        "count": 16,
+        "count": 17,
         "avgLength": 165,
         "minLength": 124,
         "maxLength": 227,
         "medianLength": 159,
-        "avgExclamationMarks": 0.3,
+        "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 2,
         "medianExclamationMarks": 0,
@@ -7145,15 +7205,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 31,
-          "150-200": 44,
-          "200-250": 25,
+          "120-150": 29,
+          "150-200": 47,
+          "200-250": 24,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 81,
-          "2": 19,
+          "1": 82,
+          "2": 18,
           "3+": 0
         }
       },
@@ -7171,9 +7231,11 @@
           171,
           177,
           282,
-          180
+          180,
+          152
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -7201,11 +7263,12 @@
           0,
           1,
           1,
+          1,
           1
         ],
-        "count": 13,
-        "avgLength": 193,
-        "minLength": 171,
+        "count": 14,
+        "avgLength": 190,
+        "minLength": 152,
         "maxLength": 282,
         "medianLength": 180,
         "avgExclamationMarks": 0,
@@ -7220,14 +7283,14 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 69,
-          "200-250": 23,
-          "250+": 8
+          "150-200": 71,
+          "200-250": 21,
+          "250+": 7
         },
         "questionDistribution": {
-          "0": 23,
-          "1": 54,
-          "2": 23,
+          "0": 21,
+          "1": 57,
+          "2": 21,
           "3+": 0
         }
       }
@@ -7719,6 +7782,13 @@
       "example": "Es freut mich, dass du auch für ein Blind Date offen bist. Ich könnte mir vorstellen, dass wir viel Spass zusammen haben könnten. Ich bin gespannt, wa",
       "count": 1,
       "lastUsed": "2026-01-08T09:29:51.914Z"
+    },
+    {
+      "pattern": "eigene_erfahrung",
+      "situation": "Sexuelle Themen",
+      "example": "Ich finde Spielzeuge auch richtig geil. Ich liebe es, mit Dildos oder Vibratoren zu experimentieren. Was würdest du als erstes mit den Spielsachen bei",
+      "count": 1,
+      "lastUsed": "2026-01-11T15:13:43.013Z"
     }
   ],
   "migrated": true,
