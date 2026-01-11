@@ -150,7 +150,7 @@
         "bad": 34
       },
       "wie": {
-        "good": 79,
+        "good": 80,
         "bad": 72
       },
       "stellst": {
@@ -183,7 +183,7 @@
       },
       "den": {
         "good": 14,
-        "bad": 46
+        "bad": 47
       },
       "kopf": {
         "good": 5,
@@ -191,7 +191,7 @@
       },
       "hast": {
         "good": 56,
-        "bad": 72
+        "bad": 73
       },
       "verstehen": {
         "good": 24,
@@ -206,8 +206,8 @@
         "bad": 19
       },
       "geht": {
-        "good": 25,
-        "bad": 26
+        "good": 27,
+        "bad": 27
       },
       "genauso": {
         "good": 19,
@@ -247,7 +247,7 @@
       },
       "bisschen": {
         "good": 31,
-        "bad": 14
+        "bad": 15
       },
       "damit": {
         "good": 20,
@@ -255,7 +255,7 @@
       },
       "mich": {
         "good": 47,
-        "bad": 49
+        "bad": 50
       },
       "wohl": {
         "good": 19,
@@ -271,7 +271,7 @@
       },
       "zeit": {
         "good": 29,
-        "bad": 6
+        "bad": 7
       },
       "ziemlich": {
         "good": 25,
@@ -286,12 +286,12 @@
         "bad": 0
       },
       "was": {
-        "good": 142,
-        "bad": 164
+        "good": 143,
+        "bad": 165
       },
       "denn": {
-        "good": 150,
-        "bad": 50
+        "good": 151,
+        "bad": 51
       },
       "gerne": {
         "good": 64,
@@ -366,7 +366,7 @@
         "bad": 0
       },
       "gerade": {
-        "good": 32,
+        "good": 33,
         "bad": 6
       },
       "denke": {
@@ -538,8 +538,8 @@
         "bad": 2
       },
       "hey": {
-        "good": 4,
-        "bad": 4
+        "good": 5,
+        "bad": 5
       },
       "oliver": {
         "good": 1,
@@ -706,8 +706,8 @@
         "bad": 9
       },
       "gut": {
-        "good": 41,
-        "bad": 28
+        "good": 42,
+        "bad": 29
       },
       "eigentlich": {
         "good": 22,
@@ -1039,7 +1039,7 @@
       },
       "geniesse": {
         "good": 0,
-        "bad": 5
+        "bad": 6
       },
       "bekanntschaften": {
         "good": 0,
@@ -1347,15 +1347,15 @@
       },
       "heute": {
         "good": 17,
-        "bad": 13
+        "bad": 14
       },
       "schönes": {
-        "good": 5,
+        "good": 6,
         "bad": 3
       },
       "geplant": {
         "good": 2,
-        "bad": 3
+        "bad": 4
       },
       "musst": {
         "good": 5,
@@ -1374,8 +1374,8 @@
         "bad": 0
       },
       "danke": {
-        "good": 19,
-        "bad": 12
+        "good": 20,
+        "bad": 13
       },
       "attraktiv": {
         "good": 3,
@@ -2026,7 +2026,7 @@
         "bad": 0
       },
       "machst": {
-        "good": 9,
+        "good": 10,
         "bad": 9
       },
       "nein": {
@@ -2547,7 +2547,7 @@
       },
       "habe": {
         "good": 6,
-        "bad": 10
+        "bad": 11
       },
       "schän": {
         "good": 1,
@@ -3238,8 +3238,8 @@
         "bad": 4
       },
       "nachfrage": {
-        "good": 3,
-        "bad": 5
+        "good": 4,
+        "bad": 6
       },
       "gewesen": {
         "good": 0,
@@ -4150,6 +4150,14 @@
         "bad": 1
       },
       "kochen": {
+        "good": 0,
+        "bad": 1
+      },
+      "martin": {
+        "good": 1,
+        "bad": 1
+      },
+      "sonntag": {
         "good": 0,
         "bad": 1
       }
@@ -5090,7 +5098,7 @@
   "situationSuccess": {
     "allgemein": {
       "good": 171,
-      "total": 320
+      "total": 321
     },
     "Bot-Vorwurf": {
       "good": 10,
@@ -5473,7 +5481,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-08T11:09:32.120Z",
+  "lastUpdated": "2026-01-11T12:45:29.671Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5790,6 +5798,14 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-08T10:55:37.087Z"
+    },
+    {
+      "text": "Ihn auch gefragt wie es ihm geht",
+      "count": 1,
+      "situations": [
+        "allgemein"
+      ],
+      "lastUsed": "2026-01-11T12:45:29.670Z"
     }
   ],
   "messageStats": {
@@ -5954,7 +5970,8 @@
           91,
           144,
           72,
-          72
+          72,
+          106
         ],
         "exclamationMarks": [
           1,
@@ -5993,6 +6010,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -6108,10 +6126,11 @@
           1,
           2,
           1,
+          1,
           1
         ],
-        "count": 75,
-        "avgLength": 147,
+        "count": 76,
+        "avgLength": 146,
         "minLength": 72,
         "maxLength": 248,
         "medianLength": 144,
@@ -6125,7 +6144,7 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 8,
-          "100-120": 19,
+          "100-120": 20,
           "120-150": 36,
           "150-200": 33,
           "200-250": 4,
@@ -6195,9 +6214,11 @@
           199,
           199,
           167,
-          196
+          196,
+          146
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -6311,10 +6332,11 @@
           0,
           0,
           1,
+          1,
           1
         ],
-        "count": 56,
-        "avgLength": 206,
+        "count": 57,
+        "avgLength": 205,
         "minLength": 115,
         "maxLength": 298,
         "medianLength": 200,
@@ -6329,14 +6351,14 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 7,
-          "120-150": 5,
-          "150-200": 36,
+          "120-150": 7,
+          "150-200": 35,
           "200-250": 25,
-          "250+": 27
+          "250+": 26
         },
         "questionDistribution": {
-          "0": 13,
-          "1": 71,
+          "0": 12,
+          "1": 72,
           "2": 16,
           "3+": 0
         }
