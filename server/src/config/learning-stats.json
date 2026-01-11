@@ -4544,11 +4544,11 @@
     },
     "Treffen/Termine": {
       "okay": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "dann": {
-        "good": 6,
+        "good": 7,
         "bad": 0
       },
       "wissen": {
@@ -4556,11 +4556,11 @@
         "bad": 2
       },
       "schonmal": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "bescheid": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "schauen": {
@@ -4569,7 +4569,7 @@
       },
       "einfach": {
         "good": 2,
-        "bad": 0
+        "bad": 1
       },
       "wann": {
         "good": 2,
@@ -4629,7 +4629,7 @@
       },
       "schon": {
         "good": 4,
-        "bad": 3
+        "bad": 4
       },
       "ganz": {
         "good": 0,
@@ -4637,7 +4637,7 @@
       },
       "heiss": {
         "good": 0,
-        "bad": 6
+        "bad": 7
       },
       "darauf": {
         "good": 0,
@@ -4653,7 +4653,7 @@
       },
       "mega": {
         "good": 0,
-        "bad": 2
+        "bad": 3
       },
       "geil": {
         "good": 0,
@@ -4661,7 +4661,7 @@
       },
       "würdest": {
         "good": 6,
-        "bad": 9
+        "bad": 10
       },
       "als": {
         "good": 0,
@@ -4681,7 +4681,7 @@
       },
       "wenn": {
         "good": 5,
-        "bad": 3
+        "bad": 4
       },
       "treffen": {
         "good": 0,
@@ -4713,7 +4713,7 @@
       },
       "wie": {
         "good": 2,
-        "bad": 4
+        "bad": 5
       },
       "beiden": {
         "good": 1,
@@ -4744,7 +4744,7 @@
         "bad": 0
       },
       "noch": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "lust": {
@@ -4797,7 +4797,7 @@
       },
       "finde": {
         "good": 0,
-        "bad": 3
+        "bad": 4
       },
       "idee": {
         "good": 2,
@@ -4901,7 +4901,7 @@
       },
       "dabei": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "intim": {
         "good": 0,
@@ -4913,7 +4913,7 @@
       },
       "richtig": {
         "good": 0,
-        "bad": 3
+        "bad": 4
       },
       "liebe": {
         "good": 0,
@@ -4977,7 +4977,7 @@
       },
       "vorstellen": {
         "good": 1,
-        "bad": 4
+        "bad": 5
       },
       "viel": {
         "good": 1,
@@ -5020,7 +5020,7 @@
         "bad": 1
       },
       "jetzt": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "wäre": {
@@ -5029,14 +5029,14 @@
       },
       "spontan": {
         "good": 1,
-        "bad": 0
+        "bad": 1
       },
       "sagen": {
         "good": 1,
         "bad": 0
       },
       "willst": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "nicht": {
@@ -5145,7 +5145,7 @@
       },
       "mal": {
         "good": 3,
-        "bad": 0
+        "bad": 1
       },
       "tag": {
         "good": 3,
@@ -5170,6 +5170,66 @@
       "live": {
         "good": 0,
         "bad": 2
+      },
+      "weiss": {
+        "good": 1,
+        "bad": 0
+      },
+      "also": {
+        "good": 1,
+        "bad": 0
+      },
+      "sex": {
+        "good": 1,
+        "bad": 2
+      },
+      "auto": {
+        "good": 1,
+        "bad": 1
+      },
+      "hatte": {
+        "good": 1,
+        "bad": 1
+      },
+      "komplett": {
+        "good": 1,
+        "bad": 0
+      },
+      "freien": {
+        "good": 1,
+        "bad": 1
+      },
+      "nie": {
+        "good": 1,
+        "bad": 0
+      },
+      "ndern": {
+        "good": 1,
+        "bad": 0
+      },
+      "man": {
+        "good": 0,
+        "bad": 1
+      },
+      "gefühl": {
+        "good": 0,
+        "bad": 1
+      },
+      "freiheit": {
+        "good": 0,
+        "bad": 1
+      },
+      "aufregendes": {
+        "good": 0,
+        "bad": 1
+      },
+      "erlebnis": {
+        "good": 0,
+        "bad": 1
+      },
+      "situation": {
+        "good": 0,
+        "bad": 1
       }
     },
     "Bot-Vorwurf": {
@@ -6261,8 +6321,8 @@
       "total": 22
     },
     "Sexuelle Themen": {
-      "good": 44,
-      "total": 75
+      "good": 45,
+      "total": 77
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -6273,8 +6333,8 @@
       "total": 7
     },
     "Treffen/Termine": {
-      "good": 29,
-      "total": 53
+      "good": 30,
+      "total": 55
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -6635,9 +6695,22 @@
       "goodResponse": "Gut da bin ich ja jetzt schonmal erleichert. 🙂 Und wie war denn so dein Start in das neue Jahr? Warst du mit der Familie oder Freunden?",
       "successCount": 1,
       "lastUsed": "2026-01-06T17:13:38.718Z"
+    },
+    {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "wochenende habe noch zeit montag gehe wieder arbeiten dann habe",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": true,
+        "length": 200
+      },
+      "goodResponse": "Okay dann weiss ich ja jetzt bescheid, also Sex im Auto hatte ich schonmal aber komplett im freien noch nie. Willst du das mit mir ändern?",
+      "successCount": 1,
+      "lastUsed": "2026-01-11T15:39:48.158Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:39:31.152Z",
+  "lastUpdated": "2026-01-11T15:39:48.158Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -8208,9 +8281,11 @@
           139,
           122,
           122,
-          122
+          122,
+          138
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -8244,10 +8319,11 @@
           2,
           1,
           1,
+          1,
           1
         ],
-        "count": 16,
-        "avgLength": 169,
+        "count": 17,
+        "avgLength": 167,
         "minLength": 122,
         "maxLength": 257,
         "medianLength": 165,
@@ -8262,15 +8338,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 38,
-          "150-200": 44,
-          "200-250": 13,
+          "120-150": 41,
+          "150-200": 41,
+          "200-250": 12,
           "250+": 6
         },
         "questionDistribution": {
           "0": 0,
-          "1": 81,
-          "2": 19,
+          "1": 82,
+          "2": 18,
           "3+": 0
         }
       },
@@ -8287,9 +8363,11 @@
           203,
           174,
           201,
-          201
+          201,
+          227
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -8315,10 +8393,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 12,
-        "avgLength": 216,
+        "count": 13,
+        "avgLength": 217,
         "minLength": 174,
         "maxLength": 274,
         "medianLength": 204,
@@ -8334,14 +8413,14 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 17,
-          "200-250": 58,
-          "250+": 25
+          "150-200": 15,
+          "200-250": 62,
+          "250+": 23
         },
         "questionDistribution": {
-          "0": 17,
-          "1": 67,
-          "2": 17,
+          "0": 15,
+          "1": 69,
+          "2": 15,
           "3+": 0
         }
       }
