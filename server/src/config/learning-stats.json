@@ -94,11 +94,11 @@
   "wordFrequency": {
     "allgemein": {
       "hört": {
-        "good": 28,
+        "good": 29,
         "bad": 6
       },
       "sich": {
-        "good": 43,
+        "good": 44,
         "bad": 26
       },
       "sehr": {
@@ -478,7 +478,7 @@
         "bad": 2
       },
       "kannst": {
-        "good": 18,
+        "good": 19,
         "bad": 2
       },
       "schön": {
@@ -722,7 +722,7 @@
         "bad": 13
       },
       "gut": {
-        "good": 52,
+        "good": 53,
         "bad": 39
       },
       "eigentlich": {
@@ -942,7 +942,7 @@
         "bad": 8
       },
       "bestimmt": {
-        "good": 12,
+        "good": 13,
         "bad": 1
       },
       "hände": {
@@ -1010,7 +1010,7 @@
         "bad": 5
       },
       "dich": {
-        "good": 67,
+        "good": 68,
         "bad": 42
       },
       "stört": {
@@ -1090,11 +1090,11 @@
         "bad": 10
       },
       "schon": {
-        "good": 52,
+        "good": 53,
         "bad": 16
       },
       "noch": {
-        "good": 40,
+        "good": 41,
         "bad": 18
       },
       "wenig": {
@@ -1382,7 +1382,7 @@
         "bad": 0
       },
       "nie": {
-        "good": 3,
+        "good": 4,
         "bad": 1
       },
       "genug": {
@@ -1962,7 +1962,7 @@
         "bad": 6
       },
       "wann": {
-        "good": 6,
+        "good": 7,
         "bad": 4
       },
       "hättest": {
@@ -2562,7 +2562,7 @@
         "bad": 0
       },
       "habe": {
-        "good": 13,
+        "good": 14,
         "bad": 14
       },
       "schän": {
@@ -4430,35 +4430,35 @@
         "bad": 2
       },
       "reis": {
-        "good": 2,
+        "good": 3,
         "bad": 2
       },
       "cury": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "lecker": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "gegessen": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "schmeckt": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "weist": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "norgen": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "melden": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "hand": {
@@ -6441,7 +6441,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:27:50.714Z",
+  "lastUpdated": "2026-01-11T15:27:51.772Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7052,6 +7052,7 @@
           136,
           136,
           155,
+          155,
           155
         ],
         "exclamationMarks": [
@@ -7091,6 +7092,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -7262,9 +7264,10 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 103,
+        "count": 104,
         "avgLength": 152,
         "minLength": 72,
         "maxLength": 248,
@@ -7279,9 +7282,9 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 7,
-          "100-120": 16,
+          "100-120": 15,
           "120-150": 33,
-          "150-200": 34,
+          "150-200": 35,
           "200-250": 11,
           "250+": 0
         },
