@@ -290,15 +290,15 @@
         "bad": 0
       },
       "was": {
-        "good": 151,
+        "good": 152,
         "bad": 172
       },
       "denn": {
-        "good": 164,
+        "good": 165,
         "bad": 58
       },
       "gerne": {
-        "good": 73,
+        "good": 74,
         "bad": 53
       },
       "wollen": {
@@ -362,7 +362,7 @@
         "bad": 1
       },
       "hier": {
-        "good": 42,
+        "good": 43,
         "bad": 9
       },
       "hof": {
@@ -398,7 +398,7 @@
         "bad": 25
       },
       "wenn": {
-        "good": 44,
+        "good": 46,
         "bad": 90
       },
       "gegenseitig": {
@@ -426,7 +426,7 @@
         "bad": 20
       },
       "klingt": {
-        "good": 6,
+        "good": 7,
         "bad": 22
       },
       "wild": {
@@ -518,7 +518,7 @@
         "bad": 2
       },
       "will": {
-        "good": 18,
+        "good": 19,
         "bad": 1
       },
       "wäre": {
@@ -574,7 +574,7 @@
         "bad": 4
       },
       "alles": {
-        "good": 15,
+        "good": 16,
         "bad": 10
       },
       "neu": {
@@ -710,7 +710,7 @@
         "bad": 12
       },
       "gut": {
-        "good": 48,
+        "good": 49,
         "bad": 32
       },
       "eigentlich": {
@@ -854,7 +854,7 @@
         "bad": 0
       },
       "passt": {
-        "good": 8,
+        "good": 9,
         "bad": 2
       },
       "doch": {
@@ -922,7 +922,7 @@
         "bad": 0
       },
       "mal": {
-        "good": 39,
+        "good": 40,
         "bad": 31
       },
       "sehen": {
@@ -998,7 +998,7 @@
         "bad": 4
       },
       "dich": {
-        "good": 64,
+        "good": 65,
         "bad": 40
       },
       "stört": {
@@ -1102,7 +1102,7 @@
         "bad": 4
       },
       "treffen": {
-        "good": 7,
+        "good": 8,
         "bad": 5
       },
       "bereuuen": {
@@ -1542,7 +1542,7 @@
         "bad": 1
       },
       "könnten": {
-        "good": 9,
+        "good": 10,
         "bad": 4
       },
       "tolle": {
@@ -1786,7 +1786,7 @@
         "bad": 2
       },
       "erstmal": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "kennenlernen": {
@@ -2550,7 +2550,7 @@
         "bad": 0
       },
       "habe": {
-        "good": 10,
+        "good": 11,
         "bad": 14
       },
       "schän": {
@@ -2702,7 +2702,7 @@
         "bad": 0
       },
       "wissen": {
-        "good": 7,
+        "good": 9,
         "bad": 1
       },
       "ging": {
@@ -3062,7 +3062,7 @@
         "bad": 0
       },
       "sollte": {
-        "good": 5,
+        "good": 6,
         "bad": 1
       },
       "abgeneigt": {
@@ -3570,7 +3570,7 @@
         "bad": 1
       },
       "isst": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "aussehen": {
@@ -4226,23 +4226,23 @@
         "bad": 1
       },
       "bissche": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "ausgetauscht": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "wem": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "tun": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "bekochen": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "tolles": {
@@ -5813,7 +5813,7 @@
       "lastUsed": "2026-01-07T11:17:31.978Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:12:05.419Z",
+  "lastUpdated": "2026-01-11T15:12:06.519Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -5941,6 +5941,15 @@
       "lastUsed": "2026-01-11T15:11:23.792Z"
     },
     {
+      "text": "Gesagt wenn wir uns ein bisschen ausgetauscht haben \"könnten\" wir uns treffen",
+      "count": 3,
+      "situations": [
+        "allgemein",
+        "Treffen/Termine"
+      ],
+      "lastUsed": "2026-01-11T15:12:06.519Z"
+    },
+    {
       "text": "Mische nicht zu viele Themen durcheinander, arbeite diese Themen Schritt für Schritt ab",
       "count": 2,
       "situations": [
@@ -5956,15 +5965,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-11T15:11:12.827Z"
-    },
-    {
-      "text": "Gesagt wenn wir uns ein bisschen ausgetauscht haben \"könnten\" wir uns treffen",
-      "count": 2,
-      "situations": [
-        "allgemein",
-        "Treffen/Termine"
-      ],
-      "lastUsed": "2026-01-11T15:12:05.419Z"
     },
     {
       "text": "Mehr Sexuelle Wörter, gegen Frage ob er zb auf 69 steht und ihm das gefallen würde",
@@ -6393,6 +6393,7 @@
           162,
           212,
           212,
+          237,
           237
         ],
         "exclamationMarks": [
@@ -6432,6 +6433,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -6579,10 +6581,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 91,
-        "avgLength": 152,
+        "count": 92,
+        "avgLength": 153,
         "minLength": 72,
         "maxLength": 248,
         "medianLength": 145,
@@ -6596,10 +6599,10 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 7,
-          "100-120": 18,
-          "120-150": 30,
+          "100-120": 17,
+          "120-150": 29,
           "150-200": 36,
-          "200-250": 10,
+          "200-250": 11,
           "250+": 0
         },
         "questionDistribution": {
