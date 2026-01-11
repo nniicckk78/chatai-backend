@@ -175,7 +175,7 @@
       },
       "wie": {
         "good": 101,
-        "bad": 81
+        "bad": 82
       },
       "stellst": {
         "good": 3,
@@ -230,8 +230,8 @@
         "bad": 19
       },
       "geht": {
-        "good": 30,
-        "bad": 30
+        "good": 31,
+        "bad": 31
       },
       "genauso": {
         "good": 19,
@@ -310,12 +310,12 @@
         "bad": 0
       },
       "was": {
-        "good": 171,
-        "bad": 187
+        "good": 172,
+        "bad": 188
       },
       "denn": {
         "good": 184,
-        "bad": 71
+        "bad": 72
       },
       "gerne": {
         "good": 77,
@@ -562,8 +562,8 @@
         "bad": 2
       },
       "hey": {
-        "good": 6,
-        "bad": 6
+        "good": 7,
+        "bad": 7
       },
       "oliver": {
         "good": 1,
@@ -695,7 +695,7 @@
       },
       "deinen": {
         "good": 17,
-        "bad": 8
+        "bad": 9
       },
       "wunsch": {
         "good": 2,
@@ -723,15 +723,15 @@
       },
       "siehst": {
         "good": 8,
-        "bad": 2
+        "bad": 3
       },
       "echt": {
         "good": 32,
         "bad": 13
       },
       "gut": {
-        "good": 56,
-        "bad": 40
+        "good": 57,
+        "bad": 41
       },
       "eigentlich": {
         "good": 27,
@@ -999,7 +999,7 @@
       },
       "gestalten": {
         "good": 0,
-        "bad": 3
+        "bad": 4
       },
       "freut": {
         "good": 7,
@@ -1062,8 +1062,8 @@
         "bad": 1
       },
       "geniesse": {
-        "good": 0,
-        "bad": 7
+        "good": 1,
+        "bad": 8
       },
       "bekanntschaften": {
         "good": 0,
@@ -1234,7 +1234,7 @@
         "bad": 0
       },
       "etwas": {
-        "good": 16,
+        "good": 17,
         "bad": 9
       },
       "neugierig": {
@@ -1374,7 +1374,7 @@
         "bad": 16
       },
       "schönes": {
-        "good": 8,
+        "good": 9,
         "bad": 3
       },
       "geplant": {
@@ -1398,8 +1398,8 @@
         "bad": 0
       },
       "danke": {
-        "good": 21,
-        "bad": 14
+        "good": 22,
+        "bad": 15
       },
       "attraktiv": {
         "good": 3,
@@ -1650,8 +1650,8 @@
         "bad": 2
       },
       "ruhigen": {
-        "good": 0,
-        "bad": 3
+        "good": 1,
+        "bad": 4
       },
       "idyllischen": {
         "good": 0,
@@ -2050,8 +2050,8 @@
         "bad": 0
       },
       "machst": {
-        "good": 12,
-        "bad": 10
+        "good": 13,
+        "bad": 11
       },
       "nein": {
         "good": 5,
@@ -2119,7 +2119,7 @@
       },
       "tag": {
         "good": 5,
-        "bad": 7
+        "bad": 8
       },
       "liebsten": {
         "good": 6,
@@ -3262,8 +3262,8 @@
         "bad": 4
       },
       "nachfrage": {
-        "good": 5,
-        "bad": 7
+        "good": 6,
+        "bad": 8
       },
       "gewesen": {
         "good": 0,
@@ -4540,6 +4540,18 @@
       "erster": {
         "good": 2,
         "bad": 0
+      },
+      "sonntage": {
+        "good": 1,
+        "bad": 1
+      },
+      "schaue": {
+        "good": 1,
+        "bad": 0
+      },
+      "barsinghausen": {
+        "good": 0,
+        "bad": 1
       }
     },
     "Treffen/Termine": {
@@ -6314,7 +6326,7 @@
   "situationSuccess": {
     "allgemein": {
       "good": 171,
-      "total": 349
+      "total": 350
     },
     "Bot-Vorwurf": {
       "good": 11,
@@ -6710,7 +6722,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:39:49.329Z",
+  "lastUpdated": "2026-01-11T15:40:22.565Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7336,7 +7348,8 @@
           162,
           261,
           161,
-          161
+          161,
+          125
         ],
         "exclamationMarks": [
           1,
@@ -7375,6 +7388,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -7576,9 +7590,10 @@
           2,
           2,
           1,
+          1,
           1
         ],
-        "count": 118,
+        "count": 119,
         "avgLength": 158,
         "minLength": 72,
         "maxLength": 325,
@@ -7593,7 +7608,7 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 6,
-          "100-120": 14,
+          "100-120": 13,
           "120-150": 29,
           "150-200": 38,
           "200-250": 12,
@@ -7692,9 +7707,11 @@
           270,
           270,
           270,
-          181
+          181,
+          163
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -7866,10 +7883,11 @@
           1,
           1,
           1,
-          1
+          1,
+          2
         ],
-        "count": 85,
-        "avgLength": 210,
+        "count": 86,
+        "avgLength": 209,
         "minLength": 115,
         "maxLength": 385,
         "medianLength": 200,
@@ -7885,14 +7903,14 @@
           "0-100": 0,
           "100-120": 5,
           "120-150": 6,
-          "150-200": 33,
+          "150-200": 34,
           "200-250": 29,
           "250+": 27
         },
         "questionDistribution": {
           "0": 13,
           "1": 76,
-          "2": 11,
+          "2": 12,
           "3+": 0
         }
       }
