@@ -5537,10 +5537,10 @@
       },
       "würdest": {
         "good": 11,
-        "bad": 5
+        "bad": 6
       },
       "dann": {
-        "good": 2,
+        "good": 3,
         "bad": 1
       },
       "gerne": {
@@ -5548,7 +5548,7 @@
         "bad": 1
       },
       "noch": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "doggy": {
@@ -5585,7 +5585,7 @@
       },
       "wie": {
         "good": 3,
-        "bad": 4
+        "bad": 5
       },
       "beschreibst": {
         "good": 0,
@@ -5597,7 +5597,7 @@
       },
       "wenn": {
         "good": 2,
-        "bad": 3
+        "bad": 4
       },
       "jemand": {
         "good": 0,
@@ -5625,11 +5625,11 @@
       },
       "vorstellen": {
         "good": 4,
-        "bad": 2
+        "bad": 3
       },
       "dabei": {
         "good": 2,
-        "bad": 1
+        "bad": 2
       },
       "lecken": {
         "good": 3,
@@ -5701,7 +5701,7 @@
       },
       "heiss": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "meine": {
         "good": 2,
@@ -5749,7 +5749,7 @@
       },
       "finde": {
         "good": 4,
-        "bad": 2
+        "bad": 3
       },
       "spielzeuge": {
         "good": 2,
@@ -5761,7 +5761,7 @@
       },
       "richtig": {
         "good": 10,
-        "bad": 4
+        "bad": 5
       },
       "dildos": {
         "good": 2,
@@ -5870,6 +5870,106 @@
       "lustche": {
         "good": 2,
         "bad": 0
+      },
+      "okay": {
+        "good": 1,
+        "bad": 0
+      },
+      "weiss": {
+        "good": 1,
+        "bad": 0
+      },
+      "jetzt": {
+        "good": 1,
+        "bad": 0
+      },
+      "bescheid": {
+        "good": 1,
+        "bad": 0
+      },
+      "also": {
+        "good": 1,
+        "bad": 0
+      },
+      "sex": {
+        "good": 1,
+        "bad": 2
+      },
+      "auto": {
+        "good": 1,
+        "bad": 1
+      },
+      "hatte": {
+        "good": 1,
+        "bad": 1
+      },
+      "schonmal": {
+        "good": 1,
+        "bad": 0
+      },
+      "komplett": {
+        "good": 1,
+        "bad": 0
+      },
+      "freien": {
+        "good": 1,
+        "bad": 1
+      },
+      "nie": {
+        "good": 1,
+        "bad": 0
+      },
+      "willst": {
+        "good": 1,
+        "bad": 0
+      },
+      "ndern": {
+        "good": 1,
+        "bad": 0
+      },
+      "man": {
+        "good": 0,
+        "bad": 1
+      },
+      "spontan": {
+        "good": 0,
+        "bad": 1
+      },
+      "gefühl": {
+        "good": 0,
+        "bad": 1
+      },
+      "freiheit": {
+        "good": 0,
+        "bad": 1
+      },
+      "einfach": {
+        "good": 0,
+        "bad": 1
+      },
+      "mega": {
+        "good": 0,
+        "bad": 1
+      },
+      "schon": {
+        "good": 0,
+        "bad": 1
+      },
+      "mal": {
+        "good": 0,
+        "bad": 1
+      },
+      "aufregendes": {
+        "good": 0,
+        "bad": 1
+      },
+      "erlebnis": {
+        "good": 0,
+        "bad": 1
+      },
+      "situation": {
+        "good": 0,
+        "bad": 1
       }
     },
     "Generische ASA (Neukunde)": {
@@ -6161,8 +6261,8 @@
       "total": 22
     },
     "Sexuelle Themen": {
-      "good": 43,
-      "total": 73
+      "good": 44,
+      "total": 75
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -6273,8 +6373,8 @@
         "length": 145
       },
       "goodResponse": "Das würde ich auch richtig geil finden wenn ich mal schön verwöhnt werde! Ich hoffe du machst auch gute arbeit mit deiner Zunge weil ich es liebe wenn ich geleckt werde bis ich komme! Gefällt dir auch",
-      "successCount": 7,
-      "lastUsed": "2026-01-05T20:34:22.305Z"
+      "successCount": 8,
+      "lastUsed": "2026-01-11T15:39:31.151Z"
     },
     {
       "situation": "Sexuelle Themen",
@@ -6537,7 +6637,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-11T15:38:38.529Z",
+  "lastUpdated": "2026-01-11T15:39:31.152Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7748,7 +7848,8 @@
           232,
           232,
           325,
-          325
+          325,
+          138
         ],
         "exclamationMarks": [
           2,
@@ -7765,6 +7866,7 @@
           0,
           1,
           1,
+          0,
           0,
           0,
           0,
@@ -7796,13 +7898,14 @@
           2,
           2,
           2,
-          2
+          2,
+          1
         ],
-        "count": 22,
-        "avgLength": 186,
+        "count": 23,
+        "avgLength": 184,
         "minLength": 124,
         "maxLength": 325,
-        "medianLength": 167,
+        "medianLength": 162,
         "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 2,
@@ -7814,15 +7917,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 23,
-          "150-200": 41,
-          "200-250": 27,
+          "120-150": 26,
+          "150-200": 39,
+          "200-250": 26,
           "250+": 9
         },
         "questionDistribution": {
           "0": 0,
-          "1": 68,
-          "2": 32,
+          "1": 70,
+          "2": 30,
           "3+": 0
         }
       },
@@ -7842,9 +7945,11 @@
           282,
           180,
           152,
-          270
+          270,
+          227
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -7876,13 +7981,14 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 15,
-        "avgLength": 196,
+        "count": 16,
+        "avgLength": 198,
         "minLength": 152,
         "maxLength": 282,
-        "medianLength": 180,
+        "medianLength": 183,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
@@ -7895,14 +8001,14 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 67,
-          "200-250": 20,
+          "150-200": 63,
+          "200-250": 25,
           "250+": 13
         },
         "questionDistribution": {
-          "0": 20,
-          "1": 60,
-          "2": 20,
+          "0": 19,
+          "1": 63,
+          "2": 19,
           "3+": 0
         }
       }
