@@ -9617,6 +9617,30 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-01-13T15:04:52.313Z",
       "updatedAt": "2026-01-13T15:04:52.313Z"
+    },
+    {
+      "id": "feedback_1768316762417_cvkbhnczl",
+      "chatId": "58309167",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich hoffe, du hattest einen schönen Tag. Ich würde mich freuen, von dir zu hören. Hey, alles gut bei dir? Was würdest du noch gerne machen? Wie läuft es bei dir?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "viluu",
+      "isASA": true,
+      "context": {
+        "detectedSituations": [
+          "Sexuelle Themen",
+          "Wonach suchst du?",
+          "Bilder Anfrage"
+        ],
+        "mood": "neutral",
+        "style": "locker | flirty",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich heisse Luisa und darf ich auch deinen Namen erfahren und auch aus welcher Gegend du kommst.?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-01-13T15:06:02.417Z",
+      "updatedAt": "2026-01-13T15:06:02.417Z"
     }
   ]
 }
