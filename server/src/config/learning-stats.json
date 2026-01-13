@@ -230,7 +230,7 @@
         "bad": 48
       },
       "gibt": {
-        "good": 24,
+        "good": 25,
         "bad": 30
       },
       "bestimmten": {
@@ -250,7 +250,7 @@
         "bad": 30
       },
       "hast": {
-        "good": 86,
+        "good": 87,
         "bad": 90
       },
       "verstehen": {
@@ -286,7 +286,7 @@
         "bad": 19
       },
       "nicht": {
-        "good": 152,
+        "good": 153,
         "bad": 56
       },
       "erlischt": {
@@ -350,7 +350,7 @@
         "bad": 213
       },
       "denn": {
-        "good": 196,
+        "good": 197,
         "bad": 85
       },
       "gerne": {
@@ -466,7 +466,7 @@
         "bad": 20
       },
       "helfen": {
-        "good": 2,
+        "good": 4,
         "bad": 23
       },
       "können": {
@@ -474,7 +474,7 @@
         "bad": 36
       },
       "dabei": {
-        "good": 5,
+        "good": 6,
         "bad": 33
       },
       "vorgestellt": {
@@ -986,7 +986,7 @@
         "bad": 11
       },
       "bestimmt": {
-        "good": 14,
+        "good": 15,
         "bad": 1
       },
       "hände": {
@@ -1134,7 +1134,7 @@
         "bad": 10
       },
       "schon": {
-        "good": 56,
+        "good": 57,
         "bad": 20
       },
       "noch": {
@@ -1366,7 +1366,7 @@
         "bad": 1
       },
       "voll": {
-        "good": 7,
+        "good": 8,
         "bad": 0
       },
       "gedanken": {
@@ -1582,7 +1582,7 @@
         "bad": 0
       },
       "schade": {
-        "good": 3,
+        "good": 4,
         "bad": 3
       },
       "darin": {
@@ -1598,7 +1598,7 @@
         "bad": 1
       },
       "könnten": {
-        "good": 18,
+        "good": 19,
         "bad": 7
       },
       "tolle": {
@@ -2502,7 +2502,7 @@
         "bad": 0
       },
       "familie": {
-        "good": 6,
+        "good": 7,
         "bad": 0
       },
       "umgehen": {
@@ -2622,7 +2622,7 @@
         "bad": 2
       },
       "bald": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "aktivität": {
@@ -4878,19 +4878,19 @@
         "bad": 1
       },
       "geschafft": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "niemand": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "niemanden": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "freunde": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "menge": {
@@ -8555,7 +8555,7 @@
       "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:12:42.673Z",
+  "lastUpdated": "2026-01-13T14:12:44.006Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -9215,6 +9215,7 @@
           192,
           192,
           154,
+          174,
           174
         ],
         "exclamationMarks": [
@@ -9359,6 +9360,7 @@
           1,
           1,
           1,
+          0,
           0,
           0
         ],
@@ -9505,13 +9507,14 @@
           1,
           1,
           2,
+          2,
           2
         ],
-        "count": 143,
+        "count": 144,
         "avgLength": 162,
         "minLength": 72,
         "maxLength": 325,
-        "medianLength": 153,
+        "medianLength": 154,
         "avgExclamationMarks": 0.1,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
@@ -9524,14 +9527,14 @@
           "0-100": 5,
           "100-120": 13,
           "120-150": 26,
-          "150-200": 41,
+          "150-200": 42,
           "200-250": 13,
           "250+": 3
         },
         "questionDistribution": {
           "0": 0,
           "1": 73,
-          "2": 20,
+          "2": 21,
           "3+": 6
         }
       },
