@@ -72,7 +72,7 @@
         "successRate": 0
       },
       "würdest du": {
-        "count": 12,
+        "count": 13,
         "successRate": 0
       },
       "das würde": {
@@ -6242,7 +6242,7 @@
         "bad": 0
       },
       "würde": {
-        "good": 7,
+        "good": 8,
         "bad": 1
       },
       "wirklich": {
@@ -6250,7 +6250,7 @@
         "bad": 1
       },
       "sehr": {
-        "good": 5,
+        "good": 6,
         "bad": 0
       },
       "geniesen": {
@@ -6262,7 +6262,7 @@
         "bad": 0
       },
       "mich": {
-        "good": 14,
+        "good": 16,
         "bad": 4
       },
       "leckst": {
@@ -6290,7 +6290,7 @@
         "bad": 0
       },
       "würdest": {
-        "good": 16,
+        "good": 17,
         "bad": 9
       },
       "dann": {
@@ -6334,7 +6334,7 @@
         "bad": 1
       },
       "geil": {
-        "good": 10,
+        "good": 11,
         "bad": 7
       },
       "wie": {
@@ -6346,11 +6346,11 @@
         "bad": 1
       },
       "liebe": {
-        "good": 3,
+        "good": 4,
         "bad": 3
       },
       "wenn": {
-        "good": 4,
+        "good": 6,
         "bad": 14
       },
       "jemand": {
@@ -6358,7 +6358,7 @@
         "bad": 2
       },
       "verwöhnt": {
-        "good": 4,
+        "good": 6,
         "bad": 2
       },
       "langsam": {
@@ -6390,7 +6390,7 @@
         "bad": 2
       },
       "dich": {
-        "good": 5,
+        "good": 6,
         "bad": 6
       },
       "nehme": {
@@ -6530,15 +6530,15 @@
         "bad": 1
       },
       "was": {
-        "good": 10,
+        "good": 12,
         "bad": 9
       },
       "als": {
-        "good": 5,
+        "good": 6,
         "bad": 0
       },
       "erstes": {
-        "good": 5,
+        "good": 6,
         "bad": 0
       },
       "spielsachen": {
@@ -6550,7 +6550,7 @@
         "bad": 2
       },
       "denn": {
-        "good": 6,
+        "good": 8,
         "bad": 4
       },
       "helfen": {
@@ -6570,7 +6570,7 @@
         "bad": 0
       },
       "macht": {
-        "good": 3,
+        "good": 4,
         "bad": 2
       },
       "gefickt": {
@@ -6578,11 +6578,11 @@
         "bad": 0
       },
       "werden": {
-        "good": 5,
+        "good": 6,
         "bad": 1
       },
       "anstellen": {
-        "good": 4,
+        "good": 5,
         "bad": 1
       },
       "hast": {
@@ -6682,7 +6682,7 @@
         "bad": 0
       },
       "man": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "spontan": {
@@ -6862,7 +6862,7 @@
         "bad": 0
       },
       "zunge": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "umgehen": {
@@ -7014,15 +7014,15 @@
         "bad": 1
       },
       "darüber": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "freuen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "lippen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       }
     },
@@ -7505,8 +7505,8 @@
       "total": 28
     },
     "Sexuelle Themen": {
-      "good": 56,
-      "total": 95
+      "good": 57,
+      "total": 96
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -7578,8 +7578,8 @@
         "length": 72
       },
       "goodResponse": "Ich würde mich sehr darüber freuen, von dir verwöhnt zu werden. Ich liebe es, wenn man mich mit Zunge und Lippen verwöhnt. Was würdest du denn als Erstes mit mir anstellen, wenn wir Was macht dich den",
-      "successCount": 30,
-      "lastUsed": "2026-01-13T13:59:18.957Z"
+      "successCount": 31,
+      "lastUsed": "2026-01-13T13:59:20.153Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -7907,7 +7907,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-13T13:59:18.957Z",
+  "lastUpdated": "2026-01-13T13:59:20.153Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -9195,6 +9195,7 @@
           165,
           131,
           131,
+          210,
           210
         ],
         "exclamationMarks": [
@@ -9226,6 +9227,7 @@
           1,
           1,
           1,
+          0,
           0,
           0,
           0,
@@ -9265,13 +9267,14 @@
           1,
           2,
           2,
+          1,
           1
         ],
-        "count": 33,
-        "avgLength": 180,
+        "count": 34,
+        "avgLength": 181,
         "minLength": 124,
         "maxLength": 325,
-        "medianLength": 165,
+        "medianLength": 167,
         "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 2,
@@ -9284,14 +9287,14 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 24,
-          "150-200": 48,
-          "200-250": 21,
+          "150-200": 47,
+          "200-250": 24,
           "250+": 6
         },
         "questionDistribution": {
           "0": 0,
-          "1": 70,
-          "2": 30,
+          "1": 71,
+          "2": 29,
           "3+": 0
         }
       },
@@ -10009,8 +10012,8 @@
       "pattern": "eigene_erfahrung",
       "situation": "Sexuelle Themen",
       "example": "Ich finde Spielzeuge auch richtig geil. Ich liebe es, mit Dildos oder Vibratoren zu experimentieren. Was würdest du als erstes mit den Spielsachen bei",
-      "count": 5,
-      "lastUsed": "2026-01-13T13:59:18.957Z"
+      "count": 6,
+      "lastUsed": "2026-01-13T13:59:20.153Z"
     },
     {
       "pattern": "eigene_erfahrung",
