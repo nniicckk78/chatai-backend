@@ -2,7 +2,7 @@
   "patterns": {
     "allgemein": {
       "würdest du": {
-        "count": 78,
+        "count": 79,
         "successRate": 0
       },
       "würdest du mir dann einen machen?": {
@@ -138,11 +138,11 @@
   "wordFrequency": {
     "allgemein": {
       "hört": {
-        "good": 31,
+        "good": 32,
         "bad": 6
       },
       "sich": {
-        "good": 46,
+        "good": 47,
         "bad": 27
       },
       "sehr": {
@@ -178,7 +178,7 @@
         "bad": 0
       },
       "würdest": {
-        "good": 93,
+        "good": 94,
         "bad": 69
       },
       "machen": {
@@ -286,7 +286,7 @@
         "bad": 19
       },
       "nicht": {
-        "good": 156,
+        "good": 157,
         "bad": 56
       },
       "erlischt": {
@@ -346,11 +346,11 @@
         "bad": 0
       },
       "was": {
-        "good": 194,
+        "good": 195,
         "bad": 222
       },
       "denn": {
-        "good": 199,
+        "good": 200,
         "bad": 90
       },
       "gerne": {
@@ -382,7 +382,7 @@
         "bad": 0
       },
       "dein": {
-        "good": 46,
+        "good": 47,
         "bad": 11
       },
       "bestes": {
@@ -522,7 +522,7 @@
         "bad": 2
       },
       "kannst": {
-        "good": 21,
+        "good": 22,
         "bad": 2
       },
       "schön": {
@@ -562,7 +562,7 @@
         "bad": 21
       },
       "toll": {
-        "good": 5,
+        "good": 6,
         "bad": 2
       },
       "jemand": {
@@ -762,11 +762,11 @@
         "bad": 4
       },
       "echt": {
-        "good": 36,
+        "good": 37,
         "bad": 14
       },
       "gut": {
-        "good": 60,
+        "good": 61,
         "bad": 42
       },
       "eigentlich": {
@@ -790,7 +790,7 @@
         "bad": 0
       },
       "behaupten": {
-        "good": 8,
+        "good": 9,
         "bad": 0
       },
       "unzählige": {
@@ -1190,7 +1190,7 @@
         "bad": 4
       },
       "zusammen": {
-        "good": 21,
+        "good": 22,
         "bad": 23
       },
       "wären": {
@@ -1270,7 +1270,7 @@
         "bad": 0
       },
       "etwas": {
-        "good": 25,
+        "good": 26,
         "bad": 16
       },
       "neugierig": {
@@ -1598,7 +1598,7 @@
         "bad": 1
       },
       "könnten": {
-        "good": 21,
+        "good": 22,
         "bad": 7
       },
       "tolle": {
@@ -1654,7 +1654,7 @@
         "bad": 0
       },
       "schonmal": {
-        "good": 19,
+        "good": 20,
         "bad": 0
       },
       "mobil": {
@@ -4210,7 +4210,7 @@
         "bad": 2
       },
       "kochen": {
-        "good": 4,
+        "good": 6,
         "bad": 3
       },
       "martin": {
@@ -4942,7 +4942,7 @@
         "bad": 1
       },
       "lieblingsessen": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "heissen": {
@@ -8647,7 +8647,7 @@
       "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:20:21.106Z",
+  "lastUpdated": "2026-01-13T14:20:22.457Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -9315,6 +9315,7 @@
           104,
           175,
           159,
+          175,
           175
         ],
         "exclamationMarks": [
@@ -9459,6 +9460,7 @@
           1,
           1,
           1,
+          0,
           0,
           0,
           0,
@@ -9621,13 +9623,14 @@
           2,
           2,
           1,
+          2,
           2
         ],
-        "count": 151,
+        "count": 152,
         "avgLength": 161,
         "minLength": 72,
         "maxLength": 325,
-        "medianLength": 153,
+        "medianLength": 154,
         "avgExclamationMarks": 0.1,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
@@ -9638,8 +9641,8 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 5,
-          "100-120": 15,
-          "120-150": 25,
+          "100-120": 14,
+          "120-150": 24,
           "150-200": 42,
           "200-250": 12,
           "250+": 3
