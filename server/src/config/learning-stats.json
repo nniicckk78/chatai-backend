@@ -142,12 +142,12 @@
         "bad": 0
       },
       "würdest": {
-        "good": 87,
-        "bad": 63
+        "good": 88,
+        "bad": 64
       },
       "machen": {
-        "good": 72,
-        "bad": 39
+        "good": 73,
+        "bad": 40
       },
       "hätte": {
         "good": 1,
@@ -278,7 +278,7 @@
         "bad": 0
       },
       "mich": {
-        "good": 66,
+        "good": 67,
         "bad": 67
       },
       "wohl": {
@@ -310,19 +310,19 @@
         "bad": 0
       },
       "was": {
-        "good": 176,
-        "bad": 195
+        "good": 178,
+        "bad": 197
       },
       "denn": {
-        "good": 186,
-        "bad": 77
+        "good": 187,
+        "bad": 78
       },
       "gerne": {
         "good": 79,
-        "bad": 66
+        "bad": 67
       },
       "wollen": {
-        "good": 34,
+        "good": 35,
         "bad": 1
       },
       "wieder": {
@@ -355,7 +355,7 @@
       },
       "als": {
         "good": 41,
-        "bad": 16
+        "bad": 17
       },
       "papa": {
         "good": 20,
@@ -418,8 +418,8 @@
         "bad": 25
       },
       "wenn": {
-        "good": 60,
-        "bad": 104
+        "good": 61,
+        "bad": 105
       },
       "gegenseitig": {
         "good": 0,
@@ -447,7 +447,7 @@
       },
       "klingt": {
         "good": 9,
-        "bad": 26
+        "bad": 27
       },
       "wild": {
         "good": 1,
@@ -479,7 +479,7 @@
       },
       "richtig": {
         "good": 40,
-        "bad": 43
+        "bad": 44
       },
       "feucht": {
         "good": 4,
@@ -942,11 +942,11 @@
         "bad": 0
       },
       "mal": {
-        "good": 42,
+        "good": 43,
         "bad": 31
       },
       "sehen": {
-        "good": 13,
+        "good": 14,
         "bad": 10
       },
       "bestimmt": {
@@ -986,8 +986,8 @@
         "bad": 2
       },
       "bin": {
-        "good": 37,
-        "bad": 39
+        "good": 38,
+        "bad": 40
       },
       "gemeinsam": {
         "good": 4,
@@ -1002,7 +1002,7 @@
         "bad": 4
       },
       "freut": {
-        "good": 7,
+        "good": 8,
         "bad": 21
       },
       "wilfried": {
@@ -1018,7 +1018,7 @@
         "bad": 5
       },
       "dich": {
-        "good": 82,
+        "good": 83,
         "bad": 53
       },
       "stört": {
@@ -1103,7 +1103,7 @@
       },
       "noch": {
         "good": 43,
-        "bad": 23
+        "bad": 24
       },
       "wenig": {
         "good": 5,
@@ -1123,7 +1123,7 @@
       },
       "treffen": {
         "good": 8,
-        "bad": 11
+        "bad": 12
       },
       "bereuuen": {
         "good": 1,
@@ -1239,7 +1239,7 @@
       },
       "neugierig": {
         "good": 8,
-        "bad": 7
+        "bad": 8
       },
       "betrifft": {
         "good": 2,
@@ -1526,7 +1526,7 @@
         "bad": 2
       },
       "einzige": {
-        "good": 0,
+        "good": 1,
         "bad": 2
       },
       "glücklich": {
@@ -1975,7 +1975,7 @@
       },
       "hättest": {
         "good": 1,
-        "bad": 7
+        "bad": 8
       },
       "möglichkeit": {
         "good": 0,
@@ -1994,7 +1994,7 @@
         "bad": 6
       },
       "beide": {
-        "good": 7,
+        "good": 8,
         "bad": 4
       },
       "schn": {
@@ -2418,7 +2418,7 @@
         "bad": 0
       },
       "erste": {
-        "good": 1,
+        "good": 3,
         "bad": 0
       },
       "fantasie": {
@@ -2595,7 +2595,7 @@
       },
       "total": {
         "good": 8,
-        "bad": 20
+        "bad": 21
       },
       "klappt": {
         "good": 2,
@@ -2887,7 +2887,7 @@
       },
       "vorstellst": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "optisch": {
         "good": 1,
@@ -4682,6 +4682,10 @@
         "bad": 2
       },
       "aufzunehmen": {
+        "good": 0,
+        "bad": 1
+      },
+      "bock": {
         "good": 0,
         "bad": 1
       }
@@ -6926,7 +6930,7 @@
   "situationSuccess": {
     "allgemein": {
       "good": 171,
-      "total": 356
+      "total": 357
     },
     "Bot-Vorwurf": {
       "good": 12,
@@ -7322,7 +7326,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-13T13:48:14.011Z",
+  "lastUpdated": "2026-01-13T13:48:51.756Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7957,7 +7961,8 @@
           152,
           153,
           153,
-          119
+          119,
+          148
         ],
         "exclamationMarks": [
           1,
@@ -8086,6 +8091,7 @@
           0,
           1,
           1,
+          0,
           0
         ],
         "questions": [
@@ -8215,9 +8221,10 @@
           2,
           1,
           1,
+          1,
           1
         ],
-        "count": 127,
+        "count": 128,
         "avgLength": 159,
         "minLength": 72,
         "maxLength": 325,
@@ -8231,10 +8238,10 @@
         "maxQuestions": 3,
         "medianQuestions": 1,
         "lengthDistribution": {
-          "0-100": 6,
+          "0-100": 5,
           "100-120": 13,
           "120-150": 28,
-          "150-200": 39,
+          "150-200": 38,
           "200-250": 13,
           "250+": 2
         },
@@ -8242,7 +8249,7 @@
           "0": 0,
           "1": 77,
           "2": 17,
-          "3+": 6
+          "3+": 5
         }
       },
       "negative": {
@@ -8338,9 +8345,11 @@
           199,
           225,
           225,
-          213
+          213,
+          159
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -8526,10 +8535,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 92,
-        "avgLength": 209,
+        "count": 93,
+        "avgLength": 208,
         "minLength": 115,
         "maxLength": 385,
         "medianLength": 200,
