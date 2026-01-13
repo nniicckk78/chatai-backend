@@ -6824,7 +6824,7 @@
         "bad": 11
       },
       "dann": {
-        "good": 4,
+        "good": 5,
         "bad": 1
       },
       "gerne": {
@@ -6840,7 +6840,7 @@
         "bad": 1
       },
       "den": {
-        "good": 6,
+        "good": 7,
         "bad": 1
       },
       "arsch": {
@@ -6904,7 +6904,7 @@
         "bad": 1
       },
       "gut": {
-        "good": 6,
+        "good": 7,
         "bad": 2
       },
       "vorstellen": {
@@ -7040,7 +7040,7 @@
         "bad": 1
       },
       "auch": {
-        "good": 9,
+        "good": 10,
         "bad": 3
       },
       "richtig": {
@@ -7060,7 +7060,7 @@
         "bad": 1
       },
       "was": {
-        "good": 13,
+        "good": 14,
         "bad": 11
       },
       "als": {
@@ -7116,7 +7116,7 @@
         "bad": 1
       },
       "hast": {
-        "good": 5,
+        "good": 6,
         "bad": 5
       },
       "bestimmte": {
@@ -7164,7 +7164,7 @@
         "bad": 0
       },
       "jetzt": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "bescheid": {
@@ -7172,7 +7172,7 @@
         "bad": 0
       },
       "also": {
-        "good": 5,
+        "good": 7,
         "bad": 0
       },
       "sex": {
@@ -7188,7 +7188,7 @@
         "bad": 1
       },
       "schonmal": {
-        "good": 7,
+        "good": 8,
         "bad": 0
       },
       "komplett": {
@@ -7236,7 +7236,7 @@
         "bad": 4
       },
       "schon": {
-        "good": 1,
+        "good": 2,
         "bad": 3
       },
       "mal": {
@@ -7280,11 +7280,11 @@
         "bad": 0
       },
       "nicht": {
-        "good": 5,
+        "good": 6,
         "bad": 1
       },
       "beim": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "sagst": {
@@ -7496,11 +7496,11 @@
         "bad": 1
       },
       "jeden": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "fall": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "anal": {
@@ -7624,43 +7624,43 @@
         "bad": 1
       },
       "durchmesser": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "geht": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "denke": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "ganz": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "rein": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "gehen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "monaten": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "stück": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "plug": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "drinne": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "analen": {
@@ -8563,8 +8563,8 @@
       "total": 30
     },
     "Sexuelle Themen": {
-      "good": 59,
-      "total": 101
+      "good": 60,
+      "total": 102
     },
     "Wonach suchst du?": {
       "good": 4,
@@ -8636,8 +8636,8 @@
         "length": 72
       },
       "goodResponse": "Ich würde mich sehr darüber freuen, von dir verwöhnt zu werden. Ich liebe es, wenn man mich mit Zunge und Lippen verwöhnt. Was würdest du denn als Erstes mit mir anstellen, wenn wir Was macht dich den",
-      "successCount": 32,
-      "lastUsed": "2026-01-13T14:30:04.761Z"
+      "successCount": 33,
+      "lastUsed": "2026-01-13T14:30:06.280Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -8991,7 +8991,7 @@
       "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:30:04.761Z",
+  "lastUpdated": "2026-01-13T14:30:06.280Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -10432,6 +10432,7 @@
           210,
           210,
           122,
+          182,
           182
         ],
         "exclamationMarks": [
@@ -10463,6 +10464,7 @@
           1,
           1,
           1,
+          0,
           0,
           0,
           0,
@@ -10508,9 +10510,10 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 36,
+        "count": 37,
         "avgLength": 179,
         "minLength": 122,
         "maxLength": 325,
@@ -10526,15 +10529,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 25,
-          "150-200": 47,
+          "120-150": 24,
+          "150-200": 49,
           "200-250": 22,
-          "250+": 6
+          "250+": 5
         },
         "questionDistribution": {
           "0": 0,
-          "1": 72,
-          "2": 28,
+          "1": 73,
+          "2": 27,
           "3+": 0
         }
       },
