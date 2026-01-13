@@ -2,7 +2,7 @@
   "patterns": {
     "allgemein": {
       "würdest du": {
-        "count": 75,
+        "count": 76,
         "successRate": 0
       },
       "würdest du mir dann einen machen?": {
@@ -63,6 +63,10 @@
       },
       "das klingt": {
         "count": 2,
+        "successRate": 0
+      },
+      "Würdest du dir darauf einen runterholen?": {
+        "count": 1,
         "successRate": 0
       }
     },
@@ -164,11 +168,11 @@
         "bad": 0
       },
       "würdest": {
-        "good": 89,
+        "good": 91,
         "bad": 68
       },
       "machen": {
-        "good": 73,
+        "good": 74,
         "bad": 44
       },
       "hätte": {
@@ -332,8 +336,8 @@
         "bad": 0
       },
       "was": {
-        "good": 185,
-        "bad": 209
+        "good": 186,
+        "bad": 212
       },
       "denn": {
         "good": 195,
@@ -440,7 +444,7 @@
         "bad": 25
       },
       "wenn": {
-        "good": 65,
+        "good": 66,
         "bad": 112
       },
       "gegenseitig": {
@@ -488,7 +492,7 @@
         "bad": 0
       },
       "würde": {
-        "good": 32,
+        "good": 33,
         "bad": 28
       },
       "meine": {
@@ -737,7 +741,7 @@
       },
       "liebe": {
         "good": 4,
-        "bad": 16
+        "bad": 17
       },
       "angehen": {
         "good": 2,
@@ -821,7 +825,7 @@
       },
       "doggy": {
         "good": 3,
-        "bad": 4
+        "bad": 5
       },
       "bist": {
         "good": 34,
@@ -857,11 +861,11 @@
       },
       "beim": {
         "good": 2,
-        "bad": 15
+        "bad": 16
       },
       "zeigen": {
         "good": 0,
-        "bad": 3
+        "bad": 4
       },
       "mag": {
         "good": 6,
@@ -965,11 +969,11 @@
       },
       "mal": {
         "good": 45,
-        "bad": 34
+        "bad": 35
       },
       "sehen": {
         "good": 14,
-        "bad": 10
+        "bad": 11
       },
       "bestimmt": {
         "good": 13,
@@ -1009,7 +1013,7 @@
       },
       "bin": {
         "good": 43,
-        "bad": 40
+        "bad": 41
       },
       "gemeinsam": {
         "good": 4,
@@ -1124,7 +1128,7 @@
         "bad": 20
       },
       "noch": {
-        "good": 43,
+        "good": 44,
         "bad": 25
       },
       "wenig": {
@@ -1141,7 +1145,7 @@
       },
       "bevor": {
         "good": 5,
-        "bad": 9
+        "bad": 10
       },
       "treffen": {
         "good": 8,
@@ -1241,7 +1245,7 @@
       },
       "magst": {
         "good": 6,
-        "bad": 20
+        "bad": 21
       },
       "sonst": {
         "good": 0,
@@ -1376,7 +1380,7 @@
         "bad": 9
       },
       "darauf": {
-        "good": 7,
+        "good": 8,
         "bad": 6
       },
       "weiter": {
@@ -1740,7 +1744,7 @@
         "bad": 2
       },
       "jetzt": {
-        "good": 30,
+        "good": 31,
         "bad": 2
       },
       "beantwortet": {
@@ -1897,7 +1901,7 @@
       },
       "willst": {
         "good": 8,
-        "bad": 2
+        "bad": 3
       },
       "betrafen": {
         "good": 1,
@@ -1953,7 +1957,7 @@
       },
       "ficken": {
         "good": 2,
-        "bad": 1
+        "bad": 2
       },
       "wow": {
         "good": 0,
@@ -2145,7 +2149,7 @@
       },
       "liebsten": {
         "good": 6,
-        "bad": 15
+        "bad": 16
       },
       "komme": {
         "good": 5,
@@ -2629,7 +2633,7 @@
       },
       "bereit": {
         "good": 1,
-        "bad": 3
+        "bad": 4
       },
       "aufregendes": {
         "good": 0,
@@ -2909,7 +2913,7 @@
       },
       "vorstellst": {
         "good": 0,
-        "bad": 2
+        "bad": 3
       },
       "optisch": {
         "good": 1,
@@ -3745,7 +3749,7 @@
       },
       "sag": {
         "good": 0,
-        "bad": 2
+        "bad": 3
       },
       "langsame": {
         "good": 0,
@@ -4842,6 +4846,26 @@
       "freundin": {
         "good": 3,
         "bad": 0
+      },
+      "berlegen": {
+        "good": 1,
+        "bad": 0
+      },
+      "bild": {
+        "good": 1,
+        "bad": 0
+      },
+      "schicken": {
+        "good": 1,
+        "bad": 0
+      },
+      "runterholen": {
+        "good": 1,
+        "bad": 0
+      },
+      "tue": {
+        "good": 0,
+        "bad": 1
       }
     },
     "Treffen/Termine": {
@@ -7866,7 +7890,7 @@
   "situationSuccess": {
     "allgemein": {
       "good": 171,
-      "total": 365
+      "total": 366
     },
     "Bot-Vorwurf": {
       "good": 14,
@@ -8301,7 +8325,7 @@
       "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:10:37.273Z",
+  "lastUpdated": "2026-01-13T14:12:23.116Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -8959,7 +8983,8 @@
           170,
           192,
           192,
-          192
+          192,
+          154
         ],
         "exclamationMarks": [
           1,
@@ -9102,7 +9127,8 @@
           0,
           1,
           1,
-          1
+          1,
+          0
         ],
         "questions": [
           2,
@@ -9245,9 +9271,10 @@
           2,
           1,
           1,
-          1
+          1,
+          2
         ],
-        "count": 141,
+        "count": 142,
         "avgLength": 162,
         "minLength": 72,
         "maxLength": 325,
@@ -9264,14 +9291,14 @@
           "0-100": 5,
           "100-120": 13,
           "120-150": 26,
-          "150-200": 40,
+          "150-200": 41,
           "200-250": 13,
           "250+": 3
         },
         "questionDistribution": {
           "0": 0,
           "1": 74,
-          "2": 19,
+          "2": 20,
           "3+": 6
         }
       },
@@ -9377,9 +9404,11 @@
           318,
           210,
           158,
-          158
+          158,
+          170
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -9583,10 +9612,11 @@
           1,
           1,
           2,
-          2
+          2,
+          1
         ],
-        "count": 101,
-        "avgLength": 210,
+        "count": 102,
+        "avgLength": 209,
         "minLength": 115,
         "maxLength": 385,
         "medianLength": 200,
@@ -9603,8 +9633,8 @@
           "100-120": 4,
           "120-150": 5,
           "150-200": 35,
-          "200-250": 30,
-          "250+": 27
+          "200-250": 29,
+          "250+": 26
         },
         "questionDistribution": {
           "0": 11,
