@@ -76,7 +76,7 @@
         "successRate": 0
       },
       "würdest du": {
-        "count": 14,
+        "count": 15,
         "successRate": 0
       },
       "das würde": {
@@ -7176,7 +7176,7 @@
         "bad": 0
       },
       "geilen": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "schwanz": {
@@ -7184,7 +7184,7 @@
         "bad": 0
       },
       "würdest": {
-        "good": 18,
+        "good": 19,
         "bad": 11
       },
       "dann": {
@@ -7192,11 +7192,11 @@
         "bad": 1
       },
       "gerne": {
-        "good": 10,
+        "good": 11,
         "bad": 4
       },
       "noch": {
-        "good": 4,
+        "good": 5,
         "bad": 5
       },
       "doggy": {
@@ -7216,11 +7216,11 @@
         "bad": 0
       },
       "hört": {
-        "good": 2,
+        "good": 3,
         "bad": 1
       },
       "sich": {
-        "good": 2,
+        "good": 3,
         "bad": 1
       },
       "total": {
@@ -7308,7 +7308,7 @@
         "bad": 0
       },
       "meinen": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "nippel": {
@@ -7424,7 +7424,7 @@
         "bad": 1
       },
       "was": {
-        "good": 15,
+        "good": 16,
         "bad": 11
       },
       "als": {
@@ -7440,11 +7440,11 @@
         "bad": 1
       },
       "machen": {
-        "good": 6,
+        "good": 7,
         "bad": 4
       },
       "denn": {
-        "good": 10,
+        "good": 12,
         "bad": 6
       },
       "helfen": {
@@ -7480,7 +7480,7 @@
         "bad": 1
       },
       "hast": {
-        "good": 7,
+        "good": 8,
         "bad": 5
       },
       "bestimmte": {
@@ -7488,7 +7488,7 @@
         "bad": 0
       },
       "vorlieben": {
-        "good": 3,
+        "good": 4,
         "bad": 3
       },
       "bereit": {
@@ -7496,7 +7496,7 @@
         "bad": 1
       },
       "alles": {
-        "good": 4,
+        "good": 5,
         "bad": 1
       },
       "geben": {
@@ -7752,7 +7752,7 @@
         "bad": 0
       },
       "kannst": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "zunge": {
@@ -7784,7 +7784,7 @@
         "bad": 0
       },
       "wollen": {
-        "good": 3,
+        "good": 4,
         "bad": 1
       },
       "meiner": {
@@ -8000,7 +8000,7 @@
         "bad": 1
       },
       "ganz": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "rein": {
@@ -8056,35 +8056,35 @@
         "bad": 1
       },
       "besonderen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "fantasie": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "brüsten": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "saugen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "weitere": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "besondere": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "sexuelle": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "fetische": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "hättest": {
@@ -8975,8 +8975,8 @@
       "total": 35
     },
     "Sexuelle Themen": {
-      "good": 61,
-      "total": 104
+      "good": 62,
+      "total": 105
     },
     "Wonach suchst du?": {
       "good": 4,
@@ -9048,8 +9048,8 @@
         "length": 72
       },
       "goodResponse": "Das hört sich nach einer ganz geilen und besonderen Fantasie an. Du kannst gerne an meinen Brüsten saugen. Was würdest du denn noch so alles machen wollen? Hast du denn weitere besondere Vorlieben ode",
-      "successCount": 34,
-      "lastUsed": "2026-01-13T14:41:42.736Z"
+      "successCount": 35,
+      "lastUsed": "2026-01-13T14:41:44.165Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -9403,7 +9403,7 @@
       "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:41:42.736Z",
+  "lastUpdated": "2026-01-13T14:41:44.165Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -10894,6 +10894,7 @@
           122,
           182,
           182,
+          220,
           220
         ],
         "exclamationMarks": [
@@ -10925,6 +10926,7 @@
           1,
           1,
           1,
+          0,
           0,
           0,
           0,
@@ -10974,10 +10976,11 @@
           1,
           1,
           1,
+          2,
           2
         ],
-        "count": 38,
-        "avgLength": 180,
+        "count": 39,
+        "avgLength": 181,
         "minLength": 122,
         "maxLength": 325,
         "medianLength": 168,
@@ -10992,15 +10995,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 24,
-          "150-200": 47,
-          "200-250": 24,
+          "120-150": 23,
+          "150-200": 46,
+          "200-250": 26,
           "250+": 5
         },
         "questionDistribution": {
           "0": 0,
-          "1": 71,
-          "2": 29,
+          "1": 69,
+          "2": 31,
           "3+": 0
         }
       },
