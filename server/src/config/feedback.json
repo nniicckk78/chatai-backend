@@ -9867,6 +9867,30 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-01-13T15:20:26.282Z",
       "updatedAt": "2026-01-13T15:20:26.282Z"
+    },
+    {
+      "id": "feedback_1768317701224_1fprckwr4",
+      "chatId": "58309365",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich würde mich freuen, wenn du dich mal melden könntest. Huhu, bist du noch da? Wie siehst du das? Wie läuft es bei dir? Was denkst du dazu?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "viluu",
+      "isASA": true,
+      "context": {
+        "detectedSituations": [
+          "Kontaktdaten außerhalb der Plattform",
+          "Wonach suchst du?",
+          "Bilder Anfrage"
+        ],
+        "mood": "neutral",
+        "style": "locker | flirty",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Na ja, vielleicht ist das schon zu viel, weil ich bin 4 Jahre Single, komisch dann, oder?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-01-13T15:21:41.224Z",
+      "updatedAt": "2026-01-13T15:21:41.224Z"
     }
   ]
 }
