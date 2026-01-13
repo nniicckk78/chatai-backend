@@ -72,7 +72,7 @@
         "successRate": 0
       },
       "würdest du": {
-        "count": 10,
+        "count": 11,
         "successRate": 0
       },
       "das würde": {
@@ -88,11 +88,11 @@
         "successRate": 0
       },
       "das klingt": {
-        "count": 1,
+        "count": 2,
         "successRate": 0
       },
       "würdest du uns gerne in den Arsch ficken?": {
-        "count": 1,
+        "count": 2,
         "successRate": 0
       }
     },
@@ -6286,7 +6286,7 @@
         "bad": 0
       },
       "würdest": {
-        "good": 14,
+        "good": 15,
         "bad": 9
       },
       "dann": {
@@ -6294,7 +6294,7 @@
         "bad": 1
       },
       "gerne": {
-        "good": 8,
+        "good": 9,
         "bad": 2
       },
       "noch": {
@@ -6306,15 +6306,15 @@
         "bad": 1
       },
       "den": {
-        "good": 4,
+        "good": 5,
         "bad": 1
       },
       "arsch": {
-        "good": 5,
+        "good": 6,
         "bad": 0
       },
       "ficken": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "hört": {
@@ -6330,7 +6330,7 @@
         "bad": 1
       },
       "geil": {
-        "good": 8,
+        "good": 9,
         "bad": 7
       },
       "wie": {
@@ -6422,11 +6422,11 @@
         "bad": 0
       },
       "stehst": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "eigentlich": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "magst": {
@@ -6506,11 +6506,11 @@
         "bad": 1
       },
       "auch": {
-        "good": 7,
+        "good": 8,
         "bad": 2
       },
       "richtig": {
-        "good": 14,
+        "good": 15,
         "bad": 11
       },
       "dildos": {
@@ -6638,7 +6638,7 @@
         "bad": 0
       },
       "also": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "sex": {
@@ -6654,7 +6654,7 @@
         "bad": 1
       },
       "schonmal": {
-        "good": 5,
+        "good": 6,
         "bad": 0
       },
       "komplett": {
@@ -6802,7 +6802,7 @@
         "bad": 0
       },
       "klingt": {
-        "good": 1,
+        "good": 2,
         "bad": 4
       },
       "setzt": {
@@ -6962,15 +6962,15 @@
         "bad": 1
       },
       "jeden": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "fall": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "anal": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "vorstellung": {
@@ -7489,8 +7489,8 @@
       "total": 28
     },
     "Sexuelle Themen": {
-      "good": 54,
-      "total": 93
+      "good": 55,
+      "total": 94
     },
     "Wonach suchst du?": {
       "good": 3,
@@ -7562,8 +7562,8 @@
         "length": 72
       },
       "goodResponse": "Ich finde es richtig geil, dass du so bereit bist, mir alles zu geben. Ich würde es lieben, dich richtig verwöhnt zu werden. Was würdest du gerne mit mir machen, wenn wir uns näherkommen? Ich kann mir",
-      "successCount": 28,
-      "lastUsed": "2026-01-13T13:57:50.801Z"
+      "successCount": 29,
+      "lastUsed": "2026-01-13T13:57:52.292Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -7891,7 +7891,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-13T13:57:50.801Z",
+  "lastUpdated": "2026-01-13T13:57:52.292Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7905,6 +7905,18 @@
       "lastUsed": "2026-01-06T14:32:09.009Z"
     },
     {
+      "text": "Sei kurz, präzise und direkt",
+      "count": 9,
+      "situations": [
+        "Sexuelle Themen",
+        "allgemein",
+        "Bot-Vorwurf",
+        "Treffen/Termine",
+        "Berufsfrage"
+      ],
+      "lastUsed": "2026-01-13T13:57:52.292Z"
+    },
+    {
       "text": "Bessere Frage",
       "count": 8,
       "situations": [
@@ -7913,18 +7925,6 @@
         "Sexuelle Themen"
       ],
       "lastUsed": "2026-01-13T13:48:14.011Z"
-    },
-    {
-      "text": "Sei kurz, präzise und direkt",
-      "count": 8,
-      "situations": [
-        "Sexuelle Themen",
-        "allgemein",
-        "Bot-Vorwurf",
-        "Treffen/Termine",
-        "Berufsfrage"
-      ],
-      "lastUsed": "2026-01-13T13:57:50.801Z"
     },
     {
       "text": "\"Wenn wir uns endlich sehen\" Klingt wieder zu sehr danach als ob man dem Kunde verpsricht das es passieren wird",
@@ -9174,6 +9174,7 @@
           192,
           168,
           165,
+          131,
           131
         ],
         "exclamationMarks": [
@@ -9205,6 +9206,7 @@
           1,
           1,
           1,
+          0,
           0,
           0,
           0
@@ -9240,10 +9242,11 @@
           1,
           2,
           1,
+          2,
           2
         ],
-        "count": 31,
-        "avgLength": 180,
+        "count": 32,
+        "avgLength": 179,
         "minLength": 124,
         "maxLength": 325,
         "medianLength": 165,
@@ -9258,15 +9261,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 23,
-          "150-200": 52,
+          "120-150": 25,
+          "150-200": 50,
           "200-250": 19,
           "250+": 6
         },
         "questionDistribution": {
           "0": 0,
-          "1": 71,
-          "2": 29,
+          "1": 69,
+          "2": 31,
           "3+": 0
         }
       },
