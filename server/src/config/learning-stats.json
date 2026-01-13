@@ -286,7 +286,7 @@
         "bad": 26
       },
       "auch": {
-        "good": 182,
+        "good": 183,
         "bad": 69
       },
       "funke": {
@@ -354,11 +354,11 @@
         "bad": 0
       },
       "was": {
-        "good": 203,
+        "good": 204,
         "bad": 233
       },
       "denn": {
-        "good": 203,
+        "good": 204,
         "bad": 100
       },
       "gerne": {
@@ -454,7 +454,7 @@
         "bad": 20
       },
       "finde": {
-        "good": 32,
+        "good": 33,
         "bad": 92
       },
       "grossartig": {
@@ -462,7 +462,7 @@
         "bad": 25
       },
       "wenn": {
-        "good": 67,
+        "good": 69,
         "bad": 124
       },
       "gegenseitig": {
@@ -510,7 +510,7 @@
         "bad": 0
       },
       "würde": {
-        "good": 35,
+        "good": 36,
         "bad": 28
       },
       "meine": {
@@ -522,7 +522,7 @@
         "bad": 6
       },
       "richtig": {
-        "good": 40,
+        "good": 41,
         "bad": 48
       },
       "feucht": {
@@ -654,7 +654,7 @@
         "bad": 4
       },
       "seine": {
-        "good": 1,
+        "good": 2,
         "bad": 4
       },
       "eigenen": {
@@ -758,7 +758,7 @@
         "bad": 41
       },
       "liebe": {
-        "good": 4,
+        "good": 5,
         "bad": 20
       },
       "angehen": {
@@ -822,7 +822,7 @@
         "bad": 46
       },
       "hobbys": {
-        "good": 0,
+        "good": 1,
         "bad": 6
       },
       "interessen": {
@@ -870,15 +870,15 @@
         "bad": 5
       },
       "immer": {
-        "good": 16,
+        "good": 17,
         "bad": 11
       },
       "geniessen": {
-        "good": 4,
+        "good": 5,
         "bad": 15
       },
       "beim": {
-        "good": 3,
+        "good": 4,
         "bad": 16
       },
       "zeigen": {
@@ -1062,7 +1062,7 @@
         "bad": 9
       },
       "dich": {
-        "good": 96,
+        "good": 97,
         "bad": 68
       },
       "stört": {
@@ -1146,7 +1146,7 @@
         "bad": 22
       },
       "noch": {
-        "good": 46,
+        "good": 48,
         "bad": 28
       },
       "wenig": {
@@ -1190,7 +1190,7 @@
         "bad": 2
       },
       "man": {
-        "good": 15,
+        "good": 16,
         "bad": 16
       },
       "reden": {
@@ -1198,11 +1198,11 @@
         "bad": 4
       },
       "zusammen": {
-        "good": 22,
+        "good": 23,
         "bad": 23
       },
       "wären": {
-        "good": 6,
+        "good": 7,
         "bad": 2
       },
       "bereuen": {
@@ -1294,7 +1294,7 @@
         "bad": 8
       },
       "welche": {
-        "good": 2,
+        "good": 3,
         "bad": 6
       },
       "anderen": {
@@ -1362,7 +1362,7 @@
         "bad": 0
       },
       "dem": {
-        "good": 7,
+        "good": 8,
         "bad": 5
       },
       "ersten": {
@@ -2166,7 +2166,7 @@
         "bad": 8
       },
       "liebsten": {
-        "good": 8,
+        "good": 9,
         "bad": 16
       },
       "komme": {
@@ -4414,7 +4414,7 @@
         "bad": 1
       },
       "radfahren": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "segeln": {
@@ -5156,6 +5156,46 @@
       "tee": {
         "good": 1,
         "bad": 1
+      },
+      "blöd": {
+        "good": 1,
+        "bad": 0
+      },
+      "reifen": {
+        "good": 1,
+        "bad": 0
+      },
+      "rgerlich": {
+        "good": 1,
+        "bad": 0
+      },
+      "reparaturen": {
+        "good": 1,
+        "bad": 0
+      },
+      "einplanen": {
+        "good": 1,
+        "bad": 0
+      },
+      "freiheit": {
+        "good": 1,
+        "bad": 0
+      },
+      "strecken": {
+        "good": 1,
+        "bad": 0
+      },
+      "fährst": {
+        "good": 1,
+        "bad": 0
+      },
+      "anheizen": {
+        "good": 1,
+        "bad": 0
+      },
+      "unterwegs": {
+        "good": 1,
+        "bad": 0
       }
     },
     "Treffen/Termine": {
@@ -9299,7 +9339,7 @@
       "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:39:08.849Z",
+  "lastUpdated": "2026-01-13T14:40:18.920Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -9981,7 +10021,8 @@
           282,
           230,
           230,
-          217
+          217,
+          305
         ],
         "exclamationMarks": [
           1,
@@ -10125,6 +10166,7 @@
           1,
           1,
           1,
+          0,
           0,
           0,
           0,
@@ -10315,10 +10357,11 @@
           2,
           2,
           2,
-          1
+          1,
+          2
         ],
-        "count": 165,
-        "avgLength": 164,
+        "count": 166,
+        "avgLength": 165,
         "minLength": 72,
         "maxLength": 325,
         "medianLength": 155,
@@ -10333,14 +10376,14 @@
         "lengthDistribution": {
           "0-100": 4,
           "100-120": 14,
-          "120-150": 24,
-          "150-200": 41,
+          "120-150": 23,
+          "150-200": 40,
           "200-250": 13,
-          "250+": 4
+          "250+": 5
         },
         "questionDistribution": {
           "0": 1,
-          "1": 70,
+          "1": 69,
           "2": 24,
           "3+": 5
         }
@@ -11769,8 +11812,8 @@
       "pattern": "eigene_vorlieben_plus_frage",
       "situation": "allgemein",
       "example": "Warum hast du dich denn so lange nicht mehr bei mir gemeldet? Ich mag das echt nicht wenn man mich lange ignoriert. Ich hoffe du verstehst das? Kann i",
-      "count": 6,
-      "lastUsed": "2026-01-11T15:34:06.052Z"
+      "count": 7,
+      "lastUsed": "2026-01-13T14:40:18.920Z"
     }
   ],
   "migrated": true,
