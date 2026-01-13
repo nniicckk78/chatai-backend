@@ -190,7 +190,7 @@
         "bad": 77
       },
       "machen": {
-        "good": 75,
+        "good": 76,
         "bad": 50
       },
       "hätte": {
@@ -258,11 +258,11 @@
         "bad": 30
       },
       "hast": {
-        "good": 92,
+        "good": 93,
         "bad": 90
       },
       "verstehen": {
-        "good": 28,
+        "good": 29,
         "bad": 25
       },
       "mehr": {
@@ -286,7 +286,7 @@
         "bad": 26
       },
       "auch": {
-        "good": 181,
+        "good": 182,
         "bad": 69
       },
       "funke": {
@@ -306,7 +306,7 @@
         "bad": 0
       },
       "manchmal": {
-        "good": 25,
+        "good": 26,
         "bad": 7
       },
       "nur": {
@@ -314,7 +314,7 @@
         "bad": 8
       },
       "bisschen": {
-        "good": 47,
+        "good": 48,
         "bad": 24
       },
       "damit": {
@@ -338,7 +338,7 @@
         "bad": 0
       },
       "zeit": {
-        "good": 32,
+        "good": 33,
         "bad": 13
       },
       "ziemlich": {
@@ -354,7 +354,7 @@
         "bad": 0
       },
       "was": {
-        "good": 201,
+        "good": 202,
         "bad": 232
       },
       "denn": {
@@ -530,7 +530,7 @@
         "bad": 2
       },
       "kannst": {
-        "good": 24,
+        "good": 25,
         "bad": 2
       },
       "schön": {
@@ -562,7 +562,7 @@
         "bad": 4
       },
       "werden": {
-        "good": 11,
+        "good": 12,
         "bad": 2
       },
       "könnte": {
@@ -738,7 +738,7 @@
         "bad": 8
       },
       "deinen": {
-        "good": 20,
+        "good": 21,
         "bad": 10
       },
       "wunsch": {
@@ -790,7 +790,7 @@
         "bad": 8
       },
       "hoffe": {
-        "good": 30,
+        "good": 31,
         "bad": 4
       },
       "dads": {
@@ -922,7 +922,7 @@
         "bad": 2
       },
       "doch": {
-        "good": 31,
+        "good": 32,
         "bad": 4
       },
       "sex": {
@@ -1062,7 +1062,7 @@
         "bad": 9
       },
       "dich": {
-        "good": 95,
+        "good": 96,
         "bad": 68
       },
       "stört": {
@@ -1146,7 +1146,7 @@
         "bad": 22
       },
       "noch": {
-        "good": 45,
+        "good": 46,
         "bad": 28
       },
       "wenig": {
@@ -1278,7 +1278,7 @@
         "bad": 0
       },
       "etwas": {
-        "good": 27,
+        "good": 28,
         "bad": 16
       },
       "neugierig": {
@@ -1418,7 +1418,7 @@
         "bad": 18
       },
       "schönes": {
-        "good": 11,
+        "good": 12,
         "bad": 3
       },
       "geplant": {
@@ -2150,7 +2150,7 @@
         "bad": 3
       },
       "freunden": {
-        "good": 6,
+        "good": 7,
         "bad": 4
       },
       "entspanne": {
@@ -4218,7 +4218,7 @@
         "bad": 2
       },
       "kochen": {
-        "good": 7,
+        "good": 8,
         "bad": 3
       },
       "martin": {
@@ -5126,23 +5126,23 @@
         "bad": 0
       },
       "brauche": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "warm": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "verstehn": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "wäsche": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "geplannt": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "süss": {
@@ -9143,7 +9143,7 @@
       "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:35:16.721Z",
+  "lastUpdated": "2026-01-13T14:35:19.865Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -9823,6 +9823,7 @@
           178,
           206,
           282,
+          230,
           230
         ],
         "exclamationMarks": [
@@ -9967,6 +9968,7 @@
           1,
           1,
           1,
+          0,
           0,
           0,
           0,
@@ -10153,9 +10155,10 @@
           0,
           1,
           2,
+          2,
           2
         ],
-        "count": 163,
+        "count": 164,
         "avgLength": 163,
         "minLength": 72,
         "maxLength": 325,
@@ -10173,14 +10176,14 @@
           "100-120": 14,
           "120-150": 24,
           "150-200": 41,
-          "200-250": 12,
+          "200-250": 13,
           "250+": 4
         },
         "questionDistribution": {
           "0": 1,
           "1": 70,
-          "2": 23,
-          "3+": 6
+          "2": 24,
+          "3+": 5
         }
       },
       "negative": {
