@@ -4600,7 +4600,7 @@
         "bad": 0
       },
       "dann": {
-        "good": 12,
+        "good": 14,
         "bad": 0
       },
       "wissen": {
@@ -4620,7 +4620,7 @@
         "bad": 0
       },
       "einfach": {
-        "good": 4,
+        "good": 5,
         "bad": 1
       },
       "wann": {
@@ -4640,11 +4640,11 @@
         "bad": 0
       },
       "was": {
-        "good": 17,
+        "good": 18,
         "bad": 10
       },
       "hast": {
-        "good": 9,
+        "good": 10,
         "bad": 1
       },
       "denn": {
@@ -4660,7 +4660,7 @@
         "bad": 3
       },
       "machen": {
-        "good": 9,
+        "good": 11,
         "bad": 4
       },
       "könnten": {
@@ -4680,7 +4680,7 @@
         "bad": 2
       },
       "schon": {
-        "good": 6,
+        "good": 7,
         "bad": 4
       },
       "ganz": {
@@ -4712,7 +4712,7 @@
         "bad": 5
       },
       "würdest": {
-        "good": 8,
+        "good": 9,
         "bad": 10
       },
       "als": {
@@ -4728,7 +4728,7 @@
         "bad": 4
       },
       "wollen": {
-        "good": 7,
+        "good": 8,
         "bad": 2
       },
       "wenn": {
@@ -4764,7 +4764,7 @@
         "bad": 0
       },
       "wie": {
-        "good": 5,
+        "good": 6,
         "bad": 7
       },
       "beiden": {
@@ -4852,7 +4852,7 @@
         "bad": 6
       },
       "idee": {
-        "good": 4,
+        "good": 5,
         "bad": 1
       },
       "freundschaft": {
@@ -4892,7 +4892,7 @@
         "bad": 0
       },
       "genau": {
-        "good": 3,
+        "good": 4,
         "bad": 2
       },
       "sage": {
@@ -4976,7 +4976,7 @@
         "bad": 3
       },
       "gerne": {
-        "good": 5,
+        "good": 6,
         "bad": 4
       },
       "alles": {
@@ -5304,7 +5304,7 @@
         "bad": 0
       },
       "schaune": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "entschuldige": {
@@ -6641,12 +6641,12 @@
       "total": 8
     },
     "Geld/Coins": {
-      "good": 4,
-      "total": 9
+      "good": 5,
+      "total": 10
     },
     "Treffen/Termine": {
-      "good": 34,
-      "total": 61
+      "good": 35,
+      "total": 62
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -6719,8 +6719,8 @@
         "length": 165
       },
       "goodResponse": "Hey Ingo, freut mich, von dir zu hören. Ich finde spontane Treffen auch aufregend. Was hast du denn im Kopf, wie wir die Zeit zusammen verbringen könnten? Ich kann mir richtig gut vorstellen, dass wir",
-      "successCount": 12,
-      "lastUsed": "2026-01-13T13:40:01.424Z"
+      "successCount": 13,
+      "lastUsed": "2026-01-13T13:40:02.873Z"
     },
     {
       "situation": "Bot-Vorwurf",
@@ -7022,7 +7022,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-13T13:40:01.425Z",
+  "lastUpdated": "2026-01-13T13:40:02.873Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -8643,9 +8643,11 @@
           138,
           247,
           126,
+          126,
           126
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -8689,10 +8691,11 @@
           1,
           2,
           1,
+          1,
           1
         ],
-        "count": 21,
-        "avgLength": 166,
+        "count": 22,
+        "avgLength": 164,
         "minLength": 122,
         "maxLength": 257,
         "medianLength": 161,
@@ -8707,15 +8710,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 48,
-          "150-200": 33,
+          "120-150": 50,
+          "150-200": 32,
           "200-250": 14,
           "250+": 5
         },
         "questionDistribution": {
           "0": 0,
-          "1": 81,
-          "2": 19,
+          "1": 82,
+          "2": 18,
           "3+": 0
         }
       },
