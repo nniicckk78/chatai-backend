@@ -5487,11 +5487,11 @@
     "Bot-Vorwurf": {
       "gut": {
         "good": 1,
-        "bad": 1
+        "bad": 2
       },
       "bin": {
         "good": 2,
-        "bad": 1
+        "bad": 2
       },
       "jetzt": {
         "good": 1,
@@ -5510,8 +5510,8 @@
         "bad": 1
       },
       "denn": {
-        "good": 2,
-        "bad": 2
+        "good": 3,
+        "bad": 3
       },
       "dein": {
         "good": 1,
@@ -5543,7 +5543,7 @@
       },
       "finde": {
         "good": 0,
-        "bad": 2
+        "bad": 3
       },
       "klasse": {
         "good": 0,
@@ -5607,7 +5607,7 @@
       },
       "was": {
         "good": 2,
-        "bad": 3
+        "bad": 4
       },
       "magst": {
         "good": 0,
@@ -5619,7 +5619,7 @@
       },
       "wenn": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "erotik": {
         "good": 0,
@@ -5719,11 +5719,11 @@
       },
       "machen": {
         "good": 0,
-        "bad": 2
+        "bad": 3
       },
       "echt": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "spass": {
         "good": 0,
@@ -5759,7 +5759,7 @@
       },
       "vielleicht": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "langen": {
         "good": 0,
@@ -5783,14 +5783,14 @@
       },
       "würdest": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "gerne": {
-        "good": 0,
-        "bad": 1
+        "good": 1,
+        "bad": 2
       },
       "noch": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "schön": {
@@ -5860,6 +5860,70 @@
       "festes": {
         "good": 1,
         "bad": 0
+      },
+      "schauen": {
+        "good": 1,
+        "bad": 1
+      },
+      "wann": {
+        "good": 1,
+        "bad": 0
+      },
+      "besten": {
+        "good": 1,
+        "bad": 0
+      },
+      "klappt": {
+        "good": 1,
+        "bad": 0
+      },
+      "welche": {
+        "good": 1,
+        "bad": 0
+      },
+      "filme": {
+        "good": 1,
+        "bad": 0
+      },
+      "schaust": {
+        "good": 1,
+        "bad": 0
+      },
+      "kino": {
+        "good": 1,
+        "bad": 0
+      },
+      "idee": {
+        "good": 0,
+        "bad": 1
+      },
+      "nächstes": {
+        "good": 0,
+        "bad": 1
+      },
+      "wochenende": {
+        "good": 0,
+        "bad": 1
+      },
+      "treffen": {
+        "good": 0,
+        "bad": 2
+      },
+      "immer": {
+        "good": 0,
+        "bad": 1
+      },
+      "kaffee": {
+        "good": 0,
+        "bad": 1
+      },
+      "sogar": {
+        "good": 0,
+        "bad": 1
+      },
+      "film": {
+        "good": 0,
+        "bad": 1
       }
     },
     "Sexuelle Themen": {
@@ -6933,8 +6997,8 @@
       "total": 357
     },
     "Bot-Vorwurf": {
-      "good": 12,
-      "total": 24
+      "good": 13,
+      "total": 26
     },
     "Sexuelle Themen": {
       "good": 53,
@@ -7235,6 +7299,19 @@
       "lastUsed": "2026-01-11T15:39:49.329Z"
     },
     {
+      "situation": "Bot-Vorwurf",
+      "customerPattern": {
+        "keywords": "bin platt solltest wirklich schnelles treffen wollen hätte dienstag donnerstag",
+        "hasQuestion": true,
+        "hasMeeting": true,
+        "hasSexual": true,
+        "length": 294
+      },
+      "goodResponse": "Ich bin auch jetzt schon total geil aber ich muss noch schauen wann es dann am besten klappt, was würdest du dann als erstes gerne mit mir machen wollen?",
+      "successCount": 2,
+      "lastUsed": "2026-01-13T13:50:14.742Z"
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
@@ -7276,19 +7353,6 @@
     {
       "situation": "Bot-Vorwurf",
       "customerPattern": {
-        "keywords": "bin platt solltest wirklich schnelles treffen wollen hätte dienstag donnerstag",
-        "hasQuestion": true,
-        "hasMeeting": true,
-        "hasSexual": true,
-        "length": 294
-      },
-      "goodResponse": "Ich bin auch jetzt schon total geil aber ich muss noch schauen wann es dann am besten klappt, was würdest du dann als erstes gerne mit mir machen wollen?",
-      "successCount": 1,
-      "lastUsed": "2026-01-04T20:01:25.618Z"
-    },
-    {
-      "situation": "Bot-Vorwurf",
-      "customerPattern": {
         "keywords": "gehe gern spazieren kino schwimmen",
         "hasQuestion": true,
         "hasMeeting": false,
@@ -7326,7 +7390,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-13T13:48:51.756Z",
+  "lastUpdated": "2026-01-13T13:50:14.742Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7385,6 +7449,16 @@
       "lastUsed": "2026-01-06T17:16:49.074Z"
     },
     {
+      "text": "Sei kurz, präzise und direkt",
+      "count": 4,
+      "situations": [
+        "Sexuelle Themen",
+        "allgemein",
+        "Bot-Vorwurf"
+      ],
+      "lastUsed": "2026-01-13T13:50:14.741Z"
+    },
+    {
       "text": "Nich viel verändert, nur denn ersten satz entfernt weil die nachricht des Kunden zu sehr bewertet wurde",
       "count": 3,
       "situations": [
@@ -7435,15 +7509,6 @@
         "Sexuelle Themen"
       ],
       "lastUsed": "2026-01-06T14:30:32.243Z"
-    },
-    {
-      "text": "Sei kurz, präzise und direkt",
-      "count": 3,
-      "situations": [
-        "Sexuelle Themen",
-        "allgemein"
-      ],
-      "lastUsed": "2026-01-06T14:53:50.286Z"
     },
     {
       "text": "Etwas abgelenkt vom Tag raussuchen des treffens und mehr darauf eingangen, was er gerne machen würde",
@@ -8801,9 +8866,11 @@
           155,
           136,
           139,
-          225
+          225,
+          104
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -8813,33 +8880,34 @@
           1,
           2,
           2,
+          1,
           1
         ],
-        "count": 4,
-        "avgLength": 164,
-        "minLength": 136,
+        "count": 5,
+        "avgLength": 152,
+        "minLength": 104,
         "maxLength": 225,
-        "medianLength": 155,
+        "medianLength": 139,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.5,
+        "avgQuestions": 1.4,
         "minQuestions": 1,
         "maxQuestions": 2,
-        "medianQuestions": 2,
+        "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 0,
-          "120-150": 50,
-          "150-200": 25,
-          "200-250": 25,
+          "100-120": 20,
+          "120-150": 40,
+          "150-200": 20,
+          "200-250": 20,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 50,
-          "2": 50,
+          "1": 60,
+          "2": 40,
           "3+": 0
         }
       },
@@ -8848,9 +8916,11 @@
           179,
           257,
           385,
-          178
+          178,
+          206
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -8860,13 +8930,14 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 4,
-        "avgLength": 250,
+        "count": 5,
+        "avgLength": 241,
         "minLength": 178,
         "maxLength": 385,
-        "medianLength": 257,
+        "medianLength": 206,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
@@ -8879,9 +8950,9 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 50,
-          "200-250": 0,
-          "250+": 50
+          "150-200": 40,
+          "200-250": 20,
+          "250+": 40
         },
         "questionDistribution": {
           "0": 0,
