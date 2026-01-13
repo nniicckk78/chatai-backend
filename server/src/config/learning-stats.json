@@ -166,7 +166,7 @@
         "bad": 0
       },
       "kaffe": {
-        "good": 21,
+        "good": 22,
         "bad": 0
       },
       "trinken": {
@@ -210,7 +210,7 @@
         "bad": 35
       },
       "wie": {
-        "good": 105,
+        "good": 106,
         "bad": 85
       },
       "stellst": {
@@ -286,7 +286,7 @@
         "bad": 19
       },
       "nicht": {
-        "good": 160,
+        "good": 161,
         "bad": 56
       },
       "erlischt": {
@@ -374,7 +374,7 @@
         "bad": 25
       },
       "einfach": {
-        "good": 41,
+        "good": 42,
         "bad": 29
       },
       "gibst": {
@@ -482,7 +482,7 @@
         "bad": 21
       },
       "klingt": {
-        "good": 10,
+        "good": 11,
         "bad": 30
       },
       "wild": {
@@ -730,7 +730,7 @@
         "bad": 4
       },
       "deinen": {
-        "good": 18,
+        "good": 19,
         "bad": 10
       },
       "wunsch": {
@@ -770,7 +770,7 @@
         "bad": 43
       },
       "eigentlich": {
-        "good": 31,
+        "good": 32,
         "bad": 1
       },
       "typ": {
@@ -978,7 +978,7 @@
         "bad": 0
       },
       "mal": {
-        "good": 47,
+        "good": 48,
         "bad": 35
       },
       "sehen": {
@@ -1086,7 +1086,7 @@
         "bad": 5
       },
       "schauen": {
-        "good": 8,
+        "good": 9,
         "bad": 3
       },
       "ergibt": {
@@ -2006,7 +2006,7 @@
         "bad": 6
       },
       "wann": {
-        "good": 8,
+        "good": 9,
         "bad": 4
       },
       "hättest": {
@@ -2158,7 +2158,7 @@
         "bad": 8
       },
       "liebsten": {
-        "good": 7,
+        "good": 8,
         "bad": 16
       },
       "komme": {
@@ -2314,7 +2314,7 @@
         "bad": 0
       },
       "trinkst": {
-        "good": 12,
+        "good": 13,
         "bad": 0
       },
       "beobachten": {
@@ -2414,7 +2414,7 @@
         "bad": 1
       },
       "schlecht": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "fotos": {
@@ -2634,7 +2634,7 @@
         "bad": 22
       },
       "klappt": {
-        "good": 3,
+        "good": 4,
         "bad": 1
       },
       "wärst": {
@@ -8759,12 +8759,12 @@
       "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:24:01.320Z",
+  "lastUpdated": "2026-01-13T14:24:02.612Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
       "text": "Sei kurz, präzise und direkt",
-      "count": 11,
+      "count": 12,
       "situations": [
         "Sexuelle Themen",
         "allgemein",
@@ -8772,7 +8772,7 @@
         "Treffen/Termine",
         "Berufsfrage"
       ],
-      "lastUsed": "2026-01-13T14:24:01.320Z"
+      "lastUsed": "2026-01-13T14:24:02.612Z"
     },
     {
       "text": "Auf die nachricht drauf eingegnagen, ihm gesagt das es heute zu spontan ist und ihn gefragt wie er gerne seinen KAffee trinkt",
@@ -9430,6 +9430,7 @@
           175,
           175,
           287,
+          122,
           122
         ],
         "exclamationMarks": [
@@ -9574,6 +9575,7 @@
           1,
           1,
           1,
+          0,
           0,
           0,
           0,
@@ -9742,13 +9744,14 @@
           2,
           2,
           2,
+          1,
           1
         ],
-        "count": 154,
+        "count": 155,
         "avgLength": 161,
         "minLength": 72,
         "maxLength": 325,
-        "medianLength": 154,
+        "medianLength": 153,
         "avgExclamationMarks": 0.1,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
@@ -9761,13 +9764,13 @@
           "0-100": 5,
           "100-120": 14,
           "120-150": 25,
-          "150-200": 42,
+          "150-200": 41,
           "200-250": 12,
           "250+": 3
         },
         "questionDistribution": {
           "0": 0,
-          "1": 71,
+          "1": 72,
           "2": 23,
           "3+": 6
         }
