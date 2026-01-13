@@ -2,7 +2,7 @@
   "patterns": {
     "allgemein": {
       "würdest du": {
-        "count": 79,
+        "count": 80,
         "successRate": 0
       },
       "würdest du mir dann einen machen?": {
@@ -162,12 +162,12 @@
         "bad": 2
       },
       "würden": {
-        "good": 31,
+        "good": 32,
         "bad": 2
       },
       "dann": {
-        "good": 103,
-        "bad": 12
+        "good": 104,
+        "bad": 13
       },
       "irgendwo": {
         "good": 20,
@@ -186,12 +186,12 @@
         "bad": 0
       },
       "würdest": {
-        "good": 94,
-        "bad": 77
+        "good": 95,
+        "bad": 78
       },
       "machen": {
-        "good": 76,
-        "bad": 50
+        "good": 77,
+        "bad": 51
       },
       "hätte": {
         "good": 1,
@@ -214,8 +214,8 @@
         "bad": 20
       },
       "kaffee": {
-        "good": 10,
-        "bad": 35
+        "good": 11,
+        "bad": 36
       },
       "wie": {
         "good": 106,
@@ -346,24 +346,24 @@
         "bad": 0
       },
       "viel": {
-        "good": 31,
-        "bad": 17
+        "good": 32,
+        "bad": 18
       },
       "los": {
         "good": 19,
         "bad": 0
       },
       "was": {
-        "good": 202,
-        "bad": 232
+        "good": 203,
+        "bad": 233
       },
       "denn": {
-        "good": 202,
-        "bad": 99
+        "good": 203,
+        "bad": 100
       },
       "gerne": {
-        "good": 83,
-        "bad": 83
+        "good": 84,
+        "bad": 84
       },
       "wollen": {
         "good": 35,
@@ -378,8 +378,8 @@
         "bad": 19
       },
       "vorstellen": {
-        "good": 30,
-        "bad": 29
+        "good": 31,
+        "bad": 30
       },
       "einfach": {
         "good": 45,
@@ -454,16 +454,16 @@
         "bad": 20
       },
       "finde": {
-        "good": 31,
-        "bad": 91
+        "good": 32,
+        "bad": 92
       },
       "grossartig": {
         "good": 0,
         "bad": 25
       },
       "wenn": {
-        "good": 66,
-        "bad": 123
+        "good": 67,
+        "bad": 124
       },
       "gegenseitig": {
         "good": 0,
@@ -482,8 +482,8 @@
         "bad": 36
       },
       "dabei": {
-        "good": 6,
-        "bad": 35
+        "good": 7,
+        "bad": 36
       },
       "vorgestellt": {
         "good": 4,
@@ -566,8 +566,8 @@
         "bad": 2
       },
       "könnte": {
-        "good": 10,
-        "bad": 21
+        "good": 11,
+        "bad": 22
       },
       "toll": {
         "good": 7,
@@ -770,8 +770,8 @@
         "bad": 4
       },
       "echt": {
-        "good": 41,
-        "bad": 16
+        "good": 42,
+        "bad": 17
       },
       "gut": {
         "good": 62,
@@ -974,8 +974,8 @@
         "bad": 8
       },
       "spass": {
-        "good": 12,
-        "bad": 23
+        "good": 13,
+        "bad": 24
       },
       "nacht": {
         "good": 1,
@@ -1650,7 +1650,7 @@
         "bad": 18
       },
       "kommen": {
-        "good": 15,
+        "good": 16,
         "bad": 5
       },
       "nähe": {
@@ -1855,7 +1855,7 @@
       },
       "kennenlernen": {
         "good": 1,
-        "bad": 21
+        "bad": 22
       },
       "chemie": {
         "good": 5,
@@ -2078,8 +2078,8 @@
         "bad": 2
       },
       "näher": {
-        "good": 2,
-        "bad": 12
+        "good": 3,
+        "bad": 13
       },
       "kennenzulernen": {
         "good": 2,
@@ -2790,8 +2790,8 @@
         "bad": 1
       },
       "idee": {
-        "good": 5,
-        "bad": 5
+        "good": 6,
+        "bad": 6
       },
       "schwebt": {
         "good": 0,
@@ -3102,8 +3102,8 @@
         "bad": 4
       },
       "quatschen": {
-        "good": 0,
-        "bad": 8
+        "good": 1,
+        "bad": 9
       },
       "stille": {
         "good": 0,
@@ -3582,8 +3582,8 @@
         "bad": 4
       },
       "entspannt": {
-        "good": 1,
-        "bad": 9
+        "good": 2,
+        "bad": 10
       },
       "weiteren": {
         "good": 1,
@@ -3758,8 +3758,8 @@
         "bad": 1
       },
       "angenehm": {
-        "good": 1,
-        "bad": 3
+        "good": 2,
+        "bad": 4
       },
       "lieblings": {
         "good": 1,
@@ -5151,6 +5151,10 @@
       },
       "berraschen": {
         "good": 0,
+        "bad": 1
+      },
+      "tee": {
+        "good": 1,
         "bad": 1
       }
     },
@@ -8860,7 +8864,7 @@
   "situationSuccess": {
     "allgemein": {
       "good": 171,
-      "total": 383
+      "total": 384
     },
     "Bot-Vorwurf": {
       "good": 18,
@@ -9295,7 +9299,7 @@
       "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:36:59.140Z",
+  "lastUpdated": "2026-01-13T14:39:08.849Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -9976,7 +9980,8 @@
           206,
           282,
           230,
-          230
+          230,
+          217
         ],
         "exclamationMarks": [
           1,
@@ -10120,6 +10125,7 @@
           1,
           1,
           1,
+          0,
           0,
           0,
           0,
@@ -10308,10 +10314,11 @@
           1,
           2,
           2,
-          2
+          2,
+          1
         ],
-        "count": 164,
-        "avgLength": 163,
+        "count": 165,
+        "avgLength": 164,
         "minLength": 72,
         "maxLength": 325,
         "medianLength": 155,
@@ -10458,9 +10465,11 @@
           294,
           313,
           294,
-          225
+          225,
+          216
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -10700,9 +10709,10 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 119,
+        "count": 120,
         "avgLength": 214,
         "minLength": 115,
         "maxLength": 385,
@@ -10721,7 +10731,7 @@
           "120-150": 4,
           "150-200": 35,
           "200-250": 29,
-          "250+": 29
+          "250+": 28
         },
         "questionDistribution": {
           "0": 9,
@@ -11724,8 +11734,8 @@
       "pattern": "eigene_erfahrung",
       "situation": "allgemein",
       "example": "Ja alles gut hat sich schon erledigt heheich würde gerne vorbei kommen aber leider ist das zu spontan, wie trinkst du denn gerne deinen Kaffee?",
-      "count": 30,
-      "lastUsed": "2026-01-13T14:31:48.737Z"
+      "count": 31,
+      "lastUsed": "2026-01-13T14:39:08.848Z"
     },
     {
       "pattern": "eigene_erfahrung",
