@@ -8760,8 +8760,8 @@
       "chatId": "37912008",
       "customerMessage": "Du hast doch meine Handy Nummer süße melde dich da drüber",
       "aiResponse": "Ich finde die Idee, über deine Nummer Kontakt aufzunehmen, ein wenig zu überstürzt. Ich möchte dich lieber zuerst etwas besser kennenlernen. Was würdest du denn gerne mit mir erleben, wenn wir uns treffen könnten?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Wenn wir uns besser kennen können wir das machen aber ich würde vorher noch gerne wissen was du hier eigentlich suchst?",
+      "status": "edited",
       "platform": "fpc",
       "isASA": false,
       "context": {
@@ -8778,7 +8778,12 @@
       },
       "lastModeratorMessage": "Bist du jetzt schon eingeschlafen mein lieber schatz oder warum meldest du dich nicht mehr bei mir? Hat das einen besonderen Grund?",
       "timestamp": "2026-01-11T13:55:04.316Z",
-      "updatedAt": "2026-01-11T13:55:04.316Z"
+      "updatedAt": "2026-01-13T13:48:12.248Z",
+      "reasoning": "bessere frage",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1768139715485_yl9nhxmsb",
