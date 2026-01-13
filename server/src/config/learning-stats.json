@@ -126,11 +126,11 @@
     },
     "Bilder Anfrage": {
       "würdest du": {
-        "count": 1,
+        "count": 2,
         "successRate": 0
       },
       "Würdest du dir darauf einen runterholen?": {
-        "count": 1,
+        "count": 2,
         "successRate": 0
       }
     }
@@ -7758,7 +7758,7 @@
         "bad": 0
       },
       "was": {
-        "good": 2,
+        "good": 3,
         "bad": 5
       },
       "hübscher": {
@@ -7782,7 +7782,7 @@
         "bad": 0
       },
       "würde": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "mich": {
@@ -7798,7 +7798,7 @@
         "bad": 0
       },
       "wenn": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "bisschen": {
@@ -7842,7 +7842,7 @@
         "bad": 2
       },
       "noch": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "besser": {
@@ -7882,35 +7882,35 @@
         "bad": 1
       },
       "berlegen": {
-        "good": 1,
-        "bad": 0
-      },
-      "würdest": {
         "good": 2,
         "bad": 0
       },
+      "würdest": {
+        "good": 4,
+        "bad": 0
+      },
       "machen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "jetzt": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "bild": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "schicken": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "darauf": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "runterholen": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "bin": {
@@ -8107,8 +8107,8 @@
       "total": 72
     },
     "Bilder Anfrage": {
-      "good": 4,
-      "total": 8
+      "good": 5,
+      "total": 9
     },
     "Berufsfrage": {
       "good": 4,
@@ -8326,6 +8326,19 @@
     {
       "situation": "Bilder Anfrage",
       "customerPattern": {
+        "keywords": "freundschaftsanfrage",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 20
+      },
+      "goodResponse": "Hey Manfred, darf ich denn mal fragen was ein so hübscher Mann wie du auf so einer Plattform macht? Würde mich echt freuen wenn wir uns ein bisschen näher kommen könnten?",
+      "successCount": 3,
+      "lastUsed": "2026-01-13T14:12:34.699Z"
+    },
+    {
+      "situation": "Bilder Anfrage",
+      "customerPattern": {
         "keywords": "mal als deine bilder gesehen hab dann habe direkt steifen",
         "hasQuestion": false,
         "hasMeeting": true,
@@ -8441,19 +8454,6 @@
       "lastUsed": "2026-01-13T13:57:38.169Z"
     },
     {
-      "situation": "Bilder Anfrage",
-      "customerPattern": {
-        "keywords": "freundschaftsanfrage",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 20
-      },
-      "goodResponse": "Hey Manfred, darf ich denn mal fragen was ein so hübscher Mann wie du auf so einer Plattform macht? Würde mich echt freuen wenn wir uns ein bisschen näher kommen könnten?",
-      "successCount": 2,
-      "lastUsed": "2026-01-13T14:12:33.255Z"
-    },
-    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
@@ -8519,7 +8519,7 @@
       "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:12:33.255Z",
+  "lastUpdated": "2026-01-13T14:12:34.699Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -10673,21 +10673,24 @@
       "positive": {
         "lengths": [
           170,
+          154,
           154
         ],
         "exclamationMarks": [
+          0,
           0,
           0
         ],
         "questions": [
           2,
+          2,
           2
         ],
-        "count": 2,
-        "avgLength": 162,
+        "count": 3,
+        "avgLength": 159,
         "minLength": 154,
         "maxLength": 170,
-        "medianLength": 170,
+        "medianLength": 154,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
