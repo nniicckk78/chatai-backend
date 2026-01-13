@@ -5575,11 +5575,11 @@
       },
       "wie": {
         "good": 2,
-        "bad": 1
+        "bad": 2
       },
       "denn": {
         "good": 3,
-        "bad": 3
+        "bad": 4
       },
       "dein": {
         "good": 1,
@@ -5611,7 +5611,7 @@
       },
       "finde": {
         "good": 0,
-        "bad": 3
+        "bad": 4
       },
       "klasse": {
         "good": 0,
@@ -5674,8 +5674,8 @@
         "bad": 1
       },
       "was": {
-        "good": 2,
-        "bad": 4
+        "good": 3,
+        "bad": 5
       },
       "magst": {
         "good": 0,
@@ -5686,7 +5686,7 @@
         "bad": 1
       },
       "wenn": {
-        "good": 0,
+        "good": 1,
         "bad": 2
       },
       "erotik": {
@@ -5714,7 +5714,7 @@
         "bad": 0
       },
       "dann": {
-        "good": 2,
+        "good": 3,
         "bad": 1
       },
       "eigentlich": {
@@ -5734,7 +5734,7 @@
         "bad": 0
       },
       "man": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "leihst": {
@@ -5786,7 +5786,7 @@
         "bad": 1
       },
       "machen": {
-        "good": 0,
+        "good": 1,
         "bad": 3
       },
       "echt": {
@@ -5799,15 +5799,15 @@
       },
       "könnte": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "vorstellen": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "heiss": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "wäre": {
         "good": 0,
@@ -5859,7 +5859,7 @@
       },
       "noch": {
         "good": 1,
-        "bad": 1
+        "bad": 2
       },
       "schön": {
         "good": 1,
@@ -5898,7 +5898,7 @@
         "bad": 1
       },
       "nicht": {
-        "good": 1,
+        "good": 3,
         "bad": 1
       },
       "interessiert": {
@@ -5990,6 +5990,98 @@
         "bad": 1
       },
       "film": {
+        "good": 0,
+        "bad": 1
+      },
+      "schon": {
+        "good": 2,
+        "bad": 0
+      },
+      "weis": {
+        "good": 1,
+        "bad": 0
+      },
+      "dagegen": {
+        "good": 1,
+        "bad": 0
+      },
+      "spircht": {
+        "good": 1,
+        "bad": 0
+      },
+      "meine": {
+        "good": 1,
+        "bad": 0
+      },
+      "chemie": {
+        "good": 1,
+        "bad": 0
+      },
+      "weiter": {
+        "good": 1,
+        "bad": 0
+      },
+      "passt": {
+        "good": 1,
+        "bad": 0
+      },
+      "vorstellung": {
+        "good": 0,
+        "bad": 1
+      },
+      "fremden": {
+        "good": 0,
+        "bad": 1
+      },
+      "mann": {
+        "good": 0,
+        "bad": 1
+      },
+      "richtig": {
+        "good": 0,
+        "bad": 1
+      },
+      "spannend": {
+        "good": 0,
+        "bad": 1
+      },
+      "gibt": {
+        "good": 0,
+        "bad": 1
+      },
+      "dem": {
+        "good": 0,
+        "bad": 1
+      },
+      "ganzen": {
+        "good": 0,
+        "bad": 1
+      },
+      "besonderen": {
+        "good": 0,
+        "bad": 1
+      },
+      "kick": {
+        "good": 0,
+        "bad": 1
+      },
+      "total": {
+        "good": 0,
+        "bad": 1
+      },
+      "hättest": {
+        "good": 0,
+        "bad": 1
+      },
+      "kopf": {
+        "good": 0,
+        "bad": 1
+      },
+      "ausleben": {
+        "good": 0,
+        "bad": 1
+      },
+      "könnten": {
         "good": 0,
         "bad": 1
       }
@@ -7065,8 +7157,8 @@
       "total": 358
     },
     "Bot-Vorwurf": {
-      "good": 13,
-      "total": 26
+      "good": 14,
+      "total": 28
     },
     "Sexuelle Themen": {
       "good": 53,
@@ -7393,6 +7485,19 @@
       "lastUsed": "2026-01-13T13:50:29.925Z"
     },
     {
+      "situation": "Bot-Vorwurf",
+      "customerPattern": {
+        "keywords": "gehe gern spazieren kino schwimmen",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 45
+      },
+      "goodResponse": "Ich gehe gerne shopen, spaziernen und auch gerne Schwimmen, geht du eher gerne in Therme oder lieber in ein normales Schwimmbad oder auch gerne mal an See?",
+      "successCount": 2,
+      "lastUsed": "2026-01-13T13:55:15.302Z"
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
@@ -7432,19 +7537,6 @@
       "lastUsed": "2026-01-04T12:51:21.994Z"
     },
     {
-      "situation": "Bot-Vorwurf",
-      "customerPattern": {
-        "keywords": "gehe gern spazieren kino schwimmen",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 45
-      },
-      "goodResponse": "Ich gehe gerne shopen, spaziernen und auch gerne Schwimmen, geht du eher gerne in Therme oder lieber in ein normales Schwimmbad oder auch gerne mal an See?",
-      "successCount": 1,
-      "lastUsed": "2026-01-05T22:00:34.033Z"
-    },
-    {
       "situation": "Berufsfrage",
       "customerPattern": {
         "keywords": "bin singel drei jahren wie schon wei hei tim bin",
@@ -7471,7 +7563,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-13T13:52:24.848Z",
+  "lastUpdated": "2026-01-13T13:55:15.302Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -8955,9 +9047,11 @@
           136,
           139,
           225,
-          104
+          104,
+          133
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -8969,10 +9063,11 @@
           2,
           2,
           1,
+          1,
           1
         ],
-        "count": 5,
-        "avgLength": 152,
+        "count": 6,
+        "avgLength": 149,
         "minLength": 104,
         "maxLength": 225,
         "medianLength": 139,
@@ -8980,22 +9075,22 @@
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.4,
+        "avgQuestions": 1.3,
         "minQuestions": 1,
         "maxQuestions": 2,
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 20,
-          "120-150": 40,
-          "150-200": 20,
-          "200-250": 20,
+          "100-120": 17,
+          "120-150": 50,
+          "150-200": 17,
+          "200-250": 17,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 60,
-          "2": 40,
+          "1": 67,
+          "2": 33,
           "3+": 0
         }
       },
@@ -9005,9 +9100,11 @@
           257,
           385,
           178,
-          206
+          206,
+          227
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -9019,13 +9116,14 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 5,
-        "avgLength": 241,
+        "count": 6,
+        "avgLength": 239,
         "minLength": 178,
         "maxLength": 385,
-        "medianLength": 206,
+        "medianLength": 227,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
@@ -9038,9 +9136,9 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 40,
-          "200-250": 20,
-          "250+": 40
+          "150-200": 33,
+          "200-250": 33,
+          "250+": 33
         },
         "questionDistribution": {
           "0": 0,
