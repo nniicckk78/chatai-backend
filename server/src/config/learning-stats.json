@@ -4712,7 +4712,7 @@
         "bad": 0
       },
       "schauen": {
-        "good": 3,
+        "good": 4,
         "bad": 1
       },
       "einfach": {
@@ -4720,7 +4720,7 @@
         "bad": 1
       },
       "wann": {
-        "good": 3,
+        "good": 4,
         "bad": 0
       },
       "besser": {
@@ -4744,7 +4744,7 @@
         "bad": 2
       },
       "denn": {
-        "good": 11,
+        "good": 12,
         "bad": 6
       },
       "kopf": {
@@ -4892,7 +4892,7 @@
         "bad": 0
       },
       "noch": {
-        "good": 6,
+        "good": 7,
         "bad": 0
       },
       "lust": {
@@ -5072,7 +5072,7 @@
         "bad": 3
       },
       "gerne": {
-        "good": 9,
+        "good": 10,
         "bad": 5
       },
       "alles": {
@@ -5484,27 +5484,27 @@
         "bad": 1
       },
       "besten": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "klappt": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "welche": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "filme": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "schaust": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "kino": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "nächstes": {
@@ -7061,8 +7061,8 @@
       "total": 10
     },
     "Treffen/Termine": {
-      "good": 38,
-      "total": 68
+      "good": 39,
+      "total": 69
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -7360,6 +7360,19 @@
       "lastUsed": "2026-01-13T13:50:14.742Z"
     },
     {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "hey können gerne nächstes wochenende treffen zum kaffee zusammen ins",
+        "hasQuestion": true,
+        "hasMeeting": true,
+        "hasSexual": true,
+        "length": 279
+      },
+      "goodResponse": "Ich muss noch schauen wann es bei mir am besten klappt, aber welche Filme schaust du denn gerne im Kino?",
+      "successCount": 2,
+      "lastUsed": "2026-01-13T13:50:29.925Z"
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
@@ -7436,22 +7449,9 @@
       "goodResponse": "Gut da bin ich ja jetzt schonmal erleichert. 🙂 Und wie war denn so dein Start in das neue Jahr? Warst du mit der Familie oder Freunden?",
       "successCount": 1,
       "lastUsed": "2026-01-06T17:13:38.718Z"
-    },
-    {
-      "situation": "Treffen/Termine",
-      "customerPattern": {
-        "keywords": "hey können gerne nächstes wochenende treffen zum kaffee zusammen ins",
-        "hasQuestion": true,
-        "hasMeeting": true,
-        "hasSexual": true,
-        "length": 279
-      },
-      "goodResponse": "Ich muss noch schauen wann es bei mir am besten klappt, aber welche Filme schaust du denn gerne im Kino?",
-      "successCount": 1,
-      "lastUsed": "2026-01-13T13:50:28.316Z"
     }
   ],
-  "lastUpdated": "2026-01-13T13:50:28.317Z",
+  "lastUpdated": "2026-01-13T13:50:29.925Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7475,6 +7475,17 @@
       "lastUsed": "2026-01-13T13:48:14.011Z"
     },
     {
+      "text": "Sei kurz, präzise und direkt",
+      "count": 6,
+      "situations": [
+        "Sexuelle Themen",
+        "allgemein",
+        "Bot-Vorwurf",
+        "Treffen/Termine"
+      ],
+      "lastUsed": "2026-01-13T13:50:29.925Z"
+    },
+    {
       "text": "\"Wenn wir uns endlich sehen\" Klingt wieder zu sehr danach als ob man dem Kunde verpsricht das es passieren wird",
       "count": 5,
       "situations": [
@@ -7490,17 +7501,6 @@
         "allgemein"
       ],
       "lastUsed": "2026-01-11T15:10:59.313Z"
-    },
-    {
-      "text": "Sei kurz, präzise und direkt",
-      "count": 5,
-      "situations": [
-        "Sexuelle Themen",
-        "allgemein",
-        "Bot-Vorwurf",
-        "Treffen/Termine"
-      ],
-      "lastUsed": "2026-01-13T13:50:28.316Z"
     },
     {
       "text": "Niemals einen Tag nennen an dem man sich treffen kann",
@@ -9138,9 +9138,11 @@
           126,
           165,
           165,
+          104,
           104
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -9192,10 +9194,11 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 25,
-        "avgLength": 162,
+        "count": 26,
+        "avgLength": 160,
         "minLength": 104,
         "maxLength": 257,
         "medianLength": 161,
@@ -9209,16 +9212,16 @@
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
-          "100-120": 4,
-          "120-150": 44,
-          "150-200": 36,
+          "100-120": 8,
+          "120-150": 42,
+          "150-200": 35,
           "200-250": 12,
           "250+": 4
         },
         "questionDistribution": {
           "0": 0,
-          "1": 84,
-          "2": 16,
+          "1": 85,
+          "2": 15,
           "3+": 0
         }
       },
