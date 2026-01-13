@@ -7751,6 +7751,116 @@
         "good": 0,
         "bad": 1
       }
+    },
+    "Wonach suchst du?": {
+      "komme": {
+        "good": 1,
+        "bad": 1
+      },
+      "auch": {
+        "good": 2,
+        "bad": 2
+      },
+      "billerbeck": {
+        "good": 1,
+        "bad": 1
+      },
+      "witzig": {
+        "good": 1,
+        "bad": 1
+      },
+      "bin": {
+        "good": 1,
+        "bad": 1
+      },
+      "hier": {
+        "good": 2,
+        "bad": 1
+      },
+      "bisschen": {
+        "good": 1,
+        "bad": 1
+      },
+      "spass": {
+        "good": 1,
+        "bad": 1
+      },
+      "vielleicht": {
+        "good": 1,
+        "bad": 1
+      },
+      "lockere": {
+        "good": 1,
+        "bad": 1
+      },
+      "beziehung": {
+        "good": 1,
+        "bad": 1
+      },
+      "finden": {
+        "good": 1,
+        "bad": 1
+      },
+      "was": {
+        "good": 1,
+        "bad": 2
+      },
+      "genau": {
+        "good": 1,
+        "bad": 0
+      },
+      "suchst": {
+        "good": 1,
+        "bad": 0
+      },
+      "denn": {
+        "good": 1,
+        "bad": 0
+      },
+      "deine": {
+        "good": 0,
+        "bad": 1
+      },
+      "vorlieben": {
+        "good": 0,
+        "bad": 1
+      },
+      "wenn": {
+        "good": 0,
+        "bad": 1
+      },
+      "dates": {
+        "good": 0,
+        "bad": 1
+      },
+      "geht": {
+        "good": 0,
+        "bad": 1
+      },
+      "würdest": {
+        "good": 0,
+        "bad": 1
+      },
+      "eher": {
+        "good": 0,
+        "bad": 1
+      },
+      "romantisches": {
+        "good": 0,
+        "bad": 1
+      },
+      "etwas": {
+        "good": 0,
+        "bad": 1
+      },
+      "abenteuerliches": {
+        "good": 0,
+        "bad": 1
+      },
+      "bevorzugen": {
+        "good": 0,
+        "bad": 1
+      }
     }
   },
   "situationSuccess": {
@@ -7767,8 +7877,8 @@
       "total": 97
     },
     "Wonach suchst du?": {
-      "good": 3,
-      "total": 10
+      "good": 4,
+      "total": 12
     },
     "Geld/Coins": {
       "good": 5,
@@ -8176,9 +8286,22 @@
       "goodResponse": "Hey Manfred, darf ich denn mal fragen was ein so hübscher Mann wie du auf so einer Plattform macht? Würde mich echt freuen wenn wir uns ein bisschen näher kommen könnten?",
       "successCount": 1,
       "lastUsed": "2026-01-13T14:05:28.924Z"
+    },
+    {
+      "situation": "Wonach suchst du?",
+      "customerPattern": {
+        "keywords": "komme billerbeck wie was suchst hier genau würde dich gerne",
+        "hasQuestion": true,
+        "hasMeeting": true,
+        "hasSexual": false,
+        "length": 112
+      },
+      "goodResponse": "Ich komme auch aus Billerbeck, das ist ja witzig. Ich bin hier, um ein bisschen Spass zu haben und vielleicht auch eine lockere Beziehung zu finden. Was genau suchst du denn hier?",
+      "successCount": 1,
+      "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:10:32.168Z",
+  "lastUpdated": "2026-01-13T14:10:37.273Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -8607,82 +8730,88 @@
       "positive": {
         "lengths": [
           247,
-          202
+          202,
+          179
         ],
         "exclamationMarks": [
+          0,
           0,
           0
         ],
         "questions": [
           3,
+          1,
           1
         ],
-        "count": 2,
-        "avgLength": 225,
-        "minLength": 202,
+        "count": 3,
+        "avgLength": 209,
+        "minLength": 179,
         "maxLength": 247,
-        "medianLength": 247,
+        "medianLength": 202,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 2,
+        "avgQuestions": 1.7,
         "minQuestions": 1,
         "maxQuestions": 3,
-        "medianQuestions": 3,
+        "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 0,
-          "200-250": 100,
+          "150-200": 33,
+          "200-250": 67,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 50,
+          "1": 67,
           "2": 0,
-          "3+": 50
+          "3+": 33
         }
       },
       "negative": {
         "lengths": [
           122,
-          198
+          198,
+          269
         ],
         "exclamationMarks": [
+          0,
           0,
           0
         ],
         "questions": [
           1,
-          1
+          1,
+          2
         ],
-        "count": 2,
-        "avgLength": 160,
+        "count": 3,
+        "avgLength": 196,
         "minLength": 122,
-        "maxLength": 198,
+        "maxLength": 269,
         "medianLength": 198,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1,
+        "avgQuestions": 1.3,
         "minQuestions": 1,
-        "maxQuestions": 1,
+        "maxQuestions": 2,
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 50,
-          "150-200": 50,
+          "120-150": 33,
+          "150-200": 33,
           "200-250": 0,
-          "250+": 0
+          "250+": 33
         },
         "questionDistribution": {
           "0": 0,
-          "1": 100,
-          "2": 0,
+          "1": 67,
+          "2": 33,
           "3+": 0
         }
       }
