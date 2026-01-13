@@ -7968,8 +7968,8 @@
       "chatId": "37942455",
       "customerMessage": "Das was ich die letzten Tage auch gemacht habe Räumen u. Umzugskisten packen. Wie das so ist wenn man alles alleine machen muss.",
       "aiResponse": "Das klingt nach einer Menge Arbeit, aber wenn du es alleine machst, hast du auch viel Zeit, um nachzudenken. Ich mag es, wenn jemand mit mir gemeinsam kocht und wir uns dabei näher kennenlernen. Was würdest du sonst noch gerne machen, wenn du nicht gerade am Räumen bist?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Hast es ja bald bestimmt schon geschafft oder nicht? Voll schade das dir niemand helfen kann, gibt es denn niemanden in der Familie oder Freunde die dir dabei helfen könnten?",
+      "status": "edited",
       "platform": "fpc",
       "isASA": false,
       "context": {
@@ -7984,7 +7984,12 @@
       },
       "lastModeratorMessage": "Guten Morgen ist doch nicht schlimm 😘. danke, wünsche dir auch einen wunderschönen guten morgen. Was machst du heute so? 😘",
       "timestamp": "2026-01-11T10:15:48.830Z",
-      "updatedAt": "2026-01-11T10:15:48.830Z"
+      "updatedAt": "2026-01-13T14:12:26.685Z",
+      "reasoning": "Ihn passend zu seiner Nachricht eine Frage gestellt und bei dem Thema geblieben",
+      "situation": "Bot-Vorwurf",
+      "situations": [
+        "Bot-Vorwurf"
+      ]
     },
     {
       "id": "feedback_1768126780508_cqtvyva1y",
