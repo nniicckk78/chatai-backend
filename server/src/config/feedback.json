@@ -8785,8 +8785,8 @@
       "chatId": "59008043",
       "customerMessage": "hey babe 🥰 sorry,  war lange nicht Online...hast DU heute SPONTAN zeit für mich?¿? Martin",
       "aiResponse": "Hey Martin, schön von dir zu hören. Ich habe heute leider nicht wirklich Zeit, da ich mich etwas ausruhen muss. Aber ich bin neugierig, was du so in der Zwischenzeit gemacht hast. Was hat dich die letzten Tage beschäftigt?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Hey Martin, schön von dir zu hören. Ich habe heute leider nicht wirklich Zeit, da ich mich etwas ausruhen muss. Aber was würdest du denn gerne mit mir machen wollen?",
+      "status": "edited",
       "platform": "viluu",
       "isASA": false,
       "context": {
@@ -8801,7 +8801,12 @@
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-01-11T13:55:15.485Z",
-      "updatedAt": "2026-01-11T13:55:15.485Z"
+      "updatedAt": "2026-01-13T13:46:14.417Z",
+      "reasoning": "Bessere Frage",
+      "situation": "Sexuelle Themen",
+      "situations": [
+        "Sexuelle Themen"
+      ]
     },
     {
       "id": "feedback_1768139768148_vu0ixu3bb",
