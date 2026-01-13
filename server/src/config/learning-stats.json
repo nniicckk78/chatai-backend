@@ -272,7 +272,7 @@
         "bad": 19
       },
       "nicht": {
-        "good": 149,
+        "good": 151,
         "bad": 55
       },
       "erlischt": {
@@ -292,7 +292,7 @@
         "bad": 8
       },
       "bisschen": {
-        "good": 42,
+        "good": 43,
         "bad": 24
       },
       "damit": {
@@ -492,7 +492,7 @@
         "bad": 28
       },
       "meine": {
-        "good": 23,
+        "good": 25,
         "bad": 18
       },
       "muschi": {
@@ -768,7 +768,7 @@
         "bad": 8
       },
       "hoffe": {
-        "good": 28,
+        "good": 29,
         "bad": 4
       },
       "dads": {
@@ -940,7 +940,7 @@
         "bad": 0
       },
       "direkt": {
-        "good": 3,
+        "good": 4,
         "bad": 4
       },
       "heisses": {
@@ -1008,7 +1008,7 @@
         "bad": 2
       },
       "bin": {
-        "good": 42,
+        "good": 43,
         "bad": 40
       },
       "gemeinsam": {
@@ -1340,7 +1340,7 @@
         "bad": 0
       },
       "dem": {
-        "good": 6,
+        "good": 7,
         "bad": 5
       },
       "ersten": {
@@ -1640,7 +1640,7 @@
         "bad": 0
       },
       "schonmal": {
-        "good": 16,
+        "good": 17,
         "bad": 0
       },
       "mobil": {
@@ -1736,11 +1736,11 @@
         "bad": 3
       },
       "frage": {
-        "good": 5,
+        "good": 6,
         "bad": 2
       },
       "jetzt": {
-        "good": 29,
+        "good": 30,
         "bad": 2
       },
       "beantwortet": {
@@ -1748,7 +1748,7 @@
         "bad": 0
       },
       "hattest": {
-        "good": 8,
+        "good": 9,
         "bad": 0
       },
       "scheint": {
@@ -2796,7 +2796,7 @@
         "bad": 1
       },
       "foto": {
-        "good": 4,
+        "good": 5,
         "bad": 0
       },
       "handykamera": {
@@ -3632,7 +3632,7 @@
         "bad": 0
       },
       "dreier": {
-        "good": 3,
+        "good": 4,
         "bad": 1
       },
       "soweit": {
@@ -4828,19 +4828,19 @@
         "bad": 1
       },
       "links": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "schwester": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "beste": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       },
       "freundin": {
-        "good": 2,
+        "good": 3,
         "bad": 0
       }
     },
@@ -8178,7 +8178,7 @@
       "lastUsed": "2026-01-13T14:05:28.924Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:10:30.736Z",
+  "lastUpdated": "2026-01-13T14:10:32.168Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -8829,6 +8829,7 @@
           170,
           170,
           192,
+          192,
           192
         ],
         "exclamationMarks": [
@@ -8970,6 +8971,7 @@
           0,
           0,
           0,
+          1,
           1,
           1
         ],
@@ -9113,10 +9115,11 @@
           2,
           2,
           1,
+          1,
           1
         ],
-        "count": 140,
-        "avgLength": 161,
+        "count": 141,
+        "avgLength": 162,
         "minLength": 72,
         "maxLength": 325,
         "medianLength": 153,
