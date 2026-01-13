@@ -8497,8 +8497,8 @@
       "chatId": "58940687",
       "customerMessage": "ich denke auch Mal ganz normal ansonsten was machste so in deiner Freizeit und so",
       "aiResponse": "Ich gehe gerne feiern und geniesse es, mit Freunden abzuhängen. Manchmal gehe ich ins Kino oder koche was Leckeres. Ich finde es mega geil, wenn man sich dabei näher kommt. Was sind deine Vorlieben in der Freizeit?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Ich gehe gerne feiern und geniesse es, mit Freunden abzuhängen. Manchmal gehe ich ins Kino oder koche was Leckeres. Und was machst du gerne in deiner Freizeit?",
+      "status": "edited",
       "platform": "viluu",
       "isASA": false,
       "context": {
@@ -8515,7 +8515,12 @@
       },
       "lastModeratorMessage": "Also zu deiner Frage, ich würde mal sagen ich ticke ganz normal und wie tickst du denn so😂",
       "timestamp": "2026-01-11T13:44:15.821Z",
-      "updatedAt": "2026-01-11T13:44:15.821Z"
+      "updatedAt": "2026-01-13T14:19:37.288Z",
+      "reasoning": "Nicht sexuell werden, ihn gefragt was er gerne in seiner Freizeit macht und nicht was er für Vorlieben in der Freizat hat",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1768139172007_zeafp8lcm",
