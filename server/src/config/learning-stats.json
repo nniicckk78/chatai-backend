@@ -94,7 +94,7 @@
         "successRate": 0
       },
       "würdest du": {
-        "count": 3,
+        "count": 4,
         "successRate": 0
       }
     }
@@ -4728,7 +4728,7 @@
         "bad": 0
       },
       "was": {
-        "good": 19,
+        "good": 20,
         "bad": 12
       },
       "hast": {
@@ -4736,7 +4736,7 @@
         "bad": 2
       },
       "denn": {
-        "good": 9,
+        "good": 10,
         "bad": 5
       },
       "kopf": {
@@ -4748,7 +4748,7 @@
         "bad": 3
       },
       "machen": {
-        "good": 12,
+        "good": 13,
         "bad": 4
       },
       "könnten": {
@@ -4800,7 +4800,7 @@
         "bad": 5
       },
       "würdest": {
-        "good": 10,
+        "good": 11,
         "bad": 10
       },
       "als": {
@@ -4816,7 +4816,7 @@
         "bad": 4
       },
       "wollen": {
-        "good": 9,
+        "good": 10,
         "bad": 2
       },
       "wenn": {
@@ -4828,7 +4828,7 @@
         "bad": 8
       },
       "hey": {
-        "good": 3,
+        "good": 4,
         "bad": 2
       },
       "markus": {
@@ -4892,7 +4892,7 @@
         "bad": 0
       },
       "mich": {
-        "good": 5,
+        "good": 6,
         "bad": 2
       },
       "hoffe": {
@@ -4908,7 +4908,7 @@
         "bad": 1
       },
       "habe": {
-        "good": 1,
+        "good": 2,
         "bad": 2
       },
       "gerade": {
@@ -4964,7 +4964,7 @@
         "bad": 5
       },
       "etwas": {
-        "good": 2,
+        "good": 3,
         "bad": 3
       },
       "aussehen": {
@@ -4976,7 +4976,7 @@
         "bad": 1
       },
       "hören": {
-        "good": 3,
+        "good": 4,
         "bad": 1
       },
       "genau": {
@@ -5064,7 +5064,7 @@
         "bad": 3
       },
       "gerne": {
-        "good": 7,
+        "good": 8,
         "bad": 4
       },
       "alles": {
@@ -5180,7 +5180,7 @@
         "bad": 0
       },
       "nicht": {
-        "good": 2,
+        "good": 3,
         "bad": 3
       },
       "erstmal": {
@@ -5232,7 +5232,7 @@
         "bad": 1
       },
       "heute": {
-        "good": 3,
+        "good": 4,
         "bad": 2
       },
       "abend": {
@@ -5252,7 +5252,7 @@
         "bad": 1
       },
       "zeit": {
-        "good": 2,
+        "good": 3,
         "bad": 2
       },
       "total": {
@@ -5436,23 +5436,23 @@
         "bad": 2
       },
       "martin": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "schön": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "leider": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "wirklich": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "ausruhen": {
-        "good": 1,
+        "good": 2,
         "bad": 1
       },
       "neugierig": {
@@ -6941,8 +6941,8 @@
       "total": 10
     },
     "Treffen/Termine": {
-      "good": 36,
-      "total": 65
+      "good": 37,
+      "total": 66
     },
     "Bilder Anfrage": {
       "good": 2,
@@ -7045,6 +7045,19 @@
       "lastUsed": "2026-01-11T15:39:31.151Z"
     },
     {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "hallo mein was los warum bist besorgt was kleine schwierigkeiten",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 327
+      },
+      "goodResponse": "Danke für das Angebot aber das wäre mir jetzt zu spontan und ich sollte mich mal ein wenig ausruhen. Heute war wieder so ein Tag wo man einfach hätte zu Hause bleiben sollen. Aber sowas gibts halt mal",
+      "successCount": 8,
+      "lastUsed": "2026-01-13T13:46:29.781Z"
+    },
+    {
       "situation": "Sexuelle Themen",
       "customerPattern": {
         "keywords": "fragst sachen wenn schlucken magst dann kannst gerne spritze mal",
@@ -7069,19 +7082,6 @@
       "goodResponse": "Es tut mir leid, dass du das Gefühl hast, ich merke mir nichts. Ich hatte dir ja auch schon gesagt, dass ich auf innere Werte achte, und nicht nur auf Äusseres. Aber ich verstehe, dass du deine Vorlie",
       "successCount": 7,
       "lastUsed": "2026-01-11T15:17:08.853Z"
-    },
-    {
-      "situation": "Treffen/Termine",
-      "customerPattern": {
-        "keywords": "hallo mein was los warum bist besorgt was kleine schwierigkeiten",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 327
-      },
-      "goodResponse": "Danke für das Angebot aber das wäre mir jetzt zu spontan und ich sollte mich mal ein wenig ausruhen. Heute war wieder so ein Tag wo man einfach hätte zu Hause bleiben sollen. Aber sowas gibts halt mal",
-      "successCount": 7,
-      "lastUsed": "2026-01-13T13:46:27.699Z"
     },
     {
       "situation": "Treffen/Termine",
@@ -7318,7 +7318,7 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     }
   ],
-  "lastUpdated": "2026-01-13T13:46:27.699Z",
+  "lastUpdated": "2026-01-13T13:46:29.781Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7333,13 +7333,13 @@
     },
     {
       "text": "Bessere Frage",
-      "count": 6,
+      "count": 7,
       "situations": [
         "Treffen/Termine",
         "allgemein",
         "Sexuelle Themen"
       ],
-      "lastUsed": "2026-01-13T13:46:27.699Z"
+      "lastUsed": "2026-01-13T13:46:29.781Z"
     },
     {
       "text": "\"Wenn wir uns endlich sehen\" Klingt wieder zu sehr danach als ob man dem Kunde verpsricht das es passieren wird",
@@ -8983,9 +8983,11 @@
           126,
           126,
           126,
+          165,
           165
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -9033,13 +9035,14 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 23,
+        "count": 24,
         "avgLength": 164,
         "minLength": 122,
         "maxLength": 257,
-        "medianLength": 161,
+        "medianLength": 165,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
@@ -9051,8 +9054,8 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 48,
-          "150-200": 35,
+          "120-150": 46,
+          "150-200": 38,
           "200-250": 13,
           "250+": 4
         },
