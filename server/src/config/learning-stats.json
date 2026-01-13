@@ -123,6 +123,16 @@
         "count": 1,
         "successRate": 0
       }
+    },
+    "Bilder Anfrage": {
+      "würdest du": {
+        "count": 1,
+        "successRate": 0
+      },
+      "Würdest du dir darauf einen runterholen?": {
+        "count": 1,
+        "successRate": 0
+      }
     }
   },
   "wordFrequency": {
@@ -7741,15 +7751,15 @@
       },
       "mal": {
         "good": 1,
-        "bad": 0
+        "bad": 1
       },
       "fragen": {
         "good": 1,
         "bad": 0
       },
       "was": {
-        "good": 1,
-        "bad": 2
+        "good": 2,
+        "bad": 5
       },
       "hübscher": {
         "good": 1,
@@ -7772,7 +7782,7 @@
         "bad": 0
       },
       "würde": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "mich": {
@@ -7788,7 +7798,7 @@
         "bad": 0
       },
       "wenn": {
-        "good": 1,
+        "good": 2,
         "bad": 0
       },
       "bisschen": {
@@ -7832,7 +7842,7 @@
         "bad": 2
       },
       "noch": {
-        "good": 0,
+        "good": 1,
         "bad": 1
       },
       "besser": {
@@ -7845,7 +7855,7 @@
       },
       "bevor": {
         "good": 0,
-        "bad": 1
+        "bad": 2
       },
       "treffen": {
         "good": 0,
@@ -7868,6 +7878,94 @@
         "bad": 1
       },
       "freizeit": {
+        "good": 0,
+        "bad": 1
+      },
+      "berlegen": {
+        "good": 1,
+        "bad": 0
+      },
+      "würdest": {
+        "good": 2,
+        "bad": 0
+      },
+      "machen": {
+        "good": 1,
+        "bad": 0
+      },
+      "jetzt": {
+        "good": 1,
+        "bad": 0
+      },
+      "bild": {
+        "good": 1,
+        "bad": 0
+      },
+      "schicken": {
+        "good": 1,
+        "bad": 0
+      },
+      "darauf": {
+        "good": 1,
+        "bad": 0
+      },
+      "runterholen": {
+        "good": 1,
+        "bad": 0
+      },
+      "bin": {
+        "good": 0,
+        "bad": 1
+      },
+      "bereit": {
+        "good": 0,
+        "bad": 1
+      },
+      "zeigen": {
+        "good": 0,
+        "bad": 1
+      },
+      "sehen": {
+        "good": 0,
+        "bad": 1
+      },
+      "willst": {
+        "good": 0,
+        "bad": 1
+      },
+      "tue": {
+        "good": 0,
+        "bad": 1
+      },
+      "sag": {
+        "good": 0,
+        "bad": 1
+      },
+      "vorstellst": {
+        "good": 0,
+        "bad": 1
+      },
+      "magst": {
+        "good": 0,
+        "bad": 1
+      },
+      "beim": {
+        "good": 0,
+        "bad": 1
+      },
+      "ficken": {
+        "good": 0,
+        "bad": 1
+      },
+      "liebsten": {
+        "good": 0,
+        "bad": 1
+      },
+      "liebe": {
+        "good": 0,
+        "bad": 1
+      },
+      "doggy": {
         "good": 0,
         "bad": 1
       }
@@ -8009,8 +8107,8 @@
       "total": 72
     },
     "Bilder Anfrage": {
-      "good": 3,
-      "total": 6
+      "good": 4,
+      "total": 8
     },
     "Berufsfrage": {
       "good": 4,
@@ -8343,6 +8441,19 @@
       "lastUsed": "2026-01-13T13:57:38.169Z"
     },
     {
+      "situation": "Bilder Anfrage",
+      "customerPattern": {
+        "keywords": "freundschaftsanfrage",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 20
+      },
+      "goodResponse": "Hey Manfred, darf ich denn mal fragen was ein so hübscher Mann wie du auf so einer Plattform macht? Würde mich echt freuen wenn wir uns ein bisschen näher kommen könnten?",
+      "successCount": 2,
+      "lastUsed": "2026-01-13T14:12:33.255Z"
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
@@ -8395,19 +8506,6 @@
       "lastUsed": "2026-01-06T17:13:38.718Z"
     },
     {
-      "situation": "Bilder Anfrage",
-      "customerPattern": {
-        "keywords": "freundschaftsanfrage",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 20
-      },
-      "goodResponse": "Hey Manfred, darf ich denn mal fragen was ein so hübscher Mann wie du auf so einer Plattform macht? Würde mich echt freuen wenn wir uns ein bisschen näher kommen könnten?",
-      "successCount": 1,
-      "lastUsed": "2026-01-13T14:05:28.924Z"
-    },
-    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "komme billerbeck wie was suchst hier genau würde dich gerne",
@@ -8421,7 +8519,7 @@
       "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:12:28.281Z",
+  "lastUpdated": "2026-01-13T14:12:33.255Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -10574,17 +10672,20 @@
     "Bilder Anfrage": {
       "positive": {
         "lengths": [
-          170
+          170,
+          154
         ],
         "exclamationMarks": [
+          0,
           0
         ],
         "questions": [
+          2,
           2
         ],
-        "count": 1,
-        "avgLength": 170,
-        "minLength": 170,
+        "count": 2,
+        "avgLength": 162,
+        "minLength": 154,
         "maxLength": 170,
         "medianLength": 170,
         "avgExclamationMarks": 0,
@@ -10612,17 +10713,20 @@
       },
       "negative": {
         "lengths": [
-          210
+          210,
+          170
         ],
         "exclamationMarks": [
+          0,
           0
         ],
         "questions": [
+          1,
           1
         ],
-        "count": 1,
-        "avgLength": 210,
-        "minLength": 210,
+        "count": 2,
+        "avgLength": 190,
+        "minLength": 170,
         "maxLength": 210,
         "medianLength": 210,
         "avgExclamationMarks": 0,
@@ -10637,8 +10741,8 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 0,
-          "200-250": 100,
+          "150-200": 50,
+          "200-250": 50,
           "250+": 0
         },
         "questionDistribution": {
