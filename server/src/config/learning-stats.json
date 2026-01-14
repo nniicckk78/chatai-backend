@@ -2,7 +2,7 @@
   "patterns": {
     "allgemein": {
       "würdest du": {
-        "count": 83,
+        "count": 84,
         "successRate": 0
       },
       "würdest du mir dann einen machen?": {
@@ -186,12 +186,12 @@
         "bad": 0
       },
       "würdest": {
-        "good": 98,
-        "bad": 79
+        "good": 100,
+        "bad": 80
       },
       "machen": {
-        "good": 78,
-        "bad": 51
+        "good": 79,
+        "bad": 52
       },
       "hätte": {
         "good": 1,
@@ -286,8 +286,8 @@
         "bad": 26
       },
       "auch": {
-        "good": 191,
-        "bad": 72
+        "good": 192,
+        "bad": 73
       },
       "funke": {
         "good": 19,
@@ -322,7 +322,7 @@
         "bad": 0
       },
       "mich": {
-        "good": 84,
+        "good": 85,
         "bad": 81
       },
       "wohl": {
@@ -354,8 +354,8 @@
         "bad": 0
       },
       "was": {
-        "good": 207,
-        "bad": 235
+        "good": 208,
+        "bad": 236
       },
       "denn": {
         "good": 210,
@@ -398,7 +398,7 @@
         "bad": 0
       },
       "als": {
-        "good": 45,
+        "good": 46,
         "bad": 19
       },
       "papa": {
@@ -438,8 +438,8 @@
         "bad": 8
       },
       "denke": {
-        "good": 52,
-        "bad": 3
+        "good": 53,
+        "bad": 4
       },
       "denkst": {
         "good": 39,
@@ -462,8 +462,8 @@
         "bad": 25
       },
       "wenn": {
-        "good": 75,
-        "bad": 131
+        "good": 76,
+        "bad": 132
       },
       "gegenseitig": {
         "good": 0,
@@ -990,7 +990,7 @@
         "bad": 35
       },
       "sehen": {
-        "good": 21,
+        "good": 22,
         "bad": 17
       },
       "bestimmt": {
@@ -1062,8 +1062,8 @@
         "bad": 9
       },
       "dich": {
-        "good": 99,
-        "bad": 69
+        "good": 101,
+        "bad": 71
       },
       "stört": {
         "good": 7,
@@ -1199,7 +1199,7 @@
       },
       "zusammen": {
         "good": 23,
-        "bad": 23
+        "bad": 24
       },
       "wären": {
         "good": 7,
@@ -1786,8 +1786,8 @@
         "bad": 2
       },
       "meinen": {
-        "good": 6,
-        "bad": 8
+        "good": 7,
+        "bad": 9
       },
       "bildern": {
         "good": 0,
@@ -1970,7 +1970,7 @@
         "bad": 0
       },
       "erstes": {
-        "good": 13,
+        "good": 14,
         "bad": 5
       },
       "ficken": {
@@ -2010,8 +2010,8 @@
         "bad": 2
       },
       "endlich": {
-        "good": 2,
-        "bad": 7
+        "good": 3,
+        "bad": 9
       },
       "wann": {
         "good": 9,
@@ -3314,8 +3314,8 @@
         "bad": 4
       },
       "armen": {
-        "good": 0,
-        "bad": 4
+        "good": 1,
+        "bad": 5
       },
       "gehalten": {
         "good": 0,
@@ -3450,12 +3450,12 @@
         "bad": 1
       },
       "kaum": {
-        "good": 8,
-        "bad": 13
+        "good": 9,
+        "bad": 14
       },
       "erwarten": {
-        "good": 8,
-        "bad": 13
+        "good": 9,
+        "bad": 14
       },
       "anstrengend": {
         "good": 1,
@@ -4618,8 +4618,8 @@
         "bad": 1
       },
       "sagst": {
-        "good": 0,
-        "bad": 1
+        "good": 1,
+        "bad": 2
       },
       "hohe": {
         "good": 2,
@@ -5146,8 +5146,8 @@
         "bad": 0
       },
       "süss": {
-        "good": 0,
-        "bad": 1
+        "good": 1,
+        "bad": 2
       },
       "berraschen": {
         "good": 0,
@@ -5267,6 +5267,14 @@
       },
       "zeigt": {
         "good": 0,
+        "bad": 1
+      },
+      "oft": {
+        "good": 1,
+        "bad": 1
+      },
+      "halten": {
+        "good": 1,
         "bad": 1
       }
     },
@@ -9196,7 +9204,7 @@
   "situationSuccess": {
     "allgemein": {
       "good": 171,
-      "total": 389
+      "total": 390
     },
     "Bot-Vorwurf": {
       "good": 18,
@@ -9631,7 +9639,7 @@
       "lastUsed": "2026-01-13T14:10:37.273Z"
     }
   ],
-  "lastUpdated": "2026-01-13T14:48:54.822Z",
+  "lastUpdated": "2026-01-14T20:23:58.211Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -10321,7 +10329,8 @@
           300,
           141,
           141,
-          300
+          300,
+          204
         ],
         "exclamationMarks": [
           1,
@@ -10465,6 +10474,7 @@
           1,
           1,
           1,
+          0,
           0,
           0,
           0,
@@ -10671,9 +10681,10 @@
           2,
           1,
           1,
-          2
+          2,
+          1
         ],
-        "count": 173,
+        "count": 174,
         "avgLength": 168,
         "minLength": 72,
         "maxLength": 325,
@@ -10691,7 +10702,7 @@
           "100-120": 13,
           "120-150": 24,
           "150-200": 39,
-          "200-250": 13,
+          "200-250": 14,
           "250+": 7
         },
         "questionDistribution": {
@@ -10827,9 +10838,11 @@
           292,
           233,
           229,
-          233
+          233,
+          199
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -11081,9 +11094,10 @@
           1,
           1,
           1,
+          1,
           1
         ],
-        "count": 125,
+        "count": 126,
         "avgLength": 215,
         "minLength": 115,
         "maxLength": 385,
@@ -12179,5 +12193,329 @@
   ],
   "migrated": true,
   "migratedSaved": true,
-  "migratedSavedToGitHub": true
+  "migratedSavedToGitHub": true,
+  "questionPatterns": {},
+  "emojiPatterns": {},
+  "diffPatterns": {
+    "allgemein": {
+      "removed": [
+        {
+          "text": "zusammen sind?",
+          "count": 1,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "text": "zusammen",
+          "count": 1,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "text": "sind?",
+          "count": 1,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        }
+      ],
+      "added": [
+        {
+          "text": "erstes machen wenn",
+          "count": 1,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "text": "erstes",
+          "count": 1,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "text": "mich sehen würdest?",
+          "count": 1,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "text": "mich",
+          "count": 1,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "text": "sehen würdest? 💋😘❤️",
+          "count": 1,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "text": "sehen",
+          "count": 1,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "text": "💋😘❤️",
+          "count": 1,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        }
+      ],
+      "changed": [
+        {
+          "from": "ist so süss",
+          "to": "Es ist so",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "so süss von",
+          "to": "ist so süss",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "süss von dir,",
+          "to": "so süss von",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "von dir, dass",
+          "to": "süss von dir,",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "dir, dass du",
+          "to": "von dir, dass",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "dass du das",
+          "to": "dir, dass du",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "du das sagst.",
+          "to": "dass du das",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "das sagst. Ich",
+          "to": "du das sagst.",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "sagst. Ich denke",
+          "to": "das sagst. Ich",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "Ich denke auch",
+          "to": "sagst. Ich denke",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "denke auch oft",
+          "to": "Ich denke auch",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "auch oft an",
+          "to": "denke auch oft",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "oft an dich",
+          "to": "auch oft an",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "an dich und",
+          "to": "oft an dich",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "dich und kann",
+          "to": "an dich und",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "und kann es",
+          "to": "dich und kann",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "kann es kaum",
+          "to": "und kann es",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "es kaum erwarten,",
+          "to": "kann es kaum",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "kaum erwarten, dich",
+          "to": "es kaum erwarten,",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "erwarten, dich endlich",
+          "to": "kaum erwarten, dich",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "dich endlich in",
+          "to": "erwarten, dich endlich",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "endlich in meinen",
+          "to": "dich endlich in",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "in meinen Armen",
+          "to": "endlich in meinen",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "meinen Armen zu",
+          "to": "in meinen Armen",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "Armen zu halten.",
+          "to": "meinen Armen zu",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "zu halten. Was",
+          "to": "Armen zu halten.",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "halten. Was würdest",
+          "to": "zu halten. Was",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "Was würdest du",
+          "to": "halten. Was würdest",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "würdest du mit",
+          "to": "Was würdest du",
+          "count": 2,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        },
+        {
+          "from": "Es ist so",
+          "to": "ist so süss",
+          "count": 1,
+          "contexts": [
+            "schatz bist süsseste was hatte"
+          ]
+        }
+      ]
+    }
+  },
+  "sentenceStructures": {},
+  "communicationStyles": {}
 }
