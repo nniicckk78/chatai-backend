@@ -11907,6 +11907,30 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-01-16T14:15:54.345Z",
       "updatedAt": "2026-01-16T14:15:54.345Z"
+    },
+    {
+      "id": "feedback_1768573051379_8knv4qwwh",
+      "chatId": "58199150",
+      "customerMessage": "ich habe keine zeit wegen ....",
+      "aiResponse": "Es tut mir leid zu hören, dass du keine Zeit hast. Ich kann das verstehen, manchmal hat man einfach viel um die Ohren. Was würdest du denn gerne machen, wenn du mehr Zeit hättest?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "viluu",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Sexuelle Themen",
+          "Bot-Vorwurf"
+        ],
+        "mood": "neutral",
+        "style": "locker | flirty | direkt",
+        "topic": "beruf",
+        "lastModeratorMessage": "Kannst du mir das mal ein wenig näher erläutern, wie du das meinst? Irgendwie stehe da ein bisschen im Regen. 😉"
+      },
+      "lastModeratorMessage": "Kannst du mir das mal ein wenig näher erläutern, wie du das meinst? Irgendwie stehe da ein bisschen im Regen. 😉",
+      "timestamp": "2026-01-16T14:17:31.379Z",
+      "updatedAt": "2026-01-16T14:17:31.379Z"
     }
   ]
 }
