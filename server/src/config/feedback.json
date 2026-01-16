@@ -11079,6 +11079,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-01-16T13:36:29.397Z",
       "updatedAt": "2026-01-16T13:36:29.397Z"
+    },
+    {
+      "id": "feedback_1768570630484_ftamol616",
+      "chatId": "59020090",
+      "customerMessage": "Natürlich darfst du das warum denn nicht",
+      "aiResponse": "Ich würde gerne mehr über dich erfahren. Was interessiert dich denn besonders an persönlichen Fragen? Ich finde, es gibt so viele spannende Themen, über die man quatschen kann.",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "viluu",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Treffen/Termine",
+          "Kontaktdaten außerhalb der Plattform",
+          "Bilder Anfrage"
+        ],
+        "mood": "neutral",
+        "style": "locker",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Okay, das hab ich ganz gut verstanden Sag mal, darf ich dich auch was persönliches fragen?"
+      },
+      "lastModeratorMessage": "Okay, das hab ich ganz gut verstanden Sag mal, darf ich dich auch was persönliches fragen?",
+      "timestamp": "2026-01-16T13:37:10.484Z",
+      "updatedAt": "2026-01-16T13:37:10.484Z"
     }
   ]
 }
