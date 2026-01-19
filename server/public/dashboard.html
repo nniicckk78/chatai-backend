@@ -1,0 +1,2866 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatAI Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0e27;
+            background-image: 
+                linear-gradient(rgba(100, 100, 100, 0.15) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(100, 100, 100, 0.15) 1px, transparent 1px);
+            background-size: 50px 50px;
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(0, 212, 255, 0.15);
+            border-radius: 10px;
+            border: 2px solid rgba(0, 212, 255, 0.5);
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+        }
+        .header h1 {
+            color: #00d4ff;
+            text-shadow: 0 0 30px rgba(0, 212, 255, 0.8), 0 0 60px rgba(0, 212, 255, 0.4);
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        .header p { color: rgba(224, 224, 224, 0.7); font-size: 1.1em; }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .tab {
+            padding: 12px 24px;
+            background: rgba(0, 212, 255, 0.15);
+            border: 2px solid rgba(0, 212, 255, 0.5);
+            border-radius: 8px;
+            cursor: pointer;
+            color: #00d4ff;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+        .tab:hover {
+            background: rgba(0, 212, 255, 0.25);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+            transform: translateY(-2px);
+        }
+        .tab.active {
+            background: rgba(0, 212, 255, 0.35);
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+            border-color: #00d4ff;
+        }
+        .tab-content {
+            display: none;
+            background: rgba(26, 31, 58, 0.6);
+            border: 2px solid rgba(0, 212, 255, 0.5);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+        }
+        .tab-content.active { 
+            display: block !important; 
+        }
+        .section { margin-bottom: 30px; }
+        .section h2 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(0, 212, 255, 0.7), 0 0 30px rgba(0, 212, 255, 0.3);
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+        .form-group { 
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #00d4ff;
+            font-weight: 600;
+        }
+        .form-group textarea,
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            background: rgba(10, 14, 39, 0.7);
+            border: 2px solid rgba(0, 212, 255, 0.4);
+            border-radius: 6px;
+            color: #e0e0e0;
+            font-size: 14px;
+        }
+        .char-counter {
+            font-size: 0.85em;
+            color: rgba(224, 224, 224, 0.6);
+            margin-top: 5px;
+            text-align: right;
+        }
+        .char-counter.warning {
+            color: #ffaa00;
+        }
+        .char-counter.error {
+            color: #ff4444;
+        }
+        .form-group {
+            position: relative;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .form-group textarea:focus,
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #00d4ff;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.7);
+            background: rgba(10, 14, 39, 0.8);
+        }
+        .btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #00d4ff 0%, #00a8cc 100%);
+            border: 2px solid rgba(0, 212, 255, 0.8);
+            border-radius: 6px;
+            color: #0a0e27;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+            margin-right: 10px;
+            margin-top: 10px;
+            text-shadow: 0 0 5px rgba(10, 14, 39, 0.5);
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+        }
+        .btn:hover {
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #00e5ff 0%, #00b8dc 100%);
+        }
+        .btn-secondary {
+            background: linear-gradient(135deg, #666 0%, #444 100%);
+            color: #e0e0e0;
+        }
+        .conversation-item,
+        .rule-item,
+        .user-item,
+        .message-item {
+            background: rgba(26, 31, 58, 0.5);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .conversation-item h3,
+        .rule-item h3 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+        .conversation-item p,
+        .rule-item p {
+            color: rgba(224, 224, 224, 0.8);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .search-box { margin-bottom: 20px; }
+        .search-box input {
+            width: 100%;
+            padding: 12px;
+            background: rgba(10, 14, 39, 0.7);
+            border: 1px solid rgba(0, 212, 255, 0.4);
+            border-radius: 6px;
+            color: #e0e0e0;
+            font-size: 14px;
+        }
+        .chat-container {
+            background: rgba(26, 31, 58, 0.5);
+            border: 1px solid rgba(0, 212, 255, 0.4);
+            border-radius: 8px;
+            padding: 20px;
+            max-height: 500px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        .chat-message {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            background: rgba(0, 212, 255, 0.1);
+            border-left: 3px solid #00d4ff;
+        }
+        .chat-message.user {
+            background: rgba(0, 255, 100, 0.1);
+            border-left-color: #00ff64;
+        }
+        .chat-input-group {
+            display: flex;
+            gap: 10px;
+        }
+        .chat-input-group input {
+            flex: 1;
+            padding: 12px;
+            background: rgba(10, 14, 39, 0.7);
+            border: 1px solid rgba(0, 212, 255, 0.4);
+            border-radius: 6px;
+            color: #e0e0e0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: rgba(26, 31, 58, 0.5);
+            border: 1px solid rgba(0, 212, 255, 0.4);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .stat-card h3 {
+            color: #00d4ff;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .stat-card p { color: rgba(224, 224, 224, 0.7); }
+        .platform-list { list-style: none; }
+        .platform-list li {
+            padding: 10px;
+            background: rgba(26, 31, 58, 0.4);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 6px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal.active { display: flex; }
+        .modal-content {
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            border: 2px solid rgba(0, 212, 255, 0.6);
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 0 40px rgba(0, 212, 255, 0.4);
+        }
+        .modal-content h2 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+        }
+        .modal-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .rule-list {
+            list-style: none;
+        }
+        .rule-list li {
+            padding: 10px;
+            background: rgba(26, 31, 58, 0.4);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 6px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .rule-list li button {
+            margin: 0;
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>NEURAL CONTROL CENTER</h1>
+            <p>AI CONFIGURATION & MANAGEMENT SYSTEM</p>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('rules')">REGELN</div>
+            <div class="tab" onclick="showTab('training')">TRAINING DATA</div>
+            <div class="tab" onclick="showTab('feedback')">FEEDBACK</div>
+            <div class="tab" onclick="showTab('fine-tuning')">FINE-TUNING</div>
+            <div class="tab" onclick="showTab('test-chat')">TEST CHAT</div>
+            <div class="tab" onclick="showTab('statistics')">STATISTIKEN</div>
+            <div class="tab" onclick="showTab('users')">USER MANAGEMENT</div>
+            <div class="tab" onclick="showTab('settings')">EINSTELLUNGEN</div>
+        </div>
+
+        <!-- REGELN TAB -->
+        <div id="rules" class="tab-content active">
+            <div class="section">
+                <h2>Verbotene Wörter/Phrasen</h2>
+                <div class="form-group">
+                    <label>Verbotene Wörter (eine pro Zeile)</label>
+                    <textarea id="forbiddenWords" placeholder="z.B.&#10;Bot&#10;KI&#10;Fake"></textarea>
+                </div>
+                <button class="btn" onclick="updateRules()">Speichern</button>
+            </div>
+
+            <div class="section">
+                <h2>Situations-spezifische Antworten</h2>
+                <div id="situationalResponsesList"></div>
+                <button class="btn" onclick="showAddSituationModal()">➕ Neue Situation hinzufügen</button>
+            </div>
+
+            <div class="section">
+                <h2>Bevorzugte Wörter</h2>
+                <div class="form-group">
+                    <label>Bevorzugte Wörter (eine pro Zeile)</label>
+                    <textarea id="preferredWords" placeholder="z.B.&#10;Hey&#10;Hallo"></textarea>
+                </div>
+                <button class="btn" onclick="updateRules()">Speichern</button>
+            </div>
+
+            <div class="section">
+                <h2>Allgemeine Regeln</h2>
+                <div class="form-group">
+                    <label>Allgemeine Regeln</label>
+                    <textarea id="generalRules" placeholder="z.B. Sei immer freundlich und natürlich"></textarea>
+                </div>
+                <button class="btn" onclick="updateRules()">Speichern</button>
+            </div>
+        </div>
+
+        <!-- TRAINING DATA TAB -->
+        <div id="training" class="tab-content" style="display: none;">
+            <div class="section">
+                <h2>► Neues Gespräch hinzufügen</h2>
+                <form id="addConversationForm">
+                    <div class="form-group">
+                        <label for="customerMessage">Kunden-Nachricht</label>
+                        <textarea id="customerMessage" placeholder="Was hat der Kunde geschrieben?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="moderatorResponse">Moderator/Fake Antwort</label>
+                        <textarea id="moderatorResponse" placeholder="Wie hat der Moderator geantwortet?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="situation">Situation(en) - Mehrfachauswahl möglich</label>
+                        <select id="situation" multiple size="5" style="min-height: 120px;">
+                            <option value="allgemein">Allgemein</option>
+                        </select>
+                        <p style="margin-top: 10px; color: rgba(224, 224, 224, 0.7); font-size: 0.85em;">
+                            💡 <strong>Tipp:</strong> Halte <kbd>Strg</kbd> (Windows) oder <kbd>Cmd</kbd> (Mac) gedrückt, um mehrere Situationen auszuwählen.<br>
+                            Beispiel: "Sexuelle Themen" + "Bilder-Anfrage" für kombinierte Situationen.
+                        </p>
+                        <button type="button" class="btn btn-secondary" onclick="showAddSituationModal()" style="margin-top: 10px;">➕ Neue Situation</button>
+                        <p style="margin-top: 10px; color: rgba(224, 224, 224, 0.7); font-size: 0.9em;">
+                            Wähle eine oder mehrere Situationen oder erstelle eine neue. Situationen werden aus den "Situations-spezifischen Antworten" geladen.
+                        </p>
+                    </div>
+                    <button type="submit" class="btn">➕ Gespräch hinzufügen</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <h2 style="margin: 0;">Gespeicherte Gespräche (<span id="conversationCount">0</span>)</h2>
+                    <button class="btn" onclick="toggleConversationsView()" id="toggleConversationsBtn">
+                        📋 Gespeicherte Gespräche anzeigen
+                    </button>
+                </div>
+                <div id="conversationsView" style="display: none;">
+                    <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+                        <div class="search-box" style="flex: 1; min-width: 200px;">
+                            <input type="text" id="searchConversations" placeholder="Suche nach Situation, Kunde oder Moderator..." onkeyup="filterConversations()">
+                        </div>
+                        <div style="display: flex; gap: 5px;">
+                            <button class="btn btn-secondary" onclick="sortConversations('newest')" id="sortConversationsNewest" style="font-size: 0.9em; padding: 8px 12px;">
+                                ⬇️ Neueste
+                            </button>
+                            <button class="btn btn-secondary" onclick="sortConversations('oldest')" id="sortConversationsOldest" style="font-size: 0.9em; padding: 8px 12px;">
+                                ⬆️ Älteste
+                            </button>
+                        </div>
+                    </div>
+                    <div id="conversationsList" style="max-height: 600px; overflow-y: auto; padding: 10px; background: rgba(10, 14, 39, 0.3); border-radius: 8px; border: 1px solid rgba(0, 212, 255, 0.3);"></div>
+                </div>
+            </div>
+
+            <div class="section" style="margin-top: 40px; border-top: 2px solid rgba(0, 212, 255, 0.3); padding-top: 30px;">
+                <h2>📨 ASA (After-Silence-Action) Training</h2>
+                <p style="margin-bottom: 20px; color: rgba(224, 224, 224, 0.7); font-size: 0.9em;">
+                    Trainiere Nachrichten, die gesendet werden, wenn ein Kunde lange nicht geantwortet hat. 
+                    Die ASA wird basierend auf Kunden-Typ (Langzeit/Neukunde) und letztem Gesprächsthema ausgewählt.
+                </p>
+                <form id="addASAForm">
+                    <div class="form-group">
+                        <label for="asaCustomerType">Kunden-Typ</label>
+                        <select id="asaCustomerType" required>
+                            <option value="neukunde">Neukunde (wenige Tage aktiv oder &lt;50 Nachrichten)</option>
+                            <option value="langzeit">Langzeit-Kunde (&gt;50 Nachrichten, aktiv seit Wochen/Monaten)</option>
+                            <option value="schlechter_langzeit">Schlechter Langzeit-Kunde (lange dabei, aber wenige Nachrichten)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="asaLastTopic">Letztes Gesprächsthema (optional)</label>
+                        <select id="asaLastTopic">
+                            <option value="">Kein spezifisches Thema (generische ASA)</option>
+                            <option value="treffen_abgelehnt">Treffen abgelehnt</option>
+                            <option value="sexuell">Sexuelle Themen</option>
+                            <option value="beruf">Beruf/Arbeit</option>
+                            <option value="familie">Familie/Beziehung</option>
+                            <option value="hobby">Hobbies/Interessen</option>
+                            <option value="allgemein">Allgemeines Gespräch</option>
+                        </select>
+                        <p style="margin-top: 10px; color: rgba(224, 224, 224, 0.6); font-size: 0.85em;">
+                            Nur auswählen, wenn das Thema relevant für die ASA ist. Bei irrelevanten Themen (z.B. "Hamster") leer lassen.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label for="asaMessage">ASA-Nachricht</label>
+                        <textarea id="asaMessage" placeholder="Wie soll die ASA-Nachricht lauten?" required></textarea>
+                        <p style="margin-top: 10px; color: rgba(224, 224, 224, 0.6); font-size: 0.85em;">
+                            Beispiel für Langzeit-Kunde: "Hey, ich vermisse unsere Gespräche. Ist alles okay bei dir? 😊"
+                            <br>Beispiel für Neukunde: "Hey, hast du noch Interesse? Würde mich freuen, von dir zu hören!"
+                        </p>
+                    </div>
+                    <button type="submit" class="btn">➕ ASA-Beispiel hinzufügen</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <h2 style="margin: 0;">Gespeicherte ASA-Beispiele (<span id="asaCount">0</span>)</h2>
+                    <button class="btn" onclick="toggleASAView()" id="toggleASABtn">
+                        📋 Alle ASAs anzeigen
+                    </button>
+                </div>
+                <div id="asaView" style="display: none;">
+                    <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+                        <div style="display: flex; gap: 5px; margin-left: auto;">
+                            <button class="btn btn-secondary" onclick="sortASAExamples('newest')" id="sortASANewest" style="font-size: 0.9em; padding: 8px 12px;">
+                                ⬇️ Neueste
+                            </button>
+                            <button class="btn btn-secondary" onclick="sortASAExamples('oldest')" id="sortASAOldest" style="font-size: 0.9em; padding: 8px 12px;">
+                                ⬆️ Älteste
+                            </button>
+                        </div>
+                    </div>
+                    <div id="asaList"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEEDBACK TAB -->
+        <div id="feedback" class="tab-content" style="display: none;">
+            <div class="section">
+                <h2>📝 Feedback-Verwaltung</h2>
+                <p style="margin-bottom: 20px; color: rgba(224, 224, 224, 0.8);">
+                    Hier siehst du alle generierten KI-Antworten. Du kannst sie mit einem grünen Haken markieren (wenn sie gut sind) oder bearbeiten (wenn sie verbessert werden müssen). 
+                    Die KI lernt automatisch aus deinem Feedback und wird immer besser!
+                </p>
+                <div class="search-box">
+                    <input type="text" id="searchFeedback" placeholder="Suche nach Chat-ID, Kunden-Nachricht oder KI-Antwort..." onkeyup="filterFeedback()">
+                </div>
+                <div style="margin-bottom: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+                    <button id="filter-all" class="btn btn-secondary" onclick="filterFeedbackByStatus('all')">Alle</button>
+                    <button id="filter-pending" class="btn btn-secondary" onclick="filterFeedbackByStatus('pending')">Ausstehend</button>
+                    <button id="filter-good" class="btn btn-secondary" onclick="filterFeedbackByStatus('good')">✅ Gut</button>
+                    <button id="filter-edited" class="btn btn-secondary" onclick="filterFeedbackByStatus('edited')">✏️ Bearbeitet</button>
+                </div>
+                <div id="feedbackList" style="max-height: 700px; overflow-y: auto; padding: 10px; background: rgba(10, 14, 39, 0.3); border-radius: 8px; border: 1px solid rgba(0, 212, 255, 0.3);"></div>
+            </div>
+        </div>
+
+        <!-- FINE-TUNING TAB -->
+        <div id="fine-tuning" class="tab-content" style="display: none;">
+            <div class="section">
+                <h2>🤖 Fine-Tuning</h2>
+                <p style="margin-bottom: 20px; color: rgba(224, 224, 224, 0.8);">
+                    Hier kannst du das KI-Model mit deinen perfekten Beispielen trainieren. Das System sammelt automatisch alle "good" und "edited" Feedbacks sowie Training-Daten.
+                </p>
+                
+                <!-- Status-Anzeige -->
+                <div id="fineTuningStatus" style="margin-bottom: 30px; padding: 20px; background: rgba(0, 212, 255, 0.1); border-radius: 8px; border: 2px solid rgba(0, 212, 255, 0.3);">
+                    <h3 style="color: #00d4ff; margin-bottom: 15px;">📊 Status</h3>
+                    <div id="fineTuningStatusContent">
+                        <p style="color: rgba(224, 224, 224, 0.7);">Lade Status...</p>
+                    </div>
+                </div>
+
+                <!-- Statistiken -->
+                <div id="fineTuningStats" style="margin-bottom: 30px; padding: 20px; background: rgba(0, 212, 255, 0.1); border-radius: 8px; border: 2px solid rgba(0, 212, 255, 0.3);">
+                    <h3 style="color: #00d4ff; margin-bottom: 15px;">📈 Statistiken</h3>
+                    <div id="fineTuningStatsContent">
+                        <p style="color: rgba(224, 224, 224, 0.7);">Lade Statistiken...</p>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <button class="btn btn-secondary" onclick="loadExcludedExamples()" style="font-size: 0.9em; padding: 8px 15px;">
+                            🔍 Ausgeschlossene Beispiele anzeigen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Ausgeschlossene Beispiele -->
+                <div id="excludedExamples" style="display: none; margin-bottom: 30px; padding: 20px; background: rgba(255, 170, 0, 0.1); border-radius: 8px; border: 2px solid rgba(255, 170, 0, 0.3);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <h3 style="color: #ffaa00; margin: 0;">⚠️ Ausgeschlossene Beispiele</h3>
+                        <button class="btn btn-secondary" onclick="document.getElementById('excludedExamples').style.display='none'" style="font-size: 0.9em; padding: 5px 10px;">✕ Schließen</button>
+                    </div>
+                    <div id="excludedExamplesContent">
+                        <p style="color: rgba(224, 224, 224, 0.7);">Lade ausgeschlossene Beispiele...</p>
+                    </div>
+                </div>
+
+                <!-- Retrain-Button -->
+                <div style="margin-bottom: 20px;">
+                    <button id="retrainButton" class="btn" onclick="startFineTuning()" style="font-size: 1.1em; padding: 15px 30px;">
+                        🚀 Model neu trainieren
+                    </button>
+                    <p style="margin-top: 10px; color: rgba(224, 224, 224, 0.7); font-size: 0.9em;">
+                        💡 Tipp: Trainiere das Model nach 50-100 neuen perfekten Beispielen erneut, um die Qualität zu verbessern.
+                    </p>
+                </div>
+
+                <!-- Info-Box -->
+                <div style="padding: 15px; background: rgba(255, 170, 0, 0.1); border-radius: 8px; border: 1px solid rgba(255, 170, 0, 0.3);">
+                    <h4 style="color: #ffaa00; margin-bottom: 10px;">ℹ️ Wie funktioniert Fine-Tuning?</h4>
+                    <ul style="color: rgba(224, 224, 224, 0.8); font-size: 0.9em; line-height: 1.6; padding-left: 20px;">
+                        <li>Das System sammelt automatisch alle perfekten Beispiele (good + edited Feedbacks + Training-Daten)</li>
+                        <li>Diese werden zu OpenAI hochgeladen und das Model wird trainiert</li>
+                        <li>Das trainierte Model lernt deinen Schreibstil, Regeln und Situationen</li>
+                        <li>Nach dem Training wird automatisch das neue Model verwendet</li>
+                        <li>Kosten: ~$0.008 pro 1K Tokens (Training) + ~$0.0003 pro 1K Tokens (Inference)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEST CHAT TAB -->
+        <div id="test-chat" class="tab-content">
+            <div class="section">
+                <h2>Test Chat</h2>
+                <p style="margin-bottom: 20px; color: rgba(224, 224, 224, 0.8);">
+                    Teste hier, wie die KI auf verschiedene Nachrichten reagiert. Dies simuliert eine echte Konversation.
+                </p>
+                <div style="margin-bottom: 15px; padding: 15px; background: rgba(0, 212, 255, 0.1); border-radius: 8px; border: 1px solid rgba(0, 212, 255, 0.3);">
+                    <h3 style="color: #00d4ff; margin-bottom: 10px; font-size: 1.1em;">Profilbild-URLs (optional, für Profilbild-Analyse)</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 10px;">
+                        <div>
+                            <label style="display: block; margin-bottom: 5px; color: rgba(224, 224, 224, 0.9); font-size: 0.9em;">Kunde Profilbild-URL:</label>
+                            <input type="text" id="testCustomerProfilePicUrl" placeholder="https://..." style="width: 100%; padding: 8px; background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 4px; color: #e0e0e0; font-size: 0.9em;">
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 5px; color: rgba(224, 224, 224, 0.9); font-size: 0.9em;">Moderator Profilbild-URL:</label>
+                            <input type="text" id="testModeratorProfilePicUrl" placeholder="https://..." style="width: 100%; padding: 8px; background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 4px; color: #e0e0e0; font-size: 0.9em;">
+                        </div>
+                    </div>
+                    <p style="font-size: 0.85em; color: rgba(224, 224, 224, 0.7); margin: 0;">
+                        💡 Tipp: Wenn Profilbild-URLs angegeben werden, analysiert die KI die Bilder und passt die Antworten entsprechend an (z.B. "wir" statt "ich" bei 2 Personen im Profilbild).
+                    </p>
+                </div>
+                <div class="chat-container" id="testChatContainer"></div>
+                <div class="chat-input-group">
+                    <input type="text" id="testChatInput" placeholder="Schreibe eine Nachricht..." onkeypress="if(event.key==='Enter') sendTestMessage()">
+                    <button class="btn" onclick="sendTestMessage()">Senden</button>
+                    <button class="btn btn-secondary" onclick="clearTestChat()">Chat leeren</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- STATISTIKEN TAB -->
+        <div id="statistics" class="tab-content">
+            <div class="section">
+                <h2>Nachrichten-Statistiken</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 id="statToday">0</h3>
+                        <p>Heute</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="statYesterday">0</h3>
+                        <p>Gestern</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="statThisWeek">0</h3>
+                        <p>Diese Woche</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="statTotal">0</h3>
+                        <p>Gesamt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Aktive Plattformen</h2>
+                <ul class="platform-list" id="platformList"></ul>
+            </div>
+
+            <div class="section">
+                <h2>Letzte Nachrichten</h2>
+                <div id="recentMessages"></div>
+            </div>
+        </div>
+
+        <!-- USER MANAGEMENT TAB -->
+        <div id="users" class="tab-content">
+            <div class="section">
+                <h2>Benutzer verwalten</h2>
+                <div id="usersList"></div>
+                <button class="btn" onclick="showAddUserModal()">➕ Neuen Benutzer hinzufügen</button>
+            </div>
+        </div>
+
+        <!-- EINSTELLUNGEN TAB -->
+        <div id="settings" class="tab-content">
+            <div class="section">
+                <h2>📊 Google Sheets Integration</h2>
+                <p style="margin-bottom: 20px; color: rgba(224, 224, 224, 0.8);">
+                    Optional: Speichere alle generierten Nachrichten zusätzlich in einem Google Sheet.
+                    Dies ist nützlich für detaillierte Analysen und Backups.
+                </p>
+                <p style="margin-bottom: 10px; color: #00d4ff; font-weight: 600;">Methode 1: Google Apps Script Webhook (empfohlen)</p>
+                <p style="margin-bottom: 20px; color: rgba(224, 224, 224, 0.8);">
+                    Dies ist die einfachste Methode. Du erstellst ein Google Sheet, fügst einen kleinen Code in Google Apps Script ein und veröffentlichst es als Web-App. Die URL der Web-App trägst du dann hier ein.
+                </p>
+                <h3 style="color: #00d4ff; margin-top: 20px; text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);">Schritt-für-Schritt Anleitung:</h3>
+                <ol style="color: #e0e0e0; list-style-type: decimal; margin-left: 20px;">
+                    <li style="margin-bottom: 10px;">
+                        <strong>1. Google Sheet erstellen:</strong> Erstelle ein neues Google Sheet (z.B. "ChatAI Nachrichten Log").
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <strong>2. Google Apps Script öffnen:</strong> Gehe in deinem Google Sheet zu "Erweiterungen" &rarr; "Apps Script". Es öffnet sich ein neuer Tab.
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <strong>3. Code einfügen:</strong> Kopiere den folgenden Code in den Apps Script Editor (ersetze den bestehenden Code in <code>Code.gs</code>):
+                        <pre style="background: rgba(0, 0, 0, 0.5); padding: 15px; border-radius: 8px; border: 1px solid rgba(0, 212, 255, 0.3); color: #00d4ff; overflow-x: auto; font-family: monospace; font-size: 0.9em; margin-top: 10px;"><code>function doPost(e) {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  const data = JSON.parse(e.postData.contents);
+  
+  // Header beim ersten Mal
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(['Datum/Zeit', 'Plattform', 'Chat ID', 'ASA', 'Kunden-Nachricht', 'KI-Antwort']);
+  }
+  
+  // Daten hinzufügen
+  sheet.appendRow([
+    data.timestamp,
+    data.platform,
+    data.chatId,
+    data.isASA,
+    data.customerMessage,
+    data.aiResponse
+  ]);
+  
+  return ContentService.createTextOutput('OK');
+}</code></pre>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <strong>4. Speichern:</strong> Klicke oben links auf das Diskettensymbol "Speichern" (oder Strg+S). Gib dem Projekt einen Namen (z.B. "ChatAI Integration").
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <strong>5. Web-App bereitstellen:</strong> Klicke oben rechts auf "Bereitstellen" &rarr; "Neue Bereitstellung".
+                        <ul style="list-style-type: disc; margin-left: 20px; margin-top: 5px;">
+                            <li style="margin-bottom: 5px;">Klicke auf das Zahnrad-Symbol (⚙️) neben "Typ auswählen" und wähle "Web-App".</li>
+                            <li style="margin-bottom: 5px;">Stelle sicher, dass "Ausführen als:" auf "Ich" und "Zugriff:" auf "Alle" gesetzt ist.</li>
+                            <li style="margin-bottom: 5px;">Klicke auf "Bereitstellen".</li>
+                            <li style="margin-bottom: 5px;">Es erscheint ein Dialog "Autorisierung erforderlich". Klicke auf "Autorisieren", wähle dein Google-Konto, klicke auf "Erweitert" und dann "Zu [Projektname] gehen (nicht sicher)" und "Zulassen".</li>
+                            <li style="margin-bottom: 5px;">Kopiere die angezeigte "Web-App-URL".</li>
+                        </ul>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <strong>6. In Render konfigurieren:</strong> Gehe zu deinem Render Dashboard, wähle deinen Backend-Service und füge unter "Environment" eine neue Umgebungsvariable hinzu:
+                        <ul style="list-style-type: disc; margin-left: 20px; margin-top: 5px;">
+                            <li style="margin-bottom: 5px;"><strong>Key:</strong> <code>GOOGLE_SHEETS_WEBHOOK_URL</code></li>
+                            <li style="margin-bottom: 5px;"><strong>Value:</strong> Die kopierte Web-App-URL</li>
+                        </ul>
+                        Speichere die Änderungen. Dein Service wird automatisch neu gestartet.
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <strong>7. Testen:</strong> Generiere eine Nachricht mit der Extension. Die Nachricht sollte automatisch in deinem Google Sheet erscheinen.
+                    </li>
+                </ol>
+                <p style="margin-top: 30px; color: #00d4ff; font-weight: 600;">Methode 2: Google Sheets API (robuster, aber komplexer)</p>
+                <p style="margin-bottom: 20px; color: rgba(224, 224, 224, 0.8);">
+                    Diese Methode ist robuster, erfordert aber die Einrichtung eines Google Cloud Service Accounts und das Generieren von JSON-Anmeldeinformationen. Diese müssen dann als Umgebungsvariable <code>GOOGLE_SHEETS_CREDENTIALS</code> (als JSON-String) und die <code>GOOGLE_SHEETS_SPREADSHEET_ID</code> in Render hinterlegt werden.
+                </p>
+            </div>
+        </div>
+
+        <!-- Add/Edit Situation Modal -->
+        <div id="addSituationModal" class="modal">
+            <div class="modal-content">
+                <h2 id="situationModalTitle">Neue Situation erstellen</h2>
+                <div class="form-group">
+                    <label for="newSituationName">Situationsname</label>
+                    <input type="text" id="newSituationName" placeholder="z.B. Bot-Vorwurf">
+                </div>
+                <div class="form-group">
+                    <label for="newSituationResponse">Antwort für diese Situation</label>
+                    <textarea id="newSituationResponse" placeholder="Wie soll die KI in dieser Situation reagieren?"></textarea>
+                    <div id="newSituationResponseCounter" class="char-counter">0 Zeichen</div>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn" id="situationModalSaveBtn" onclick="saveSituationFromModal()">Erstellen</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeAddSituationModal()">Abbrechen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add User Modal -->
+        <div id="addUserModal" class="modal">
+            <div class="modal-content">
+                <h2>Neuen Benutzer erstellen</h2>
+                <div class="form-group">
+                    <label for="newUserEmail">E-Mail</label>
+                    <input type="email" id="newUserEmail" placeholder="benutzer@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="newUserPassword">Passwort</label>
+                    <input type="password" id="newUserPassword" placeholder="Passwort">
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn" onclick="createUserFromModal()">Erstellen</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeAddUserModal()">Abbrechen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = window.location.origin;
+        let currentRules = null;
+        let trainingData = [];
+        let testChatMessages = [];
+
+        // Tab switching
+        function showTab(tabName) {
+            // Lade Fine-Tuning-Daten wenn Tab geöffnet wird
+            if (tabName === 'fine-tuning') {
+                loadFineTuningStatus();
+                loadFineTuningStats();
+            }
+            
+            // Initialisiere Zeichenzähler nach Tab-Wechsel (sicher)
+            setTimeout(() => {
+                if (typeof initCharCounters === 'function') {
+                    try {
+                        initCharCounters();
+                    } catch (err) {
+                        console.error('Fehler bei initCharCounters:', err);
+                    }
+                }
+            }, 100);
+            // Verstecke alle Tab-Contents
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+                tab.style.display = 'none';
+            });
+            
+            // Entferne active von allen Tabs
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            
+            // Zeige gewählten Tab-Content
+            const targetTab = document.getElementById(tabName);
+            if (targetTab) {
+                targetTab.classList.add('active');
+                targetTab.style.display = 'block';
+            }
+            
+            // Aktiviere entsprechenden Tab-Button
+            const tabMap = {
+                'rules': 'REGELN',
+                'training': 'TRAINING DATA',
+                'feedback': 'FEEDBACK',
+                'test-chat': 'TEST CHAT',
+                'statistics': 'STATISTIKEN',
+                'users': 'USER MANAGEMENT',
+                'settings': 'EINSTELLUNGEN'
+            };
+            document.querySelectorAll('.tab').forEach(tab => {
+                if (tab.textContent === tabMap[tabName]) {
+                    tab.classList.add('active');
+                }
+            });
+
+            // Lade Daten für den gewählten Tab
+            if (tabName === 'statistics') {
+                loadStatistics();
+            } else if (tabName === 'training') {
+                loadTrainingData();
+            } else if (tabName === 'rules') {
+                loadRules();
+            } else if (tabName === 'users') {
+                loadUsers();
+            } else if (tabName === 'feedback') {
+                loadFeedback();
+            } else if (tabName === 'test-chat') {
+                // Test Chat initialisieren
+            }
+        }
+
+        // Load rules
+        async function loadRules() {
+            try {
+                console.log('Lade Regeln...');
+                const response = await apiCall('/api/v1/rules', 'GET');
+                console.log('Regeln geladen:', response);
+                if (response) {
+                    currentRules = response;
+                    // Forbidden Words
+                    const forbiddenEl = document.getElementById('forbiddenWords');
+                    if (forbiddenEl) {
+                        if (response.forbiddenWords && response.forbiddenWords.length > 0) {
+                            forbiddenEl.value = Array.isArray(response.forbiddenWords) 
+                                ? response.forbiddenWords.join('\n') 
+                                : (typeof response.forbiddenWords === 'string' ? response.forbiddenWords : '');
+                        } else {
+                            forbiddenEl.value = '';
+                        }
+                    }
+                    
+                    // Preferred Words
+                    const preferredEl = document.getElementById('preferredWords');
+                    if (preferredEl) {
+                        if (response.preferredWords && response.preferredWords.length > 0) {
+                            preferredEl.value = Array.isArray(response.preferredWords)
+                                ? response.preferredWords.join('\n')
+                                : (typeof response.preferredWords === 'string' ? response.preferredWords : '');
+                        } else {
+                            preferredEl.value = '';
+                        }
+                    }
+                    
+                    // General Rules
+                    const generalEl = document.getElementById('generalRules');
+                    if (generalEl) {
+                        generalEl.value = response.generalRules || '';
+                    }
+                    
+                    displaySituationalResponses();
+                } else {
+                    console.warn('Keine Regeln erhalten');
+                    // Setze leere Werte
+                    const forbiddenEl = document.getElementById('forbiddenWords');
+                    if (forbiddenEl) forbiddenEl.value = '';
+                    const preferredEl = document.getElementById('preferredWords');
+                    if (preferredEl) preferredEl.value = '';
+                    const generalEl = document.getElementById('generalRules');
+                    if (generalEl) generalEl.value = '';
+                }
+            } catch (error) {
+                console.error('Fehler beim Laden der Regeln:', error);
+                // Setze leere Werte bei Fehler
+                const forbiddenEl = document.getElementById('forbiddenWords');
+                if (forbiddenEl) forbiddenEl.value = '';
+                const preferredEl = document.getElementById('preferredWords');
+                if (preferredEl) preferredEl.value = '';
+                const generalEl = document.getElementById('generalRules');
+                if (generalEl) generalEl.value = '';
+            }
+        }
+
+        // Display situational responses
+        function displaySituationalResponses() {
+            const list = document.getElementById('situationalResponsesList');
+            if (!list) return;
+            
+            // Standard-Situationen, die immer angezeigt werden sollen
+            const standardSituations = ["Bot-Vorwurf", "Sexuelle Themen", "Berufsfrage", "Treffen/Termine", "Geld/Coins"];
+            
+            if (!currentRules || !currentRules.situationalResponses || Object.keys(currentRules.situationalResponses).length === 0) {
+                list.innerHTML = '<p style="color: rgba(224, 224, 224, 0.7); margin-bottom: 20px;">Noch keine Situationen definiert.</p>';
+                return;
+            }
+
+            // Trenne Standard-Situationen und benutzerdefinierte Situationen
+            const userSituations = Object.keys(currentRules.situationalResponses).filter(s => !standardSituations.includes(s));
+            const standardSituationsList = Object.keys(currentRules.situationalResponses).filter(s => standardSituations.includes(s));
+            
+            let html = '';
+            
+            // Zeige zuerst benutzerdefinierte Situationen
+            if (userSituations.length > 0) {
+                html += userSituations.map((situation, index) => {
+                    // Escape für HTML
+                    const htmlSituation = situation.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                    const htmlResponse = (currentRules.situationalResponses[situation] || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                    
+                    // Erstelle eindeutige ID für die Situation
+                    const situationId = `user-situation-${index}`;
+                    
+                    return `
+                    <div class="rule-item" id="${situationId}">
+                        <h3>${htmlSituation}</h3>
+                        <p style="white-space: pre-wrap; word-wrap: break-word;">${htmlResponse}</p>
+                        <div style="display: flex; gap: 10px; margin-top: 10px;">
+                            <button class="btn edit-situation-btn" data-situation-name="${htmlSituation.replace(/"/g, '&quot;')}" data-situation-response="${htmlResponse.replace(/"/g, '&quot;').replace(/\n/g, '&#10;')}">✏️ Bearbeiten</button>
+                            <button class="btn btn-secondary delete-situation-btn" data-situation-name="${htmlSituation.replace(/"/g, '&quot;')}">🗑️ Löschen</button>
+                        </div>
+                    </div>
+                `;
+                }).join('');
+            }
+            
+            // Zeige Standard-Situationen (bearbeitbar)
+            if (standardSituationsList.length > 0) {
+                html += `
+                    <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(0, 212, 255, 0.3);">
+                        <h3 style="color: #00d4ff; margin-bottom: 15px; font-size: 1.2em;">📋 Standard-Situationen (bearbeitbar):</h3>
+                `;
+                
+                html += standardSituationsList.map((situation, index) => {
+                    // Escape für HTML
+                    const htmlSituation = situation.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                    const htmlResponse = (currentRules.situationalResponses[situation] || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                    
+                    // Icons für Standard-Situationen
+                    const icons = {
+                        "Bot-Vorwurf": "🚨",
+                        "Sexuelle Themen": "💋",
+                        "Berufsfrage": "💼",
+                        "Treffen/Termine": "🚫",
+                        "Geld/Coins": "💸"
+                    };
+                    
+                    const situationId = `standard-situation-${index}`;
+                    
+                    return `
+                        <div class="rule-item" id="${situationId}">
+                            <h3>${icons[situation] || ''} ${htmlSituation}</h3>
+                            <p style="white-space: pre-wrap; word-wrap: break-word;">${htmlResponse}</p>
+                            <div style="display: flex; gap: 10px; margin-top: 10px;">
+                                <button class="btn edit-situation-btn" data-situation-name="${htmlSituation.replace(/"/g, '&quot;')}" data-situation-response="${htmlResponse.replace(/"/g, '&quot;').replace(/\n/g, '&#10;')}">✏️ Bearbeiten</button>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                
+                html += '</div>';
+            }
+            
+            list.innerHTML = html;
+        }
+
+        // Update rules
+        async function updateRules() {
+            try {
+                const forbiddenWords = document.getElementById('forbiddenWords').value.split('\n').map(w => w.trim()).filter(w => w);
+                const preferredWords = document.getElementById('preferredWords').value.split('\n').map(w => w.trim()).filter(w => w);
+                const generalRules = document.getElementById('generalRules').value.trim();
+
+                if (!currentRules) {
+                    currentRules = {};
+                }
+
+                currentRules.forbiddenWords = forbiddenWords;
+                currentRules.preferredWords = preferredWords;
+                currentRules.generalRules = generalRules;
+
+                const response = await apiCall('/api/v1/rules', 'PUT', currentRules);
+                if (response) {
+                    alert('Regeln erfolgreich gespeichert!');
+                    await loadRules();
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Speichern der Regeln.');
+            }
+        }
+
+        // Delete situation
+        async function deleteSituation(situation) {
+            if (!confirm(`Möchtest du die Situation "${situation}" wirklich löschen?`)) return;
+
+            try {
+                if (currentRules && currentRules.situationalResponses) {
+                    delete currentRules.situationalResponses[situation];
+                    const response = await apiCall('/api/v1/rules', 'PUT', currentRules);
+                    if (response) {
+                        await loadRules();
+                        await updateSituationSelect();
+                    }
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Löschen der Situation.');
+            }
+        }
+
+        // Load training data
+        let asaExamples = [];
+        let allAvailableSituations = ['allgemein']; // Globale Variable für alle Situationen
+        
+        async function loadTrainingData() {
+            try {
+                console.log('Lade Training Data...');
+                const response = await apiCall('/api/v1/training-data', 'GET');
+                console.log('Training Data geladen:', response);
+                if (response) {
+                    trainingData = response.conversations || [];
+                    asaExamples = response.asaExamples || [];
+                    console.log('Anzahl Gespräche:', trainingData.length);
+                    console.log('Anzahl ASA-Beispiele:', asaExamples.length);
+                    
+                    // Lade Situationen für Bearbeitung
+                    if (!currentRules || !currentRules.situationalResponses) {
+                        try {
+                            const rulesResponse = await apiCall('/api/v1/rules', 'GET');
+                            if (rulesResponse && rulesResponse.situationalResponses) {
+                                allAvailableSituations = ['allgemein', ...Object.keys(rulesResponse.situationalResponses)];
+                                currentRules = rulesResponse;
+                            }
+                        } catch (error) {
+                            console.error('Fehler beim Laden der Regeln:', error);
+                        }
+                    } else if (currentRules.situationalResponses) {
+                        allAvailableSituations = ['allgemein', ...Object.keys(currentRules.situationalResponses)];
+                    }
+                    
+                    // Initialisiere Sortierung-Buttons
+                    if (document.getElementById('sortConversationsNewest')) {
+                        document.getElementById('sortConversationsNewest').classList.remove('btn-secondary');
+                        document.getElementById('sortConversationsOldest').classList.add('btn-secondary');
+                    }
+                    if (document.getElementById('sortASANewest')) {
+                        document.getElementById('sortASANewest').classList.remove('btn-secondary');
+                        document.getElementById('sortASAOldest').classList.add('btn-secondary');
+                    }
+                    displayConversations();
+                    displayASAExamples();
+                    updateSituationSelect();
+                } else {
+                    console.warn('Keine Training Data erhalten');
+                    trainingData = [];
+                    asaExamples = [];
+                    displayConversations();
+                    displayASAExamples();
+                }
+            } catch (error) {
+                console.error('Fehler beim Laden der Training Data:', error);
+                trainingData = [];
+                asaExamples = [];
+                displayConversations();
+                displayASAExamples();
+            }
+        }
+
+        // Sortierung für Gespräche
+        let conversationsSortOrder = 'newest'; // 'newest' oder 'oldest'
+
+        function sortConversations(order) {
+            conversationsSortOrder = order;
+            // Aktualisiere Button-Styles
+            document.getElementById('sortConversationsNewest').classList.toggle('btn', true);
+            document.getElementById('sortConversationsNewest').classList.toggle('btn-secondary', order !== 'newest');
+            document.getElementById('sortConversationsOldest').classList.toggle('btn', true);
+            document.getElementById('sortConversationsOldest').classList.toggle('btn-secondary', order !== 'oldest');
+            
+            // Zeige Gespräche neu an
+            displayConversations();
+        }
+
+        // Display conversations
+        function displayConversations() {
+            const list = document.getElementById('conversationsList');
+            const count = document.getElementById('conversationCount');
+            
+            if (!list) {
+                console.error('conversationsList Element nicht gefunden');
+                return;
+            }
+            
+            if (!count) {
+                console.error('conversationCount Element nicht gefunden');
+                return;
+            }
+            
+            if (!trainingData || !Array.isArray(trainingData)) {
+                trainingData = [];
+            }
+            
+            count.textContent = trainingData.length;
+
+            if (trainingData.length === 0) {
+                list.innerHTML = '<p style="color: rgba(224, 224, 224, 0.7);">Noch keine Gespräche gespeichert.</p>';
+                return;
+            }
+
+            // Sortiere nach Datum
+            let sortedData = [...trainingData];
+            if (conversationsSortOrder === 'newest') {
+                sortedData.sort((a, b) => {
+                    const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+                    const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+                    return dateB - dateA; // Neueste zuerst
+                });
+            } else {
+                sortedData.sort((a, b) => {
+                    const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+                    const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+                    return dateA - dateB; // Älteste zuerst
+                });
+            }
+
+            list.innerHTML = sortedData.map((conv, index) => {
+                // Finde Original-Index für deleteConversation
+                const originalIndex = trainingData.findIndex(c => 
+                    c.customerMessage === conv.customerMessage && 
+                    c.moderatorResponse === conv.moderatorResponse &&
+                    c.situation === conv.situation
+                );
+                
+                // Prüfe ob von Feedback
+                const isFromFeedback = conv.feedbackId || conv.source === 'feedback_good' || conv.source === 'feedback_edited' || conv.source === 'feedback_generated' || conv.source === 'feedback_generated_edited';
+                const hasVariations = conv.variationIndex !== undefined;
+                const feedbackInfo = isFromFeedback ? `
+                    <div style="margin-top: 10px; padding: 8px; background: rgba(0, 212, 255, 0.1); border-radius: 5px; border-left: 3px solid #00d4ff;">
+                        <div style="font-size: 0.85em; color: #00d4ff;">
+                            <strong>📝 Von Feedback:</strong> ${conv.source === 'feedback_generated' || conv.source === 'feedback_generated_edited' ? 'Variation generiert' : 'Direkt hinzugefügt'}
+                            ${hasVariations ? ` (Variation ${conv.variationIndex + 1})` : ''}
+                            ${conv.feedbackId ? `<br><button class="btn btn-secondary" onclick="scrollToFeedback('${conv.feedbackId}')" style="font-size: 0.8em; padding: 4px 8px; margin-top: 5px;">🔗 Zum Feedback springen</button>` : ''}
+                        </div>
+                    </div>
+                ` : '';
+                
+                const createdAt = conv.createdAt ? new Date(conv.createdAt).toLocaleString('de-DE') : 'Unbekannt';
+                
+                // Prüfe ob Situation bearbeitet wird
+                const isEditingSituation = window[`editingSituation_${originalIndex}`] === true;
+                
+                return `
+                    <div class="conversation-item" data-conv-index="${originalIndex}">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <div style="flex: 1;">
+                                ${!isEditingSituation ? `
+                                    <h3 style="margin: 0 0 5px 0;">
+                                        Situation(en): <span id="situation-display-${originalIndex}">${(conv.situations && Array.isArray(conv.situations) && conv.situations.length > 0) ? conv.situations.join(', ') : (conv.situation || 'Allgemein')}</span>
+                                        <button class="btn btn-secondary" onclick="editSituation(${originalIndex})" style="font-size: 0.75em; padding: 2px 6px; margin-left: 8px;">✏️ Bearbeiten</button>
+                                    </h3>
+                                ` : `
+                                    <div style="display: flex; gap: 10px; align-items: flex-start; flex-wrap: wrap;">
+                                        <div style="flex: 1; min-width: 250px;">
+                                            <label style="color: #00d4ff; font-weight: 600; margin: 0 0 5px 0; display: block;">Situation(en) - Mehrfachauswahl:</label>
+                                            <select id="situation-select-${originalIndex}" multiple size="5" style="width: 100%; padding: 6px; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(0, 212, 255, 0.5); border-radius: 4px; color: #e0e0e0; min-height: 100px;">
+                                                <option value="allgemein">Allgemein</option>
+                                            </select>
+                                            <p style="margin-top: 5px; color: rgba(224, 224, 224, 0.6); font-size: 0.8em;">
+                                                💡 <kbd>Strg</kbd> (Windows) oder <kbd>Cmd</kbd> (Mac) für Mehrfachauswahl
+                                            </p>
+                                        </div>
+                                        <div style="display: flex; flex-direction: column; gap: 5px; margin-top: 25px;">
+                                            <button class="btn" onclick="saveSituation(${originalIndex})" style="font-size: 0.85em; padding: 6px 12px;">💾 Speichern</button>
+                                            <button class="btn btn-secondary" onclick="cancelEditSituation(${originalIndex})" style="font-size: 0.85em; padding: 6px 12px;">❌ Abbrechen</button>
+                                        </div>
+                                    </div>
+                                `}
+                                <p style="color: rgba(224, 224, 224, 0.6); font-size: 0.85em; margin: 5px 0 0 0;">Erstellt: ${createdAt}</p>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 10px; padding: 10px; background: rgba(0, 0, 0, 0.3); border-radius: 6px;">
+                            <p style="margin: 0 0 8px 0;"><strong style="color: #00ff64;">Kunde:</strong> ${escapeHtml(conv.customerMessage || '')}</p>
+                            <p style="margin: 0;"><strong style="color: #00d4ff;">Moderator:</strong> ${escapeHtml(conv.moderatorResponse || '')}</p>
+                        </div>
+                        ${feedbackInfo}
+                        <button class="btn btn-secondary" onclick="deleteConversation(${originalIndex})" style="margin-top: 10px;">🗑️ Löschen</button>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Funktion zum Scrollen zum Feedback
+        function scrollToFeedback(feedbackId) {
+            // Wechsle zum Feedback-Tab
+            showTab('feedback');
+            // Warte kurz, dann scrolle zum Feedback
+            setTimeout(() => {
+                const feedbackElement = document.querySelector(`[data-feedback-id="${feedbackId}"]`);
+                if (feedbackElement) {
+                    feedbackElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Hervorheben
+                    feedbackElement.style.border = '2px solid #00d4ff';
+                    feedbackElement.style.boxShadow = '0 0 20px rgba(0, 212, 255, 0.5)';
+                    setTimeout(() => {
+                        feedbackElement.style.border = '';
+                        feedbackElement.style.boxShadow = '';
+                    }, 2000);
+                } else {
+                    // Lade Feedback neu, falls noch nicht geladen
+                    loadFeedback().then(() => {
+                        setTimeout(() => {
+                            const feedbackElement = document.querySelector(`[data-feedback-id="${feedbackId}"]`);
+                            if (feedbackElement) {
+                                feedbackElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                feedbackElement.style.border = '2px solid #00d4ff';
+                                feedbackElement.style.boxShadow = '0 0 20px rgba(0, 212, 255, 0.5)';
+                                setTimeout(() => {
+                                    feedbackElement.style.border = '';
+                                    feedbackElement.style.boxShadow = '';
+                                }, 2000);
+                            }
+                        }, 500);
+                    });
+                }
+            }, 100);
+        }
+
+        // Sortierung für ASA-Beispiele
+        let asaSortOrder = 'newest'; // 'newest' oder 'oldest'
+        let expandedASAIndexes = new Set(); // Welche ASA-Beispiele sind ausgeklappt
+
+        function sortASAExamples(order) {
+            asaSortOrder = order;
+            // Aktualisiere Button-Styles
+            document.getElementById('sortASANewest').classList.toggle('btn', true);
+            document.getElementById('sortASANewest').classList.toggle('btn-secondary', order !== 'newest');
+            document.getElementById('sortASAOldest').classList.toggle('btn', true);
+            document.getElementById('sortASAOldest').classList.toggle('btn-secondary', order !== 'oldest');
+            
+            // Zeige ASA-Beispiele neu an
+            displayASAExamples();
+        }
+
+        function toggleASAExample(index) {
+            if (expandedASAIndexes.has(index)) {
+                expandedASAIndexes.delete(index);
+            } else {
+                expandedASAIndexes.add(index);
+            }
+            displayASAExamples();
+        }
+
+        // Display ASA examples
+        function displayASAExamples() {
+            const list = document.getElementById('asaList');
+            const count = document.getElementById('asaCount');
+            
+            if (!list || !count) return;
+            
+            if (!asaExamples || !Array.isArray(asaExamples)) {
+                asaExamples = [];
+            }
+            
+            count.textContent = asaExamples.length;
+
+            if (asaExamples.length === 0) {
+                list.innerHTML = '<p style="color: rgba(224, 224, 224, 0.7);">Noch keine ASA-Beispiele gespeichert.</p>';
+                return;
+            }
+
+            // Sortiere nach Datum (wenn vorhanden) oder nach Index
+            let sortedExamples = [...asaExamples];
+            if (asaSortOrder === 'newest') {
+                sortedExamples.sort((a, b) => {
+                    const dateA = a.createdAt ? new Date(a.createdAt).getTime() : (a.timestamp ? new Date(a.timestamp).getTime() : 0);
+                    const dateB = b.createdAt ? new Date(b.createdAt).getTime() : (b.timestamp ? new Date(b.timestamp).getTime() : 0);
+                    if (dateA === 0 && dateB === 0) {
+                        // Fallback: Sortiere nach Index (neueste zuletzt hinzugefügt = höherer Index)
+                        return b._originalIndex - a._originalIndex;
+                    }
+                    return dateB - dateA; // Neueste zuerst
+                });
+            } else {
+                sortedExamples.sort((a, b) => {
+                    const dateA = a.createdAt ? new Date(a.createdAt).getTime() : (a.timestamp ? new Date(a.timestamp).getTime() : 0);
+                    const dateB = b.createdAt ? new Date(b.createdAt).getTime() : (b.timestamp ? new Date(b.timestamp).getTime() : 0);
+                    if (dateA === 0 && dateB === 0) {
+                        // Fallback: Sortiere nach Index (älteste zuerst hinzugefügt = niedrigerer Index)
+                        return a._originalIndex - b._originalIndex;
+                    }
+                    return dateA - dateB; // Älteste zuerst
+                });
+            }
+
+            // Speichere Original-Index für deleteASA
+            sortedExamples.forEach((asa, sortedIndex) => {
+                asa._sortedIndex = sortedIndex;
+                asa._originalIndex = asaExamples.findIndex(orig => 
+                    orig.customerType === asa.customerType &&
+                    orig.lastTopic === asa.lastTopic &&
+                    orig.asaMessage === asa.asaMessage
+                );
+            });
+
+            const customerTypeLabels = {
+                'neukunde': 'Neukunde',
+                'langzeit': 'Langzeit-Kunde',
+                'schlechter_langzeit': 'Schlechter Langzeit-Kunde'
+            };
+
+            const topicLabels = {
+                'treffen_abgelehnt': 'Treffen abgelehnt',
+                'sexuell': 'Sexuelle Themen',
+                'beruf': 'Beruf/Arbeit',
+                'familie': 'Familie/Beziehung',
+                'hobby': 'Hobbies/Interessen',
+                'allgemein': 'Allgemeines Gespräch'
+            };
+
+            list.innerHTML = sortedExamples.map((asa, sortedIndex) => {
+                const originalIndex = asa._originalIndex !== undefined ? asa._originalIndex : sortedIndex;
+                const isExpanded = expandedASAIndexes.has(originalIndex);
+                const messagePreview = asa.asaMessage ? (asa.asaMessage.length > 100 ? asa.asaMessage.substring(0, 100) + '...' : asa.asaMessage) : '';
+                const createdAt = asa.createdAt ? new Date(asa.createdAt).toLocaleString('de-DE') : (asa.timestamp ? new Date(asa.timestamp).toLocaleString('de-DE') : 'Unbekannt');
+                
+                return `
+                    <div class="conversation-item" style="margin-bottom: 15px; cursor: pointer;" onclick="toggleASAExample(${originalIndex})">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 5px;">
+                            <div style="flex: 1;">
+                                <h3 style="margin: 0 0 5px 0;">${customerTypeLabels[asa.customerType] || asa.customerType}</h3>
+                                <p style="color: rgba(224, 224, 224, 0.6); font-size: 0.85em; margin: 0;">Erstellt: ${createdAt}</p>
+                            </div>
+                            <div style="font-size: 1.5em; color: #00d4ff;">
+                                ${isExpanded ? '▼' : '▶'}
+                            </div>
+                        </div>
+                        ${asa.lastTopic ? `<p style="color: rgba(0, 212, 255, 0.8); margin: 5px 0;"><strong>Letztes Thema:</strong> ${topicLabels[asa.lastTopic] || asa.lastTopic}</p>` : '<p style="color: rgba(224, 224, 224, 0.6); margin: 5px 0;"><em>Generische ASA (kein spezifisches Thema)</em></p>'}
+                        ${!isExpanded ? `<p style="color: rgba(224, 224, 224, 0.7); margin: 5px 0; font-style: italic;">${escapeHtml(messagePreview)}</p>` : ''}
+                        <div id="asaDetails_${originalIndex}" style="display: ${isExpanded ? 'block' : 'none'}; margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(0, 212, 255, 0.3);">
+                            <p style="white-space: pre-wrap; word-wrap: break-word; margin: 10px 0;"><strong style="color: #00d4ff;">ASA-Nachricht:</strong><br>${escapeHtml(asa.asaMessage || '')}</p>
+                            <button class="btn btn-secondary" onclick="event.stopPropagation(); deleteASA(${originalIndex})" style="margin-top: 10px;">🗑️ Löschen</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Add ASA example
+        async function addASAExample() {
+            const customerType = document.getElementById('asaCustomerType').value;
+            const lastTopic = document.getElementById('asaLastTopic').value;
+            const asaMessage = document.getElementById('asaMessage').value.trim();
+
+            if (!customerType || !asaMessage) {
+                alert('Bitte fülle alle Pflichtfelder aus.');
+                return;
+            }
+
+            try {
+                const response = await apiCall('/api/v1/training-data/asa', 'POST', {
+                    customerType,
+                    lastTopic: lastTopic || null,
+                    asaMessage
+                });
+                if (response) {
+                    document.getElementById('addASAForm').reset();
+                    await loadTrainingData();
+                    alert('ASA-Beispiel erfolgreich hinzugefügt!');
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Hinzufügen der ASA.');
+            }
+        }
+
+        // Delete ASA example
+        async function deleteASA(index) {
+            if (!confirm('Möchtest du dieses ASA-Beispiel wirklich löschen?')) return;
+
+            try {
+                const response = await apiCall(`/api/v1/training-data/asa/${index}`, 'DELETE');
+                if (response) {
+                    await loadTrainingData();
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Löschen der ASA.');
+            }
+        }
+
+        // Toggle conversations view
+        function toggleConversationsView() {
+            const view = document.getElementById('conversationsView');
+            const btn = document.getElementById('toggleConversationsBtn');
+            
+            if (view.style.display === 'none') {
+                view.style.display = 'block';
+                btn.textContent = '📋 Gespeicherte Gespräche ausblenden';
+            } else {
+                view.style.display = 'none';
+                btn.textContent = '📋 Gespeicherte Gespräche anzeigen';
+            }
+        }
+
+        // Toggle ASA view
+        function toggleASAView() {
+            const view = document.getElementById('asaView');
+            const btn = document.getElementById('toggleASABtn');
+            
+            if (view.style.display === 'none') {
+                view.style.display = 'block';
+                btn.textContent = '📋 Alle ASAs ausblenden';
+            } else {
+                view.style.display = 'none';
+                btn.textContent = '📋 Alle ASAs anzeigen';
+            }
+        }
+
+        // Filter conversations
+        function filterConversations() {
+            const searchTerm = document.getElementById('searchConversations').value.toLowerCase();
+            const items = document.querySelectorAll('#conversationsList .conversation-item');
+            let visibleCount = 0;
+            
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    item.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            
+            // Zeige Meldung, wenn keine Ergebnisse gefunden
+            const list = document.getElementById('conversationsList');
+            let noResultsMsg = list.querySelector('.no-results-msg');
+            if (searchTerm && visibleCount === 0) {
+                if (!noResultsMsg) {
+                    noResultsMsg = document.createElement('p');
+                    noResultsMsg.className = 'no-results-msg';
+                    noResultsMsg.style.cssText = 'color: rgba(224, 224, 224, 0.7); text-align: center; padding: 20px;';
+                    noResultsMsg.textContent = 'Keine Gespräche gefunden.';
+                    list.appendChild(noResultsMsg);
+                }
+            } else if (noResultsMsg) {
+                noResultsMsg.remove();
+            }
+        }
+
+        // Add conversation
+        document.getElementById('addConversationForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const customerMessage = document.getElementById('customerMessage').value.trim();
+            const moderatorResponse = document.getElementById('moderatorResponse').value.trim();
+            
+            // 🚨 WICHTIG: Multi-Select - sammle ALLE ausgewählten Situationen
+            const situationSelect = document.getElementById('situation');
+            const selectedSituations = Array.from(situationSelect.selectedOptions).map(opt => opt.value);
+            
+            // Wenn keine Situation ausgewählt, verwende "allgemein" als Fallback
+            const situation = selectedSituations.length > 0 ? selectedSituations : ['allgemein'];
+
+            if (!customerMessage || !moderatorResponse) {
+                alert('Bitte fülle alle Felder aus.');
+                return;
+            }
+
+            try {
+                const response = await apiCall('/api/v1/training-data', 'POST', {
+                    customerMessage,
+                    moderatorResponse,
+                    situation: Array.isArray(situation) ? situation : [situation] // Stelle sicher, dass es ein Array ist
+                });
+
+                if (response) {
+                    document.getElementById('addConversationForm').reset();
+                    await loadTrainingData();
+                    alert('Gespräch erfolgreich hinzugefügt!');
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Hinzufügen des Gesprächs.');
+            }
+        });
+
+        // Delete conversation
+        async function deleteConversation(index) {
+            if (!confirm('Möchtest du dieses Gespräch wirklich löschen?')) return;
+
+            try {
+                const response = await apiCall(`/api/v1/training-data/${index}`, 'DELETE');
+                if (response) {
+                    await loadTrainingData();
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Löschen.');
+            }
+        }
+
+        // Situation bearbeiten
+        async function editSituation(index) {
+            // Lade Situationen sicher, bevor wir rendern
+            if (!currentRules || !currentRules.situationalResponses) {
+                try {
+                    const response = await apiCall('/api/v1/rules', 'GET');
+                    if (response && response.situationalResponses) {
+                        currentRules = response;
+                        allAvailableSituations = ['allgemein', ...Object.keys(response.situationalResponses)];
+                    }
+                } catch (error) {
+                    console.error('Fehler beim Laden der Situationen:', error);
+                    allAvailableSituations = ['allgemein'];
+                }
+            } else if (currentRules.situationalResponses) {
+                allAvailableSituations = ['allgemein', ...Object.keys(currentRules.situationalResponses)];
+            }
+            
+            window[`editingSituation_${index}`] = true;
+            // Speichere Situationen für diesen Index
+            window[`availableSituations_${index}`] = allAvailableSituations;
+            
+            // Rendere die Liste neu
+            displayConversations();
+            
+            // Nach dem Rendern: Befülle das Multi-Select sicher
+            setTimeout(() => {
+                const select = document.getElementById(`situation-select-${index}`);
+                if (select) {
+                    const currentConv = trainingData[index];
+                    // 🚨 WICHTIG: Unterstütze mehrere Situationen (Array oder String)
+                    let currentSituations = ['allgemein'];
+                    if (currentConv) {
+                        if (currentConv.situations && Array.isArray(currentConv.situations) && currentConv.situations.length > 0) {
+                            currentSituations = currentConv.situations;
+                        } else if (currentConv.situation) {
+                            // Prüfe, ob es mehrere Situationen mit Komma-Trennung sind
+                            if (currentConv.situation.includes(',')) {
+                                currentSituations = currentConv.situation.split(',').map(s => s.trim()).filter(s => s.length > 0);
+                            } else {
+                                currentSituations = [currentConv.situation];
+                            }
+                        }
+                    }
+                    
+                    // Leere Select
+                    select.innerHTML = '';
+                    
+                    // Füge alle Situationen hinzu
+                    const situationsToUse = window[`availableSituations_${index}`] || allAvailableSituations || ['allgemein'];
+                    situationsToUse.forEach(situation => {
+                        const option = document.createElement('option');
+                        option.value = situation;
+                        option.textContent = situation;
+                        // 🚨 WICHTIG: Mehrfachauswahl - markiere ALLE passenden Situationen
+                        if (currentSituations.includes(situation)) {
+                            option.selected = true;
+                        }
+                        select.appendChild(option);
+                    });
+                    
+                    console.log(`✅ Situationen für Index ${index} geladen:`, situationsToUse, `(Aktuell ausgewählt: ${currentSituations.join(', ')})`);
+                } else {
+                    console.error(`❌ Select-Element nicht gefunden: situation-select-${index}`);
+                    // Retry nach 300ms
+                    setTimeout(() => {
+                        const selectRetry = document.getElementById(`situation-select-${index}`);
+                        if (selectRetry) {
+                            const currentConv = trainingData[index];
+                            let currentSituations = ['allgemein'];
+                            if (currentConv) {
+                                if (currentConv.situations && Array.isArray(currentConv.situations) && currentConv.situations.length > 0) {
+                                    currentSituations = currentConv.situations;
+                                } else if (currentConv.situation) {
+                                    if (currentConv.situation.includes(',')) {
+                                        currentSituations = currentConv.situation.split(',').map(s => s.trim()).filter(s => s.length > 0);
+                                    } else {
+                                        currentSituations = [currentConv.situation];
+                                    }
+                                }
+                            }
+                            selectRetry.innerHTML = '';
+                            const situationsToUse = window[`availableSituations_${index}`] || allAvailableSituations || ['allgemein'];
+                            situationsToUse.forEach(situation => {
+                                const option = document.createElement('option');
+                                option.value = situation;
+                                option.textContent = situation;
+                                if (currentSituations.includes(situation)) {
+                                    option.selected = true;
+                                }
+                                selectRetry.appendChild(option);
+                            });
+                        }
+                    }, 300);
+                }
+            }, 300);
+        }
+
+        // Situation speichern
+        async function saveSituation(index) {
+            const select = document.getElementById(`situation-select-${index}`);
+            if (!select) return;
+            
+            // 🚨 WICHTIG: Multi-Select - sammle ALLE ausgewählten Situationen
+            const selectedSituations = Array.from(select.selectedOptions).map(opt => opt.value);
+            
+            // Wenn keine Situation ausgewählt, verwende "allgemein" als Fallback
+            const newSituation = selectedSituations.length > 0 ? selectedSituations : ['allgemein'];
+            
+            try {
+                const response = await apiCall(`/api/v1/training-data/${index}`, 'PUT', {
+                    situation: Array.isArray(newSituation) ? newSituation : [newSituation] // Stelle sicher, dass es ein Array ist
+                });
+                if (response) {
+                    window[`editingSituation_${index}`] = false;
+                    await loadTrainingData();
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Speichern der Situation.');
+            }
+        }
+
+        // Situation-Bearbeitung abbrechen
+        function cancelEditSituation(index) {
+            window[`editingSituation_${index}`] = false;
+            displayConversations();
+        }
+
+        // Update situation select
+        async function updateSituationSelect() {
+            try {
+                const response = await apiCall('/api/v1/rules', 'GET');
+                if (response) {
+                    currentRules = response;
+                    const select = document.getElementById('situation');
+                    const currentValue = select.value;
+                    select.innerHTML = '<option value="allgemein">Allgemein</option>';
+                    
+                    if (response.situationalResponses && typeof response.situationalResponses === 'object') {
+                        Object.keys(response.situationalResponses).forEach(situation => {
+                            const option = document.createElement('option');
+                            option.value = situation;
+                            option.textContent = situation;
+                            select.appendChild(option);
+                        });
+                    }
+                    select.value = currentValue || 'allgemein';
+                }
+            } catch (error) {
+                console.error('Fehler beim Laden der Situationen:', error);
+            }
+        }
+
+        // Situation modal
+        let editingSituationName = null;
+
+        function showAddSituationModal() {
+            editingSituationName = null;
+            document.getElementById('situationModalTitle').textContent = 'Neue Situation erstellen';
+            document.getElementById('situationModalSaveBtn').textContent = 'Erstellen';
+            document.getElementById('newSituationName').value = '';
+            document.getElementById('newSituationResponse').value = '';
+            document.getElementById('newSituationName').disabled = false;
+            document.getElementById('addSituationModal').classList.add('active');
+            // Initialisiere Zeichenzähler für Modal (sicher)
+            setTimeout(() => {
+                if (typeof initCharCounters === 'function') {
+                    try {
+                        initCharCounters();
+                    } catch (err) {
+                        console.error('Fehler bei initCharCounters:', err);
+                    }
+                }
+            }, 100);
+        }
+
+        function editSituationRule(name, response) {
+            editingSituationName = name;
+            document.getElementById('situationModalTitle').textContent = 'Situation bearbeiten';
+            document.getElementById('situationModalSaveBtn').textContent = 'Speichern';
+            document.getElementById('newSituationName').value = name;
+            // Entferne HTML-Entities für Anzeige
+            if (response && typeof response === 'string') {
+                const unescapedResponse = response.replace(/&#10;/g, '\n').replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+                document.getElementById('newSituationResponse').value = unescapedResponse;
+            } else {
+                document.getElementById('newSituationResponse').value = '';
+            }
+            document.getElementById('newSituationName').disabled = true; // Name kann nicht geändert werden beim Bearbeiten
+            document.getElementById('addSituationModal').classList.add('active');
+            // Initialisiere Zeichenzähler für Modal (sicher)
+            setTimeout(() => {
+                if (typeof initCharCounters === 'function') {
+                    try {
+                        initCharCounters();
+                    } catch (err) {
+                        console.error('Fehler bei initCharCounters:', err);
+                    }
+                }
+            }, 100);
+        }
+
+        function closeAddSituationModal() {
+            document.getElementById('addSituationModal').classList.remove('active');
+            editingSituationName = null;
+            document.getElementById('newSituationName').value = '';
+            document.getElementById('newSituationResponse').value = '';
+            document.getElementById('newSituationName').disabled = false;
+        }
+
+        async function saveSituationFromModal() {
+            const name = document.getElementById('newSituationName').value.trim();
+            const response = document.getElementById('newSituationResponse').value.trim();
+
+            if (!name || !response) {
+                alert('Bitte fülle alle Felder aus.');
+                return;
+            }
+
+            try {
+                if (!currentRules) {
+                    currentRules = { situationalResponses: {} };
+                }
+                if (!currentRules.situationalResponses) {
+                    currentRules.situationalResponses = {};
+                }
+
+                // Wenn wir bearbeiten, lösche die alte Situation (falls Name geändert wurde)
+                if (editingSituationName && editingSituationName !== name) {
+                    delete currentRules.situationalResponses[editingSituationName];
+                }
+
+                // Setze/Update die Situation
+                currentRules.situationalResponses[name] = response;
+
+                const updateResponse = await apiCall('/api/v1/rules', 'PUT', currentRules);
+                if (updateResponse) {
+                    closeAddSituationModal();
+                    await updateSituationSelect();
+                    await loadRules();
+                    alert(editingSituationName ? 'Situation erfolgreich aktualisiert!' : 'Situation erfolgreich erstellt!');
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Speichern der Situation.');
+            }
+        }
+
+        // Alias für Rückwärtskompatibilität
+        async function createSituationFromModal() {
+            await saveSituationFromModal();
+        }
+
+        // Test Chat
+        async function sendTestMessage() {
+            const input = document.getElementById('testChatInput');
+            const message = input.value.trim();
+            if (!message) return;
+
+            testChatMessages.push({ type: 'user', text: message });
+            updateTestChat();
+            input.value = '';
+
+            try {
+                // Profilbild-URLs aus Input-Feldern (falls vorhanden)
+                const customerPicUrl = document.getElementById('testCustomerProfilePicUrl')?.value?.trim() || null;
+                const moderatorPicUrl = document.getElementById('testModeratorProfilePicUrl')?.value?.trim() || null;
+                
+                const response = await apiCall('/api/v1/test-chat', 'POST', {
+                    message,
+                    conversationHistory: testChatMessages.filter(m => m.type !== 'system'),
+                    customerProfilePicUrl: customerPicUrl || undefined,
+                    moderatorProfilePicUrl: moderatorPicUrl || undefined
+                });
+
+                if (response && response.reply) {
+                    testChatMessages.push({ type: 'assistant', text: response.reply });
+                    updateTestChat();
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                const errorMessage = error.message || 'Fehler beim Senden der Nachricht.';
+                testChatMessages.push({ type: 'system', text: `Fehler: ${errorMessage}` });
+                updateTestChat();
+            }
+        }
+
+        function updateTestChat() {
+            const container = document.getElementById('testChatContainer');
+            container.innerHTML = testChatMessages.map(msg => `
+                <div class="chat-message ${msg.type === 'user' ? 'user' : ''}">
+                    <strong>${msg.type === 'user' ? 'Du' : msg.type === 'assistant' ? 'KI' : 'System'}:</strong> ${msg.text}
+                </div>
+            `).join('');
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function clearTestChat() {
+            testChatMessages = [];
+            updateTestChat();
+        }
+
+        // Statistics
+        async function loadStatistics() {
+            try {
+                const response = await apiCall('/api/v1/statistics', 'GET');
+                
+                // 📊 QUALITÄTS-STATISTIKEN anzeigen (NEU)
+                if (response.quality) {
+                    const qualityDiv = document.createElement('div');
+                    qualityDiv.className = 'section';
+                    qualityDiv.innerHTML = `
+                        <h2>📊 Qualitäts-Statistiken (NEU)</h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px;">
+                            <div style="background: rgba(0, 212, 255, 0.1); padding: 15px; border-radius: 8px; border: 1px solid rgba(0, 212, 255, 0.3);">
+                                <div style="font-size: 0.9em; color: rgba(224, 224, 224, 0.7);">Durchschnitts-Score</div>
+                                <div style="font-size: 2em; color: #00d4ff; font-weight: bold;">${Math.round(response.quality.averageScore || 0)}/100</div>
+                            </div>
+                            <div style="background: rgba(0, 212, 255, 0.1); padding: 15px; border-radius: 8px; border: 1px solid rgba(0, 212, 255, 0.3);">
+                                <div style="font-size: 0.9em; color: rgba(224, 224, 224, 0.7);">Gesamt Antworten</div>
+                                <div style="font-size: 2em; color: #00d4ff; font-weight: bold;">${response.quality.totalResponses || 0}</div>
+                            </div>
+                        </div>
+                        ${response.quality.recentScores && response.quality.recentScores.length > 0 ? `
+                            <h3 style="margin-top: 20px;">Letzte Qualitäts-Bewertungen:</h3>
+                            <div style="margin-top: 10px;">
+                                ${response.quality.recentScores.map(score => `
+                                    <div style="background: rgba(0, 212, 255, 0.05); padding: 10px; margin: 5px 0; border-radius: 5px; border-left: 3px solid ${score.score >= 70 ? '#00ff00' : score.score >= 50 ? '#ffaa00' : '#ff0000'};">
+                                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                                            <div>
+                                                <strong>Score: ${score.score}/100</strong>
+                                                <div style="font-size: 0.85em; color: rgba(224, 224, 224, 0.7); margin-top: 5px;">
+                                                    ${score.reasons && score.reasons.length > 0 ? score.reasons.join(', ') : 'Keine Details'}
+                                                </div>
+                                            </div>
+                                            <div style="font-size: 0.8em; color: rgba(224, 224, 224, 0.5);">
+                                                ${new Date(score.timestamp).toLocaleString('de-DE')}
+                                            </div>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : '<p style="color: rgba(224, 224, 224, 0.5); margin-top: 10px;">Noch keine Qualitäts-Bewertungen vorhanden.</p>'}
+                    `;
+                    const statisticsContent = document.getElementById('statistics');
+                    // Füge Qualitäts-Statistiken am Anfang hinzu
+                    if (statisticsContent) {
+                        const existingContent = statisticsContent.innerHTML;
+                        statisticsContent.innerHTML = qualityDiv.outerHTML + existingContent;
+                    }
+                }
+                if (response) {
+                    document.getElementById('statToday').textContent = response.today || 0;
+                    document.getElementById('statYesterday').textContent = response.yesterday || 0;
+                    document.getElementById('statThisWeek').textContent = response.thisWeek || 0;
+                    document.getElementById('statTotal').textContent = response.total || 0;
+
+                    const platformList = document.getElementById('platformList');
+                    if (response.platforms && Object.keys(response.platforms).length > 0) {
+                        platformList.innerHTML = Object.entries(response.platforms).map(([platform, count]) => `
+                            <li>
+                                <span>${platform}</span>
+                                <span>${count} Nachrichten</span>
+                            </li>
+                        `).join('');
+                    } else {
+                        platformList.innerHTML = '<li>Keine Plattformen gefunden</li>';
+                    }
+
+                    const recentMessages = document.getElementById('recentMessages');
+                    if (response.recentMessages && response.recentMessages.length > 0) {
+                        recentMessages.innerHTML = response.recentMessages.slice(0, 10).map(msg => {
+                            // Zeige Platform oder URL (falls Platform "unknown" ist)
+                            const platformDisplay = (msg.platform && msg.platform !== 'unknown') 
+                                ? msg.platform 
+                                : (msg.platformUrl || 'Unknown');
+                            return `
+                            <div class="message-item">
+                                <p><strong>${platformDisplay}</strong> - ${new Date(msg.timestamp).toLocaleString('de-DE')}</p>
+                                <p style="font-size: 0.9em; color: rgba(224, 224, 224, 0.7);">${msg.customerMessage.substring(0, 100)}${msg.customerMessage.length > 100 ? '...' : ''}</p>
+                            </div>
+                        `;
+                        }).join('');
+                    } else {
+                        recentMessages.innerHTML = '<p style="color: rgba(224, 224, 224, 0.7);">Keine Nachrichten gefunden</p>';
+                    }
+                }
+            } catch (error) {
+                console.error('Fehler beim Laden der Statistiken:', error);
+            }
+        }
+
+        // Users
+        async function loadUsers() {
+            try {
+                const response = await apiCall('/api/v1/users', 'GET');
+                if (response && response.users) {
+                    const list = document.getElementById('usersList');
+                    list.innerHTML = response.users.map(user => `
+                        <div class="user-item">
+                            <h3>${user.email}</h3>
+                            <p>Rolle: ${user.role || 'User'}</p>
+                            <button class="btn btn-secondary" onclick="deleteUser('${user.id}')">Löschen</button>
+                        </div>
+                    `).join('');
+                }
+            } catch (error) {
+                console.error('Fehler beim Laden der Benutzer:', error);
+            }
+        }
+
+        function showAddUserModal() {
+            document.getElementById('addUserModal').classList.add('active');
+        }
+
+        function closeAddUserModal() {
+            document.getElementById('addUserModal').classList.remove('active');
+            document.getElementById('newUserEmail').value = '';
+            document.getElementById('newUserPassword').value = '';
+        }
+
+        async function createUserFromModal() {
+            const email = document.getElementById('newUserEmail').value.trim();
+            const password = document.getElementById('newUserPassword').value.trim();
+
+            if (!email || !password) {
+                alert('Bitte fülle alle Felder aus.');
+                return;
+            }
+
+            try {
+                const response = await apiCall('/api/v1/users', 'POST', { email, password });
+                if (response) {
+                    closeAddUserModal();
+                    await loadUsers();
+                    alert('Benutzer erfolgreich erstellt!');
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Erstellen des Benutzers.');
+            }
+        }
+
+        async function deleteUser(userId) {
+            if (!confirm('Möchtest du diesen Benutzer wirklich löschen?')) return;
+
+            try {
+                const response = await apiCall(`/api/v1/users/${userId}`, 'DELETE');
+                if (response) {
+                    await loadUsers();
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Löschen.');
+            }
+        }
+
+        // API Call helper
+        async function apiCall(endpoint, method = 'GET', data = null) {
+            try {
+                const token = localStorage.getItem('token');
+                const options = {
+                    method,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                };
+
+                // Füge Token nur hinzu, wenn vorhanden
+                if (token) {
+                    options.headers['Authorization'] = `Bearer ${token}`;
+                }
+
+                if (data && method !== 'GET') {
+                    options.body = JSON.stringify(data);
+                }
+
+                const response = await fetch(`${API_BASE}${endpoint}`, options);
+                
+                if (!response.ok) {
+                    // Bei 401-Fehler, versuche ohne Token (falls SKIP_AUTH aktiv ist)
+                    if (response.status === 401 && token) {
+                        console.warn('401 Fehler mit Token, versuche ohne Token...');
+                        delete options.headers['Authorization'];
+                        const retryResponse = await fetch(`${API_BASE}${endpoint}`, options);
+                        if (retryResponse.ok) {
+                            const contentType = retryResponse.headers.get('content-type');
+                            if (contentType && contentType.includes('application/json')) {
+                                return await retryResponse.json();
+                            }
+                            return await retryResponse.text();
+                        }
+                    }
+                    const errorText = await response.text();
+                    console.error(`API Fehler ${response.status}:`, errorText);
+                    throw new Error(`HTTP ${response.status}: ${errorText}`);
+                }
+
+                const contentType = response.headers.get('content-type');
+                if (contentType && contentType.includes('application/json')) {
+                    return await response.json();
+                }
+                return await response.text();
+            } catch (error) {
+                console.error('API Call Fehler:', error);
+                throw error;
+            }
+        }
+
+        // Event Delegation für Edit/Delete Buttons (funktioniert auch nach dynamischem Laden)
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('edit-situation-btn')) {
+                const name = e.target.getAttribute('data-situation-name');
+                const response = e.target.getAttribute('data-situation-response');
+                if (name && response !== null) {
+                    editSituationRule(name, response);
+                }
+            } else if (e.target.classList.contains('delete-situation-btn')) {
+                const name = e.target.getAttribute('data-situation-name');
+                if (name) {
+                    deleteSituation(name);
+                }
+            }
+        });
+
+        // Feedback Management
+        let allFeedbacks = [];
+        let currentFeedbackFilter = 'all';
+
+        async function loadFeedback() {
+            try {
+                const response = await apiCall('/api/v1/feedback', 'GET');
+                if (response && response.feedbacks) {
+                    allFeedbacks = response.feedbacks;
+                    displayFeedback();
+                } else {
+                    allFeedbacks = [];
+                    displayFeedback();
+                }
+            } catch (error) {
+                console.error('Fehler beim Laden der Feedback-Daten:', error);
+                allFeedbacks = [];
+                displayFeedback();
+            }
+        }
+
+        function displayFeedback() {
+            const list = document.getElementById('feedbackList');
+            if (!list) return;
+
+            // 🚨 WICHTIG: Berechne Anzahl pro Status und aktualisiere Buttons
+            const countAll = allFeedbacks.length;
+            const countPending = allFeedbacks.filter(f => f.status === 'pending').length;
+            const countGood = allFeedbacks.filter(f => f.status === 'good').length;
+            const countEdited = allFeedbacks.filter(f => f.status === 'edited').length;
+            
+            // Aktualisiere Button-Texte mit Zahlen
+            const filterAllBtn = document.getElementById('filter-all');
+            const filterPendingBtn = document.getElementById('filter-pending');
+            const filterGoodBtn = document.getElementById('filter-good');
+            const filterEditedBtn = document.getElementById('filter-edited');
+            
+            if (filterAllBtn) filterAllBtn.textContent = `Alle (${countAll})`;
+            if (filterPendingBtn) filterPendingBtn.textContent = `Ausstehend (${countPending})`;
+            if (filterGoodBtn) filterGoodBtn.textContent = `✅ Gut (${countGood})`;
+            if (filterEditedBtn) filterEditedBtn.textContent = `✏️ Bearbeitet (${countEdited})`;
+
+            // Filtere nach Status
+            let filtered = allFeedbacks;
+            if (currentFeedbackFilter !== 'all') {
+                filtered = allFeedbacks.filter(f => f.status === currentFeedbackFilter);
+            }
+
+            // Filtere nach Suchbegriff
+            const searchTerm = document.getElementById('searchFeedback')?.value?.toLowerCase() || '';
+            if (searchTerm) {
+                filtered = filtered.filter(f => 
+                    (f.chatId && f.chatId.toLowerCase().includes(searchTerm)) ||
+                    (f.customerMessage && f.customerMessage.toLowerCase().includes(searchTerm)) ||
+                    (f.aiResponse && f.aiResponse.toLowerCase().includes(searchTerm)) ||
+                    (f.editedResponse && f.editedResponse.toLowerCase().includes(searchTerm))
+                );
+            }
+
+            if (filtered.length === 0) {
+                list.innerHTML = '<p style="color: rgba(224, 224, 224, 0.7); text-align: center; padding: 20px;">Keine Feedback-Einträge gefunden.</p>';
+                return;
+            }
+
+            list.innerHTML = filtered.map(feedback => {
+                const statusBadge = {
+                    'pending': '<span style="color: #ffaa00; font-weight: 600;">⏳ Ausstehend</span>',
+                    'good': '<span style="color: #00ff64; font-weight: 600;">✅ Gut</span>',
+                    'edited': '<span style="color: #00d4ff; font-weight: 600;">✏️ Bearbeitet</span>'
+                }[feedback.status] || '';
+
+                const timestamp = feedback.timestamp ? new Date(feedback.timestamp).toLocaleString('de-DE') : 'Unbekannt';
+                const platform = feedback.platform || 'unknown';
+                const chatId = feedback.chatId || 'Keine Chat-ID';
+
+                const isASA = feedback.isASA === true;
+                const asaBadge = isASA ? '<span style="color: #ff6b9d; font-weight: 600; margin-left: 10px;">📨 ASA</span>' : '';
+                
+                // Variationen-Status anzeigen
+                const variationsCount = feedback.variationsGeneratedCount || 0;
+                const variationsStatus = variationsCount > 0 
+                    ? `<div style="margin-top: 10px; padding: 8px; background: rgba(157, 78, 221, 0.15); border-radius: 5px; border-left: 3px solid #9d4edd;">
+                            <strong style="color: #9d4edd; font-size: 0.9em;">🎨 Variationen:</strong>
+                            <div style="font-size: 0.85em; color: rgba(224, 224, 224, 0.8); margin-top: 5px;">
+                                ${variationsCount} Variation${variationsCount !== 1 ? 'en' : ''} bereits generiert
+                                ${feedback.variationsGeneratedAt ? ` (zuletzt: ${new Date(feedback.variationsGeneratedAt).toLocaleString('de-DE')})` : ''}
+                            </div>
+                        </div>`
+                    : `<div style="margin-top: 10px; padding: 8px; background: rgba(255, 170, 0, 0.1); border-radius: 5px; border-left: 3px solid #ffaa00;">
+                            <strong style="color: #ffaa00; font-size: 0.9em;">🎨 Variationen:</strong>
+                            <div style="font-size: 0.85em; color: rgba(224, 224, 224, 0.8); margin-top: 5px;">
+                                Noch keine Variationen generiert
+                            </div>
+                        </div>`;
+                
+                // Kontext-Informationen formatieren
+                let contextHtml = '';
+                if (feedback.context) {
+                    const ctx = feedback.context;
+                    const contextParts = [];
+                    
+                    if (ctx.customerInfo) {
+                        if (ctx.customerInfo.age) contextParts.push(`Kunde: Alter ${ctx.customerInfo.age}`);
+                        if (ctx.customerInfo.city) contextParts.push(`Kunde: ${ctx.customerInfo.city}`);
+                    }
+                    if (ctx.moderatorInfo) {
+                        if (ctx.moderatorInfo.city) contextParts.push(`Fake: ${ctx.moderatorInfo.city}`);
+                    }
+                    if (ctx.sessionStart) {
+                        const daysSince = Math.floor((Date.now() - new Date(ctx.sessionStart).getTime()) / (1000 * 60 * 60 * 24));
+                        contextParts.push(`Erstkontakt: vor ${daysSince} Tagen`);
+                    }
+                    if (ctx.customerNotes) contextParts.push(`Logbuch Kunde: vorhanden`);
+                    if (ctx.moderatorNotes) contextParts.push(`Logbuch Fake: vorhanden`);
+                    
+                    if (contextParts.length > 0) {
+                        contextHtml = `
+                            <div style="margin-top: 10px; padding: 8px; background: rgba(0, 212, 255, 0.1); border-radius: 5px; border-left: 3px solid #00d4ff;">
+                                <strong style="color: #00d4ff; font-size: 0.9em;">📋 Kontext:</strong>
+                                <div style="font-size: 0.85em; color: rgba(224, 224, 224, 0.8); margin-top: 5px;">
+                                    ${contextParts.join(' • ')}
+                                </div>
+                            </div>
+                        `;
+                    }
+                }
+                
+                return `
+                    <div class="conversation-item" data-feedback-id="${feedback.id}" data-status="${feedback.status}">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <div>
+                                <h3 style="margin: 0 0 5px 0;">${statusBadge}${asaBadge} - ${platform} - Chat-ID: ${chatId}</h3>
+                                <p style="color: rgba(224, 224, 224, 0.6); font-size: 0.85em; margin: 0;">${timestamp}</p>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 15px; padding: 10px; background: rgba(0, 0, 0, 0.3); border-radius: 6px;">
+                            ${isASA ? `
+                                <p style="margin: 0 0 8px 0; color: rgba(224, 224, 224, 0.6); font-size: 0.9em; font-style: italic;">📨 ASA-Fall: Kunden-Nachricht und letzte Moderator-Nachricht sind irrelevant (nicht angezeigt)</p>
+                            ` : `
+                            ${feedback.lastModeratorMessage ? `
+                                <p style="margin: 0 0 8px 0;"><strong style="color: #9d4edd;">Letzte Moderator-Nachricht:</strong> ${escapeHtml(feedback.lastModeratorMessage)}</p>
+                                <hr style="border: none; border-top: 1px solid rgba(224, 224, 224, 0.2); margin: 8px 0;">
+                            ` : ''}
+                            <p style="margin: 0 0 8px 0;"><strong style="color: #00ff64;">Kunde:</strong> ${escapeHtml(feedback.customerMessage || '')}</p>
+                            `}
+                            <p style="margin: 0;"><strong style="color: #00d4ff;">KI-Antwort:</strong> ${escapeHtml(feedback.aiResponse || '')}</p>
+                            ${feedback.editedResponse ? `<p style="margin: 10px 0 0 0;"><strong style="color: #ffaa00;">Bearbeitete Antwort:</strong> ${escapeHtml(feedback.editedResponse)}</p>` : ''}
+                            ${feedback.reasoning ? `<p style="margin: 10px 0 0 0;"><strong style="color: #00d4ff;">💡 Begründung:</strong> ${escapeHtml(feedback.reasoning)}</p>` : ''}
+                            ${variationsStatus}
+                            ${contextHtml}
+                        </div>
+                        <div id="variations-${feedback.id}" style="display: none; margin-bottom: 15px; padding: 10px; background: rgba(0, 212, 255, 0.05); border-radius: 6px; border: 1px solid rgba(0, 212, 255, 0.3);">
+                            <!-- Variationen werden hier dynamisch eingefügt -->
+                        </div>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            ${feedback.status === 'pending' ? `
+                                <button class="btn" onclick="markFeedbackAsGood('${feedback.id}')" style="background: linear-gradient(135deg, #00ff64 0%, #00cc50 100%); border-color: #00ff64;">
+                                    ✅ Als gut markieren
+                                </button>
+                                <button class="btn" onclick="editFeedback('${feedback.id}')" style="background: linear-gradient(135deg, #ffaa00 0%, #ff8800 100%); border-color: #ffaa00;">
+                                    ✏️ Bearbeiten
+                                </button>
+                            ` : ''}
+                            ${feedback.status === 'good' || feedback.status === 'edited' ? `
+                                <button class="btn" onclick="generateVariations('${feedback.id}')" style="background: linear-gradient(135deg, #9d4edd 0%, #7b2cbf 100%); border-color: #9d4edd;">
+                                    🎨 Variationen generieren
+                                </button>
+                                <button class="btn btn-secondary" onclick="resetFeedbackStatus('${feedback.id}')">
+                                    ↶ Zurücksetzen
+                                </button>
+                            ` : ''}
+                            ${feedback.status === 'edited' ? `
+                                <button class="btn" onclick="editFeedback('${feedback.id}')" style="background: linear-gradient(135deg, #ffaa00 0%, #ff8800 100%); border-color: #ffaa00;">
+                                    ✏️ Erneut bearbeiten
+                                </button>
+                            ` : ''}
+                            <button class="btn btn-secondary" onclick="deleteFeedback('${feedback.id}')" style="background: linear-gradient(135deg, #ff4444 0%, #cc0000 100%); border-color: #ff4444;">
+                                🗑️ Löschen
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function filterFeedbackByStatus(status) {
+            currentFeedbackFilter = status;
+            
+            // Aktualisiere Button-Highlighting
+            document.querySelectorAll('#filter-all, #filter-pending, #filter-good, #filter-edited').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            const activeBtn = document.getElementById(`filter-${status === 'all' ? 'all' : status}`);
+            if (activeBtn) activeBtn.classList.add('active');
+            
+            displayFeedback();
+        }
+
+        function filterFeedback() {
+            displayFeedback();
+        }
+
+        async function markFeedbackAsGood(feedbackId) {
+            try {
+                const response = await apiCall(`/api/v1/feedback/${feedbackId}`, 'PUT', { status: 'good' });
+                if (response) {
+                    alert('✅ Feedback als gut markiert! Die Antwort wurde automatisch zu den Training-Daten hinzugefügt.');
+                    await loadFeedback();
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Markieren des Feedbacks.');
+            }
+        }
+
+        async function editFeedback(feedbackId) {
+            const feedback = allFeedbacks.find(f => f.id === feedbackId);
+            if (!feedback) {
+                alert('Feedback nicht gefunden.');
+                return;
+            }
+
+            // Erstelle Modal für Feedback-Bearbeitung
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.id = 'editFeedbackModal';
+            modal.style.display = 'block';
+            modal.innerHTML = `
+                <div class="modal-content" style="max-width: 800px;">
+                    <h2>✏️ Feedback bearbeiten</h2>
+                    <div class="form-group">
+                        <label for="editFeedbackResponse">Bearbeitete KI-Antwort:</label>
+                        <textarea id="editFeedbackResponse" placeholder="Bearbeite die KI-Antwort..." style="min-height: 150px;">${escapeHtml(feedback.editedResponse || feedback.aiResponse || '')}</textarea>
+                        <div id="editFeedbackResponseCounter" class="char-counter">0 Zeichen</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="editFeedbackReasoning">💡 Begründung (optional):</label>
+                        <textarea id="editFeedbackReasoning" placeholder="Warum ist diese Antwort besser?" style="min-height: 80px;">${escapeHtml(feedback.reasoning || '')}</textarea>
+                        <div id="editFeedbackReasoningCounter" class="char-counter">0 Zeichen</div>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" class="btn" onclick="saveEditedFeedback('${feedbackId}')">💾 Speichern</button>
+                        <button type="button" class="btn btn-secondary" onclick="closeEditFeedbackModal()">Abbrechen</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            
+            // Initialisiere Zeichenzähler
+            const responseField = document.getElementById('editFeedbackResponse');
+            const reasoningField = document.getElementById('editFeedbackReasoning');
+            const responseCounter = document.getElementById('editFeedbackResponseCounter');
+            const reasoningCounter = document.getElementById('editFeedbackReasoningCounter');
+            
+            const updateResponseCounter = () => {
+                const length = responseField.value.length;
+                responseCounter.textContent = `${length} Zeichen`;
+                responseCounter.classList.remove('warning', 'error');
+                if (length < 120) {
+                    responseCounter.classList.add('error');
+                } else if (length < 150) {
+                    responseCounter.classList.add('warning');
+                }
+            };
+            
+            const updateReasoningCounter = () => {
+                const length = reasoningField.value.length;
+                reasoningCounter.textContent = `${length} Zeichen`;
+            };
+            
+            responseField.addEventListener('input', updateResponseCounter);
+            responseField.addEventListener('keyup', updateResponseCounter);
+            reasoningField.addEventListener('input', updateReasoningCounter);
+            reasoningField.addEventListener('keyup', updateReasoningCounter);
+            
+            // Initiale Anzeige
+            updateResponseCounter();
+            updateReasoningCounter();
+        }
+
+        function closeEditFeedbackModal() {
+            const modal = document.getElementById('editFeedbackModal');
+            if (modal) {
+                modal.remove();
+            }
+        }
+
+        async function saveEditedFeedback(feedbackId) {
+            const responseField = document.getElementById('editFeedbackResponse');
+            const reasoningField = document.getElementById('editFeedbackReasoning');
+            
+            if (!responseField || !responseField.value.trim()) {
+                alert('Die bearbeitete Antwort darf nicht leer sein.');
+                return;
+            }
+
+            try {
+                const payload = {
+                    status: 'edited',
+                    editedResponse: responseField.value.trim()
+                };
+                
+                if (reasoningField && reasoningField.value.trim()) {
+                    payload.reasoning = reasoningField.value.trim();
+                }
+                
+                const response = await apiCall(`/api/v1/feedback/${feedbackId}`, 'PUT', payload);
+                if (response) {
+                    alert('✏️ Feedback bearbeitet! Die bearbeitete Antwort wurde automatisch zu den Training-Daten hinzugefügt.');
+                    closeEditFeedbackModal();
+                    await loadFeedback();
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Bearbeiten des Feedbacks.');
+            }
+        }
+
+        async function resetFeedbackStatus(feedbackId) {
+            if (!confirm('Möchtest du den Status wirklich zurücksetzen? Die Antwort wird aus den Training-Daten entfernt.')) return;
+
+            try {
+                const response = await apiCall(`/api/v1/feedback/${feedbackId}`, 'PUT', {
+                    status: 'pending',
+                    editedResponse: null
+                });
+                if (response) {
+                    await loadFeedback();
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Zurücksetzen des Feedbacks.');
+            }
+        }
+
+        async function deleteFeedback(feedbackId) {
+            if (!confirm('Möchtest du dieses Feedback wirklich löschen?')) return;
+
+            try {
+                const response = await apiCall(`/api/v1/feedback/${feedbackId}`, 'DELETE');
+                if (response) {
+                    await loadFeedback();
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('Fehler beim Löschen des Feedbacks.');
+            }
+        }
+
+        async function generateVariations(feedbackId) {
+            const variationsDiv = document.getElementById(`variations-${feedbackId}`);
+            if (!variationsDiv) return;
+
+            // Zeige Lade-Indikator
+            variationsDiv.style.display = 'block';
+            variationsDiv.innerHTML = '<p style="color: #00d4ff;">🔄 Generiere Variationen...</p>';
+
+            try {
+                // Lade Situationen, falls noch nicht geladen
+                if (!currentRules || !currentRules.situationalResponses) {
+                    try {
+                        const rulesResponse = await apiCall('/api/v1/rules', 'GET');
+                        if (rulesResponse) {
+                            currentRules = rulesResponse;
+                        }
+                    } catch (error) {
+                        console.error('Fehler beim Laden der Regeln:', error);
+                    }
+                }
+                
+                const response = await apiCall(`/api/v1/feedback/${feedbackId}/generate-variations`, 'POST');
+                if (response && response.variations) {
+                    displayVariations(feedbackId, response.variations, response.customerMessage, response.originalMessage);
+                } else {
+                    variationsDiv.innerHTML = '<p style="color: #ff4444;">❌ Fehler beim Generieren der Variationen.</p>';
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                variationsDiv.innerHTML = `<p style="color: #ff4444;">❌ Fehler: ${error.message || 'Unbekannter Fehler'}</p>`;
+            }
+        }
+
+        function displayVariations(feedbackId, variations, customerMessage, originalMessage) {
+            const variationsDiv = document.getElementById(`variations-${feedbackId}`);
+            if (!variationsDiv) return;
+
+            // Speichere Variationen für spätere Verwendung
+            window[`variations_${feedbackId}`] = variations;
+
+            // Lade Situationen für Dropdown
+            let situationOptions = '<option value="allgemein">Allgemein</option>';
+            if (currentRules && currentRules.situationalResponses) {
+                Object.keys(currentRules.situationalResponses).forEach(situation => {
+                    situationOptions += `<option value="${situation}">${situation}</option>`;
+                });
+            }
+            
+            variationsDiv.innerHTML = `
+                <h4 style="color: #00d4ff; margin: 0 0 10px 0;">🎨 Generierte Variationen (4):</h4>
+                <p style="font-size: 0.85em; color: rgba(224, 224, 224, 0.7); margin: 0 0 15px 0;">
+                    Wähle die Variationen aus, die zu Training-Daten hinzugefügt werden sollen.
+                </p>
+                <div style="margin-bottom: 15px; padding: 12px; background: rgba(0, 212, 255, 0.1); border-radius: 6px; border: 1px solid rgba(0, 212, 255, 0.3);">
+                    <label style="color: #00d4ff; font-weight: 600; margin-bottom: 8px; display: block;">Situation auswählen:</label>
+                    <select id="situation-select-${feedbackId}" style="width: 100%; padding: 8px; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(0, 212, 255, 0.5); border-radius: 4px; color: #e0e0e0; font-size: 0.9em;">
+                        ${situationOptions}
+                    </select>
+                    <p style="font-size: 0.8em; color: rgba(224, 224, 224, 0.6); margin: 8px 0 0 0;">
+                        Wähle die Situation, die für alle ausgewählten Variationen verwendet werden soll.
+                    </p>
+                </div>
+                ${variations.map((variation, index) => {
+                    const variationId = `variation_${feedbackId}_${index}`;
+                    return `
+                        <div style="margin-bottom: 15px; padding: 12px; background: rgba(0, 0, 0, 0.4); border-radius: 6px; border: 1px solid rgba(0, 212, 255, 0.2);">
+                            <div style="display: flex; align-items: start; gap: 10px; margin-bottom: 10px;">
+                                <input type="checkbox" id="${variationId}_checkbox" checked style="margin-top: 5px;">
+                                <div style="flex: 1;">
+                                    <div style="font-size: 0.85em; color: rgba(224, 224, 224, 0.6); margin-bottom: 5px;">
+                                        Variation ${index + 1} - ${variation.style || 'Standard'}
+                                    </div>
+                                    <div id="${variationId}_text" style="color: #00d4ff; white-space: pre-wrap;">${escapeHtml(variation.text)}</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 5px;">
+                                <button class="btn btn-secondary" onclick="editVariation('${feedbackId}', ${index})" style="font-size: 0.85em; padding: 5px 10px;">
+                                    ✏️ Bearbeiten
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                }).join('')}
+                <div style="display: flex; gap: 10px; margin-top: 15px;">
+                    <button class="btn" onclick="addSelectedVariations('${feedbackId}')" style="background: linear-gradient(135deg, #00ff64 0%, #00cc50 100%); border-color: #00ff64;">
+                        ✅ Ausgewählte zu Training-Daten hinzufügen
+                    </button>
+                    <button class="btn btn-secondary" onclick="closeVariations('${feedbackId}')">
+                        ✕ Schließen
+                    </button>
+                </div>
+            `;
+        }
+
+        function editVariation(feedbackId, index) {
+            const variations = window[`variations_${feedbackId}`];
+            if (!variations || !variations[index]) return;
+
+            const currentText = variations[index].text;
+            const editedText = prompt('Bearbeite die Variation:', currentText);
+            
+            if (editedText === null) return; // Benutzer hat abgebrochen
+            if (!editedText.trim()) {
+                alert('Die Variation darf nicht leer sein.');
+                return;
+            }
+
+            // Aktualisiere Variation
+            variations[index].editedText = editedText.trim();
+            window[`variations_${feedbackId}`] = variations;
+
+            // Aktualisiere Anzeige
+            const textDiv = document.getElementById(`variation_${feedbackId}_${index}_text`);
+            if (textDiv) {
+                textDiv.textContent = editedText.trim();
+                textDiv.style.color = '#ffaa00'; // Zeige an, dass es bearbeitet wurde
+            }
+        }
+
+        async function addSelectedVariations(feedbackId) {
+            const variations = window[`variations_${feedbackId}`];
+            if (!variations) {
+                alert('Keine Variationen gefunden.');
+                return;
+            }
+
+            // Hole ausgewählte Situation
+            const situationSelect = document.getElementById(`situation-select-${feedbackId}`);
+            if (!situationSelect) {
+                alert('Situation-Auswahl nicht gefunden. Bitte Seite neu laden.');
+                return;
+            }
+            const selectedSituation = situationSelect.value || 'allgemein';
+            console.log(`📋 [Frontend] Ausgewählte Situation: "${selectedSituation}"`);
+            console.log(`📋 [Frontend] Alle verfügbaren Optionen:`, Array.from(situationSelect.options).map(opt => opt.value));
+
+            // Sammle ausgewählte Variationen
+            const selectedVariations = [];
+            variations.forEach((variation, index) => {
+                const checkbox = document.getElementById(`variation_${feedbackId}_${index}_checkbox`);
+                if (checkbox && checkbox.checked) {
+                    selectedVariations.push({
+                        text: variation.text,
+                        editedText: variation.editedText || null
+                    });
+                }
+            });
+
+            if (selectedVariations.length === 0) {
+                alert('Bitte wähle mindestens eine Variation aus.');
+                return;
+            }
+
+            try {
+                const response = await apiCall(`/api/v1/feedback/${feedbackId}/add-variations`, 'POST', {
+                    variations: selectedVariations,
+                    situation: selectedSituation // Sende ausgewählte Situation mit
+                });
+                
+                if (response && response.success) {
+                    alert(`✅ ${response.addedCount} Variationen wurden zu Training-Daten hinzugefügt (Situation: ${selectedSituation})!`);
+                    closeVariations(feedbackId);
+                    await loadFeedback(); // Lade Feedback neu, um Variationen-Status zu aktualisieren
+                } else {
+                    alert('Fehler beim Hinzufügen der Variationen.');
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert(`Fehler beim Hinzufügen der Variationen: ${error.message || 'Unbekannter Fehler'}`);
+            }
+        }
+
+        function closeVariations(feedbackId) {
+            const variationsDiv = document.getElementById(`variations-${feedbackId}`);
+            if (variationsDiv) {
+                variationsDiv.style.display = 'none';
+                variationsDiv.innerHTML = '';
+            }
+            delete window[`variations_${feedbackId}`];
+        }
+
+        // ============================================
+        // FINE-TUNING FUNCTIONS
+        // ============================================
+        async function loadFineTuningStatus() {
+            try {
+                const status = await apiCall('/api/v1/fine-tuning/status', 'GET');
+                const statusDiv = document.getElementById('fineTuningStatusContent');
+                
+                if (!statusDiv) return;
+                
+                let statusHtml = '';
+                statusHtml += `<p style="margin-bottom: 10px;"><strong style="color: #00d4ff;">Status:</strong> <span style="color: ${getStatusColor(status.status)}">${getStatusText(status.status)}</span></p>`;
+                
+                if (status.modelId) {
+                    statusHtml += `<p style="margin-bottom: 10px;"><strong style="color: #00d4ff;">Model-ID:</strong> <code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px;">${status.modelId}</code></p>`;
+                }
+                
+                if (status.lastTrained) {
+                    const date = new Date(status.lastTrained);
+                    statusHtml += `<p style="margin-bottom: 10px;"><strong style="color: #00d4ff;">Letztes Training:</strong> ${date.toLocaleString('de-DE')}</p>`;
+                }
+                
+                if (status.currentJobId) {
+                    statusHtml += `<p style="margin-bottom: 10px;"><strong style="color: #00d4ff;">Aktueller Job:</strong> <code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px;">${status.currentJobId}</code></p>`;
+                }
+                
+                if (status.error) {
+                    statusHtml += `<p style="margin-top: 10px; color: #ff4444;"><strong>Fehler:</strong> ${status.error}</p>`;
+                }
+                
+                statusDiv.innerHTML = statusHtml;
+                
+                // Auto-Refresh wenn Job läuft
+                if (status.status === 'running' || status.status === 'queued' || status.status === 'validating_files') {
+                    setTimeout(loadFineTuningStatus, 10000); // Alle 10 Sekunden prüfen
+                }
+            } catch (error) {
+                console.error('Fehler beim Laden des Fine-Tuning-Status:', error);
+                const statusDiv = document.getElementById('fineTuningStatusContent');
+                if (statusDiv) {
+                    statusDiv.innerHTML = `<p style="color: #ff4444;">Fehler beim Laden: ${error.message}</p>`;
+                }
+            }
+        }
+
+        async function loadFineTuningStats() {
+            try {
+                const stats = await apiCall('/api/v1/fine-tuning/stats', 'GET');
+                const statsDiv = document.getElementById('fineTuningStatsContent');
+                
+                if (!statsDiv) return;
+                
+                let statsHtml = '';
+                statsHtml += `<p style="margin-bottom: 8px;"><strong style="color: #00d4ff;">Gesamt:</strong> ${stats.total} perfekte Beispiele</p>`;
+                statsHtml += `<p style="margin-bottom: 8px;"><strong style="color: #00d4ff;">Aus Feedback (good):</strong> ${stats.fromFeedbackGood}</p>`;
+                statsHtml += `<p style="margin-bottom: 8px;"><strong style="color: #00d4ff;">Aus Feedback (edited):</strong> ${stats.fromFeedbackEdited}</p>`;
+                statsHtml += `<p style="margin-bottom: 8px;"><strong style="color: #00d4ff;">Aus Training-Daten:</strong> ${stats.fromTrainingData}</p>`;
+                statsHtml += `<p style="margin-bottom: 8px;"><strong style="color: #00d4ff;">Aus ASA-Beispielen:</strong> ${stats.fromASA}</p>`;
+                
+                if (stats.excluded) {
+                    statsHtml += `<p style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255, 170, 0, 0.3);"><strong style="color: #ffaa00;">⚠️ Ausgeschlossen:</strong> ${stats.excluded.total} Beispiele</p>`;
+                    statsHtml += `<p style="margin-bottom: 4px; font-size: 0.9em; color: rgba(224, 224, 224, 0.8);">- ${stats.excluded.tooShort} zu kurz (<150 Zeichen)</p>`;
+                    statsHtml += `<p style="margin-bottom: 4px; font-size: 0.9em; color: rgba(224, 224, 224, 0.8);">- ${stats.excluded.duplicate} dupliziert</p>`;
+                    statsHtml += `<p style="margin-bottom: 8px; font-size: 0.9em; color: rgba(224, 224, 224, 0.8);">- ${stats.excluded.noMessage} ohne Nachricht</p>`;
+                }
+                
+                statsHtml += `<p style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(0, 212, 255, 0.3);"><strong style="color: #00d4ff;">Nächste Retrain bei:</strong> ${stats.nextRetrainAt} Beispielen</p>`;
+                statsHtml += `<p style="margin-bottom: 0;"><strong style="color: #00d4ff;">Noch benötigt:</strong> ${stats.examplesNeeded} Beispiele</p>`;
+                
+                statsDiv.innerHTML = statsHtml;
+            } catch (error) {
+                console.error('Fehler beim Laden der Fine-Tuning-Statistiken:', error);
+                const statsDiv = document.getElementById('fineTuningStatsContent');
+                if (statsDiv) {
+                    statsDiv.innerHTML = `<p style="color: #ff4444;">Fehler beim Laden: ${error.message}</p>`;
+                }
+            }
+        }
+
+        async function loadExcludedExamples() {
+            const excludedDiv = document.getElementById('excludedExamples');
+            const contentDiv = document.getElementById('excludedExamplesContent');
+            
+            if (!excludedDiv || !contentDiv) return;
+            
+            excludedDiv.style.display = 'block';
+            contentDiv.innerHTML = '<p style="color: rgba(224, 224, 224, 0.7);">Lade ausgeschlossene Beispiele...</p>';
+            
+            try {
+                const stats = await apiCall('/api/v1/fine-tuning/stats?includeExcluded=true', 'GET');
+                
+                if (!stats.excludedDetails) {
+                    contentDiv.innerHTML = '<p style="color: rgba(224, 224, 224, 0.7);">Keine ausgeschlossenen Beispiele gefunden.</p>';
+                    return;
+                }
+                
+                let html = '';
+                
+                // Zu kurze Beispiele
+                if (stats.excludedDetails.tooShort && stats.excludedDetails.tooShort.length > 0) {
+                    html += `<h4 style="color: #ffaa00; margin-top: 20px; margin-bottom: 10px;">📏 Zu kurz (<120 Zeichen): ${stats.excludedDetails.tooShort.length}</h4>`;
+                    stats.excludedDetails.tooShort.forEach((ex, idx) => {
+                        html += `<div style="margin-bottom: 15px; padding: 10px; background: rgba(0, 0, 0, 0.2); border-radius: 6px; border-left: 3px solid #ffaa00;">`;
+                        html += `<p style="margin-bottom: 5px; font-size: 0.85em; color: rgba(224, 224, 224, 0.7);"><strong>Quelle:</strong> ${ex.source} | <strong>Länge:</strong> ${ex.length} Zeichen</p>`;
+                        html += `<p style="margin-bottom: 5px;"><strong>Kunde:</strong> ${ex.customerMessage || '(leer)'}</p>`;
+                        html += `<p style="margin-bottom: 10px;"><strong>Nachricht:</strong> ${(ex.moderatorResponse || '').substring(0, 200)}${(ex.moderatorResponse || '').length > 200 ? '...' : ''}</p>`;
+                        html += `<button class="btn btn-secondary" onclick="extendExample(${idx}, 'tooShort')" style="font-size: 0.85em; padding: 5px 10px;">✏️ Bearbeiten & Verlängern</button>`;
+                        html += `</div>`;
+                    });
+                }
+                
+                // Duplizierte Beispiele
+                if (stats.excludedDetails.duplicate && stats.excludedDetails.duplicate.length > 0) {
+                    html += `<h4 style="color: #ffaa00; margin-top: 20px; margin-bottom: 10px;">🔄 Dupliziert: ${stats.excludedDetails.duplicate.length}</h4>`;
+                    html += `<p style="color: rgba(224, 224, 224, 0.7); font-size: 0.9em; margin-bottom: 10px;">Diese Beispiele wurden bereits verwendet (gleiche Nachricht).</p>`;
+                    stats.excludedDetails.duplicate.slice(0, 10).forEach((ex, idx) => {
+                        html += `<div style="margin-bottom: 10px; padding: 8px; background: rgba(0, 0, 0, 0.2); border-radius: 6px; border-left: 3px solid #888888;">`;
+                        html += `<p style="margin-bottom: 3px; font-size: 0.85em; color: rgba(224, 224, 224, 0.7);"><strong>Quelle:</strong> ${ex.source}</p>`;
+                        html += `<p style="margin-bottom: 0; font-size: 0.85em;">${(ex.moderatorResponse || '').substring(0, 150)}${(ex.moderatorResponse || '').length > 150 ? '...' : ''}</p>`;
+                        html += `</div>`;
+                    });
+                    if (stats.excludedDetails.duplicate.length > 10) {
+                        html += `<p style="color: rgba(224, 224, 224, 0.7); font-size: 0.85em;">... und ${stats.excludedDetails.duplicate.length - 10} weitere</p>`;
+                    }
+                }
+                
+                // Beispiele ohne Nachricht
+                if (stats.excludedDetails.noMessage && stats.excludedDetails.noMessage.length > 0) {
+                    html += `<h4 style="color: #ffaa00; margin-top: 20px; margin-bottom: 10px;">❌ Ohne Nachricht: ${stats.excludedDetails.noMessage.length}</h4>`;
+                    stats.excludedDetails.noMessage.forEach((ex, idx) => {
+                        html += `<div style="margin-bottom: 10px; padding: 8px; background: rgba(0, 0, 0, 0.2); border-radius: 6px; border-left: 3px solid #ff4444;">`;
+                        html += `<p style="margin-bottom: 3px; font-size: 0.85em; color: rgba(224, 224, 224, 0.7);"><strong>Quelle:</strong> ${ex.source}</p>`;
+                        html += `<p style="margin-bottom: 0; font-size: 0.85em;">Kunde: ${ex.customerMessage || '(leer)'}</p>`;
+                        html += `</div>`;
+                    });
+                }
+                
+                if (html === '') {
+                    html = '<p style="color: rgba(224, 224, 224, 0.7);">Keine ausgeschlossenen Beispiele gefunden.</p>';
+                }
+                
+                contentDiv.innerHTML = html;
+            } catch (error) {
+                console.error('Fehler beim Laden der ausgeschlossenen Beispiele:', error);
+                contentDiv.innerHTML = `<p style="color: #ff4444;">Fehler beim Laden: ${error.message}</p>`;
+            }
+        }
+
+        function extendExample(index, category) {
+            alert('Bearbeitungs-Funktion kommt noch. Du kannst die Beispiele direkt in den Training-Daten oder Feedbacks bearbeiten, um sie zu verlängern.');
+        }
+
+        async function startFineTuning() {
+            const button = document.getElementById('retrainButton');
+            if (!button) return;
+            
+            if (!confirm('Möchtest du das Model wirklich neu trainieren? Dies kann einige Minuten dauern und verursacht Kosten (~$0.008 pro 1K Tokens).')) {
+                return;
+            }
+            
+            button.disabled = true;
+            button.textContent = '⏳ Training wird gestartet...';
+            
+            try {
+                const result = await apiCall('/api/v1/fine-tuning/retrain', 'POST', {
+                    baseModel: 'gpt-3.5-turbo' // gpt-4o-mini ist nicht für Fine-Tuning verfügbar
+                });
+                
+                if (result && result.success) {
+                    alert(`✅ Fine-Tuning gestartet!\n\nJob-ID: ${result.jobId}\nBeispiele: ${result.examplesCount}\n\nDas Training kann einige Minuten dauern. Der Status wird automatisch aktualisiert.`);
+                    await loadFineTuningStatus();
+                    await loadFineTuningStats();
+                } else {
+                    alert(`Fehler: ${result?.error || 'Unbekannter Fehler'}`);
+                }
+            } catch (error) {
+                console.error('Fehler beim Starten des Fine-Tunings:', error);
+                alert(`Fehler beim Starten des Fine-Tunings: ${error.message || 'Unbekannter Fehler'}`);
+            } finally {
+                button.disabled = false;
+                button.textContent = '🚀 Model neu trainieren';
+            }
+        }
+
+        function getStatusColor(status) {
+            switch (status) {
+                case 'succeeded': return '#00ff00';
+                case 'running': return '#00d4ff';
+                case 'queued': return '#ffaa00';
+                case 'validating_files': return '#ffaa00';
+                case 'failed': return '#ff4444';
+                case 'cancelled': return '#888888';
+                default: return '#e0e0e0';
+            }
+        }
+
+        function getStatusText(status) {
+            switch (status) {
+                case 'succeeded': return '✅ Erfolgreich';
+                case 'running': return '⏳ Läuft';
+                case 'queued': return '⏳ In Warteschlange';
+                case 'validating_files': return '⏳ Validiere Dateien';
+                case 'failed': return '❌ Fehlgeschlagen';
+                case 'cancelled': return '❌ Abgebrochen';
+                case 'idle': return '💤 Bereit';
+                default: return status || 'Unbekannt';
+            }
+        }
+
+        // Zeichenzähler für alle Textfelder
+        function initCharCounters() {
+            try {
+                // Alle textareas und input[type="text"] finden
+                const textFields = document.querySelectorAll('textarea, input[type="text"]');
+                
+                textFields.forEach(field => {
+                    try {
+                        // Überspringe bereits initialisierte Felder
+                        if (field.dataset.charCounterInit) return;
+                        if (!field.parentNode) return; // Sicherheitsprüfung
+                        
+                        field.dataset.charCounterInit = 'true';
+                        
+                        // Prüfe ob bereits ein Counter existiert
+                        const existingCounter = field.parentNode.querySelector('.char-counter');
+                        if (existingCounter) return; // Bereits vorhanden
+                        
+                        // Erstelle Zeichenzähler-Element
+                        const counter = document.createElement('div');
+                        counter.className = 'char-counter';
+                        counter.id = `char-counter-${field.id || Math.random().toString(36).substr(2, 9)}`;
+                        
+                        // Füge Counter nach dem Feld ein
+                        field.parentNode.insertBefore(counter, field.nextSibling);
+                        
+                        // Update-Funktion
+                        const updateCounter = () => {
+                            try {
+                                const length = field.value ? field.value.length : 0;
+                                counter.textContent = `${length} Zeichen`;
+                                
+                                // Farben basierend auf Länge
+                                counter.classList.remove('warning', 'error');
+                                if (length < 120) {
+                                    counter.classList.add('error');
+                                } else if (length < 150) {
+                                    counter.classList.add('warning');
+                                }
+                            } catch (err) {
+                                console.error('Fehler beim Update des Zeichenzählers:', err);
+                            }
+                        };
+                        
+                        // Event Listener
+                        field.addEventListener('input', updateCounter);
+                        field.addEventListener('keyup', updateCounter);
+                        
+                        // Initiale Anzeige
+                        updateCounter();
+                    } catch (err) {
+                        console.error('Fehler beim Initialisieren eines Zeichenzählers:', err);
+                    }
+                });
+            } catch (err) {
+                console.error('Fehler in initCharCounters:', err);
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            // Lade initial nur die aktiven Tabs
+            loadRules();
+            loadTrainingData();
+            updateSituationSelect();
+            
+            // Initialisiere Zeichenzähler (sicher)
+            setTimeout(() => {
+                if (typeof initCharCounters === 'function') {
+                    try {
+                        initCharCounters();
+                    } catch (err) {
+                        console.error('Fehler bei initCharCounters:', err);
+                    }
+                }
+            }, 100);
+
+            // ASA Form Handler
+            const asaForm = document.getElementById('addASAForm');
+            if (asaForm) {
+                asaForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    addASAExample();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
