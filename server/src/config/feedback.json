@@ -11268,8 +11268,8 @@
       "chatId": "58310840",
       "customerMessage": "Ja mir geht es wieder besser, man hat mir die Hälfte von meiner Schilddrüse raus geschnitten.",
       "aiResponse": "Oh, das ist schon eine harte Nummer, was du da durchgemacht hast. Ich freue mich, dass es dir jetzt besser geht. Was sind denn deine Fantasien oder Vorlieben, die du jetzt ausleben möchtest?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Oh, und wie fühlst du dich denn jetzt aktuell?😕 Musst du denn jetzt auch täglich Tabletten nehmen? Ich kenne eine Person bei der das auch gemacht werden musste und die muss jetzt auch täglich Tabletten nehmen.",
+      "status": "edited",
       "platform": "viluu",
       "isASA": false,
       "usedExampleIds": [],
@@ -11285,7 +11285,11 @@
       },
       "lastModeratorMessage": "Oje, das tut mir natürlich sehr leid, was ist denn passiert gewesen? Ich bin sehr gut über die Feiertage gekommen. Geht es dir jetzt wieder besser?",
       "timestamp": "2026-01-16T13:45:31.899Z",
-      "updatedAt": "2026-01-16T13:45:31.899Z"
+      "updatedAt": "2026-01-19T14:58:16.525Z",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1768571269109_9kcypns8y",
