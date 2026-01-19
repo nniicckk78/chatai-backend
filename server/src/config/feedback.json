@@ -11842,8 +11842,8 @@
       "chatId": "58982037",
       "customerMessage": "muss bis 21:30 arbeiten dann hab ich Wochenende",
       "aiResponse": "Oh, ich verstehe, dass du bis 21:30 Uhr arbeiten musst. Danach hast du das Wochenende für dich, oder? Ich bin sicher, dass du dann etwas Entspannung brauchst. Was hast du für Pläne, wenn du frei hast?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Okay dann wünsche ich dir das die Zeit schön schnell vergeht und du schnell ins Wochenende starten kannst. Hast denn heute Abend noch etwas vor?",
+      "status": "edited",
       "platform": "viluu",
       "isASA": false,
       "usedExampleIds": [],
@@ -11859,7 +11859,11 @@
       },
       "lastModeratorMessage": "Oha, dann musst du also noch nach Feierabend arbeiten? Und Morgen dann also auch? 🤔",
       "timestamp": "2026-01-16T14:14:11.948Z",
-      "updatedAt": "2026-01-16T14:14:11.948Z"
+      "updatedAt": "2026-01-19T14:14:36.463Z",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1768572920204_g36mo1dqd",
