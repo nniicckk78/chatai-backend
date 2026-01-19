@@ -9647,8 +9647,8 @@
       "chatId": "59017114",
       "customerMessage": "hi",
       "aiResponse": "Ich bin gerade dabei, mich für den Abend zu entspannen. Hey, wie geht's dir? Wie geht es dir damit? Wie siehst du das? Was denkst du dazu?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Hey du. Schön von dir zu hören. Wie gehts dir und was machst du denn gerade so schönes?😊 Ich bin gerade ein bisschen am lernen.🙈",
+      "status": "edited",
       "platform": "viluu",
       "isASA": false,
       "context": {
@@ -9659,7 +9659,11 @@
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-01-13T15:08:04.813Z",
-      "updatedAt": "2026-01-13T15:08:04.813Z"
+      "updatedAt": "2026-01-19T19:05:11.434Z",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1768316949743_qshj79n5s",
