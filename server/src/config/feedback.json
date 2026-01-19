@@ -12045,8 +12045,8 @@
       "chatId": "34388127",
       "customerMessage": "also wieder kein date Vorschlag.  ok.",
       "aiResponse": "\"Ich verstehe deinen Frust, aber ich bin hier nicht für ein Date. Ich möchte einfach das Gespräch und den Austausch mit dir. Was sind denn deine Vorlieben, über die wir quatschen könnten? 😊\"",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Jetzt sei doch nicht so zu mir. Was habe ich dir denn getan? Du kannst doch auch einen Vorschlag machen oder wir planen einfach zusammen was?",
+      "status": "edited",
       "platform": "fpc",
       "isASA": false,
       "usedExampleIds": [
@@ -12072,7 +12072,11 @@
       },
       "lastModeratorMessage": "ja das ist mir schon bewusst, dass du da lebst. aber es hätte ja sein können dass du trotzdem mal vor ort bist.",
       "timestamp": "2026-01-19T19:08:47.423Z",
-      "updatedAt": "2026-01-19T19:08:47.423Z"
+      "updatedAt": "2026-01-19T19:11:24.166Z",
+      "situation": "Treffen/Termine",
+      "situations": [
+        "Treffen/Termine"
+      ]
     }
   ]
 }
