@@ -12035,6 +12035,40 @@
       "situations": [
         "allgemein"
       ]
+    },
+    {
+      "id": "feedback_1768849727423_1fve24mzs",
+      "chatId": "34388127",
+      "customerMessage": "also wieder kein date Vorschlag.  ok.",
+      "aiResponse": "\"Ich verstehe deinen Frust, aber ich bin hier nicht für ein Date. Ich möchte einfach das Gespräch und den Austausch mit dir. Was sind denn deine Vorlieben, über die wir quatschen könnten? 😊\"",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [
+        "training_461",
+        "training_154",
+        "training_159",
+        "training_218",
+        "training_103",
+        "training_66",
+        "training_161",
+        "training_385",
+        "training_152",
+        "training_158",
+        "training_67",
+        "training_204"
+      ],
+      "context": {
+        "detectedSituations": [],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "ja das ist mir schon bewusst, dass du da lebst. aber es hätte ja sein können dass du trotzdem mal vor ort bist."
+      },
+      "lastModeratorMessage": "ja das ist mir schon bewusst, dass du da lebst. aber es hätte ja sein können dass du trotzdem mal vor ort bist.",
+      "timestamp": "2026-01-19T19:08:47.423Z",
+      "updatedAt": "2026-01-19T19:08:47.423Z"
     }
   ]
 }
