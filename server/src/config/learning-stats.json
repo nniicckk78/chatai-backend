@@ -164,6 +164,10 @@
     },
     "Generische ASA (Neukunde)": {
       "würde ich": {
+        "count": 2,
+        "successRate": 0
+      },
+      "würde es": {
         "count": 1,
         "successRate": 0
       }
@@ -5396,73 +5400,73 @@
     "Generische ASA (Neukunde)": {
       "huhu": {
         "good": 1,
-        "bad": 12,
-        "lastUpdated": 1768848994772
+        "bad": 13,
+        "lastUpdated": 1768849061074
       },
       "bist": {
         "good": 2,
-        "bad": 9,
-        "lastUpdated": 1768848994772
+        "bad": 10,
+        "lastUpdated": 1768849061074
       },
       "noch": {
         "good": 1,
-        "bad": 14,
-        "lastUpdated": 1768848994772
+        "bad": 16,
+        "lastUpdated": 1768849061074
       },
       "würde": {
-        "good": 8,
-        "bad": 9,
-        "lastUpdated": 1768848994772
+        "good": 10,
+        "bad": 10,
+        "lastUpdated": 1768849061074
       },
       "mich": {
-        "good": 13,
-        "bad": 12,
-        "lastUpdated": 1768848994772
+        "good": 14,
+        "bad": 14,
+        "lastUpdated": 1768849061074
       },
       "freuen": {
-        "good": 7,
-        "bad": 9,
-        "lastUpdated": 1768848078903
+        "good": 8,
+        "bad": 10,
+        "lastUpdated": 1768849061074
       },
       "wenn": {
-        "good": 9,
-        "bad": 7,
-        "lastUpdated": 1768848240981
+        "good": 10,
+        "bad": 9,
+        "lastUpdated": 1768849061074
       },
       "dich": {
-        "good": 17,
-        "bad": 11,
-        "lastUpdated": 1768848240981
+        "good": 18,
+        "bad": 12,
+        "lastUpdated": 1768849061074
       },
       "mal": {
-        "good": 6,
-        "bad": 7,
-        "lastUpdated": 1768848240981
+        "good": 7,
+        "bad": 8,
+        "lastUpdated": 1768849061074
       },
       "melden": {
-        "good": 6,
-        "bad": 6,
-        "lastUpdated": 1768848994772
+        "good": 7,
+        "bad": 7,
+        "lastUpdated": 1768849061074
       },
       "könntest": {
         "good": 2,
-        "bad": 6,
-        "lastUpdated": 1768848078903
+        "bad": 7,
+        "lastUpdated": 1768849061074
       },
       "hast": {
-        "good": 7,
+        "good": 8,
         "bad": 4,
-        "lastUpdated": 1768837061292
+        "lastUpdated": 1768849061074
       },
       "interesse": {
-        "good": 4,
+        "good": 5,
         "bad": 1,
-        "lastUpdated": 1768837061292
+        "lastUpdated": 1768849061074
       },
       "mehr": {
-        "good": 11,
+        "good": 12,
         "bad": 2,
-        "lastUpdated": 1768848240981
+        "lastUpdated": 1768849061074
       },
       "wie": {
         "good": 3,
@@ -5470,8 +5474,9 @@
         "lastUpdated": 1768848994772
       },
       "hey": {
-        "good": 0,
-        "bad": 2
+        "good": 1,
+        "bad": 2,
+        "lastUpdated": 1768849061074
       },
       "hoffe": {
         "good": 1,
@@ -5490,8 +5495,8 @@
       },
       "was": {
         "good": 8,
-        "bad": 26,
-        "lastUpdated": 1768848994772
+        "bad": 27,
+        "lastUpdated": 1768849061074
       },
       "beschäftigt": {
         "good": 0,
@@ -5546,24 +5551,24 @@
         "lastUpdated": 1768848994772
       },
       "echt": {
-        "good": 3,
+        "good": 5,
         "bad": 1,
-        "lastUpdated": 1768836355829
+        "lastUpdated": 1768849061074
       },
       "würdest": {
-        "good": 4,
-        "bad": 4,
-        "lastUpdated": 1768848240981
+        "good": 5,
+        "bad": 5,
+        "lastUpdated": 1768849061074
       },
       "gerne": {
         "good": 1,
-        "bad": 4,
-        "lastUpdated": 1768848994772
+        "bad": 5,
+        "lastUpdated": 1768849061074
       },
       "machen": {
         "good": 1,
-        "bad": 4,
-        "lastUpdated": 1768848240981
+        "bad": 5,
+        "lastUpdated": 1768849061074
       },
       "läuft": {
         "good": 0,
@@ -5609,8 +5614,9 @@
         "lastUpdated": 1768836622429
       },
       "keine": {
-        "good": 3,
-        "bad": 0
+        "good": 4,
+        "bad": 0,
+        "lastUpdated": 1768849061074
       },
       "magst": {
         "good": 0,
@@ -5623,9 +5629,9 @@
         "lastUpdated": 1768848994772
       },
       "wieder": {
-        "good": 6,
+        "good": 7,
         "bad": 1,
-        "lastUpdated": 1768848078903
+        "lastUpdated": 1768849061074
       },
       "voll": {
         "good": 3,
@@ -5772,8 +5778,8 @@
       "total": 3
     },
     "Generische ASA (Neukunde)": {
-      "good": 14,
-      "total": 28
+      "good": 15,
+      "total": 30
     }
   },
   "responsePatterns": [
@@ -5817,6 +5823,20 @@
       "lastUsed": "2026-01-19T18:40:10.910Z"
     },
     {
+      "situation": "Generische ASA (Neukunde)",
+      "customerPattern": {
+        "keywords": "asa reaktivierung",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 17
+      },
+      "goodResponse": "Schade das ich bei dir schon so in die Vergessenheit geraten bin. Findest du mich denn nicht attraktiv oder ist dein Postfach hier so voll das meine Nachrichten unter gehen? Ich würde mich schon freue",
+      "successCount": 15,
+      "lastUsed": "2026-01-19T18:57:41.074Z",
+      "validatedSuccessRate": 1
+    },
+    {
       "situation": "Treffen/Termine",
       "customerPattern": {
         "keywords": "mareike frohes neues jahr würde gerne mich treffen habe heute",
@@ -5828,20 +5848,6 @@
       "goodResponse": "Hey Ingo, freut mich, von dir zu hören. Ich finde spontane Treffen auch aufregend. Was hast du denn im Kopf, wie wir die Zeit zusammen verbringen könnten? Ich kann mir richtig gut vorstellen, dass wir",
       "successCount": 14,
       "lastUsed": "2026-01-13T14:48:54.822Z"
-    },
-    {
-      "situation": "Generische ASA (Neukunde)",
-      "customerPattern": {
-        "keywords": "asa reaktivierung",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 17
-      },
-      "goodResponse": "Schade das ich bei dir schon so in die Vergessenheit geraten bin. Findest du mich denn nicht attraktiv oder ist dein Postfach hier so voll das meine Nachrichten unter gehen? Ich würde mich schon freue",
-      "successCount": 14,
-      "lastUsed": "2026-01-19T18:56:34.773Z",
-      "validatedSuccessRate": 1
     },
     {
       "situation": "Treffen/Termine",
@@ -6191,7 +6197,7 @@
       "validatedSuccessRate": 1
     }
   ],
-  "lastUpdated": "2026-01-19T18:56:34.781Z",
+  "lastUpdated": "2026-01-19T18:57:41.081Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -8810,7 +8816,8 @@
           255,
           241,
           185,
-          180
+          180,
+          191
         ],
         "exclamationMarks": [
           0,
@@ -8824,6 +8831,7 @@
           0,
           1,
           0,
+          1,
           1,
           1,
           1
@@ -8842,10 +8850,11 @@
           3,
           1,
           2,
+          1,
           1
         ],
-        "count": 14,
-        "avgLength": 209,
+        "count": 15,
+        "avgLength": 208,
         "minLength": 119,
         "maxLength": 287,
         "medianLength": 225,
@@ -8853,7 +8862,7 @@
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
         "medianExclamationMarks": 0,
-        "avgQuestions": 2.1,
+        "avgQuestions": 2,
         "minQuestions": 1,
         "maxQuestions": 3,
         "medianQuestions": 2,
@@ -8861,15 +8870,15 @@
           "0-100": 0,
           "100-120": 7,
           "120-150": 7,
-          "150-200": 29,
-          "200-250": 43,
-          "250+": 14
+          "150-200": 33,
+          "200-250": 40,
+          "250+": 13
         },
         "questionDistribution": {
           "0": 0,
-          "1": 29,
-          "2": 36,
-          "3+": 36
+          "1": 33,
+          "2": 33,
+          "3+": 33
         }
       },
       "negative": {
@@ -8887,9 +8896,11 @@
           169,
           136,
           153,
-          105
+          105,
+          150
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -8919,34 +8930,35 @@
           2,
           4,
           2,
-          4
+          4,
+          2
         ],
-        "count": 14,
+        "count": 15,
         "avgLength": 157,
         "minLength": 105,
         "maxLength": 190,
-        "medianLength": 160,
+        "medianLength": 153,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 2.9,
+        "avgQuestions": 2.8,
         "minQuestions": 1,
         "maxQuestions": 4,
         "medianQuestions": 3,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 7,
-          "120-150": 29,
-          "150-200": 64,
+          "120-150": 27,
+          "150-200": 67,
           "200-250": 0,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 14,
-          "2": 29,
-          "3+": 57
+          "1": 13,
+          "2": 33,
+          "3+": 53
         }
       }
     },
@@ -9071,8 +9083,8 @@
       "pattern": "eigene_erfahrung",
       "situation": "Generische ASA (Neukunde)",
       "example": "Ich würde mich schon freuen wenn wir unser Gespräch fortsetzen könnten. Oder hast du schon mittlerweile jemand anderen kennengelernt?",
-      "count": 7,
-      "lastUsed": "2026-01-19T18:56:34.773Z"
+      "count": 8,
+      "lastUsed": "2026-01-19T18:57:41.074Z"
     },
     {
       "pattern": "eigene_vorlieben_plus_frage",
@@ -10016,6 +10028,22 @@
       "added": [],
       "changed": [
         {
+          "from": "würde mich freuen,",
+          "to": "und würde mich",
+          "count": 6,
+          "contexts": [
+            "asa reaktivierung"
+          ]
+        },
+        {
+          "from": "dich mal melden",
+          "to": "du dich mal",
+          "count": 5,
+          "contexts": [
+            "asa reaktivierung"
+          ]
+        },
+        {
           "from": "was hast du",
           "to": "Oder hast du",
           "count": 4,
@@ -10024,17 +10052,25 @@
           ]
         },
         {
-          "from": "würde mich freuen,",
-          "to": "und würde mich",
+          "from": "freuen, wenn du",
+          "to": "freuen wenn du",
           "count": 4,
           "contexts": [
             "asa reaktivierung"
           ]
         },
         {
-          "from": "dich mal melden",
-          "to": "du dich mal",
-          "count": 3,
+          "from": "wenn du dich",
+          "to": "freuen wenn du",
+          "count": 4,
+          "contexts": [
+            "asa reaktivierung"
+          ]
+        },
+        {
+          "from": "du dich mal",
+          "to": "wenn du dich",
+          "count": 4,
           "contexts": [
             "asa reaktivierung"
           ]
@@ -10088,30 +10124,6 @@
           ]
         },
         {
-          "from": "freuen, wenn du",
-          "to": "freuen wenn du",
-          "count": 2,
-          "contexts": [
-            "asa reaktivierung"
-          ]
-        },
-        {
-          "from": "wenn du dich",
-          "to": "freuen wenn du",
-          "count": 2,
-          "contexts": [
-            "asa reaktivierung"
-          ]
-        },
-        {
-          "from": "du dich mal",
-          "to": "wenn du dich",
-          "count": 2,
-          "contexts": [
-            "asa reaktivierung"
-          ]
-        },
-        {
           "from": "Huhu bist du",
           "to": "sonst bist du",
           "count": 2,
@@ -10130,6 +10142,22 @@
         {
           "from": "Was magst du",
           "to": "nicht was du",
+          "count": 2,
+          "contexts": [
+            "asa reaktivierung"
+          ]
+        },
+        {
+          "from": "heiß, wenn du",
+          "to": "freuen wenn du",
+          "count": 2,
+          "contexts": [
+            "asa reaktivierung"
+          ]
+        },
+        {
+          "from": "wenn du mich",
+          "to": "freuen wenn du",
           "count": 2,
           "contexts": [
             "asa reaktivierung"
@@ -10310,9 +10338,9 @@
       "lastValidated": 1768848946135
     },
     "reasoningPrinciple_4": {
-      "usedCount": 62,
-      "successCount": 62,
-      "lastValidated": 1768848994780
+      "usedCount": 63,
+      "successCount": 63,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_5": {
       "usedCount": 9,
@@ -10330,14 +10358,14 @@
       "lastValidated": 1768848994780
     },
     "reasoningPrinciple_8": {
-      "usedCount": 7,
-      "successCount": 7,
-      "lastValidated": 1768847834011
+      "usedCount": 8,
+      "successCount": 8,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_9": {
-      "usedCount": 5,
-      "successCount": 5,
-      "lastValidated": 1768848946135
+      "usedCount": 6,
+      "successCount": 6,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_10": {
       "usedCount": 15,
@@ -10345,9 +10373,9 @@
       "lastValidated": 1768848377613
     },
     "reasoningPrinciple_11": {
-      "usedCount": 8,
-      "successCount": 8,
-      "lastValidated": 1768848673601
+      "usedCount": 9,
+      "successCount": 9,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_12": {
       "usedCount": 31,
@@ -10360,14 +10388,14 @@
       "lastValidated": 1768848498669
     },
     "reasoningPrinciple_14": {
-      "usedCount": 63,
-      "successCount": 63,
-      "lastValidated": 1768848994780
+      "usedCount": 64,
+      "successCount": 64,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_15": {
-      "usedCount": 37,
-      "successCount": 37,
-      "lastValidated": 1768848946135
+      "usedCount": 38,
+      "successCount": 38,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_16": {
       "usedCount": 4,
@@ -10385,9 +10413,9 @@
       "lastValidated": 1768848994780
     },
     "reasoningPrinciple_19": {
-      "usedCount": 9,
-      "successCount": 9,
-      "lastValidated": 1768848897674
+      "usedCount": 10,
+      "successCount": 10,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_20": {
       "usedCount": 2,
@@ -10395,9 +10423,9 @@
       "lastValidated": 1768837658570
     },
     "reasoningPrinciple_21": {
-      "usedCount": 39,
-      "successCount": 39,
-      "lastValidated": 1768848994780
+      "usedCount": 40,
+      "successCount": 40,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_22": {
       "usedCount": 37,
@@ -10410,9 +10438,9 @@
       "lastValidated": 1768848994780
     },
     "reasoningPrinciple_24": {
-      "usedCount": 64,
-      "successCount": 64,
-      "lastValidated": 1768848994780
+      "usedCount": 65,
+      "successCount": 65,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_25": {
       "usedCount": 49,
@@ -10420,14 +10448,14 @@
       "lastValidated": 1768848994780
     },
     "reasoningPrinciple_26": {
-      "usedCount": 49,
-      "successCount": 49,
-      "lastValidated": 1768848946135
+      "usedCount": 50,
+      "successCount": 50,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_27": {
-      "usedCount": 53,
-      "successCount": 53,
-      "lastValidated": 1768848946135
+      "usedCount": 54,
+      "successCount": 54,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_28": {
       "usedCount": 29,
@@ -10435,9 +10463,9 @@
       "lastValidated": 1768848897674
     },
     "reasoningPrinciple_29": {
-      "usedCount": 26,
-      "successCount": 26,
-      "lastValidated": 1768848830974
+      "usedCount": 27,
+      "successCount": 27,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_30": {
       "usedCount": 3,
@@ -10445,14 +10473,14 @@
       "lastValidated": 1768848498669
     },
     "reasoningPrinciple_31": {
-      "usedCount": 29,
-      "successCount": 29,
-      "lastValidated": 1768848994780
+      "usedCount": 30,
+      "successCount": 30,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_32": {
-      "usedCount": 29,
-      "successCount": 29,
-      "lastValidated": 1768848994780
+      "usedCount": 30,
+      "successCount": 30,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_33": {
       "usedCount": 0,
@@ -10460,9 +10488,9 @@
       "lastValidated": 1768835311487
     },
     "reasoningPrinciple_34": {
-      "usedCount": 60,
-      "successCount": 60,
-      "lastValidated": 1768848994780
+      "usedCount": 61,
+      "successCount": 61,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_35": {
       "usedCount": 30,
@@ -10470,9 +10498,9 @@
       "lastValidated": 1768848897674
     },
     "reasoningPrinciple_36": {
-      "usedCount": 56,
-      "successCount": 56,
-      "lastValidated": 1768848994780
+      "usedCount": 57,
+      "successCount": 57,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_37": {
       "usedCount": 39,
@@ -10485,9 +10513,9 @@
       "lastValidated": 1768835311487
     },
     "reasoningPrinciple_39": {
-      "usedCount": 43,
-      "successCount": 43,
-      "lastValidated": 1768848946135
+      "usedCount": 44,
+      "successCount": 44,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_40": {
       "usedCount": 1,
@@ -10495,14 +10523,14 @@
       "lastValidated": 1768837658570
     },
     "reasoningPrinciple_41": {
-      "usedCount": 29,
-      "successCount": 29,
-      "lastValidated": 1768848994780
+      "usedCount": 30,
+      "successCount": 30,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_42": {
-      "usedCount": 25,
-      "successCount": 25,
-      "lastValidated": 1768848946135
+      "usedCount": 26,
+      "successCount": 26,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_43": {
       "usedCount": 24,
@@ -10515,14 +10543,14 @@
       "lastValidated": 1768848897674
     },
     "reasoningPrinciple_45": {
-      "usedCount": 28,
-      "successCount": 28,
-      "lastValidated": 1768848994780
+      "usedCount": 29,
+      "successCount": 29,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_46": {
-      "usedCount": 58,
-      "successCount": 58,
-      "lastValidated": 1768848994780
+      "usedCount": 59,
+      "successCount": 59,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_47": {
       "usedCount": 23,
@@ -10530,9 +10558,9 @@
       "lastValidated": 1768848830974
     },
     "reasoningPrinciple_48": {
-      "usedCount": 27,
-      "successCount": 27,
-      "lastValidated": 1768848946135
+      "usedCount": 28,
+      "successCount": 28,
+      "lastValidated": 1768849061080
     },
     "reasoningPrinciple_49": {
       "usedCount": 23,
