@@ -11748,8 +11748,8 @@
       "chatId": "59026606",
       "customerMessage": "Ja sicher",
       "aiResponse": "Klingt super, dass du gut durchschläfst. Ich finde Kaffee auch richtig toll. Ich trinke gerne einen starken Espresso oder manchmal auch einen Latte. Was für Kaffee magst du am liebsten?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Okay dann ist ja gut. Wenn ich zu viel Koffein trinke, erst recht nach 20 Uhr dann ist bei mir vorbei mit schlafen für die Nacht.😅 Du trinkst aber spät Abends wahrscheinlich auch keinen mehr oder?",
+      "status": "edited",
       "platform": "viluu",
       "isASA": false,
       "usedExampleIds": [],
@@ -11765,7 +11765,11 @@
       },
       "lastModeratorMessage": "Mir wäre das zu viel. Kannst du denn nachts noch gut durchschlafen?",
       "timestamp": "2026-01-16T14:10:12.536Z",
-      "updatedAt": "2026-01-16T14:10:12.536Z"
+      "updatedAt": "2026-01-19T14:20:33.641Z",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1768572755734_ujro8sa48",
