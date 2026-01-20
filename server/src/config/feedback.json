@@ -14737,38 +14737,40 @@
       "updatedAt": "2026-01-20T20:04:57.662Z"
     },
     {
-      "id": "feedback_1768942450002_8vawz786a",
-      "chatId": "28665614",
-      "customerMessage": "Bin ich schon Zeit Jahren mag nichts lockeres",
-      "aiResponse": "Ich verstehe, dass du nichts Lockeres suchst. Ich bin da auch eher offen für ernstere Dinge, wenn die Chemie stimmt. Was sind denn deine Vorstellungen von einer Beziehung? Was ist dir besonders wichtig? 😊",
+      "id": "feedback_1768942534080_pn8mvx3hu",
+      "chatId": "38193903",
+      "customerMessage": "Also ich habe grundsätzlich am WE immer zeit und in der Woche nur mit absprache da ich derzeit viele Termine habe",
+      "aiResponse": "Das Wochenende klingt ja gut! Ich habe auch oft viel zu tun, daher ist spontane Planung bei mir nicht so einfach. Was machst du denn gerne am Wochenende, wenn du Zeit hast? Gibt es besondere Aktivitäten, die dir gefallen? 😊",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
       "isASA": false,
       "usedExampleIds": [
-        "training_338",
-        "training_99",
-        "training_129",
-        "training_194",
+        "training_168",
+        "training_48",
+        "training_405",
+        "training_6",
+        "training_67",
+        "training_14",
+        "training_201",
+        "training_298",
         "training_152",
-        "training_193",
-        "training_250",
-        "training_30",
-        "training_34",
-        "training_328",
-        "training_430",
-        "training_230"
+        "training_37",
+        "training_349",
+        "training_297"
       ],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "Treffen/Termine"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Der Abend ist perfekt für ein leises Gespräch, was denkst du über die suche nach etwas Festem"
+        "lastModeratorMessage": "warum sollte es nicht dazu kommen, warum bist du so negativ drauf kommt darauf an wann Du immer Zeit hast?"
       },
-      "lastModeratorMessage": "Der Abend ist perfekt für ein leises Gespräch, was denkst du über die suche nach etwas Festem",
-      "timestamp": "2026-01-20T20:54:10.002Z",
-      "updatedAt": "2026-01-20T20:54:10.002Z"
+      "lastModeratorMessage": "warum sollte es nicht dazu kommen, warum bist du so negativ drauf kommt darauf an wann Du immer Zeit hast?",
+      "timestamp": "2026-01-20T20:55:34.080Z",
+      "updatedAt": "2026-01-20T20:55:34.080Z"
     }
   ]
 }
