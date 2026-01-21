@@ -15342,8 +15342,8 @@
       "chatId": "38205539",
       "customerMessage": "ja habe lust dich zu treffen",
       "aiResponse": "Ich kann es mir schon vorstellen, aber ich habe gerade viel um die Ohren. Was würdest du denn gerne machen, wenn wir uns sehen würden? Wie siehst du das?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Hast du denn schon eine Idee was wir beide zusammen machen könnten? Eventuell etwas essen gehen oder einen Cafe zusammen trinken gehen?",
+      "status": "edited",
       "platform": "fpc",
       "isASA": false,
       "usedExampleIds": [
@@ -15373,7 +15373,11 @@
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-01-21T11:59:56.564Z",
-      "updatedAt": "2026-01-21T11:59:56.564Z"
+      "updatedAt": "2026-01-21T13:33:57.137Z",
+      "situation": "Treffen/Termine",
+      "situations": [
+        "Treffen/Termine"
+      ]
     },
     {
       "id": "feedback_1768997131895_m9yyq7yf4",
@@ -15438,10 +15442,10 @@
       },
       "lastModeratorMessage": "hättest du denn Lust, dass wir uns bisschen näher kennenlernen? also erstmal so chatten und dann irgendwann mal treffen?",
       "timestamp": "2026-01-21T12:07:19.520Z",
-      "updatedAt": "2026-01-21T13:32:02.778Z",
-      "situation": "Geld/Coins",
+      "updatedAt": "2026-01-21T13:30:58.453Z",
+      "situation": "allgemein",
       "situations": [
-        "Geld/Coins"
+        "allgemein"
       ]
     }
   ]
