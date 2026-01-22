@@ -15570,6 +15570,34 @@
       "lastModeratorMessage": "Wie würde es denn danach weitergehen? Was willst du noch so alles mit mir machen?😏",
       "timestamp": "2026-01-22T13:36:49.187Z",
       "updatedAt": "2026-01-22T13:36:49.187Z"
+    },
+    {
+      "id": "feedback_1769089092257_pazks64ow",
+      "chatId": "59055361",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Was machst du denn gerade? Ich musste gerade an dich denken und frage mich, was du so machst, wenn du dich ja schon nicht bei mir meldest. Hast du mich schon vergessen?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "viluu",
+      "isASA": true,
+      "usedExampleIds": [
+        "feedback_1768318720645_ecsx958en",
+        "feedback_1768318403606_t7t8q2tdx",
+        "feedback_1768404745551_4bd3gkc3a",
+        "feedback_1768956636360_7weatlha8"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ok, das ist natürlich sehr schade aber wir hätten ja auch versuchen können einfach nur ein bisschen Freunde zu sein?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-01-22T13:38:12.257Z",
+      "updatedAt": "2026-01-22T13:38:12.257Z"
     }
   ]
 }
