@@ -15387,8 +15387,8 @@
       "chatId": "59050019",
       "customerMessage": "wenn über WhatsApp schreiben kann ich dir 1000 Foto schicken \nja bis 17 muss ich arbeiten da nach hab kleinigkeit private Kunde bei uns in Mühlheim da nach hab Feierabend \nWie lange muss du heute arbeiten? \nWas machst du nach der Arbeit schönes?",
       "aiResponse": "Ich gebe meine Nummer nicht so schnell raus, ich kenne dich noch kaum. Aber wir können hier weiter quatschen. Was hast du nach der Arbeit noch so vor?",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Hast du denn noch etwas für deinen Feierabend geplant? Ich muss bis 18 Uhr arbeiten und dann gehe ich noch mit einer Freundin etwas essen.🙈",
+      "status": "edited",
       "platform": "viluu",
       "isASA": false,
       "usedExampleIds": [
@@ -15419,7 +15419,11 @@
       },
       "lastModeratorMessage": "Dominik das kann ich schlecht machen das verstehst du doch sicher. Du hast mir auch noch kein richtiges Foto geschickt von dir. Was hast du denn heute noch vor?",
       "timestamp": "2026-01-22T11:36:30.055Z",
-      "updatedAt": "2026-01-22T11:36:30.055Z"
+      "updatedAt": "2026-01-22T14:48:46.235Z",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1769082120297_9n7gaam22",
@@ -15458,12 +15462,7 @@
       },
       "lastModeratorMessage": "Sag mal wie heisst du eigentlich? Ich weiss noch nicht wirklich viel über dich. Was arbeitest du denn so schönes?",
       "timestamp": "2026-01-22T11:42:00.297Z",
-      "updatedAt": "2026-01-22T14:44:05.730Z",
-      "situation": "allgemein, Wonach suchst du?",
-      "situations": [
-        "allgemein",
-        "Wonach suchst du?"
-      ]
+      "updatedAt": "2026-01-22T14:43:29.755Z"
     },
     {
       "id": "feedback_1769083938482_sgo13xcqq",
