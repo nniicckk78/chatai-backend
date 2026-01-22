@@ -15680,32 +15680,41 @@
       "updatedAt": "2026-01-22T14:54:23.017Z"
     },
     {
-      "id": "feedback_1769093860839_a6lsevses",
-      "chatId": "37633875",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Hey du. Ich würde mich echt mal wieder über eine Nachricht von dir freuen. Was machst du denn gerade so schönes und wie war dein Tag? Oder hast du keine Interesse mehr an mir?",
+      "id": "feedback_1769093987585_l7dhtyyi3",
+      "chatId": "38192839",
+      "customerMessage": "Schick dir auch liebe Grüße und interesse besteht natürlich noch &#128536;",
+      "aiResponse": "Ich freue mich, dass du auch Interesse hast. Ich finde es wichtig, dass wir uns noch besser kennenlernen, bevor wir uns persönlich treffen. Was würdest du denn gerne machen, wenn wir uns mal sehen?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
-      "isASA": true,
+      "isASA": false,
       "usedExampleIds": [
-        "feedback_1768318821166_qk66peqfe",
-        "|Wo steckst du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so überfüllt das meine Nachrichten schon gar nicht mehr bei dir angezeigt werden? Ich hätte da mal eine echt wichtige Frage an dich?",
-        "|Hey du! Ich würde mich echt mal wieder über eine Nachricht von dir freuen. Was machst du denn gerade so schönes und wie war dein Tag? Oder hast du keine Interesse mehr an mir?😕",
-        "feedback_1768316762417_cvkbhnczl"
+        "training_207",
+        "training_204",
+        "training_269",
+        "training_391",
+        "training_202",
+        "training_270",
+        "training_161",
+        "training_472",
+        "training_205",
+        "training_206",
+        "training_15",
+        "training_195",
+        "training_306",
+        "training_222",
+        "training_362"
       ],
       "context": {
-        "detectedSituations": [
-          "ASA Reaktivierung"
-        ],
+        "detectedSituations": [],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Ich frage mich was du gerade machst und ob du beschäftigt bist oder doch noch Zeit für mich hast. Jedenfals würde ich mich freuen wenn du dich mal wieder meldest!"
+        "lastModeratorMessage": "Ich wollte Dir nur mal kurz ein lieben Gruss rüberschicken und mal schauen ob du überhaupt noch Interesse hast oder schon jemanden gefunden?"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-01-22T14:57:40.839Z",
-      "updatedAt": "2026-01-22T14:57:40.839Z"
+      "lastModeratorMessage": "Ich wollte Dir nur mal kurz ein lieben Gruss rüberschicken und mal schauen ob du überhaupt noch Interesse hast oder schon jemanden gefunden?",
+      "timestamp": "2026-01-22T14:59:47.585Z",
+      "updatedAt": "2026-01-22T14:59:47.585Z"
     }
   ]
 }
