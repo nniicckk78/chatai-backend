@@ -15864,41 +15864,32 @@
       "updatedAt": "2026-01-23T09:23:17.984Z"
     },
     {
-      "id": "feedback_1769161129795_fexs50kfy",
-      "chatId": "59032618",
-      "customerMessage": "jaa dann stimmt da einiges nicht",
-      "aiResponse": "Ja, das stimmt, da gibt es oft Probleme in Beziehungen. Was denkst du, könnte man dagegen tun? Hast du vielleicht schon Ideen, wie man das besser angehen könnte?",
+      "id": "feedback_1769161235182_568t0ccxb",
+      "chatId": "59058870",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was Heisses.",
       "editedResponse": null,
       "status": "pending",
       "platform": "viluu",
-      "isASA": false,
+      "isASA": true,
       "usedExampleIds": [
-        "training_367",
-        "training_371",
-        "training_76",
-        "training_399",
-        "training_401",
-        "training_303",
-        "training_452",
-        "training_175",
-        "training_144",
-        "training_134",
-        "training_504",
-        "training_70",
-        "training_253",
-        "training_331",
-        "training_345"
+        "feedback_1768318287807_gzj3i8xwj",
+        "feedback_1768318403606_t7t8q2tdx",
+        "|Ist dein Postfach hier so überfüllt das du meine Nachrichten schon gar nicht mehr siehst oder was? An deiner Stelle würde ich mir es nochmal überlegen ob du mich ignorierst.😉 Oder suchst du etwa kein Spaß hier? Ich will doch nur jemanden haben auf den ich mich verlassen kann!",
+        "feedback_1768318191440_my74yn4mh"
       ],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Ja, sollte man auf jeden Fall drüber reden. Also wenn sich einer von beiden genötigt fühlt fremd zu gehen, dann stimmt ja auch in der Beziehung irgendwas nicht oder?"
+        "lastModeratorMessage": "Klingt geil na wie wäre es denn bei dir zu Hause wohnst du alleine? Bei mir geht nicht ich wohne noch bei meinen Eltern"
       },
-      "lastModeratorMessage": "Ja, sollte man auf jeden Fall drüber reden. Also wenn sich einer von beiden genötigt fühlt fremd zu gehen, dann stimmt ja auch in der Beziehung irgendwas nicht oder?",
-      "timestamp": "2026-01-23T09:38:49.795Z",
-      "updatedAt": "2026-01-23T09:38:49.795Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-01-23T09:40:35.182Z",
+      "updatedAt": "2026-01-23T09:40:35.182Z"
     }
   ]
 }
