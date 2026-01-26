@@ -16340,6 +16340,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-01-26T15:39:15.742Z",
       "updatedAt": "2026-01-26T15:39:15.742Z"
+    },
+    {
+      "id": "feedback_1769442493026_woo9yzadh",
+      "chatId": "38289954",
+      "customerMessage": "an einer frau ist mir wichtig das sie ehrlich ist und trau ist und auch wie ich arbeiten geht",
+      "aiResponse": "Das sind tolle Eigenschaften! Ehrlichkeit und Vertrauen sind super wichtig in einer Beziehung. Ich bin auch berufstätig und arbeite als [dein Beruf]. Ich finde es gut, wenn man sich da gegenseitig unterstützt. Was machst du denn beruflich?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Berufsfrage"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ach das ist ja herrlich! ich wohne in Schladen mein Süsser! Was ist dir denn wichtig an einer Frau?"
+      },
+      "lastModeratorMessage": "Ach das ist ja herrlich! ich wohne in Schladen mein Süsser! Was ist dir denn wichtig an einer Frau?",
+      "timestamp": "2026-01-26T15:48:13.026Z",
+      "updatedAt": "2026-01-26T15:48:13.026Z"
     }
   ]
 }
