@@ -16509,6 +16509,35 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-01-27T11:56:34.640Z",
       "updatedAt": "2026-01-27T11:56:34.640Z"
+    },
+    {
+      "id": "feedback_1769515063755_7w4f906x1",
+      "chatId": "38296970",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey, ich habe schon eine Weile nichts von dir gehört. Ich hoffe, es ist alles in Ordnung bei dir. Was hast du so gemacht in letzter Zeit?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Warum meldest du dich nicht mehr bei mir? Ich hoffe ich habe nichts falsches gesagt oder dich irgendwie verärgert? Oder hast du keine Interesse mehr an einem Treffen mit mir?",
+        "ASA Reaktivierung|Würde mich echt freuen wenn du Antworten könntest, finde es wirklich sehr schade das von dir nichts kommt. Bin ich etwa nicht dein typ oder warum schreibst du mir nicht?",
+        "ASA Reaktivierung|Hey du! Ich würde mich echt mal wieder über eine Nachricht von dir freuen. Was machst du denn gerade so schönes und wie war dein Tag? Oder hast du keine Interesse mehr an mir?😕",
+        "ASA Reaktivierung|Warum meldest du dich nicht mehr bei mir? Habe ich etwas falsches gesagt oder dich irgendwie verärgert? Ich würde mich schon freuen wenn du dich mal wieder bei mir melden würdest, oder hast du gar keine Interesse mehr an mir?",
+        "ASA Reaktivierung|Muss ich denn jetzt schon eine Vermisstenanzeige erstellen oder wo steckst du denn wenn ich fragen darf? Lässt man denn heutzutage eine Frau einfach so ohne Begründung stehen? Vielleicht kann ich dich ja mit einer Überraschung wieder von mir überzeugen?😏"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Also könnte man sich dann kennenlernen, und dann mal schauen was dann so passiert hinterher Bist du denn aus deinem Wohnort?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-01-27T11:57:43.755Z",
+      "updatedAt": "2026-01-27T11:57:43.755Z"
     }
   ]
 }
