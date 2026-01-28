@@ -1695,7 +1695,7 @@
           },
           {
             "date": "2025-12-18T09:05:53.908Z",
-            "description": "ist arbeiten, m�����������chte uns heute sehen",
+            "description": "ist arbeiten, m�������������chte uns heute sehen",
             "text": "ist arbeiten, möchte uns heute sehen",
             "fixed": false,
             "moderatorId": "20068"
@@ -13382,7 +13382,7 @@
           "hasPictures": true,
           "height": "166cm",
           "profilePicUrl": "https://www.wirverliebenuns.de/upload/photos/2026/01/aN1sTzLclwaEW1eckG5X_avatar.jpg",
-          "rawText": "- Name : \n- Alter : \n- Status: \n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+          "rawText": "- Name : \n- Alter : \n- Status: \n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : \n- Gr��ße / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
         },
         "customerNotes": {
           "name": "Michael",
@@ -16850,6 +16850,31 @@
       "lastModeratorMessage": "ich möchte ganz intensiv geküsst werden Willst du das ganz leidenschaftlich machen??",
       "timestamp": "2026-01-27T17:20:16.839Z",
       "updatedAt": "2026-01-27T17:20:16.839Z"
+    },
+    {
+      "id": "feedback_1769612495574_tld6kz72x",
+      "chatId": "21902364",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Wo bist du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so überfüllt, dass meine Nachrichten gar nicht mehr angezeigt werden? Ich hätte da mal eine wirklich wichtige Frage an dich?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Wo steckst du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so überfüllt das meine Nachrichten schon gar nicht mehr bei dir angezeigt werden? Ich hätte da mal eine echt wichtige Frage an dich?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ja okay, dann kam das wirklich erst mal nur falsch rüber mein lieber, da bin ich jetzt doch sehr erleichtert wenn ich ehrlich bin. also wärst du doch immer Sanft zu mir oder ?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-01-28T15:01:35.574Z",
+      "updatedAt": "2026-01-28T15:01:35.574Z"
     }
   ]
 }
