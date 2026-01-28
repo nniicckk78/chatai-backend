@@ -13,6 +13,40 @@ const path = require('path');
 const { getClient } = require('../openaiClient');
 const { getGitHubClient, getRepoInfo } = require('./github');
 
+// 🚨 NEU: Helper-Funktion zum Extrahieren der letzten 6 Nachrichten aus conversationHistory
+function extractRecentMessages(conversationHistory) {
+  if (!conversationHistory || conversationHistory.trim().length === 0) {
+    return [];
+  }
+  
+  const historyLines = conversationHistory.split('\n').filter(line => line.trim().length > 0);
+  const messages = [];
+  
+  // Parse alle Nachrichten
+  historyLines.forEach(line => {
+    const trimmed = line.trim();
+    const lower = trimmed.toLowerCase();
+    
+    // Erkenne Moderator-Nachrichten (Fake/Du/Moderator/Assistant)
+    if (lower.includes('fake:') || lower.includes('du:') || lower.includes('moderator:') || lower.includes('assistant:')) {
+      const match = trimmed.match(/(?:fake|du|moderator|assistant):\s*(.+)/i);
+      if (match && match[1]) {
+        messages.push({ type: 'moderator', text: match[1].trim() });
+      }
+    }
+    // Erkenne Kunden-Nachrichten
+    else if (lower.includes('kunde:') || lower.includes('customer:') || lower.includes('user:')) {
+      const match = trimmed.match(/(?:kunde|customer|user):\s*(.+)/i);
+      if (match && match[1]) {
+        messages.push({ type: 'customer', text: match[1].trim() });
+      }
+    }
+  });
+  
+  // Nimm die letzten 6 Nachrichten (chronologisch - älteste zuerst, neueste zuletzt)
+  return messages.slice(-6);
+}
+
 // Lade Feedback-Daten
 async function getFeedbackData() {
   const githubClient = getGitHubClient();
@@ -216,7 +250,9 @@ async function collectPerfectExamples(includeExcluded = false) {
           moderatorResponse: feedback.aiResponse,
           situation: feedback.situation || feedback.context?.detectedSituations?.[0] || 'allgemein',
           source: 'feedback_good',
-          feedbackId: feedback.id
+          feedbackId: feedback.id,
+          // 🚨 NEU: Extrahiere letzte 6 Nachrichten aus conversationHistory (wenn vorhanden)
+          recentMessages: extractRecentMessages(feedback.conversationHistory || feedback.context?.conversationHistory || '')
         });
       } else if (feedback.status === 'good') {
         skippedNoMessage.feedback_good++;
@@ -268,7 +304,9 @@ async function collectPerfectExamples(includeExcluded = false) {
           moderatorResponse: feedback.editedResponse,
           situation: feedback.situation || feedback.context?.detectedSituations?.[0] || 'allgemein',
           source: 'feedback_edited',
-          feedbackId: feedback.id
+          feedbackId: feedback.id,
+          // 🚨 NEU: Extrahiere letzte 6 Nachrichten aus conversationHistory (wenn vorhanden)
+          recentMessages: extractRecentMessages(feedback.conversationHistory || feedback.context?.conversationHistory || '')
         });
       } else if (feedback.status === 'edited') {
         skippedNoMessage.feedback_edited++;
@@ -341,7 +379,9 @@ async function collectPerfectExamples(includeExcluded = false) {
         customerMessage: conv.customerMessage || "",
         moderatorResponse: conv.moderatorResponse,
         situation: conv.situation || 'allgemein',
-        source: 'training_data'
+        source: 'training_data',
+        // 🚨 NEU: Extrahiere letzte 6 Nachrichten aus conversationHistory (wenn vorhanden)
+        recentMessages: extractRecentMessages(conv.conversationHistory || conv.previousMessage || '')
       });
     });
   }
@@ -608,13 +648,19 @@ function convertToJSONL(examples, systemPrompt, rules = null) {
     // 🚨🚨🚨 KRITISCH: User-Prompt GENAU wie im aktuellen Inference-Format!
     // KEINE Meta-Informationen mehr (Länge, Typ, Fragen, etc.) - das hat nicht funktioniert!
     // Format: "Kunde: '...' Antworte als Chat-Moderator."
+    // Mit Kontext: Letzte 6 Nachrichten (Du: '...' Kunde: '...' etc.) dann Kunde: '...' Antworte als Chat-Moderator.
     
     let userContent = '';
     
-    // 🚨 NEU: Wenn letzte Moderator-Nachricht vorhanden (für laufende Gespräche)
-    // Format: "Du: '[letzte Nachricht]' → Kunde: '[Antwort]'"
-    if (example.lastModeratorMessage && example.lastModeratorMessage.length > 0) {
-      userContent = `Du: "${example.lastModeratorMessage.substring(0, 200)}${example.lastModeratorMessage.length > 200 ? '...' : ''}"\n`;
+    // 🚨 NEU: Wenn letzte 6 Nachrichten vorhanden (für laufende Gespräche)
+    // Format: "Du: '[Nachricht 1]' Kunde: '[Nachricht 2]' Du: '[Nachricht 3]' ... Kunde: '[letzte Nachricht]'"
+    if (example.recentMessages && example.recentMessages.length > 0) {
+      // Nimm die letzten 6 Nachrichten (chronologisch - älteste zuerst, neueste zuletzt)
+      const recentMsgs = example.recentMessages.slice(-6);
+      recentMsgs.forEach((msg) => {
+        const role = msg.type === 'moderator' ? 'Du' : 'Kunde';
+        userContent += `${role}: "${msg.text.substring(0, 200)}${msg.text.length > 200 ? '...' : ''}"\n`;
+      });
     }
     
     // 🚨 NEU: Einfaches Format wie im Inference
@@ -862,12 +908,14 @@ HARTE REGELN (NIEMALS verletzen):
 
 STIL:
 - Sei warmherzig, interessiert, menschlich
-- Stelle Fragen, um Gespräch am Laufen zu halten
+- 🚨🚨🚨 KRITISCH: Stelle IMMER eine Frage am Ende jeder Nachricht! 🚨🚨🚨
+- 🚨🚨🚨 Die Frage muss zum aktuellen Thema passen und es vertiefen oder erweitern! 🚨🚨🚨
+- 🚨🚨🚨 KEINE generischen Fragen wie "Was magst du?" - stelle spezifische, themenbezogene Fragen! 🚨🚨🚨
 - Gehe auf alle Anfragen/Themen ein
 - Zeige Eigeninitiative (nenne eigene Vorlieben/Interessen, dann frage)
-- Sei prägnant - keine unnötigen Details oder Erklärungen
+- Sei prägnant - keine unnötigen Details oder Erklärungen (120-250 Zeichen, damit Platz für Frage bleibt)
 - Schreibe wie echte Chat-Replies: kurz, natürlich, locker, direkt, roh, spontan
-- KEINE mechanischen Fragen
+- KEINE mechanischen oder generischen Fragen
 - KEINE Meta-Kommentare
 - KEINE bewertenden Einstiegs-Phrasen`;
 
