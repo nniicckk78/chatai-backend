@@ -6151,13 +6151,13 @@
       },
       "was": {
         "good": 4,
-        "bad": 4,
-        "lastUpdated": 1768910342737
+        "bad": 5,
+        "lastUpdated": 1769850768345
       },
       "mich": {
-        "good": 2,
-        "bad": 2,
-        "lastUpdated": 1768910342737
+        "good": 3,
+        "bad": 3,
+        "lastUpdated": 1769850768345
       },
       "gerne": {
         "good": 0,
@@ -6175,9 +6175,9 @@
         "lastUpdated": 1768910342737
       },
       "wie": {
-        "good": 2,
+        "good": 3,
         "bad": 0,
-        "lastUpdated": 1768910342737
+        "lastUpdated": 1769850768345
       }
     },
     "Geld/Coins": {
@@ -6232,8 +6232,8 @@
       "total": 183
     },
     "Wonach suchst du?": {
-      "good": 7,
-      "total": 19
+      "good": 8,
+      "total": 21
     },
     "Geld/Coins": {
       "good": 10,
@@ -6499,6 +6499,20 @@
       "lastUsed": "2026-01-23T09:54:28.624Z"
     },
     {
+      "situation": "Wonach suchst du?",
+      "customerPattern": {
+        "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 76
+      },
+      "goodResponse": "Danke für das Kompliment, Aloys! 😊 Das freut mich sehr zu hören. Ich wohne in der Nähe von Mainz, also nicht allzu weit weg. Wie genau sieht denn für dich eine erotische  Dauerfreundschaft+ so aus? I",
+      "successCount": 4,
+      "lastUsed": "2026-01-31T09:12:48.347Z",
+      "validatedSuccessRate": 1
+    },
+    {
       "situation": "allgemein",
       "customerPattern": {
         "keywords": "sollten nicht erstmal kennenlernen dann sehen kompatibel wenn dann schon",
@@ -6523,20 +6537,6 @@
       "goodResponse": "Hey Manfred, darf ich denn mal fragen was ein so hübscher Mann wie du auf so einer Plattform macht? Würde mich echt freuen wenn wir uns ein bisschen näher kommen könnten?",
       "successCount": 3,
       "lastUsed": "2026-01-13T14:12:34.699Z"
-    },
-    {
-      "situation": "Wonach suchst du?",
-      "customerPattern": {
-        "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 76
-      },
-      "goodResponse": "Ich bin hier, um ein bisschen Spass zu haben und vielleicht auch eine Freundschaft Plus zu finden. Wenn sich dann mehr entwickeln sollte, wäre ich dafür auch offen. Und wie sieht es bei dir aus, was s",
-      "successCount": 3,
-      "lastUsed": "2026-01-19T15:50:45.533Z",
-      "validatedSuccessRate": 1
     },
     {
       "situation": "Berufsfrage",
@@ -6728,7 +6728,7 @@
       "validatedSuccessRate": 1
     }
   ],
-  "lastUpdated": "2026-01-31T09:08:46.307Z",
+  "lastUpdated": "2026-01-31T09:12:48.375Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7161,7 +7161,8 @@
           179,
           214,
           167,
-          198
+          198,
+          236
         ],
         "exclamationMarks": [
           0,
@@ -7169,7 +7170,8 @@
           0,
           0,
           0,
-          0
+          0,
+          2
         ],
         "questions": [
           3,
@@ -7177,18 +7179,19 @@
           1,
           1,
           1,
-          2
+          2,
+          1
         ],
-        "count": 6,
-        "avgLength": 201,
+        "count": 7,
+        "avgLength": 206,
         "minLength": 167,
         "maxLength": 247,
         "medianLength": 202,
-        "avgExclamationMarks": 0,
+        "avgExclamationMarks": 0.3,
         "minExclamationMarks": 0,
-        "maxExclamationMarks": 0,
+        "maxExclamationMarks": 2,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.5,
+        "avgQuestions": 1.4,
         "minQuestions": 1,
         "maxQuestions": 3,
         "medianQuestions": 1,
@@ -7196,15 +7199,15 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 50,
-          "200-250": 50,
+          "150-200": 43,
+          "200-250": 57,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 67,
-          "2": 17,
-          "3+": 17
+          "1": 71,
+          "2": 14,
+          "3+": 14
         }
       },
       "negative": {
@@ -7212,45 +7215,48 @@
           122,
           198,
           269,
-          232
+          232,
+          250
         ],
         "exclamationMarks": [
           0,
           0,
           0,
-          0
+          0,
+          2
         ],
         "questions": [
           1,
           1,
           2,
-          2
+          2,
+          1
         ],
-        "count": 4,
-        "avgLength": 205,
+        "count": 5,
+        "avgLength": 214,
         "minLength": 122,
         "maxLength": 269,
         "medianLength": 232,
-        "avgExclamationMarks": 0,
+        "avgExclamationMarks": 0.4,
         "minExclamationMarks": 0,
-        "maxExclamationMarks": 0,
+        "maxExclamationMarks": 2,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.5,
+        "avgQuestions": 1.4,
         "minQuestions": 1,
         "maxQuestions": 2,
-        "medianQuestions": 2,
+        "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 25,
-          "150-200": 25,
-          "200-250": 25,
-          "250+": 25
+          "120-150": 20,
+          "150-200": 20,
+          "200-250": 20,
+          "250+": 40
         },
         "questionDistribution": {
           "0": 0,
-          "1": 50,
-          "2": 50,
+          "1": 60,
+          "2": 40,
           "3+": 0
         }
       }
@@ -10495,6 +10501,14 @@
         "contexts": [],
         "successRate": 0
       }
+    },
+    "Wonach suchst du?": {
+      "😊": {
+        "count": 1,
+        "positions": [],
+        "contexts": [],
+        "successRate": 0
+      }
     }
   },
   "diffPatterns": {
@@ -11911,6 +11925,22 @@
       "added": [],
       "changed": [
         {
+          "from": "das Kompliment, Aloys!",
+          "to": "für das Kompliment,",
+          "count": 3,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "Aloys! 😊 Das",
+          "to": "das Kompliment, Aloys!",
+          "count": 3,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
           "from": "zu spüren und",
           "to": "erledigen und zu",
           "count": 2,
@@ -11924,6 +11954,166 @@
           "count": 2,
           "contexts": [
             "nee habe heute nichts geplant"
+          ]
+        },
+        {
+          "from": "für das Kompliment,",
+          "to": "Danke für das",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "Kompliment, Aloys! 😊",
+          "to": "das Kompliment, Aloys!",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "😊 Das freut",
+          "to": "Aloys! 😊 Das",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "Das freut mich",
+          "to": "😊 Das freut",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "freut mich sehr",
+          "to": "Das freut mich",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "mich sehr zu",
+          "to": "freut mich sehr",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "sehr zu hören.",
+          "to": "mich sehr zu",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "zu hören. Ich",
+          "to": "sehr zu hören.",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "hören. Ich wohne",
+          "to": "zu hören. Ich",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "Ich wohne in",
+          "to": "hören. Ich wohne",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "wohne in der",
+          "to": "Ich wohne in",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "in der Nähe",
+          "to": "wohne in der",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "der Nähe von",
+          "to": "in der Nähe",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "Nähe von Mainz,",
+          "to": "der Nähe von",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "von Mainz, also",
+          "to": "Nähe von Mainz,",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "Mainz, also nicht",
+          "to": "von Mainz, also",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "also nicht allzu",
+          "to": "Mainz, also nicht",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "nicht allzu weit",
+          "to": "also nicht allzu",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "allzu weit weg.",
+          "to": "nicht allzu weit",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "weit weg. Was",
+          "to": "allzu weit weg.",
+          "count": 2,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
           ]
         }
       ]
@@ -14267,6 +14457,13 @@
         "total": 1,
         "successRate": 0,
         "lastUpdated": 1769161514860
+      },
+      "Wonach suchst du?": {
+        "good": 0,
+        "bad": 1,
+        "total": 1,
+        "successRate": 0,
+        "lastUpdated": 1769850768345
       }
     },
     "training_231": {
@@ -14283,6 +14480,13 @@
         "total": 1,
         "successRate": 0,
         "lastUpdated": 1769161514860
+      },
+      "Wonach suchst du?": {
+        "good": 0,
+        "bad": 1,
+        "total": 1,
+        "successRate": 0,
+        "lastUpdated": 1769850768345
       }
     },
     "training_510": {
@@ -14473,6 +14677,13 @@
         "total": 1,
         "successRate": 0,
         "lastUpdated": 1769161907899
+      },
+      "Wonach suchst du?": {
+        "good": 0,
+        "bad": 1,
+        "total": 1,
+        "successRate": 0,
+        "lastUpdated": 1769850768345
       }
     },
     "training_172": {
@@ -14523,6 +14734,13 @@
         "total": 1,
         "successRate": 0,
         "lastUpdated": 1769161982589
+      },
+      "Wonach suchst du?": {
+        "good": 0,
+        "bad": 1,
+        "total": 1,
+        "successRate": 0,
+        "lastUpdated": 1769850768345
       }
     },
     "training_227": {
@@ -14837,6 +15055,15 @@
         "successRate": 0,
         "lastUpdated": 1769850526288
       }
+    },
+    "training_232": {
+      "Wonach suchst du?": {
+        "good": 0,
+        "bad": 1,
+        "total": 1,
+        "successRate": 0,
+        "lastUpdated": 1769850768345
+      }
     }
   },
   "negativeFilters": {},
@@ -14877,9 +15104,9 @@
       "lastValidated": 1769850526306
     },
     "reasoningPrinciple_4": {
-      "usedCount": 205,
-      "successCount": 205,
-      "lastValidated": 1769850526306
+      "usedCount": 206,
+      "successCount": 206,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_5": {
       "usedCount": 34,
@@ -14892,9 +15119,9 @@
       "lastValidated": 1769850425214
     },
     "reasoningPrinciple_7": {
-      "usedCount": 115,
-      "successCount": 115,
-      "lastValidated": 1769850425214
+      "usedCount": 116,
+      "successCount": 116,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_8": {
       "usedCount": 14,
@@ -14907,9 +15134,9 @@
       "lastValidated": 1769009228368
     },
     "reasoningPrinciple_10": {
-      "usedCount": 44,
-      "successCount": 44,
-      "lastValidated": 1769093007392
+      "usedCount": 45,
+      "successCount": 45,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_11": {
       "usedCount": 24,
@@ -14917,19 +15144,19 @@
       "lastValidated": 1769010753028
     },
     "reasoningPrinciple_12": {
-      "usedCount": 102,
-      "successCount": 102,
-      "lastValidated": 1769850425214
+      "usedCount": 103,
+      "successCount": 103,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_13": {
-      "usedCount": 27,
-      "successCount": 27,
-      "lastValidated": 1769161542127
+      "usedCount": 28,
+      "successCount": 28,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_14": {
-      "usedCount": 209,
-      "successCount": 209,
-      "lastValidated": 1769850526306
+      "usedCount": 210,
+      "successCount": 210,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_15": {
       "usedCount": 90,
@@ -14937,19 +15164,19 @@
       "lastValidated": 1769850526306
     },
     "reasoningPrinciple_16": {
-      "usedCount": 30,
-      "successCount": 30,
-      "lastValidated": 1769161542127
+      "usedCount": 31,
+      "successCount": 31,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_17": {
-      "usedCount": 124,
-      "successCount": 124,
-      "lastValidated": 1769850425214
+      "usedCount": 125,
+      "successCount": 125,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_18": {
-      "usedCount": 144,
-      "successCount": 144,
-      "lastValidated": 1769850425214
+      "usedCount": 145,
+      "successCount": 145,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_19": {
       "usedCount": 25,
@@ -14962,29 +15189,29 @@
       "lastValidated": 1769010689012
     },
     "reasoningPrinciple_21": {
-      "usedCount": 137,
-      "successCount": 137,
-      "lastValidated": 1769850526306
+      "usedCount": 138,
+      "successCount": 138,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_22": {
-      "usedCount": 115,
-      "successCount": 115,
-      "lastValidated": 1769850425214
+      "usedCount": 116,
+      "successCount": 116,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_23": {
-      "usedCount": 102,
-      "successCount": 102,
-      "lastValidated": 1769850425214
+      "usedCount": 103,
+      "successCount": 103,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_24": {
-      "usedCount": 210,
-      "successCount": 210,
-      "lastValidated": 1769850526306
+      "usedCount": 211,
+      "successCount": 211,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_25": {
-      "usedCount": 157,
-      "successCount": 157,
-      "lastValidated": 1769850425214
+      "usedCount": 158,
+      "successCount": 158,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_26": {
       "usedCount": 162,
@@ -15002,24 +15229,24 @@
       "lastValidated": 1769850425214
     },
     "reasoningPrinciple_29": {
-      "usedCount": 91,
-      "successCount": 91,
-      "lastValidated": 1769850526306
+      "usedCount": 92,
+      "successCount": 92,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_30": {
-      "usedCount": 24,
-      "successCount": 24,
-      "lastValidated": 1769161542127
+      "usedCount": 25,
+      "successCount": 25,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_31": {
-      "usedCount": 129,
-      "successCount": 129,
-      "lastValidated": 1769850526306
+      "usedCount": 130,
+      "successCount": 130,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_32": {
-      "usedCount": 129,
-      "successCount": 129,
-      "lastValidated": 1769850526306
+      "usedCount": 130,
+      "successCount": 130,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_33": {
       "usedCount": 0,
@@ -15027,9 +15254,9 @@
       "lastValidated": 1768835311487
     },
     "reasoningPrinciple_34": {
-      "usedCount": 198,
-      "successCount": 198,
-      "lastValidated": 1769850526306
+      "usedCount": 199,
+      "successCount": 199,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_35": {
       "usedCount": 90,
@@ -15037,14 +15264,14 @@
       "lastValidated": 1769850425214
     },
     "reasoningPrinciple_36": {
-      "usedCount": 154,
-      "successCount": 154,
-      "lastValidated": 1769162077825
+      "usedCount": 155,
+      "successCount": 155,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_37": {
-      "usedCount": 120,
-      "successCount": 120,
-      "lastValidated": 1769850425214
+      "usedCount": 121,
+      "successCount": 121,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_38": {
       "usedCount": 0,
@@ -15052,9 +15279,9 @@
       "lastValidated": 1768835311487
     },
     "reasoningPrinciple_39": {
-      "usedCount": 148,
-      "successCount": 148,
-      "lastValidated": 1769850425214
+      "usedCount": 149,
+      "successCount": 149,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_40": {
       "usedCount": 6,
@@ -15062,14 +15289,14 @@
       "lastValidated": 1768914112843
     },
     "reasoningPrinciple_41": {
-      "usedCount": 96,
-      "successCount": 96,
-      "lastValidated": 1769850526306
+      "usedCount": 97,
+      "successCount": 97,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_42": {
-      "usedCount": 63,
-      "successCount": 63,
-      "lastValidated": 1769161658766
+      "usedCount": 64,
+      "successCount": 64,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_43": {
       "usedCount": 88,
@@ -15082,19 +15309,19 @@
       "lastValidated": 1769850526306
     },
     "reasoningPrinciple_45": {
-      "usedCount": 91,
-      "successCount": 91,
-      "lastValidated": 1769850526306
+      "usedCount": 92,
+      "successCount": 92,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_46": {
-      "usedCount": 162,
-      "successCount": 162,
-      "lastValidated": 1769162077825
+      "usedCount": 163,
+      "successCount": 163,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_47": {
-      "usedCount": 90,
-      "successCount": 90,
-      "lastValidated": 1769850526306
+      "usedCount": 91,
+      "successCount": 91,
+      "lastValidated": 1769850768374
     },
     "reasoningPrinciple_48": {
       "usedCount": 57,
@@ -15102,9 +15329,9 @@
       "lastValidated": 1769850425214
     },
     "reasoningPrinciple_49": {
-      "usedCount": 87,
-      "successCount": 87,
-      "lastValidated": 1769850526306
+      "usedCount": 88,
+      "successCount": 88,
+      "lastValidated": 1769850768374
     },
     "responsePattern_2": {
       "usedCount": 0,
@@ -15157,9 +15384,9 @@
       "lastValidated": 1768911565199
     },
     "responsePattern_17": {
-      "usedCount": 0,
-      "successCount": 0,
-      "lastValidated": 1768835575035
+      "usedCount": 1,
+      "successCount": 1,
+      "lastValidated": 1769850768374
     },
     "responsePattern_20": {
       "usedCount": 0,
