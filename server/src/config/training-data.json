@@ -6540,16 +6540,18 @@
     {
       "customerMessage": "Hallo Georg hier.",
       "moderatorResponse": "Freut mich von dir zu hören Georg. Erzähl mir doch mal was du hier so suchst? Suchst du etwas lockeres oder etwas festes? Ich bin eigentlich in der Hinsicht für beides offen.😊",
-      "situation": "allgemein",
+      "situation": "allgemein, Wonach suchst du?",
       "situations": [
-        "allgemein"
+        "allgemein",
+        "Wonach suchst du?"
       ],
       "explanation": null,
       "createdAt": "2026-01-31T11:14:27.979Z",
       "source": "feedback_edited",
       "priority": true,
       "feedbackId": "feedback_1769851450028_2b82cf3nm",
-      "originalResponse": "Ich denke, da ist ein Missverständnis! Ich bin Lilly, nicht Georg. Ich habe mich gerade gefragt, ob dir unser Kuss gefallen hat? Und was ist mit meiner Frage, hab ich dir gefallen?"
+      "originalResponse": "Ich denke, da ist ein Missverständnis! Ich bin Lilly, nicht Georg. Ich habe mich gerade gefragt, ob dir unser Kuss gefallen hat? Und was ist mit meiner Frage, hab ich dir gefallen?",
+      "updatedAt": "2026-01-31T11:22:07.668Z"
     },
     {
       "customerMessage": "Hallo das ist echt ganz gute Vorschlag &#128077; muss ich sagen bin ich offen. Sag mir bitte von wo kommst du ??",
