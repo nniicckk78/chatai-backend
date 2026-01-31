@@ -4050,8 +4050,8 @@
       },
       "besser": {
         "good": 3,
-        "bad": 4,
-        "lastUpdated": 1768911011171
+        "bad": 5,
+        "lastUpdated": 1769858785325
       },
       "alle": {
         "good": 5,
@@ -4104,17 +4104,17 @@
       },
       "klingt": {
         "good": 1,
-        "bad": 9,
-        "lastUpdated": 1769009075141
+        "bad": 10,
+        "lastUpdated": 1769858785325
       },
       "super": {
         "good": 0,
         "bad": 2
       },
       "schon": {
-        "good": 15,
+        "good": 17,
         "bad": 7,
-        "lastUpdated": 1769005791325
+        "lastUpdated": 1769858785325
       },
       "ganz": {
         "good": 1,
@@ -4155,8 +4155,8 @@
       },
       "als": {
         "good": 5,
-        "bad": 6,
-        "lastUpdated": 1769005791325
+        "bad": 7,
+        "lastUpdated": 1769858785325
       },
       "erstes": {
         "good": 2,
@@ -4188,8 +4188,8 @@
       },
       "wie": {
         "good": 11,
-        "bad": 15,
-        "lastUpdated": 1769858444474
+        "bad": 16,
+        "lastUpdated": 1769858785325
       },
       "dich": {
         "good": 7,
@@ -4197,18 +4197,19 @@
         "lastUpdated": 1769858444474
       },
       "immer": {
-        "good": 2,
-        "bad": 1
+        "good": 3,
+        "bad": 1,
+        "lastUpdated": 1769858785325
       },
       "noch": {
-        "good": 10,
+        "good": 11,
         "bad": 1,
-        "lastUpdated": 1769007079672
+        "lastUpdated": 1769858785325
       },
       "mich": {
-        "good": 17,
+        "good": 18,
         "bad": 9,
-        "lastUpdated": 1769858444474
+        "lastUpdated": 1769858785325
       },
       "hoffe": {
         "good": 4,
@@ -4318,9 +4319,9 @@
         "lastUpdated": 1768911011171
       },
       "auch": {
-        "good": 14,
+        "good": 15,
         "bad": 2,
-        "lastUpdated": 1769858444474
+        "lastUpdated": 1769858785325
       },
       "blind": {
         "good": 2,
@@ -4375,14 +4376,14 @@
         "bad": 0
       },
       "nicht": {
-        "good": 16,
+        "good": 17,
         "bad": 6,
-        "lastUpdated": 1769858444474
+        "lastUpdated": 1769858785325
       },
       "hier": {
         "good": 4,
-        "bad": 4,
-        "lastUpdated": 1769009075141
+        "bad": 5,
+        "lastUpdated": 1769858785325
       },
       "sehen": {
         "good": 7,
@@ -4418,8 +4419,9 @@
         "lastUpdated": 1769007079672
       },
       "finden": {
-        "good": 3,
-        "bad": 0
+        "good": 4,
+        "bad": 0,
+        "lastUpdated": 1769858785325
       },
       "bestimmt": {
         "good": 3,
@@ -4430,9 +4432,9 @@
         "bad": 1
       },
       "mal": {
-        "good": 10,
+        "good": 12,
         "bad": 2,
-        "lastUpdated": 1769007079672
+        "lastUpdated": 1769858785325
       },
       "tag": {
         "good": 4,
@@ -4440,9 +4442,9 @@
         "lastUpdated": 1768910144365
       },
       "dem": {
-        "good": 4,
+        "good": 5,
         "bad": 0,
-        "lastUpdated": 1768837976716
+        "lastUpdated": 1769858785325
       },
       "erste": {
         "good": 3,
@@ -4698,6 +4700,11 @@
         "good": 0,
         "bad": 2,
         "lastUpdated": 1769858444474
+      },
+      "lkw": {
+        "good": 2,
+        "bad": 2,
+        "lastUpdated": 1769858785325
       }
     },
     "Bot-Vorwurf": {
@@ -6295,8 +6302,8 @@
       "total": 18
     },
     "Treffen/Termine": {
-      "good": 62,
-      "total": 122
+      "good": 63,
+      "total": 124
     },
     "Bilder Anfrage": {
       "good": 5,
@@ -6374,6 +6381,20 @@
       "validatedSuccessRate": 1
     },
     {
+      "situation": "Treffen/Termine",
+      "customerPattern": {
+        "keywords": "mareike frohes neues jahr würde gerne mich treffen habe heute",
+        "hasQuestion": false,
+        "hasMeeting": true,
+        "hasSexual": false,
+        "length": 165
+      },
+      "goodResponse": "Okay und was kann ich jetzt dafür das du bisher nur an die komischen Leute gekommen bist? Ich bin hier eigentlich relativ neu angemeldet und du bist auch bisher die einzige Person mit der ich schreibe",
+      "successCount": 17,
+      "lastUsed": "2026-01-31T11:26:25.326Z",
+      "validatedSuccessRate": 1
+    },
+    {
       "situation": "Sexuelle Themen",
       "customerPattern": {
         "keywords": "zeigst nackten titten jetzt bin scharf dihc vögeln alle löcher",
@@ -6385,20 +6406,6 @@
       "goodResponse": "Ziemlich interessant okay. Finde ich richtig cool das du bei der Freiwilligen Feuerwehr bist. Ich gehe auch gerne ins Gym oder gehe gerne in der Natur spazieren und solche Dinge eben.😊 Gehst du auch ",
       "successCount": 16,
       "lastUsed": "2026-01-20T13:01:00.050Z",
-      "validatedSuccessRate": 1
-    },
-    {
-      "situation": "Treffen/Termine",
-      "customerPattern": {
-        "keywords": "mareike frohes neues jahr würde gerne mich treffen habe heute",
-        "hasQuestion": false,
-        "hasMeeting": true,
-        "hasSexual": false,
-        "length": 165
-      },
-      "goodResponse": "Okay und was kann ich jetzt dafür das du bisher nur an die komischen Leute gekommen bist? Ich bin hier eigentlich relativ neu angemeldet und du bist auch bisher die einzige Person mit der ich schreibe",
-      "successCount": 16,
-      "lastUsed": "2026-01-21T15:24:35.142Z",
       "validatedSuccessRate": 1
     },
     {
@@ -6785,7 +6792,7 @@
       "validatedSuccessRate": 1
     }
   ],
-  "lastUpdated": "2026-01-31T11:22:10.272Z",
+  "lastUpdated": "2026-01-31T11:26:25.334Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -9796,7 +9803,8 @@
           151,
           188,
           142,
-          211
+          211,
+          184
         ],
         "exclamationMarks": [
           0,
@@ -9847,6 +9855,7 @@
           0,
           0,
           0,
+          1,
           1
         ],
         "questions": [
@@ -9898,13 +9907,14 @@
           1,
           2,
           2,
+          1,
           1
         ],
-        "count": 49,
+        "count": 50,
         "avgLength": 175,
         "minLength": 98,
         "maxLength": 281,
-        "medianLength": 165,
+        "medianLength": 167,
         "avgExclamationMarks": 0.1,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
@@ -9916,15 +9926,15 @@
         "lengthDistribution": {
           "0-100": 2,
           "100-120": 4,
-          "120-150": 31,
-          "150-200": 33,
+          "120-150": 30,
+          "150-200": 34,
           "200-250": 20,
           "250+": 10
         },
         "questionDistribution": {
           "0": 0,
-          "1": 65,
-          "2": 29,
+          "1": 66,
+          "2": 28,
           "3+": 6
         }
       },
@@ -9965,7 +9975,8 @@
           224,
           158,
           156,
-          235
+          235,
+          159
         ],
         "exclamationMarks": [
           0,
@@ -10003,7 +10014,8 @@
           1,
           0,
           0,
-          0
+          0,
+          1
         ],
         "questions": [
           1,
@@ -10041,14 +10053,15 @@
           2,
           1,
           1,
-          3
+          3,
+          1
         ],
-        "count": 36,
-        "avgLength": 209,
+        "count": 37,
+        "avgLength": 208,
         "minLength": 153,
         "maxLength": 318,
         "medianLength": 204,
-        "avgExclamationMarks": 0,
+        "avgExclamationMarks": 0.1,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
         "medianExclamationMarks": 0,
@@ -10060,14 +10073,14 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 33,
-          "200-250": 53,
+          "150-200": 35,
+          "200-250": 51,
           "250+": 14
         },
         "questionDistribution": {
-          "0": 6,
-          "1": 75,
-          "2": 17,
+          "0": 5,
+          "1": 76,
+          "2": 16,
           "3+": 3
         }
       }
@@ -15371,19 +15384,19 @@
       "lastValidated": 1769858518264
     },
     "reasoningPrinciple_3": {
-      "usedCount": 70,
-      "successCount": 70,
-      "lastValidated": 1769858498775
+      "usedCount": 71,
+      "successCount": 71,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_4": {
-      "usedCount": 227,
-      "successCount": 227,
-      "lastValidated": 1769858530271
+      "usedCount": 228,
+      "successCount": 228,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_5": {
-      "usedCount": 36,
-      "successCount": 36,
-      "lastValidated": 1769858486739
+      "usedCount": 37,
+      "successCount": 37,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_6": {
       "usedCount": 2,
@@ -15391,9 +15404,9 @@
       "lastValidated": 1769850425214
     },
     "reasoningPrinciple_7": {
-      "usedCount": 127,
-      "successCount": 127,
-      "lastValidated": 1769858518264
+      "usedCount": 128,
+      "successCount": 128,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_8": {
       "usedCount": 16,
@@ -15416,9 +15429,9 @@
       "lastValidated": 1769851296015
     },
     "reasoningPrinciple_12": {
-      "usedCount": 114,
-      "successCount": 114,
-      "lastValidated": 1769858518264
+      "usedCount": 115,
+      "successCount": 115,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_13": {
       "usedCount": 36,
@@ -15426,14 +15439,14 @@
       "lastValidated": 1769858530271
     },
     "reasoningPrinciple_14": {
-      "usedCount": 233,
-      "successCount": 233,
-      "lastValidated": 1769858530271
+      "usedCount": 234,
+      "successCount": 234,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_15": {
-      "usedCount": 95,
-      "successCount": 95,
-      "lastValidated": 1769858518264
+      "usedCount": 96,
+      "successCount": 96,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_16": {
       "usedCount": 39,
@@ -15441,14 +15454,14 @@
       "lastValidated": 1769858530271
     },
     "reasoningPrinciple_17": {
-      "usedCount": 135,
-      "successCount": 135,
-      "lastValidated": 1769858498775
+      "usedCount": 136,
+      "successCount": 136,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_18": {
-      "usedCount": 161,
-      "successCount": 161,
-      "lastValidated": 1769858530271
+      "usedCount": 162,
+      "successCount": 162,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_19": {
       "usedCount": 26,
@@ -15461,39 +15474,39 @@
       "lastValidated": 1769858518264
     },
     "reasoningPrinciple_21": {
-      "usedCount": 155,
-      "successCount": 155,
-      "lastValidated": 1769858530271
+      "usedCount": 156,
+      "successCount": 156,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_22": {
-      "usedCount": 132,
-      "successCount": 132,
-      "lastValidated": 1769858530271
+      "usedCount": 133,
+      "successCount": 133,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_23": {
-      "usedCount": 114,
-      "successCount": 114,
-      "lastValidated": 1769858518264
+      "usedCount": 115,
+      "successCount": 115,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_24": {
-      "usedCount": 234,
-      "successCount": 234,
-      "lastValidated": 1769858530271
+      "usedCount": 235,
+      "successCount": 235,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_25": {
-      "usedCount": 173,
-      "successCount": 173,
-      "lastValidated": 1769858518264
+      "usedCount": 174,
+      "successCount": 174,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_26": {
-      "usedCount": 177,
-      "successCount": 177,
-      "lastValidated": 1769858530271
+      "usedCount": 178,
+      "successCount": 178,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_27": {
-      "usedCount": 183,
-      "successCount": 183,
-      "lastValidated": 1769858530271
+      "usedCount": 184,
+      "successCount": 184,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_28": {
       "usedCount": 97,
@@ -15511,14 +15524,14 @@
       "lastValidated": 1769858530271
     },
     "reasoningPrinciple_31": {
-      "usedCount": 145,
-      "successCount": 145,
-      "lastValidated": 1769858530271
+      "usedCount": 146,
+      "successCount": 146,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_32": {
-      "usedCount": 145,
-      "successCount": 145,
-      "lastValidated": 1769858530271
+      "usedCount": 146,
+      "successCount": 146,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_33": {
       "usedCount": 0,
@@ -15526,9 +15539,9 @@
       "lastValidated": 1768835311487
     },
     "reasoningPrinciple_34": {
-      "usedCount": 220,
-      "successCount": 220,
-      "lastValidated": 1769858530271
+      "usedCount": 221,
+      "successCount": 221,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_35": {
       "usedCount": 103,
@@ -15536,14 +15549,14 @@
       "lastValidated": 1769858518264
     },
     "reasoningPrinciple_36": {
-      "usedCount": 167,
-      "successCount": 167,
-      "lastValidated": 1769858498775
+      "usedCount": 168,
+      "successCount": 168,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_37": {
-      "usedCount": 131,
-      "successCount": 131,
-      "lastValidated": 1769858498775
+      "usedCount": 132,
+      "successCount": 132,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_38": {
       "usedCount": 0,
@@ -15551,9 +15564,9 @@
       "lastValidated": 1768835311487
     },
     "reasoningPrinciple_39": {
-      "usedCount": 162,
-      "successCount": 162,
-      "lastValidated": 1769858498775
+      "usedCount": 163,
+      "successCount": 163,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_40": {
       "usedCount": 8,
@@ -15561,9 +15574,9 @@
       "lastValidated": 1769858518264
     },
     "reasoningPrinciple_41": {
-      "usedCount": 109,
-      "successCount": 109,
-      "lastValidated": 1769858518264
+      "usedCount": 110,
+      "successCount": 110,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_42": {
       "usedCount": 73,
@@ -15571,24 +15584,24 @@
       "lastValidated": 1769858530271
     },
     "reasoningPrinciple_43": {
-      "usedCount": 100,
-      "successCount": 100,
-      "lastValidated": 1769858518264
+      "usedCount": 101,
+      "successCount": 101,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_44": {
-      "usedCount": 100,
-      "successCount": 100,
-      "lastValidated": 1769858518264
+      "usedCount": 101,
+      "successCount": 101,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_45": {
-      "usedCount": 104,
-      "successCount": 104,
-      "lastValidated": 1769858518264
+      "usedCount": 105,
+      "successCount": 105,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_46": {
-      "usedCount": 178,
-      "successCount": 178,
-      "lastValidated": 1769858518264
+      "usedCount": 179,
+      "successCount": 179,
+      "lastValidated": 1769858785334
     },
     "reasoningPrinciple_47": {
       "usedCount": 103,
