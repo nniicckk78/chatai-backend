@@ -765,9 +765,9 @@ async function runPlanningStep(customerMessage, detectedSituations, allRules, co
 
 /**
  * Korrigiert die Grok-Antwort mit einem zweiten Grok-Aufruf (gleiche Regeln wie LoRA-Korrektor).
- * Env: USE_GROK_AS_CORRECTOR=true
+ * Env: USE_GROK_AS_CORRECTOR=true. Bekommt optional Plan + Konversation wie der Generator.
  */
-async function runGrokCorrector({ customerMessage = '', context = {}, grokText = '', learningContext = '', exampleSnippet = '' }) {
+async function runGrokCorrector({ customerMessage = '', context = {}, grokText = '', learningContext = '', exampleSnippet = '', planSnippet = '', conversationSnippet = '' }) {
   if (!grokText || !grokText.trim()) return null;
   const ctx = [];
   if (context.isEmotional) ctx.push('Kunde wirkt traurig/emotional');
@@ -776,11 +776,13 @@ async function runGrokCorrector({ customerMessage = '', context = {}, grokText =
   if (context.hasProfilePic === false) ctx.push('Kunde hat kein Profilbild');
   if (context.allowSexualContent === true) ctx.push('Sexuelle Inhalte sind erlaubt – NICHT entfernen oder abschwächen');
   const contextLine = ctx.length > 0 ? `Kontext: ${ctx.join(', ')}\n\n` : '';
+  const planBlock = (planSnippet && planSnippet.trim()) ? `Plan (was die Antwort tun sollte): ${sanitizeForApiContent(planSnippet.trim().slice(0, 280))}${planSnippet.length > 280 ? '…' : ''}\n\n` : '';
+  const conversationBlock = (conversationSnippet && conversationSnippet.trim()) ? `Chat-Verlauf (Auszug):\n${sanitizeForApiContent(conversationSnippet.trim().slice(-450))}\n\n` : '';
   const fullCustomerMsg = (customerMessage || '').trim();
   const customerForCorrector = fullCustomerMsg.length > 800 ? fullCustomerMsg.slice(0, 800) + '…' : fullCustomerMsg;
   const learningBlock = (learningContext && learningContext.trim()) ? `Feedback/Stil (daran orientieren): ${learningContext.trim().slice(0, 400)}\n\n` : '';
   const exampleBlock = (exampleSnippet && exampleSnippet.trim()) ? `Beispiel einer guten Antwort (Stil/Struktur so): "${exampleSnippet.trim().slice(0, 220)}${exampleSnippet.length > 220 ? '…' : ''}"\n\n` : '';
-  const userContent = `${contextLine}${learningBlock}${exampleBlock}Kundennachricht: "${sanitizeForApiContent(customerForCorrector)}"\n\nPrüfe die folgende Moderatoren-Antwort und korrigiere/verbessere sie:\n(1) Geht die Antwort auf die Kundennachricht ein? Wenn nein → umschreiben.\n(2) Steht am Ende eine Frage? Wenn nein → Frage hinzufügen.\n(3) Umlaute (ä,ö,ü) und ss statt ß? Stil/Bindestriche?\nGib NUR den fertigen korrigierten Text zurück, keine Erklärungen.\n\nZu korrigierende Antwort:\n\n${sanitizeForApiContent(grokText.trim())}`;
+  const userContent = `${contextLine}${planBlock}${conversationBlock}${learningBlock}${exampleBlock}Kundennachricht: "${sanitizeForApiContent(customerForCorrector)}"\n\nPrüfe die folgende Moderatoren-Antwort und korrigiere/verbessere sie:\n(1) Geht die Antwort auf die Kundennachricht ein? Wenn nein → umschreiben.\n(2) Steht am Ende eine Frage? Wenn nein → Frage hinzufügen.\n(3) Umlaute (ä,ö,ü) und ss statt ß? Stil/Bindestriche?\nGib NUR den fertigen korrigierten Text zurück, keine Erklärungen.\n\nZu korrigierende Antwort:\n\n${sanitizeForApiContent(grokText.trim())}`;
 
   const sexualRule = context.allowSexualContent === true
     ? (context.customerTalkingAboutSexWithFake === true
@@ -823,8 +825,9 @@ function getMistralClient() {
 /**
  * Korrigiert die Grok-Antwort mit Mistral (gleiche Regeln wie OpenAI-Korrektor).
  * Nutzen wenn USE_MISTRAL_CORRECTOR=true und MISTRAL_API_KEY gesetzt.
+ * Bekommt optional Plan + Konversation wie der Generator (starkes Fine-Tune kann das nutzen).
  */
-async function runMistralCorrector({ customerMessage = '', context = {}, grokText = '', learningContext = '', exampleSnippet = '' }) {
+async function runMistralCorrector({ customerMessage = '', context = {}, grokText = '', learningContext = '', exampleSnippet = '', planSnippet = '', conversationSnippet = '' }) {
   if (!grokText || !grokText.trim()) return null;
   const client = getMistralClient();
   if (!client) return null;
@@ -835,11 +838,13 @@ async function runMistralCorrector({ customerMessage = '', context = {}, grokTex
   if (context.hasProfilePic === false) ctx.push('Kunde hat kein Profilbild');
   if (context.allowSexualContent === true) ctx.push('Sexuelle Inhalte sind erlaubt – NICHT entfernen oder abschwächen');
   const contextLine = ctx.length > 0 ? `Kontext: ${ctx.join(', ')}\n\n` : '';
+  const planBlock = (planSnippet && planSnippet.trim()) ? `Plan (was die Antwort tun sollte): ${sanitizeForApiContent(planSnippet.trim().slice(0, 280))}${planSnippet.length > 280 ? '…' : ''}\n\n` : '';
+  const conversationBlock = (conversationSnippet && conversationSnippet.trim()) ? `Chat-Verlauf (Auszug):\n${sanitizeForApiContent(conversationSnippet.trim().slice(-450))}\n\n` : '';
   const fullCustomerMsg = (customerMessage || '').trim();
   const customerForCorrector = fullCustomerMsg.length > 800 ? fullCustomerMsg.slice(0, 800) + '…' : fullCustomerMsg;
   const learningBlock = (learningContext && learningContext.trim()) ? `Feedback/Stil (daran orientieren): ${learningContext.trim().slice(0, 400)}\n\n` : '';
   const exampleBlock = (exampleSnippet && exampleSnippet.trim()) ? `Beispiel einer guten Antwort (Stil/Struktur so): "${exampleSnippet.trim().slice(0, 220)}${exampleSnippet.length > 220 ? '…' : ''}"\n\n` : '';
-  const userContent = `${contextLine}${learningBlock}${exampleBlock}Kundennachricht: "${sanitizeForApiContent(customerForCorrector)}"\n\nPrüfe die folgende Moderatoren-Antwort und korrigiere/verbessere sie:\n(1) Geht die Antwort auf die Kundennachricht ein? Wenn nein → umschreiben.\n(2) Steht am Ende eine Frage? Wenn nein → Frage hinzufügen.\n(3) Umlaute (ä,ö,ü) und ss statt ß? Stil/Bindestriche?\n(4) Enthält die Antwort Meta-Kommentare oder wörtliche Wiederholung der Kundennachricht? Wenn ja → entfernen, eigenständig formulieren.\nGib NUR den fertigen korrigierten Text zurück, keine Erklärungen.\n\nZu korrigierende Antwort:\n\n${sanitizeForApiContent(grokText.trim())}`;
+  const userContent = `${contextLine}${planBlock}${conversationBlock}${learningBlock}${exampleBlock}Kundennachricht: "${sanitizeForApiContent(customerForCorrector)}"\n\nPrüfe die folgende Moderatoren-Antwort und korrigiere/verbessere sie:\n(1) Geht die Antwort auf die Kundennachricht ein? Wenn nein → umschreiben.\n(2) Steht am Ende eine Frage? Wenn nein → Frage hinzufügen.\n(3) Umlaute (ä,ö,ü) und ss statt ß? Stil/Bindestriche?\n(4) Enthält die Antwort Meta-Kommentare oder wörtliche Wiederholung der Kundennachricht? Wenn ja → entfernen, eigenständig formulieren.\nGib NUR den fertigen korrigierten Text zurück, keine Erklärungen.\n\nZu korrigierende Antwort:\n\n${sanitizeForApiContent(grokText.trim())}`;
 
   const sexualRule = context.allowSexualContent === true
     ? (context.customerTalkingAboutSexWithFake === true
@@ -885,8 +890,9 @@ const OPENAI_CORRECTOR_MAX_TOKENS = 400;
 /**
  * Korrigiert die Grok-Antwort mit OpenAI (gleiche Regeln wie Grok/LoRA-Korrektor).
  * Wird genutzt, wenn OPENAI_API_KEY gesetzt ist und weder LoRA noch USE_GROK_AS_CORRECTOR gewählt sind.
+ * Bekommt optional Plan + Konversation wie der Generator.
  */
-async function runOpenAICorrector({ customerMessage = '', context = {}, grokText = '', learningContext = '', exampleSnippet = '' }) {
+async function runOpenAICorrector({ customerMessage = '', context = {}, grokText = '', learningContext = '', exampleSnippet = '', planSnippet = '', conversationSnippet = '' }) {
   if (!grokText || !grokText.trim()) return null;
   const ctx = [];
   if (context.isEmotional) ctx.push('Kunde wirkt traurig/emotional');
@@ -895,11 +901,13 @@ async function runOpenAICorrector({ customerMessage = '', context = {}, grokText
   if (context.hasProfilePic === false) ctx.push('Kunde hat kein Profilbild');
   if (context.allowSexualContent === true) ctx.push('Sexuelle Inhalte sind erlaubt – NICHT entfernen oder abschwächen');
   const contextLine = ctx.length > 0 ? `Kontext: ${ctx.join(', ')}\n\n` : '';
+  const planBlock = (planSnippet && planSnippet.trim()) ? `Plan (was die Antwort tun sollte): ${sanitizeForApiContent(planSnippet.trim().slice(0, 280))}${planSnippet.length > 280 ? '…' : ''}\n\n` : '';
+  const conversationBlock = (conversationSnippet && conversationSnippet.trim()) ? `Chat-Verlauf (Auszug):\n${sanitizeForApiContent(conversationSnippet.trim().slice(-450))}\n\n` : '';
   const fullCustomerMsg = (customerMessage || '').trim();
   const customerForCorrector = fullCustomerMsg.length > 800 ? fullCustomerMsg.slice(0, 800) + '…' : fullCustomerMsg;
   const learningBlock = (learningContext && learningContext.trim()) ? `Feedback/Stil (daran orientieren): ${learningContext.trim().slice(0, 400)}\n\n` : '';
   const exampleBlock = (exampleSnippet && exampleSnippet.trim()) ? `Beispiel einer guten Antwort (Stil/Struktur so): "${exampleSnippet.trim().slice(0, 220)}${exampleSnippet.length > 220 ? '…' : ''}"\n\n` : '';
-  const userContent = `${contextLine}${learningBlock}${exampleBlock}Kundennachricht: "${sanitizeForApiContent(customerForCorrector)}"\n\nPrüfe die folgende Moderatoren-Antwort und korrigiere/verbessere sie:\n(1) Geht die Antwort auf die Kundennachricht ein? Wenn nein → umschreiben.\n(2) Steht am Ende eine Frage? Wenn nein → Frage hinzufügen.\n(3) Umlaute (ä,ö,ü) und ss statt ß? Stil/Bindestriche?\n(4) Enthält die Antwort Meta-Kommentare oder wörtliche Wiederholung der Kundennachricht? Wenn ja → entfernen, eigenständig formulieren.\nGib NUR den fertigen korrigierten Text zurück, keine Erklärungen.\n\nZu korrigierende Antwort:\n\n${sanitizeForApiContent(grokText.trim())}`;
+  const userContent = `${contextLine}${planBlock}${conversationBlock}${learningBlock}${exampleBlock}Kundennachricht: "${sanitizeForApiContent(customerForCorrector)}"\n\nPrüfe die folgende Moderatoren-Antwort und korrigiere/verbessere sie:\n(1) Geht die Antwort auf die Kundennachricht ein? Wenn nein → umschreiben.\n(2) Steht am Ende eine Frage? Wenn nein → Frage hinzufügen.\n(3) Umlaute (ä,ö,ü) und ss statt ß? Stil/Bindestriche?\n(4) Enthält die Antwort Meta-Kommentare oder wörtliche Wiederholung der Kundennachricht? Wenn ja → entfernen, eigenständig formulieren.\nGib NUR den fertigen korrigierten Text zurück, keine Erklärungen.\n\nZu korrigierende Antwort:\n\n${sanitizeForApiContent(grokText.trim())}`;
 
   const sexualRule = context.allowSexualContent === true
     ? (context.customerTalkingAboutSexWithFake === true
@@ -1294,6 +1302,8 @@ async function runGrokPipeline(opts) {
       ? String(examples[0].moderatorResponse || examples[0].assistant).trim().slice(0, 250)
       : '';
     let corrected = null;
+    const correctorPlanSnippet = (plan || '').trim();
+    const correctorConversationSnippet = (conversationHistory || '').trim();
     if (useMistralCorrector) {
       console.log('🔧 Grok-Pipeline: rufe Mistral als Korrektor auf');
       corrected = await runMistralCorrector({
@@ -1301,7 +1311,9 @@ async function runGrokPipeline(opts) {
         context: correctorContext,
         grokText: finalMessage,
         learningContext: effectiveLearningContext || '',
-        exampleSnippet
+        exampleSnippet,
+        planSnippet: correctorPlanSnippet,
+        conversationSnippet: correctorConversationSnippet
       });
     } else if (useOpenAICorrector) {
       console.log('🔧 Grok-Pipeline: rufe OpenAI als Korrektor auf');
@@ -1310,7 +1322,9 @@ async function runGrokPipeline(opts) {
         context: correctorContext,
         grokText: finalMessage,
         learningContext: effectiveLearningContext || '',
-        exampleSnippet
+        exampleSnippet,
+        planSnippet: correctorPlanSnippet,
+        conversationSnippet: correctorConversationSnippet
       });
     } else if (useGrokAsCorrector) {
       console.log('🔧 Grok-Pipeline: rufe Grok als Korrektor auf');
@@ -1319,7 +1333,9 @@ async function runGrokPipeline(opts) {
         context: correctorContext,
         grokText: finalMessage,
         learningContext: effectiveLearningContext || '',
-        exampleSnippet
+        exampleSnippet,
+        planSnippet: correctorPlanSnippet,
+        conversationSnippet: correctorConversationSnippet
       });
     } else if (useCorrectorEnv && correctorModelId) {
       console.log('🔧 Grok-Pipeline: rufe Korrektor-LoRA auf (Modell: ' + correctorModelId + ')');
