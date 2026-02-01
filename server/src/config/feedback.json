@@ -1695,7 +1695,7 @@
           },
           {
             "date": "2025-12-18T09:05:53.908Z",
-            "description": "ist arbeiten, m�����������������������chte uns heute sehen",
+            "description": "ist arbeiten, m�������������������������chte uns heute sehen",
             "text": "ist arbeiten, möchte uns heute sehen",
             "fixed": false,
             "moderatorId": "20068"
@@ -17751,6 +17751,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-01T15:03:50.060Z",
       "updatedAt": "2026-02-01T15:03:50.060Z"
+    },
+    {
+      "id": "feedback_1769977435380_qw6abglcc",
+      "chatId": "38402227",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey danke für den Like das freut mich echt 😊 Du gefällst mir auch total gut mit deinem Profilbild. Was machst du denn so beruflich und wie gehts dir heute so? Erzähl mal was von dir ich bin neugierig.",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Freut mich dich kennenzulernen carlos was hast du zu bieten? hoffe nicht nur Blümchensex? was sind deine Vorlieben?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-01T20:23:55.380Z",
+      "updatedAt": "2026-02-01T20:23:55.380Z"
     }
   ]
 }
