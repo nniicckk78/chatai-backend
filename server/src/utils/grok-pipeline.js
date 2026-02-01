@@ -857,7 +857,7 @@ async function runMistralCorrector({ customerMessage = '', context = {}, grokTex
 
   if (MISTRAL_USE_MINIMAL_PROMPT) {
     // Minimal-Prompt: nur Daten, keine langen Regeln. Eigenes Modell (z. B. Fine-Tune) hat bereits gelernt, wie korrigiert wird – lange Anweisungen würden das Gelernte überschreiben.
-    systemContent = 'Du bist ein Korrektor für Chat-Moderator-Antworten. Gib nur die fertige korrigierte Nachricht zurück, keine Erklärungen, keine Meta-Kommentare.';
+    systemContent = 'Du bist ein Korrektor für Chat-Moderator-Antworten. Gib nur die fertige korrigierte Nachricht zurück, keine Erklärungen, keine Meta-Kommentare. Stil und Wortschatz der ursprünglichen Antwort möglichst beibehalten, nur klare Fehler korrigieren. Maximal ein bis zwei Fragen am Ende, keine Frage-Kaskade.';
     userContent = `${contextLine}${planBlock}${conversationBlock}${learningBlock}${exampleBlock}Kundennachricht: "${sanitizeForApiContent(customerForCorrector)}"\n\nZu korrigierende Antwort:\n\n${sanitizeForApiContent(grokText.trim())}`;
     if (process.env.NODE_ENV !== 'production') console.log('🔧 Mistral-Korrektor: Minimal-Prompt (eigenes Modell)');
   } else {
@@ -876,7 +876,7 @@ async function runMistralCorrector({ customerMessage = '', context = {}, grokTex
       : '';
     const metaRule = 'KEINE Meta-Kommentare, keine internen Notizen, keine Erklaerungen – ausschliesslich die eine Chat-Nachricht ausgeben.';
     const noEchoRule = 'Wiederhole die Kundennachricht NICHT woertlich oder fast woertlich. Formuliere eigenstaendig; gehe inhaltlich darauf ein, ohne seine Formulierungen zu echoen (z.B. nicht "dass du mich so X findest" wenn der Kunde "du bist so X" schrieb).';
-    systemContent = `Du bist ein Korrektor für Chat-Moderator-Antworten. Entscheide immer anhand des gesamten Kontexts und der Kundennachricht. ${sexualRule} ${contactIrritatedRule} ${metaRule} ${noEchoRule} PFLICHT: Jede Nachricht braucht eine Frage am Ende. Fehlt eine Frage, füge am Ende UNBEDINGT eine kurze, thematisch passende Frage hinzu. Die Antwort MUSS auf die Kundennachricht eingehen. Wenn etwas zu korrigieren ist (fehlende Frage, kein Bezug, Kontaktdaten nicht abgelehnt, Meta/Wiederholung, Umlaute/ss, Stil), aendere es. Schreibe mit ä, ö, ü. Immer ss, nie ß. Keine Anführungszeichen. Keine Bindestriche. Antworte NUR mit der fertigen korrigierten Nachricht – kein anderer Text.`;
+    systemContent = `Du bist ein Korrektor für Chat-Moderator-Antworten. Entscheide immer anhand des gesamten Kontexts und der Kundennachricht. ${sexualRule} ${contactIrritatedRule} ${metaRule} ${noEchoRule} Stil und Wortschatz der ursprünglichen Antwort möglichst beibehalten, nur klare Fehler korrigieren. Maximal ein bis zwei Fragen am Ende, keine Frage-Kaskade. PFLICHT: Jede Nachricht braucht eine Frage am Ende. Fehlt eine Frage, füge am Ende UNBEDINGT eine kurze, thematisch passende Frage hinzu. Die Antwort MUSS auf die Kundennachricht eingehen. Wenn etwas zu korrigieren ist (fehlende Frage, kein Bezug, Kontaktdaten nicht abgelehnt, Meta/Wiederholung, Umlaute/ss, Stil), aendere es. Schreibe mit ä, ö, ü. Immer ss, nie ß. Keine Anführungszeichen. Keine Bindestriche. Antworte NUR mit der fertigen korrigierten Nachricht – kein anderer Text.`;
   }
 
   try {
