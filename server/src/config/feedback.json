@@ -1695,7 +1695,7 @@
           },
           {
             "date": "2025-12-18T09:05:53.908Z",
-            "description": "ist arbeiten, m��������������������������chte uns heute sehen",
+            "description": "ist arbeiten, m����������������������������chte uns heute sehen",
             "text": "ist arbeiten, möchte uns heute sehen",
             "fixed": false,
             "moderatorId": "20068"
@@ -18441,6 +18441,29 @@
       "lastModeratorMessage": "wow mein engel muss ich aber sagen, du hast ganz gut was zu bieten. Also, wenn das auch das bewerbungsfoto ist, dann fehlt nur noch das bewerbungsgespräch, aber das kriegst du auch hin, und dann können wir Sex machen?",
       "timestamp": "2026-02-03T19:45:28.100Z",
       "updatedAt": "2026-02-03T19:45:28.100Z"
+    },
+    {
+      "id": "feedback_1770150079531_epi8nza21",
+      "chatId": "38443698",
+      "customerMessage": "umkreis Büdingen. bin aber oft in flechenbach und Birstein",
+      "aiResponse": "Das ist ja cool, dass du oft in Flechenbach und Birstein bist. Was machst du denn da so gerne in der Gegend?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Wohnort-Frage"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "oh sehr schade weil ich komme nämlich aus Schlüchtern, woher kommst du denn genau?"
+      },
+      "lastModeratorMessage": "oh sehr schade weil ich komme nämlich aus Schlüchtern, woher kommst du denn genau?",
+      "timestamp": "2026-02-03T20:21:19.531Z",
+      "updatedAt": "2026-02-03T20:21:19.531Z"
     }
   ]
 }
