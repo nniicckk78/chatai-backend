@@ -18276,6 +18276,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-03T14:47:30.027Z",
       "updatedAt": "2026-02-03T14:47:30.027Z"
+    },
+    {
+      "id": "feedback_1770132232516_8tugeky43",
+      "chatId": "31142080",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Und was ist der Grund, dass du mich ignorierst? Ich dachte, wir wollten uns ein bisschen beschnuppern und sehen, was zwischen uns passiert? Oder hast du Angst und ziehst den kürzeren?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Und was hat das jetzt für ein Grund das du mich ignorierst? Ich habe gedacht wir wollten uns einfach mal ein bisschen beschnuppern und schauen was mit uns beiden noch passiert? Oder hast du Angst und ziehst den kürzeren?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Das ist aber sehr lieb das du mich geliked hast, darf ich auch mal wissen, wer du bist? Hoffe mal das du nicht schüchtern bist?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-03T15:23:52.516Z",
+      "updatedAt": "2026-02-03T15:23:52.516Z"
     }
   ]
 }
