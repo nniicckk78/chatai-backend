@@ -14839,7 +14839,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Wollte mal hören ob es dann eventuell ein bisschen was werden kann heute mit uns noch. �������� wir sollten da sicherlich mal schauen dass wir ein wenig zusammenkommen, oder was dachtest du?"
+        "lastModeratorMessage": "Wollte mal hören ob es dann eventuell ein bisschen was werden kann heute mit uns noch. ���������� wir sollten da sicherlich mal schauen dass wir ein wenig zusammenkommen, oder was dachtest du?"
       },
       "lastModeratorMessage": "Wollte mal hören ob es dann eventuell ein bisschen was werden kann heute mit uns noch. 😘 wir sollten da sicherlich mal schauen dass wir ein wenig zusammenkommen, oder was dachtest du?",
       "timestamp": "2026-01-20T22:29:42.585Z",
@@ -18060,29 +18060,28 @@
       "updatedAt": "2026-02-03T08:39:35.319Z"
     },
     {
-      "id": "feedback_1770109121095_08y4qt9iw",
-      "chatId": "38422447",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Hey, ich wollte mich einfach nochmal melden. Manchmal gehen Nachrichten ja einfach unter, schreibst bestimmt mit vielen Frauen hier, oder? Wie geht’s dir gerade und bist du noch aktiv hier?",
+      "id": "feedback_1770109200959_hpf6mhp8c",
+      "chatId": "38404186",
+      "customerMessage": "Ja wannhast du zeit",
+      "aiResponse": "Ich nehme mir gerne Zeit, um dich besser kennenzulernen. Was würdest du denn gerne machen?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
-      "isASA": true,
-      "usedExampleIds": [
-        "ASA Reaktivierung|Hey, ich dachte mir ich melde mich einfach nochmal. Manchmal gehen Chats ja einfach unter, schreibst bestimmt mit vielen Frauen hier nicht wahr? Wie geht’s dir gerade und bist du noch hier unterwegs?"
-      ],
+      "isASA": false,
+      "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "ASA Reaktivierung"
+          "Treffen/Termine",
+          "Wohnort-Frage"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Wow, na da bin ich aber überrascht, ich danke natürlich für die Bewertung aber ich glaube die letzten zwei sterne, die muss ich mir dann wohl noch verdienen? :blush:"
+        "lastModeratorMessage": "hey also du wohnst in Riedlingen Das trifft sich ja gut ich bin ganz aus der Nähe sag mal könnest du dir denn was mit mir vorstellen?"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-02-03T08:58:41.095Z",
-      "updatedAt": "2026-02-03T08:58:41.095Z"
+      "lastModeratorMessage": "hey also du wohnst in Riedlingen Das trifft sich ja gut ich bin ganz aus der Nähe sag mal könnest du dir denn was mit mir vorstellen?",
+      "timestamp": "2026-02-03T09:00:00.959Z",
+      "updatedAt": "2026-02-03T09:00:00.959Z"
     }
   ]
 }
