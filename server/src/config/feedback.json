@@ -14839,7 +14839,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Wollte mal hören ob es dann eventuell ein bisschen was werden kann heute mit uns noch. �������� wir sollten da sicherlich mal schauen dass wir ein wenig zusammenkommen, oder was dachtest du?"
+        "lastModeratorMessage": "Wollte mal hören ob es dann eventuell ein bisschen was werden kann heute mit uns noch. ���������� wir sollten da sicherlich mal schauen dass wir ein wenig zusammenkommen, oder was dachtest du?"
       },
       "lastModeratorMessage": "Wollte mal hören ob es dann eventuell ein bisschen was werden kann heute mit uns noch. 😘 wir sollten da sicherlich mal schauen dass wir ein wenig zusammenkommen, oder was dachtest du?",
       "timestamp": "2026-01-20T22:29:42.585Z",
@@ -18107,6 +18107,31 @@
       "lastModeratorMessage": "Das macht nichts. Ich werde dich natürlich in die Kunst einführen damit es für dich schön wird und wir beide auf unsere Kosten kommen.",
       "timestamp": "2026-02-03T09:06:18.999Z",
       "updatedAt": "2026-02-03T09:06:18.999Z"
+    },
+    {
+      "id": "feedback_1770110586363_w3d0adx0l",
+      "chatId": "38415455",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, wo bist du eigentlich geblieben? 😅 Ich habe mich gefragt, ob ich irgendwas Falsches gesagt habe oder ob du einfach vom Erdboden verschluckt wurdest?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, sag mal, wo hast du dich eigentlich versteckt? 😅 Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hey? wo steckst du denn? Wieso meldest du dich denn da nicht bei mir? Das finde ich einfach nur sehr schade. Ich dachte du willst mich"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-03T09:23:06.363Z",
+      "updatedAt": "2026-02-03T09:23:06.363Z"
     }
   ]
 }
