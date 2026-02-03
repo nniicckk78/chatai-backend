@@ -1695,7 +1695,7 @@
           },
           {
             "date": "2025-12-18T09:05:53.908Z",
-            "description": "ist arbeiten, m�����������������������chte uns heute sehen",
+            "description": "ist arbeiten, m�������������������������chte uns heute sehen",
             "text": "ist arbeiten, möchte uns heute sehen",
             "fixed": false,
             "moderatorId": "20068"
@@ -18083,6 +18083,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-03T09:01:00.988Z",
       "updatedAt": "2026-02-03T09:01:00.988Z"
+    },
+    {
+      "id": "feedback_1770109362588_j077mldwt",
+      "chatId": "38441361",
+      "customerMessage": "hey willst du bilder austauschen und dich darauf für mich fimgern",
+      "aiResponse": "hm, ich bin da etwas vorsichtig mit Bildern. Aber stell dir vor, ich würde dir eins schicken. Würdest du dir dann einen runterholen?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Bilder Anfrage",
+          "Sexuelle Themen"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-03T09:02:42.588Z",
+      "updatedAt": "2026-02-03T09:02:42.588Z"
     }
   ]
 }
