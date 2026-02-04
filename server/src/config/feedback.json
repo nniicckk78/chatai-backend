@@ -18586,29 +18586,27 @@
       "updatedAt": "2026-02-04T09:36:39.439Z"
     },
     {
-      "id": "feedback_1770197863486_jo737g0b6",
-      "chatId": "38441861",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Was machst du denn gerade? Ich musste gerade an dich denken und frage mich, was du so machst, wenn du dich nicht bei mir meldest. Hast du mich schon vergessen?",
+      "id": "feedback_1770197937125_q1ho5hu0x",
+      "chatId": "38371516",
+      "customerMessage": "arbeitsreich",
+      "aiResponse": "Puh, arbeitsreich klingt anstrengend, aber du packst das, Holger! Wie hältst du dich bei der ganzen Hektik eigentlich bei Laune?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
-      "isASA": true,
-      "usedExampleIds": [
-        "ASA Reaktivierung|Was machst du denn gerade? Ich musste gerade an dich denken und Frage mich was du gerade so machst wenn du dich ja schon nicht bei mir meldest? Hast du mich schon vergessen?"
-      ],
+      "isASA": false,
+      "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "ASA Reaktivierung"
+          "Berufsfrage"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Hallo es freut mich auch dass du dich meldest. 😊 Na wie geht’s dir? Und was machst du denn gerade schönes? Würde dich echt gerne näher kennen lernen."
+        "lastModeratorMessage": "Die Sonne scheint heute besonders hell, genau wie deine letzten Nachrichten. Was macht dein Tag ohne viel Hin und her?"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-02-04T09:37:43.486Z",
-      "updatedAt": "2026-02-04T09:37:43.486Z"
+      "lastModeratorMessage": "Die Sonne scheint heute besonders hell, genau wie deine letzten Nachrichten. Was macht dein Tag ohne viel Hin und her?",
+      "timestamp": "2026-02-04T09:38:57.125Z",
+      "updatedAt": "2026-02-04T09:38:57.125Z"
     }
   ]
 }
