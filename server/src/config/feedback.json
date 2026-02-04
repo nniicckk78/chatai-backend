@@ -19281,6 +19281,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-04T14:24:50.416Z",
       "updatedAt": "2026-02-04T14:24:50.416Z"
+    },
+    {
+      "id": "feedback_1770215246774_lawiaimsh",
+      "chatId": "38372732",
+      "customerMessage": "Ok schreibe mir wann und wo lg Andfeas",
+      "aiResponse": "Ich schau mir das nochmal an, die Woche ist echt voll. Was würdest du denn gerne machen? Hast du schon ne Idee?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Treffen/Termine"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Na gut nächste Woche würde ich mal schauen welcher Tag weil da wohl der ein oder andere Termin weg gefallen ist"
+      },
+      "lastModeratorMessage": "Na gut nächste Woche würde ich mal schauen welcher Tag weil da wohl der ein oder andere Termin weg gefallen ist",
+      "timestamp": "2026-02-04T14:27:26.774Z",
+      "updatedAt": "2026-02-04T14:27:26.774Z"
     }
   ]
 }
