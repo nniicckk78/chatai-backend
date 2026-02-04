@@ -1695,7 +1695,7 @@
           },
           {
             "date": "2025-12-18T09:05:53.908Z",
-            "description": "ist arbeiten, m����������������������������chte uns heute sehen",
+            "description": "ist arbeiten, m�����������������������������chte uns heute sehen",
             "text": "ist arbeiten, möchte uns heute sehen",
             "fixed": false,
             "moderatorId": "20068"
@@ -18974,6 +18974,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-04T13:07:06.150Z",
       "updatedAt": "2026-02-04T13:07:06.150Z"
+    },
+    {
+      "id": "feedback_1770210490696_5icas0ljq",
+      "chatId": "38437706",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Wo bist du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so voll, dass meine Nachrichten gar nicht mehr angezeigt werden? Ich hätte da mal eine wirklich wichtige Frage an dich.",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Wo steckst du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so überfüllt das meine Nachrichten schon gar nicht mehr bei dir angezeigt werden? Ich hätte da mal eine echt wichtige Frage an dich?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Bist du denn jetzt gerade noch auf den Beinen? wir können uns ja mal noch etwas unterhalten und vielleicht auch noch das ein oder andere Bild austauschen? 😊"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-04T13:08:10.696Z",
+      "updatedAt": "2026-02-04T13:08:10.696Z"
     }
   ]
 }
