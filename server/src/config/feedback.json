@@ -18729,25 +18729,27 @@
       "updatedAt": "2026-02-04T11:59:22.264Z"
     },
     {
-      "id": "feedback_1770206460806_l6fkm7et1",
-      "chatId": "38388114",
-      "customerMessage": "Mit ihr zusammen chatten Schatz",
-      "aiResponse": "Ach so, du chattest mit ihr zusammen? Wer ist die denn so? Macht dir das Spass?",
+      "id": "feedback_1770206550705_q0enpl5q4",
+      "chatId": "38372732",
+      "customerMessage": "Denn sage mir mal bescheid wanndu diese oder nächste woche zeit hast für mich und wo",
+      "aiResponse": "Ich mag es lieber, erstmal ein bisschen zu plaudern. Was würdest du denn gerne mit mir machen? Erzähl mal!",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
       "isASA": false,
       "usedExampleIds": [],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "Treffen/Termine"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Ok ja gut dann ist das ja auch ein bisschen unwichtig. Was machst du denn jetzt gerade Spatz?"
+        "lastModeratorMessage": "Also ich bin meist montag bis Freitag bis 17 Uhr im Büro danach entscheide ich natürlich Spontan zwecks Klarem Kopf und eben ob man anstrengenden Tag hatte verstehst du?"
       },
-      "lastModeratorMessage": "Ok ja gut dann ist das ja auch ein bisschen unwichtig. Was machst du denn jetzt gerade Spatz?",
-      "timestamp": "2026-02-04T12:01:00.806Z",
-      "updatedAt": "2026-02-04T12:01:00.806Z"
+      "lastModeratorMessage": "Also ich bin meist montag bis Freitag bis 17 Uhr im Büro danach entscheide ich natürlich Spontan zwecks Klarem Kopf und eben ob man anstrengenden Tag hatte verstehst du?",
+      "timestamp": "2026-02-04T12:02:30.705Z",
+      "updatedAt": "2026-02-04T12:02:30.705Z"
     }
   ]
 }
