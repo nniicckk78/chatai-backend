@@ -19308,25 +19308,29 @@
       "updatedAt": "2026-02-04T14:31:54.479Z"
     },
     {
-      "id": "feedback_1770215588746_6y896q9z7",
-      "chatId": "38461938",
-      "customerMessage": "Richtig, aber auch gegenseitiger Respekt und Verständnis, sowie Achtung und Toleranz voreinander gehören dazu.",
-      "aiResponse": "Genau, Respekt und Toleranz sind das A und O. Ohne das läuft nichts rund. Wie zeigst du das im Alltag?",
+      "id": "feedback_1770215666920_f9w39taca",
+      "chatId": "26599380",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich musste gerade an dich denken und hab mich gefragt, warum du dich nicht mehr bei mir meldest? Hast du vielleicht schon jemand anderen gefunden oder stehst du einfach nicht auf Spass?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
-      "isASA": false,
-      "usedExampleIds": [],
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich musste gerade an dich denken und hab mich gefragt, warum du dich nicht mehr bei mir meldest? Hast du inzwischen schon jemand anderen gefunden oder stehst du einfach nicht auf Spass?"
+      ],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "naja man soll und darf ja auch man selbst sein wäre doch sonst auch total Langweilig wenn ale gleich wären oder nicht ?"
+        "lastModeratorMessage": "Oh und das wäre dir dann sicherlich peinlich, wenn dein Ständer jeder sehen würde?"
       },
-      "lastModeratorMessage": "naja man soll und darf ja auch man selbst sein wäre doch sonst auch total Langweilig wenn ale gleich wären oder nicht ?",
-      "timestamp": "2026-02-04T14:33:08.746Z",
-      "updatedAt": "2026-02-04T14:33:08.746Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-04T14:34:26.920Z",
+      "updatedAt": "2026-02-04T14:34:26.920Z"
     }
   ]
 }
