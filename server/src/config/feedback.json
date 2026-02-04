@@ -1695,7 +1695,7 @@
           },
           {
             "date": "2025-12-18T09:05:53.908Z",
-            "description": "ist arbeiten, m��������������������������������������chte uns heute sehen",
+            "description": "ist arbeiten, m������������������������������������chte uns heute sehen",
             "text": "ist arbeiten, möchte uns heute sehen",
             "fixed": false,
             "moderatorId": "20068"
@@ -19164,29 +19164,27 @@
       "updatedAt": "2026-02-04T13:54:35.372Z"
     },
     {
-      "id": "feedback_1770213449360_gre4fv62d",
-      "chatId": "21634696",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Was ist denn los, dass du dich nicht mehr bei mir meldest? Sei doch mal ehrlich und sag mir, was los ist. Lass mich nicht einfach so im Ungewissen.😕.",
+      "id": "feedback_1770213519949_rlxvdgyjy",
+      "chatId": "38335002",
+      "customerMessage": "Was hättest du denn für einen schönen Plan",
+      "aiResponse": "Ach mein Süsser, ich stell mir vor, wir machen es uns richtig gemütlich, vielleicht mit nem Glas Wein und Kerzenlicht. Was meinst du denn, was wir noch so machen könnten?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
-      "isASA": true,
-      "usedExampleIds": [
-        "ASA Reaktivierung|Was habe ich gemacht das du dich nicht mehr bei mir meldest? Sei doch wenigstens mal ein richtiger Mann und gib mir Bescheid was los ist? Lass mich hier nicht einfach so links stehen!😕"
-      ],
+      "isASA": false,
+      "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "ASA Reaktivierung"
+          "Treffen/Termine"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Ich habe doch nicht gesagt dass du mich überreden sollst Ich kan dir sagen das ich das aus freien herzen möchte. und das macht doch den Unterschied?"
+        "lastModeratorMessage": "Hallihallo, ich bin noch mal hier mein lieber Prinz wie geht es denn heute, ich hoffe gut? Bitte melde dich bei mir umgehend denn ich hab eine schöne Plan zwischen uns also wann bist du hier?😘"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-02-04T13:57:29.360Z",
-      "updatedAt": "2026-02-04T13:57:29.360Z"
+      "lastModeratorMessage": "Hallihallo, ich bin noch mal hier mein lieber Prinz wie geht es denn heute, ich hoffe gut? Bitte melde dich bei mir umgehend denn ich hab eine schöne Plan zwischen uns also wann bist du hier?😘",
+      "timestamp": "2026-02-04T13:58:39.949Z",
+      "updatedAt": "2026-02-04T13:58:39.949Z"
     }
   ]
 }
