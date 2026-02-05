@@ -1695,7 +1695,7 @@
           },
           {
             "date": "2025-12-18T09:05:53.908Z",
-            "description": "ist arbeiten, m���������������������������������������������chte uns heute sehen",
+            "description": "ist arbeiten, m����������������������������������������������chte uns heute sehen",
             "text": "ist arbeiten, möchte uns heute sehen",
             "fixed": false,
             "moderatorId": "20068"
@@ -20279,6 +20279,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-05T16:36:56.817Z",
       "updatedAt": "2026-02-05T16:36:56.817Z"
+    },
+    {
+      "id": "feedback_1770309499199_6jqh7iwmv",
+      "chatId": "38482151",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Muss ich jetzt schon eine Vermisstenanzeige aufgeben oder wo steckst du denn, wenn ich fragen darf? Lässt man eine Frau heutzutage einfach so ohne Grund stehen?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Muss ich denn jetzt schon eine Vermisstenanzeige erstellen oder wo steckst du denn wenn ich fragen darf? Lässt man denn heutzutage eine Frau einfach so ohne Begründung stehen? Vielleicht kann ich dich ja mit einer Überraschung wieder von mir überzeugen?😏"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Kommst du mit mir ins Kino? 😘"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-05T16:38:19.199Z",
+      "updatedAt": "2026-02-05T16:38:19.199Z"
     }
   ]
 }
