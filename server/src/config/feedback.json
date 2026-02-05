@@ -20094,6 +20094,31 @@
       "lastModeratorMessage": "Sehr schön. Was machst du denn eigentlich gerade noch so schönes? Das würde mich einmal wirklich sehr doll interessieren.",
       "timestamp": "2026-02-05T15:42:12.151Z",
       "updatedAt": "2026-02-05T15:42:12.151Z"
+    },
+    {
+      "id": "feedback_1770306201974_q9xge645o",
+      "chatId": "38463434",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Sag mal, ist es mittlerweile normal geworden, einfach nicht mehr zu antworten? Oder habe ich irgendwas falsch gemacht? Sag mir doch wenigstens Bescheid, damit ich es beim nächsten Mal besser machen kann.",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Sag mal, ist es inzwischen normal geworden, einfach nicht mehr zu antworten? Oder habe ich irgendwas falsches geschrieben? Sag mir doch wenigstens mal bescheid damit ich es auch für das nächste mal besser machen kann!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Klopf Klopf und einen schönen guten Morgen. Ich sitze hier einem Kaffee und habe mir gedacht das ich mich nochmal melde, bevor ich los muss. 😇 Was machst du gerade?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-05T15:43:21.974Z",
+      "updatedAt": "2026-02-05T15:43:21.974Z"
     }
   ]
 }
