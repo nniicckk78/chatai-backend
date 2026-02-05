@@ -14974,7 +14974,7 @@
       "id": "feedback_1768952723302_j597n8jbm",
       "chatId": "37047681",
       "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Hey du, ich habe deinen Kuss bekommen und das macht mich richtig happy. Ich finde dich auch echt heiss. Was w��rdest du denn gerne mit mir machen, wenn wir uns mal sehen?",
+      "aiResponse": "Hey du, ich habe deinen Kuss bekommen und das macht mich richtig happy. Ich finde dich auch echt heiss. Was würdest du denn gerne mit mir machen, wenn wir uns mal sehen?",
       "editedResponse": "Hey du, ich habe deinen Kuss bekommen und das macht mich richtig happy. Ich finde dich auch echt heiss. Was würdest du denn gerne mit mir machen, wenn wir uns mal sehen?",
       "status": "edited",
       "platform": "fpc",
@@ -19840,25 +19840,29 @@
       "updatedAt": "2026-02-05T13:13:37.535Z"
     },
     {
-      "id": "feedback_1770297297673_el94ccykb",
-      "chatId": "38185814",
-      "customerMessage": "Schön wäre es 👍ist vielleicht nur am Anfang so dann kommt eventuell die Normalität",
-      "aiResponse": "Ja, das klingt doch schon mal gut! Am Anfang ist es oft ein bisschen chaotisch, aber dann wird es bestimmt einfacher. Was wäre für dich denn Normalität?",
+      "id": "feedback_1770297371188_0bucfbr3o",
+      "chatId": "38196477",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Schade, dass ich bei dir schon so in Vergessenheit geraten bin. Findest du mich denn nicht ansprechend oder ist dein Postfach hier so voll, dass meine Nachrichten untergehen?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
-      "isASA": false,
-      "usedExampleIds": [],
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Schade das ich bei dir schon so in die Vergessenheit geraten bin. Findest du mich denn nicht attraktiv oder ist dein Postfach hier so voll das meine Nachrichten unter gehen? Ich würde mich schon freuen wenn du dich mal wieder melden würdest!"
+      ],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Das ist klar aber kennst das ja zufal ist das beste, wenn man fast drüber stolpern kann, oder nicht? 😂"
+        "lastModeratorMessage": "Ich komme aus Passau. Naja vieleicht bin ich gar nicht so langweilig, wie du denkst Vielleicht kann ich auch sehr kreativ sein. Was sind den so deine erotischen fantasien?"
       },
-      "lastModeratorMessage": "Das ist klar aber kennst das ja zufal ist das beste, wenn man fast drüber stolpern kann, oder nicht? 😂",
-      "timestamp": "2026-02-05T13:14:57.673Z",
-      "updatedAt": "2026-02-05T13:14:57.673Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-05T13:16:11.188Z",
+      "updatedAt": "2026-02-05T13:16:11.188Z"
     }
   ]
 }
