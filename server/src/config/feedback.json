@@ -20352,6 +20352,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-05T16:52:10.300Z",
       "updatedAt": "2026-02-05T16:52:10.300Z"
+    },
+    {
+      "id": "feedback_1770310464517_9qhygvwxt",
+      "chatId": "38327545",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, wo bleibst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir unbedingt sagen möchte. Willst du dich denn nicht mehr bei mir melden oder wie? Dann verpasst du echt was Heisses.",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ja hallo mein Lieber, bin noch wach. Was hast du denn gerade so um die Ohren? Hoffe deine frau hat meine nachrichten nicht gesehen."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-05T16:54:24.517Z",
+      "updatedAt": "2026-02-05T16:54:24.517Z"
     }
   ]
 }
