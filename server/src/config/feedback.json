@@ -20813,6 +20813,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-06T14:00:49.184Z",
       "updatedAt": "2026-02-06T14:00:49.184Z"
+    },
+    {
+      "id": "feedback_1770386532303_rmlt0vwso",
+      "chatId": "38497372",
+      "customerMessage": "ich möchte dich gerne in ein Cafe treffen und dann können wir uns persönlich kennenlernen. ich möchte dich sehr gerne persönlich kennenlernen",
+      "aiResponse": "Das klingt ja richtig schön, dass du dir das so vorstellst. Ich finde es auch total spannend, mehr über dich zu erfahren und zu sehen, was wir gemeinsam machen können. Was reizt dich denn besonders daran, sich in einem Café zu treffen?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Treffen/Termine"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Das ist doch schon mal etwas gutes! Ich würde mich sehr freuen wenn du mir sagst wie du es dir vorgestellt hast"
+      },
+      "lastModeratorMessage": "Das ist doch schon mal etwas gutes! Ich würde mich sehr freuen wenn du mir sagst wie du es dir vorgestellt hast",
+      "timestamp": "2026-02-06T14:02:12.303Z",
+      "updatedAt": "2026-02-06T14:02:12.303Z"
     }
   ]
 }
