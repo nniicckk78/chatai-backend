@@ -1695,7 +1695,7 @@
           },
           {
             "date": "2025-12-18T09:05:53.908Z",
-            "description": "ist arbeiten, m����������������������������������������������������chte uns heute sehen",
+            "description": "ist arbeiten, m�����������������������������������������������������chte uns heute sehen",
             "text": "ist arbeiten, möchte uns heute sehen",
             "fixed": false,
             "moderatorId": "20068"
@@ -21096,6 +21096,30 @@
       "lastModeratorMessage": "das ist wirklich blöd muss ich sagen. Wir können uns erst treffen, wenn du wieder fertig bist.",
       "timestamp": "2026-02-06T15:54:44.974Z",
       "updatedAt": "2026-02-06T15:54:44.974Z"
+    },
+    {
+      "id": "feedback_1770393578071_s4ki5oz4n",
+      "chatId": "38500108",
+      "customerMessage": "Hallo ich heisse Jochem. Ja",
+      "aiResponse": "Hey Jochem, freut mich dich kennenzulernen. Ich bin da etwas vorsichtig mit privaten Bildern im Internet. Würdest du mir das übel nehmen? Was hast du denn heute Nachmittag so vor? 😊",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Bilder Anfrage",
+          "Bot-Vorwurf"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Nora möchte ein privates Bild mit dir teilen. Bitte beachte, dass wir den Inhalt nicht prüfen. Der Inhalt des Bildes könnte möglicherweise unangemessen oder anstößig sein. Falls du das Bild erhalten möchtest, antworte bitte mit „Ja“ auf diese Nachricht. Andernfalls wird das Bild nicht übermittelt."
+      },
+      "lastModeratorMessage": "Nora möchte ein privates Bild mit dir teilen. Bitte beachte, dass wir den Inhalt nicht prüfen. Der Inhalt des Bildes könnte möglicherweise unangemessen oder anstößig sein. Falls du das Bild erhalten möchtest, antworte bitte mit „Ja“ auf diese Nachricht. Andernfalls wird das Bild nicht übermittelt.",
+      "timestamp": "2026-02-06T15:59:38.071Z",
+      "updatedAt": "2026-02-06T15:59:38.071Z"
     }
   ]
 }
