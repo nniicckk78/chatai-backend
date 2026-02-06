@@ -13406,7 +13406,7 @@
         "sessionStart": "2026-01-16T15:57:20.000Z",
         "extractedInfo": {
           "user": {
-            "Family": "wünscht sich eine kleine Familie und Kinder",
+            "Family": "w��nscht sich eine kleine Familie und Kinder",
             "Name": "Michael",
             "Age": 53,
             "Wohnort": "Mitte, Bielefeld",
@@ -21333,6 +21333,31 @@
       "lastModeratorMessage": "Was verrät dein Insta über deine geheimen Leidenschaften, Phillip?",
       "timestamp": "2026-02-06T16:51:58.910Z",
       "updatedAt": "2026-02-06T16:51:58.910Z"
+    },
+    {
+      "id": "feedback_1770396987358_ctmkqkbeg",
+      "chatId": "38501307",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ganz ehrlich, es ist echt schade, dass du dich nicht meldest. Ich bin gerade in genau der Stimmung, in der man mich besser nicht ignorieren sollte. Oder traust du dich einfach nicht?😏.",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ganz ehrlich es ist echt schade dass du dich nicht meldest. Ich bin gerade in genau der Stimmung, in der man mich lieber nicht ignorieren sollte. Oder traust du dich einfach nicht?😏"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Kommst du mit mir ins Kino? 😘"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-06T16:56:27.358Z",
+      "updatedAt": "2026-02-06T16:56:27.358Z"
     }
   ]
 }
