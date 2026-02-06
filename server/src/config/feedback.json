@@ -1695,7 +1695,7 @@
           },
           {
             "date": "2025-12-18T09:05:53.908Z",
-            "description": "ist arbeiten, m����������������������������������������������chte uns heute sehen",
+            "description": "ist arbeiten, m�����������������������������������������������chte uns heute sehen",
             "text": "ist arbeiten, möchte uns heute sehen",
             "fixed": false,
             "moderatorId": "20068"
@@ -20433,27 +20433,29 @@
       "updatedAt": "2026-02-06T12:25:15.180Z"
     },
     {
-      "id": "feedback_1770380894204_qr1bl5c7h",
-      "chatId": "38496534",
-      "customerMessage": "hallo,! bin der torsten und komme aus Baltersweiler",
-      "aiResponse": "Ach, Baltersweiler ist ja nicht weit von Neunkirchen entfernt. Schön, dass du dich vorstellst, Torsten! Was machst du denn so beruflich? Und hast du Hobbys, die dich richtig begeistern?",
+      "id": "feedback_1770381012667_g47l6zl41",
+      "chatId": "38494437",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, ich würde mich echt freuen, wenn du dich mal wieder bei mir melden würdest. Oder hast du kein Interesse mehr an mir? Das fände ich echt schade, ich war eigentlich überzeugt von dir.",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
-      "isASA": false,
-      "usedExampleIds": [],
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, mich würde es echt freuen wenn du dich mal wieder bei mir melden würdest. Oder hast du keine Interesse mehr an mir? Würde ich echt schade finden, ich war eigentlich überzeugt von dir!"
+      ],
       "context": {
         "detectedSituations": [
-          "Wohnort-Frage"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Kannst du dich denn auch bitte mal vorstellen? Du kommst doch aus Namborn richtig?"
+        "lastModeratorMessage": "Guten Morgen Klaus, ich bin die Eva.  Also suchst du hier eine feste Beziehung? Bin ich dir nicht zu jung?"
       },
-      "lastModeratorMessage": "Kannst du dich denn auch bitte mal vorstellen? Du kommst doch aus Namborn richtig?",
-      "timestamp": "2026-02-06T12:28:14.204Z",
-      "updatedAt": "2026-02-06T12:28:14.204Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-06T12:30:12.667Z",
+      "updatedAt": "2026-02-06T12:30:12.667Z"
     }
   ]
 }
