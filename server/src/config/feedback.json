@@ -13406,7 +13406,7 @@
         "sessionStart": "2026-01-16T15:57:20.000Z",
         "extractedInfo": {
           "user": {
-            "Family": "wünscht sich eine kleine Familie und Kinder",
+            "Family": "w��nscht sich eine kleine Familie und Kinder",
             "Name": "Michael",
             "Age": 53,
             "Wohnort": "Mitte, Bielefeld",
@@ -21310,6 +21310,29 @@
       "lastModeratorMessage": "Guten Abend enrico ich freue mich sehr darauf dich kennenzulernen. wo wohnst du eigentlich? Was machst du beruflich? Was genau suchst du hier",
       "timestamp": "2026-02-06T16:45:43.626Z",
       "updatedAt": "2026-02-06T16:45:43.626Z"
+    },
+    {
+      "id": "feedback_1770396551738_aqw5zqhcg",
+      "chatId": "38501099",
+      "customerMessage": "da kann ich dir alles sagen wenn wir uns treffen - gerne auch früher von der uhrzeit?",
+      "aiResponse": "Das klingt ja schon mal richtig gut, dass du dir auch eine frühere Uhrzeit vorstellen kannst. Was würdest du denn gerne mit mir unternehmen, wenn wir uns in der Altstadt treffen?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Treffen/Termine"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Das ist mir ehrlich gesagt ein bisschen zu spät, aber ist überhaupt nicht schlimm, was würdest du denn überhaupt alles mit mir machen wollen?"
+      },
+      "lastModeratorMessage": "Das ist mir ehrlich gesagt ein bisschen zu spät, aber ist überhaupt nicht schlimm, was würdest du denn überhaupt alles mit mir machen wollen?",
+      "timestamp": "2026-02-06T16:49:11.738Z",
+      "updatedAt": "2026-02-06T16:49:11.738Z"
     }
   ]
 }
