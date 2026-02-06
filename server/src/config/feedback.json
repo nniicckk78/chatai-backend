@@ -20056,8 +20056,8 @@
       "chatId": "38480863",
       "customerMessage": "Ich bin single wohne aleine",
       "aiResponse": "Das klingt ja praktisch, alleine zu wohnen. Was machst du denn so in deiner Freizeit? Hast du Hobbys, die du gerne teilst? 😊",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Schonmal gut zu wissen das du alleine wohnst aber du hast ja gar nicht auf meine Frage richtig geantwortet, ich wollte wo du wohnst?",
+      "status": "edited",
       "platform": "fpc",
       "isASA": false,
       "usedExampleIds": [],
@@ -20072,15 +20072,19 @@
       },
       "lastModeratorMessage": "Das kan ich ja verstehen aber da sollten wir uns schon erstmal ein bisschen besser kennenlernen meinst du nicht auch 😊 verrate mir doch mal wo du eigentlich wohnst 😘",
       "timestamp": "2026-02-05T15:36:33.765Z",
-      "updatedAt": "2026-02-05T15:36:33.765Z"
+      "updatedAt": "2026-02-06T09:13:02.590Z",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1770306132151_d5usioqaq",
       "chatId": "38189180",
       "customerMessage": "Ich bin gerade in der HNO Praxis Roth,zur Ohrreinigung",
       "aiResponse": "Oh, das klingt ja nicht so prickelnd. Aber Hauptsache, es geht dir danach besser. Wie fühlst du dich denn jetzt dabei? Hast du schon mal so eine Ohrreinigung gemacht?",
-      "editedResponse": "Oh, das klingt ja nicht so prickelnd. Aber Hauptsache, es geht dir danach besser. Wie fühlst du dich denn jetzt dabei? Hast du schon mal so eine Ohrreinigung gemacht?",
-      "status": "edited",
+      "editedResponse": null,
+      "status": "pending",
       "platform": "fpc",
       "isASA": false,
       "usedExampleIds": [],
@@ -20093,7 +20097,7 @@
       },
       "lastModeratorMessage": "Sehr schön. Was machst du denn eigentlich gerade noch so schönes? Das würde mich einmal wirklich sehr doll interessieren.",
       "timestamp": "2026-02-05T15:42:12.151Z",
-      "updatedAt": "2026-02-06T09:11:44.832Z"
+      "updatedAt": "2026-02-05T15:42:12.151Z"
     },
     {
       "id": "feedback_1770306406747_cc8rjndcs",
