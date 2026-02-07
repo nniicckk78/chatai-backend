@@ -21710,25 +21710,28 @@
       "updatedAt": "2026-02-07T07:17:01.333Z"
     },
     {
-      "id": "feedback_1770448896216_67r6x4w6c",
-      "chatId": "Ej0kuIsxLLqs6NygYubK",
-      "customerMessage": "Das übliche Haushalt, einkaufen gehen,Büro und Sofa geniessen",
-      "aiResponse": "Klingt nach einem entspannten Tag. Ich mag es auch, wenn man nach dem Haushalt und Einkaufen einfach mal auf dem Sofa abschalten kann. Was machst du denn da am liebsten, um dich zu entspannen?",
+      "id": "feedback_1770449008907_b7iycvchb",
+      "chatId": "22QEpZ3r6gZmbPeAorSl",
+      "customerMessage": "Ich bin Maschinenbau Techniker (Schweisser)! Freue mich schon sehr auf dich 💕",
+      "aiResponse": "Das klingt ja richtig spannend, Maschinenbau Techniker und Schweisser zu sein! Stell dir vor, wie du diese grossen Maschinen zusammenbaust das ist doch sicherlich immer wieder faszinierend, oder? Was reizt dich besonders an deinem Beruf? 😊",
       "editedResponse": null,
       "status": "pending",
       "platform": "avz",
       "isASA": false,
       "usedExampleIds": [],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "Berufsfrage",
+          "Romantik / Verliebtheit"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Super Toni Dann bin ich schonmal sehr drauf gespannt, dich kennenzulernen, doch schon auf jeden Fall kann man mich nicht beklauen, du denn aber auch? Was wirst du heute denn so anstellen?"
+        "lastModeratorMessage": "Das ist gut Markus wenn du öfter hier mal nach schaust. Sag mal was bist du eigentlich von Beruf? Ich bin als Pädagogin tätig?"
       },
-      "lastModeratorMessage": "Super Toni Dann bin ich schonmal sehr drauf gespannt, dich kennenzulernen, doch schon auf jeden Fall kann man mich nicht beklauen, du denn aber auch? Was wirst du heute denn so anstellen?",
-      "timestamp": "2026-02-07T07:21:36.216Z",
-      "updatedAt": "2026-02-07T07:21:36.216Z"
+      "lastModeratorMessage": "Das ist gut Markus wenn du öfter hier mal nach schaust. Sag mal was bist du eigentlich von Beruf? Ich bin als Pädagogin tätig?",
+      "timestamp": "2026-02-07T07:23:28.907Z",
+      "updatedAt": "2026-02-07T07:23:28.907Z"
     }
   ]
 }
