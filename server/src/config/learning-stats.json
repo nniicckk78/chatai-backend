@@ -4913,22 +4913,22 @@
       },
       "bin": {
         "good": 12,
-        "bad": 3,
-        "lastUpdated": 1769006412316
+        "bad": 4,
+        "lastUpdated": 1770547154139
       },
       "jetzt": {
         "good": 4,
         "bad": 0
       },
       "wie": {
-        "good": 10,
-        "bad": 5,
-        "lastUpdated": 1770369031947
+        "good": 11,
+        "bad": 6,
+        "lastUpdated": 1770547154139
       },
       "denn": {
-        "good": 12,
-        "bad": 7,
-        "lastUpdated": 1770369031947
+        "good": 13,
+        "bad": 8,
+        "lastUpdated": 1770547154139
       },
       "familie": {
         "good": 2,
@@ -4972,9 +4972,9 @@
         "lastUpdated": 1769007450401
       },
       "was": {
-        "good": 5,
+        "good": 6,
         "bad": 12,
-        "lastUpdated": 1770368522339
+        "lastUpdated": 1770547154139
       },
       "magst": {
         "good": 0,
@@ -4982,8 +4982,8 @@
       },
       "wenn": {
         "good": 3,
-        "bad": 11,
-        "lastUpdated": 1770368522339
+        "bad": 12,
+        "lastUpdated": 1770547154139
       },
       "wirklich": {
         "good": 5,
@@ -5000,14 +5000,14 @@
         "lastUpdated": 1769007450401
       },
       "man": {
-        "good": 6,
-        "bad": 2,
-        "lastUpdated": 1769862443014
+        "good": 8,
+        "bad": 3,
+        "lastUpdated": 1770547154139
       },
       "klingt": {
         "good": 0,
-        "bad": 3,
-        "lastUpdated": 1769006412316
+        "bad": 4,
+        "lastUpdated": 1770547154139
       },
       "zeit": {
         "good": 1,
@@ -5050,9 +5050,9 @@
         "lastUpdated": 1770369031947
       },
       "gerne": {
-        "good": 2,
-        "bad": 4,
-        "lastUpdated": 1769008478540
+        "good": 3,
+        "bad": 5,
+        "lastUpdated": 1770547154139
       },
       "noch": {
         "good": 1,
@@ -5066,8 +5066,8 @@
       },
       "nicht": {
         "good": 18,
-        "bad": 6,
-        "lastUpdated": 1770368522339
+        "bad": 7,
+        "lastUpdated": 1770547154139
       },
       "hier": {
         "good": 7,
@@ -5110,7 +5110,8 @@
       },
       "anderen": {
         "good": 3,
-        "bad": 0
+        "bad": 1,
+        "lastUpdated": 1770547154139
       },
       "stecken": {
         "good": 3,
@@ -5240,9 +5241,9 @@
         "lastUpdated": 1769006721697
       },
       "deine": {
-        "good": 0,
+        "good": 1,
         "bad": 3,
-        "lastUpdated": 1770368522339
+        "lastUpdated": 1770547154139
       },
       "vorlieben": {
         "good": 0,
@@ -5292,6 +5293,16 @@
         "good": 2,
         "bad": 0,
         "lastUpdated": 1770369031947
+      },
+      "serien": {
+        "good": 2,
+        "bad": 2,
+        "lastUpdated": 1770547154139
+      },
+      "mal": {
+        "good": 2,
+        "bad": 1,
+        "lastUpdated": 1770547154139
       }
     },
     "Sexuelle Themen": {
@@ -6664,8 +6675,8 @@
       "total": 541
     },
     "Bot-Vorwurf": {
-      "good": 28,
-      "total": 54
+      "good": 29,
+      "total": 56
     },
     "Sexuelle Themen": {
       "good": 145,
@@ -6996,6 +7007,20 @@
       "validatedSuccessRate": 1
     },
     {
+      "situation": "Bot-Vorwurf",
+      "customerPattern": {
+        "keywords": "gehe gern spazieren kino schwimmen",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 45
+      },
+      "goodResponse": "Ich mag Serien wie Friends oder The Office, da wo man einfach mal richtig lachen kann. Oder allgemein Abenteuerserien schaue ich gerne. Was sind denn so deine Top 3 Serien die man unbedingt mal gescha",
+      "successCount": 4,
+      "lastUsed": "2026-02-08T10:39:14.140Z",
+      "validatedSuccessRate": 1
+    },
+    {
       "situation": "allgemein",
       "customerPattern": {
         "keywords": "sollten nicht erstmal kennenlernen dann sehen kompatibel wenn dann schon",
@@ -7035,20 +7060,6 @@
       "lastUsed": "2026-01-19T19:00:11.320Z"
     },
     {
-      "situation": "Bot-Vorwurf",
-      "customerPattern": {
-        "keywords": "gehe gern spazieren kino schwimmen",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 45
-      },
-      "goodResponse": "Ja geht mir nicht anders. Freundschaft+ hört sich genau nach meinem Geschmack an. Ich arbeite in einer Bar nebenher. Wie lange ist denn das letzte mal Spass bei dir her?",
-      "successCount": 3,
-      "lastUsed": "2026-01-21T15:14:38.542Z",
-      "validatedSuccessRate": 1
-    },
-    {
       "situation": "Treffen/Termine",
       "customerPattern": {
         "keywords": "wochenende habe noch zeit montag gehe wieder arbeiten dann habe",
@@ -7086,7 +7097,8 @@
       },
       "goodResponse": "Ich bin auch jetzt schon total geil aber ich muss noch schauen wann es dann am besten klappt, was würdest du dann als erstes gerne mit mir machen wollen?",
       "successCount": 2,
-      "lastUsed": "2026-01-13T13:50:14.742Z"
+      "lastUsed": "2026-01-13T13:50:14.742Z",
+      "validatedSuccessRate": 1
     },
     {
       "situation": "Sexuelle Themen",
@@ -7172,7 +7184,7 @@
       "validatedSuccessRate": 1
     }
   ],
-  "lastUpdated": "2026-02-08T10:32:49.684Z",
+  "lastUpdated": "2026-02-08T10:39:14.155Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -10460,7 +10472,8 @@
           194,
           194,
           194,
-          215
+          215,
+          214
         ],
         "exclamationMarks": [
           0,
@@ -10482,7 +10495,8 @@
           0,
           0,
           0,
-          1
+          1,
+          0
         ],
         "questions": [
           1,
@@ -10504,10 +10518,11 @@
           1,
           1,
           2,
+          1,
           1
         ],
-        "count": 20,
-        "avgLength": 194,
+        "count": 21,
+        "avgLength": 195,
         "minLength": 104,
         "maxLength": 314,
         "medianLength": 194,
@@ -10522,15 +10537,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 5,
-          "120-150": 15,
-          "150-200": 55,
-          "200-250": 10,
-          "250+": 15
+          "120-150": 14,
+          "150-200": 52,
+          "200-250": 14,
+          "250+": 14
         },
         "questionDistribution": {
           "0": 0,
-          "1": 55,
-          "2": 40,
+          "1": 57,
+          "2": 38,
           "3+": 5
         }
       },
@@ -10553,7 +10568,8 @@
           26,
           26,
           147,
-          239
+          239,
+          258
         ],
         "exclamationMarks": [
           0,
@@ -10573,7 +10589,8 @@
           0,
           0,
           0,
-          1
+          1,
+          0
         ],
         "questions": [
           1,
@@ -10593,10 +10610,11 @@
           0,
           0,
           1,
+          1,
           1
         ],
-        "count": 18,
-        "avgLength": 191,
+        "count": 19,
+        "avgLength": 195,
         "minLength": 26,
         "maxLength": 385,
         "medianLength": 186,
@@ -10611,15 +10629,15 @@
         "lengthDistribution": {
           "0-100": 11,
           "100-120": 0,
-          "120-150": 6,
-          "150-200": 39,
-          "200-250": 28,
-          "250+": 17
+          "120-150": 5,
+          "150-200": 37,
+          "200-250": 26,
+          "250+": 21
         },
         "questionDistribution": {
           "0": 11,
-          "1": 83,
-          "2": 6,
+          "1": 84,
+          "2": 5,
           "3+": 0
         }
       }
@@ -11659,8 +11677,8 @@
       "pattern": "eigene_erfahrung",
       "situation": "Bot-Vorwurf",
       "example": "Ich bin auf Social Media echt gar nicht unterwegs. Ich finde das macht alles nur Beziehungen und Romanzen kaputt. Bist du denn überhaupt jemand auf de",
-      "count": 1,
-      "lastUsed": "2026-01-19T18:58:58.781Z"
+      "count": 2,
+      "lastUsed": "2026-02-08T10:39:14.139Z"
     },
     {
       "pattern": "eigene_vorlieben_plus_frage",
@@ -13625,6 +13643,38 @@
       ],
       "changed": [
         {
+          "from": "die wo man",
+          "to": "da wo man",
+          "count": 4,
+          "contexts": [
+            "was magst denn noch serien"
+          ]
+        },
+        {
+          "from": "man einfach mal",
+          "to": "wo man einfach",
+          "count": 3,
+          "contexts": [
+            "was magst denn noch serien"
+          ]
+        },
+        {
+          "from": "einfach mal lachen",
+          "to": "man einfach mal",
+          "count": 3,
+          "contexts": [
+            "was magst denn noch serien"
+          ]
+        },
+        {
+          "from": "mal lachen kann.",
+          "to": "mal richtig lachen",
+          "count": 3,
+          "contexts": [
+            "was magst denn noch serien"
+          ]
+        },
+        {
           "from": "Aber ich finde",
           "to": "unterwegs. Ich finde",
           "count": 2,
@@ -13862,6 +13912,70 @@
           "count": 2,
           "contexts": [
             "bin irgendwie dauergeil morgens mittags"
+          ]
+        },
+        {
+          "from": "mag Serien wie",
+          "to": "Ich mag Serien",
+          "count": 2,
+          "contexts": [
+            "was magst denn noch serien"
+          ]
+        },
+        {
+          "from": "Serien wie Friends",
+          "to": "mag Serien wie",
+          "count": 2,
+          "contexts": [
+            "was magst denn noch serien"
+          ]
+        },
+        {
+          "from": "wie Friends oder",
+          "to": "Serien wie Friends",
+          "count": 2,
+          "contexts": [
+            "was magst denn noch serien"
+          ]
+        },
+        {
+          "from": "Friends oder The",
+          "to": "wie Friends oder",
+          "count": 2,
+          "contexts": [
+            "was magst denn noch serien"
+          ]
+        },
+        {
+          "from": "oder The Office,",
+          "to": "Friends oder The",
+          "count": 2,
+          "contexts": [
+            "was magst denn noch serien"
+          ]
+        },
+        {
+          "from": "The Office, die",
+          "to": "oder The Office,",
+          "count": 2,
+          "contexts": [
+            "was magst denn noch serien"
+          ]
+        },
+        {
+          "from": "wo man einfach",
+          "to": "da wo man",
+          "count": 2,
+          "contexts": [
+            "was magst denn noch serien"
+          ]
+        },
+        {
+          "from": "lachen kann. Monk",
+          "to": "richtig lachen kann.",
+          "count": 2,
+          "contexts": [
+            "was magst denn noch serien"
           ]
         }
       ]
@@ -16790,9 +16904,9 @@
       "lastValidated": 1770546657524
     },
     "reasoningPrinciple_1": {
-      "usedCount": 154,
-      "successCount": 154,
-      "lastValidated": 1770546751140
+      "usedCount": 155,
+      "successCount": 155,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_2": {
       "usedCount": 19,
@@ -16805,9 +16919,9 @@
       "lastValidated": 1770546657524
     },
     "reasoningPrinciple_4": {
-      "usedCount": 362,
-      "successCount": 362,
-      "lastValidated": 1770546769683
+      "usedCount": 363,
+      "successCount": 363,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_5": {
       "usedCount": 52,
@@ -16855,9 +16969,9 @@
       "lastValidated": 1770546751140
     },
     "reasoningPrinciple_14": {
-      "usedCount": 368,
-      "successCount": 368,
-      "lastValidated": 1770546769683
+      "usedCount": 369,
+      "successCount": 369,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_15": {
       "usedCount": 162,
@@ -16890,9 +17004,9 @@
       "lastValidated": 1770543613302
     },
     "reasoningPrinciple_21": {
-      "usedCount": 240,
-      "successCount": 240,
-      "lastValidated": 1770546769683
+      "usedCount": 241,
+      "successCount": 241,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_22": {
       "usedCount": 201,
@@ -16905,9 +17019,9 @@
       "lastValidated": 1770546593723
     },
     "reasoningPrinciple_24": {
-      "usedCount": 362,
-      "successCount": 362,
-      "lastValidated": 1770546769683
+      "usedCount": 363,
+      "successCount": 363,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_25": {
       "usedCount": 278,
@@ -16915,19 +17029,19 @@
       "lastValidated": 1770546769683
     },
     "reasoningPrinciple_26": {
-      "usedCount": 274,
-      "successCount": 274,
-      "lastValidated": 1770546769683
+      "usedCount": 275,
+      "successCount": 275,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_27": {
-      "usedCount": 284,
-      "successCount": 284,
-      "lastValidated": 1770546769683
+      "usedCount": 285,
+      "successCount": 285,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_28": {
-      "usedCount": 157,
-      "successCount": 157,
-      "lastValidated": 1770546751140
+      "usedCount": 158,
+      "successCount": 158,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_29": {
       "usedCount": 172,
@@ -16940,14 +17054,14 @@
       "lastValidated": 1770546751140
     },
     "reasoningPrinciple_31": {
-      "usedCount": 218,
-      "successCount": 218,
-      "lastValidated": 1770546769683
+      "usedCount": 219,
+      "successCount": 219,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_32": {
-      "usedCount": 218,
-      "successCount": 218,
-      "lastValidated": 1770546769683
+      "usedCount": 219,
+      "successCount": 219,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_33": {
       "usedCount": 0,
@@ -16955,19 +17069,19 @@
       "lastValidated": 1768835311487
     },
     "reasoningPrinciple_34": {
-      "usedCount": 350,
-      "successCount": 350,
-      "lastValidated": 1770546769683
+      "usedCount": 351,
+      "successCount": 351,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_35": {
-      "usedCount": 161,
-      "successCount": 161,
-      "lastValidated": 1770546751140
+      "usedCount": 162,
+      "successCount": 162,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_36": {
-      "usedCount": 257,
-      "successCount": 257,
-      "lastValidated": 1770546769683
+      "usedCount": 258,
+      "successCount": 258,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_37": {
       "usedCount": 217,
@@ -16990,9 +17104,9 @@
       "lastValidated": 1770543613302
     },
     "reasoningPrinciple_41": {
-      "usedCount": 172,
-      "successCount": 172,
-      "lastValidated": 1770546769683
+      "usedCount": 173,
+      "successCount": 173,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_42": {
       "usedCount": 108,
@@ -17010,14 +17124,14 @@
       "lastValidated": 1770546751140
     },
     "reasoningPrinciple_45": {
-      "usedCount": 167,
-      "successCount": 167,
-      "lastValidated": 1770546769683
+      "usedCount": 168,
+      "successCount": 168,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_46": {
-      "usedCount": 275,
-      "successCount": 275,
-      "lastValidated": 1770546769683
+      "usedCount": 276,
+      "successCount": 276,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_47": {
       "usedCount": 166,
@@ -17025,9 +17139,9 @@
       "lastValidated": 1770546646142
     },
     "reasoningPrinciple_48": {
-      "usedCount": 112,
-      "successCount": 112,
-      "lastValidated": 1770546751140
+      "usedCount": 113,
+      "successCount": 113,
+      "lastValidated": 1770547154154
     },
     "reasoningPrinciple_49": {
       "usedCount": 159,
@@ -17135,9 +17249,9 @@
       "lastValidated": 1769859739812
     },
     "responsePattern_21": {
-      "usedCount": 0,
-      "successCount": 0,
-      "lastValidated": 1768837976733
+      "usedCount": 1,
+      "successCount": 1,
+      "lastValidated": 1770547154154
     },
     "responsePattern_23": {
       "usedCount": 0,
