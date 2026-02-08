@@ -7594,16 +7594,18 @@
     {
       "customerMessage": "Ich rede nur unter 4 Augen, persönlich an einen Restauranttisch",
       "moderatorResponse": "So ist das also?🙈 Soll das jetzt eine Einladung zum essen sein oder was meinst du damit? Welche Küche schmeckt dir denn am besten? Ich mag Italienisch oder Griechisch sehr gerne.",
-      "situation": "allgemein",
+      "situation": "allgemein, Treffen/Termine",
       "situations": [
-        "allgemein"
+        "allgemein",
+        "Treffen/Termine"
       ],
       "explanation": null,
       "createdAt": "2026-02-08T10:26:58.328Z",
       "source": "feedback_edited",
       "priority": true,
       "feedbackId": "feedback_1770458992283_6g1jhom74",
-      "originalResponse": "Ich verstehe, dass du ein persönliches Gespräch bevorzugst. Ich möchte aber erstmal noch ein bisschen mehr über dich erfahren. Was isst du denn am liebsten in einem Restaurant?"
+      "originalResponse": "Ich verstehe, dass du ein persönliches Gespräch bevorzugst. Ich möchte aber erstmal noch ein bisschen mehr über dich erfahren. Was isst du denn am liebsten in einem Restaurant?",
+      "updatedAt": "2026-02-08T10:27:25.277Z"
     }
   ],
   "asaExamples": [
