@@ -23690,25 +23690,27 @@
       "updatedAt": "2026-02-09T15:02:36.597Z"
     },
     {
-      "id": "feedback_1770649398560_gw2fi94ad",
-      "chatId": "2c398f4e1f0f41329beb",
-      "customerMessage": "Rauchst oder Vapest du?",
-      "aiResponse": "Nein, das ist nichts für mich. Aber erzähl mal, was macht dir denn so Spass? 😊 Hast du eine Lieblingssorte oder ein bestimmtes Aroma?",
+      "id": "feedback_1770649448535_9zaj51p9p",
+      "chatId": "Wed Dec 17 2025 11:53:30 GMT+0100 (Mitteleuropäische Normalzeit)-hat dir ei",
+      "customerMessage": "hat dir einen Kuss gesendet.",
+      "aiResponse": "Mmm, das fühlt sich richtig süss an, dein Kuss 😘. Ich mag es, wie zärtlich du bist. Was hat dich denn gerade so küssend gemacht?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "avz",
+      "platform": "iluvo",
       "isASA": false,
       "usedExampleIds": [],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "Romantik / Verliebtheit"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Natürlich darfst du mich etwas wichtiges fragen, was wäre denn deine wichtige Frage? 😉"
+        "lastModeratorMessage": "Ich würde gerne mit dir warten. Wie weit bist du mit deinen Recherchen?"
       },
-      "lastModeratorMessage": "Natürlich darfst du mich etwas wichtiges fragen, was wäre denn deine wichtige Frage? 😉",
-      "timestamp": "2026-02-09T15:03:18.560Z",
-      "updatedAt": "2026-02-09T15:03:18.560Z"
+      "lastModeratorMessage": "Ich würde gerne mit dir warten. Wie weit bist du mit deinen Recherchen?",
+      "timestamp": "2026-02-09T15:04:08.535Z",
+      "updatedAt": "2026-02-09T15:04:08.535Z"
     }
   ]
 }
