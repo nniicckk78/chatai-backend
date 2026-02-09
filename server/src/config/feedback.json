@@ -23894,6 +23894,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-09T15:25:08.414Z",
       "updatedAt": "2026-02-09T15:25:08.414Z"
+    },
+    {
+      "id": "feedback_1770650712673_7mcu0ksnp",
+      "chatId": "38499303",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich würde mich schon freuen wenn wir unser Gespräch fortsetzen könnten. Oder hast du schon mittlerweile jemand anderen kennengelernt?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich würde mich schon freuen wenn wir unser Gespräch fortsetzen könnten. Oder hast du schon mittlerweile jemand anderen kennengelernt?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hallo patrick! Schön, dass du auf mich aufmerksam geworden bist. Mich reizt die Vorstellung, mehr über deine Abenteuerlust zu erfahren, bist du eher der Typ für verrückte spontaneität oder lieber der planer?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-09T15:25:12.673Z",
+      "updatedAt": "2026-02-09T15:25:12.673Z"
     }
   ]
 }
