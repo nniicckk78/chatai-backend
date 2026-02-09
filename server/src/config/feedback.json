@@ -15935,7 +15935,7 @@
       "context": {
         "detectedSituations": [
           "Bot-Vorwurf",
-          "Kontaktdaten au���������������������erhalb der Plattform",
+          "Kontaktdaten au�������������������erhalb der Plattform",
           "Sexuelle Themen",
           "Wonach suchst du?",
           "Bilder Anfrage",
@@ -22906,29 +22906,27 @@
       "updatedAt": "2026-02-09T12:35:47.419Z"
     },
     {
-      "id": "feedback_1770640670685_8rkdrd3od",
-      "chatId": "38522891",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Wo bist du denn hin verschwunden? Ich finde dich eigentlich echt richtig gut und würde mich freuen wenn wir mit dem kennenlernen weiter machen könnten. Oder bist du nichtmehr an mir interessiert?",
+      "id": "feedback_1770640736384_8zybz6u0w",
+      "chatId": "Tue Jan 07 2025 17:22:41 GMT+0100 (Mitteleuropäische Normalzeit)-Hallo darf",
+      "customerMessage": "Wenn ich wieder zu Hause bin, ja ist das okay?",
+      "aiResponse": "Das ist doch schön, dass du später Zeit hast. Ich bin gespannt, was du so machst, wenn du nach Hause kommst. Ist es dann erstmal Zeit für eine Pause oder hast du noch andere Pläne?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "fpc",
-      "isASA": true,
-      "usedExampleIds": [
-        "ASA Reaktivierung|Wo bist du denn hin verschwunden? Ich finde dich eigentlich echt richtig gut und würde mich freuen wenn wir mit dem kennenlernen weiter machen könnten. Oder bist du nichtmehr an mir interessiert?"
-      ],
+      "platform": "iluvo",
+      "isASA": false,
+      "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "ASA Reaktivierung"
+          "Treffen/Termine"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Achim, dein Like heute hat mir den Nachmittag versüßt, möchtest du mir erzählen, was du gerade so treibst?"
+        "lastModeratorMessage": "Hallo darf ich dich mal auf was aufmerksam machen?....mich! ich weiß, nicht die beste Nachricht aber vielleicht konnte ich das Eis brechen?? 😄"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-02-09T12:37:50.685Z",
-      "updatedAt": "2026-02-09T12:37:50.685Z"
+      "lastModeratorMessage": "Hallo darf ich dich mal auf was aufmerksam machen?....mich! ich weiß, nicht die beste Nachricht aber vielleicht konnte ich das Eis brechen?? 😄",
+      "timestamp": "2026-02-09T12:38:56.384Z",
+      "updatedAt": "2026-02-09T12:38:56.384Z"
     }
   ]
 }
