@@ -20317,7 +20317,7 @@
           {
             "date": "2025-12-27T21:34:48.411Z",
             "description": "Trink nur süssen Alkohol auch nur süssen Wein",
-            "text": "Trink nur süssen Alkohol auch nur s������ssen Wein",
+            "text": "Trink nur süssen Alkohol auch nur s��������ssen Wein",
             "fixed": false,
             "moderatorId": "20586"
           },
@@ -23320,6 +23320,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-09T13:34:00.681Z",
       "updatedAt": "2026-02-09T13:34:00.681Z"
+    },
+    {
+      "id": "feedback_1770644126537_p1iuxyqyw",
+      "chatId": "9behxrAja97AW94KxuDY",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Wenn du keine Interesse mehr an mir hast okay aber sag mir doch wenigstens woran es scheitert? Ich kann ja nichts wissen was los ist wenn du mir nicht sagst was dir nicht passt? Oder hast du schon mittlerweile eine gefunden mit der du Spass haben kannst?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "avz",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Wenn du keine Interesse mehr an mir hast okay aber sag mir doch wenigstens woran es scheitert? Ich kann ja nichts wissen was los ist wenn du mir nicht sagst was dir nicht passt? Oder hast du schon mittlerweile eine gefunden mit der du Spass haben kannst?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Finde jetzt eigentlich überhaupt nicht, dass du Scheiße aussiehst. Sagst du das absichtlich, damit ich dir sage, dass dem nicht so ist, oder weil du wirklich so empfindest?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-09T13:35:26.537Z",
+      "updatedAt": "2026-02-09T13:35:26.537Z"
     }
   ]
 }
