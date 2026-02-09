@@ -22902,6 +22902,31 @@
       "lastModeratorMessage": "Das ist ja nicht schlimm, man kann ja nicht jedem Gefallen. Aber ich muss sagen, ich hätte damit kein Problem gehabt",
       "timestamp": "2026-02-09T12:35:23.144Z",
       "updatedAt": "2026-02-09T12:35:23.144Z"
+    },
+    {
+      "id": "feedback_1770640525155_nfzgzp6nz",
+      "chatId": "38519026",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Yves, dein gefallen für mich macht mich ganz neugierig, was könnte da deine phantasie in wallung bringen?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-09T12:35:25.155Z",
+      "updatedAt": "2026-02-09T12:35:25.155Z"
     }
   ]
 }
