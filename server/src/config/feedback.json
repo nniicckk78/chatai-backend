@@ -22534,29 +22534,27 @@
       "updatedAt": "2026-02-09T10:38:17.504Z"
     },
     {
-      "id": "feedback_1770634214060_i8tl52izi",
-      "chatId": "Mon Feb 02 2026 16:05:20 GMT+0100 (Mitteleuropäische Normalzeit)-Das ist ab",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Würde mich echt freuen wenn du Antworten könntest, finde es wirklich sehr schade das von dir nichts kommt. Bin ich etwa nicht dein typ oder warum schreibst du mir nicht?",
+      "id": "feedback_1770634307137_qpmwiiobl",
+      "chatId": "Sun Feb 08 2026 17:31:16 GMT+0100 (Mitteleuropäische Normalzeit)-Ich weiß e",
+      "customerMessage": "Ich weiß es nicht ,würdest du es akzeptieren wenn ich nicht fliegen möchte",
+      "aiResponse": "Ich verstehe das vollkommen, wenn du nicht fliegen möchtest. Das ist wirklich kein Problem für mich. Ich möchte, dass du dich wohlfühlst und wir können auf jeden Fall andere Möglichkeiten finden. Was wären denn für dich alternative Optionen?",
       "editedResponse": null,
       "status": "pending",
       "platform": "iluvo",
-      "isASA": true,
-      "usedExampleIds": [
-        "ASA Reaktivierung|Würde mich echt freuen wenn du Antworten könntest, finde es wirklich sehr schade das von dir nichts kommt. Bin ich etwa nicht dein typ oder warum schreibst du mir nicht?"
-      ],
+      "isASA": false,
+      "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "ASA Reaktivierung"
+          "Romantik / Verliebtheit"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Das ist aber schade. Das tut mir leid. Das würdest du dann sicher gerne mal ändern wollen, oder nicht?"
+        "lastModeratorMessage": "Na klar akzeptieren kann ich es auf jeden Fall schon aber man kommt dann halt auch nicht zu jedem Ziel wenn man nicht fliegen würde?"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-02-09T10:50:14.061Z",
-      "updatedAt": "2026-02-09T10:50:14.061Z"
+      "lastModeratorMessage": "Na klar akzeptieren kann ich es auf jeden Fall schon aber man kommt dann halt auch nicht zu jedem Ziel wenn man nicht fliegen würde?",
+      "timestamp": "2026-02-09T10:51:47.137Z",
+      "updatedAt": "2026-02-09T10:51:47.137Z"
     }
   ]
 }
