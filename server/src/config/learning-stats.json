@@ -214,7 +214,7 @@
     },
     "Bilder Anfrage": {
       "würdest du": {
-        "count": 2,
+        "count": 3,
         "successRate": 0
       },
       "Würdest du dir darauf einen runterholen?": {
@@ -6748,9 +6748,9 @@
         "bad": 0
       },
       "würdest": {
-        "good": 4,
-        "bad": 1,
-        "lastUpdated": 1770545102794
+        "good": 5,
+        "bad": 2,
+        "lastUpdated": 1770747547130
       },
       "machen": {
         "good": 2,
@@ -6788,9 +6788,9 @@
         "lastUpdated": 1770545102794
       },
       "sehen": {
-        "good": 2,
-        "bad": 2,
-        "lastUpdated": 1770545102794
+        "good": 3,
+        "bad": 3,
+        "lastUpdated": 1770747547130
       }
     },
     "Wonach suchst du?": {
@@ -6919,8 +6919,8 @@
       "total": 193
     },
     "Bilder Anfrage": {
-      "good": 8,
-      "total": 15
+      "good": 9,
+      "total": 17
     },
     "Berufsfrage": {
       "good": 10,
@@ -7288,6 +7288,20 @@
       "validatedSuccessRate": 1
     },
     {
+      "situation": "Bilder Anfrage",
+      "customerPattern": {
+        "keywords": "mal als deine bilder gesehen hab dann habe direkt steifen",
+        "hasQuestion": false,
+        "hasMeeting": true,
+        "hasSexual": false,
+        "length": 83
+      },
+      "goodResponse": "Oh, du willst meine Brüste ganz frei sehen? 😈 Stell dir vor, wie ich sie gegen dein Gesicht drücke, während du sie mit deiner Zunge verwöhnst. Würdest du sie lieber hart kneten oder sanft mit deinen ",
+      "successCount": 4,
+      "lastUsed": "2026-02-10T18:19:07.131Z",
+      "validatedSuccessRate": 1
+    },
+    {
       "situation": "allgemein",
       "customerPattern": {
         "keywords": "sollten nicht erstmal kennenlernen dann sehen kompatibel wenn dann schon",
@@ -7312,20 +7326,8 @@
       },
       "goodResponse": "Hey Manfred, darf ich denn mal fragen was ein so hübscher Mann wie du auf so einer Plattform macht? Würde mich echt freuen wenn wir uns ein bisschen näher kommen könnten?",
       "successCount": 3,
-      "lastUsed": "2026-01-13T14:12:34.699Z"
-    },
-    {
-      "situation": "Bilder Anfrage",
-      "customerPattern": {
-        "keywords": "mal als deine bilder gesehen hab dann habe direkt steifen",
-        "hasQuestion": false,
-        "hasMeeting": true,
-        "hasSexual": false,
-        "length": 83
-      },
-      "goodResponse": "Und was hast du dann gemacht als du den steifen bekommen hast?😛Was genau an meinem Körper gefällt dir denn am meisten? Und meine Frage hast du ja jetzt nicht ganz beantwortet! Hattest du denn schonma",
-      "successCount": 3,
-      "lastUsed": "2026-02-08T10:05:02.794Z"
+      "lastUsed": "2026-01-13T14:12:34.699Z",
+      "validatedSuccessRate": 1
     },
     {
       "situation": "Bot-Vorwurf",
@@ -7454,7 +7456,7 @@
       "validatedSuccessRate": 1
     }
   ],
-  "lastUpdated": "2026-02-10T18:18:33.188Z",
+  "lastUpdated": "2026-02-10T18:19:07.150Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -12535,9 +12537,11 @@
           170,
           154,
           154,
-          187
+          187,
+          217
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -12547,12 +12551,13 @@
           2,
           2,
           2,
+          2,
           2
         ],
-        "count": 4,
-        "avgLength": 166,
+        "count": 5,
+        "avgLength": 176,
         "minLength": 154,
-        "maxLength": 187,
+        "maxLength": 217,
         "medianLength": 170,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
@@ -12566,8 +12571,8 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 100,
-          "200-250": 0,
+          "150-200": 80,
+          "200-250": 20,
           "250+": 0
         },
         "questionDistribution": {
@@ -12581,43 +12586,46 @@
         "lengths": [
           210,
           170,
-          239
+          239,
+          217
         ],
         "exclamationMarks": [
           0,
           0,
-          1
+          1,
+          0
         ],
         "questions": [
           1,
           1,
-          1
+          1,
+          2
         ],
-        "count": 3,
-        "avgLength": 206,
+        "count": 4,
+        "avgLength": 209,
         "minLength": 170,
         "maxLength": 239,
-        "medianLength": 210,
+        "medianLength": 217,
         "avgExclamationMarks": 0.3,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1,
+        "avgQuestions": 1.3,
         "minQuestions": 1,
-        "maxQuestions": 1,
+        "maxQuestions": 2,
         "medianQuestions": 1,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 33,
-          "200-250": 67,
+          "150-200": 25,
+          "200-250": 75,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 100,
-          "2": 0,
+          "1": 75,
+          "2": 25,
           "3+": 0
         }
       }
@@ -12864,6 +12872,12 @@
     "Bilder Anfrage": {
       "😂": {
         "count": 2,
+        "positions": [],
+        "contexts": [],
+        "successRate": 0
+      },
+      "😈": {
+        "count": 1,
         "positions": [],
         "contexts": [],
         "successRate": 0
@@ -15675,7 +15689,280 @@
     "Bilder Anfrage": {
       "removed": [],
       "added": [],
-      "changed": []
+      "changed": [
+        {
+          "from": "während du sie",
+          "to": "drücke, während du",
+          "count": 4,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "du sie mit",
+          "to": "während du sie",
+          "count": 4,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "Würdest du sie",
+          "to": "während du sie",
+          "count": 4,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "du sie lieber",
+          "to": "während du sie",
+          "count": 4,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "du willst meine",
+          "to": "Oh, du willst",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "willst meine Brüste",
+          "to": "du willst meine",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "meine Brüste ganz",
+          "to": "willst meine Brüste",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "Brüste ganz frei",
+          "to": "meine Brüste ganz",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "ganz frei sehen?",
+          "to": "Brüste ganz frei",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "frei sehen? 😈",
+          "to": "ganz frei sehen?",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "sehen? 😈 Stell",
+          "to": "frei sehen? 😈",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "😈 Stell dir",
+          "to": "sehen? 😈 Stell",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "Stell dir vor,",
+          "to": "😈 Stell dir",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "dir vor, wie",
+          "to": "Stell dir vor,",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "vor, wie ich",
+          "to": "dir vor, wie",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "wie ich sie",
+          "to": "vor, wie ich",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "ich sie gegen",
+          "to": "wie ich sie",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "sie gegen dein",
+          "to": "ich sie gegen",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "gegen dein Gesicht",
+          "to": "sie gegen dein",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "dein Gesicht drücke,",
+          "to": "gegen dein Gesicht",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "Gesicht drücke, während",
+          "to": "dein Gesicht drücke,",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "drücke, während du",
+          "to": "Gesicht drücke, während",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "sie mit deiner",
+          "to": "du sie mit",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "mit deiner Zunge",
+          "to": "sie mit deiner",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "deiner Zunge verwöhnst.",
+          "to": "mit deiner Zunge",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "Zunge verwöhnst. Würdest",
+          "to": "deiner Zunge verwöhnst.",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "verwöhnst. Würdest du",
+          "to": "Zunge verwöhnst. Würdest",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "sie lieber hart",
+          "to": "du sie lieber",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "lieber hart kneten",
+          "to": "sie lieber hart",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "hart kneten oder",
+          "to": "lieber hart kneten",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "kneten oder sanft",
+          "to": "hart kneten oder",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "oder sanft mit",
+          "to": "kneten oder sanft",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "sanft mit deinen",
+          "to": "oder sanft mit",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        },
+        {
+          "from": "mit deinen Lippen",
+          "to": "sanft mit deinen",
+          "count": 2,
+          "contexts": [
+            "bitte möchte ganz blank sehen"
+          ]
+        }
+      ]
     }
   },
   "sentenceStructures": {},
@@ -18487,14 +18774,14 @@
       "lastValidated": 1770747375605
     },
     "reasoningPrinciple_4": {
-      "usedCount": 504,
-      "successCount": 504,
-      "lastValidated": 1770747513188
+      "usedCount": 505,
+      "successCount": 505,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_5": {
-      "usedCount": 98,
-      "successCount": 98,
-      "lastValidated": 1770747405867
+      "usedCount": 99,
+      "successCount": 99,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_6": {
       "usedCount": 6,
@@ -18537,9 +18824,9 @@
       "lastValidated": 1770745022291
     },
     "reasoningPrinciple_14": {
-      "usedCount": 512,
-      "successCount": 512,
-      "lastValidated": 1770747513188
+      "usedCount": 513,
+      "successCount": 513,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_15": {
       "usedCount": 220,
@@ -18557,9 +18844,9 @@
       "lastValidated": 1770747405867
     },
     "reasoningPrinciple_18": {
-      "usedCount": 331,
-      "successCount": 331,
-      "lastValidated": 1770747513188
+      "usedCount": 332,
+      "successCount": 332,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_19": {
       "usedCount": 42,
@@ -18572,14 +18859,14 @@
       "lastValidated": 1770712943018
     },
     "reasoningPrinciple_21": {
-      "usedCount": 312,
-      "successCount": 312,
-      "lastValidated": 1770747301898
+      "usedCount": 313,
+      "successCount": 313,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_22": {
-      "usedCount": 256,
-      "successCount": 256,
-      "lastValidated": 1770747391820
+      "usedCount": 257,
+      "successCount": 257,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_23": {
       "usedCount": 208,
@@ -18587,9 +18874,9 @@
       "lastValidated": 1770746508392
     },
     "reasoningPrinciple_24": {
-      "usedCount": 500,
-      "successCount": 500,
-      "lastValidated": 1770747513188
+      "usedCount": 501,
+      "successCount": 501,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_25": {
       "usedCount": 370,
@@ -18597,14 +18884,14 @@
       "lastValidated": 1770747405867
     },
     "reasoningPrinciple_26": {
-      "usedCount": 378,
-      "successCount": 378,
-      "lastValidated": 1770747513188
+      "usedCount": 379,
+      "successCount": 379,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_27": {
-      "usedCount": 391,
-      "successCount": 391,
-      "lastValidated": 1770747513188
+      "usedCount": 392,
+      "successCount": 392,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_28": {
       "usedCount": 208,
@@ -18622,14 +18909,14 @@
       "lastValidated": 1770745022291
     },
     "reasoningPrinciple_31": {
-      "usedCount": 283,
-      "successCount": 283,
-      "lastValidated": 1770747328141
+      "usedCount": 284,
+      "successCount": 284,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_32": {
-      "usedCount": 283,
-      "successCount": 283,
-      "lastValidated": 1770747328141
+      "usedCount": 284,
+      "successCount": 284,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_33": {
       "usedCount": 0,
@@ -18637,9 +18924,9 @@
       "lastValidated": 1768835311487
     },
     "reasoningPrinciple_34": {
-      "usedCount": 483,
-      "successCount": 483,
-      "lastValidated": 1770747513188
+      "usedCount": 484,
+      "successCount": 484,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_35": {
       "usedCount": 213,
@@ -18647,9 +18934,9 @@
       "lastValidated": 1770747328141
     },
     "reasoningPrinciple_36": {
-      "usedCount": 344,
-      "successCount": 344,
-      "lastValidated": 1770747513188
+      "usedCount": 345,
+      "successCount": 345,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_37": {
       "usedCount": 296,
@@ -18672,14 +18959,14 @@
       "lastValidated": 1770555033540
     },
     "reasoningPrinciple_41": {
-      "usedCount": 252,
-      "successCount": 252,
-      "lastValidated": 1770747405867
+      "usedCount": 253,
+      "successCount": 253,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_42": {
-      "usedCount": 149,
-      "successCount": 149,
-      "lastValidated": 1770747391820
+      "usedCount": 150,
+      "successCount": 150,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_43": {
       "usedCount": 224,
@@ -18692,9 +18979,9 @@
       "lastValidated": 1770747513188
     },
     "reasoningPrinciple_45": {
-      "usedCount": 247,
-      "successCount": 247,
-      "lastValidated": 1770747405867
+      "usedCount": 248,
+      "successCount": 248,
+      "lastValidated": 1770747547148
     },
     "reasoningPrinciple_46": {
       "usedCount": 361,
@@ -18847,9 +19134,9 @@
       "lastValidated": 1770747472092
     },
     "responsePattern_25": {
-      "usedCount": 0,
-      "successCount": 0,
-      "lastValidated": 1768849138789
+      "usedCount": 1,
+      "successCount": 1,
+      "lastValidated": 1770747547148
     },
     "responsePattern_31": {
       "usedCount": 1,
