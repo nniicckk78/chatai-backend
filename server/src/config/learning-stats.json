@@ -6804,9 +6804,9 @@
         "lastUpdated": 1769859739798
       },
       "was": {
-        "good": 9,
-        "bad": 6,
-        "lastUpdated": 1770747468130
+        "good": 10,
+        "bad": 7,
+        "lastUpdated": 1770747470259
       },
       "mich": {
         "good": 5,
@@ -6906,8 +6906,8 @@
       "total": 310
     },
     "Wonach suchst du?": {
-      "good": 12,
-      "total": 29
+      "good": 13,
+      "total": 31
     },
     "Geld/Coins": {
       "good": 10,
@@ -7313,6 +7313,20 @@
       "lastUsed": "2026-02-08T10:05:02.794Z"
     },
     {
+      "situation": "Wonach suchst du?",
+      "customerPattern": {
+        "keywords": "hallo cleo danke deine nachricht bin jahre alt suche hier",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": true,
+        "length": 190
+      },
+      "goodResponse": "Ich wohne in Geeste. Und du woher kommst du denn? Freundschaft plus Sex ohne Bindung klingt gut zu mir, was stellst du dir da so vor?",
+      "successCount": 3,
+      "lastUsed": "2026-02-10T18:17:50.259Z",
+      "validatedSuccessRate": 1
+    },
+    {
       "situation": "Bot-Vorwurf",
       "customerPattern": {
         "keywords": "bin platt solltest wirklich schnelles treffen wollen hätte dienstag donnerstag",
@@ -7352,20 +7366,6 @@
       "goodResponse": "Dein Foto macht meine süsse Möse total feucht, die Vorfreudetropfen laufen schon. Mein Arschloch ist total eng und meine Muschi wird sehr schnell immer sehr feucht! In welches Loch würdest du mich als",
       "successCount": 2,
       "lastUsed": "2026-02-06T09:10:31.948Z",
-      "validatedSuccessRate": 1
-    },
-    {
-      "situation": "Wonach suchst du?",
-      "customerPattern": {
-        "keywords": "hallo cleo danke deine nachricht bin jahre alt suche hier",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": true,
-        "length": 190
-      },
-      "goodResponse": "Ich wohne in Geeste. Und du woher kommst du denn? Freundschaft plus Sex ohne Bindung klingt gut zu mir, was stellst du dir da so vor?",
-      "successCount": 2,
-      "lastUsed": "2026-02-10T18:17:48.130Z",
       "validatedSuccessRate": 1
     },
     {
@@ -7453,7 +7453,7 @@
       "validatedSuccessRate": 1
     }
   ],
-  "lastUpdated": "2026-02-10T18:17:48.131Z",
+  "lastUpdated": "2026-02-10T18:17:50.268Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7891,6 +7891,7 @@
           233,
           205,
           133,
+          133,
           133
         ],
         "exclamationMarks": [
@@ -7901,6 +7902,7 @@
           0,
           0,
           2,
+          0,
           0,
           0,
           0,
@@ -7917,10 +7919,11 @@
           1,
           1,
           2,
+          2,
           2
         ],
-        "count": 11,
-        "avgLength": 195,
+        "count": 12,
+        "avgLength": 190,
         "minLength": 133,
         "maxLength": 247,
         "medianLength": 202,
@@ -7935,16 +7938,16 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 18,
-          "150-200": 27,
-          "200-250": 55,
+          "120-150": 25,
+          "150-200": 25,
+          "200-250": 50,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 64,
-          "2": 27,
-          "3+": 9
+          "1": 58,
+          "2": 33,
+          "3+": 8
         }
       },
       "negative": {
@@ -7955,6 +7958,7 @@
           232,
           250,
           224,
+          133,
           133
         ],
         "exclamationMarks": [
@@ -7963,6 +7967,7 @@
           0,
           0,
           2,
+          0,
           0,
           0
         ],
@@ -7973,10 +7978,11 @@
           2,
           1,
           1,
+          2,
           2
         ],
-        "count": 7,
-        "avgLength": 204,
+        "count": 8,
+        "avgLength": 195,
         "minLength": 122,
         "maxLength": 269,
         "medianLength": 224,
@@ -7984,22 +7990,22 @@
         "minExclamationMarks": 0,
         "maxExclamationMarks": 2,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.4,
+        "avgQuestions": 1.5,
         "minQuestions": 1,
         "maxQuestions": 2,
-        "medianQuestions": 1,
+        "medianQuestions": 2,
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 29,
-          "150-200": 14,
-          "200-250": 29,
-          "250+": 29
+          "120-150": 38,
+          "150-200": 13,
+          "200-250": 25,
+          "250+": 25
         },
         "questionDistribution": {
           "0": 0,
-          "1": 57,
-          "2": 43,
+          "1": 50,
+          "2": 50,
           "3+": 0
         }
       }
@@ -14430,6 +14436,174 @@
         {
           "from": "du woher kommst",
           "to": "Und du woher",
+          "count": 8,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "Und du woher",
+          "to": "Geeste. Und du",
+          "count": 6,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "kommst du denn?",
+          "to": "du woher kommst",
+          "count": 6,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "Ich wohne in",
+          "to": "hören. Ich wohne",
+          "count": 4,
+          "contexts": [
+            "wow bist sehr schöne attraktive"
+          ]
+        },
+        {
+          "from": "wohne in Geeste.",
+          "to": "Ich wohne in",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "in Geeste. Und",
+          "to": "wohne in Geeste.",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "Geeste. Und du",
+          "to": "in Geeste. Und",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "du denn? Freundschaft",
+          "to": "kommst du denn?",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "denn? Freundschaft plus",
+          "to": "du denn? Freundschaft",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "Freundschaft plus Sex",
+          "to": "denn? Freundschaft plus",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "plus Sex ohne",
+          "to": "Freundschaft plus Sex",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "Sex ohne Bindung",
+          "to": "plus Sex ohne",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "ohne Bindung klingt",
+          "to": "Sex ohne Bindung",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "Bindung klingt gut",
+          "to": "ohne Bindung klingt",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "klingt gut zu",
+          "to": "Bindung klingt gut",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "gut zu mir,",
+          "to": "klingt gut zu",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "zu mir, was",
+          "to": "gut zu mir,",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "mir, was stellst",
+          "to": "zu mir, was",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "was stellst du",
+          "to": "mir, was stellst",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "stellst du dir",
+          "to": "was stellst du",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "du dir da",
+          "to": "stellst du dir",
+          "count": 4,
+          "contexts": [
+            "hallo cleo danke deine nachricht"
+          ]
+        },
+        {
+          "from": "dir da so",
+          "to": "du dir da",
           "count": 4,
           "contexts": [
             "hallo cleo danke deine nachricht"
@@ -14449,30 +14623,6 @@
           "count": 3,
           "contexts": [
             "wow bist sehr schöne attraktive"
-          ]
-        },
-        {
-          "from": "Ich wohne in",
-          "to": "hören. Ich wohne",
-          "count": 3,
-          "contexts": [
-            "wow bist sehr schöne attraktive"
-          ]
-        },
-        {
-          "from": "Und du woher",
-          "to": "Geeste. Und du",
-          "count": 3,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "kommst du denn?",
-          "to": "du woher kommst",
-          "count": 3,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
           ]
         },
         {
@@ -14657,150 +14807,6 @@
           "count": 2,
           "contexts": [
             "erfährst nur wenn mich besuchst"
-          ]
-        },
-        {
-          "from": "wohne in Geeste.",
-          "to": "Ich wohne in",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "in Geeste. Und",
-          "to": "wohne in Geeste.",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "Geeste. Und du",
-          "to": "in Geeste. Und",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "du denn? Freundschaft",
-          "to": "kommst du denn?",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "denn? Freundschaft plus",
-          "to": "du denn? Freundschaft",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "Freundschaft plus Sex",
-          "to": "denn? Freundschaft plus",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "plus Sex ohne",
-          "to": "Freundschaft plus Sex",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "Sex ohne Bindung",
-          "to": "plus Sex ohne",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "ohne Bindung klingt",
-          "to": "Sex ohne Bindung",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "Bindung klingt gut",
-          "to": "ohne Bindung klingt",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "klingt gut zu",
-          "to": "Bindung klingt gut",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "gut zu mir,",
-          "to": "klingt gut zu",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "zu mir, was",
-          "to": "gut zu mir,",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "mir, was stellst",
-          "to": "zu mir, was",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "was stellst du",
-          "to": "mir, was stellst",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "stellst du dir",
-          "to": "was stellst du",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "du dir da",
-          "to": "stellst du dir",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
-          ]
-        },
-        {
-          "from": "dir da so",
-          "to": "du dir da",
-          "count": 2,
-          "contexts": [
-            "hallo cleo danke deine nachricht"
           ]
         }
       ]
@@ -18462,9 +18468,9 @@
       "lastValidated": 1770747375605
     },
     "reasoningPrinciple_4": {
-      "usedCount": 498,
-      "successCount": 498,
-      "lastValidated": 1770747468130
+      "usedCount": 499,
+      "successCount": 499,
+      "lastValidated": 1770747470268
     },
     "reasoningPrinciple_5": {
       "usedCount": 98,
@@ -18512,9 +18518,9 @@
       "lastValidated": 1770745022291
     },
     "reasoningPrinciple_14": {
-      "usedCount": 506,
-      "successCount": 506,
-      "lastValidated": 1770747468130
+      "usedCount": 507,
+      "successCount": 507,
+      "lastValidated": 1770747470268
     },
     "reasoningPrinciple_15": {
       "usedCount": 220,
@@ -18532,9 +18538,9 @@
       "lastValidated": 1770747405867
     },
     "reasoningPrinciple_18": {
-      "usedCount": 325,
-      "successCount": 325,
-      "lastValidated": 1770747468130
+      "usedCount": 326,
+      "successCount": 326,
+      "lastValidated": 1770747470268
     },
     "reasoningPrinciple_19": {
       "usedCount": 42,
@@ -18562,9 +18568,9 @@
       "lastValidated": 1770746508392
     },
     "reasoningPrinciple_24": {
-      "usedCount": 494,
-      "successCount": 494,
-      "lastValidated": 1770747468130
+      "usedCount": 495,
+      "successCount": 495,
+      "lastValidated": 1770747470268
     },
     "reasoningPrinciple_25": {
       "usedCount": 370,
@@ -18572,14 +18578,14 @@
       "lastValidated": 1770747405867
     },
     "reasoningPrinciple_26": {
-      "usedCount": 374,
-      "successCount": 374,
-      "lastValidated": 1770747468130
+      "usedCount": 375,
+      "successCount": 375,
+      "lastValidated": 1770747470268
     },
     "reasoningPrinciple_27": {
-      "usedCount": 387,
-      "successCount": 387,
-      "lastValidated": 1770747468130
+      "usedCount": 388,
+      "successCount": 388,
+      "lastValidated": 1770747470268
     },
     "reasoningPrinciple_28": {
       "usedCount": 208,
@@ -18587,9 +18593,9 @@
       "lastValidated": 1770747328141
     },
     "reasoningPrinciple_29": {
-      "usedCount": 244,
-      "successCount": 244,
-      "lastValidated": 1770747468130
+      "usedCount": 245,
+      "successCount": 245,
+      "lastValidated": 1770747470268
     },
     "reasoningPrinciple_30": {
       "usedCount": 54,
@@ -18612,9 +18618,9 @@
       "lastValidated": 1768835311487
     },
     "reasoningPrinciple_34": {
-      "usedCount": 477,
-      "successCount": 477,
-      "lastValidated": 1770747468130
+      "usedCount": 478,
+      "successCount": 478,
+      "lastValidated": 1770747470268
     },
     "reasoningPrinciple_35": {
       "usedCount": 213,
@@ -18622,9 +18628,9 @@
       "lastValidated": 1770747328141
     },
     "reasoningPrinciple_36": {
-      "usedCount": 338,
-      "successCount": 338,
-      "lastValidated": 1770747468130
+      "usedCount": 339,
+      "successCount": 339,
+      "lastValidated": 1770747470268
     },
     "reasoningPrinciple_37": {
       "usedCount": 296,
@@ -18672,14 +18678,14 @@
       "lastValidated": 1770747405867
     },
     "reasoningPrinciple_46": {
-      "usedCount": 355,
-      "successCount": 355,
-      "lastValidated": 1770747468130
+      "usedCount": 356,
+      "successCount": 356,
+      "lastValidated": 1770747470268
     },
     "reasoningPrinciple_47": {
-      "usedCount": 242,
-      "successCount": 242,
-      "lastValidated": 1770747468130
+      "usedCount": 243,
+      "successCount": 243,
+      "lastValidated": 1770747470268
     },
     "reasoningPrinciple_48": {
       "usedCount": 144,
@@ -18687,9 +18693,9 @@
       "lastValidated": 1770746938034
     },
     "reasoningPrinciple_49": {
-      "usedCount": 234,
-      "successCount": 234,
-      "lastValidated": 1770747468130
+      "usedCount": 235,
+      "successCount": 235,
+      "lastValidated": 1770747470268
     },
     "responsePattern_2": {
       "usedCount": 0,
@@ -18767,9 +18773,9 @@
       "lastValidated": 1770746880905
     },
     "responsePattern_27": {
-      "usedCount": 1,
-      "successCount": 1,
-      "lastValidated": 1768835702941
+      "usedCount": 2,
+      "successCount": 2,
+      "lastValidated": 1770747470268
     },
     "responsePattern_29": {
       "usedCount": 1,
