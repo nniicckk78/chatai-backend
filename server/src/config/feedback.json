@@ -14278,7 +14278,7 @@
         "mood": "neutral",
         "style": "locker | flirty | direkt",
         "topic": "allgemein",
-        "lastModeratorMessage": "Es ist nett, dass du dich für mich interessierst, das freut mich. Seit wann bist du verlobt? Du möchtest also kein Foto in dein Profil stellen, obwohl du in dieser Situation bist?👀"
+        "lastModeratorMessage": "Es ist nett, dass du dich für mich interessierst, das freut mich. Seit wann bist du verlobt? Du m��chtest also kein Foto in dein Profil stellen, obwohl du in dieser Situation bist?👀"
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-01-13T15:29:51.440Z",
@@ -25740,25 +25740,28 @@
       "updatedAt": "2026-02-10T16:37:12.698Z"
     },
     {
-      "id": "feedback_1770741583694_f7zkq2dgf",
-      "chatId": "37862370",
-      "customerMessage": "Auf jeden Fall glaube ich das, allen schmeckt mein Kaffee gut bei mir gut!!",
-      "aiResponse": "Das klingt super, dann wette ich, dass er mir auch richtig gut munden würde. Dein DeLonghi mit den frischen Bohnen macht mich neugierig. Hast du da einen Lieblingskaffee, den du am liebsten machst? 😘",
+      "id": "feedback_1770741651076_96v0rm7l7",
+      "chatId": "qr9j3eZO2iPND4D8Tbk6",
+      "customerMessage": "Ich hoffe, es wird mir gefallen und eine neue, schöne Erfahrung werden, die lange anhält und uns beiden Freude bereitet. Mach es nicht kompliziert, gestalte es angenehm, entspannt und unkompliziert für uns. Komm, ich warte auf dich und ich will dich.",
+      "aiResponse": "Ich finde es süss, wie du das sagst, dass es entspannt und unkompliziert sein soll. Ich bin nur so einer, die sich gerne erst ein bisschen Zeit nimmt, bevor es richtig losgeht. Was sind für dich die wichtigsten Aspekte, die eine solche Erfahrung angenehm machen?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "fpc",
+      "platform": "avz",
       "isASA": false,
       "usedExampleIds": [],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "Treffen/Termine",
+          "Romantik / Verliebtheit"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Oh wow dein DeLonghi mit frisch gemahlenen bohnen klingt total lecker ich stell mir das jetzt vor und krieg schon lust auf so einen Kaffee bei dir 😋 Und deine Worte zu meinen Lippen machen mich ganz kribbelig, ich würde deinen Kuss total geniessen, denkst du der Kaffee würde mir auch schmecken?"
+        "lastModeratorMessage": "Gut Idee würde ich mal sagen also das könnte ich mir unter Umständen schon auch vorstellen. Was kommt da alles auch mich zu dann?"
       },
-      "lastModeratorMessage": "Oh wow dein DeLonghi mit frisch gemahlenen bohnen klingt total lecker ich stell mir das jetzt vor und krieg schon lust auf so einen Kaffee bei dir 😋 Und deine Worte zu meinen Lippen machen mich ganz kribbelig, ich würde deinen Kuss total geniessen, denkst du der Kaffee würde mir auch schmecken?",
-      "timestamp": "2026-02-10T16:39:43.694Z",
-      "updatedAt": "2026-02-10T16:39:43.694Z"
+      "lastModeratorMessage": "Gut Idee würde ich mal sagen also das könnte ich mir unter Umständen schon auch vorstellen. Was kommt da alles auch mich zu dann?",
+      "timestamp": "2026-02-10T16:40:51.076Z",
+      "updatedAt": "2026-02-10T16:40:51.076Z"
     }
   ]
 }
