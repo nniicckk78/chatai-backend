@@ -24910,25 +24910,29 @@
       "updatedAt": "2026-02-10T13:21:46.571Z"
     },
     {
-      "id": "feedback_1770729936405_12l6e8pf1",
-      "chatId": "0EuFbp5wIgxRJrvIipHY",
-      "customerMessage": "Was willst du wissen",
-      "aiResponse": "Na alles über dich halt, Markus. Was machst du so beruflich, hast du Hobbys? Erzähl mal was Persönliches von dir, dann wirds lockerer zwischen uns. Bist du aus Bern und was suchst du genau hier?",
+      "id": "feedback_1770729972937_tvee2jjx8",
+      "chatId": "Fri Dec 19 2025 17:18:29 GMT+0100 (Mitteleuropäische Normalzeit)-Nächste Wo",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, sag mal, wo hast du dich eigentlich versteckt? 😅 Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "avz",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, sag mal, wo hast du dich eigentlich versteckt? 😅 Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?"
+      ],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Also bevor ich meine Nummer raus gebe will ich schon ein bisschen mehr über dich wissen. Willst du mir denn mal was von dir erzählen?"
+        "lastModeratorMessage": "Nächste Woche ist schon Weihnachten. Und dann werden endlich wieder Geschenke ausgepackt. Hast du aber nicht vielleicht Lust ein Geschenk früher zu öffnen? Das zufällig zwischen meinen Beinen ist."
       },
-      "lastModeratorMessage": "Also bevor ich meine Nummer raus gebe will ich schon ein bisschen mehr über dich wissen. Willst du mir denn mal was von dir erzählen?",
-      "timestamp": "2026-02-10T13:25:36.405Z",
-      "updatedAt": "2026-02-10T13:25:36.405Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-10T13:26:12.937Z",
+      "updatedAt": "2026-02-10T13:26:12.937Z"
     }
   ]
 }
