@@ -8582,7 +8582,7 @@
       "chatId": "38192839",
       "customerMessage": "Schick dir auch liebe Grüße und interesse besteht natürlich noch &#128536;",
       "aiResponse": "Ich freue mich, dass du auch Interesse hast. Ich finde es wichtig, dass wir uns noch besser kennenlernen, bevor wir uns persönlich treffen. Was würdest du denn gerne machen, wenn wir uns mal sehen?",
-      "editedResponse": "Schön das zu hören. Ich bin auch noch ziemlich an dir interessiert. Bist eigentlich auch genau mein Typ.🙈 Was machst du denn heute noch so schönes?",
+      "editedResponse": "Schön das zu hören. Ich bin auch noch ziemlich an dir interessiert. Bist eigentlich auch genau mein Typ.���� Was machst du denn heute noch so schönes?",
       "status": "edited",
       "platform": "fpc",
       "isASA": false,
@@ -25461,8 +25461,8 @@
       "chatId": "Tue Feb 10 2026 16:31:07 GMT+0100 (Mitteleuropäische Normalzeit)-hat dir ei",
       "customerMessage": "hat dir einen Kuss gesendet.",
       "aiResponse": "Mmmh, ein Kuss von dir das macht mich ganz verrückt. 😘 Ich schicke dir auch einen zurück und drücke dich ganz fest. Ich fühle mich jetzt schon ganz kribbelig dabei. Magst du es eher zärtlich oder leidenschaftlich? 😊",
-      "editedResponse": null,
-      "status": "pending",
+      "editedResponse": "Ein Kuss von dir wie romantisch, danke.😘 Du bekommst auch einen von mir zurückgesendet.💋 Wie geht's dir denn so? Was machst du denn gerade so schönes?",
+      "status": "edited",
       "platform": "iluvo",
       "isASA": false,
       "usedExampleIds": [],
@@ -25474,7 +25474,11 @@
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-02-10T15:32:46.342Z",
-      "updatedAt": "2026-02-10T15:32:46.342Z"
+      "updatedAt": "2026-02-10T18:57:16.017Z",
+      "situation": "allgemein",
+      "situations": [
+        "allgemein"
+      ]
     },
     {
       "id": "feedback_1770737958492_qdwcgpfhr",
