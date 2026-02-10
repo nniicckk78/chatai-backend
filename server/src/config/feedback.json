@@ -9870,7 +9870,7 @@
         "moderatorUpdates": [
           {
             "date": "2025-12-26T18:43:46.159Z",
-            "description": "Ich sch����tze Ehrlichkeit.",
+            "description": "Ich sch������tze Ehrlichkeit.",
             "text": "Ich schätze Ehrlichkeit.",
             "fixed": false,
             "moderatorId": "20749"
@@ -25665,6 +25665,30 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-10T16:23:01.666Z",
       "updatedAt": "2026-02-10T16:23:01.666Z"
+    },
+    {
+      "id": "feedback_1770740782873_jf09439ch",
+      "chatId": "38545745",
+      "customerMessage": "Das hört sich doch gut an ich habe einen Pickup mit Wohnkabine und würde mich freuen wenn wir das zusammen ausprobieren würden,also werdden wir sehen was noch passiert hier?? Küsse Ralf",
+      "aiResponse": "Das klingt echt gemütlich mit deinem Pickup und der Wohnkabine, stell ich mir vor wie kuschelig das da drin wär. Mit dir würd ich das gerne mal ausprobieren, aber ich nehm mir da lieber Zeit und will dich erst besser kennenlernen. Was ist dein Lieblingsort zum Campen?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Treffen/Termine",
+          "Wohnort-Frage"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hallo rolf, Das verrat ich dir gerne ich komme aus herford. Früher war ich oft mit meinen Eltern beim Camping. Seitdem leider nicht mehr aber mit ihr würd ich das gerne mal ausprobieren"
+      },
+      "lastModeratorMessage": "Hallo rolf, Das verrat ich dir gerne ich komme aus herford. Früher war ich oft mit meinen Eltern beim Camping. Seitdem leider nicht mehr aber mit ihr würd ich das gerne mal ausprobieren",
+      "timestamp": "2026-02-10T16:26:22.873Z",
+      "updatedAt": "2026-02-10T16:26:22.873Z"
     }
   ]
 }
