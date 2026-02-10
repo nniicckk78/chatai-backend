@@ -6781,9 +6781,9 @@
     },
     "Wonach suchst du?": {
       "auch": {
-        "good": 5,
+        "good": 6,
         "bad": 3,
-        "lastUpdated": 1768910342737
+        "lastUpdated": 1770746546654
       },
       "hier": {
         "good": 4,
@@ -6791,9 +6791,9 @@
         "lastUpdated": 1769859739798
       },
       "was": {
-        "good": 6,
+        "good": 7,
         "bad": 5,
-        "lastUpdated": 1769859739798
+        "lastUpdated": 1770746546654
       },
       "mich": {
         "good": 5,
@@ -6834,6 +6834,11 @@
         "good": 2,
         "bad": 0,
         "lastUpdated": 1769859739798
+      },
+      "erstmal": {
+        "good": 2,
+        "bad": 0,
+        "lastUpdated": 1770746546654
       }
     },
     "Geld/Coins": {
@@ -6888,8 +6893,8 @@
       "total": 299
     },
     "Wonach suchst du?": {
-      "good": 9,
-      "total": 25
+      "good": 10,
+      "total": 26
     },
     "Geld/Coins": {
       "good": 10,
@@ -7171,6 +7176,20 @@
       "validatedSuccessRate": 1
     },
     {
+      "situation": "Wonach suchst du?",
+      "customerPattern": {
+        "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 76
+      },
+      "goodResponse": "Ach ich habs auch mega stressig heute, bin total erledigt und muss noch ein paar Sachen im Haushalt erledigen. Mir gehts so la la, brauch erstmal Ruhe. Was machst du denn jetzt erstmal um runterzukomm",
+      "successCount": 5,
+      "lastUsed": "2026-02-10T18:02:26.654Z",
+      "validatedSuccessRate": 1
+    },
+    {
       "situation": "Sexuelle Themen",
       "customerPattern": {
         "keywords": "hey hab gerade deine bilder angesehen gefrage wann den mal",
@@ -7196,20 +7215,6 @@
       "goodResponse": "Ja alles gut hat sich schon erledigt hehe ich würde gerne vorbei kommen aber leider ist das zu spontan, wie trinkst du denn gerne deinen Kaffee?",
       "successCount": 4,
       "lastUsed": "2026-01-23T09:54:28.624Z",
-      "validatedSuccessRate": 1
-    },
-    {
-      "situation": "Wonach suchst du?",
-      "customerPattern": {
-        "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 76
-      },
-      "goodResponse": "Danke für das Kompliment, Aloys! 😊 Das freut mich sehr zu hören. Ich wohne in der Nähe von Mainz, also nicht allzu weit weg. Wie genau sieht denn für dich eine erotische  Dauerfreundschaft+ so aus? I",
-      "successCount": 4,
-      "lastUsed": "2026-01-31T09:12:48.347Z",
       "validatedSuccessRate": 1
     },
     {
@@ -7347,7 +7352,8 @@
       },
       "goodResponse": "Ich komme auch aus Billerbeck, das ist ja witzig. Ich bin hier, um ein bisschen Spass zu haben und vielleicht auch eine lockere Beziehung zu finden. Was genau suchst du denn hier?",
       "successCount": 1,
-      "lastUsed": "2026-01-13T14:10:37.273Z"
+      "lastUsed": "2026-01-13T14:10:37.273Z",
+      "validatedSuccessRate": 1
     },
     {
       "situation": "Treffen/Termine",
@@ -7406,7 +7412,7 @@
       "validatedSuccessRate": 1
     }
   ],
-  "lastUpdated": "2026-02-10T18:01:48.392Z",
+  "lastUpdated": "2026-02-10T18:02:26.657Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -7841,7 +7847,8 @@
           167,
           198,
           236,
-          233
+          233,
+          205
         ],
         "exclamationMarks": [
           0,
@@ -7851,6 +7858,7 @@
           0,
           0,
           2,
+          0,
           0
         ],
         "questions": [
@@ -7861,18 +7869,19 @@
           1,
           2,
           1,
+          1,
           1
         ],
-        "count": 8,
-        "avgLength": 210,
+        "count": 9,
+        "avgLength": 209,
         "minLength": 167,
         "maxLength": 247,
-        "medianLength": 214,
-        "avgExclamationMarks": 0.3,
+        "medianLength": 205,
+        "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 2,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.4,
+        "avgQuestions": 1.3,
         "minQuestions": 1,
         "maxQuestions": 3,
         "medianQuestions": 1,
@@ -7880,15 +7889,15 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 38,
-          "200-250": 63,
+          "150-200": 33,
+          "200-250": 67,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 75,
-          "2": 13,
-          "3+": 13
+          "1": 78,
+          "2": 11,
+          "3+": 11
         }
       },
       "negative": {
@@ -18046,9 +18055,9 @@
       "lastValidated": 1770746448086
     },
     "reasoningPrinciple_4": {
-      "usedCount": 471,
-      "successCount": 471,
-      "lastValidated": 1770746508392
+      "usedCount": 472,
+      "successCount": 472,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_5": {
       "usedCount": 83,
@@ -18076,9 +18085,9 @@
       "lastValidated": 1770744889340
     },
     "reasoningPrinciple_10": {
-      "usedCount": 103,
-      "successCount": 103,
-      "lastValidated": 1770745598773
+      "usedCount": 104,
+      "successCount": 104,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_11": {
       "usedCount": 42,
@@ -18096,9 +18105,9 @@
       "lastValidated": 1770745022291
     },
     "reasoningPrinciple_14": {
-      "usedCount": 479,
-      "successCount": 479,
-      "lastValidated": 1770746508392
+      "usedCount": 480,
+      "successCount": 480,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_15": {
       "usedCount": 210,
@@ -18116,9 +18125,9 @@
       "lastValidated": 1770746448086
     },
     "reasoningPrinciple_18": {
-      "usedCount": 311,
-      "successCount": 311,
-      "lastValidated": 1770746508392
+      "usedCount": 312,
+      "successCount": 312,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_19": {
       "usedCount": 42,
@@ -18146,9 +18155,9 @@
       "lastValidated": 1770746508392
     },
     "reasoningPrinciple_24": {
-      "usedCount": 468,
-      "successCount": 468,
-      "lastValidated": 1770746448086
+      "usedCount": 469,
+      "successCount": 469,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_25": {
       "usedCount": 351,
@@ -18156,14 +18165,14 @@
       "lastValidated": 1770746508392
     },
     "reasoningPrinciple_26": {
-      "usedCount": 363,
-      "successCount": 363,
-      "lastValidated": 1770746508392
+      "usedCount": 364,
+      "successCount": 364,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_27": {
-      "usedCount": 376,
-      "successCount": 376,
-      "lastValidated": 1770746508392
+      "usedCount": 377,
+      "successCount": 377,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_28": {
       "usedCount": 199,
@@ -18171,9 +18180,9 @@
       "lastValidated": 1770746508392
     },
     "reasoningPrinciple_29": {
-      "usedCount": 223,
-      "successCount": 223,
-      "lastValidated": 1770746448086
+      "usedCount": 224,
+      "successCount": 224,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_30": {
       "usedCount": 54,
@@ -18196,9 +18205,9 @@
       "lastValidated": 1768835311487
     },
     "reasoningPrinciple_34": {
-      "usedCount": 455,
-      "successCount": 455,
-      "lastValidated": 1770746448086
+      "usedCount": 456,
+      "successCount": 456,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_35": {
       "usedCount": 205,
@@ -18206,9 +18215,9 @@
       "lastValidated": 1770746508392
     },
     "reasoningPrinciple_36": {
-      "usedCount": 323,
-      "successCount": 323,
-      "lastValidated": 1770746508392
+      "usedCount": 324,
+      "successCount": 324,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_37": {
       "usedCount": 277,
@@ -18241,14 +18250,14 @@
       "lastValidated": 1770746448086
     },
     "reasoningPrinciple_43": {
-      "usedCount": 212,
-      "successCount": 212,
-      "lastValidated": 1770746448086
+      "usedCount": 213,
+      "successCount": 213,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_44": {
-      "usedCount": 212,
-      "successCount": 212,
-      "lastValidated": 1770746448086
+      "usedCount": 213,
+      "successCount": 213,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_45": {
       "usedCount": 231,
@@ -18256,14 +18265,14 @@
       "lastValidated": 1770746448086
     },
     "reasoningPrinciple_46": {
-      "usedCount": 340,
-      "successCount": 340,
-      "lastValidated": 1770746508392
+      "usedCount": 341,
+      "successCount": 341,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_47": {
-      "usedCount": 221,
-      "successCount": 221,
-      "lastValidated": 1770746448086
+      "usedCount": 222,
+      "successCount": 222,
+      "lastValidated": 1770746546656
     },
     "reasoningPrinciple_48": {
       "usedCount": 142,
@@ -18271,9 +18280,9 @@
       "lastValidated": 1770746448086
     },
     "reasoningPrinciple_49": {
-      "usedCount": 213,
-      "successCount": 213,
-      "lastValidated": 1770746448086
+      "usedCount": 214,
+      "successCount": 214,
+      "lastValidated": 1770746546656
     },
     "responsePattern_2": {
       "usedCount": 0,
@@ -18371,9 +18380,9 @@
       "lastValidated": 1770544700023
     },
     "responsePattern_18": {
-      "usedCount": 1,
-      "successCount": 1,
-      "lastValidated": 1769859739812
+      "usedCount": 2,
+      "successCount": 2,
+      "lastValidated": 1770746546656
     },
     "responsePattern_21": {
       "usedCount": 1,
