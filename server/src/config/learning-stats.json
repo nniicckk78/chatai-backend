@@ -188,7 +188,7 @@
         "successRate": 0
       },
       "das klingt": {
-        "count": 1,
+        "count": 2,
         "successRate": 0
       },
       "würdest du uns gerne in den Arsch ficken?": {
@@ -6617,14 +6617,19 @@
         "lastUpdated": 1768849211320
       },
       "was": {
-        "good": 0,
-        "bad": 4,
-        "lastUpdated": 1769161982589
+        "good": 1,
+        "bad": 5,
+        "lastUpdated": 1770743886791
       },
       "macht": {
         "good": 0,
         "bad": 2,
         "lastUpdated": 1768849211320
+      },
+      "anal": {
+        "good": 1,
+        "bad": 2,
+        "lastUpdated": 1770743886791
       }
     },
     "Bilder Anfrage": {
@@ -6828,8 +6833,8 @@
       "total": 15
     },
     "Berufsfrage": {
-      "good": 7,
-      "total": 13
+      "good": 8,
+      "total": 15
     },
     "allgemein, Sexuelle Themen": {
       "good": 0,
@@ -7105,7 +7110,8 @@
       },
       "goodResponse": "Ja alles gut hat sich schon erledigt hehe ich würde gerne vorbei kommen aber leider ist das zu spontan, wie trinkst du denn gerne deinen Kaffee?",
       "successCount": 4,
-      "lastUsed": "2026-01-23T09:54:28.624Z"
+      "lastUsed": "2026-01-23T09:54:28.624Z",
+      "validatedSuccessRate": 1
     },
     {
       "situation": "Wonach suchst du?",
@@ -7164,6 +7170,20 @@
       "validatedSuccessRate": 1
     },
     {
+      "situation": "Berufsfrage",
+      "customerPattern": {
+        "keywords": "bin singel drei jahren wie schon wei hei tim bin",
+        "hasQuestion": false,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 357
+      },
+      "goodResponse": "Fensterputzer, das klingt stark stell dir vor, du putzt meine Fenster von innen 😏 Ich arbeite als Stylistin und hab auch keine Tabus, Anal und Lecken machen mich total feucht. Was hast du denn für Vo",
+      "successCount": 4,
+      "lastUsed": "2026-02-10T17:18:06.793Z",
+      "validatedSuccessRate": 1
+    },
+    {
       "situation": "allgemein",
       "customerPattern": {
         "keywords": "sollten nicht erstmal kennenlernen dann sehen kompatibel wenn dann schon",
@@ -7189,19 +7209,6 @@
       "goodResponse": "Hey Manfred, darf ich denn mal fragen was ein so hübscher Mann wie du auf so einer Plattform macht? Würde mich echt freuen wenn wir uns ein bisschen näher kommen könnten?",
       "successCount": 3,
       "lastUsed": "2026-01-13T14:12:34.699Z"
-    },
-    {
-      "situation": "Berufsfrage",
-      "customerPattern": {
-        "keywords": "bin singel drei jahren wie schon wei hei tim bin",
-        "hasQuestion": false,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 357
-      },
-      "goodResponse": "Ich heisse Melanie, bin 29 Jahre alt und komme aus Telgte. Ich arbeite in einem Nagelstudio. Du bist seit drei Jahren single, wie fühlt sich das für dich an? Was vermisst du am meisten in einer Bezieh",
-      "successCount": 3,
-      "lastUsed": "2026-01-19T19:00:11.320Z"
     },
     {
       "situation": "Bilder Anfrage",
@@ -7314,7 +7321,7 @@
       "validatedSuccessRate": 1
     }
   ],
-  "lastUpdated": "2026-02-10T08:43:25.668Z",
+  "lastUpdated": "2026-02-10T17:18:06.825Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -11093,9 +11100,11 @@
           131,
           160,
           134,
-          134
+          134,
+          208
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -11111,12 +11120,13 @@
           2,
           1,
           1,
+          1,
           1
         ],
-        "count": 7,
-        "avgLength": 150,
+        "count": 8,
+        "avgLength": 157,
         "minLength": 131,
-        "maxLength": 204,
+        "maxLength": 208,
         "medianLength": 144,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
@@ -11129,15 +11139,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 71,
-          "150-200": 14,
-          "200-250": 14,
+          "120-150": 63,
+          "150-200": 13,
+          "200-250": 25,
           "250+": 0
         },
         "questionDistribution": {
           "0": 0,
-          "1": 71,
-          "2": 29,
+          "1": 75,
+          "2": 25,
           "3+": 0
         }
       },
@@ -11147,9 +11157,11 @@
           298,
           208,
           220,
-          199
+          199,
+          211
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -11161,18 +11173,19 @@
           2,
           1,
           1,
-          2
+          2,
+          1
         ],
-        "count": 5,
-        "avgLength": 225,
+        "count": 6,
+        "avgLength": 223,
         "minLength": 199,
         "maxLength": 298,
-        "medianLength": 208,
+        "medianLength": 211,
         "avgExclamationMarks": 0,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 0,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.6,
+        "avgQuestions": 1.5,
         "minQuestions": 1,
         "maxQuestions": 2,
         "medianQuestions": 2,
@@ -11180,14 +11193,14 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 20,
-          "200-250": 60,
-          "250+": 20
+          "150-200": 17,
+          "200-250": 67,
+          "250+": 17
         },
         "questionDistribution": {
           "0": 0,
-          "1": 40,
-          "2": 60,
+          "1": 50,
+          "2": 50,
           "3+": 0
         }
       }
@@ -12355,6 +12368,14 @@
     "Bilder Anfrage": {
       "😂": {
         "count": 2,
+        "positions": [],
+        "contexts": [],
+        "successRate": 0
+      }
+    },
+    "Berufsfrage": {
+      "😏": {
+        "count": 1,
         "positions": [],
         "contexts": [],
         "successRate": 0
@@ -14625,6 +14646,238 @@
           "count": 2,
           "contexts": [
             "musst sonntag arbeiten was machst"
+          ]
+        },
+        {
+          "from": "das klingt stark",
+          "to": "Fensterputzer, das klingt",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "klingt stark stell",
+          "to": "das klingt stark",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "stark stell dir",
+          "to": "klingt stark stell",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "stell dir vor,",
+          "to": "stark stell dir",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "dir vor, du",
+          "to": "stell dir vor,",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "vor, du putzt",
+          "to": "dir vor, du",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "du putzt meine",
+          "to": "vor, du putzt",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "putzt meine Fenster",
+          "to": "du putzt meine",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "meine Fenster von",
+          "to": "putzt meine Fenster",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "Fenster von innen",
+          "to": "meine Fenster von",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "von innen 😏",
+          "to": "Fenster von innen",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "innen 😏 Ich",
+          "to": "von innen 😏",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "😏 Ich arbeite",
+          "to": "innen 😏 Ich",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "Ich arbeite als",
+          "to": "😏 Ich arbeite",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "arbeite als Stylistin",
+          "to": "Ich arbeite als",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "als Stylistin und",
+          "to": "arbeite als Stylistin",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "Stylistin und hab",
+          "to": "als Stylistin und",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "und hab auch",
+          "to": "Stylistin und hab",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "hab auch keine",
+          "to": "und hab auch",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "auch keine Tabus,",
+          "to": "hab auch keine",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "keine Tabus, Anal",
+          "to": "auch keine Tabus,",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "Tabus, Anal und",
+          "to": "keine Tabus, Anal",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "Anal und Lecken",
+          "to": "Tabus, Anal und",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "und Lecken machen",
+          "to": "Anal und Lecken",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "Lecken machen mich",
+          "to": "und Lecken machen",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "machen mich total",
+          "to": "Lecken machen mich",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "mich total feucht.",
+          "to": "machen mich total",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "total feucht. Was",
+          "to": "mich total feucht.",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
+          ]
+        },
+        {
+          "from": "feucht. Was geilt",
+          "to": "total feucht. Was",
+          "count": 2,
+          "contexts": [
+            "bin beruf fensterputzer hab weit"
           ]
         }
       ]
@@ -17466,9 +17719,9 @@
       "lastValidated": 1770713005667
     },
     "reasoningPrinciple_4": {
-      "usedCount": 436,
-      "successCount": 436,
-      "lastValidated": 1770713005667
+      "usedCount": 437,
+      "successCount": 437,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_5": {
       "usedCount": 77,
@@ -17486,9 +17739,9 @@
       "lastValidated": 1770713005667
     },
     "reasoningPrinciple_8": {
-      "usedCount": 30,
-      "successCount": 30,
-      "lastValidated": 1770712729662
+      "usedCount": 31,
+      "successCount": 31,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_9": {
       "usedCount": 41,
@@ -17516,9 +17769,9 @@
       "lastValidated": 1770710735588
     },
     "reasoningPrinciple_14": {
-      "usedCount": 442,
-      "successCount": 442,
-      "lastValidated": 1770713005667
+      "usedCount": 443,
+      "successCount": 443,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_15": {
       "usedCount": 194,
@@ -17531,9 +17784,9 @@
       "lastValidated": 1770710735588
     },
     "reasoningPrinciple_17": {
-      "usedCount": 255,
-      "successCount": 255,
-      "lastValidated": 1770712930710
+      "usedCount": 256,
+      "successCount": 256,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_18": {
       "usedCount": 290,
@@ -17566,14 +17819,14 @@
       "lastValidated": 1770713005667
     },
     "reasoningPrinciple_24": {
-      "usedCount": 434,
-      "successCount": 434,
-      "lastValidated": 1770713005667
+      "usedCount": 435,
+      "successCount": 435,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_25": {
-      "usedCount": 321,
-      "successCount": 321,
-      "lastValidated": 1770713005667
+      "usedCount": 322,
+      "successCount": 322,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_26": {
       "usedCount": 334,
@@ -17591,9 +17844,9 @@
       "lastValidated": 1770713005667
     },
     "reasoningPrinciple_29": {
-      "usedCount": 203,
-      "successCount": 203,
-      "lastValidated": 1770712943018
+      "usedCount": 204,
+      "successCount": 204,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_30": {
       "usedCount": 52,
@@ -17616,9 +17869,9 @@
       "lastValidated": 1768835311487
     },
     "reasoningPrinciple_34": {
-      "usedCount": 420,
-      "successCount": 420,
-      "lastValidated": 1770713005667
+      "usedCount": 421,
+      "successCount": 421,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_35": {
       "usedCount": 193,
@@ -17626,14 +17879,14 @@
       "lastValidated": 1770713005667
     },
     "reasoningPrinciple_36": {
-      "usedCount": 301,
-      "successCount": 301,
-      "lastValidated": 1770712985934
+      "usedCount": 302,
+      "successCount": 302,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_37": {
-      "usedCount": 250,
-      "successCount": 250,
-      "lastValidated": 1770712930710
+      "usedCount": 251,
+      "successCount": 251,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_38": {
       "usedCount": 0,
@@ -17641,9 +17894,9 @@
       "lastValidated": 1768835311487
     },
     "reasoningPrinciple_39": {
-      "usedCount": 314,
-      "successCount": 314,
-      "lastValidated": 1770712943018
+      "usedCount": 315,
+      "successCount": 315,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_40": {
       "usedCount": 15,
@@ -17651,39 +17904,39 @@
       "lastValidated": 1770555033540
     },
     "reasoningPrinciple_41": {
-      "usedCount": 215,
-      "successCount": 215,
-      "lastValidated": 1770712985934
+      "usedCount": 216,
+      "successCount": 216,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_42": {
-      "usedCount": 128,
-      "successCount": 128,
-      "lastValidated": 1770712930710
+      "usedCount": 129,
+      "successCount": 129,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_43": {
-      "usedCount": 198,
-      "successCount": 198,
-      "lastValidated": 1770713005667
+      "usedCount": 199,
+      "successCount": 199,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_44": {
-      "usedCount": 198,
-      "successCount": 198,
-      "lastValidated": 1770713005667
+      "usedCount": 199,
+      "successCount": 199,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_45": {
-      "usedCount": 210,
-      "successCount": 210,
-      "lastValidated": 1770712985934
+      "usedCount": 211,
+      "successCount": 211,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_46": {
-      "usedCount": 319,
-      "successCount": 319,
-      "lastValidated": 1770712985934
+      "usedCount": 320,
+      "successCount": 320,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_47": {
-      "usedCount": 201,
-      "successCount": 201,
-      "lastValidated": 1770712943018
+      "usedCount": 202,
+      "successCount": 202,
+      "lastValidated": 1770743886821
     },
     "reasoningPrinciple_48": {
       "usedCount": 135,
@@ -17691,9 +17944,9 @@
       "lastValidated": 1770713005667
     },
     "reasoningPrinciple_49": {
-      "usedCount": 193,
-      "successCount": 193,
-      "lastValidated": 1770712943018
+      "usedCount": 194,
+      "successCount": 194,
+      "lastValidated": 1770743886821
     },
     "responsePattern_2": {
       "usedCount": 0,
@@ -17801,9 +18054,9 @@
       "lastValidated": 1770547154154
     },
     "responsePattern_23": {
-      "usedCount": 0,
-      "successCount": 0,
-      "lastValidated": 1768837976733
+      "usedCount": 1,
+      "successCount": 1,
+      "lastValidated": 1770743886821
     },
     "responsePattern_14": {
       "usedCount": 2,
