@@ -9870,7 +9870,7 @@
         "moderatorUpdates": [
           {
             "date": "2025-12-26T18:43:46.159Z",
-            "description": "Ich sch����tze Ehrlichkeit.",
+            "description": "Ich sch������tze Ehrlichkeit.",
             "text": "Ich schätze Ehrlichkeit.",
             "fixed": false,
             "moderatorId": "20749"
@@ -25456,28 +25456,27 @@
       "updatedAt": "2026-02-10T15:39:18.492Z"
     },
     {
-      "id": "feedback_1770738211133_xuem7vss0",
-      "chatId": "Tue Feb 10 2026 16:34:45 GMT+0100 (Mitteleuropäische Normalzeit)-Dürfte ich",
-      "customerMessage": "Sage mal ganz nett hallo schöne Frau ich komme aus wegeleben bei Halberstadt und klar darfst du so zu unserem ersten Date kommen",
-      "aiResponse": "Haha danke, das klingt süss von dir. Wegeleben bei Halberstadt ist ja gar nicht so weit weg von Elbingerode. Ich bin schon gespannt, was wir zusammen machen könnten. Erzähl mal, was würdest du denn so mit mir anstellen?",
+      "id": "feedback_1770738269635_z5zctyu1r",
+      "chatId": "roUFUUuH3O6najO6d1nh",
+      "customerMessage": "Ich möchte diesen Italian Restaurant in meiner gehen. Es hat alle 3 Möglichkeiten. Oder vielleicht möchten du irgendwo vorschlagen, zu treffen.",
+      "aiResponse": "Ach, ich finde Italienisch auch super lecker. Das klingt wirklich toll, was du da vorschlägst. Ich mag es, wenn man sich Zeit lässt und erstmal ein bisschen quatscht, bevor man sich auf etwas festlegt. Hast du schon einmal in diesem Restaurant gegessen?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "iluvo",
+      "platform": "avz",
       "isASA": false,
       "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "Treffen/Termine",
-          "Wohnort-Frage"
+          "Treffen/Termine"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Dürfte ich so auf einem Date mit dir auftauchen? Oder wäre es dir zu freizügig?🫣 Wenn es dir gefällt, kannst du mir ja mal sagen, woher du kommst und wann du Zeit für mich hast."
+        "lastModeratorMessage": "Ich verstehe mein Lieber, dann können wir ja auch mal gucken, wo wollen wir denn da mal hin?"
       },
-      "lastModeratorMessage": "Dürfte ich so auf einem Date mit dir auftauchen? Oder wäre es dir zu freizügig?🫣 Wenn es dir gefällt, kannst du mir ja mal sagen, woher du kommst und wann du Zeit für mich hast.",
-      "timestamp": "2026-02-10T15:43:31.133Z",
-      "updatedAt": "2026-02-10T15:43:31.133Z"
+      "lastModeratorMessage": "Ich verstehe mein Lieber, dann können wir ja auch mal gucken, wo wollen wir denn da mal hin?",
+      "timestamp": "2026-02-10T15:44:29.635Z",
+      "updatedAt": "2026-02-10T15:44:29.635Z"
     }
   ]
 }
