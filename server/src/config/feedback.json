@@ -24220,29 +24220,27 @@
       "updatedAt": "2026-02-09T17:42:29.206Z"
     },
     {
-      "id": "feedback_1770709993858_pm994rt0e",
-      "chatId": "Tue Feb 03 2026 21:28:09 GMT+0100 (Mitteleuropäische Normalzeit)-Engel das ",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Sag mal, ist es inzwischen normal geworden, einfach nicht mehr zu antworten? Oder habe ich irgendwas falsches geschrieben? Sag mir doch wenigstens mal bescheid damit ich es auch für das nächste mal besser machen kann!",
+      "id": "feedback_1770710122291_1cuwah1ih",
+      "chatId": "Sun Feb 01 2026 16:34:21 GMT+0100 (Mitteleuropäische Normalzeit)-Welche Fra",
+      "customerMessage": "Ja jlar ich wohne ja nicht alleine.Mein Sohn, Schwiegertichter und drei agile Enkel und meine Frau wohnt oben die ust bur derzeit unterwegs.",
+      "aiResponse": "Das klingt ja wirklich toll, dass du so eine grosse Familie um dich hast. Das gibt dir bestimmt viel Kraft und Unterstützung. Wie alt sind denn deine Enkel und was macht ihr am liebsten zusammen?",
       "editedResponse": null,
       "status": "pending",
       "platform": "iluvo",
-      "isASA": true,
-      "usedExampleIds": [
-        "ASA Reaktivierung|Sag mal, ist es inzwischen normal geworden, einfach nicht mehr zu antworten? Oder habe ich irgendwas falsches geschrieben? Sag mir doch wenigstens mal bescheid damit ich es auch für das nächste mal besser machen kann!"
-      ],
+      "isASA": false,
+      "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "ASA Reaktivierung"
+          "Wohnort-Frage"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Wir sollten erstmal hier an unserer Kommunikation arbeiten, meinst du nicht?"
+        "lastModeratorMessage": "Welche Fragen meinst du denn genau? Ich interessiere mich einfach für dich.😊"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-02-10T07:53:13.858Z",
-      "updatedAt": "2026-02-10T07:53:13.858Z"
+      "lastModeratorMessage": "Welche Fragen meinst du denn genau? Ich interessiere mich einfach für dich.😊",
+      "timestamp": "2026-02-10T07:55:22.291Z",
+      "updatedAt": "2026-02-10T07:55:22.291Z"
     }
   ]
 }
