@@ -9870,7 +9870,7 @@
         "moderatorUpdates": [
           {
             "date": "2025-12-26T18:43:46.159Z",
-            "description": "Ich sch������tze Ehrlichkeit.",
+            "description": "Ich sch����tze Ehrlichkeit.",
             "text": "Ich schätze Ehrlichkeit.",
             "fixed": false,
             "moderatorId": "20749"
@@ -25456,27 +25456,26 @@
       "updatedAt": "2026-02-10T15:39:18.492Z"
     },
     {
-      "id": "feedback_1770738269635_z5zctyu1r",
-      "chatId": "roUFUUuH3O6najO6d1nh",
-      "customerMessage": "Ich möchte diesen Italian Restaurant in meiner gehen. Es hat alle 3 Möglichkeiten. Oder vielleicht möchten du irgendwo vorschlagen, zu treffen.",
-      "aiResponse": "Ach, ich finde Italienisch auch super lecker. Das klingt wirklich toll, was du da vorschlägst. Ich mag es, wenn man sich Zeit lässt und erstmal ein bisschen quatscht, bevor man sich auf etwas festlegt. Hast du schon einmal in diesem Restaurant gegessen?",
+      "id": "feedback_1770738322826_2b56a0q1e",
+      "chatId": "Tue Feb 10 2026 16:42:15 GMT+0100 (Mitteleuropäische Normalzeit)-Lust auf k",
+      "customerMessage": "Lust auf kontagt dann gerne per Wahts App",
+      "aiResponse": "Ich finde es toll, dass du Lust auf Kontakt hast! Ich bin auch sehr neugierig auf dich. Lass uns erstmal hier ein bisschen quatschen, damit wir uns besser kennenlernen können. Was machst du denn gerne in deiner Freizeit? 😊",
       "editedResponse": null,
       "status": "pending",
-      "platform": "avz",
+      "platform": "iluvo",
       "isASA": false,
       "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "Treffen/Termine"
+          "Kontaktdaten außerhalb der Plattform"
         ],
         "mood": "neutral",
         "style": "neutral",
-        "topic": "allgemein",
-        "lastModeratorMessage": "Ich verstehe mein Lieber, dann können wir ja auch mal gucken, wo wollen wir denn da mal hin?"
+        "topic": "allgemein"
       },
-      "lastModeratorMessage": "Ich verstehe mein Lieber, dann können wir ja auch mal gucken, wo wollen wir denn da mal hin?",
-      "timestamp": "2026-02-10T15:44:29.635Z",
-      "updatedAt": "2026-02-10T15:44:29.635Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-10T15:45:22.826Z",
+      "updatedAt": "2026-02-10T15:45:22.826Z"
     }
   ]
 }
