@@ -20497,7 +20497,7 @@
         "moderatorUpdates": [
           {
             "date": "2026-01-03T21:16:42.214Z",
-            "description": "Spam: ob du jetzt im neuen jahr vielleicht mehr lust hättest uns zu treffen?",
+            "description": "Spam: ob du jetzt im neuen jahr vielleicht mehr lust h��ttest uns zu treffen?",
             "text": "Spam: ob du jetzt im neuen jahr vielleicht mehr lust hättest uns zu treffen?",
             "fixed": false,
             "moderatorId": "20735"
@@ -25613,7 +25613,7 @@
       "customerMessage": "nein, nicht im Moment. Aber ich versuche vorzubeugen. Oft lege ich sogar ein Heizkissen unter, wenn ich akute Beschwerden habe. Das hilft eigentlich immer.",
       "aiResponse": "Das klingt ja richtig durchdacht von dir, so vorzubeugen. Ein Heizkissen ist wirklich eine super Sache bei Verspannungen, oder? Schön, dass es bei dir so gut wirkt. Probierst du auch mal andere Dinge aus, um deinen Rücken zu entlasten? 😊",
       "editedResponse": null,
-      "status": "pending",
+      "status": "good",
       "platform": "iluvo",
       "isASA": false,
       "usedExampleIds": [],
@@ -25626,7 +25626,11 @@
       },
       "lastModeratorMessage": "Du bist so niedlich und darf ich dir dann auch ein Küsschen anbieten?",
       "timestamp": "2026-02-10T16:07:21.276Z",
-      "updatedAt": "2026-02-10T16:07:21.276Z"
+      "updatedAt": "2026-02-10T18:14:36.894Z",
+      "situation": "Bot-Vorwurf",
+      "situations": [
+        "Bot-Vorwurf"
+      ]
     },
     {
       "id": "feedback_1770739994268_7pvwrstnj",
