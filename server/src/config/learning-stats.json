@@ -7228,9 +7228,9 @@
         "lastUpdated": 1770747783894
       },
       "wenn": {
-        "good": 6,
+        "good": 7,
         "bad": 1,
-        "lastUpdated": 1770820284372
+        "lastUpdated": 1770820286291
       },
       "gerne": {
         "good": 0,
@@ -7259,9 +7259,9 @@
         "lastUpdated": 1770816357113
       },
       "jetzt": {
-        "good": 5,
+        "good": 6,
         "bad": 0,
-        "lastUpdated": 1770820284372
+        "lastUpdated": 1770820286291
       },
       "bild": {
         "good": 2,
@@ -7316,9 +7316,9 @@
         "lastUpdated": 1770820284372
       },
       "mich": {
-        "good": 1,
+        "good": 2,
         "bad": 5,
-        "lastUpdated": 1770820284372
+        "lastUpdated": 1770820286291
       },
       "zunge": {
         "good": 0,
@@ -7497,8 +7497,8 @@
       "total": 303
     },
     "Bilder Anfrage": {
-      "good": 19,
-      "total": 32
+      "good": 20,
+      "total": 33
     },
     "Berufsfrage": {
       "good": 11,
@@ -7994,6 +7994,20 @@
       "validatedSuccessRate": 1
     },
     {
+      "situation": "Bilder Anfrage",
+      "customerPattern": {
+        "keywords": "möchte bild aussiehst wie geile lehrerin",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": true,
+        "length": 69
+      },
+      "goodResponse": "Okay das ist jetzt aber schwierig für mich einzuschätzen. Wie sieht denn eine Lehrerin so aus? Gibt es einen bestimmten Kleidungsstil? Wenn ich an meine Lehrerinnen von meiner Schulzeit denke sahen di",
+      "successCount": 2,
+      "lastUsed": "2026-02-11T14:31:26.291Z",
+      "validatedSuccessRate": 1
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "komme billerbeck wie was suchst hier genau würde dich gerne",
@@ -8076,23 +8090,9 @@
       "successCount": 1,
       "lastUsed": "2026-02-11T13:37:29.243Z",
       "validatedSuccessRate": 1
-    },
-    {
-      "situation": "Bilder Anfrage",
-      "customerPattern": {
-        "keywords": "möchte bild aussiehst wie geile lehrerin",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": true,
-        "length": 69
-      },
-      "goodResponse": "Okay das ist jetzt aber schwierig für mich einzuschätzen. Wie sieht denn eine Lehrerin so aus? Gibt es einen bestimmten Kleidungsstil? Wenn ich an meine Lehrerinnen von meiner Schulzeit denke sahen di",
-      "successCount": 1,
-      "lastUsed": "2026-02-11T14:31:24.373Z",
-      "validatedSuccessRate": 1
     }
   ],
-  "lastUpdated": "2026-02-11T14:31:24.387Z",
+  "lastUpdated": "2026-02-11T14:31:26.292Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -15131,9 +15131,11 @@
           250,
           163,
           163,
+          238,
           238
         ],
         "exclamationMarks": [
+          0,
           0,
           0,
           0,
@@ -15159,10 +15161,11 @@
           1,
           2,
           2,
+          2,
           2
         ],
-        "count": 12,
-        "avgLength": 185,
+        "count": 13,
+        "avgLength": 189,
         "minLength": 153,
         "maxLength": 250,
         "medianLength": 170,
@@ -15178,14 +15181,14 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 67,
-          "200-250": 25,
+          "150-200": 62,
+          "200-250": 31,
           "250+": 8
         },
         "questionDistribution": {
           "0": 0,
-          "1": 25,
-          "2": 75,
+          "1": 23,
+          "2": 77,
           "3+": 0
         }
       },
@@ -21696,9 +21699,9 @@
       "lastValidated": 1770817230506
     },
     "reasoningPrinciple_1": {
-      "usedCount": 353,
-      "successCount": 353,
-      "lastValidated": 1770820284386
+      "usedCount": 354,
+      "successCount": 354,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_2": {
       "usedCount": 38,
@@ -21711,14 +21714,14 @@
       "lastValidated": 1770820239889
     },
     "reasoningPrinciple_4": {
-      "usedCount": 877,
-      "successCount": 877,
-      "lastValidated": 1770820284386
+      "usedCount": 878,
+      "successCount": 878,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_5": {
-      "usedCount": 186,
-      "successCount": 186,
-      "lastValidated": 1770820284386
+      "usedCount": 187,
+      "successCount": 187,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_6": {
       "usedCount": 16,
@@ -21741,9 +21744,9 @@
       "lastValidated": 1770818767885
     },
     "reasoningPrinciple_10": {
-      "usedCount": 203,
-      "successCount": 203,
-      "lastValidated": 1770820284386
+      "usedCount": 204,
+      "successCount": 204,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_11": {
       "usedCount": 56,
@@ -21761,14 +21764,14 @@
       "lastValidated": 1770820026865
     },
     "reasoningPrinciple_14": {
-      "usedCount": 893,
-      "successCount": 893,
-      "lastValidated": 1770820284386
+      "usedCount": 894,
+      "successCount": 894,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_15": {
-      "usedCount": 415,
-      "successCount": 415,
-      "lastValidated": 1770820284386
+      "usedCount": 416,
+      "successCount": 416,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_16": {
       "usedCount": 95,
@@ -21776,14 +21779,14 @@
       "lastValidated": 1770820026865
     },
     "reasoningPrinciple_17": {
-      "usedCount": 568,
-      "successCount": 568,
-      "lastValidated": 1770820284386
+      "usedCount": 569,
+      "successCount": 569,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_18": {
-      "usedCount": 577,
-      "successCount": 577,
-      "lastValidated": 1770820284386
+      "usedCount": 578,
+      "successCount": 578,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_19": {
       "usedCount": 56,
@@ -21796,9 +21799,9 @@
       "lastValidated": 1770820265220
     },
     "reasoningPrinciple_21": {
-      "usedCount": 560,
-      "successCount": 560,
-      "lastValidated": 1770820284386
+      "usedCount": 561,
+      "successCount": 561,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_22": {
       "usedCount": 397,
@@ -21811,29 +21814,29 @@
       "lastValidated": 1770820265220
     },
     "reasoningPrinciple_24": {
-      "usedCount": 867,
-      "successCount": 867,
-      "lastValidated": 1770820284386
+      "usedCount": 868,
+      "successCount": 868,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_25": {
-      "usedCount": 667,
-      "successCount": 667,
-      "lastValidated": 1770820284386
+      "usedCount": 668,
+      "successCount": 668,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_26": {
-      "usedCount": 675,
-      "successCount": 675,
-      "lastValidated": 1770820284386
+      "usedCount": 676,
+      "successCount": 676,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_27": {
-      "usedCount": 690,
-      "successCount": 690,
-      "lastValidated": 1770820284386
+      "usedCount": 691,
+      "successCount": 691,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_28": {
-      "usedCount": 363,
-      "successCount": 363,
-      "lastValidated": 1770820284386
+      "usedCount": 364,
+      "successCount": 364,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_29": {
       "usedCount": 458,
@@ -21861,24 +21864,24 @@
       "lastValidated": 1770749178651
     },
     "reasoningPrinciple_34": {
-      "usedCount": 853,
-      "successCount": 853,
-      "lastValidated": 1770820284386
+      "usedCount": 854,
+      "successCount": 854,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_35": {
-      "usedCount": 362,
-      "successCount": 362,
-      "lastValidated": 1770820284386
+      "usedCount": 363,
+      "successCount": 363,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_36": {
-      "usedCount": 608,
-      "successCount": 608,
-      "lastValidated": 1770820284386
+      "usedCount": 609,
+      "successCount": 609,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_37": {
-      "usedCount": 559,
-      "successCount": 559,
-      "lastValidated": 1770820284386
+      "usedCount": 560,
+      "successCount": 560,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_38": {
       "usedCount": 3,
@@ -21886,9 +21889,9 @@
       "lastValidated": 1770749178651
     },
     "reasoningPrinciple_39": {
-      "usedCount": 659,
-      "successCount": 659,
-      "lastValidated": 1770820284386
+      "usedCount": 660,
+      "successCount": 660,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_40": {
       "usedCount": 20,
@@ -21896,14 +21899,14 @@
       "lastValidated": 1770800927599
     },
     "reasoningPrinciple_41": {
-      "usedCount": 484,
-      "successCount": 484,
-      "lastValidated": 1770820284386
+      "usedCount": 485,
+      "successCount": 485,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_42": {
-      "usedCount": 248,
-      "successCount": 248,
-      "lastValidated": 1770820284386
+      "usedCount": 249,
+      "successCount": 249,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_43": {
       "usedCount": 366,
@@ -21916,14 +21919,14 @@
       "lastValidated": 1770820265220
     },
     "reasoningPrinciple_45": {
-      "usedCount": 473,
-      "successCount": 473,
-      "lastValidated": 1770820284386
+      "usedCount": 474,
+      "successCount": 474,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_46": {
-      "usedCount": 625,
-      "successCount": 625,
-      "lastValidated": 1770820284386
+      "usedCount": 626,
+      "successCount": 626,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_47": {
       "usedCount": 448,
@@ -21931,9 +21934,9 @@
       "lastValidated": 1770820265220
     },
     "reasoningPrinciple_48": {
-      "usedCount": 227,
-      "successCount": 227,
-      "lastValidated": 1770820284386
+      "usedCount": 228,
+      "successCount": 228,
+      "lastValidated": 1770820286291
     },
     "reasoningPrinciple_49": {
       "usedCount": 439,
@@ -22096,9 +22099,9 @@
       "lastValidated": 1769006721704
     },
     "responsePattern_34": {
-      "usedCount": 1,
-      "successCount": 1,
-      "lastValidated": 1770744255439
+      "usedCount": 2,
+      "successCount": 2,
+      "lastValidated": 1770820286291
     },
     "responsePattern_35": {
       "usedCount": 1,
