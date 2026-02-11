@@ -26213,6 +26213,31 @@
       "lastModeratorMessage": "Aber würdest du dich das trauen, wenn es an einem Ort mit vielen Menschen wäre?",
       "timestamp": "2026-02-11T12:37:02.924Z",
       "updatedAt": "2026-02-11T12:37:02.924Z"
+    },
+    {
+      "id": "feedback_1770813497808_dfv5s8dnv",
+      "chatId": "37372801",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Wollte mich einfach nochmal bei dir melden und fragen was du so gerade machst? Hoffe das alles gut bei dir ist und du dich bald meldest, hoffe ich nerve auch nicht?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Wollte mich einfach nochmal bei dir melden und fragen was du so gerade machst? Hoffe das alles gut bei dir ist und du dich bald meldest, hoffe ich nerve auch nicht?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "ja das hört sich gut an. nur kann man sich ja auch hier etwas beschnuppern und schauen ob man gut füreinander geeignet ist. findest du nicht?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-11T12:38:17.808Z",
+      "updatedAt": "2026-02-11T12:38:17.808Z"
     }
   ]
 }
