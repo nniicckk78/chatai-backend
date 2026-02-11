@@ -9654,16 +9654,18 @@
     {
       "customerMessage": "Deine Idee find ich gut, bist du in München tätig? Ich würde dich einladen zum Augustiner in Hadern oder zum Erdinger in Hadern und dann gehen wir zu mir für den Nachtisch.",
       "moderatorResponse": "Das klingt schonmal nach einem guten Plan muss ich sagen. Was gibt es denn da so leckers zu essen? Was ist du dort am liebsten?",
-      "situation": "allgemein",
+      "situation": "allgemein, Treffen/Termine",
       "situations": [
-        "allgemein"
+        "allgemein",
+        "Treffen/Termine"
       ],
       "explanation": null,
       "createdAt": "2026-02-11T08:49:50.704Z",
       "source": "feedback_edited",
       "priority": true,
       "feedbackId": "feedback_1770647984075_fma04wj4t",
-      "originalResponse": "Ich mag deine Vorschläge, aber ich möchte noch etwas mehr über dich erfahren, bevor wir uns auf einen Ort festlegen. Was sind deine Lieblingsgerichte oder Getränke, wenn du in einer Gaststätte bist?"
+      "originalResponse": "Ich mag deine Vorschläge, aber ich möchte noch etwas mehr über dich erfahren, bevor wir uns auf einen Ort festlegen. Was sind deine Lieblingsgerichte oder Getränke, wenn du in einer Gaststätte bist?",
+      "updatedAt": "2026-02-11T09:14:49.610Z"
     },
     {
       "customerMessage": "Das würde ich gerne mit dir machen, gerne Kaffee trinken mit dir am Donnerstag",
