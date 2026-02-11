@@ -11050,8 +11050,9 @@
     {
       "customerMessage": "Hallo ihr zwei hübschen Mädels, wann wollen wir uns mal treffen?",
       "moderatorResponse": "Haha, danke für das Kompliment! Was würdet ihr denn gerne mit uns machen? Ich bin ja auch ganz gespannt, was du gerne mit uns machen wollen würdest?",
-      "situation": "Treffen/Termine",
+      "situation": "allgemein, Treffen/Termine",
       "situations": [
+        "allgemein",
         "Treffen/Termine"
       ],
       "explanation": null,
@@ -11059,7 +11060,8 @@
       "source": "feedback_edited",
       "priority": true,
       "feedbackId": "feedback_1770198494780_zmue5bbpf",
-      "originalResponse": "Haha, danke für das Kompliment! Was würdet ihr denn gerne mit uns machen? Ich bin ja auch ganz gespannt, was ihr so vorhabt."
+      "originalResponse": "Haha, danke für das Kompliment! Was würdet ihr denn gerne mit uns machen? Ich bin ja auch ganz gespannt, was ihr so vorhabt.",
+      "updatedAt": "2026-02-11T14:26:07.768Z"
     },
     {
       "customerMessage": "Telegramm",
