@@ -26051,6 +26051,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-11T12:13:09.383Z",
       "updatedAt": "2026-02-11T12:13:09.383Z"
+    },
+    {
+      "id": "feedback_1770812001951_7r9jjmsi0",
+      "chatId": "Rx9nLbxjmwBRajzA9MIN",
+      "customerMessage": "ich mag dein Profilbild auch sehr und ich lebe noch bei den Eltern mit im Haus habe da aber eine Etage ganz für mich",
+      "aiResponse": "Danke, das freut mich echt, dass dir mein Profilbild so gefällt. Bei dir zu Hause mit deiner eigenen Etage klingt das eigentlich super gemütlich und unabhängig. Fühlst du dich da wohl oder vermisst du manchmal was? Erzähl mal mehr davon.",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "avz",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Wohnort-Frage"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Oh das bin ich, und ich mag dein Profilbild. Lebst du allein oder hast eine WG oder was genau?"
+      },
+      "lastModeratorMessage": "Oh das bin ich, und ich mag dein Profilbild. Lebst du allein oder hast eine WG oder was genau?",
+      "timestamp": "2026-02-11T12:13:21.951Z",
+      "updatedAt": "2026-02-11T12:13:21.951Z"
     }
   ]
 }
