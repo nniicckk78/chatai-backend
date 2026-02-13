@@ -27807,15 +27807,17 @@
       "updatedAt": "2026-02-13T09:42:08.639Z"
     },
     {
-      "id": "feedback_1770977450366_f547krxk7",
-      "chatId": "36630384",
+      "id": "feedback_1770977521072_1qq14fxec",
+      "chatId": "38625338",
       "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Oh danke, das macht mich an! Hast du heute was Schönes vor? Vielleicht etwas Gemütliches, während es draussen kalt ist? Wie verbringst du dein Wochenende?",
+      "aiResponse": "Ich musste gerade an dich denken und hab mich gefragt, warum du dich nicht mehr bei mir meldest? Hast du inzwischen schon jemand anderen gefunden oder stehst du einfach nicht auf Spass?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
       "isASA": true,
-      "usedExampleIds": [],
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich musste gerade an dich denken und hab mich gefragt, warum du dich nicht mehr bei mir meldest? Hast du inzwischen schon jemand anderen gefunden oder stehst du einfach nicht auf Spass?"
+      ],
       "context": {
         "detectedSituations": [
           "ASA Reaktivierung"
@@ -27823,11 +27825,11 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Hallo, ich muss jetzt mal was fragen, hihi. Was würdest du jetzt in diesem Moment am liebsten machen? Bitte nicht gross nachdenken, ich würde gerne echt wissen was dir als aller erstes eingefallen ist. Ich würde von hinten an dich heran treten, dich von hinten Umarmen und dir einen Kuss in den Nacken geben. Das ist mir zumindest als aller erstes eingefallen!"
+        "lastModeratorMessage": "Oh schade das du es nicht siehst. Macht ja nix ist wohl heute alles verbugt. Was machst du heute schöne"
       },
       "lastModeratorMessage": null,
-      "timestamp": "2026-02-13T10:10:50.366Z",
-      "updatedAt": "2026-02-13T10:10:50.366Z"
+      "timestamp": "2026-02-13T10:12:01.072Z",
+      "updatedAt": "2026-02-13T10:12:01.072Z"
     }
   ]
 }
