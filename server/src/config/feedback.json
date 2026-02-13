@@ -28969,6 +28969,31 @@
       "lastModeratorMessage": "Hey hey, na von Dir habe ich ja jetzt lange nichts gehört, ist alles ok? Wahrscheinlich warst du nur verhindert, suchst du aktuell treffen?",
       "timestamp": "2026-02-13T14:00:26.984Z",
       "updatedAt": "2026-02-13T14:00:26.984Z"
+    },
+    {
+      "id": "feedback_1770991237989_6ibv0hcmk",
+      "chatId": "wkQ2w6jTTLm6FvKgw9rl",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Wollte mich einfach nochmal bei dir melden und fragen was du so gerade machst? Hoffe das alles gut bei dir ist und du dich bald meldest, hoffe ich nerve auch nicht?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "avz",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Wollte mich einfach nochmal bei dir melden und fragen was du so gerade machst? Hoffe das alles gut bei dir ist und du dich bald meldest, hoffe ich nerve auch nicht?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Oh man du bist aber heute nicht gut drauf, tut mir leid wenn ich dich verärgert habe. Kann ich das vielleicht wieder bei dir ein bisschen gut machen?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-13T14:00:37.989Z",
+      "updatedAt": "2026-02-13T14:00:37.989Z"
     }
   ]
 }
