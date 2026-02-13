@@ -29088,6 +29088,31 @@
       "lastModeratorMessage": "Das ist in der Regel der dritte Teil, ich habe halt relativ viel gehört dass der relativ ähnlich sein sollte zum zweiten Teil, weil ich selber finde die sind irgendwie ein bisschen überbewertet, wie siehst du das?",
       "timestamp": "2026-02-13T14:29:16.996Z",
       "updatedAt": "2026-02-13T14:29:16.996Z"
+    },
+    {
+      "id": "feedback_1770992958568_5sarngacr",
+      "chatId": "38243837",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hi na schön dass du mich likest aber ich habe dir jetzt schon so oft geschrieben da sollte schon mal ein bischen mehr von dir kommen?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-13T14:29:18.568Z",
+      "updatedAt": "2026-02-13T14:29:18.568Z"
     }
   ]
 }
