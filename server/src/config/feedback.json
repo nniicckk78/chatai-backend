@@ -27926,7 +27926,7 @@
       "id": "feedback_1770979994053_dl3chi3an",
       "chatId": "36573168",
       "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Hast mich anscheinend schon vergessen oder warum schreibst du mir nicht mehr? Eins kann ich dir sagen, an deiner Stelle würde ich es mir nochmal gut überlegen ob du mich hier so links liegen lässt!😉 Wenn du Spass willst bist du bei mir nämlich genau richtig.😏",
+      "aiResponse": "Hast mich anscheinend schon vergessen oder warum schreibst du mir nicht mehr? Eins kann ich dir sagen, an deiner Stelle würde ich es mir nochmal gut überlegen ob du mich hier so links liegen lässt!��� Wenn du Spass willst bist du bei mir nämlich genau richtig.😏",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
@@ -29017,28 +29017,29 @@
       "updatedAt": "2026-02-13T14:21:02.474Z"
     },
     {
-      "id": "feedback_1770992737932_g1p35y17d",
-      "chatId": "38568402",
-      "customerMessage": "haha du bist mir ja eine bist ja nicht hier schade kuss",
-      "aiResponse": "Ich wünschte ich wäre jetzt auch bei dir unter der Dusche. Was würdest du denn als Erstes mit mir machen wenn ich jetzt bei dir wäre? Würdest du mich erstmal richtig schön küssen oder direkt unter der Dusche loslegen?",
+      "id": "feedback_1770992791065_xld53o8zw",
+      "chatId": "Sun Jan 25 2026 18:10:40 GMT+0100 (Mitteleuropäische Normalzeit)-ist nun mi",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Was machst du denn gerade? Ich musste gerade an dich denken und Frage mich was du gerade so machst wenn du dich ja schon nicht bei mir meldest? Hast du mich schon vergessen?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "fpc",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Was machst du denn gerade? Ich musste gerade an dich denken und Frage mich was du gerade so machst wenn du dich ja schon nicht bei mir meldest? Hast du mich schon vergessen?"
+      ],
       "context": {
         "detectedSituations": [
-          "Treffen/Termine",
-          "Sexuelle Themen"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "jaaa ich kann es kaum abwarten wenn ich ehrlich bin. wirst du dir vorstellen wie ich unter der dusche mit dir bin 😍"
+        "lastModeratorMessage": "Hallo, na dann hoffe ich doch sehr, das du es auch ernst meinst. Denn ich würde das echt super finden. Was suchst du denn bitte hier?"
       },
-      "lastModeratorMessage": "jaaa ich kann es kaum abwarten wenn ich ehrlich bin. wirst du dir vorstellen wie ich unter der dusche mit dir bin 😍",
-      "timestamp": "2026-02-13T14:25:37.932Z",
-      "updatedAt": "2026-02-13T14:25:37.932Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-13T14:26:31.065Z",
+      "updatedAt": "2026-02-13T14:26:31.065Z"
     }
   ]
 }
