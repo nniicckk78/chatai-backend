@@ -14805,7 +14805,7 @@
       "chatId": "59017114",
       "customerMessage": "hi",
       "aiResponse": "Ich bin gerade dabei, mich für den Abend zu entspannen. Hey, wie geht's dir? Wie geht es dir damit? Wie siehst du das? Was denkst du dazu?",
-      "editedResponse": "Hey du. Schön von dir zu hören. Wie gehts dir und was machst du denn gerade so schönes?��� Ich bin gerade ein bisschen am lernen.🙈",
+      "editedResponse": "Hey du. Schön von dir zu hören. Wie gehts dir und was machst du denn gerade so schönes?😊 Ich bin gerade ein bisschen am lernen.🙈",
       "status": "edited",
       "platform": "viluu",
       "isASA": false,
@@ -24394,7 +24394,7 @@
       "chatId": null,
       "customerMessage": "Erlaubst du mir dir im Hof behilflich zu sein &#128536;",
       "aiResponse": "Absolut, ich finde es grossartig, wenn wir uns gegenseitig unterstützen und helfen können! Was hast du dir genau dabei vorgestellt?",
-      "editedResponse": "Na ist der Hof denn ich mir gerade denke? Ich denke du denkst auch zweiteudig wie ich oder? 😛���",
+      "editedResponse": "Na ist der Hof denn ich mir gerade denke? Ich denke du denkst auch zweiteudig wie ich oder? 😛💋",
       "status": "edited",
       "platform": "unknown",
       "timestamp": "2026-01-02T17:25:15.864Z",
@@ -28927,29 +28927,28 @@
       "updatedAt": "2026-02-13T13:58:50.954Z"
     },
     {
-      "id": "feedback_1770991273535_8tutt5dxj",
-      "chatId": "wkQ2w6jTTLm6FvKgw9rl",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Hey, wo steckst du denn? Ich fand dich eigentlich echt attraktiv und bist bestimmt auch voll sympathisch. Traust du dich nicht mehr zu schreiben oder hast du mittlerweile schon eine andere?",
+      "id": "feedback_1770991302074_fnek316ny",
+      "chatId": "Tue Feb 10 2026 16:50:50 GMT+0100 (Mitteleuropäische Normalzeit)-Dürfte ich",
+      "customerMessage": "Ja darfst du.... wenn ich mehr von Dir danach bekomme und ja es gefällt mir außerordentlich. Ich komme aus 96167 Königsfeld und heiße Armin und Du",
+      "aiResponse": "Das freut mich, dass dir das gefällt. Ich hoffe, ich kann dir auch gefallen. Ich bin mir sicher, dass wir eine tolle Zeit zusammen haben werden. Was würdest du denn gerne machen, wenn wir uns sehen würden?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "avz",
-      "isASA": true,
-      "usedExampleIds": [
-        "ASA Reaktivierung|Hey, wo steckst du denn? Ich fand dich eigentlich echt attraktiv und bist bestimmt auch voll sympathisch. Traust du dich nicht mehr zu schreiben oder hast du mittlerweile schon eine andere?"
-      ],
+      "platform": "iluvo",
+      "isASA": false,
+      "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "ASA Reaktivierung"
+          "Treffen/Termine",
+          "Wohnort-Frage"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Oh man du bist aber heute nicht gut drauf, tut mir leid wenn ich dich verärgert habe. Kann ich das vielleicht wieder bei dir ein bisschen gut machen?"
+        "lastModeratorMessage": "Dürfte ich so auf einem Date mit dir auftauchen? Oder wäre es dir zu freizügig?🫣 Wenn es dir gefällt, kannst du mir ja mal sagen, woher du kommst und wann du Zeit für mich hast."
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-02-13T14:01:13.535Z",
-      "updatedAt": "2026-02-13T14:01:13.535Z"
+      "lastModeratorMessage": "Dürfte ich so auf einem Date mit dir auftauchen? Oder wäre es dir zu freizügig?🫣 Wenn es dir gefällt, kannst du mir ja mal sagen, woher du kommst und wann du Zeit für mich hast.",
+      "timestamp": "2026-02-13T14:01:42.074Z",
+      "updatedAt": "2026-02-13T14:01:42.074Z"
     }
   ]
 }
