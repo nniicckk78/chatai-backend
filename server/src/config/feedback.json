@@ -12302,7 +12302,7 @@
       "chatId": "37327210",
       "customerMessage": "ja genau",
       "aiResponse": "Das klingt wirklich spannend und ich freue mich darauf! Was wäre für dich das aufregendste Erlebnis, das wir gemeinsam teilen könnten?",
-      "editedResponse": "Das ist sch��n das du dich gut entspannen kannst.���� Steht denn Heute sonst noch etwas bei dir an oder ist heute komplett entspannen bei dir angesagt?🙈",
+      "editedResponse": "Das ist sch����n das du dich gut entspannen kannst.���� Steht denn Heute sonst noch etwas bei dir an oder ist heute komplett entspannen bei dir angesagt?🙈",
       "status": "edited",
       "platform": "FPC",
       "isASA": false,
@@ -17976,7 +17976,7 @@
       "context": {
         "detectedSituations": [
           "Bot-Vorwurf",
-          "Kontaktdaten au����������������������erhalb der Plattform",
+          "Kontaktdaten au������������������������erhalb der Plattform",
           "Sexuelle Themen",
           "Wonach suchst du?",
           "Bilder Anfrage",
@@ -30317,27 +30317,25 @@
       "updatedAt": "2026-02-14T12:51:50.054Z"
     },
     {
-      "id": "feedback_1771073729840_pjqbx6vkj",
-      "chatId": "38624926",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Super dass du dich meldest! Wie verläuft dein Wochenende bisher? Hast du etwas Besonderes geplant oder geniesst du die kühlen Tage lieber drinnen mit einem guten Buch oder Film?",
+      "id": "feedback_1771073798058_dsr191wec",
+      "chatId": "Sat Feb 14 2026 09:58:18 GMT+0100 (Mitteleuropäische Normalzeit)-Dann hast ",
+      "customerMessage": "Oh ich kann mich hald auch nicht verstellen sage immer das was ich mir denke und so finde ich es auch gut so",
+      "aiResponse": "Ich finde es auch gut, dass du so offen und ehrlich bist. Das macht die Sache viel einfacher und angenehmer. Ich mag es, wenn man sich nicht verstellen muss und einfach so sein kann, wie man ist. Das ist eine tolle Eigenschaft. Was denkst du, wie wichtig ist es für dich in einer Beziehung oder Freundschaft, dass man sich nicht verstellen muss?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "fpc",
-      "isASA": true,
+      "platform": "iluvo",
+      "isASA": false,
       "usedExampleIds": [],
       "context": {
-        "detectedSituations": [
-          "ASA Reaktivierung"
-        ],
+        "detectedSituations": [],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Hast Du schon Pläne für den Valentinstag, oder bist Du noch ungebunden wie ich?"
+        "lastModeratorMessage": "Dann hast du dir keine Pläne gemacht? Was würdest du denn am liebsten heute machen?"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-02-14T12:55:29.840Z",
-      "updatedAt": "2026-02-14T12:55:29.840Z"
+      "lastModeratorMessage": "Dann hast du dir keine Pläne gemacht? Was würdest du denn am liebsten heute machen?",
+      "timestamp": "2026-02-14T12:56:38.058Z",
+      "updatedAt": "2026-02-14T12:56:38.058Z"
     }
   ]
 }
