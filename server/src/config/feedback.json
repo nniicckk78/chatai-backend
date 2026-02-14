@@ -3949,7 +3949,7 @@
       "platform": "fpc",
       "isASA": true,
       "usedExampleIds": [
-        "ASA Reaktivierung|Schade das ich bei dir schon so in die Vergessenheit geraten bin. Findest du mich denn nicht attraktiv oder ist dein Postfach hier so voll das meine Nachrichten unter gehen? Ich würde mich schon freuen wenn du dich mal wieder melden würdest!"
+        "ASA Reaktivierung|Schade das ich bei dir schon so in die Vergessenheit geraten bin. Findest du mich denn nicht attraktiv oder ist dein Postfach hier so voll das meine Nachrichten unter gehen? Ich würde mich schon freuen wenn du dich mal wieder melden w��rdest!"
       ],
       "context": {
         "detectedSituations": [
@@ -12853,7 +12853,7 @@
       "chatId": "58984635",
       "customerMessage": "Nö warum. Kann ja sein dass man sich mal verliest oder verkehrt versteht 🙈",
       "aiResponse": "Ich verstehe, dass Missverständnisse passieren können, vor allem in der Kommunikation. Ich bin auf jeden Fall hier, um offen zu quatschen und mich besser kennenzulernen. Was denkst du, was ist das Lustigste, was dir je beim Babysitten passiert ist?",
-      "editedResponse": "Ja wir sind ja auch nur Menschen nicht wahr? Fehler passieren halt mal.🙈 Wie lange werdet ihr denn dort sein? Den ganzen Tag?😊",
+      "editedResponse": "Ja wir sind ja auch nur Menschen nicht wahr? Fehler passieren halt mal.��� Wie lange werdet ihr denn dort sein? Den ganzen Tag?😊",
       "status": "edited",
       "platform": "viluu",
       "isASA": false,
@@ -30359,6 +30359,29 @@
       "lastModeratorMessage": "Und ich war gerade eben leider nicht, was du mir geschrieben hattest.",
       "timestamp": "2026-02-14T12:59:55.982Z",
       "updatedAt": "2026-02-14T12:59:55.982Z"
+    },
+    {
+      "id": "feedback_1771075190418_ximin7fmt",
+      "chatId": "38645635",
+      "customerMessage": "Mal sehen. Wer weiß woher weißt du es &#128514;&#128514;.",
+      "aiResponse": "Ich denke weil du so einen sympathischen Namen hast. Danke, finde ich auch. Was machst du denn gerade so schönes? Hast du einen besonderen Grund für deinen Namen?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Wohnort-Frage"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "ah okay, und was habt ihn frankfurt dann schönes vor? ich denke mal wenn du mir \"helfen\" würdest kämen wir beide nicht wirklich zum putzen"
+      },
+      "lastModeratorMessage": "ah okay, und was habt ihn frankfurt dann schönes vor? ich denke mal wenn du mir \"helfen\" würdest kämen wir beide nicht wirklich zum putzen",
+      "timestamp": "2026-02-14T13:19:50.418Z",
+      "updatedAt": "2026-02-14T13:19:50.418Z"
     }
   ]
 }
