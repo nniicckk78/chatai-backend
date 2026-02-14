@@ -29757,27 +29757,29 @@
       "updatedAt": "2026-02-14T10:48:44.872Z"
     },
     {
-      "id": "feedback_1771067498561_c8mwhkmt4",
-      "chatId": "Thu Feb 12 2026 21:21:49 GMT+0100 (Mitteleuropäische Normalzeit)-Nach dem D",
-      "customerMessage": "Ich fahre nach Ahrensburg, für in paar Tage für 3 bis 4 Tage.",
-      "aiResponse": "Das klingt ja schonmal nach einem aufregenden Trip. Was machst du denn dann da so schönes für 3 4 Tage? Hast du schon ein paar coole Aktivitäten geplant oder möchtest du Tipps?",
+      "id": "feedback_1771067516875_iv914m8zr",
+      "chatId": "36546771",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Schade das ich bei dir schon so in die Vergessenheit geraten bin. Findest du mich denn nicht attraktiv oder ist dein Postfach hier so voll das meine Nachrichten unter gehen? Ich würde mich schon freuen wenn du dich mal wieder melden würdest!",
       "editedResponse": null,
       "status": "pending",
-      "platform": "iluvo",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Schade das ich bei dir schon so in die Vergessenheit geraten bin. Findest du mich denn nicht attraktiv oder ist dein Postfach hier so voll das meine Nachrichten unter gehen? Ich würde mich schon freuen wenn du dich mal wieder melden würdest!"
+      ],
       "context": {
         "detectedSituations": [
-          "Wohnort-Frage"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Was denn für ein Öl tust du denn so benutzen wenn ich mal fragen darf?"
+        "lastModeratorMessage": "Ich bin sehr überascht dass du dich nun endlich mal wieder bei mir meldest was ist nur los, warum hast du nicht mal kurz Hallo gesagt, wie kommst du darauf dass ich nur schreiben möchte, ich muss mich doch irgendwie bemerkbar machen?"
       },
-      "lastModeratorMessage": "Was denn für ein Öl tust du denn so benutzen wenn ich mal fragen darf?",
-      "timestamp": "2026-02-14T11:11:38.561Z",
-      "updatedAt": "2026-02-14T11:11:38.561Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-14T11:11:56.875Z",
+      "updatedAt": "2026-02-14T11:11:56.875Z"
     }
   ]
 }
