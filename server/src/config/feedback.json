@@ -30363,6 +30363,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-14T12:58:03.305Z",
       "updatedAt": "2026-02-14T12:58:03.305Z"
+    },
+    {
+      "id": "feedback_1771073886245_mmtaeb10r",
+      "chatId": "38627933",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke mal weil du mir gerade nicht schreibst bist du einfach zu beschäftigt oder? Kannst dich ja gerne mal bei mir melden wenn du mal kurz Zeit hast. Würde mich echt sehr freuen.",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke mal weil du mir gerade nicht schreibst bist du einfach zu beschäftigt oder? Kannst dich ja gerne mal bei mir melden wenn du mal kurz Zeit hast. Würde mich echt sehr freuen."
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "ich bin wirklich vollkommen überrascht und freue mich sehr das du mir zehn sterne gegeben hast. Dann nehme ich einfach jetzt mal an du lebst aleine?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-14T12:58:06.245Z",
+      "updatedAt": "2026-02-14T12:58:06.245Z"
     }
   ]
 }
