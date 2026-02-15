@@ -23467,7 +23467,7 @@
       "chatId": "37891171",
       "customerMessage": "Hi Mareike. Frohes neues Jahr. Ich würde gerne mich mit dir treffen, aber ich habe heute leider keine Zeit. Finde dich übrigens sehr attraktiv. Gerne ein anderes Mal",
       "aiResponse": "Danke für das Kompliment, Jonas! Das freut mich sehr. Vielleicht können wir uns ja ein anderes Mal austauschen. Was hast du bisher so gemacht, um das neue Jahr zu feiern?",
-      "editedResponse": "Hey du, ich wünsche dir auch ein frohes neues Jahr. Danke für dein Kompliment! Ich finde dich auch echt voll attraktiv. Ist kein Problem, was hast du denn heute noch so vor?",
+      "editedResponse": "Hey du, ich w��nsche dir auch ein frohes neues Jahr. Danke für dein Kompliment! Ich finde dich auch echt voll attraktiv. Ist kein Problem, was hast du denn heute noch so vor?",
       "status": "edited",
       "platform": "FPC",
       "isASA": false,
@@ -31034,6 +31034,29 @@
       "lastModeratorMessage": "Ich möchte dich doch auch nicht warten lassen und dich unbedingt an meiner Seite haben.",
       "timestamp": "2026-02-15T12:43:54.217Z",
       "updatedAt": "2026-02-15T12:43:54.217Z"
+    },
+    {
+      "id": "feedback_1771159486894_5784hfibj",
+      "chatId": "36746700",
+      "customerMessage": "Ja ich war eine lange zeit Krank wegen der Grippe mu0te aauch dann ins Krankenhaus zu hohes Fieber aber seit kurzer Zeit bin ich wieder zuhause",
+      "aiResponse": "Ach Dieter, das klingt echt hart mit der Grippe und dem hohen Fieber im Krankenhaus, ich kann mir vorstellen wie anstrengend das war. Gut dass du jetzt seit kurzer Zeit wieder zuhause bist und dich erholen kannst. Wie fühlst du dich jetzt nach der Genesung?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Romantik / Verliebtheit"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "danke dir, das ist lieb. Na ja, ich nehme die Entschuldigung ja jetzt auch mal an Sag mal, was ist denn bei dir los? Warum geht denn alles drunter und drüber das ist nicht schön.😚"
+      },
+      "lastModeratorMessage": "danke dir, das ist lieb. Na ja, ich nehme die Entschuldigung ja jetzt auch mal an Sag mal, was ist denn bei dir los? Warum geht denn alles drunter und drüber das ist nicht schön.😚",
+      "timestamp": "2026-02-15T12:44:46.894Z",
+      "updatedAt": "2026-02-15T12:44:46.894Z"
     }
   ]
 }
