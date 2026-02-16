@@ -32753,29 +32753,28 @@
       "updatedAt": "2026-02-16T17:46:32.494Z"
     },
     {
-      "id": "feedback_1771268660311_3rb48x7qq",
-      "chatId": "37284973",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Ganz ehrlich es ist echt schade dass du dich nicht meldest. Ich bin gerade in genau der Stimmung, in der man mich lieber nicht ignorieren sollte. Oder traust du dich einfach nicht?😏",
+      "id": "feedback_1771268758227_7k0gz11uq",
+      "chatId": "35521943",
+      "customerMessage": "Weißt du ich habe depressive Episoden, und bin manchmal nicht Herr meine Sinne.",
+      "aiResponse": "Ich kann gut nachvollziehen, wie belastend das sein kann, besonders in der Pflege. Es ist nicht einfach, mit solchen Phasen umzugehen. Hast du vielleicht Strategien oder Hobbys, die dir helfen, in schwierigen Zeiten besser klarzukommen?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
-      "isASA": true,
-      "usedExampleIds": [
-        "ASA Reaktivierung|Ganz ehrlich es ist echt schade dass du dich nicht meldest. Ich bin gerade in genau der Stimmung, in der man mich lieber nicht ignorieren sollte. Oder traust du dich einfach nicht?😏"
-      ],
+      "isASA": false,
+      "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "ASA Reaktivierung"
+          "Was willst du wissen?",
+          "Berufsfrage"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Ja das Bild mit den Drei hunden auf dem sofa von dir meinst du na ich würde gerne mehr über dich erfahren Dann können wir schauen wie weit es mit uns geht"
+        "lastModeratorMessage": "Und wie hast du das denn gemerkt und wie äussert sich das Problem mit der psyche?"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-02-16T19:04:20.311Z",
-      "updatedAt": "2026-02-16T19:04:20.311Z"
+      "lastModeratorMessage": "Und wie hast du das denn gemerkt und wie äussert sich das Problem mit der psyche?",
+      "timestamp": "2026-02-16T19:05:58.227Z",
+      "updatedAt": "2026-02-16T19:05:58.227Z"
     }
   ]
 }
