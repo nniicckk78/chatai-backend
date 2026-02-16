@@ -11739,7 +11739,7 @@
       "chatId": "38152304",
       "customerMessage": "Ich habe dir einen Like geschickt. Du gefällst mir seht gut",
       "aiResponse": "Es freut mich wirklich sehr zu hören, dass dir mein Profil gefällt! Das weckt in mir die Neugier auf mehr. Was genau spricht dich denn besonders an mir an?",
-      "editedResponse": "Gut das ich dir gefalle! Du gefällst mir nämlich auch sehr gut.😊 Wie gehts dir und was machst du gerade so schönes? Ich bin ein bisschen am aufräumen gerade.🙈",
+      "editedResponse": "Gut das ich dir gefalle! Du gefällst mir nämlich auch sehr gut.�� Wie gehts dir und was machst du gerade so schönes? Ich bin ein bisschen am aufräumen gerade.🙈",
       "status": "edited",
       "platform": "FPC",
       "isASA": false,
@@ -32399,6 +32399,28 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-16T15:05:31.232Z",
       "updatedAt": "2026-02-16T15:05:31.232Z"
+    },
+    {
+      "id": "feedback_1771254433962_vfa7cxsi1",
+      "chatId": "Mon Feb 16 2026 16:06:33 GMT+0100 (Mitteleuropäische Normalzeit)-Hallo die ",
+      "customerMessage": "Hallo die Lady. Nett von Dir das Du auf meinem Profil warst. Was suchst Du den. LG",
+      "aiResponse": "Hallo! Danke, dein Profil hat mich gleich neugierig gemacht. Ich bin hier um zu schauen, was sich so ergibt, mal was lockeres oder mehr, je nachdem. Und du, was suchst du denn so?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Wonach suchst du?"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-16T15:07:13.962Z",
+      "updatedAt": "2026-02-16T15:07:13.962Z"
     }
   ]
 }
