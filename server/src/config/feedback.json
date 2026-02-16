@@ -31663,6 +31663,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-16T12:00:02.399Z",
       "updatedAt": "2026-02-16T12:00:02.399Z"
+    },
+    {
+      "id": "feedback_1771243216684_1iub9xw7e",
+      "chatId": "38686140",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Super dass du dich meldest! Wie läuft dein Tag bisher? Machst du dir heute etwas Gemütliches, um dem kalten Wetter zu entfliehen? Was steht bei dir so an?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "entweder timing schlecht oder du spielst schwer zu haben, beides interessant 😉 Doch kein Treffen?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-16T12:00:16.684Z",
+      "updatedAt": "2026-02-16T12:00:16.684Z"
     }
   ]
 }
