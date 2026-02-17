@@ -5784,7 +5784,7 @@
       "platform": "fpc",
       "isASA": true,
       "usedExampleIds": [
-        "ASA Reaktivierung|Muss ich denn jetzt schon eine Vermisstenanzeige erstellen oder wo steckst du denn wenn ich fragen darf? L��sst man denn heutzutage eine Frau einfach so ohne Begründung stehen? Vielleicht kann ich dich ja mit einer Überraschung wieder von mir überzeugen?😏"
+        "ASA Reaktivierung|Muss ich denn jetzt schon eine Vermisstenanzeige erstellen oder wo steckst du denn wenn ich fragen darf? L����sst man denn heutzutage eine Frau einfach so ohne Begründung stehen? Vielleicht kann ich dich ja mit einer Überraschung wieder von mir überzeugen?😏"
       ],
       "context": {
         "detectedSituations": [
@@ -33826,6 +33826,31 @@
       "lastModeratorMessage": "Ich spüre jetzt gerade für mich, wie dein hübsches Gesicht zwischen meine Schenkel kommt🤪",
       "timestamp": "2026-02-17T13:04:47.759Z",
       "updatedAt": "2026-02-17T13:04:47.759Z"
+    },
+    {
+      "id": "feedback_1771334423056_3zolpl4ts",
+      "chatId": "Tue Feb 10 2026 10:29:09 GMT+0100 (Mitteleuropäische Normalzeit)-Heute ist ",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich bin gerade echt gut gelaunt und das könnte dir zu Gunsten kommen wenn du dich schnell bei mir meldest. Wenn nicht dann verpasst du echt was richtig cooles. Und glaub mir das willst du nicht verpassen.😉",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich bin gerade echt gut gelaunt und das könnte dir zu Gunsten kommen wenn du dich schnell bei mir meldest. Wenn nicht dann verpasst du echt was richtig cooles. Und glaub mir das willst du nicht verpassen.😉"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich kann leider nicht ich bin ja eingespannt. Soll ich schnell ranfahren und im Auto mir den Finger geben?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-17T13:20:23.056Z",
+      "updatedAt": "2026-02-17T13:20:23.056Z"
     }
   ]
 }
