@@ -25358,7 +25358,7 @@
         "topic": "allgemein",
         "lastModeratorMessage": "Nächste Woche ist schon Weihnachten. Und dann werden endlich wieder Geschenke ausgepackt. Hast du aber nicht vielleicht Lust ein Geschenk früher zu öffnen? Das zufällig zwischen meinen Beinen ist."
       },
-      "lastModeratorMessage": "Nächste Woche ist schon Weihnachten. Und dann werden endlich wieder Geschenke ausgepackt. Hast du aber nicht vielleicht Lust ein Geschenk fr��her zu öffnen? Das zufällig zwischen meinen Beinen ist.",
+      "lastModeratorMessage": "Nächste Woche ist schon Weihnachten. Und dann werden endlich wieder Geschenke ausgepackt. Hast du aber nicht vielleicht Lust ein Geschenk fr����her zu öffnen? Das zufällig zwischen meinen Beinen ist.",
       "timestamp": "2026-02-10T14:07:39.394Z",
       "updatedAt": "2026-02-10T19:14:44.733Z"
     },
@@ -33557,25 +33557,27 @@
       "updatedAt": "2026-02-17T12:08:12.905Z"
     },
     {
-      "id": "feedback_1771330264385_aedix74e9",
-      "chatId": "Mon Feb 16 2026 12:22:18 GMT+0100 (Mitteleuropäische Normalzeit)-Oja das ma",
-      "customerMessage": "Ja so hab ich auch meine Ruhe wenn's beschäftigt ist 😉",
-      "aiResponse": "Das ist aber sehr von dir, dass du deiner Mutter etwas zu essen kochst. Was kochst du ihr denn so Leckeres? Und wie oft machst du das?",
+      "id": "feedback_1771330281558_jg1s5bzpq",
+      "chatId": "38671393",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Oh wie süss! Das freut mich! Wie läuft dein Tag bisher in Stuttgart? Hast du schon etwas Spannendes erlebt oder sind die nächsten Tage bei dir eher ruhig?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "iluvo",
-      "isASA": false,
+      "platform": "fpc",
+      "isASA": true,
       "usedExampleIds": [],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Finde ich schön das sie da eine Beschäftigung findet und dir gleichzeitig was gutes tut, ist doch für euch beide schön?"
+        "lastModeratorMessage": "entweder timing schlecht oder du spielst schwer zu haben, beides interessant 😉 Doch kein Treffen?"
       },
-      "lastModeratorMessage": "Finde ich schön das sie da eine Beschäftigung findet und dir gleichzeitig was gutes tut, ist doch für euch beide schön?",
-      "timestamp": "2026-02-17T12:11:04.385Z",
-      "updatedAt": "2026-02-17T12:11:04.385Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-17T12:11:21.558Z",
+      "updatedAt": "2026-02-17T12:11:21.558Z"
     }
   ]
 }
