@@ -33079,27 +33079,29 @@
       "updatedAt": "2026-02-17T09:05:36.173Z"
     },
     {
-      "id": "feedback_1771320527571_za2y11adl",
-      "chatId": "38701854",
-      "customerMessage": "Ich auch nicht. Ich glaub wir müssen zusammen rausfinden wie es für uns am besten passt, aber macht bestimmt Spaß. Bin auf jedenfall gespannt was wird:) Wir können auch erstmal was leckeres zusammen kochen und sehen. Was sagst du?",
-      "aiResponse": "Das klingt nach einer echt tollen Idee! Ich bin auch gespannt, was wir zusammen kochen könnten. Hast du vielleicht schon ein Gericht im Kopf, das du mal ausprobieren wolltest oder das du gut kannst?",
+      "id": "feedback_1771320593561_0ft100qjo",
+      "chatId": "37578686",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke mal weil du mir gerade nicht schreibst bist du einfach zu beschäftigt oder? Kannst dich ja gerne mal bei mir melden wenn du mal kurz Zeit hast. Würde mich echt sehr freuen.",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
-      "isASA": false,
-      "usedExampleIds": [],
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke mal weil du mir gerade nicht schreibst bist du einfach zu beschäftigt oder? Kannst dich ja gerne mal bei mir melden wenn du mal kurz Zeit hast. Würde mich echt sehr freuen."
+      ],
       "context": {
         "detectedSituations": [
-          "Treffen/Termine"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Nein, ich habe keine erfahrung im fesseln Aber du kannst mir das sicher zeigen und dann werden wir aus spass zusamen haben, oder?😇"
+        "lastModeratorMessage": "Das hör ich gern du gefällst mir. Was machst du den schönes gerade außer mit mir zu schreiben?"
       },
-      "lastModeratorMessage": "Nein, ich habe keine erfahrung im fesseln Aber du kannst mir das sicher zeigen und dann werden wir aus spass zusamen haben, oder?😇",
-      "timestamp": "2026-02-17T09:28:47.571Z",
-      "updatedAt": "2026-02-17T09:28:47.571Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-17T09:29:53.561Z",
+      "updatedAt": "2026-02-17T09:29:53.561Z"
     }
   ]
 }
