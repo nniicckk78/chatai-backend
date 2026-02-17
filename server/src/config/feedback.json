@@ -33123,6 +33123,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-17T09:48:49.934Z",
       "updatedAt": "2026-02-17T09:48:49.934Z"
+    },
+    {
+      "id": "feedback_1771321804340_rpd9p01xo",
+      "chatId": "38684228",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Wollte mich einfach nochmal bei dir melden und fragen was du so gerade machst? Hoffe das alles gut bei dir ist und du dich bald meldest, hoffe ich nerve auch nicht?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Wollte mich einfach nochmal bei dir melden und fragen was du so gerade machst? Hoffe das alles gut bei dir ist und du dich bald meldest, hoffe ich nerve auch nicht?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Guten morgen, die neue Woche ist angebrochen, Zeit für was neues und aufregendes oder? wie sieht es bei dir aus? Spontan"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-17T09:50:04.341Z",
+      "updatedAt": "2026-02-17T09:50:04.341Z"
     }
   ]
 }
