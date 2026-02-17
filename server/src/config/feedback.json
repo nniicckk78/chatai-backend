@@ -33596,6 +33596,31 @@
       "lastModeratorMessage": "Einen wunderschönen guten Morgen bist du denn schon wach? Ich wollte dir einen tollen Start in den Tag wünschen was steht denn bei dir heute alles so an?",
       "timestamp": "2026-02-17T12:17:54.309Z",
       "updatedAt": "2026-02-17T12:17:54.309Z"
+    },
+    {
+      "id": "feedback_1771330681952_c9gefs9c0",
+      "chatId": "38680541",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich würde mich echt freuen, wenn du dich kurz bei mir melden könntest. Ich brauche gerade echt jemanden zum Reden. Mir ist gerade sowas komisches passiert. Ich kann es gar nicht richtig begreifen. Hast du kurz Zeit?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich würde mich echt freuen, wenn du dich kurz bei mir melden könntest. Ich brauche gerade echt jemanden zum Reden. Mir ist gerade sowas komisches passiert. Ich kann es gar nicht richtig begreifen. Hast du kurz Zeit?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "wie geht es dir zum späten Abend?  😁 wollen wir ein bisschen quatschen? Hier hast du mal noch ein Bild von mir! nicht mein Bestes, aber solche bilder finde ich besser als gestellte! 😅 \n\nhttps://www.du-kennst-mich.de/media/uploads [removed] picture_48161UJa2zkraNyLu11ML7mdQAE8.jpg"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-17T12:18:01.952Z",
+      "updatedAt": "2026-02-17T12:18:01.952Z"
     }
   ]
 }
