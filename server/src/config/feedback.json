@@ -34448,6 +34448,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-18T14:14:47.910Z",
       "updatedAt": "2026-02-18T14:14:47.910Z"
+    },
+    {
+      "id": "feedback_1771424265130_ax9yzee1m",
+      "chatId": "2926406:1133:3545:2635",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, sag mal, wo hast du dich eigentlich versteckt? 😅 Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, sag mal, wo hast du dich eigentlich versteckt? 😅 Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Deine vielversprechende Liste hat mich nicht losgelassen, aber die Frage nach deiner Ausdauer ist noch offen. Wie hältst du denn so viel auf einmal durch? Erzähl mir mehr darüber."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-18T14:17:45.130Z",
+      "updatedAt": "2026-02-18T14:17:45.130Z"
     }
   ]
 }
