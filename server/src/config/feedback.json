@@ -34374,6 +34374,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-18T10:50:22.159Z",
       "updatedAt": "2026-02-18T10:50:22.159Z"
+    },
+    {
+      "id": "feedback_1771412029748_mw8lxyzkz",
+      "chatId": "2926868:2004:6599:117",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich musste gerade an dich denken und hab mich gefragt, warum du dich nicht mehr bei mir meldest? Hast du inzwischen schon jemand anderen gefunden oder stehst du einfach nicht auf Spass?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich musste gerade an dich denken und hab mich gefragt, warum du dich nicht mehr bei mir meldest? Hast du inzwischen schon jemand anderen gefunden oder stehst du einfach nicht auf Spass?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Das mache ich auf jedenfall wenn es nach mir ginge schon lange aber muss ja auch die zeit da sein"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-18T10:53:49.748Z",
+      "updatedAt": "2026-02-18T10:53:49.748Z"
     }
   ]
 }
