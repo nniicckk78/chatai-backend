@@ -35470,6 +35470,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-19T12:46:47.996Z",
       "updatedAt": "2026-02-19T12:46:47.996Z"
+    },
+    {
+      "id": "feedback_1771506320110_5zisxqlcy",
+      "chatId": "Wed Feb 18 2026 18:52:54 GMT+0100 (Mitteleuropäische Normalzeit)-Wie sollen",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich frage mich schon eine Weile, warum von dir nichts mehr kommt. Habe ich dich verärgert oder bist du einfach abgetaucht? Wäre schade, wenn das hier einfach so endet weil ich hatte schon coole Ideen für ein Treffen.😕",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich frage mich schon eine Weile, warum von dir nichts mehr kommt. Habe ich dich verärgert oder bist du einfach abgetaucht? Wäre schade, wenn das hier einfach so endet weil ich hatte schon coole Ideen für ein Treffen.😕"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Was schlägst du mir vor? Ich möchte zuerst wissen, wie du so bist, denn ich möchte dich besser kennenlernen."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-19T13:05:20.110Z",
+      "updatedAt": "2026-02-19T13:05:20.110Z"
     }
   ]
 }
