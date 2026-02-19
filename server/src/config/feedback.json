@@ -35400,6 +35400,31 @@
       "lastModeratorMessage": "Ich wohne bei meinen Eltern, aber das ist doch kein Problem. Ich hab leider kein Auto, hast du denn eigentlich ein Führerschein?",
       "timestamp": "2026-02-19T12:27:31.293Z",
       "updatedAt": "2026-02-19T12:27:31.293Z"
+    },
+    {
+      "id": "feedback_1771504066865_okuoidbgh",
+      "chatId": "2857059:1158:510239:39556",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich bin gerade echt gut gelaunt und das könnte dir zu Gunsten kommen wenn du dich schnell bei mir meldest. Wenn nicht dann verpasst du echt was richtig cooles. Und glaub mir das willst du nicht verpassen.😉",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich bin gerade echt gut gelaunt und das könnte dir zu Gunsten kommen wenn du dich schnell bei mir meldest. Wenn nicht dann verpasst du echt was richtig cooles. Und glaub mir das willst du nicht verpassen.😉"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Tue mir das bitte nicht an, Helmut. Ich könnte damit nicht leben, wenn du mich verlässt. Weißt du, was du mir damit antun würdest?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-19T12:27:46.865Z",
+      "updatedAt": "2026-02-19T12:27:46.865Z"
     }
   ]
 }
