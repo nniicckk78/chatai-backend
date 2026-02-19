@@ -34975,6 +34975,30 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-19T11:30:12.989Z",
       "updatedAt": "2026-02-19T11:30:12.989Z"
+    },
+    {
+      "id": "feedback_1771500616039_srx4b4x6v",
+      "chatId": "38556445",
+      "customerMessage": "Alles gut ich schicke dir noch ein Foto von mir.",
+      "aiResponse": "Super, danke dass du noch eins schickst, bin total neugierig drauf. Zeig mal her, was hast du dir da ausgesucht? Und was würdest du mit dem Foto machen, wenn ich dir eins schicken würde?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Bilder Anfrage",
+          "Treffen/Termine"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Oh ja stimmt ich hatte das gerade nicht auf dem schirm bei mir gehabt mein lieber"
+      },
+      "lastModeratorMessage": "Oh ja stimmt ich hatte das gerade nicht auf dem schirm bei mir gehabt mein lieber",
+      "timestamp": "2026-02-19T11:30:16.039Z",
+      "updatedAt": "2026-02-19T11:30:16.039Z"
     }
   ]
 }
