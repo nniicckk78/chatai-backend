@@ -34594,6 +34594,31 @@
       "lastModeratorMessage": "Ich bin schon im Büro, mein Schatz. Na dann viel Spass beim Zahnarzt. Ich hoffe es ist nur zur Kontrolle?",
       "timestamp": "2026-02-19T07:35:25.068Z",
       "updatedAt": "2026-02-19T07:35:25.068Z"
+    },
+    {
+      "id": "feedback_1771486529676_3z4fr60hz",
+      "chatId": "2923508:1158:270766:553118",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Sag mal ehrlich, wo steckst du denn eigentlich die ganze Zeit? Habe ich irgendwas gesagt, das dich verärgert haben könnte, oder bist du jetzt einfach abgetaucht weil du angst vor einem Treffen mit mir hast?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Sag mal ehrlich, wo steckst du denn eigentlich die ganze Zeit? Habe ich irgendwas gesagt, das dich verärgert haben könnte, oder bist du jetzt einfach abgetaucht weil du angst vor einem Treffen mit mir hast?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Melde dich endlich bei mir. Ich kann mich nicht mehr lange beherrschen, du musst da einfach ran und was tun, so geht das nicht. Du kannst mich nicht erst heiß machen 😊und mich dann hier alleine sitzen lassen, das klappt nicht, also melde dich, ich warte auf deine Antwort."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-19T07:35:29.676Z",
+      "updatedAt": "2026-02-19T07:35:29.676Z"
     }
   ]
 }
