@@ -35397,6 +35397,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-19T12:22:45.501Z",
       "updatedAt": "2026-02-19T12:22:45.501Z"
+    },
+    {
+      "id": "feedback_1771503776976_5kgh1jkq1",
+      "chatId": "2927929:1158:549241:553125",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke mal weil du dich nicht bei mir meldest bist du gerade zu beschäftigt oder? Ich würde einfach mal gerne wissen ob du auch jemand bist, auf den ich mich verlassen kann in guten sowie in schlechten Zeiten? Kannst dich ja gerne mal melden, wenn du kurz Zeit hast!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke mal weil du dich nicht bei mir meldest bist du gerade zu beschäftigt oder? Ich würde einfach mal gerne wissen ob du auch jemand bist, auf den ich mich verlassen kann in guten sowie in schlechten Zeiten? Kannst dich ja gerne mal melden, wenn du kurz Zeit hast!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich hab heute schon an dich gedacht, nachdem du dir gewünscht hast, es wäre jeden Tag so. Wie war dein Tag, nachdem du dich gestern so früh verabschieden musstest? Ich hoffe, 😊du meldest dich jetzt wieder bei mir."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-19T12:22:56.976Z",
+      "updatedAt": "2026-02-19T12:22:56.976Z"
     }
   ]
 }
