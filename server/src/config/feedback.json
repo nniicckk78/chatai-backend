@@ -35188,6 +35188,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-19T12:02:53.943Z",
       "updatedAt": "2026-02-19T12:02:53.943Z"
+    },
+    {
+      "id": "feedback_1771502576370_4cglzsnez",
+      "chatId": "Sun Feb 15 2026 14:35:38 GMT+0100 (Mitteleuropäische Normalzeit)-Wunderschö",
+      "customerMessage": "Ich bin im Bereich Unternehmensberatung tätig und viel immer unterwegs.",
+      "aiResponse": "Das klingt ja richtig interessant! Was machst du denn, wenn du unterwegs bist? Hast du ein Auto oder nutzt du andere Verkehrsmittel? Und wie schaffst du es, dabei immer produktiv zu bleiben?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Berufsfrage"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich bin gerade am arbeiten. Was machst du eigentlich beruflich? Ich habe jetzt gerade noch eine kurze Pause."
+      },
+      "lastModeratorMessage": "Ich bin gerade am arbeiten. Was machst du eigentlich beruflich? Ich habe jetzt gerade noch eine kurze Pause.",
+      "timestamp": "2026-02-19T12:02:56.370Z",
+      "updatedAt": "2026-02-19T12:02:56.370Z"
     }
   ]
 }
