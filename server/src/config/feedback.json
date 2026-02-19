@@ -35426,6 +35426,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-19T12:25:18.049Z",
       "updatedAt": "2026-02-19T12:25:18.049Z"
+    },
+    {
+      "id": "feedback_1771503918879_zo8bts0p2",
+      "chatId": "38719714",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Du mir liegt da echt was richtig ernstes auf dem Herzen. Ich brauch einfach gerade jemanden zum Reden und deswegen melde ich mich bei dir. Wenn du kurz Zeit hättest, würde mich das echt sehr freuen!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Du mir liegt da echt was richtig ernstes auf dem Herzen. Ich brauch einfach gerade jemanden zum Reden und deswegen melde ich mich bei dir. Wenn du kurz Zeit hättest, würde mich das echt sehr freuen!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Kennst du einen schönen Ort? Wo führst du deine Mädels normalerweise aus? ich bin gespannt auf deinen geschmack."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-19T12:25:18.879Z",
+      "updatedAt": "2026-02-19T12:25:18.879Z"
     }
   ]
 }
