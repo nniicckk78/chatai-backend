@@ -35780,6 +35780,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-19T14:22:10.501Z",
       "updatedAt": "2026-02-19T14:22:10.501Z"
+    },
+    {
+      "id": "feedback_1771510941928_6rhsakaz3",
+      "chatId": "2873489:1109:80486:113226",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich würde mich echt freuen, wenn du dich kurz bei mir melden könntest. Ich brauche gerade echt jemanden zum Reden. Mir ist gerade sowas komisches passiert. Ich kann es gar nicht richtig begreifen. Hast du kurz Zeit?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich würde mich echt freuen, wenn du dich kurz bei mir melden könntest. Ich brauche gerade echt jemanden zum Reden. Mir ist gerade sowas komisches passiert. Ich kann es gar nicht richtig begreifen. Hast du kurz Zeit?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Meine Güte, jetzt komm doch mal in die Gänge. Was soll dieser Unfug mit den grüssen aber nichts schreiben?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-19T14:22:21.928Z",
+      "updatedAt": "2026-02-19T14:22:21.928Z"
     }
   ]
 }
