@@ -35401,6 +35401,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-19T12:25:16.752Z",
       "updatedAt": "2026-02-19T12:25:16.752Z"
+    },
+    {
+      "id": "feedback_1771503918049_efbwmnfvk",
+      "chatId": "Tue Feb 17 2026 20:06:07 GMT+0100 (Mitteleuropäische Normalzeit)-Willst du ",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ignorierst du mich mit Absicht oder ist dein Postfach so überfüllt das meine Nachrichten schon gar nicht mehr bei dir Angezeigt werden? Ich würde mich schon freuen wenn du dich mal wieder melden würdest, wo steckst du denn?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ignorierst du mich mit Absicht oder ist dein Postfach so überfüllt das meine Nachrichten schon gar nicht mehr bei dir Angezeigt werden? Ich würde mich schon freuen wenn du dich mal wieder melden würdest, wo steckst du denn?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Das freut mich und vielleicht hat ja mein kleiner und lieb gemeinter Kuss ein Stück weit dazu beigetragen, und schön dass du dich gerade jetzt meldest, wenn du mich in 2 Minuten in der Mittagspause angekommen, und was machst du gerade schönes, bestimmt am entspannen oder was genau?👄"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-19T12:25:18.049Z",
+      "updatedAt": "2026-02-19T12:25:18.049Z"
     }
   ]
 }
