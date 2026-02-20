@@ -36566,6 +36566,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-20T12:32:19.728Z",
       "updatedAt": "2026-02-20T12:32:19.728Z"
+    },
+    {
+      "id": "feedback_1771590824921_vxgoig1qr",
+      "chatId": "38738629",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Sag mal ehrlich, wo steckst du denn eigentlich die ganze Zeit? Habe ich irgendwas gesagt, das dich verärgert haben könnte, oder bist du jetzt einfach abgetaucht weil du angst vor einem Treffen mit mir hast?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Sag mal ehrlich, wo steckst du denn eigentlich die ganze Zeit? Habe ich irgendwas gesagt, das dich verärgert haben könnte, oder bist du jetzt einfach abgetaucht weil du angst vor einem Treffen mit mir hast?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich kann es dir leider noch nicht genau sagen würde es im Notfall auch bei dir spontan gehen? 🤗"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-20T12:33:44.921Z",
+      "updatedAt": "2026-02-20T12:33:44.921Z"
     }
   ]
 }
