@@ -23695,7 +23695,7 @@
       "id": "feedback_1767456994012_vvbt85vmj",
       "chatId": "37890664",
       "customerMessage": "Hey Mädels! Klingt ganz gut 😉",
-      "aiResponse": "Es freut mich wirklich sehr zu hören, dass es dir gefällt! Welche anderen Vorlieben oder Interessen hast du, die dich begeistern?",
+      "aiResponse": "Es freut mich wirklich sehr zu hören, dass es dir gef��llt! Welche anderen Vorlieben oder Interessen hast du, die dich begeistern?",
       "editedResponse": "Dann ist ja gut das es dir gefällt. Erzähl uns doch mal ein bisschen etwas über dich! Wir sind schon richtig neugierig was dich betrifft.",
       "status": "edited",
       "platform": "FPC",
@@ -36826,6 +36826,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-20T13:28:15.430Z",
       "updatedAt": "2026-02-20T13:28:15.430Z"
+    },
+    {
+      "id": "feedback_1771594205600_mpugh9e59",
+      "chatId": "2688812:1158:552738:34686",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey, ich dachte mir ich melde mich einfach nochmal. Manchmal gehen Chats ja einfach unter, schreibst bestimmt mit vielen Frauen hier nicht wahr? Wie geht’s dir gerade und bist du noch hier unterwegs?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey, ich dachte mir ich melde mich einfach nochmal. Manchmal gehen Chats ja einfach unter, schreibst bestimmt mit vielen Frauen hier nicht wahr? Wie geht’s dir gerade und bist du noch hier unterwegs?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich habe gerade nochmal an dich und deinen schwierigen Tag gedacht, mein Schatz. Hat sich die Stimmung inzwischen etwas gebessert oder läuft immer noch alles schief? Ich bin neugierig, was dich so beschäftigt hat."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-20T13:30:05.600Z",
+      "updatedAt": "2026-02-20T13:30:05.600Z"
     }
   ]
 }
