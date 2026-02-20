@@ -18001,7 +18001,7 @@
       "chatId": "37934957",
       "customerMessage": "hey,dein Profil gefällt mir,...habe kann kaum noch still sitzen, bei deinem anblick...",
       "aiResponse": "Ich finde es auch richtig geil, dass dir mein Profil gefällt. Was macht dich denn so neugierig auf mich? Erz��hl mir mal, was dir am meisten an mir gefällt.",
-      "editedResponse": "Freut mich zu hören, dass dir mein Profil gefällt. Was gefällt dir denn am meisten wenn du dir mein Profil anschaust? Erzähl mir mal, was dir am meisten an mir gefällt.",
+      "editedResponse": "Freut mich zu hören, dass dir mein Profil gef��llt. Was gefällt dir denn am meisten wenn du dir mein Profil anschaust? Erzähl mir mal, was dir am meisten an mir gefällt.",
       "status": "edited",
       "platform": "fpc",
       "isASA": false,
@@ -35356,7 +35356,7 @@
       "id": "feedback_1771503840062_3jv7honfq",
       "chatId": "38705534",
       "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Wenn du nur wüsstest was mir gerade durch den Kopf geht… Aber das kannst du ja nicht wissen weil du mir gerade nicht schreibst. Meld dich mal schnell bei mir glaub mir, du wirst es nicht bereuen!😛",
+      "aiResponse": "Wenn du nur wüsstest was mir gerade durch den Kopf geht�� Aber das kannst du ja nicht wissen weil du mir gerade nicht schreibst. Meld dich mal schnell bei mir glaub mir, du wirst es nicht bereuen!😛",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
@@ -36683,6 +36683,31 @@
       "lastModeratorMessage": "Bei mir ist alles im grünen Bereich, ich habe mich nur gewundert das heute noch nichts von dir kam, ah okay. Bei dir soweit jetzt wieder alles gut?😘❤️",
       "timestamp": "2026-02-20T12:54:21.499Z",
       "updatedAt": "2026-02-20T12:54:21.499Z"
+    },
+    {
+      "id": "feedback_1771592086021_3xzhusbsv",
+      "chatId": "2921321:2001:31479:26795",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Das wegen dem wann das liegt doch auch nicht nur alleine nun an mir vielleicht sagst du doch mal ab wann du auch am besten dann halt soZeit hast"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-20T12:54:46.021Z",
+      "updatedAt": "2026-02-20T12:54:46.021Z"
     }
   ]
 }
