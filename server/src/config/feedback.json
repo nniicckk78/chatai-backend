@@ -14139,7 +14139,7 @@
       "context": {
         "detectedSituations": [
           "Bot-Vorwurf",
-          "Kontaktdaten außerhalb der Plattform",
+          "Kontaktdaten au��erhalb der Plattform",
           "Bilder Anfrage"
         ],
         "mood": "neutral",
@@ -36660,6 +36660,31 @@
       "lastModeratorMessage": "Wie schön, ich mag Männer sehr, die wissen, was ich will, und noch mehr, wie du gesgat hast. sag mir, woher du kommst?",
       "timestamp": "2026-02-20T12:48:48.094Z",
       "updatedAt": "2026-02-20T12:48:48.094Z"
+    },
+    {
+      "id": "feedback_1771591770445_5ywwsjarj",
+      "chatId": "2819702:1158:527731:550958",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke weil du dich gerade nicht bei mir meldest, liegt es bestimmt daran das du gerade viel um du Ohren hast oder? Meld dich gerne wenn du wieder Zeit hast",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke weil du dich gerade nicht bei mir meldest, liegt es bestimmt daran das du gerade viel um du Ohren hast oder? Meld dich gerne wenn du wieder Zeit hast"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Was ist mit euch Jungs los? Wollt ihr nur Spaß und keine feste Beziehung? Deine Nachrichten haben mir Hoffnung gemacht, aber jetzt bin ich nur enttäuscht. Schreib mir doch und zeig mir, dass du ein richtiger Mann bist, der eine Frau glücklich machen kann."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-20T12:49:30.445Z",
+      "updatedAt": "2026-02-20T12:49:30.445Z"
     }
   ]
 }
