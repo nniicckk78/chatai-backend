@@ -33999,7 +33999,7 @@
       "id": "feedback_1771336035302_7kdooi2ln",
       "chatId": "38407283",
       "customerMessage": "ich habe Feierabend reicht auch für heute",
-      "aiResponse": "Das ist doch super, dass du jetzt Feierabend hast. Was machst du denn immer so Schönes nach der Arbeit? Hast du Lust, etwas zu essen oder trinken? Oder vielleicht was anderes zu unternehmen?",
+      "aiResponse": "Das ist doch super, dass du jetzt Feierabend hast. Was machst du denn immer so Sch��nes nach der Arbeit? Hast du Lust, etwas zu essen oder trinken? Oder vielleicht was anderes zu unternehmen?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
@@ -35406,7 +35406,7 @@
       "id": "feedback_1771504474304_fawgvxygq",
       "chatId": "38740500",
       "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Oh wie süss! Das freut mich sehr! Was machst du heute so? Hast du etwas geplant f����r den Abend oder geniesst du einen entspannten Tag? Ich hoffe, du bleibst warm und cozy, es ist ja ganz schön kalt draussen!",
+      "aiResponse": "Oh wie süss! Das freut mich sehr! Was machst du heute so? Hast du etwas geplant f��r den Abend oder geniesst du einen entspannten Tag? Ich hoffe, du bleibst warm und cozy, es ist ja ganz schön kalt draussen!",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
@@ -37582,29 +37582,24 @@
       "updatedAt": "2026-02-21T12:11:23.178Z"
     },
     {
-      "id": "feedback_1771676117855_0xfjikfxr",
-      "chatId": "Thu Feb 19 2026 23:11:16 GMT+0100 (Mitteleuropäische Normalzeit)-hat dir ei",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Ich denke mal weil du dich nicht bei mir meldest bist du gerade zu beschäftigt oder? Ich würde einfach mal gerne wissen ob du auch jemand bist, auf den ich mich verlassen kann in guten sowie in schlechten Zeiten? Kannst dich ja gerne mal melden, wenn du kurz Zeit hast!",
+      "id": "feedback_1771676225345_hdaptaagm",
+      "chatId": "00000000",
+      "customerMessage": "Erstnachricht (keine Kundennachricht)",
+      "aiResponse": "Hey du, ich bin auch gerade ein bisschen beschäftigt, aber was machst du denn gerade so? Hast du heute schon etwas Schönes vor?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "iluvo",
-      "isASA": true,
-      "usedExampleIds": [
-        "ASA Reaktivierung|Ich denke mal weil du dich nicht bei mir meldest bist du gerade zu beschäftigt oder? Ich würde einfach mal gerne wissen ob du auch jemand bist, auf den ich mich verlassen kann in guten sowie in schlechten Zeiten? Kannst dich ja gerne mal melden, wenn du kurz Zeit hast!"
-      ],
+      "platform": "viluu",
+      "isASA": false,
+      "usedExampleIds": [],
       "context": {
-        "detectedSituations": [
-          "ASA Reaktivierung"
-        ],
+        "detectedSituations": [],
         "mood": "neutral",
         "style": "neutral",
-        "topic": "allgemein",
-        "lastModeratorMessage": "Okay! Und was stellst du dir vor, wenn ich bei dir wäre? Hast du ein paar Ideen?😍"
+        "topic": "allgemein"
       },
       "lastModeratorMessage": null,
-      "timestamp": "2026-02-21T12:15:17.855Z",
-      "updatedAt": "2026-02-21T12:15:17.855Z"
+      "timestamp": "2026-02-21T12:17:05.345Z",
+      "updatedAt": "2026-02-21T12:17:05.345Z"
     }
   ]
 }
