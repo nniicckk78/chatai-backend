@@ -2000,7 +2000,7 @@
         "topic": "allgemein",
         "lastModeratorMessage": "Ich danke dir wir sind auf dem richtigen Weg. Wir müssen uns jetzt in Ruhe überlegen wie wir auch gut vorwärts kommen. Heute ist Samstag hast du denn schon etwas Gutes essen können? Was hat es bei dir gegeben?"
       },
-      "lastModeratorMessage": "Ich danke dir wir sind auf dem richtigen Weg. Wir müssen uns jetzt in Ruhe ��������berlegen wie wir auch gut vorwärts kommen. Heute ist Samstag hast du denn schon etwas Gutes essen können? Was hat es bei dir gegeben?",
+      "lastModeratorMessage": "Ich danke dir wir sind auf dem richtigen Weg. Wir müssen uns jetzt in Ruhe ����������berlegen wie wir auch gut vorwärts kommen. Heute ist Samstag hast du denn schon etwas Gutes essen können? Was hat es bei dir gegeben?",
       "timestamp": "2026-02-07T12:47:14.431Z",
       "updatedAt": "2026-02-08T09:44:34.467Z",
       "situation": "Sexuelle Themen",
@@ -33999,7 +33999,7 @@
       "id": "feedback_1771336035302_7kdooi2ln",
       "chatId": "38407283",
       "customerMessage": "ich habe Feierabend reicht auch für heute",
-      "aiResponse": "Das ist doch super, dass du jetzt Feierabend hast. Was machst du denn immer so Schönes nach der Arbeit? Hast du Lust, etwas zu essen oder trinken? Oder vielleicht was anderes zu unternehmen?",
+      "aiResponse": "Das ist doch super, dass du jetzt Feierabend hast. Was machst du denn immer so Sch��nes nach der Arbeit? Hast du Lust, etwas zu essen oder trinken? Oder vielleicht was anderes zu unternehmen?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
@@ -37465,6 +37465,31 @@
       "lastModeratorMessage": "Das denke ich auch ,das es schön wird und ich freue mich schon sehr auf deine Begegnung 😘",
       "timestamp": "2026-02-21T11:54:18.356Z",
       "updatedAt": "2026-02-21T11:54:18.356Z"
+    },
+    {
+      "id": "feedback_1771674941210_b0vkek2kg",
+      "chatId": "Fri Oct 10 2025 12:38:35 GMT+0200 (Mitteleuropäische Sommerzeit)-Ich hoffe,",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich habe heute schon den ganzen Tag ganz komische Gedanken... Ich habe aber gerade niemanden dem ich es erzählen kann weil es irgendwie komisch ist, möchtest du es vielleicht wissen?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich habe heute schon den ganzen Tag ganz komische Gedanken... Ich habe aber gerade niemanden dem ich es erzählen kann weil es irgendwie komisch ist, möchtest du es vielleicht wissen?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ja muss man mal schauen und wie stellst du dir da somit mir vor"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-21T11:55:41.210Z",
+      "updatedAt": "2026-02-21T11:55:41.210Z"
     }
   ]
 }
