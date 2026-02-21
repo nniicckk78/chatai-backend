@@ -20003,7 +20003,7 @@
           },
           {
             "date": "2025-12-29T10:43:06.010Z",
-            "description": "Lotta, brünett, ist bis über Silvester bei ihren eltern",
+            "description": "Lotta, brünett, ist bis ��ber Silvester bei ihren eltern",
             "text": "Lotta, brünett, ist bis über Silvester bei ihren eltern",
             "fixed": false,
             "moderatorId": "15282"
@@ -37348,6 +37348,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-21T11:33:16.994Z",
       "updatedAt": "2026-02-21T11:33:16.994Z"
+    },
+    {
+      "id": "feedback_1771673655166_q8zg000ta",
+      "chatId": "Fri Feb 13 2026 10:46:31 GMT+0100 (Mitteleuropäische Normalzeit)-Das ist ja",
+      "customerMessage": "Heute Nachmittag ab 14:00",
+      "aiResponse": "Heute Nachmittag klingt verlockend, aber ich habe leider noch einiges vor. Lass uns das mal auf einen anderen Tag verschieben. Was stellst du dir denn vor, wenn wir uns Zeit nehmen?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Treffen/Termine"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ja sicher das wäre super und wann magst du das mit mir machen?😅"
+      },
+      "lastModeratorMessage": "Ja sicher das wäre super und wann magst du das mit mir machen?😅",
+      "timestamp": "2026-02-21T11:34:15.166Z",
+      "updatedAt": "2026-02-21T11:34:15.166Z"
     }
   ]
 }
