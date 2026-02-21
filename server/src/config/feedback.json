@@ -37860,24 +37860,27 @@
       "updatedAt": "2026-02-21T13:00:26.241Z"
     },
     {
-      "id": "feedback_1771679102678_awybke2tu",
-      "chatId": "00000000",
-      "customerMessage": "Erstnachricht (keine Kundennachricht)",
-      "aiResponse": "Hey, na, schöner Samstagnachmittag heute, oder? Ich chill mal zu Hause, vielleicht später raus. Was machst du so heute? Erzähl mal, ich bin gespannt!",
+      "id": "feedback_1771679125526_g2sw3l5mc",
+      "chatId": "36500327",
+      "customerMessage": "Es macht nur ein Sinn wenn man sich zu mindestens 1 mal sieht da kann man sich eher besser kennen lernen und nicht nur durch schreiben ist meine Meinung",
+      "aiResponse": "Das stimmt, sich persönlich zu treffen, kann wirklich helfen, sich besser kennenzulernen. Ich finde es wichtig, das nicht zu überstürzen, aber ich bin auch dafür, dass man es mal versuchen sollte. Was denkst du darüber?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "viluu",
+      "platform": "fpc",
       "isASA": false,
       "usedExampleIds": [],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "Treffen/Termine"
+        ],
         "mood": "neutral",
         "style": "neutral",
-        "topic": "allgemein"
+        "topic": "allgemein",
+        "lastModeratorMessage": "Das sehe ich ehrlich gesagt genauso und deswegen hoffe ich auch dass wir die nächsten Tage dafür auf jeden fall nutzen können😊"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-02-21T13:05:02.678Z",
-      "updatedAt": "2026-02-21T13:05:02.678Z"
+      "lastModeratorMessage": "Das sehe ich ehrlich gesagt genauso und deswegen hoffe ich auch dass wir die nächsten Tage dafür auf jeden fall nutzen können😊",
+      "timestamp": "2026-02-21T13:05:25.526Z",
+      "updatedAt": "2026-02-21T13:05:25.527Z"
     }
   ]
 }
