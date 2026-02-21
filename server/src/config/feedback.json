@@ -37582,24 +37582,29 @@
       "updatedAt": "2026-02-21T12:11:23.178Z"
     },
     {
-      "id": "feedback_1771676225345_hdaptaagm",
-      "chatId": "00000000",
-      "customerMessage": "Erstnachricht (keine Kundennachricht)",
-      "aiResponse": "Hey du, ich bin auch gerade ein bisschen beschäftigt, aber was machst du denn gerade so? Hast du heute schon etwas Schönes vor?",
+      "id": "feedback_1771676258830_jp2rqnsjb",
+      "chatId": "2436vFNBNlfXPdBFQAyj",
+      "customerMessage": "nein mußt du nicht ich wollte ja nichts von dir das habe ich ehrlich gesagt von anfang an ich nehm es hin und schreibe mal so mit dir vieleicht hast ja ein herz und willst es auschütten oder mir mal sagen was du dir vorstellt und was du genau möchtest doch deine brust hätte ich gern gesehen wenn das geht und vieleicht wenn du alles offen schreibst gebe ich dir eine chance ich geb se jedem menschen wenn er se nicht nutzt ist es vorbei ich bin ehrlich und sage was ich denke das ist meine art und wenn du sie nichr abkannst dann such dir was anderes bitte",
+      "aiResponse": "Ich verstehe, dass du ehrlich bist und jedem eine Chance gibst, das finde ich gut an dir. Ich würde mich freuen, wenn wir offen miteinander reden können. Was sind deine Vorstellungen für eine offene Kommunikation zwischen uns? Und was möchtest du noch ausprobieren?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "viluu",
+      "platform": "avz",
       "isASA": false,
       "usedExampleIds": [],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "Was willst du wissen?",
+          "Bilder Anfrage",
+          "Romantik / Verliebtheit"
+        ],
         "mood": "neutral",
         "style": "neutral",
-        "topic": "allgemein"
+        "topic": "allgemein",
+        "lastModeratorMessage": "Was habe ich denn gemacht? Ich verstehe dich gerade überhaupt nicht? Ich habe dich weder beleidigt noch provoziert! Habe ich so viel Konkurrenz bei dir das ich mich schon beweisen muss oder was?"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-02-21T12:17:05.345Z",
-      "updatedAt": "2026-02-21T12:17:05.345Z"
+      "lastModeratorMessage": "Was habe ich denn gemacht? Ich verstehe dich gerade überhaupt nicht? Ich habe dich weder beleidigt noch provoziert! Habe ich so viel Konkurrenz bei dir das ich mich schon beweisen muss oder was?",
+      "timestamp": "2026-02-21T12:17:38.830Z",
+      "updatedAt": "2026-02-21T12:17:38.830Z"
     }
   ]
 }
