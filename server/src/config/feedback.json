@@ -37949,6 +37949,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-21T13:13:47.597Z",
       "updatedAt": "2026-02-21T13:13:47.597Z"
+    },
+    {
+      "id": "feedback_1771679629070_92zrbapmo",
+      "chatId": "2930730:1158:542077:553137",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ignorierst du mich mit Absicht oder ist dein Postfach so überfüllt das meine Nachrichten schon gar nicht mehr bei dir Angezeigt werden? Ich würde mich schon freuen wenn du dich mal wieder melden würdest, wo steckst du denn?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ignorierst du mich mit Absicht oder ist dein Postfach so überfüllt das meine Nachrichten schon gar nicht mehr bei dir Angezeigt werden? Ich würde mich schon freuen wenn du dich mal wieder melden würdest, wo steckst du denn?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hey ich hoffe du meldest dich später mal bei mir und vielleicht können wir uns ja auch kennenlernen?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-21T13:13:49.070Z",
+      "updatedAt": "2026-02-21T13:13:49.070Z"
     }
   ]
 }
