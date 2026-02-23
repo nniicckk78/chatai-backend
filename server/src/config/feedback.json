@@ -38941,6 +38941,29 @@
       "lastModeratorMessage": "Das sollte momentan keine Zeit heißen! Hast du denn nicht auch manchmal so richtig stressige Phasen?\nGlaubst du so wünsche ich mir das momentan!?",
       "timestamp": "2026-02-23T13:47:15.698Z",
       "updatedAt": "2026-02-23T13:47:15.698Z"
+    },
+    {
+      "id": "feedback_1771854443643_2u316uksr",
+      "chatId": "38785543",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Oh wie süss, danke! Wie war dein Wochenende? Hattest du Zeit zum Entspannen oder war es eher stressig? Und wie ist deine Woche bisher verlaufen? Wie geht es dir denn so?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Oh, was für ein aufregender Samstag, Peter! \"Maul auf, Svenja ist da\" steht mir doch perfekt? Hab ich Deine Lippen gespürt?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-23T13:47:23.643Z",
+      "updatedAt": "2026-02-23T13:47:23.643Z"
     }
   ]
 }
