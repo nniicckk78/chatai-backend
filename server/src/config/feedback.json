@@ -3655,7 +3655,7 @@
       "context": {
         "detectedSituations": [
           "Treffen/Termine",
-          "Kontaktdaten außerhalb der Plattform"
+          "Kontaktdaten au��erhalb der Plattform"
         ],
         "mood": "neutral",
         "style": "neutral",
@@ -39350,6 +39350,31 @@
       "lastModeratorMessage": "Du bist doch in Berlin zu Hause, das passt eigentlich perfekt, denn somit müssen wir keine Weltreise machen, um uns zu sehen. \nIch präferiere tatsächlich ein echtes Rendezvous und wäre auch bereit, meinen sexy Knackpo in Bewegung zu setzen! 😜 Jetzt weiß ich nicht, wie es dir lieber ist. Aber das verrätst du mir sicherlich. Zu dir oder zu mir?\n\nAlso, bin ich auf dem Bild attraktiv für dich und gefällt dir meine positive Ausstrahlung? ❤️💋",
       "timestamp": "2026-02-23T15:36:57.145Z",
       "updatedAt": "2026-02-23T15:36:57.145Z"
+    },
+    {
+      "id": "feedback_1771861221841_oqxzpzqcg",
+      "chatId": "Mon Feb 23 2026 09:05:12 GMT+0100 (Mitteleuropäische Normalzeit)-Hi! Glaubs",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ignorierst du mich mit Absicht oder ist dein Postfach so überfüllt das meine Nachrichten schon gar nicht mehr bei dir Angezeigt werden? Ich würde mich schon freuen wenn du dich mal wieder melden würdest, wo steckst du denn?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ignorierst du mich mit Absicht oder ist dein Postfach so überfüllt das meine Nachrichten schon gar nicht mehr bei dir Angezeigt werden? Ich würde mich schon freuen wenn du dich mal wieder melden würdest, wo steckst du denn?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Wie ist dein richtiger Name und magst du dich mir auch mal beschreiben?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-23T15:40:21.841Z",
+      "updatedAt": "2026-02-23T15:40:21.841Z"
     }
   ]
 }
