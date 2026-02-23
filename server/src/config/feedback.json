@@ -3655,7 +3655,7 @@
       "context": {
         "detectedSituations": [
           "Treffen/Termine",
-          "Kontaktdaten außerhalb der Plattform"
+          "Kontaktdaten au��erhalb der Plattform"
         ],
         "mood": "neutral",
         "style": "neutral",
@@ -39467,6 +39467,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-23T15:59:18.956Z",
       "updatedAt": "2026-02-23T15:59:18.956Z"
+    },
+    {
+      "id": "feedback_1771862606752_55soxyc5f",
+      "chatId": "Sun Feb 22 2026 14:33:33 GMT+0100 (Mitteleuropäische Normalzeit)-Ja das ist",
+      "customerMessage": "Mir geht's gut ich hoffe dir auch? Ja denk auch viel an dich. 💋💋",
+      "aiResponse": "Mir geht's auch super, danke der Nachfrage! Es freut mich, dass du viel an mich denkst, schicke dir einen Kuss zurück 💋💋 Würdest du mich denn auch mal so wecken, wie ich mir das vorstelle? Was hast du dir noch so für uns überlegt?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Romantik / Verliebtheit"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Wollte dir nen Kuss schicken und sagen das ich an dich denke, wie geht es dir heute?"
+      },
+      "lastModeratorMessage": "Wollte dir nen Kuss schicken und sagen das ich an dich denke, wie geht es dir heute?",
+      "timestamp": "2026-02-23T16:03:26.752Z",
+      "updatedAt": "2026-02-23T16:03:26.752Z"
     }
   ]
 }
