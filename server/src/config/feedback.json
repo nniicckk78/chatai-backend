@@ -24452,7 +24452,7 @@
       "platform": "iluvo",
       "isASA": true,
       "usedExampleIds": [
-        "ASA Reaktivierung|Hey du, sag mal, wo hast du dich eigentlich versteckt? ���� Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?"
+        "ASA Reaktivierung|Hey du, sag mal, wo hast du dich eigentlich versteckt? ������ Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?"
       ],
       "context": {
         "detectedSituations": [
@@ -36569,7 +36569,7 @@
     },
     {
       "id": "feedback_1771591109133_3kmfxp3ww",
-      "chatId": "Fri Feb 20 2026 13:36:01 GMT+0100 (Mitteleuropäische Normalzeit)-Halli Hall",
+      "chatId": "Fri Feb 20 2026 13:36:01 GMT+0100 (Mitteleurop��ische Normalzeit)-Halli Hall",
       "customerMessage": "Ich suche eigentlich nur unverbindlichen sex",
       "aiResponse": "Klingt gut, ich bin auch für unverbindlichen Sex und einfach Spass ohne Komplikationen. Was sind deine Vorlieben dabei, gibt es etwas, das du besonders magst?",
       "editedResponse": null,
@@ -39374,6 +39374,31 @@
       "lastModeratorMessage": "Hi! Glaubst du, dass ein einziger Moment alles verändern kann? 😊 Ich würde gern mehr darüber erfahren, was du denkst!",
       "timestamp": "2026-02-23T15:44:05.166Z",
       "updatedAt": "2026-02-23T15:44:05.166Z"
+    },
+    {
+      "id": "feedback_1771861549902_iktt1n4i8",
+      "chatId": "Fri Jan 23 2026 08:46:57 GMT+0100 (Mitteleuropäische Normalzeit)-Also gegen",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hey und einen guten Morgen wünsche ich dir. Ich hoffe doch nicht, dass das schon alles gewesen ist zwischen uns beiden?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-23T15:45:49.902Z",
+      "updatedAt": "2026-02-23T15:45:49.902Z"
     }
   ]
 }
