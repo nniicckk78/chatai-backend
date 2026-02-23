@@ -14881,7 +14881,7 @@
       "chatId": "59008219",
       "customerMessage": "Hallo kommt drauf an? Du bist wunderschön und sehr hübsch aber zu jung und ich denke nicht dass du auf dicke Männer mit einem kleinen penis stehen würdest",
       "aiResponse": "Es ist echt schade, dass du so denkst. Ich stehe auf Männer, die sich selbstbewusst zeigen, egal wie sie aussehen. Was sind denn so deine Vorlieben im Bett?",
-      "editedResponse": "Kommt auf was drauf an? Also du kannst ja nichts daf����r wie du auf die Welt gekommen bist, man braucht auch keinen grossen Penis um eine Frau zu befriedigen. Was hast du denn für Vorlieben?",
+      "editedResponse": "Kommt auf was drauf an? Also du kannst ja nichts daf��r wie du auf die Welt gekommen bist, man braucht auch keinen grossen Penis um eine Frau zu befriedigen. Was hast du denn für Vorlieben?",
       "status": "edited",
       "platform": "viluu",
       "isASA": false,
@@ -39656,51 +39656,29 @@
       "updatedAt": "2026-02-23T18:24:18.500Z"
     },
     {
-      "id": "feedback_1771871189790_vozs2lava",
-      "chatId": "Wed Feb 18 2026 20:37:21 GMT+0100 (Mitteleuropäische Normalzeit)-Halli Hall",
-      "customerMessage": "Das würde sich entscheiden, wo wir uns treffen würden. Da kann ich relativ spontan sein.",
-      "aiResponse": "Das klingt flexibel bei dir. Ich bin auch spontan und freue mich auf die Ideen, die du hast. Was möchtest du denn gerne unternehmen?",
+      "id": "feedback_1771871281961_i87y4mrn8",
+      "chatId": "Sun Mar 16 2025 15:47:25 GMT+0100 (Mitteleuropäische Normalzeit)-klingt gut",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ignorierst du mich mit Absicht oder ist dein Postfach so überfüllt das meine Nachrichten schon gar nicht mehr bei dir Angezeigt werden? Ich würde mich schon freuen wenn du dich mal wieder melden würdest, wo steckst du denn?",
       "editedResponse": null,
       "status": "pending",
       "platform": "iluvo",
-      "isASA": false,
-      "usedExampleIds": [],
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ignorierst du mich mit Absicht oder ist dein Postfach so überfüllt das meine Nachrichten schon gar nicht mehr bei dir Angezeigt werden? Ich würde mich schon freuen wenn du dich mal wieder melden würdest, wo steckst du denn?"
+      ],
       "context": {
         "detectedSituations": [
-          "Treffen/Termine"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Ich hoffe mal, du sagst mir auch, wie du dann einen Tag mit einer Frau verbringen und gestalten würdest."
+        "lastModeratorMessage": "Das werden wir sehen, wenn du es schaffst belohne ich dich dafür!"
       },
-      "lastModeratorMessage": "Ich hoffe mal, du sagst mir auch, wie du dann einen Tag mit einer Frau verbringen und gestalten würdest.",
-      "timestamp": "2026-02-23T18:26:29.790Z",
-      "updatedAt": "2026-02-23T18:26:29.790Z"
-    },
-    {
-      "id": "feedback_1771871190973_s6owqwj2h",
-      "chatId": "gUQu3DuRZI4htvy0Y8TB",
-      "customerMessage": "Ja im Becken würde ich sagen mein Schatz 🥰",
-      "aiResponse": "Das klingt schonmal richtig heiss. Outdoor Sex kann auch richtig spannend sein, oder? Ich könnte mir vorstellen, dass wir da ein paar aufregende Abenteuer erleben könnten!😏 Was denkst du?",
-      "editedResponse": null,
-      "status": "pending",
-      "platform": "avz",
-      "isASA": false,
-      "usedExampleIds": [],
-      "context": {
-        "detectedSituations": [
-          "Sexuelle Themen",
-          "Romantik / Verliebtheit"
-        ],
-        "mood": "neutral",
-        "style": "neutral",
-        "topic": "allgemein",
-        "lastModeratorMessage": "Oh Schwimmbad hört sich doch super an. Wie wollen wir es dann umsetzen?"
-      },
-      "lastModeratorMessage": "Oh Schwimmbad hört sich doch super an. Wie wollen wir es dann umsetzen?",
-      "timestamp": "2026-02-23T18:26:30.973Z",
-      "updatedAt": "2026-02-23T18:26:30.973Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-23T18:28:01.961Z",
+      "updatedAt": "2026-02-23T18:28:01.961Z"
     }
   ]
 }
