@@ -40457,25 +40457,29 @@
       "updatedAt": "2026-02-24T12:30:36.712Z"
     },
     {
-      "id": "feedback_1771936450596_x18l7qz14",
-      "chatId": "Fri Feb 20 2026 19:31:16 GMT+0100 (Mitteleuropäische Normalzeit)-Ich habe g",
-      "customerMessage": "Ja 3 Tage",
-      "aiResponse": "Das klingt nach einer guten Balance mit 3 Tagen Homeoffice. Was machst du denn an deinen Homeoffice Tagen? Hast du dann auch genug Zeit für dich?",
+      "id": "feedback_1771936533991_ihskdfjt9",
+      "chatId": "2933643:1132:4495:178",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke mal, weil du dich gerade nicht bei mir meldest hast du einfach zu viel um die Ohren oder? Wenn du mal wieder kurz Zeit hast, dann melde dich bitte kurz bei mir. Es gibt da etwas über was ich mit dir kurz reden wollen würde!",
       "editedResponse": null,
       "status": "pending",
-      "platform": "iluvo",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke mal, weil du dich gerade nicht bei mir meldest hast du einfach zu viel um die Ohren oder? Wenn du mal wieder kurz Zeit hast, dann melde dich bitte kurz bei mir. Es gibt da etwas über was ich mit dir kurz reden wollen würde!"
+      ],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Sollte das drei Tage bedeuten? Oder was meinst du denn jetzt mit diesem Zeichen?"
+        "lastModeratorMessage": "Ich hab da noch an unsere offene Frage gedacht. Wie stellst du dir das denn genau vor, damit wir alles besprechen können? Bin gespannt auf deine Antwort!"
       },
-      "lastModeratorMessage": "Sollte das drei Tage bedeuten? Oder was meinst du denn jetzt mit diesem Zeichen?",
-      "timestamp": "2026-02-24T12:34:10.596Z",
-      "updatedAt": "2026-02-24T12:34:10.596Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-24T12:35:33.991Z",
+      "updatedAt": "2026-02-24T12:35:33.991Z"
     }
   ]
 }
