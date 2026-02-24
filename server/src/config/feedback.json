@@ -40624,6 +40624,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-24T12:59:46.216Z",
       "updatedAt": "2026-02-24T12:59:46.216Z"
+    },
+    {
+      "id": "feedback_1771938021827_pevbz38ed",
+      "chatId": "Tue Feb 24 2026 12:53:02 GMT+0100 (Mitteleuropäische Normalzeit)-Hi,du bist",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Sag mal ehrlich, wo steckst du denn eigentlich die ganze Zeit? Habe ich irgendwas gesagt, das dich verärgert haben könnte, oder bist du jetzt einfach abgetaucht weil du angst vor einem Treffen mit mir hast?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Sag mal ehrlich, wo steckst du denn eigentlich die ganze Zeit? Habe ich irgendwas gesagt, das dich verärgert haben könnte, oder bist du jetzt einfach abgetaucht weil du angst vor einem Treffen mit mir hast?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hallo das hört sich interessant an. Du meinst also du möchtest so etwas wie eine Freundschaft plus?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-24T13:00:21.827Z",
+      "updatedAt": "2026-02-24T13:00:21.827Z"
     }
   ]
 }
