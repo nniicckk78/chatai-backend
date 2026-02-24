@@ -40765,6 +40765,31 @@
       "lastModeratorMessage": "Wenn es richtig gut funkt, dann kann alles passieren. Werden uns da auch nicht zurück halten müssen, nicht wahr?",
       "timestamp": "2026-02-24T13:20:28.380Z",
       "updatedAt": "2026-02-24T13:20:28.380Z"
+    },
+    {
+      "id": "feedback_1771939239955_k913a53tj",
+      "chatId": "38832704",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Und hast du vor mir auch mal wieder zu schreiben oder willst du mich weiterhin hier im leeren stehen lasssen? Meld dich doch mal bei mir, würde mich freuen!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Und hast du vor mir auch mal wieder zu schreiben oder willst du mich weiterhin hier im leeren stehen lasssen? Meld dich doch mal bei mir, würde mich freuen!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Und was möchtest du denn ausprobieren oder was stellst du dir beim ersten mal denn vor?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-24T13:20:39.955Z",
+      "updatedAt": "2026-02-24T13:20:39.955Z"
     }
   ]
 }
