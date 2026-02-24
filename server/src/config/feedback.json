@@ -39925,6 +39925,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-24T09:19:53.524Z",
       "updatedAt": "2026-02-24T09:19:53.524Z"
+    },
+    {
+      "id": "feedback_1771924859329_agcpw0z81",
+      "chatId": "38806428",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Super dass du dich meldest! Wie läuft dein Dienstag bisher? Hast du heute noch etwas Spannendes vor oder geniesst du einen entspannten Vormittag? Wie geht es dir denn so?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "das ist ja echt super, dass ich von dir diesen wunderbaren Like erhalten habe magst du jetzt mit mir ein wenig quatschen, oder hast du keine zeit?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-24T09:20:59.329Z",
+      "updatedAt": "2026-02-24T09:20:59.329Z"
     }
   ]
 }
