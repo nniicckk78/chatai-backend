@@ -39287,7 +39287,7 @@
       "platform": "df",
       "isASA": true,
       "usedExampleIds": [
-        "ASA Reaktivierung|Melde dich doch mal bei mir. Ich habe heute echt gute Laune und deshalb sogar eine kleine Überraschung für dich. 😉 Aber du musst sie dir schon abholen kommen.💋 Oder bist du gerade zu beschäftigt dafür?"
+        "ASA Reaktivierung|Melde dich doch mal bei mir. Ich habe heute echt gute Laune und deshalb sogar eine kleine Überraschung f��r dich. 😉 Aber du musst sie dir schon abholen kommen.💋 Oder bist du gerade zu beschäftigt dafür?"
       ],
       "context": {
         "detectedSituations": [
@@ -39950,25 +39950,27 @@
       "updatedAt": "2026-02-24T09:20:59.329Z"
     },
     {
-      "id": "feedback_1771927474194_s7u5974ue",
-      "chatId": "38788479",
-      "customerMessage": "Das macht Nucia = eine gute Freudin von mir",
-      "aiResponse": "Ach so, Nucia macht das Kochen. Das klingt trotzdem toll, gute Freundinnen sind Gold wert. Kocht ihr zusammen oder schaust du nur zu? Was würdest du denn gerne für uns kochen?",
+      "id": "feedback_1771927571554_3c6x2ignr",
+      "chatId": "38262678",
+      "customerMessage": "wrlche idee höttest du denn ?",
+      "aiResponse": "Ich habe da schon ein paar Ideen. Vielleicht könnten wir uns einfach mal treffen und uns besser kennenlernen? Ich denke, das könnte dir helfen, deine Schüchternheit abzubauen. Was hältst du davon?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
       "isASA": false,
       "usedExampleIds": [],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "Was willst du wissen?"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Okay, das klingt sehr gut! Finde ich toll, wen ein Mann kochen kann. Und wie sieht es denn mit dem Rest aus? Küsschen"
+        "lastModeratorMessage": "na da werde ich dir schon ein sehr klares zeichen setzen, da habe ich auch eine Ide was dich definitiv aufwecken würde, oder hast du ein paar geheime tipps für mich?"
       },
-      "lastModeratorMessage": "Okay, das klingt sehr gut! Finde ich toll, wen ein Mann kochen kann. Und wie sieht es denn mit dem Rest aus? Küsschen",
-      "timestamp": "2026-02-24T10:04:34.194Z",
-      "updatedAt": "2026-02-24T10:04:34.195Z"
+      "lastModeratorMessage": "na da werde ich dir schon ein sehr klares zeichen setzen, da habe ich auch eine Ide was dich definitiv aufwecken würde, oder hast du ein paar geheime tipps für mich?",
+      "timestamp": "2026-02-24T10:06:11.554Z",
+      "updatedAt": "2026-02-24T10:06:11.554Z"
     }
   ]
 }
