@@ -41616,6 +41616,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-25T13:28:03.985Z",
       "updatedAt": "2026-02-25T13:28:03.985Z"
+    },
+    {
+      "id": "feedback_1772026087987_13bjalx7d",
+      "chatId": "38559174",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke weil du dich gerade nicht bei mir meldest, liegt es bestimmt daran das du gerade viel um du Ohren hast oder? Meld dich gerne wenn du wieder Zeit hast",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke weil du dich gerade nicht bei mir meldest, liegt es bestimmt daran das du gerade viel um du Ohren hast oder? Meld dich gerne wenn du wieder Zeit hast"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "na, du bist mir aber einer du musst ja wenigstens froh sein dass deine Freundin arbeiten geht, aber was hast du denn da, dass du früh-Rentner bist?:stuck_out_tongue:"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-25T13:28:07.987Z",
+      "updatedAt": "2026-02-25T13:28:07.987Z"
     }
   ]
 }
