@@ -41689,6 +41689,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-25T13:45:19.915Z",
       "updatedAt": "2026-02-25T13:45:19.915Z"
+    },
+    {
+      "id": "feedback_1772027132652_6pe8po9z9",
+      "chatId": "2935327:2001:43222:27321",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ist denn alles gut bei dir oder warum ignorierst du mich? Hab ich denn was falsches gesagt oder dich verärgert oder sowas? Sag mir doch wenigstens bescheid das ich es auch besser machen kann in Zukunft. Oder wie stellst du dir vor wie das funktionieren soll wenn du mir nicht antwortest?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ist denn alles gut bei dir oder warum ignorierst du mich? Hab ich denn was falsches gesagt oder dich verärgert oder sowas? Sag mir doch wenigstens bescheid das ich es auch besser machen kann in Zukunft. Oder wie stellst du dir vor wie das funktionieren soll wenn du mir nicht antwortest?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich hab immer noch im Kopf, was du so in deiner Freizeit machst. Die Nähe zwischen Haßfurt und Schweinfurt macht das Ganze ja noch spannender, oder? Verrätst du mir endlich, was dich so begeistert?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-25T13:45:32.652Z",
+      "updatedAt": "2026-02-25T13:45:32.652Z"
     }
   ]
 }
