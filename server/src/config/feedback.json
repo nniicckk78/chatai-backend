@@ -41380,6 +41380,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-25T12:34:55.330Z",
       "updatedAt": "2026-02-25T12:34:55.330Z"
+    },
+    {
+      "id": "feedback_1772022899905_akddihm5f",
+      "chatId": "37881917",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, sag mal, wo hast du dich eigentlich versteckt? 😅 Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, sag mal, wo hast du dich eigentlich versteckt? 😅 Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Guten Morgen, wie hast du denn jetzt so geschlafen? 💋 weisst du eigentlich dass ich schon heute morgen direkt an dich gedacht habe? 😜 was machst du heute noch so schönes?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-25T12:34:59.905Z",
+      "updatedAt": "2026-02-25T12:34:59.905Z"
     }
   ]
 }
