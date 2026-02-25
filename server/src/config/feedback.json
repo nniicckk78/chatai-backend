@@ -38432,7 +38432,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Oh Charly, dein Bild ist der Hammer, macht mich direkt heiss 😈 Klar hab ich Bock drauf, stell mir vor, wie du mich richtig ran nimmst. Hast du auch genug Sahne für mich über?😏"
+        "lastModeratorMessage": "Oh Charly, dein Bild ist der Hammer, macht mich direkt heiss 😈 Klar hab ich Bock drauf, stell mir vor, wie du mich richtig ran nimmst. Hast du auch genug Sahne für mich ��ber?😏"
       },
       "lastModeratorMessage": "Oh Charly, dein Bild ist der Hammer, macht mich direkt heiss 😈 Klar hab ich Bock drauf, stell mir vor, wie du mich richtig ran nimmst. Hast du auch genug Sahne für mich über?😏",
       "timestamp": "2026-02-23T12:05:42.725Z",
@@ -41522,25 +41522,27 @@
       "updatedAt": "2026-02-25T13:04:24.592Z"
     },
     {
-      "id": "feedback_1772025013247_iysy6r4co",
-      "chatId": "38555297",
-      "customerMessage": "hallo",
-      "aiResponse": "Hallo Markus, mir geht's gut, danke! Ich hoffe, dein Mittwoch läuft entspannt. Hast du schon Pläne für das Wochenende oder was hast du so vor?",
+      "id": "feedback_1772025121359_2p8796t75",
+      "chatId": "38701604",
+      "customerMessage": "hallo, nein eig. nicht, aber da ich immer noch leicht Fieber habe, wird es schwierig was zu machen. was wolltest du mir denn vorschlagen, würde mich mal interessieren?",
+      "aiResponse": "Ach schade, dass du noch leichtes Fieber hast, das macht echt alles schwieriger. Gut, dass du sonst nichts vor hast, kannst dich erstmal richtig ausruhen. Was machst du, um dich während der Krankheit zu entspannen? Und was hättest du dir denn vorgestellt?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
       "isASA": false,
       "usedExampleIds": [],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "Was willst du wissen?"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Also du weist doch gar nicht was du hier verpasst! an deiner Stelle würde ich mich lieber schnel bei mir melden sonst bist du selber schuld. oder verpasst du gerne heisse Dinge?:smirk:"
+        "lastModeratorMessage": "Hallo! Hast du denn eigentlich heute am nachmittag schon etwas vor? 😁 ich wollte dir nämlich echt gerne noch etwas vorschlagen. Hast du denn überhaupt Lust darauf?"
       },
-      "lastModeratorMessage": "Also du weist doch gar nicht was du hier verpasst! an deiner Stelle würde ich mich lieber schnel bei mir melden sonst bist du selber schuld. oder verpasst du gerne heisse Dinge?:smirk:",
-      "timestamp": "2026-02-25T13:10:13.247Z",
-      "updatedAt": "2026-02-25T13:10:13.247Z"
+      "lastModeratorMessage": "Hallo! Hast du denn eigentlich heute am nachmittag schon etwas vor? 😁 ich wollte dir nämlich echt gerne noch etwas vorschlagen. Hast du denn überhaupt Lust darauf?",
+      "timestamp": "2026-02-25T13:12:01.359Z",
+      "updatedAt": "2026-02-25T13:12:01.359Z"
     }
   ]
 }
