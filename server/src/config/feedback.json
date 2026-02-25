@@ -41380,6 +41380,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-25T12:33:50.041Z",
       "updatedAt": "2026-02-25T12:33:50.041Z"
+    },
+    {
+      "id": "feedback_1772022842623_apdj4wx84",
+      "chatId": "2933821:1130:23251:130",
+      "customerMessage": "Wann du in visselhovede bist kann wir gerne treffen uns und besser kennenlernen",
+      "aiResponse": "Ich bin unter der Woche ein bisschen beschäftigt, aber das Wochenende klingt schon gut. Was hättest du denn im Kopf, was wir zusammen machen könnten?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Treffen/Termine"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hmm immer noch keine Nachricht, was muss ich denn machen das du dich nochmal bei mir meldest?"
+      },
+      "lastModeratorMessage": "Hmm immer noch keine Nachricht, was muss ich denn machen das du dich nochmal bei mir meldest?",
+      "timestamp": "2026-02-25T12:34:02.623Z",
+      "updatedAt": "2026-02-25T12:34:02.623Z"
     }
   ]
 }
