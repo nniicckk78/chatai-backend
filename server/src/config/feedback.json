@@ -5778,7 +5778,7 @@
       "id": "feedback_1770198079470_7vpphvgll",
       "chatId": "38424110",
       "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Muss ich jetzt schon eine Vermisstenanzeige aufgeben oder wo bist du denn, wenn ich fragen darf? Lässt man eine Frau heutzutage einfach so ohne Erklärung stehen?",
+      "aiResponse": "Muss ich jetzt schon eine Vermisstenanzeige aufgeben oder wo bist du denn, wenn ich fragen darf? L��sst man eine Frau heutzutage einfach so ohne Erklärung stehen?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
@@ -9570,7 +9570,7 @@
         "topic": "allgemein",
         "lastModeratorMessage": "Bei mir klingelt der Wecker leider schon um 5 Uhr was bedeutet, dass ich früh aufstehen muss. Ich habe jedoch das große glück, schnell einschlafen zu könen und dabei schöne, süße träume zu haben."
       },
-      "lastModeratorMessage": "Bei mir klingelt der Wecker leider schon um 5 Uhr was bedeutet, dass ich früh aufstehen muss. Ich habe jedoch das große glück, schnell einschlafen zu könen und dabei schöne, sü��e träume zu haben.",
+      "lastModeratorMessage": "Bei mir klingelt der Wecker leider schon um 5 Uhr was bedeutet, dass ich früh aufstehen muss. Ich habe jedoch das große glück, schnell einschlafen zu könen und dabei schöne, süße träume zu haben.",
       "timestamp": "2026-01-20T23:02:51.381Z",
       "updatedAt": "2026-01-21T14:37:36.722Z"
     },
@@ -41766,29 +41766,29 @@
       "updatedAt": "2026-02-25T13:51:34.162Z"
     },
     {
-      "id": "feedback_1772027590660_g2tpocsft",
-      "chatId": "2936040:1158:494046:553081",
-      "customerMessage": "Hey du , da ich aus der Nähe (Kamp-Lintfort) komme hättest du Lust auf eine diskrete Affäre ? Dann können wir ja Nummern tauschen. LG",
-      "aiResponse": "Kamp Lintfort ist ja echt nah bei Krefeld, das klingt gut! Eine diskrete Affäre passt perfekt zu mir. Bevor wir aber die Nummern tauschen, würde ich gerne mehr über dich erfahren. Was interessiert dich besonders an so einer Affäre?",
+      "id": "feedback_1772027672113_w1lmx7fps",
+      "chatId": "2907795:1158:542396:553073",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Melde dich doch mal bei mir. Ich habe heute echt gute Laune und deshalb sogar eine kleine Überraschung für dich. 😉 Aber du musst sie dir schon abholen kommen.💋 Oder bist du gerade zu beschäftigt dafür?",
       "editedResponse": null,
       "status": "pending",
       "platform": "df",
-      "isASA": false,
-      "usedExampleIds": [],
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Melde dich doch mal bei mir. Ich habe heute echt gute Laune und deshalb sogar eine kleine Überraschung für dich. 😉 Aber du musst sie dir schon abholen kommen.💋 Oder bist du gerade zu beschäftigt dafür?"
+      ],
       "context": {
         "detectedSituations": [
-          "Wohnort-Frage",
-          "Kontaktdaten außerhalb der Plattform",
-          "Treffen/Termine"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Bist du hier auch, um einfach nur zu Vögeln?🥵 Aber bitte nicht hier ewig schreiben… Sag mir einfach, woher du kommst und wann du Zeit hast!🔥 Oder wird das heute nichts mit uns?"
+        "lastModeratorMessage": "Also was denkst du denn nun bitte von mir was soll ich denn dann bitte davon haben?"
       },
-      "lastModeratorMessage": "Bist du hier auch, um einfach nur zu Vögeln?🥵 Aber bitte nicht hier ewig schreiben… Sag mir einfach, woher du kommst und wann du Zeit hast!🔥 Oder wird das heute nichts mit uns?",
-      "timestamp": "2026-02-25T13:53:10.660Z",
-      "updatedAt": "2026-02-25T13:53:10.660Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-25T13:54:32.113Z",
+      "updatedAt": "2026-02-25T13:54:32.113Z"
     }
   ]
 }
