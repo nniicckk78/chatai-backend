@@ -41591,6 +41591,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-25T13:20:09.217Z",
       "updatedAt": "2026-02-25T13:20:09.217Z"
+    },
+    {
+      "id": "feedback_1772025624741_9frauy6o5",
+      "chatId": "Wed Feb 25 2026 00:28:02 GMT+0100 (Mitteleuropäische Normalzeit)-Jetzt bitt",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Wo steckst du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so überfüllt das meine Nachrichten schon gar nicht mehr bei dir angezeigt werden? Ich hätte da mal eine echt wichtige Frage an dich?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Wo steckst du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so überfüllt das meine Nachrichten schon gar nicht mehr bei dir angezeigt werden? Ich hätte da mal eine echt wichtige Frage an dich?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Was hat denn das eine mit dem anderen zu tun ich verstehe das nicht?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-25T13:20:24.741Z",
+      "updatedAt": "2026-02-25T13:20:24.741Z"
     }
   ]
 }
