@@ -7634,9 +7634,9 @@
     },
     "Kontaktdaten außerhalb der Plattform": {
       "was": {
-        "good": 1,
-        "bad": 5,
-        "lastUpdated": 1772017187463
+        "good": 4,
+        "bad": 8,
+        "lastUpdated": 1772017632697
       },
       "problem": {
         "good": 2,
@@ -7664,9 +7664,9 @@
         "lastUpdated": 1772017072473
       },
       "denn": {
-        "good": 2,
-        "bad": 1,
-        "lastUpdated": 1772017187463
+        "good": 3,
+        "bad": 2,
+        "lastUpdated": 1772017632697
       },
       "jetzt": {
         "good": 4,
@@ -7679,9 +7679,9 @@
         "lastUpdated": 1772017187463
       },
       "hier": {
-        "good": 0,
-        "bad": 2,
-        "lastUpdated": 1772017072473
+        "good": 1,
+        "bad": 3,
+        "lastUpdated": 1772017632697
       }
     }
   },
@@ -7731,8 +7731,8 @@
       "total": 112
     },
     "Kontaktdaten außerhalb der Plattform": {
-      "good": 4,
-      "total": 8
+      "good": 5,
+      "total": 10
     }
   },
   "responsePatterns": [
@@ -8254,6 +8254,20 @@
       "validatedSuccessRate": 1
     },
     {
+      "situation": "Kontaktdaten außerhalb der Plattform",
+      "customerPattern": {
+        "keywords": "nur wenn frau auch möchte willst vielleicht selfie arbeit schicken",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 91
+      },
+      "goodResponse": "Also ich bin eine Frau die das definitiv möchte.😜 Gerade ist ein bisschen schwierig weil wir einige Leute heute sind. Da kann ich jetzt nicht einfach mein Handy auf der Arbeit rausholen und ein Foto ",
+      "successCount": 2,
+      "lastUsed": "2026-02-25T11:07:12.697Z",
+      "validatedSuccessRate": 1
+    },
+    {
       "situation": "Wonach suchst du?",
       "customerPattern": {
         "keywords": "komme billerbeck wie was suchst hier genau würde dich gerne",
@@ -8336,23 +8350,9 @@
       "successCount": 1,
       "lastUsed": "2026-02-25T10:57:52.474Z",
       "validatedSuccessRate": 1
-    },
-    {
-      "situation": "Kontaktdaten außerhalb der Plattform",
-      "customerPattern": {
-        "keywords": "nur wenn frau auch möchte willst vielleicht selfie arbeit schicken",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 91
-      },
-      "goodResponse": "Also ich bin eine Frau die das definitiv möchte.😜 Gerade ist ein bisschen schwierig weil wir einige Leute heute sind. Da kann ich jetzt nicht einfach mein Handy auf der Arbeit rausholen und ein Foto ",
-      "successCount": 1,
-      "lastUsed": "2026-02-25T10:59:47.464Z",
-      "validatedSuccessRate": 1
     }
   ],
-  "lastUpdated": "2026-02-25T11:06:14.114Z",
+  "lastUpdated": "2026-02-25T11:07:12.711Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -16055,30 +16055,33 @@
           183,
           210,
           282,
-          251
+          251,
+          183
         ],
         "exclamationMarks": [
           0,
           0,
           1,
+          0,
           0
         ],
         "questions": [
           1,
           1,
           3,
+          1,
           1
         ],
-        "count": 4,
-        "avgLength": 232,
+        "count": 5,
+        "avgLength": 222,
         "minLength": 183,
         "maxLength": 282,
-        "medianLength": 251,
-        "avgExclamationMarks": 0.3,
+        "medianLength": 210,
+        "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.5,
+        "avgQuestions": 1.4,
         "minQuestions": 1,
         "maxQuestions": 3,
         "medianQuestions": 1,
@@ -16086,15 +16089,15 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 25,
-          "200-250": 25,
-          "250+": 50
+          "150-200": 40,
+          "200-250": 20,
+          "250+": 40
         },
         "questionDistribution": {
           "0": 0,
-          "1": 75,
+          "1": 80,
           "2": 0,
-          "3+": 25
+          "3+": 20
         }
       },
       "negative": {
@@ -16102,30 +16105,33 @@
           215,
           238,
           322,
-          150
+          150,
+          191
         ],
         "exclamationMarks": [
           0,
           0,
           0,
-          1
+          1,
+          0
         ],
         "questions": [
           1,
           2,
           1,
+          1,
           1
         ],
-        "count": 4,
-        "avgLength": 231,
+        "count": 5,
+        "avgLength": 223,
         "minLength": 150,
         "maxLength": 322,
-        "medianLength": 238,
-        "avgExclamationMarks": 0.3,
+        "medianLength": 215,
+        "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 1,
         "medianExclamationMarks": 0,
-        "avgQuestions": 1.3,
+        "avgQuestions": 1.2,
         "minQuestions": 1,
         "maxQuestions": 2,
         "medianQuestions": 1,
@@ -16133,14 +16139,14 @@
           "0-100": 0,
           "100-120": 0,
           "120-150": 0,
-          "150-200": 25,
-          "200-250": 50,
-          "250+": 25
+          "150-200": 40,
+          "200-250": 40,
+          "250+": 20
         },
         "questionDistribution": {
           "0": 0,
-          "1": 75,
-          "2": 25,
+          "1": 80,
+          "2": 20,
           "3+": 0
         }
       }
@@ -16528,6 +16534,20 @@
     },
     "Berufsfrage": {
       "😏": {
+        "count": 1,
+        "positions": [],
+        "contexts": [],
+        "successRate": 0
+      }
+    },
+    "Kontaktdaten außerhalb der Plattform": {
+      "😊": {
+        "count": 1,
+        "positions": [],
+        "contexts": [],
+        "successRate": 0
+      },
+      "🙈": {
         "count": 1,
         "positions": [],
         "contexts": [],
@@ -19918,6 +19938,254 @@
           "contexts": [
             "nur wenn frau auch möchte"
           ]
+        },
+        {
+          "from": "für die lieben",
+          "to": "Danke für die",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "die lieben Worte,",
+          "to": "für die lieben",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "lieben Worte, das",
+          "to": "die lieben Worte,",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "Worte, das macht",
+          "to": "lieben Worte, das",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "das macht mich",
+          "to": "Worte, das macht",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "macht mich total",
+          "to": "das macht mich",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "mich total verlegen",
+          "to": "macht mich total",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "total verlegen 😊🙈",
+          "to": "mich total verlegen",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "verlegen 😊🙈 Ich",
+          "to": "total verlegen 😊🙈",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "😊🙈 Ich bin",
+          "to": "verlegen 😊🙈 Ich",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "Ich bin 25",
+          "to": "😊🙈 Ich bin",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "bin 25 und",
+          "to": "Ich bin 25",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "25 und schau",
+          "to": "bin 25 und",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "und schau hier",
+          "to": "25 und schau",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "schau hier einfach",
+          "to": "und schau hier",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "hier einfach mal,",
+          "to": "schau hier einfach",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "einfach mal, was",
+          "to": "hier einfach mal,",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "mal, was sich",
+          "to": "einfach mal, was",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "was sich so",
+          "to": "mal, was sich",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "sich so ergibt,",
+          "to": "was sich so",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "so ergibt, vielleicht",
+          "to": "sich so ergibt,",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "ergibt, vielleicht was",
+          "to": "so ergibt, vielleicht",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "vielleicht was Lockeres",
+          "to": "ergibt, vielleicht was",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "was Lockeres oder",
+          "to": "vielleicht was Lockeres",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "Lockeres oder mehr.",
+          "to": "was Lockeres oder",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "oder mehr. Und",
+          "to": "Lockeres oder mehr.",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "mehr. Und was",
+          "to": "oder mehr. Und",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "Und was suchst",
+          "to": "mehr. Und was",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "was suchst du",
+          "to": "Und was suchst",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "suchst du denn",
+          "to": "was suchst du",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
+        },
+        {
+          "from": "du denn so,",
+          "to": "suchst du denn",
+          "count": 2,
+          "contexts": [
+            "hey bin charly was bist"
+          ]
         }
       ]
     }
@@ -22874,9 +23142,9 @@
       "lastValidated": 1772016561546
     },
     "reasoningPrinciple_1": {
-      "usedCount": 411,
-      "successCount": 411,
-      "lastValidated": 1772017574113
+      "usedCount": 412,
+      "successCount": 412,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_2": {
       "usedCount": 40,
@@ -22889,9 +23157,9 @@
       "lastValidated": 1772017516245
     },
     "reasoningPrinciple_4": {
-      "usedCount": 983,
-      "successCount": 983,
-      "lastValidated": 1772017574113
+      "usedCount": 984,
+      "successCount": 984,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_5": {
       "usedCount": 201,
@@ -22904,9 +23172,9 @@
       "lastValidated": 1770833226858
     },
     "reasoningPrinciple_7": {
-      "usedCount": 417,
-      "successCount": 417,
-      "lastValidated": 1772017516245
+      "usedCount": 418,
+      "successCount": 418,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_8": {
       "usedCount": 72,
@@ -22924,9 +23192,9 @@
       "lastValidated": 1772017459678
     },
     "reasoningPrinciple_11": {
-      "usedCount": 62,
-      "successCount": 62,
-      "lastValidated": 1770833226858
+      "usedCount": 63,
+      "successCount": 63,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_12": {
       "usedCount": 364,
@@ -22939,9 +23207,9 @@
       "lastValidated": 1770997525243
     },
     "reasoningPrinciple_14": {
-      "usedCount": 1002,
-      "successCount": 1002,
-      "lastValidated": 1772017574113
+      "usedCount": 1003,
+      "successCount": 1003,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_15": {
       "usedCount": 472,
@@ -22954,9 +23222,9 @@
       "lastValidated": 1770997525243
     },
     "reasoningPrinciple_17": {
-      "usedCount": 631,
-      "successCount": 631,
-      "lastValidated": 1772017574113
+      "usedCount": 632,
+      "successCount": 632,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_18": {
       "usedCount": 647,
@@ -22964,9 +23232,9 @@
       "lastValidated": 1772017574113
     },
     "reasoningPrinciple_19": {
-      "usedCount": 62,
-      "successCount": 62,
-      "lastValidated": 1770833226858
+      "usedCount": 63,
+      "successCount": 63,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_20": {
       "usedCount": 37,
@@ -22974,14 +23242,14 @@
       "lastValidated": 1770820400327
     },
     "reasoningPrinciple_21": {
-      "usedCount": 642,
-      "successCount": 642,
-      "lastValidated": 1772017371343
+      "usedCount": 643,
+      "successCount": 643,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_22": {
-      "usedCount": 442,
-      "successCount": 442,
-      "lastValidated": 1772017516245
+      "usedCount": 443,
+      "successCount": 443,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_23": {
       "usedCount": 357,
@@ -22989,34 +23257,34 @@
       "lastValidated": 1772017516245
     },
     "reasoningPrinciple_24": {
-      "usedCount": 974,
-      "successCount": 974,
-      "lastValidated": 1772017574113
+      "usedCount": 975,
+      "successCount": 975,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_25": {
-      "usedCount": 748,
-      "successCount": 748,
-      "lastValidated": 1772017574113
+      "usedCount": 749,
+      "successCount": 749,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_26": {
-      "usedCount": 760,
-      "successCount": 760,
-      "lastValidated": 1772017574113
+      "usedCount": 761,
+      "successCount": 761,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_27": {
-      "usedCount": 780,
-      "successCount": 780,
-      "lastValidated": 1772017574113
+      "usedCount": 781,
+      "successCount": 781,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_28": {
-      "usedCount": 422,
-      "successCount": 422,
-      "lastValidated": 1772017574113
+      "usedCount": 423,
+      "successCount": 423,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_29": {
-      "usedCount": 506,
-      "successCount": 506,
-      "lastValidated": 1772017459678
+      "usedCount": 507,
+      "successCount": 507,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_30": {
       "usedCount": 88,
@@ -23024,14 +23292,14 @@
       "lastValidated": 1770997525243
     },
     "reasoningPrinciple_31": {
-      "usedCount": 545,
-      "successCount": 545,
-      "lastValidated": 1772017459678
+      "usedCount": 546,
+      "successCount": 546,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_32": {
-      "usedCount": 545,
-      "successCount": 545,
-      "lastValidated": 1772017459678
+      "usedCount": 546,
+      "successCount": 546,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_33": {
       "usedCount": 3,
@@ -23039,24 +23307,24 @@
       "lastValidated": 1770749178651
     },
     "reasoningPrinciple_34": {
-      "usedCount": 952,
-      "successCount": 952,
-      "lastValidated": 1772017574113
+      "usedCount": 953,
+      "successCount": 953,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_35": {
-      "usedCount": 422,
-      "successCount": 422,
-      "lastValidated": 1772017574113
+      "usedCount": 423,
+      "successCount": 423,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_36": {
-      "usedCount": 691,
-      "successCount": 691,
-      "lastValidated": 1772017574113
+      "usedCount": 692,
+      "successCount": 692,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_37": {
-      "usedCount": 621,
-      "successCount": 621,
-      "lastValidated": 1772017574113
+      "usedCount": 622,
+      "successCount": 622,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_38": {
       "usedCount": 3,
@@ -23064,9 +23332,9 @@
       "lastValidated": 1770749178651
     },
     "reasoningPrinciple_39": {
-      "usedCount": 740,
-      "successCount": 740,
-      "lastValidated": 1772017574113
+      "usedCount": 741,
+      "successCount": 741,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_40": {
       "usedCount": 20,
@@ -23079,9 +23347,9 @@
       "lastValidated": 1772017574113
     },
     "reasoningPrinciple_42": {
-      "usedCount": 265,
-      "successCount": 265,
-      "lastValidated": 1772017005794
+      "usedCount": 266,
+      "successCount": 266,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_43": {
       "usedCount": 412,
@@ -23099,24 +23367,24 @@
       "lastValidated": 1772017574113
     },
     "reasoningPrinciple_46": {
-      "usedCount": 706,
-      "successCount": 706,
-      "lastValidated": 1772017574113
+      "usedCount": 707,
+      "successCount": 707,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_47": {
-      "usedCount": 492,
-      "successCount": 492,
-      "lastValidated": 1772017459678
+      "usedCount": 493,
+      "successCount": 493,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_48": {
-      "usedCount": 267,
-      "successCount": 267,
-      "lastValidated": 1772017574113
+      "usedCount": 268,
+      "successCount": 268,
+      "lastValidated": 1772017632710
     },
     "reasoningPrinciple_49": {
-      "usedCount": 481,
-      "successCount": 481,
-      "lastValidated": 1772017459678
+      "usedCount": 482,
+      "successCount": 482,
+      "lastValidated": 1772017632710
     },
     "responsePattern_2": {
       "usedCount": 1,
