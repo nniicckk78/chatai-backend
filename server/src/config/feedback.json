@@ -11554,7 +11554,7 @@
           {
             "date": "2026-01-19T21:24:03.646Z",
             "description": "Spam ab 17.01: Dein Profil macht mich wirklich scharf und ich hätte Lust dich heute Abend noch zu treffen. Wir könnten ja in einer Bar was trinken gehen bevor wir zu mir gehen? Dann kann ich in der Bar schonmal ein wenig antasten ob du mir auch so scharf findest unterm tisch in deiner Hose. Wär schön wenn du dich zeitnah melden könntest, damit ich notfalls noch weiter nach einem anderen Date schauen kann.",
-            "text": "Spam ab 17.01: Dein Profil macht mich wirklich scharf und ich hätte Lust dich heute Abend noch zu treffen. Wir könnten ja in einer Bar was trinken gehen bevor wir zu mir gehen? Dann kann ich in der Bar schonmal ein wenig antasten ob du mir auch so scharf findest unterm tisch in deiner Hose. W��������r schön wenn du dich zeitnah melden k����nntest, damit ich notfalls noch weiter nach einem anderen Date schauen kann.",
+            "text": "Spam ab 17.01: Dein Profil macht mich wirklich scharf und ich hätte Lust dich heute Abend noch zu treffen. Wir könnten ja in einer Bar was trinken gehen bevor wir zu mir gehen? Dann kann ich in der Bar schonmal ein wenig antasten ob du mir auch so scharf findest unterm tisch in deiner Hose. W������r schön wenn du dich zeitnah melden k����nntest, damit ich notfalls noch weiter nach einem anderen Date schauen kann.",
             "fixed": true,
             "moderatorId": "19940"
           }
@@ -17976,7 +17976,7 @@
       "context": {
         "detectedSituations": [
           "Bot-Vorwurf",
-          "Kontaktdaten au��������������������������erhalb der Plattform",
+          "Kontaktdaten au������������������������erhalb der Plattform",
           "Sexuelle Themen",
           "Wonach suchst du?",
           "Bilder Anfrage",
@@ -41286,24 +41286,28 @@
       "updatedAt": "2026-02-25T12:22:49.771Z"
     },
     {
-      "id": "feedback_1772022366723_shvm45tv2",
-      "chatId": "00000000",
-      "customerMessage": "Erstnachricht (keine Kundennachricht)",
-      "aiResponse": "Hey, na du? Freut mich, dass du schreibst. Ich bin gerade zu Hause und geniesse den Nachmittag, vielleicht mit einem Kaffee. Was machst du heute so Schönes? Erzähl mal! 😊",
+      "id": "feedback_1772022439075_2g66alfo9",
+      "chatId": "38851375",
+      "customerMessage": "Mit Sicherheit kann einiges mit mir abgehen, auch im Bett natürlich!! Ich bin ein lieber, treuer und ehrlicher Mann, am Anfang vielleicht noch ein bisschen schüchtern, aber dann taue ich immer mehr und mehr auf",
+      "aiResponse": "Das klingt ja flexibel bei dir! Ich finde es spannend, dass du am Anfang schüchtern bist, aber dann richtig aufblühst. Das macht die Sache aufregend! Wie stellst du dir das denn vor, wenn es im Bett richtig zur Sache geht? 😏",
       "editedResponse": null,
       "status": "pending",
-      "platform": "viluu",
+      "platform": "fpc",
       "isASA": false,
       "usedExampleIds": [],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "Sexuelle Themen",
+          "Wonach suchst du?"
+        ],
         "mood": "neutral",
         "style": "neutral",
-        "topic": "allgemein"
+        "topic": "allgemein",
+        "lastModeratorMessage": "Dann schauen wir wohl einfach was sich daraus entwickeln kann und ich schätze mal das bestimmt einiges mit dir abgehen kann? Wie schätzt du dich denn selbst als Person ein?"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-02-25T12:26:06.723Z",
-      "updatedAt": "2026-02-25T12:26:06.723Z"
+      "lastModeratorMessage": "Dann schauen wir wohl einfach was sich daraus entwickeln kann und ich schätze mal das bestimmt einiges mit dir abgehen kann? Wie schätzt du dich denn selbst als Person ein?",
+      "timestamp": "2026-02-25T12:27:19.075Z",
+      "updatedAt": "2026-02-25T12:27:19.075Z"
     }
   ]
 }
