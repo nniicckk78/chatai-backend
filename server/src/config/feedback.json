@@ -42602,6 +42602,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-26T11:51:59.982Z",
       "updatedAt": "2026-02-26T11:51:59.982Z"
+    },
+    {
+      "id": "feedback_1772106731738_tq288i9nu",
+      "chatId": "Fri Dec 19 2025 17:11:20 GMT+0100 (Mitteleuropäische Normalzeit)-Nächste Wo",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke mal weil du mir gerade nicht schreibst bist du einfach zu beschäftigt oder? Kannst dich ja gerne mal bei mir melden wenn du mal kurz Zeit hast. Würde mich echt sehr freuen.",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke mal weil du mir gerade nicht schreibst bist du einfach zu beschäftigt oder? Kannst dich ja gerne mal bei mir melden wenn du mal kurz Zeit hast. Würde mich echt sehr freuen."
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Danke mir geht es soweit gut. Wie geht es dir? Was machst du denn heute noch so?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-26T11:52:11.738Z",
+      "updatedAt": "2026-02-26T11:52:11.738Z"
     }
   ]
 }
