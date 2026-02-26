@@ -4121,7 +4121,7 @@
       "platform": "fpc",
       "isASA": true,
       "usedExampleIds": [
-        "ASA Reaktivierung|Wo bist du denn hin verschwunden? Ich finde dich eigentlich echt richtig gut und würde mich freuen wenn wir mit dem kennenlernen weiter machen könnten. Oder bist du nichtmehr an mir interessiert?"
+        "ASA Reaktivierung|Wo bist du denn hin verschwunden? Ich finde dich eigentlich echt richtig gut und w��rde mich freuen wenn wir mit dem kennenlernen weiter machen könnten. Oder bist du nichtmehr an mir interessiert?"
       ],
       "context": {
         "detectedSituations": [
@@ -42886,6 +42886,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-26T13:47:26.092Z",
       "updatedAt": "2026-02-26T13:47:26.092Z"
+    },
+    {
+      "id": "feedback_1772113728794_rcd9zqqma",
+      "chatId": "2934878:2009:6712:326",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich musste gerade an dich denken und hab mich gefragt, warum du dich nicht mehr bei mir meldest? Hast du inzwischen schon jemand anderen gefunden oder stehst du einfach nicht auf Spass?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich musste gerade an dich denken und hab mich gefragt, warum du dich nicht mehr bei mir meldest? Hast du inzwischen schon jemand anderen gefunden oder stehst du einfach nicht auf Spass?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hey Jörg, alles klaro bei dir? Was stellst du denn jetzt heut so an mit dem Tag?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-26T13:48:48.794Z",
+      "updatedAt": "2026-02-26T13:48:48.794Z"
     }
   ]
 }
