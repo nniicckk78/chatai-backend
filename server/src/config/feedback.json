@@ -43461,6 +43461,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-26T14:56:48.733Z",
       "updatedAt": "2026-02-26T14:56:48.733Z"
+    },
+    {
+      "id": "feedback_1772117872903_c2yfkn6hi",
+      "chatId": "vlem7jcW5YD76JfUMKJc",
+      "customerMessage": "Das hast du mir geschrieben, entschuldige, also kommst du noch.",
+      "aiResponse": "Es tut mir leid, Wolfgang, wenn da ein Missverständnis entstanden ist. 15 Uhr war nicht ausgemacht und heute schaffe ich es definitiv nicht mehr, ich habe hier noch viel zu erledigen. Was steht denn noch auf deiner To Do Liste für heute?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "avz",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Treffen/Termine"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Wer hat denn schon um 15:00 Uhr Feierabend? Das hab ich doch nie behauptet oder wie meinst du das?"
+      },
+      "lastModeratorMessage": "Wer hat denn schon um 15:00 Uhr Feierabend? Das hab ich doch nie behauptet oder wie meinst du das?",
+      "timestamp": "2026-02-26T14:57:52.903Z",
+      "updatedAt": "2026-02-26T14:57:52.903Z"
     }
   ]
 }
