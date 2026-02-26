@@ -43673,6 +43673,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-26T15:12:06.195Z",
       "updatedAt": "2026-02-26T15:12:06.195Z"
+    },
+    {
+      "id": "feedback_1772118732578_awfih09tm",
+      "chatId": "38848461",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey na, hoffe bei dir ist auch alles in Ordnung, wo treibst du dich gerade so rum? Würde mich freuen wieder von dir zu hören, was machst du gerade so?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey na, hoffe bei dir ist auch alles in Ordnung, wo treibst du dich gerade so rum? Würde mich freuen wieder von dir zu hören, was machst du gerade so?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "vielen Dank für das Kompliment, das freut mich wirklich sehr! Darf ich dich denn auch mal fragen was dir denn so gut an mir gefällt? ich finde es nämlich immer sehr schön wenn man direkt und ehrlich ist."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-26T15:12:12.578Z",
+      "updatedAt": "2026-02-26T15:12:12.578Z"
     }
   ]
 }
