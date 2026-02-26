@@ -42132,6 +42132,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-26T10:13:06.486Z",
       "updatedAt": "2026-02-26T10:13:06.486Z"
+    },
+    {
+      "id": "feedback_1772100871374_eo56yb8ck",
+      "chatId": "38181840",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich würde mich echt freuen, wenn du dich kurz bei mir melden könntest. Ich brauche gerade echt jemanden zum Reden. Mir ist gerade sowas komisches passiert. Ich kann es gar nicht richtig begreifen. Hast du kurz Zeit?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich würde mich echt freuen, wenn du dich kurz bei mir melden könntest. Ich brauche gerade echt jemanden zum Reden. Mir ist gerade sowas komisches passiert. Ich kann es gar nicht richtig begreifen. Hast du kurz Zeit?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Guten Morgen, ja ich konnte nicht mehr schlafen und der Kaffe Durst der war so gross, dass ich dann einfach aufstehen musste weisst du? Dann wünsche ich dir einen stress freien Arbeitstag, lass dich nicht ärgern ja?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-26T10:14:31.374Z",
+      "updatedAt": "2026-02-26T10:14:31.374Z"
     }
   ]
 }
