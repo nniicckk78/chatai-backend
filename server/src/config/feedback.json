@@ -4121,7 +4121,7 @@
       "platform": "fpc",
       "isASA": true,
       "usedExampleIds": [
-        "ASA Reaktivierung|Wo bist du denn hin verschwunden? Ich finde dich eigentlich echt richtig gut und würde mich freuen wenn wir mit dem kennenlernen weiter machen könnten. Oder bist du nichtmehr an mir interessiert?"
+        "ASA Reaktivierung|Wo bist du denn hin verschwunden? Ich finde dich eigentlich echt richtig gut und w��rde mich freuen wenn wir mit dem kennenlernen weiter machen könnten. Oder bist du nichtmehr an mir interessiert?"
       ],
       "context": {
         "detectedSituations": [
@@ -34516,7 +34516,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Hast du denn nun auch mal Zeit für mich? Lässt mich ja ganz schön schmoren 🫣."
+        "lastModeratorMessage": "Hast du denn nun auch mal Zeit f��r mich? Lässt mich ja ganz schön schmoren 🫣."
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-02-18T14:45:06.445Z",
@@ -43315,6 +43315,31 @@
       "lastModeratorMessage": "Das macht mich jetzt aber heiss, also du willst mich ganz mit Küssen bedecken?",
       "timestamp": "2026-02-26T14:40:00.356Z",
       "updatedAt": "2026-02-26T14:40:00.356Z"
+    },
+    {
+      "id": "feedback_1772116844724_i6xgy2836",
+      "chatId": "37143994",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Muss ich jetzt schon bei der Polizei eine Vermisstenanzeige einreichen oder meldest du dich jetzt mal wieder bei mir? Ich würde es schon cool finden wenn du mir wenigstens sagen würdest was ich falsch gemacht habe? Oder warum meldest du dich nicht mehr bei mir?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Muss ich jetzt schon bei der Polizei eine Vermisstenanzeige einreichen oder meldest du dich jetzt mal wieder bei mir? Ich würde es schon cool finden wenn du mir wenigstens sagen würdest was ich falsch gemacht habe? Oder warum meldest du dich nicht mehr bei mir?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Na ja ich möchte einfach nicht direkt mit der Tür ins Haus fallen😊. Eine Freundin von mir war kürzlich in einem Swingerclub😉. Wäre das was für dich?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-26T14:40:44.724Z",
+      "updatedAt": "2026-02-26T14:40:44.724Z"
     }
   ]
 }
