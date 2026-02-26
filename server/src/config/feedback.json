@@ -42955,6 +42955,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-02-26T14:01:00.523Z",
       "updatedAt": "2026-02-26T14:01:00.523Z"
+    },
+    {
+      "id": "feedback_1772114474320_ublqf046m",
+      "chatId": "2929240:2000:39431:40731",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich habe heute schon den ganzen Tag ganz komische Gedanken... Ich habe aber gerade niemanden dem ich es erzählen kann weil es irgendwie komisch ist, möchtest du es vielleicht wissen?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich habe heute schon den ganzen Tag ganz komische Gedanken... Ich habe aber gerade niemanden dem ich es erzählen kann weil es irgendwie komisch ist, möchtest du es vielleicht wissen?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hallo mein lieber Christoph ich wünsche dir einen schönen Mittwoch. Wie geht's dir denn?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-26T14:01:14.320Z",
+      "updatedAt": "2026-02-26T14:01:14.320Z"
     }
   ]
 }
