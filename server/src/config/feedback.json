@@ -27610,7 +27610,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Heyyy du darfst ruhig mal Hallo sagen wenn wir schon sozusagen \"Nachbarn\" sind🌞����müssen wir Frauen wieder mal alles alleine machen? 😅 Ich bin Sophie, ziemlich offen für eine ganze Menge (aber nicht alles) und noch relativ neu hier. Meistens bin ich gut drauf und wenn nicht, muss man mir einfach was zum essen geben 😜 Ich stehe ein bisschen auf Ältere und ich hoffe jetzt, ich bin nicht zu jung für dich. Kanst es ruhig sagen wenn es so ist. Bin ich dir zu jung? Oder wollen wir es mal miteinander probieren? 😜"
+        "lastModeratorMessage": "Heyyy du darfst ruhig mal Hallo sagen wenn wir schon sozusagen \"Nachbarn\" sind🌞����müssen wir Frauen wieder mal alles alleine machen? 😅 Ich bin Sophie, ziemlich offen für eine ganze Menge (aber nicht alles) und noch relativ neu hier. Meistens bin ich gut drauf und wenn nicht, muss man mir einfach was zum essen geben 😜 Ich stehe ein bisschen auf ��ltere und ich hoffe jetzt, ich bin nicht zu jung für dich. Kanst es ruhig sagen wenn es so ist. Bin ich dir zu jung? Oder wollen wir es mal miteinander probieren? 😜"
       },
       "lastModeratorMessage": "Heyyy du darfst ruhig mal Hallo sagen wenn wir schon sozusagen \"Nachbarn\" sind����👍müssen wir Frauen wieder mal alles alleine machen? 😅 Ich bin Sophie, ziemlich offen für eine ganze Menge (aber nicht alles) und noch relativ neu hier. Meistens bin ich gut drauf und wenn nicht, muss man mir einfach was zum essen geben 😜 Ich stehe ein bisschen auf Ältere und ich hoffe jetzt, ich bin nicht zu jung für dich. Kanst es ruhig sagen wenn es so ist. Bin ich dir zu jung? Oder wollen wir es mal miteinander probieren? 😜",
       "timestamp": "2026-02-12T19:52:08.094Z",
@@ -28412,7 +28412,7 @@
       "platform": "iluvo",
       "isASA": true,
       "usedExampleIds": [
-        "ASA Reaktivierung|Ganz ehrlich es ist echt schade dass du dich nicht meldest. Ich bin gerade in genau der Stimmung, in der man mich lieber nicht ignorieren sollte. Oder traust du dich einfach nicht?😏"
+        "ASA Reaktivierung|Ganz ehrlich es ist echt schade dass du dich nicht meldest. Ich bin gerade in genau der Stimmung, in der man mich lieber nicht ignorieren sollte. Oder traust du dich einfach nicht?��"
       ],
       "context": {
         "detectedSituations": [
@@ -42838,6 +42838,31 @@
       "lastModeratorMessage": "Wenn es passt, dann ist es auch was schönes. Das stellen wir ja auch sicher noch fest. Bist du denn schon lange alleine? Kuss Illyana",
       "timestamp": "2026-02-26T13:36:02.326Z",
       "updatedAt": "2026-02-26T13:36:02.326Z"
+    },
+    {
+      "id": "feedback_1772113067380_ce0maebw4",
+      "chatId": "2934938:1130:7872:237",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Und hast du vor mir auch mal wieder zu schreiben oder willst du mich weiterhin hier im leeren stehen lasssen? Meld dich doch mal bei mir, würde mich freuen!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Und hast du vor mir auch mal wieder zu schreiben oder willst du mich weiterhin hier im leeren stehen lasssen? Meld dich doch mal bei mir, würde mich freuen!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Wo bist du denn? Warst gestern so schnell weg, so fix konnt ich gar nicht gucken."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-26T13:37:47.380Z",
+      "updatedAt": "2026-02-26T13:37:47.380Z"
     }
   ]
 }
