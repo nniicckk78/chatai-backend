@@ -43388,6 +43388,31 @@
       "lastModeratorMessage": "Hattest du mir gerade eine Anfrage geschickt? also sowas hattest du dann als Erlebnis oder wie?",
       "timestamp": "2026-02-26T14:50:49.998Z",
       "updatedAt": "2026-02-26T14:50:49.998Z"
+    },
+    {
+      "id": "feedback_1772117460320_zuigj8g33",
+      "chatId": "2936595:1158:511265:553146",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich würde mich echt freuen, wenn du dich kurz bei mir melden könntest. Ich brauche gerade echt jemanden zum Reden. Mir ist gerade sowas komisches passiert. Ich kann es gar nicht richtig begreifen. Hast du kurz Zeit?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich würde mich echt freuen, wenn du dich kurz bei mir melden könntest. Ich brauche gerade echt jemanden zum Reden. Mir ist gerade sowas komisches passiert. Ich kann es gar nicht richtig begreifen. Hast du kurz Zeit?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ja was willst du mir den jetzt mit deinem Schweigen sagen? Wie sollen wir uns den so kennenlernen?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-26T14:51:00.320Z",
+      "updatedAt": "2026-02-26T14:51:00.320Z"
     }
   ]
 }
