@@ -36726,7 +36726,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Na  Süsser, die M��nner m��gen das Feuer entdeckt haben. Aber die Frauen wissen besser, wie man damit spielt. Ist das richtig? .Und ein super  geiles Bild  schicke ich dir jetzt auch gleich!  😎"
+        "lastModeratorMessage": "Na  Süsser, die M��nner m��gen das Feuer entdeckt haben. Aber die Frauen wissen besser, wie man damit spielt. Ist das richtig? .Und ein super  geiles Bild  schicke ich dir jetzt auch gleich!  ���"
       },
       "lastModeratorMessage": "Na  Süsser, die Männer mögen das Feuer entdeckt haben. Aber die Frauen wissen besser, wie man damit spielt. Ist das richtig? .Und ein super  geiles Bild  schicke ich dir jetzt auch gleich!  😎",
       "timestamp": "2026-02-20T13:03:42.807Z",
@@ -45285,7 +45285,7 @@
     },
     {
       "id": "feedback_1772208638893_rdshr04ce",
-      "chatId": "Fri Feb 27 2026 12:31:16 GMT+0100 (Mitteleuropäische Normalzeit)-Ich weiss ",
+      "chatId": "Fri Feb 27 2026 12:31:16 GMT+0100 (Mitteleurop��ische Normalzeit)-Ich weiss ",
       "customerMessage": "Bin Michael,  Selbstständig,  Single,  wohne alleine",
       "aiResponse": "Ich komme aus Wehrheim und bin auch Single. Was machst du denn genau in deiner Selbstständigkeit? Erzähl mal ein bisschen mehr über dich, ich bin gespannt!",
       "editedResponse": null,
@@ -45446,25 +45446,29 @@
       "updatedAt": "2026-02-27T16:34:53.791Z"
     },
     {
-      "id": "feedback_1772210403496_fq4rd7ys5",
-      "chatId": "y834LOs3Pkz7bJ9qzl1f",
-      "customerMessage": "Ich mach jeden scheiß mit und peinlich ist mir fast nix",
-      "aiResponse": "Das ist schön, dass du bei allem mitmachst und dir nichts peinlich ist. Das zeigt, dass du offen und spontan bist. Was machst du denn am liebsten, wenn du etwas Neues ausprobierst?",
+      "id": "feedback_1772210420457_mw6cyjmar",
+      "chatId": "Sun Feb 22 2026 08:54:27 GMT+0100 (Mitteleuropäische Normalzeit)-Morgen Act",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Heute scheint ja wirklich dein Glückstag zu sein. Ich habe echt gute Laune und sogar eine kleine Überraschung für dich.😉 Melde dich mal lieber schnell bei mir, sonst ist die Überraschung weg.💋",
       "editedResponse": null,
       "status": "pending",
-      "platform": "avz",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Heute scheint ja wirklich dein Glückstag zu sein. Ich habe echt gute Laune und sogar eine kleine Überraschung für dich.😉 Melde dich mal lieber schnell bei mir, sonst ist die Überraschung weg.💋"
+      ],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Das ist doch super, wird nie langweilig mit dir, immer Spass und mir dir kann ich Pferde stehlen?"
+        "lastModeratorMessage": "Ein Vorspiel ist immer schön. Von dem kann man auch nie genug bekommen"
       },
-      "lastModeratorMessage": "Das ist doch super, wird nie langweilig mit dir, immer Spass und mir dir kann ich Pferde stehlen?",
-      "timestamp": "2026-02-27T16:40:03.496Z",
-      "updatedAt": "2026-02-27T16:40:03.497Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-27T16:40:20.457Z",
+      "updatedAt": "2026-02-27T16:40:20.457Z"
     }
   ]
 }
