@@ -28504,7 +28504,7 @@
       "id": "feedback_1770986630351_9lmldiqo8",
       "chatId": "Mon Jan 26 2026 17:02:03 GMT+0100 (Mitteleuropäische Normalzeit)-Dachte ich",
       "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Hast mich anscheinend schon vergessen oder warum schreibst du mir nicht mehr? Eins kann ich dir sagen, an deiner Stelle würde ich es mir nochmal gut überlegen ob du mich hier so links liegen lässt!😉 Wenn du Spass willst bist du bei mir nämlich genau richtig.😏",
+      "aiResponse": "Hast mich anscheinend schon vergessen oder warum schreibst du mir nicht mehr? Eins kann ich dir sagen, an deiner Stelle würde ich es mir nochmal gut überlegen ob du mich hier so links liegen lässt!���� Wenn du Spass willst bist du bei mir nämlich genau richtig.😏",
       "editedResponse": "Na du wie geht's dir denn gerade so? Ich hab gedacht ich meld mich mal einfach kurz zwischendurch bei dir. Ich würde mich auch echt freuen, wenn du dich mal kurz bei mir melden könntest. Du wirst es auch nicht bereuen.😉",
       "status": "edited",
       "platform": "iluvo",
@@ -44201,6 +44201,31 @@
       "lastModeratorMessage": "okey kann ich verstehen und was machst du denn gerade so schönes?",
       "timestamp": "2026-02-26T19:58:24.457Z",
       "updatedAt": "2026-02-26T19:58:24.457Z"
+    },
+    {
+      "id": "feedback_1772188907330_r34iou56j",
+      "chatId": "2899181:1133:3660:49",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Sag mal, hast du keine Lust mehr oder traust du dich nicht mir zu antworten? Wäre schade, denn ich hatte da noch so eine kleine Idee wie wir beide ein wenig Schwung rein bekommen könnten, willst du sie hören?😏",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Sag mal, hast du keine Lust mehr oder traust du dich nicht mir zu antworten? Wäre schade, denn ich hatte da noch so eine kleine Idee wie wir beide ein wenig Schwung rein bekommen könnten, willst du sie hören?😏"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Na wie soll ich das denn machen wenn du nicht da bist? Du lässt ja immer ganz schön lange auf dich warten."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-27T10:41:47.330Z",
+      "updatedAt": "2026-02-27T10:41:47.330Z"
     }
   ]
 }
