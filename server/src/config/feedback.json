@@ -40554,7 +40554,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Was sagst du denn jetzt zu meiner ersten nachricht? Hast du sie dir durchgelesen? wenn du wirklich interesse an mir hast dann kannst du auch mal ein bisschen was von dir erzählen? Worauf stehst du den zum Beispiel und wohnst du alleine? 😊"
+        "lastModeratorMessage": "Was sagst du denn jetzt zu meiner ersten nachricht? Hast du sie dir durchgelesen? wenn du wirklich interesse an mir hast dann kannst du auch mal ein bisschen was von dir erzählen? Worauf stehst du den zum Beispiel und wohnst du alleine? ����"
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-02-24T12:48:05.363Z",
@@ -44613,27 +44613,29 @@
       "updatedAt": "2026-02-27T11:51:34.107Z"
     },
     {
-      "id": "feedback_1772194359670_y08mjoa23",
-      "chatId": "Sun Feb 08 2026 15:02:59 GMT+0100 (Mitteleuropäische Normalzeit)-Ich weiß j",
-      "customerMessage": "Ich bin geil auf dich 😍",
-      "aiResponse": "Oh Gerhard, das hört sich gut an, macht mich auch total geil auf dich 😍 Ich kann mir richtig vorstellen, wie du mich nimmst, bevor du zur Nachtschicht gehst. Was würdest du denn mit mir machen, um deine Energie richtig zu tanken? 😏",
+      "id": "feedback_1772194385125_jortcnih2",
+      "chatId": "2937852:1130:9666:27630",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Wo steckst du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so überfüllt das meine Nachrichten schon gar nicht mehr bei dir angezeigt werden? Ich hätte da mal eine echt wichtige Frage an dich?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "iluvo",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Wo steckst du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so überfüllt das meine Nachrichten schon gar nicht mehr bei dir angezeigt werden? Ich hätte da mal eine echt wichtige Frage an dich?"
+      ],
       "context": {
         "detectedSituations": [
-          "Sexuelle Themen"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Gerhard was machst du jetzt? Hast du gut geschlafen oder? Bist du fit?"
+        "lastModeratorMessage": "Und was machst du denn so schönes in Innsbruck? Was hast du denn heute so vor oder allgemein? Was hast du für das Wochenende so geplant? 😚"
       },
-      "lastModeratorMessage": "Gerhard was machst du jetzt? Hast du gut geschlafen oder? Bist du fit?",
-      "timestamp": "2026-02-27T12:12:39.670Z",
-      "updatedAt": "2026-02-27T12:12:39.670Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-27T12:13:05.125Z",
+      "updatedAt": "2026-02-27T12:13:05.125Z"
     }
   ]
 }
