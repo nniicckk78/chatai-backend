@@ -44820,6 +44820,31 @@
       "lastModeratorMessage": "Wie toll! Dann machst du ja richtig was für dich? Kann leider doch nicht so spontan sein wie ich gerne wäre. Du kannst doch bestimmt auch an einem anderen Tag? Würde mich freuen.",
       "timestamp": "2026-02-27T12:43:45.515Z",
       "updatedAt": "2026-02-27T12:43:45.515Z"
+    },
+    {
+      "id": "feedback_1772196233471_nb1p19dsz",
+      "chatId": "38760728",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Muss ich jetzt schon bei der Polizei eine Vermisstenanzeige einreichen oder meldest du dich jetzt mal wieder bei mir? Ich würde es schon cool finden wenn du mir wenigstens sagen würdest was ich falsch gemacht habe? Oder warum meldest du dich nicht mehr bei mir?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Muss ich jetzt schon bei der Polizei eine Vermisstenanzeige einreichen oder meldest du dich jetzt mal wieder bei mir? Ich würde es schon cool finden wenn du mir wenigstens sagen würdest was ich falsch gemacht habe? Oder warum meldest du dich nicht mehr bei mir?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Das ist lieb von dir. Ich freue mich immer, wenn du dich meldest. Das versüßt mir den Tag"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-27T12:43:53.471Z",
+      "updatedAt": "2026-02-27T12:43:53.471Z"
     }
   ]
 }
