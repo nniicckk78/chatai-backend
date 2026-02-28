@@ -45887,27 +45887,29 @@
       "updatedAt": "2026-02-28T11:35:43.147Z"
     },
     {
-      "id": "feedback_1772278853196_awcuvb9yc",
-      "chatId": "2939193:1130:9688:27633",
-      "customerMessage": "ich lebe hier seit 1986 und bin zum Studium hergekommen und hier geblieben",
-      "aiResponse": "Wow, seit 1986, das sind ja schon viele Jahre! Zum Studium hergekommen und dann einfach geblieben, das kann ich gut nachvollziehen. Was hast du denn damals studiert? 😊",
+      "id": "feedback_1772278872446_x2l0pc10d",
+      "chatId": "Wed Feb 11 2026 18:12:44 GMT+0100 (Mitteleuropäische Normalzeit)-Nein habe ",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Heute scheint ja wirklich dein Glückstag zu sein. Ich habe echt gute Laune und sogar eine kleine Überraschung für dich.😉 Melde dich mal lieber schnell bei mir, sonst ist die Überraschung weg.💋",
       "editedResponse": null,
       "status": "pending",
-      "platform": "df",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Heute scheint ja wirklich dein Glückstag zu sein. Ich habe echt gute Laune und sogar eine kleine Überraschung für dich.😉 Melde dich mal lieber schnell bei mir, sonst ist die Überraschung weg.💋"
+      ],
       "context": {
         "detectedSituations": [
-          "Wohnort-Frage"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Okay, das ist ja schon mal gut zu wissen. Wie lange wohnst du denn hier schon in Berlin? Und magst du hier? 🙂"
+        "lastModeratorMessage": "Aber warum sollte ich denn ohne Höschen kommen? Dass verstehe ich nicht.🤣"
       },
-      "lastModeratorMessage": "Okay, das ist ja schon mal gut zu wissen. Wie lange wohnst du denn hier schon in Berlin? Und magst du hier? 🙂",
-      "timestamp": "2026-02-28T11:40:53.196Z",
-      "updatedAt": "2026-02-28T11:40:53.196Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-02-28T11:41:12.446Z",
+      "updatedAt": "2026-02-28T11:41:12.446Z"
     }
   ]
 }
