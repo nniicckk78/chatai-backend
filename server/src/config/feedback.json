@@ -25273,7 +25273,7 @@
       "platform": "iluvo",
       "isASA": true,
       "usedExampleIds": [
-        "ASA Reaktivierung|Was habe ich gemacht das du dich nicht mehr bei mir meldest? Sei doch wenigstens mal ein richtiger Mann und gib mir Bescheid was los ist? Lass mich hier nicht einfach so links stehen!😕"
+        "ASA Reaktivierung|Was habe ich gemacht das du dich nicht mehr bei mir meldest? Sei doch wenigstens mal ein richtiger Mann und gib mir Bescheid was los ist? Lass mich hier nicht einfach so links stehen!����"
       ],
       "context": {
         "detectedSituations": [
@@ -46970,24 +46970,29 @@
       "updatedAt": "2026-02-28T14:41:59.231Z"
     },
     {
-      "id": "feedback_1772290021714_ar58r1cg9",
-      "chatId": "38915886",
-      "customerMessage": "Ich bin nicht dagegen",
-      "aiResponse": "Hey, cool, dass du offen für die Idee bist, das freut mich. Ich bin neugierig, was du dir da vorstellst. Was würde dir denn am besten gefallen?",
+      "id": "feedback_1772290041495_mthwzka4e",
+      "chatId": "Sun Jan 25 2026 11:37:05 GMT+0100 (Mitteleuropäische Normalzeit)-Hallihallo",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke weil du dich gerade nicht bei mir meldest, liegt es bestimmt daran das du gerade viel um du Ohren hast oder? Meld dich gerne wenn du wieder Zeit hast",
       "editedResponse": null,
       "status": "pending",
-      "platform": "fpc",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "iluvo",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke weil du dich gerade nicht bei mir meldest, liegt es bestimmt daran das du gerade viel um du Ohren hast oder? Meld dich gerne wenn du wieder Zeit hast"
+      ],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
         "mood": "neutral",
         "style": "neutral",
-        "topic": "allgemein"
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hi schade das du dich nicht mehr meldest, willst du mich nicht mehr kenenlernß"
       },
       "lastModeratorMessage": null,
-      "timestamp": "2026-02-28T14:47:01.714Z",
-      "updatedAt": "2026-02-28T14:47:01.714Z"
+      "timestamp": "2026-02-28T14:47:21.495Z",
+      "updatedAt": "2026-02-28T14:47:21.495Z"
     }
   ]
 }
