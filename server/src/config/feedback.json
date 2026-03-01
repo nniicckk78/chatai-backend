@@ -12668,7 +12668,7 @@
       "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "Kontaktdaten außerhalb der Plattform",
+          "Kontaktdaten au��erhalb der Plattform",
           "Bilder Anfrage"
         ],
         "mood": "neutral",
@@ -47710,27 +47710,29 @@
       "updatedAt": "2026-03-01T11:54:40.573Z"
     },
     {
-      "id": "feedback_1772366149950_db5uyx6ig",
-      "chatId": "DSc1vqSQ7sZI8h9CFqJe",
-      "customerMessage": "Nein ich warte auf dich. Ich warte auf dich",
-      "aiResponse": "Das ist echt süss von dir, dass du auf mich wartest. Ich finde Geduld total anziehend. Ich geb dir Bescheid, wenn ich Zeit für uns hab. Was würdest du denn als erstes mit mir machen, wenn es klappt?",
+      "id": "feedback_1772366166652_bm885o5ua",
+      "chatId": "2940951:1158:504495:553162",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke weil du dich gerade nicht bei mir meldest, liegt es bestimmt daran das du gerade viel um du Ohren hast oder? Meld dich gerne wenn du wieder Zeit hast",
       "editedResponse": null,
       "status": "pending",
-      "platform": "avz",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke weil du dich gerade nicht bei mir meldest, liegt es bestimmt daran das du gerade viel um du Ohren hast oder? Meld dich gerne wenn du wieder Zeit hast"
+      ],
       "context": {
         "detectedSituations": [
-          "Romantik / Verliebtheit"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Freue mich auf einen geilen Fick mit dir und würde dir noch bescheid geben wie ich Zeit für uns habe. Hast du heute schon selbst Hand anlegen können?"
+        "lastModeratorMessage": "Sorry das habe ich nicht gesehen. Ich bin noch ziemlich neu hier und kenne mich noch nicht so richtig aus."
       },
-      "lastModeratorMessage": "Freue mich auf einen geilen Fick mit dir und würde dir noch bescheid geben wie ich Zeit für uns habe. Hast du heute schon selbst Hand anlegen können?",
-      "timestamp": "2026-03-01T11:55:49.950Z",
-      "updatedAt": "2026-03-01T11:55:49.950Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-01T11:56:06.652Z",
+      "updatedAt": "2026-03-01T11:56:06.652Z"
     }
   ]
 }
