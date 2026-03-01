@@ -29900,7 +29900,7 @@
       "id": "feedback_1771068965954_ymtju9llb",
       "chatId": "38648572",
       "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Oh wie s��ss, das freut mich! Was machst du so an diesem kalten Samstag? Hast du vielleicht etwas Spannendes f��r das Wochenende geplant? Wie geht es dir denn so?",
+      "aiResponse": "Oh wie süss, das freut mich! Was machst du so an diesem kalten Samstag? Hast du vielleicht etwas Spannendes f��r das Wochenende geplant? Wie geht es dir denn so?",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
@@ -35287,7 +35287,7 @@
       "id": "feedback_1771503182373_yzq9rkn0m",
       "chatId": "00000000",
       "customerMessage": "Erstnachricht (keine Kundennachricht)",
-      "aiResponse": "Hey, na, wie läuft's bei dir so? Ich häng grad hier rum, Donnerstag Nachmittag und nix los. Erz��hl mal, was machst du heute?",
+      "aiResponse": "Hey, na, wie läuft's bei dir so? Ich häng grad hier rum, Donnerstag Nachmittag und nix los. Erzähl mal, was machst du heute?",
       "editedResponse": null,
       "status": "pending",
       "platform": "viluu",
@@ -47929,28 +47929,29 @@
       "updatedAt": "2026-03-01T12:25:42.480Z"
     },
     {
-      "id": "feedback_1772368092628_6slb2oh37",
-      "chatId": "JmZFtv3qk1NkMf8Xmmif",
-      "customerMessage": "Wenn du das machen möchtest würde ich das gerne mal erleben ! Hatte ich noch nicht! 🤗",
-      "aiResponse": "Oh super, dass du das ausprobieren willst! Ich kann mir vorstellen, dass dich eine Prostatamassage total anmacht. Ich würde dich damit fingern und massieren, bis du richtig stöhnst, stell ich mir aufregend vor. Was reizt dich am meisten an dieser neuen Erfahrung?",
+      "id": "feedback_1772368243146_28asmmhb8",
+      "chatId": "2935247:2000:44551:27107",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich musste gerade an dich denken und hab mich gefragt, warum du dich nicht mehr bei mir meldest? Hast du inzwischen schon jemand anderen gefunden oder stehst du einfach nicht auf Spass?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "avz",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich musste gerade an dich denken und hab mich gefragt, warum du dich nicht mehr bei mir meldest? Hast du inzwischen schon jemand anderen gefunden oder stehst du einfach nicht auf Spass?"
+      ],
       "context": {
         "detectedSituations": [
-          "Treffen/Termine",
-          "Sexuelle Themen"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Ich würde dir gerne eine Prostatamassage verschaffen. Mal gucken, wie du das findest. Erlaubst du mir?"
+        "lastModeratorMessage": "Ich hoffe, die Pollen quälen dich nicht mehr so stark. Hast du denn noch etwas gefunden, das dir hilft? Dein Garten in Ratingen wartet doch bestimmt schon auf dich, oder?"
       },
-      "lastModeratorMessage": "Ich würde dir gerne eine Prostatamassage verschaffen. Mal gucken, wie du das findest. Erlaubst du mir?",
-      "timestamp": "2026-03-01T12:28:12.628Z",
-      "updatedAt": "2026-03-01T12:28:12.628Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-01T12:30:43.146Z",
+      "updatedAt": "2026-03-01T12:30:43.146Z"
     }
   ]
 }
