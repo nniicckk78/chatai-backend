@@ -12668,7 +12668,7 @@
       "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "Kontaktdaten außerhalb der Plattform",
+          "Kontaktdaten au��erhalb der Plattform",
           "Bilder Anfrage"
         ],
         "mood": "neutral",
@@ -20807,7 +20807,7 @@
           "rawText": "- Name: \n- Alter: \n- Status: \n- Wohnsituation: \n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos: \n- Gesundheit: \n- Sucht: \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen: \n- Auto: \n- Eltern: \n_______________________\n- Musik: \n- Filme: \n- Essen: \n- Trinken: \n_______________________\n- was mag: \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
         },
         "moderatorNotes": {
-          "rawText": "- Name: \n- Alter: \n- Status: \n- Wohnsituation: \n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos: \n- Gesundheit: \n- Sucht: \n- Grö��e / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen: \n- Auto: \n- Eltern: \n_______________________\n- Musik: \n- Filme: \n- Essen: \n- Trinken: \n_______________________\n- was mag: \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+          "rawText": "- Name: \n- Alter: \n- Status: \n- Wohnsituation: \n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos: \n- Gesundheit: \n- Sucht: \n- Größe / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen: \n- Auto: \n- Eltern: \n_______________________\n- Musik: \n- Filme: \n- Essen: \n- Trinken: \n_______________________\n- was mag: \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
         },
         "customerUpdates": [
           {
@@ -47710,29 +47710,27 @@
       "updatedAt": "2026-03-01T11:54:40.573Z"
     },
     {
-      "id": "feedback_1772366262369_32d38qryo",
-      "chatId": "2932657:1158:537520:553139",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Ich mag es echt gar nicht wenn man mich warten lässt. Was machst du denn gerade? Ich würde mich schon freuen wenn du dich mal regelmäßiger bei mir melden würdest. Oder gehen meine Nachrichten in deinem vollen Postfach unter?🥲",
+      "id": "feedback_1772366307260_7rqv5pmac",
+      "chatId": "wSUUoisqahMFnxOAPmV8",
+      "customerMessage": "Ich möchte gerne wissen  was für ein Club,weil ich möchte nicht da aussehen wie eine weiße Krähe!!",
+      "aiResponse": "Ich hab noch keinen festen Club im Sinn, vielleicht so einen mit cooler Musik, wo man richtig abgehen kann. Was ziehst du denn normalerweise an, wenn du clubben gehst? Eher schick oder lässig?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "df",
-      "isASA": true,
-      "usedExampleIds": [
-        "ASA Reaktivierung|Ich mag es echt gar nicht wenn man mich warten lässt. Was machst du denn gerade? Ich würde mich schon freuen wenn du dich mal regelmäßiger bei mir melden würdest. Oder gehen meine Nachrichten in deinem vollen Postfach unter?🥲"
-      ],
+      "platform": "avz",
+      "isASA": false,
+      "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "ASA Reaktivierung"
+          "Was willst du wissen?"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Hallo und einen schönen guten Morgen erst einmal. Nein bis jetzt bin ich noch nicht dazu gekommen. Wie geht es dir denn?"
+        "lastModeratorMessage": "Ja mal schauen wen wir da alles so haben. Oder ist das absolut nichts für dich? Möchte jetzt auch nichts machen was du nicht magst."
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-03-01T11:57:42.369Z",
-      "updatedAt": "2026-03-01T11:57:42.369Z"
+      "lastModeratorMessage": "Ja mal schauen wen wir da alles so haben. Oder ist das absolut nichts für dich? Möchte jetzt auch nichts machen was du nicht magst.",
+      "timestamp": "2026-03-01T11:58:27.261Z",
+      "updatedAt": "2026-03-01T11:58:27.261Z"
     }
   ]
 }
