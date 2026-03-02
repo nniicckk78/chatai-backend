@@ -49371,6 +49371,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-02T10:37:06.396Z",
       "updatedAt": "2026-03-02T10:37:06.396Z"
+    },
+    {
+      "id": "feedback_1772447893423_7vf1pkoro",
+      "chatId": "38912610",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Oh wie süss, vielen Dank für deinen Kuss! Wie läuft dein Tag bisher? Hast du heute schon etwas Besonderes gemacht oder steht noch etwas Spannendes an?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Du mit deinem Kuss bist du mir ja direkt ans Herz gesprungen, wie war dein Wochenende so?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-02T10:38:13.423Z",
+      "updatedAt": "2026-03-02T10:38:13.423Z"
     }
   ]
 }
