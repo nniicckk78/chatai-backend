@@ -42958,7 +42958,7 @@
       "id": "feedback_1772114942678_i59g7msd7",
       "chatId": "2936903:1158:299546:553143",
       "customerMessage": "Frag… hab kurz Pause 😉",
-      "aiResponse": "Klingt gut! Ich bin gespannt, wie du dir unseren Spaziergang vorstellst. Soll es entspannt durch die Natur gehen oder darf es auch ein bisschen Action sein? Erzähl mal 😊",
+      "aiResponse": "Klingt gut! Ich bin gespannt, wie du dir unseren Spaziergang vorstellst. Soll es entspannt durch die Natur gehen oder darf es auch ein bisschen Action sein? Erzähl mal ���",
       "editedResponse": null,
       "status": "pending",
       "platform": "df",
@@ -50171,6 +50171,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-02T13:42:13.958Z",
       "updatedAt": "2026-03-02T13:42:13.958Z"
+    },
+    {
+      "id": "feedback_1772459494680_tqumsqtwi",
+      "chatId": "2939727:1158:542119:553158",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Und hast du vor mir auch mal wieder zu schreiben oder willst du mich weiterhin hier im leeren stehen lasssen? Meld dich doch mal bei mir, würde mich freuen!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Und hast du vor mir auch mal wieder zu schreiben oder willst du mich weiterhin hier im leeren stehen lasssen? Meld dich doch mal bei mir, würde mich freuen!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Na und konnte ich denn jetzt ein bisschen Licht ins dunkle bringen oder hast du noch weitere fragen, was meinen status angeht"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-02T13:51:34.680Z",
+      "updatedAt": "2026-03-02T13:51:34.680Z"
     }
   ]
 }
