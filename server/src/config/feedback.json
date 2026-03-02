@@ -28260,7 +28260,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Danke f��r das Küsschen, aber schweigen ist Silber und Reden ist gold?!"
+        "lastModeratorMessage": "Danke für das Küsschen, aber schweigen ist Silber und Reden ist gold?!"
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-02-13T11:44:10.262Z",
@@ -49987,27 +49987,29 @@
       "updatedAt": "2026-03-02T12:24:12.752Z"
     },
     {
-      "id": "feedback_1772454395549_amkfim5b2",
-      "chatId": "38952650",
-      "customerMessage": "ich steh halt auf ältere männer",
-      "aiResponse": "Versteh ich voll, schade, dass ich dir zu jung bin. Ich mag ältere Männer auch, auch wenn ich vielleicht jünger aussehe. Ich bin reif und will zeigen, was ich kann. Was gefällt dir denn an älteren Männern? Erzähl mal!",
+      "id": "feedback_1772454431017_syu4c2r1t",
+      "chatId": "2941975:2000:35987:41554",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!",
       "editedResponse": null,
       "status": "pending",
-      "platform": "fpc",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!"
+      ],
       "context": {
         "detectedSituations": [
-          "Wonach suchst du?"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Das ist aber schade, dass du mich nach meinem Alter ausmachst und mich gar nicht erst kennelernen willst. oder bekomme ich von dir die chance dir zu zeigen, dass ich zwar jung aussehe, aber im innern reif bin?"
+        "lastModeratorMessage": "Das finde ich wirklich gut, dass du das auch so siehst! Einmal ist einfach viel zu wenig und dann wäre es ja schon wieder vorbei. Hast du denn ein paar versaute Fantasien im Kopf, die wir beide zusammen ausleben könnten?😈"
       },
-      "lastModeratorMessage": "Das ist aber schade, dass du mich nach meinem Alter ausmachst und mich gar nicht erst kennelernen willst. oder bekomme ich von dir die chance dir zu zeigen, dass ich zwar jung aussehe, aber im innern reif bin?",
-      "timestamp": "2026-03-02T12:26:35.549Z",
-      "updatedAt": "2026-03-02T12:26:35.549Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-02T12:27:11.017Z",
+      "updatedAt": "2026-03-02T12:27:11.017Z"
     }
   ]
 }
