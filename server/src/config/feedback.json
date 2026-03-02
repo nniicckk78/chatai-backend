@@ -50196,6 +50196,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-02T13:56:19.881Z",
       "updatedAt": "2026-03-02T13:56:19.881Z"
+    },
+    {
+      "id": "feedback_1772459864648_6bsclungx",
+      "chatId": "2920401:1158:525998:35696",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Du könntest dich ja schonmal wieder bei mir melden oder nicht? Hast du angst vor mir und ziehst jetzt den kürzeren oder was? Für was hast du mir denn geschrieben wenn du mich jetzt ignorierst oder habe ich etwas falsches gemacht?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Du könntest dich ja schonmal wieder bei mir melden oder nicht? Hast du angst vor mir und ziehst jetzt den kürzeren oder was? Für was hast du mir denn geschrieben wenn du mich jetzt ignorierst oder habe ich etwas falsches gemacht?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich grüsse dich Dominik und wünsche dir einen schönen Sonntag, hast du vielleicht ein paar Minuten Zeit für mich?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-02T13:57:44.648Z",
+      "updatedAt": "2026-03-02T13:57:44.648Z"
     }
   ]
 }
