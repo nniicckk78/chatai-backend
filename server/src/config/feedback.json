@@ -10652,7 +10652,7 @@
           "user": {
             "Wohnsituation": "lebt alleine",
             "Age": 66,
-            "Other": "- Name : \n- Alter : 66\n- Status: \n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : \n- Grö����e / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+            "Other": "- Name : \n- Alter : 66\n- Status: \n- Wohnsituation:\n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos:\n- Gesundheit: \n\n- Sucht : \n- Grö������e / kg: \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen:\n- Auto:\n- Eltern:\n_______________________\n- Musik: \n- Filme: \n- Essen : \n- Trinken : \n_______________________\n- was mag : \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
           },
           "assistant": {
             "Name": "Lydia",
@@ -50032,29 +50032,27 @@
       "updatedAt": "2026-03-02T12:34:24.964Z"
     },
     {
-      "id": "feedback_1772455092726_0uv3sygsx",
-      "chatId": "38916424",
-      "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Hallo ist noch jemand zu Hause? Was habe ich denn gemacht das du mich jetzt ignorierst? Sag mir doch wenigstens mal bescheid was das für einen Grund hat? Was habe ich denn falsch gemacht?🧐",
+      "id": "feedback_1772455209750_uiidj8aus",
+      "chatId": "vyzmSbGTkznGbsPS2Zg7",
+      "customerMessage": "Stepper oder Ergometer?",
+      "aiResponse": "Ich würde den Stepper nehmen, der fühlt sich natürlicher an und trainiert Beine und Po besser zusammen. Ergometer ist auch okay für pure Ausdauer. Ich finde es interessant, wie unterschiedlich die Geräte sind. Was gefällt dir an deinem Favoriten?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "fpc",
-      "isASA": true,
-      "usedExampleIds": [
-        "ASA Reaktivierung|Hallo ist noch jemand zu Hause? Was habe ich denn gemacht das du mich jetzt ignorierst? Sag mir doch wenigstens mal bescheid was das für einen Grund hat? Was habe ich denn falsch gemacht?🧐"
-      ],
+      "platform": "avz",
+      "isASA": false,
+      "usedExampleIds": [],
       "context": {
         "detectedSituations": [
-          "ASA Reaktivierung"
+          "Was willst du wissen?"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Freue mich zwar darüber dass du mir ein like dagelassen hast aber meinst du nicht eine Nachricht wäre wieder besser gewesen?"
+        "lastModeratorMessage": "Kommt auf das Endergebnis an, würde ich sagen. Ich kann mir dann gut mit dir eine Cardioeinheit vorstellen. Wäre das nichts?"
       },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-03-02T12:38:12.726Z",
-      "updatedAt": "2026-03-02T12:38:12.726Z"
+      "lastModeratorMessage": "Kommt auf das Endergebnis an, würde ich sagen. Ich kann mir dann gut mit dir eine Cardioeinheit vorstellen. Wäre das nichts?",
+      "timestamp": "2026-03-02T12:40:09.750Z",
+      "updatedAt": "2026-03-02T12:40:09.751Z"
     }
   ]
 }
