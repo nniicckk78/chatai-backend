@@ -4130,7 +4130,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Das kann ich gut nachvollziehen. Ich bin auch kein Fan vom großen hin und her schreiben. Aber ein jurzes Kennenlernen muss natürlich schon stattfinden. Kaffee trinke ich gerne. warum nicht. Kennst du denn ein nettes lokal dass wir gehen k��������������������nnten?"
+        "lastModeratorMessage": "Das kann ich gut nachvollziehen. Ich bin auch kein Fan vom großen hin und her schreiben. Aber ein jurzes Kennenlernen muss natürlich schon stattfinden. Kaffee trinke ich gerne. warum nicht. Kennst du denn ein nettes lokal dass wir gehen k���������������������nnten?"
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-02-05T16:16:19.046Z",
@@ -49279,6 +49279,31 @@
       "lastModeratorMessage": "Ach so! In diesem Fall bin ich mir sicher dass wir viel Spass haben werden.:wink: Was sind deine grössten Fantasien, die du mit mir verwirklichen möchtest?",
       "timestamp": "2026-03-02T09:46:44.730Z",
       "updatedAt": "2026-03-02T09:46:44.730Z"
+    },
+    {
+      "id": "feedback_1772445990048_9w7puo81j",
+      "chatId": "38910927",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Sag mal ehrlich, wo steckst du denn eigentlich die ganze Zeit? Habe ich irgendwas gesagt, das dich verärgert haben könnte, oder bist du jetzt einfach abgetaucht weil du angst vor einem Treffen mit mir hast?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Sag mal ehrlich, wo steckst du denn eigentlich die ganze Zeit? Habe ich irgendwas gesagt, das dich verärgert haben könnte, oder bist du jetzt einfach abgetaucht weil du angst vor einem Treffen mit mir hast?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Oh, na das klingt nach einem aufregenden Samstag, habe ich recht, david? ?? Was ist so besonders an diesem tag?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-02T10:06:30.048Z",
+      "updatedAt": "2026-03-02T10:06:30.048Z"
     }
   ]
 }
