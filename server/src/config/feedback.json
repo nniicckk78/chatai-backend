@@ -50433,6 +50433,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-03T09:45:17.338Z",
       "updatedAt": "2026-03-03T09:45:17.338Z"
+    },
+    {
+      "id": "feedback_1772531133536_0urbasqm4",
+      "chatId": "2941131:1131:29268:36008",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Du mir liegt da echt was richtig ernstes auf dem Herzen. Ich brauch einfach gerade jemanden zum Reden und deswegen melde ich mich bei dir. Wenn du kurz Zeit hättest, würde mich das echt sehr freuen!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Du mir liegt da echt was richtig ernstes auf dem Herzen. Ich brauch einfach gerade jemanden zum Reden und deswegen melde ich mich bei dir. Wenn du kurz Zeit hättest, würde mich das echt sehr freuen!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ein neuer Tag ohne Antwort von dir. Ich bin gespannt, was du beim Forschungsreaktor machst. Das klingt faszinierend und ich möchte mehr wissen. Erzählst du mir deine Aufgabe dort?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-03T09:45:33.536Z",
+      "updatedAt": "2026-03-03T09:45:33.536Z"
     }
   ]
 }
