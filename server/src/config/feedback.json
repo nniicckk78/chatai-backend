@@ -52289,6 +52289,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-04T16:01:17.656Z",
       "updatedAt": "2026-03-04T16:01:17.656Z"
+    },
+    {
+      "id": "feedback_1772640155616_qaz5b26ys",
+      "chatId": "2944701:2000:37633:41645",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke mal weil du mir gerade nicht schreibst bist du einfach zu beschäftigt oder? Kannst dich ja gerne mal bei mir melden wenn du mal kurz Zeit hast. Würde mich echt sehr freuen.",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke mal weil du mir gerade nicht schreibst bist du einfach zu beschäftigt oder? Kannst dich ja gerne mal bei mir melden wenn du mal kurz Zeit hast. Würde mich echt sehr freuen."
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Die Vorstellung mit den Fingern lässt mich nicht los. Hast du dir schon überlegt, wie viele bei mir reinpassen würden? Ich warte gespannt auf deine Antwort."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-04T16:02:35.616Z",
+      "updatedAt": "2026-03-04T16:02:35.616Z"
     }
   ]
 }
