@@ -51038,6 +51038,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-04T12:00:10.507Z",
       "updatedAt": "2026-03-04T12:00:10.507Z"
+    },
+    {
+      "id": "feedback_1772625614524_1tiermvs5",
+      "chatId": "f9619a215a14460ba241",
+      "customerMessage": "Meine geburt vielleicht",
+      "aiResponse": "Oh, dein Geburtstag klingt nach einem besonderen Moment! Erzähl mal mehr darüber, wie hast du das gefeiert? Machst du das normalerweise mit Freunden oder Familie?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "avz",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Was willst du wissen?"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Das ist lieb von dir. Ich finde es schön wenn man sich Schritt für Schritt mehr erzählt. Was war denn ein Erlebnis in deinem Leben, das dich besonders geprägt hat?"
+      },
+      "lastModeratorMessage": "Das ist lieb von dir. Ich finde es schön wenn man sich Schritt für Schritt mehr erzählt. Was war denn ein Erlebnis in deinem Leben, das dich besonders geprägt hat?",
+      "timestamp": "2026-03-04T12:00:14.524Z",
+      "updatedAt": "2026-03-04T12:00:14.524Z"
     }
   ]
 }
