@@ -51602,6 +51602,31 @@
       "lastModeratorMessage": "Hallöchen na wie geht es dir was machst du heute so schönes oder gehst du heute vielleicht doch in die Sauna? Ich wollte dir nämlich einen wunderschönen Tag wünschen.",
       "timestamp": "2026-03-04T14:12:49.106Z",
       "updatedAt": "2026-03-04T14:12:49.106Z"
+    },
+    {
+      "id": "feedback_1772633579361_7i0mp8o7y",
+      "chatId": "2943764:1158:509201:553175",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ignorierst du mich mit Absicht oder ist dein Postfach so überfüllt das meine Nachrichten schon gar nicht mehr bei dir Angezeigt werden? Ich würde mich schon freuen wenn du dich mal wieder melden würdest, wo steckst du denn?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ignorierst du mich mit Absicht oder ist dein Postfach so überfüllt das meine Nachrichten schon gar nicht mehr bei dir Angezeigt werden? Ich würde mich schon freuen wenn du dich mal wieder melden würdest, wo steckst du denn?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Wann und wo habe ich mich jetzt bitte widersprochen? Sorry aber ist irgendwie verstehe ich gerade nicht so wirklich was du meinst"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-04T14:12:59.361Z",
+      "updatedAt": "2026-03-04T14:12:59.361Z"
     }
   ]
 }
