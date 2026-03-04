@@ -52264,6 +52264,31 @@
       "lastModeratorMessage": "Der netteste liebenswerteste und romantischste Mensch der Welt hat noch viel zu tun? Ich hoffe, du bist mir nicht böse, dass ich dir diese Nachricht geschickt habe.",
       "timestamp": "2026-03-04T15:54:22.593Z",
       "updatedAt": "2026-03-04T15:54:22.593Z"
+    },
+    {
+      "id": "feedback_1772639849561_5bvlgtfjt",
+      "chatId": "2944568:2002:33634:44976",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Sag mal ehrlich, wo steckst du denn eigentlich die ganze Zeit? Habe ich irgendwas gesagt, das dich verärgert haben könnte, oder bist du jetzt einfach abgetaucht weil du angst vor einem Treffen mit mir hast?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Sag mal ehrlich, wo steckst du denn eigentlich die ganze Zeit? Habe ich irgendwas gesagt, das dich verärgert haben könnte, oder bist du jetzt einfach abgetaucht weil du angst vor einem Treffen mit mir hast?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Kannst du mir trotzdem einen kleinen Vorgeschmack darauf geben, was mich erwartet? Das würde mich echt interessieren."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-04T15:57:29.561Z",
+      "updatedAt": "2026-03-04T15:57:29.561Z"
     }
   ]
 }
