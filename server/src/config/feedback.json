@@ -51554,6 +51554,31 @@
       "lastModeratorMessage": "Wie lange vorher musst du denn dann Bescheid wissen?",
       "timestamp": "2026-03-04T13:59:16.238Z",
       "updatedAt": "2026-03-04T13:59:16.238Z"
+    },
+    {
+      "id": "feedback_1772632758446_0d3992bdr",
+      "chatId": "2945267:1158:521884:553171",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke mal, weil du dich gerade nicht bei mir meldest hast du einfach zu viel um die Ohren oder? Wenn du mal wieder kurz Zeit hast, dann melde dich bitte kurz bei mir. Es gibt da etwas über was ich mit dir kurz reden wollen würde!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke mal, weil du dich gerade nicht bei mir meldest hast du einfach zu viel um die Ohren oder? Wenn du mal wieder kurz Zeit hast, dann melde dich bitte kurz bei mir. Es gibt da etwas über was ich mit dir kurz reden wollen würde!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Das wäre mir auch eine viel zu kurze Angelegenheit. Dann bist du also ein Mann, der es richtig krachen lassen will und keine Grenzen kennt?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-04T13:59:18.446Z",
+      "updatedAt": "2026-03-04T13:59:18.446Z"
     }
   ]
 }
