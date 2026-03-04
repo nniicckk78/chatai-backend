@@ -51959,6 +51959,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-04T15:14:34.831Z",
       "updatedAt": "2026-03-04T15:14:34.831Z"
+    },
+    {
+      "id": "feedback_1772637277835_ptf3ke0hq",
+      "chatId": "2945491:1158:544828:553169",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hallo Willi, das finde ich aber sehr schade. Ich hoffe du verstehst dass ich nicht gleich jedem meine Whatsapp Nummer gebe. Da müssten wir uns schon persönlich treffen."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-04T15:14:37.835Z",
+      "updatedAt": "2026-03-04T15:14:37.835Z"
     }
   ]
 }
