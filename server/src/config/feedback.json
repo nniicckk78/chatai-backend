@@ -51040,6 +51040,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-04T12:01:09.071Z",
       "updatedAt": "2026-03-04T12:01:09.071Z"
+    },
+    {
+      "id": "feedback_1772625680724_9431h8z7l",
+      "chatId": "2945168:1109:79046:106406",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Wo steckst du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so überfüllt das meine Nachrichten schon gar nicht mehr bei dir angezeigt werden? Ich hätte da mal eine echt wichtige Frage an dich?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Wo steckst du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so überfüllt das meine Nachrichten schon gar nicht mehr bei dir angezeigt werden? Ich hätte da mal eine echt wichtige Frage an dich?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hey, danke für die Freundschaftsanfrage! 😊 Ich freu mich total, jemanden aus Sundern zu finden. Besonders mit deinem tollen Musikgeschmack und deinen Hobbys. Wie bist du denn zum Singen gekommen? Singst du eher alleine oder auf der Bühne? 🎤"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-04T12:01:20.724Z",
+      "updatedAt": "2026-03-04T12:01:20.724Z"
     }
   ]
 }
