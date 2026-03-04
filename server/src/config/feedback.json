@@ -51365,6 +51365,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-04T13:35:34.634Z",
       "updatedAt": "2026-03-04T13:35:34.634Z"
+    },
+    {
+      "id": "feedback_1772631396670_c53la3y9y",
+      "chatId": "38859689",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Oh danke, das macht mich an! Wie läuft dein Mittwoch bis jetzt? Hast du schon Feierabend oder bist du noch im Büro? Was machst du gerne in deiner Freizeit?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Bist du schon mal einem geheimnis begegnet das dein Herz zum Klopfen brachte? 😉 Was würde dich davontragen?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-04T13:36:36.670Z",
+      "updatedAt": "2026-03-04T13:36:36.670Z"
     }
   ]
 }
