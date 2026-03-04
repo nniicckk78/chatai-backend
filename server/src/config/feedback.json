@@ -51340,6 +51340,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-04T13:35:32.014Z",
       "updatedAt": "2026-03-04T13:35:32.014Z"
+    },
+    {
+      "id": "feedback_1772631334634_nhbabpgrp",
+      "chatId": "38917149",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke weil du dich gerade nicht bei mir meldest, liegt es bestimmt daran das du gerade viel um du Ohren hast oder? Meld dich gerne wenn du wieder Zeit hast",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke weil du dich gerade nicht bei mir meldest, liegt es bestimmt daran das du gerade viel um du Ohren hast oder? Meld dich gerne wenn du wieder Zeit hast"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "also, damit meine ich nicht, dass du für sex bezahlen sollst, sondern das wäre die wert für ein Date zum Beispiel was würdest du dir da ausdenken?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-04T13:35:34.634Z",
+      "updatedAt": "2026-03-04T13:35:34.634Z"
     }
   ]
 }
