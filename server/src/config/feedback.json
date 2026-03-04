@@ -9747,7 +9747,7 @@
         "customerNotes": {
           "age": "51",
           "relationshipStatus": "beziehung",
-          "rawText": "- Name: \n- Alter : 51\n- Status: beziehung \n- Wohnsituation: \n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos: \n- Gesundheit: \n- Sucht: \n- Gr��������������������ße / kg: 1,91cm \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen: \n- Auto: \n- Eltern: \n_______________________\n- Musik: \n- Filme: \n- Essen: \n- Trinken: \n_______________________\n- was mag: \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
+          "rawText": "- Name: \n- Alter : 51\n- Status: beziehung \n- Wohnsituation: \n- Sternzeichen: \n- Geschwister: \n- Kinder: \n- Haustiere: \n- Hobbies: \n- Arbeitsstatus/Infos: \n- Gesundheit: \n- Sucht: \n- Gr������������������ße / kg: 1,91cm \n- Augen / Haarfarbe: \n- Tattoo / Piercing: \n- Rauchen: \n- Auto: \n- Eltern: \n_______________________\n- Musik: \n- Filme: \n- Essen: \n- Trinken: \n_______________________\n- was mag: \n- was nicht mag: \n-----------------------------\nSEX\nVorlieben: \nTabus: \n_______________________\nSONSTIGES:"
         },
         "moderatorNotes": {
           "age": "34",
@@ -39433,7 +39433,7 @@
       "platform": "df",
       "isASA": true,
       "usedExampleIds": [
-        "ASA Reaktivierung|Heute scheint ja wirklich dein Gl��ckstag zu sein. Ich habe echt gute Laune und sogar eine kleine Überraschung für dich.😉 Melde dich mal lieber schnell bei mir, sonst ist die Überraschung weg.💋"
+        "ASA Reaktivierung|Heute scheint ja wirklich dein Glückstag zu sein. Ich habe echt gute Laune und sogar eine kleine Überraschung für dich.😉 Melde dich mal lieber schnell bei mir, sonst ist die Überraschung weg.💋"
       ],
       "context": {
         "detectedSituations": [
@@ -51017,15 +51017,17 @@
       "updatedAt": "2026-03-04T11:57:59.590Z"
     },
     {
-      "id": "feedback_1772625610507_r1t6hk82a",
-      "chatId": "38975325",
+      "id": "feedback_1772625667625_hettc4of6",
+      "chatId": "38978470",
       "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Super, dass du dich meldest! Wie läuft dein Mittwoch bisher? Hattest du eine spannende Woche oder waren es eher ruhige Tage? Und was steht für dich am Wochenende an?",
+      "aiResponse": "Na, du? Was machst du denn gerade so schönes und wie geht's dir so? Bist du denn gerade zu beschäftigt, um dich bei mir zu melden oder warum lässt du mich hier auf gelesen? Wenn du Zeit hast kannst du dich ja gerne mal wieder bei mir melden. Vielleicht hab ich ja sogar eine kleine Überraschung.😉",
       "editedResponse": null,
       "status": "pending",
       "platform": "fpc",
       "isASA": true,
-      "usedExampleIds": [],
+      "usedExampleIds": [
+        "ASA Reaktivierung|Na, du? Was machst du denn gerade so schönes und wie geht's dir so? Bist du denn gerade zu beschäftigt, um dich bei mir zu melden oder warum lässt du mich hier auf gelesen? Wenn du Zeit hast kannst du dich ja gerne mal wieder bei mir melden. Vielleicht hab ich ja sogar eine kleine Überraschung.😉"
+      ],
       "context": {
         "detectedSituations": [
           "ASA Reaktivierung"
@@ -51033,34 +51035,11 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Danke für dein like, ich hoffe du schreibst mir jetzt auch und lernen wir uns kennen? woher kommst du denn? würde mich sehr freuen"
+        "lastModeratorMessage": "Ich nehme mich vor dir hin und lutschen richtig sauber nachdem du gekommen bist okay. Du darfst mir ins Gesicht spritzen"
       },
       "lastModeratorMessage": null,
-      "timestamp": "2026-03-04T12:00:10.507Z",
-      "updatedAt": "2026-03-04T12:00:10.507Z"
-    },
-    {
-      "id": "feedback_1772625614524_1tiermvs5",
-      "chatId": "f9619a215a14460ba241",
-      "customerMessage": "Meine geburt vielleicht",
-      "aiResponse": "Oh, dein Geburtstag klingt nach einem besonderen Moment! Erzähl mal mehr darüber, wie hast du das gefeiert? Machst du das normalerweise mit Freunden oder Familie?",
-      "editedResponse": null,
-      "status": "pending",
-      "platform": "avz",
-      "isASA": false,
-      "usedExampleIds": [],
-      "context": {
-        "detectedSituations": [
-          "Was willst du wissen?"
-        ],
-        "mood": "neutral",
-        "style": "neutral",
-        "topic": "allgemein",
-        "lastModeratorMessage": "Das ist lieb von dir. Ich finde es schön wenn man sich Schritt für Schritt mehr erzählt. Was war denn ein Erlebnis in deinem Leben, das dich besonders geprägt hat?"
-      },
-      "lastModeratorMessage": "Das ist lieb von dir. Ich finde es schön wenn man sich Schritt für Schritt mehr erzählt. Was war denn ein Erlebnis in deinem Leben, das dich besonders geprägt hat?",
-      "timestamp": "2026-03-04T12:00:14.524Z",
-      "updatedAt": "2026-03-04T12:00:14.524Z"
+      "timestamp": "2026-03-04T12:01:07.625Z",
+      "updatedAt": "2026-03-04T12:01:07.625Z"
     }
   ]
 }
