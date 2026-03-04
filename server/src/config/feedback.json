@@ -51065,6 +51065,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-04T12:04:44.884Z",
       "updatedAt": "2026-03-04T12:04:44.885Z"
+    },
+    {
+      "id": "feedback_1772625895176_w22u6mlqx",
+      "chatId": "Mon Mar 02 2026 11:23:13 GMT+0100 (Mitteleuropäische Normalzeit)-ist nun mi",
+      "customerMessage": "Ich bin Intensivpfleger von Beruf und Arbeit 12 Std .",
+      "aiResponse": "Intensivpfleger, das klingt echt anspruchsvoll, Werner! 12 Stunden Schichten sind wirklich hart. Wie schaffst du es, danach zu entspannen? Hast du da spezielle Rituale oder was machst du gerne in deiner Freizeit?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "iluvo",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Berufsfrage"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Wie lange musst du denn Arbeiten? Was machst du denn Beruflich?"
+      },
+      "lastModeratorMessage": "Wie lange musst du denn Arbeiten? Was machst du denn Beruflich?",
+      "timestamp": "2026-03-04T12:04:55.176Z",
+      "updatedAt": "2026-03-04T12:04:55.176Z"
     }
   ]
 }
