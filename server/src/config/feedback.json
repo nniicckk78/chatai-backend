@@ -53839,6 +53839,29 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-05T15:35:51.421Z",
       "updatedAt": "2026-03-05T15:35:51.421Z"
+    },
+    {
+      "id": "feedback_1772724955053_bdvf3ybsj",
+      "chatId": "a7a94b1d2bf64a38bc72",
+      "customerMessage": "Ich bin momentan beruflich in Gera, mein Wohnort ist aber Leipzig. Wo wohnst du?",
+      "aiResponse": "Leipzig, das klingt ja super! Gera ist bestimmt interessant, ich kenne die Stadt nur vom Hören. Was gefällt dir denn am meisten an Leipzig? 😊",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "avz",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Wohnort-Frage"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Das freut mich doch wirklich sehr. Wie ist denn dein Name und wo kommst du her?"
+      },
+      "lastModeratorMessage": "Das freut mich doch wirklich sehr. Wie ist denn dein Name und wo kommst du her?",
+      "timestamp": "2026-03-05T15:35:55.053Z",
+      "updatedAt": "2026-03-05T15:35:55.053Z"
     }
   ]
 }
