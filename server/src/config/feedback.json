@@ -53508,6 +53508,31 @@
       "lastModeratorMessage": "Okay das ist kein Problem mein lieber. Was ist denn passiert?",
       "timestamp": "2026-03-05T14:33:21.598Z",
       "updatedAt": "2026-03-05T14:33:21.598Z"
+    },
+    {
+      "id": "feedback_1772721215033_7u4ms2zzu",
+      "chatId": "2945121:1130:9577:27631",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke mal, weil du dich gerade nicht bei mir meldest hast du einfach zu viel um die Ohren oder? Wenn du mal wieder kurz Zeit hast, dann melde dich bitte kurz bei mir. Es gibt da etwas über was ich mit dir kurz reden wollen würde!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke mal, weil du dich gerade nicht bei mir meldest hast du einfach zu viel um die Ohren oder? Wenn du mal wieder kurz Zeit hast, dann melde dich bitte kurz bei mir. Es gibt da etwas über was ich mit dir kurz reden wollen würde!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "82 Jahre alt und auf der Suche nach einer Frau zum Lieben und Leben? Das gefällt mir, mein lieber Hans! Ich sehne mich auch nach Zweisamkeit 😊und einem Mann an meiner Seite, mit dem ich einfach alles teilen kann. Hast du denn schon eine genaue Vorstellung davon, wie unser gemeinsames Leben aussehen würde?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-05T14:33:35.033Z",
+      "updatedAt": "2026-03-05T14:33:35.033Z"
     }
   ]
 }
