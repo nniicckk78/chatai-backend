@@ -52904,6 +52904,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-05T12:53:16.687Z",
       "updatedAt": "2026-03-05T12:53:16.687Z"
+    },
+    {
+      "id": "feedback_1772715207279_d7k30jq9m",
+      "chatId": "39007950",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, sag mal, wo hast du dich eigentlich versteckt? 😅 Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, sag mal, wo hast du dich eigentlich versteckt? 😅 Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Wie gefällt dir mein Bild?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-05T12:53:27.279Z",
+      "updatedAt": "2026-03-05T12:53:27.279Z"
     }
   ]
 }
