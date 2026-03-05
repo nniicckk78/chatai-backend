@@ -26760,7 +26760,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Dürfte ich so auf einem Date mit dir auftauchen? Oder wäre es dir zu freizügig?🫣 Wenn es dir gefällt, kannst du mir ja mal sagen, woher du kommst und wann du Zeit für mich hast."
+        "lastModeratorMessage": "Dürfte ich so auf einem Date mit dir auftauchen? Oder w��re es dir zu freizügig?🫣 Wenn es dir gefällt, kannst du mir ja mal sagen, woher du kommst und wann du Zeit für mich hast."
       },
       "lastModeratorMessage": "D��rfte ich so auf einem Date mit dir auftauchen? Oder wäre es dir zu freizügig?🫣 Wenn es dir gefällt, kannst du mir ja mal sagen, woher du kommst und wann du Zeit für mich hast.",
       "timestamp": "2026-02-11T16:34:32.278Z",
@@ -31828,7 +31828,7 @@
         "topic": "allgemein",
         "lastModeratorMessage": "Hallihallöchen, ich hoffe das du einen guten Tag hast und vielleicht auch ab und zu ein wenig an mich denkst.Wie du merkst denke ich sehr wohl an dich und dachte mir ich melde mich einfach direkt wieder bei dir.Du bekommst auch einen ganz dicken sinnlichen Kuss von mir, genau dahin wo du ihn haben willst. Nur müsste ich auch wissen, wo du ihn jetzt gerne hättest ?"
       },
-      "lastModeratorMessage": "Hallihallöchen, ich hoffe das du einen guten Tag hast und vielleicht auch ab und zu ein wenig an mich denkst.Wie du merkst denke ich sehr wohl an dich und dachte mir ich melde mich einfach direkt wieder bei dir.Du bekommst auch einen ganz dicken sinnlichen Kuss von mir, genau dahin wo du ihn haben willst. Nur m��sste ich auch wissen, wo du ihn jetzt gerne hättest ?",
+      "lastModeratorMessage": "Hallihallöchen, ich hoffe das du einen guten Tag hast und vielleicht auch ab und zu ein wenig an mich denkst.Wie du merkst denke ich sehr wohl an dich und dachte mir ich melde mich einfach direkt wieder bei dir.Du bekommst auch einen ganz dicken sinnlichen Kuss von mir, genau dahin wo du ihn haben willst. Nur müsste ich auch wissen, wo du ihn jetzt gerne hättest ?",
       "timestamp": "2026-02-16T12:38:03.277Z",
       "updatedAt": "2026-02-16T12:38:03.277Z"
     },
@@ -52714,27 +52714,29 @@
       "updatedAt": "2026-03-05T12:25:47.172Z"
     },
     {
-      "id": "feedback_1772713905651_uophqjpuf",
-      "chatId": "38918864",
-      "customerMessage": "ja also Spaß kann man in vielerlei hinsicht haben was machst du denn gerne so ?",
-      "aiResponse": "Ich stell mir vor, wie wir zusammen was Leckeres essen gehen, vielleicht ein bisschen spazieren und uns dann näherkommen. Das wäre doch ein toller Spass, oder? Was hast du dir denn so für uns im Kopf? 😘",
+      "id": "feedback_1772713927988_mub1fygt3",
+      "chatId": "2945544:1158:280346:553173",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich denke mal weil du dich nicht bei mir meldest bist du gerade zu beschäftigt oder? Ich würde einfach mal gerne wissen ob du auch jemand bist, auf den ich mich verlassen kann in guten sowie in schlechten Zeiten? Kannst dich ja gerne mal melden, wenn du kurz Zeit hast!",
       "editedResponse": null,
       "status": "pending",
-      "platform": "fpc",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich denke mal weil du dich nicht bei mir meldest bist du gerade zu beschäftigt oder? Ich würde einfach mal gerne wissen ob du auch jemand bist, auf den ich mich verlassen kann in guten sowie in schlechten Zeiten? Kannst dich ja gerne mal melden, wenn du kurz Zeit hast!"
+      ],
       "context": {
         "detectedSituations": [
-          "Was willst du wissen?"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Also ich würde mich freuen wenn wir beide uns etwas näher kennenlernen und beschnuppern. Das du Spaß suchst find ich schonmal gut. Wie darf der spaß denn ausehen?"
+        "lastModeratorMessage": "Könnte passieren. Das finde ich ja auch geil. Aber es gibt ja auch Grenzen, die ich dann schon setzen würde. Ist es für dich in Ordnung, wenn ich das mache oder wie denkst du darüber?"
       },
-      "lastModeratorMessage": "Also ich würde mich freuen wenn wir beide uns etwas näher kennenlernen und beschnuppern. Das du Spaß suchst find ich schonmal gut. Wie darf der spaß denn ausehen?",
-      "timestamp": "2026-03-05T12:31:45.651Z",
-      "updatedAt": "2026-03-05T12:31:45.651Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-05T12:32:07.988Z",
+      "updatedAt": "2026-03-05T12:32:07.988Z"
     }
   ]
 }
