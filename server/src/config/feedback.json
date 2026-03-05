@@ -53100,6 +53100,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-05T13:34:30.733Z",
       "updatedAt": "2026-03-05T13:34:30.733Z"
+    },
+    {
+      "id": "feedback_1772717682464_9dyeza4lw",
+      "chatId": "37658904",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey na, hoffe bei dir ist auch alles in Ordnung, wo treibst du dich gerade so rum? Würde mich freuen wieder von dir zu hören, was machst du gerade so?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey na, hoffe bei dir ist auch alles in Ordnung, wo treibst du dich gerade so rum? Würde mich freuen wieder von dir zu hören, was machst du gerade so?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "also wenn wir dann essen gehen, dann soll es dann was besonderes sein, und würde vorschlagen, dass wir dann auch uns was richtig leckeres machen, und es würde dann auch hoffentlich alles perfekt sein?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-05T13:34:42.464Z",
+      "updatedAt": "2026-03-05T13:34:42.464Z"
     }
   ]
 }
