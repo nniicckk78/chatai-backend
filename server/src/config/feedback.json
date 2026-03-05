@@ -52458,6 +52458,30 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-05T11:28:16.610Z",
       "updatedAt": "2026-03-05T11:28:16.610Z"
+    },
+    {
+      "id": "feedback_1772710100681_17hblydgx",
+      "chatId": "A3UG9mMMLJSdlnTsnM2B",
+      "customerMessage": "Mein Name ist Reiner,das mit dem Austauschen ist ja OK aber bitte nicht hier auf dieser Seite ist mir etwas zu teuer. Wie stehst du zu einem Treffen zb. Kaffee? Wann könntest du da.",
+      "aiResponse": "Ein Kaffee wäre eine gute Idee, um uns besser zu verstehen. Ich muss mal schauen, wann es bei mir passt. Was hast du dir denn so vorgestellt, wenn wir uns unterhalten?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "avz",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Treffen/Termine",
+          "Geld/Coins"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich lebe in Landstuhl. Ich bin auch noch nicht so erfahren, aber ich denke wir sollten uns vielleicht einfach mal ein bisschen über uns und unsere Vorlieben austauschen? Wie ist denn dein Name?"
+      },
+      "lastModeratorMessage": "Ich lebe in Landstuhl. Ich bin auch noch nicht so erfahren, aber ich denke wir sollten uns vielleicht einfach mal ein bisschen über uns und unsere Vorlieben austauschen? Wie ist denn dein Name?",
+      "timestamp": "2026-03-05T11:28:20.681Z",
+      "updatedAt": "2026-03-05T11:28:20.681Z"
     }
   ]
 }
