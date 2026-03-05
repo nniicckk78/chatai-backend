@@ -53434,6 +53434,31 @@
       "lastModeratorMessage": "Ja, schauen wir mal wie gut wir zusammen passen im Bett. Was genau gefällt dir den so?",
       "timestamp": "2026-03-05T14:10:17.242Z",
       "updatedAt": "2026-03-05T14:10:17.242Z"
+    },
+    {
+      "id": "feedback_1772719828624_4s40soa5c",
+      "chatId": "2942890:1158:511045:553172",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Muss ich jetzt schon bei der Polizei eine Vermisstenanzeige einreichen oder meldest du dich jetzt mal wieder bei mir? Ich würde es schon cool finden wenn du mir wenigstens sagen würdest was ich falsch gemacht habe? Oder warum meldest du dich nicht mehr bei mir?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Muss ich jetzt schon bei der Polizei eine Vermisstenanzeige einreichen oder meldest du dich jetzt mal wieder bei mir? Ich würde es schon cool finden wenn du mir wenigstens sagen würdest was ich falsch gemacht habe? Oder warum meldest du dich nicht mehr bei mir?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich verstehe dich schon, aber warum sagst du denn dann dass es dir gefällt? Das hat mich verwirrt? Was würdest du denn gerne wissen?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-05T14:10:28.624Z",
+      "updatedAt": "2026-03-05T14:10:28.624Z"
     }
   ]
 }
