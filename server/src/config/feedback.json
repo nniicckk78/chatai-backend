@@ -54143,45 +54143,28 @@
       "updatedAt": "2026-03-06T11:29:43.731Z"
     },
     {
-      "id": "feedback_1772796838553_cnh5b5nmu",
-      "chatId": "sQKs0AiNsQDynAgvpMdK",
-      "customerMessage": "Hallo Leben_frisch,Wir möchten dir mitteilen, dass *** Benutzer Poseidon47 dich zu seinen/ihren Favoriten hinzugefügt hat. Du kannst auch Poseidon47 zu deinen Favoriten zufügen, oder vielleicht möchtest du lieber eine Nachricht senden, um Hallo, danke oder etwas ganz Anderes zu sagen. ;-)",
-      "aiResponse": "Ah, Poseidon47 hat dich zu den Favoriten gepackt? Du könntest ihn ja auch favorisieren oder mal eine Nachricht rüberschicken, vielleicht ergibt sich was. Hast du schon was an ihn geschickt oder überlegst du noch?",
+      "id": "feedback_1772796892767_qamw3ans9",
+      "chatId": "fedVDV3Ra0giL5iKOJq4",
+      "customerMessage": "Ich will es erleben, nicht nur darüber nachdenken.",
+      "aiResponse": "Das klingt schon mal nach einem richtig schönen Plan von dir. Ich kann mir das total romantisch vorstellen, mit dir in der Sonne und Küssen. Was wäre für dich der perfekte Moment, um das erste Mal zusammen zu sein?",
       "editedResponse": null,
       "status": "pending",
       "platform": "avz",
       "isASA": false,
       "usedExampleIds": [],
       "context": {
-        "detectedSituations": [],
+        "detectedSituations": [
+          "Treffen/Termine",
+          "Romantik / Verliebtheit"
+        ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Man muss natürlich auch immer auf die Wettergegebenheiten schauen, ob das eben passt. Aber kann man dabei auch abstürzen?"
+        "lastModeratorMessage": "Ich wünsche mir das echt sehr und ich denke das wird auch ein sehr schöner Moment wenn wir das machen oder was denkst du? Hast du schon öfters darüber nachgedacht?"
       },
-      "lastModeratorMessage": "Man muss natürlich auch immer auf die Wettergegebenheiten schauen, ob das eben passt. Aber kann man dabei auch abstürzen?",
-      "timestamp": "2026-03-06T11:33:58.553Z",
-      "updatedAt": "2026-03-06T11:33:58.553Z"
-    },
-    {
-      "id": "feedback_1772796849418_s9xwvct00",
-      "chatId": "00000000",
-      "customerMessage": "Erstnachricht (keine Kundennachricht)",
-      "aiResponse": "Hey, cool dass ich dir gefalle! Was hat dich denn an meinem Profil so angesprochen, wie geht's dir heute Nachmittag? Was machst du so am Freitag? Wie geht es dir denn gerade so?",
-      "editedResponse": null,
-      "status": "pending",
-      "platform": "avz",
-      "isASA": false,
-      "usedExampleIds": [],
-      "context": {
-        "detectedSituations": [],
-        "mood": "neutral",
-        "style": "neutral",
-        "topic": "allgemein"
-      },
-      "lastModeratorMessage": null,
-      "timestamp": "2026-03-06T11:34:09.418Z",
-      "updatedAt": "2026-03-06T11:34:09.418Z"
+      "lastModeratorMessage": "Ich wünsche mir das echt sehr und ich denke das wird auch ein sehr schöner Moment wenn wir das machen oder was denkst du? Hast du schon öfters darüber nachgedacht?",
+      "timestamp": "2026-03-06T11:34:52.767Z",
+      "updatedAt": "2026-03-06T11:34:52.767Z"
     }
   ]
 }
