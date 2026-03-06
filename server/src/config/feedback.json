@@ -2249,7 +2249,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Das mache ich sofort. Danke für das schöne Bild. Gibt es von dir auch mehr zusehen? Vielleicht mit weniger Stoff?"
+        "lastModeratorMessage": "Das mache ich sofort. Danke f��r das schöne Bild. Gibt es von dir auch mehr zusehen? Vielleicht mit weniger Stoff?"
       },
       "lastModeratorMessage": "Das mache ich sofort. Danke für das schöne Bild. Gibt es von dir auch mehr zusehen? Vielleicht mit weniger Stoff?",
       "timestamp": "2026-02-07T11:26:30.384Z",
@@ -18791,7 +18791,7 @@
           "username": "Makita1980",
           "name": "Heiko",
           "gender": "male",
-          "city": "M��mbris",
+          "city": "M����mbris",
           "country": "DE",
           "occupation": "Selbstständiger Handwerker",
           "birthDate": {
@@ -45362,7 +45362,7 @@
       "platform": "df",
       "isASA": true,
       "usedExampleIds": [
-        "ASA Reaktivierung|Heute scheint ja wirklich dein Glückstag zu sein. Ich habe echt gute Laune und sogar eine kleine Überraschung für dich.😉 Melde dich mal lieber schnell bei mir, sonst ist die Überraschung weg.💋"
+        "ASA Reaktivierung|Heute scheint ja wirklich dein Glückstag zu sein. Ich habe echt gute Laune und sogar eine kleine Überraschung für dich.���� Melde dich mal lieber schnell bei mir, sonst ist die Überraschung weg.💋"
       ],
       "context": {
         "detectedSituations": [
@@ -54141,6 +54141,29 @@
       "lastModeratorMessage": "Okay, dann werde ich mir noch was überlegen. Oder hast du eine Überraschung?",
       "timestamp": "2026-03-06T11:29:43.731Z",
       "updatedAt": "2026-03-06T11:29:43.731Z"
+    },
+    {
+      "id": "feedback_1772796645621_q0lqpu6lo",
+      "chatId": "39028602",
+      "customerMessage": "Wie wäre es \"nur\" einen schönen Spaziergang zu\nerst .... wonach wir sehen ob wir weiterhin uns treffen möchten?",
+      "aiResponse": "Das mit dem Spaziergang klingt schon mal super, entspannt und perfekt, um zu sehen, ob die Chemie stimmt. Freu mich drauf! Ich schau mal, wann es bei mir passt und melde mich bald. Hast du schon einen schönen Ort im Kopf? 😘",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Treffen/Termine"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Mach dir keine sorgen ich werde meinen zeitplan für dich anpasen und dir bescheid geben sobald ich Zeit habe. Hast du schon darüber nachgedacht was wir zu diesem zeitpunkt zusammen machen könnten? 😍"
+      },
+      "lastModeratorMessage": "Mach dir keine sorgen ich werde meinen zeitplan für dich anpasen und dir bescheid geben sobald ich Zeit habe. Hast du schon darüber nachgedacht was wir zu diesem zeitpunkt zusammen machen könnten? 😍",
+      "timestamp": "2026-03-06T11:30:45.621Z",
+      "updatedAt": "2026-03-06T11:30:45.621Z"
     }
   ]
 }
