@@ -55421,6 +55421,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-06T14:48:03.049Z",
       "updatedAt": "2026-03-06T14:48:03.049Z"
+    },
+    {
+      "id": "feedback_1772808499238_hb0tig457",
+      "chatId": "37665664",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Es ist fast schon mutig von dir dich so lange nicht zu melden.😏 Willst du dich denn nicht mal kurz bei mir melden? Du würdest es auf jeden Fall nicht bereuen das kann ich dir zu 100 % versprechen.😉",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Es ist fast schon mutig von dir dich so lange nicht zu melden.😏 Willst du dich denn nicht mal kurz bei mir melden? Du würdest es auf jeden Fall nicht bereuen das kann ich dir zu 100 % versprechen.😉"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Meinst du nicht eher man sollte sich erstmal auf einen Kaffee treffen bevor man sich näher kommt? als Frau mus man ja schon ein bisschen vorsichtig sein oder?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-06T14:48:19.238Z",
+      "updatedAt": "2026-03-06T14:48:19.238Z"
     }
   ]
 }
