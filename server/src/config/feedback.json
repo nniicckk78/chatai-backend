@@ -55202,6 +55202,31 @@
       "lastModeratorMessage": "ich bin ganz ehrlich, ich habe jetzt mal abgewartet, in der hoffnung dass du mit deinem Friseurbesuch fertig bist und mir dann wirklich mal von dir ein Bild schickst, weil wir kennen uns nun auch schon ein bisschen näher und da dachte ich mir eigentlich, das du mir den Gefallen tust!",
       "timestamp": "2026-03-06T14:14:01.001Z",
       "updatedAt": "2026-03-06T14:14:01.001Z"
+    },
+    {
+      "id": "feedback_1772806442789_9l2xq8hys",
+      "chatId": "2947539:1130:9048:27642",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Und hast du vor mir auch mal wieder zu schreiben oder willst du mich weiterhin hier im leeren stehen lasssen? Meld dich doch mal bei mir, würde mich freuen!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Und hast du vor mir auch mal wieder zu schreiben oder willst du mich weiterhin hier im leeren stehen lasssen? Meld dich doch mal bei mir, würde mich freuen!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Bist du denn jetzt böse mit mir oder warum antwortest du jetzt nicht mehr?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-06T14:14:02.789Z",
+      "updatedAt": "2026-03-06T14:14:02.789Z"
     }
   ]
 }
