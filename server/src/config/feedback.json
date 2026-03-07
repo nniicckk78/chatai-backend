@@ -56250,6 +56250,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-07T11:19:43.085Z",
       "updatedAt": "2026-03-07T11:19:43.085Z"
+    },
+    {
+      "id": "feedback_1772882387133_whumitdtu",
+      "chatId": "38750272",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Muss ich jetzt schon bei der Polizei eine Vermisstenanzeige einreichen oder meldest du dich jetzt mal wieder bei mir? Ich würde es schon cool finden wenn du mir wenigstens sagen würdest was ich falsch gemacht habe? Oder warum meldest du dich nicht mehr bei mir?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Muss ich jetzt schon bei der Polizei eine Vermisstenanzeige einreichen oder meldest du dich jetzt mal wieder bei mir? Ich würde es schon cool finden wenn du mir wenigstens sagen würdest was ich falsch gemacht habe? Oder warum meldest du dich nicht mehr bei mir?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Stimmt, es ist vielleicht doch noch ein bisschen früh. 💓 aber sag mal was hättest du denn am liebsten mit mir angestellt dass du es so eilig hast, bei mir zu sein?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-07T11:19:47.133Z",
+      "updatedAt": "2026-03-07T11:19:47.133Z"
     }
   ]
 }
