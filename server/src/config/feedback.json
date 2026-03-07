@@ -56174,6 +56174,31 @@
       "lastModeratorMessage": "Das war sicher eine mehr als unangenehme Überraschung. Hast du da den Handwerker rufen müssen oder hast du das selbst erledigt?",
       "timestamp": "2026-03-07T11:12:24.820Z",
       "updatedAt": "2026-03-07T11:12:24.820Z"
+    },
+    {
+      "id": "feedback_1772881959674_1los7zzta",
+      "chatId": "2949096:2004:5102:1031",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey du, wo steckst du eigentlich? Ich habe da noch etwas im Kopf, das ich dir gern sagen würde. Willst du dich denn nichtmehr bei mir melden oder wie? Dann verpasst du echt was heisses!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich bin neugierig, ob du mir noch verrätst, was du heute alles gemacht hast und wo du jetzt steckst. War dein Tag so ereignisreich, dass du keine Zeit zum Schreiben hattest? Ich hoffe, es geht dir gut und du meldest dich bald wieder."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-07T11:12:39.674Z",
+      "updatedAt": "2026-03-07T11:12:39.674Z"
     }
   ]
 }
