@@ -31311,7 +31311,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Und bist du denn heute nicht so gesprächig oder was ist los ? Kannst dich ja auch melden wenn du dann wieder da bist für mich ok?"
+        "lastModeratorMessage": "Und bist du denn heute nicht so gesprächig oder was ist los ? Kannst dich ja auch melden wenn du dann wieder da bist f��r mich ok?"
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-02-16T10:48:03.384Z",
@@ -47592,7 +47592,7 @@
       "id": "feedback_1772365094652_phtomy83b",
       "chatId": "Fri Feb 20 2026 22:56:04 GMT+0100 (Mitteleuropäische Normalzeit)-Wie lange ",
       "customerMessage": "Ja das sehe ich auch so..",
-      "aiResponse": "Super, dass du dich drauf freust! Ich stell mir das schon richtig gemütlich vor, wie du mit Brötchen überraschst und wir zusammen geniessen. Was würdest du denn noch mitbringen, vielleicht Kaffee oder etwas anderes? 😊",
+      "aiResponse": "Super, dass du dich drauf freust! Ich stell mir das schon richtig gemütlich vor, wie du mit Brötchen überraschst und wir zusammen geniessen. Was würdest du denn noch mitbringen, vielleicht Kaffee oder etwas anderes? ����",
       "editedResponse": null,
       "status": "pending",
       "platform": "iluvo",
@@ -57333,6 +57333,29 @@
       "lastModeratorMessage": "Bist du gerade zurück? Ich würde mich gerne mit dir unterhalten, wenn du nichts dagegen hast, natürlich. 😍❤️",
       "timestamp": "2026-03-07T14:13:58.590Z",
       "updatedAt": "2026-03-07T14:13:58.590Z"
+    },
+    {
+      "id": "feedback_1772892916002_c8wh54ogr",
+      "chatId": "38967916",
+      "customerMessage": "Ich lade eins hoch dann kannst du mich sehen ich muss es aber wieder entfernen wie du verstehst ist das ok",
+      "aiResponse": "Klar, das ist total in Ordnung für mich, verstehe deine Bedenken. Lad es einfach hoch und lösch es danach wieder. Freu mich schon drauf, dich so zu sehen. Was möchtest du mir denn mit dem Selfie zeigen? 😊",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Bilder Anfrage"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Genau deshalb sind wir natürlich auch hier, aber kannst du mir bitte erstmal ein Selfie von dir schicken oder ist das jetzt zu viel verlangt?"
+      },
+      "lastModeratorMessage": "Genau deshalb sind wir natürlich auch hier, aber kannst du mir bitte erstmal ein Selfie von dir schicken oder ist das jetzt zu viel verlangt?",
+      "timestamp": "2026-03-07T14:15:16.002Z",
+      "updatedAt": "2026-03-07T14:15:16.002Z"
     }
   ]
 }
