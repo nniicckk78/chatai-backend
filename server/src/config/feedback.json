@@ -33304,7 +33304,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Guten Morgen Ich würde mich so sehr freuen wenn du meine Frage noch beantworten könntest😍 oder bist du heute so beschäftigt dass du keine Zeit hast"
+        "lastModeratorMessage": "Guten Morgen Ich würde mich so sehr freuen wenn du meine Frage noch beantworten k��nntest😍 oder bist du heute so beschäftigt dass du keine Zeit hast"
       },
       "lastModeratorMessage": "Guten Morgen Ich würde mich so sehr freuen wenn du meine Frage noch beantworten könntest😍 oder bist du heute so beschäftigt dass du keine Zeit hast",
       "timestamp": "2026-02-17T10:45:44.050Z",
@@ -53903,7 +53903,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Na aber ich brauche doch keine langen Ohren, das w��rde mir doch nicht stehen"
+        "lastModeratorMessage": "Na aber ich brauche doch keine langen Ohren, das w����rde mir doch nicht stehen"
       },
       "lastModeratorMessage": "Na aber ich brauche doch keine langen Ohren, das würde mir doch nicht stehen",
       "timestamp": "2026-03-05T15:50:54.208Z",
@@ -57260,6 +57260,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-07T13:58:52.722Z",
       "updatedAt": "2026-03-07T13:58:52.722Z"
+    },
+    {
+      "id": "feedback_1772891997666_47p7l0xic",
+      "chatId": "39039054",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich würde mich echt freuen, wenn du dich kurz bei mir melden könntest. Ich brauche gerade echt jemanden zum Reden. Mir ist gerade sowas komisches passiert. Ich kann es gar nicht richtig begreifen. Hast du kurz Zeit?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich würde mich echt freuen, wenn du dich kurz bei mir melden könntest. Ich brauche gerade echt jemanden zum Reden. Mir ist gerade sowas komisches passiert. Ich kann es gar nicht richtig begreifen. Hast du kurz Zeit?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Glaub mir ich bin jetzt schon irgendwie leicht am zittern. Und irgendwie werde ich auch schon ein bisschen nass dabei"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-07T13:59:57.666Z",
+      "updatedAt": "2026-03-07T13:59:57.666Z"
     }
   ]
 }
