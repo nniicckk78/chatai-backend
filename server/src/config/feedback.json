@@ -56538,6 +56538,31 @@
       "lastModeratorMessage": "Entschuldige mal, ich würde schon gerne wissen, wie du denkst. Sei mir nicht böse, aber du lässt mich vier Tage lang sitzen, und du hast jetzt nicht hoffentlich erwartet, dass ich jetzt sofort springen werde?",
       "timestamp": "2026-03-07T11:52:12.531Z",
       "updatedAt": "2026-03-07T11:52:12.531Z"
+    },
+    {
+      "id": "feedback_1772884347679_tfx6f63yw",
+      "chatId": "2924319:1130:15738:27618",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hallo ist noch jemand zu Hause? Was habe ich denn gemacht das du mich jetzt ignorierst? Sag mir doch wenigstens mal bescheid was das für einen Grund hat? Was habe ich denn falsch gemacht?🧐",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hallo ist noch jemand zu Hause? Was habe ich denn gemacht das du mich jetzt ignorierst? Sag mir doch wenigstens mal bescheid was das für einen Grund hat? Was habe ich denn falsch gemacht?🧐"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Na, mein Lieber, ich bin immer noch ganz heiß vor Neugierde 😊und warte hier auf dich. Hast du mich denn auch schon ein bisschen vermisst? Erzähl mir doch, worauf du dich am meisten freust."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-07T11:52:27.679Z",
+      "updatedAt": "2026-03-07T11:52:27.679Z"
     }
   ]
 }
