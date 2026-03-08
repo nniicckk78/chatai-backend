@@ -58515,6 +58515,31 @@
       "lastModeratorMessage": "Oh zum Essen das ist aber nicht schön. Das könnte ich ehrlich gesagt nicht.",
       "timestamp": "2026-03-08T11:42:33.004Z",
       "updatedAt": "2026-03-08T11:42:33.004Z"
+    },
+    {
+      "id": "feedback_1772970164664_scqyv43mb",
+      "chatId": "2943759:1158:526178:553175",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Und hast du vor mir auch mal wieder zu schreiben oder willst du mich weiterhin hier im leeren stehen lasssen? Meld dich doch mal bei mir, würde mich freuen!",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Und hast du vor mir auch mal wieder zu schreiben oder willst du mich weiterhin hier im leeren stehen lasssen? Meld dich doch mal bei mir, würde mich freuen!"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich habe mir deine Nachricht nochmal durchgelesen und überlege, was dich so zweifeln lässt. Ich würde wirklich gerne verstehen, was du genau mit dem nicht echt meintest. Erklärst du es mir noch?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-08T11:42:44.664Z",
+      "updatedAt": "2026-03-08T11:42:44.664Z"
     }
   ]
 }
