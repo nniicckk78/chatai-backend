@@ -58072,6 +58072,31 @@
       "lastModeratorMessage": "Das ist eine schöne Idee, und dann schauen wir uns in die Augen? Weisst du, ich bin gespannt was ich in deinen Augen alles sehen werde",
       "timestamp": "2026-03-08T10:44:36.712Z",
       "updatedAt": "2026-03-08T10:44:36.712Z"
+    },
+    {
+      "id": "feedback_1772966689619_d16nw5lvn",
+      "chatId": "2948562:1158:205166:52006",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Wo steckst du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so überfüllt das meine Nachrichten schon gar nicht mehr bei dir angezeigt werden? Ich hätte da mal eine echt wichtige Frage an dich?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Wo steckst du denn? Hast du mich etwa schon vergessen oder ist dein Postfach hier so überfüllt das meine Nachrichten schon gar nicht mehr bei dir angezeigt werden? Ich hätte da mal eine echt wichtige Frage an dich?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hey Micha. Ich hoffe, du bist jetzt nicht wirklich weg? Lass uns doch bitte erst einmal näher kennenlernen. Was meinst du dazu?"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-08T10:44:49.619Z",
+      "updatedAt": "2026-03-08T10:44:49.619Z"
     }
   ]
 }
