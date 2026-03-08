@@ -25499,7 +25499,7 @@
       "platform": "iluvo",
       "isASA": true,
       "usedExampleIds": [
-        "ASA Reaktivierung|Hey du, sag mal, wo hast du dich eigentlich versteckt? 😅 Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?"
+        "ASA Reaktivierung|Hey du, sag mal, wo hast du dich eigentlich versteckt? �� Ich habe mich gefragt, ob ich irgendwas falsches gesagt habe oder ob du einfach spontan vom Erdboden verschluckt wurdest?"
       ],
       "context": {
         "detectedSituations": [
@@ -58282,6 +58282,29 @@
       "lastModeratorMessage": "Ich bin eigentlich offen für alles nur mag ich keine einmaligen Sachen wie ist es bei dir",
       "timestamp": "2026-03-08T11:18:11.436Z",
       "updatedAt": "2026-03-08T11:18:11.436Z"
+    },
+    {
+      "id": "feedback_1772968830423_jmnubqed3",
+      "chatId": "39065653",
+      "customerMessage": "ja ich bin auch glatt rasiert immer",
+      "aiResponse": "Geil, dass du dich immer glatt rasiert, das macht total an bei einem Mann. Stell ich mir schon so smooth und geil vor, wenn ich dran bin. Das lässt alles gleich wieder kribbeln. Wie wichtig ist das für dein Wohlbefinden?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "fpc",
+      "isASA": false,
+      "usedExampleIds": [],
+      "context": {
+        "detectedSituations": [
+          "Sexuelle Themen"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Meine Muschi ist glatt rasiert sag mal rasierst du dich regelmäsig oder nur kurz vor dem Sex wenn sich die Gelegenheit ergibt?"
+      },
+      "lastModeratorMessage": "Meine Muschi ist glatt rasiert sag mal rasierst du dich regelmäsig oder nur kurz vor dem Sex wenn sich die Gelegenheit ergibt?",
+      "timestamp": "2026-03-08T11:20:30.423Z",
+      "updatedAt": "2026-03-08T11:20:30.423Z"
     }
   ]
 }
