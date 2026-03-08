@@ -25210,7 +25210,7 @@
         "topic": "allgemein",
         "lastModeratorMessage": "Das wird aber nicht m��glich sein, wenn du mich nicht kontaktierst. 😁"
       },
-      "lastModeratorMessage": "Das wird aber nicht m��glich sein, wenn du mich nicht kontaktierst. 😁",
+      "lastModeratorMessage": "Das wird aber nicht möglich sein, wenn du mich nicht kontaktierst. 😁",
       "timestamp": "2026-02-10T13:39:03.158Z",
       "updatedAt": "2026-02-10T19:14:44.733Z"
     },
@@ -47613,7 +47613,7 @@
       "id": "feedback_1772365094707_9488jme0d",
       "chatId": "2940198:1158:239826:553158",
       "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Wenn du wüsstest, wie sehr ich gerade schmunzeln muss.😏 Ich habe gerade echt richtig heisse Gedanken in meinem Kopf. Willst du an meinem Kopfkino teilnehmen? Dann meld dich mal lieber schnell bei mir. Vielleicht hab ich ja auch eine kleine Überraschung für dir!😉",
+      "aiResponse": "Wenn du wüsstest, wie sehr ich gerade schmunzeln muss.😏 Ich habe gerade echt richtig heisse Gedanken in meinem Kopf. Willst du an meinem Kopfkino teilnehmen? Dann meld dich mal lieber schnell bei mir. Vielleicht hab ich ja auch eine kleine Überraschung für dir!��",
       "editedResponse": null,
       "status": "pending",
       "platform": "df",
@@ -58006,28 +58006,29 @@
       "updatedAt": "2026-03-08T10:30:19.786Z"
     },
     {
-      "id": "feedback_1772965924122_dcr0noeza",
-      "chatId": "Sun Mar 08 2026 09:12:13 GMT+0100 (Mitteleuropäische Normalzeit)-Hallo ☺️ H",
-      "customerMessage": "Ich bin der Axel aus München Hadern, Mir geht es schreiben willst dann lassen wir es lieber sein Ich habe mich auf deinem Profil Text bezogen",
-      "aiResponse": "Ach komm, warum gleich aufgeben nur wegen meinem Profiltext? Erzähl mir doch mal, was dich da genau gestört hat, vielleicht können wir das klären. Ich würde mich freuen, mehr von dir zu hören. Was interessiert dich denn sonst noch?",
+      "id": "feedback_1772965978363_cduc2vkv7",
+      "chatId": "2950465:1158:273716:553200",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey na, hoffe bei dir ist auch alles in Ordnung, wo treibst du dich gerade so rum? Würde mich freuen wieder von dir zu hören, was machst du gerade so?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "iluvo",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey na, hoffe bei dir ist auch alles in Ordnung, wo treibst du dich gerade so rum? Würde mich freuen wieder von dir zu hören, was machst du gerade so?"
+      ],
       "context": {
         "detectedSituations": [
-          "Verärgerte/saure Kunden",
-          "Verabschiedung / Aufgeben"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Das klingt gut, mit wem habe ich denn hier die Ehre? Ich bin die Killi."
+        "lastModeratorMessage": "Ich war etwas überrascht, dass du dich so schnell verabschieden wolltest. Ich hatte das Gefühl, wir waren gerade an einem spannenden Punkt. Magst du mir noch erzählen, was los war?"
       },
-      "lastModeratorMessage": "Das klingt gut, mit wem habe ich denn hier die Ehre? Ich bin die Killi.",
-      "timestamp": "2026-03-08T10:32:04.122Z",
-      "updatedAt": "2026-03-08T10:32:04.122Z"
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-08T10:32:58.363Z",
+      "updatedAt": "2026-03-08T10:32:58.363Z"
     }
   ]
 }
