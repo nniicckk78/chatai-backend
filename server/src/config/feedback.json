@@ -59069,6 +59069,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-09T12:00:52.667Z",
       "updatedAt": "2026-03-09T12:00:52.667Z"
+    },
+    {
+      "id": "feedback_1773057659503_zyog18gq8",
+      "chatId": "2951171:1158:317436:553381",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Ich habe heute schon den ganzen Tag ganz komische Gedanken... Ich habe aber gerade niemanden dem ich es erzählen kann weil es irgendwie komisch ist, möchtest du es vielleicht wissen?",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Ich habe heute schon den ganzen Tag ganz komische Gedanken... Ich habe aber gerade niemanden dem ich es erzählen kann weil es irgendwie komisch ist, möchtest du es vielleicht wissen?"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Ich musste noch lange über unsere Kamasutra Diskussion schmunzeln, das war wirklich lustig. Aber jetzt bin ich viel neugieriger, was du gestern Abend noch so getrieben hast. Lass mich nicht so hängen!"
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-09T12:00:59.503Z",
+      "updatedAt": "2026-03-09T12:00:59.503Z"
     }
   ]
 }
