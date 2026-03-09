@@ -26410,7 +26410,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Naa, stimmt es, dass echte Männer nicht darüber reden, was sie mit einer Frau anstellen, sondern sie tun es einfach?😏 Stell dir vor, ich bin bei dir gerade aus der Dusche gekommen��Und habe kein Handtuch dabei, um mich abzutrocknen.��� Was würdest du denn mit mir anstellen, wenn ich jetzt nackt und nass ins Schlafzimmer komme?🤤 Jetzt würde mich natürlich interessieren, wie du so bist? Ein echter Mann?"
+        "lastModeratorMessage": "Naa, stimmt es, dass echte Männer nicht darüber reden, was sie mit einer Frau anstellen, sondern sie tun es einfach?😏 Stell dir vor, ich bin bei dir gerade aus der Dusche gekommen��Und habe kein Handtuch dabei, um mich abzutrocknen.��� Was würdest du denn mit mir anstellen, wenn ich jetzt nackt und nass ins Schlafzimmer komme?��� Jetzt würde mich natürlich interessieren, wie du so bist? Ein echter Mann?"
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-02-11T15:15:55.503Z",
@@ -27140,7 +27140,7 @@
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Wenn du eine Nachricht lesen würdest, die ungefähr so aussieht \"geil, anonym und experimentierfreudig\" wärst du interessiert 😉?"
+        "lastModeratorMessage": "Wenn du eine Nachricht lesen w��rdest, die ungefähr so aussieht \"geil, anonym und experimentierfreudig\" wärst du interessiert 😉?"
       },
       "lastModeratorMessage": null,
       "timestamp": "2026-02-12T09:11:28.660Z",
@@ -32379,7 +32379,7 @@
       "id": "feedback_1771254331232_xet1vx33h",
       "chatId": "Tue Feb 10 2026 08:56:09 GMT+0100 (Mitteleuropäische Normalzeit)-ich hab im",
       "customerMessage": "ASA Reaktivierung",
-      "aiResponse": "Ganz ehrlich es ist echt schade dass du dich nicht meldest. Ich bin gerade in genau der Stimmung, in der man mich lieber nicht ignorieren sollte. Oder traust du dich einfach nicht?😏",
+      "aiResponse": "Ganz ehrlich es ist echt schade dass du dich nicht meldest. Ich bin gerade in genau der Stimmung, in der man mich lieber nicht ignorieren sollte. Oder traust du dich einfach nicht?���",
       "editedResponse": null,
       "status": "pending",
       "platform": "iluvo",
@@ -59503,47 +59503,29 @@
       "updatedAt": "2026-03-09T13:17:07.734Z"
     },
     {
-      "id": "feedback_1773062588178_f0rrzvsqq",
-      "chatId": "hgXgILm2ZA6lo6YGEi3G",
-      "customerMessage": "Du hast weiter oben von Sexpartner gesprochen,  das könnte meine Aufmerksamkeit treffen.",
-      "aiResponse": "Wow, bei 92 Jahren so fit und muskulös, das ist echt beeindruckend! Schön, dass du in Thun warst und jetzt Zeit hast. Was sind denn deine liebsten Erinnerungen an deinen Heimatort?",
+      "id": "feedback_1773062619429_rxxw7x4ov",
+      "chatId": "39076227",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hey na, hoffe bei dir ist auch alles in Ordnung, wo treibst du dich gerade so rum? Würde mich freuen wieder von dir zu hören, was machst du gerade so?",
       "editedResponse": null,
       "status": "pending",
-      "platform": "avz",
-      "isASA": false,
-      "usedExampleIds": [],
+      "platform": "fpc",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hey na, hoffe bei dir ist auch alles in Ordnung, wo treibst du dich gerade so rum? Würde mich freuen wieder von dir zu hören, was machst du gerade so?"
+      ],
       "context": {
         "detectedSituations": [
-          "Sexuelle Themen"
+          "ASA Reaktivierung"
         ],
         "mood": "neutral",
         "style": "neutral",
         "topic": "allgemein",
-        "lastModeratorMessage": "Danke das freut mich aber sehr! Ich mag ja ältere Männer und darf ich denn wissen, was du dann gerne mit mir machen willst? Was für Fantasien hast du denn?"
-      },
-      "lastModeratorMessage": "Danke das freut mich aber sehr! Ich mag ja ältere Männer und darf ich denn wissen, was du dann gerne mit mir machen willst? Was für Fantasien hast du denn?",
-      "timestamp": "2026-03-09T13:23:08.178Z",
-      "updatedAt": "2026-03-09T13:23:08.178Z"
-    },
-    {
-      "id": "feedback_1773062598939_c428b1qvs",
-      "chatId": "00000000",
-      "customerMessage": "Erstnachricht (keine Kundennachricht)",
-      "aiResponse": "Hey du, cool dass ich dir gefalle. Was hat dich denn an mir so angesprochen? Was treibst du so an einem Montagnachmittag? Wie geht es dir denn gerade so?",
-      "editedResponse": null,
-      "status": "pending",
-      "platform": "avz",
-      "isASA": false,
-      "usedExampleIds": [],
-      "context": {
-        "detectedSituations": [],
-        "mood": "neutral",
-        "style": "neutral",
-        "topic": "allgemein"
+        "lastModeratorMessage": "Ah okay habe ich mir fast schon gedacht und wie könnte der deiner Meinung nach aussehen"
       },
       "lastModeratorMessage": null,
-      "timestamp": "2026-03-09T13:23:18.939Z",
-      "updatedAt": "2026-03-09T13:23:18.939Z"
+      "timestamp": "2026-03-09T13:23:39.429Z",
+      "updatedAt": "2026-03-09T13:23:39.429Z"
     }
   ]
 }
