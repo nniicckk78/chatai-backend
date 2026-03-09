@@ -59404,6 +59404,31 @@
       "lastModeratorMessage": null,
       "timestamp": "2026-03-09T12:50:05.344Z",
       "updatedAt": "2026-03-09T12:50:05.344Z"
+    },
+    {
+      "id": "feedback_1773061049601_uzryx57ey",
+      "chatId": "2952645:1158:223716:26246",
+      "customerMessage": "ASA Reaktivierung",
+      "aiResponse": "Hallo ist noch jemand zu Hause? Was habe ich denn gemacht das du mich jetzt ignorierst? Sag mir doch wenigstens mal bescheid was das für einen Grund hat? Was habe ich denn falsch gemacht?🧐",
+      "editedResponse": null,
+      "status": "pending",
+      "platform": "df",
+      "isASA": true,
+      "usedExampleIds": [
+        "ASA Reaktivierung|Hallo ist noch jemand zu Hause? Was habe ich denn gemacht das du mich jetzt ignorierst? Sag mir doch wenigstens mal bescheid was das für einen Grund hat? Was habe ich denn falsch gemacht?🧐"
+      ],
+      "context": {
+        "detectedSituations": [
+          "ASA Reaktivierung"
+        ],
+        "mood": "neutral",
+        "style": "neutral",
+        "topic": "allgemein",
+        "lastModeratorMessage": "Hey wo bist du denn auf einmal hin verschwunden und ich hoffe du meldest dich wieder bei mir."
+      },
+      "lastModeratorMessage": null,
+      "timestamp": "2026-03-09T12:57:29.601Z",
+      "updatedAt": "2026-03-09T12:57:29.601Z"
     }
   ]
 }
