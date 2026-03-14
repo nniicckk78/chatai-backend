@@ -7594,9 +7594,9 @@
     },
     "Wonach suchst du?": {
       "auch": {
-        "good": 8,
-        "bad": 6,
-        "lastUpdated": 1773479892275
+        "good": 9,
+        "bad": 7,
+        "lastUpdated": 1773480504156
       },
       "hier": {
         "good": 6,
@@ -7604,9 +7604,9 @@
         "lastUpdated": 1770810901815
       },
       "was": {
-        "good": 16,
-        "bad": 12,
-        "lastUpdated": 1773479892275
+        "good": 17,
+        "bad": 13,
+        "lastUpdated": 1773480504156
       },
       "mich": {
         "good": 8,
@@ -7639,9 +7639,9 @@
         "lastUpdated": 1770810901815
       },
       "schon": {
-        "good": 5,
+        "good": 6,
         "bad": 2,
-        "lastUpdated": 1770799280901
+        "lastUpdated": 1773480504156
       },
       "bisschen": {
         "good": 2,
@@ -7650,8 +7650,8 @@
       },
       "erstmal": {
         "good": 3,
-        "bad": 1,
-        "lastUpdated": 1770810901815
+        "bad": 2,
+        "lastUpdated": 1773480504156
       },
       "dann": {
         "good": 3,
@@ -7665,8 +7665,18 @@
       },
       "dich": {
         "good": 1,
+        "bad": 3,
+        "lastUpdated": 1773480504156
+      },
+      "sich": {
+        "good": 0,
         "bad": 2,
-        "lastUpdated": 1773479892275
+        "lastUpdated": 1773480504156
+      },
+      "selbst": {
+        "good": 0,
+        "bad": 2,
+        "lastUpdated": 1773480504156
       }
     },
     "Geld/Coins": {
@@ -7873,8 +7883,8 @@
       "total": 555
     },
     "Wonach suchst du?": {
-      "good": 24,
-      "total": 51
+      "good": 25,
+      "total": 53
     },
     "Geld/Coins": {
       "good": 20,
@@ -8107,6 +8117,20 @@
       "validatedSuccessRate": 1
     },
     {
+      "situation": "Wonach suchst du?",
+      "customerPattern": {
+        "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
+        "hasQuestion": true,
+        "hasMeeting": false,
+        "hasSexual": false,
+        "length": 76
+      },
+      "goodResponse": "Genau ich studiere in Oberstaufen und am Wochenende bin ich dann immer in Staufen. Ist ja super dann trennt uns ja nicht so eine grosse Strecke. Bevor ich aber meine Nummer raus gebe will ich erstmal ",
+      "successCount": 11,
+      "lastUsed": "2026-03-14T09:28:24.157Z",
+      "validatedSuccessRate": 1
+    },
+    {
       "situation": "Treffen/Termine",
       "customerPattern": {
         "keywords": "wochenende habe noch zeit montag gehe wieder arbeiten dann habe",
@@ -8118,20 +8142,6 @@
       "goodResponse": "ohja mich machen die ganzen Fantasien auch schon total feucht und wenn wir schon doggy ficken, fickst du mich dann auch in den Arsch? Wie stehst du zu Sahne spielchen beim Sex? Das würde der Sache noc",
       "successCount": 10,
       "lastUsed": "2026-02-11T14:37:52.441Z",
-      "validatedSuccessRate": 1
-    },
-    {
-      "situation": "Wonach suchst du?",
-      "customerPattern": {
-        "keywords": "wohne fritzlar heise wilfried bin jahre alt wie alt bist",
-        "hasQuestion": true,
-        "hasMeeting": false,
-        "hasSexual": false,
-        "length": 76
-      },
-      "goodResponse": "Genau ich studiere in Oberstaufen und am Wochenende bin ich dann immer in Staufen. Ist ja super dann trennt uns ja nicht so eine grosse Strecke. Bevor ich aber meine Nummer raus gebe will ich erstmal ",
-      "successCount": 10,
-      "lastUsed": "2026-03-14T09:18:12.277Z",
       "validatedSuccessRate": 1
     },
     {
@@ -8541,7 +8551,7 @@
       "validatedSuccessRate": 1
     }
   ],
-  "lastUpdated": "2026-03-14T09:25:32.839Z",
+  "lastUpdated": "2026-03-14T09:28:24.212Z",
   "initialized": true,
   "reasoningPrinciples": [
     {
@@ -8989,7 +8999,8 @@
           156,
           279,
           151,
-          158
+          158,
+          156
         ],
         "exclamationMarks": [
           0,
@@ -9006,6 +9017,7 @@
           0,
           0,
           1,
+          0,
           0,
           0,
           0,
@@ -9035,10 +9047,11 @@
           2,
           1,
           2,
+          1,
           1
         ],
-        "count": 21,
-        "avgLength": 188,
+        "count": 22,
+        "avgLength": 187,
         "minLength": 133,
         "maxLength": 279,
         "medianLength": 179,
@@ -9053,15 +9066,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 24,
-          "150-200": 33,
-          "200-250": 38,
+          "120-150": 23,
+          "150-200": 36,
+          "200-250": 36,
           "250+": 5
         },
         "questionDistribution": {
           "0": 0,
-          "1": 57,
-          "2": 38,
+          "1": 59,
+          "2": 36,
           "3+": 5
         }
       },
@@ -9079,7 +9092,8 @@
           156,
           214,
           199,
-          185
+          185,
+          228
         ],
         "exclamationMarks": [
           0,
@@ -9093,6 +9107,7 @@
           0,
           0,
           1,
+          0,
           0,
           0
         ],
@@ -9109,13 +9124,14 @@
           2,
           1,
           1,
+          1,
           1
         ],
-        "count": 13,
-        "avgLength": 199,
+        "count": 14,
+        "avgLength": 201,
         "minLength": 122,
         "maxLength": 274,
-        "medianLength": 199,
+        "medianLength": 214,
         "avgExclamationMarks": 0.2,
         "minExclamationMarks": 0,
         "maxExclamationMarks": 2,
@@ -9127,15 +9143,15 @@
         "lengthDistribution": {
           "0-100": 0,
           "100-120": 0,
-          "120-150": 23,
-          "150-200": 31,
-          "200-250": 23,
-          "250+": 23
+          "120-150": 21,
+          "150-200": 29,
+          "200-250": 29,
+          "250+": 21
         },
         "questionDistribution": {
           "0": 0,
-          "1": 62,
-          "2": 38,
+          "1": 64,
+          "2": 36,
           "3+": 0
         }
       }
@@ -23948,9 +23964,9 @@
       "lastValidated": 1770820672442
     },
     "reasoningPrinciple_0": {
-      "usedCount": 78,
-      "successCount": 78,
-      "lastValidated": 1772020094513
+      "usedCount": 79,
+      "successCount": 79,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_1": {
       "usedCount": 460,
@@ -23968,9 +23984,9 @@
       "lastValidated": 1773480332839
     },
     "reasoningPrinciple_4": {
-      "usedCount": 1063,
-      "successCount": 1063,
-      "lastValidated": 1773480332839
+      "usedCount": 1064,
+      "successCount": 1064,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_5": {
       "usedCount": 221,
@@ -24018,9 +24034,9 @@
       "lastValidated": 1772020112060
     },
     "reasoningPrinciple_14": {
-      "usedCount": 1082,
-      "successCount": 1082,
-      "lastValidated": 1773480332839
+      "usedCount": 1083,
+      "successCount": 1083,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_15": {
       "usedCount": 515,
@@ -24068,9 +24084,9 @@
       "lastValidated": 1773479445121
     },
     "reasoningPrinciple_24": {
-      "usedCount": 1066,
-      "successCount": 1066,
-      "lastValidated": 1773480332839
+      "usedCount": 1067,
+      "successCount": 1067,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_25": {
       "usedCount": 806,
@@ -24078,14 +24094,14 @@
       "lastValidated": 1773480332839
     },
     "reasoningPrinciple_26": {
-      "usedCount": 833,
-      "successCount": 833,
-      "lastValidated": 1773480332839
+      "usedCount": 834,
+      "successCount": 834,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_27": {
-      "usedCount": 854,
-      "successCount": 854,
-      "lastValidated": 1773480332839
+      "usedCount": 855,
+      "successCount": 855,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_28": {
       "usedCount": 471,
@@ -24118,9 +24134,9 @@
       "lastValidated": 1770749178651
     },
     "reasoningPrinciple_34": {
-      "usedCount": 1040,
-      "successCount": 1040,
-      "lastValidated": 1773480332839
+      "usedCount": 1041,
+      "successCount": 1041,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_35": {
       "usedCount": 473,
@@ -24128,9 +24144,9 @@
       "lastValidated": 1773480332839
     },
     "reasoningPrinciple_36": {
-      "usedCount": 775,
-      "successCount": 775,
-      "lastValidated": 1773480332839
+      "usedCount": 776,
+      "successCount": 776,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_37": {
       "usedCount": 671,
@@ -24153,9 +24169,9 @@
       "lastValidated": 1772018191294
     },
     "reasoningPrinciple_41": {
-      "usedCount": 588,
-      "successCount": 588,
-      "lastValidated": 1773479985928
+      "usedCount": 589,
+      "successCount": 589,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_42": {
       "usedCount": 289,
@@ -24163,24 +24179,24 @@
       "lastValidated": 1772021138941
     },
     "reasoningPrinciple_43": {
-      "usedCount": 454,
-      "successCount": 454,
-      "lastValidated": 1773479194596
+      "usedCount": 455,
+      "successCount": 455,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_44": {
-      "usedCount": 454,
-      "successCount": 454,
-      "lastValidated": 1773479194596
+      "usedCount": 455,
+      "successCount": 455,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_45": {
-      "usedCount": 577,
-      "successCount": 577,
-      "lastValidated": 1773479985928
+      "usedCount": 578,
+      "successCount": 578,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_46": {
-      "usedCount": 790,
-      "successCount": 790,
-      "lastValidated": 1773480332839
+      "usedCount": 791,
+      "successCount": 791,
+      "lastValidated": 1773480504212
     },
     "reasoningPrinciple_47": {
       "usedCount": 536,
