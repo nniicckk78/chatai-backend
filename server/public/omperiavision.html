@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omperia Vision | AI-Powered Chat Operations</title>
+  <meta name="description" content="Omperia Vision LLC automates chat support with AI, extension infrastructure, and human oversight." />
+  <style>
+    :root {
+      --bg: #050913;
+      --bg-soft: #0b1324;
+      --card: #0f1a31;
+      --card-2: #101f3f;
+      --line: #253657;
+      --text: #e9eeff;
+      --muted: #aab7dc;
+      --accent: #4f97ff;
+      --accent-2: #7280ff;
+      --ok: #68d3bb;
+      --danger: #ff7f9a;
+      --max: 1140px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background:
+        radial-gradient(1400px 560px at 80% -15%, rgba(114,128,255,.25), transparent 58%),
+        radial-gradient(1100px 440px at 0% 0%, rgba(79,151,255,.18), transparent 55%),
+        var(--bg);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(var(--max), calc(100% - 2rem)); margin: 0 auto; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(5, 9, 19, 0.78);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(37, 54, 87, 0.65);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.95rem 0;
+      gap: 0.8rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    .brand-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 18px rgba(79,151,255,.8);
+    }
+    .lang-switch {
+      display: inline-flex;
+      gap: 0.25rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.25rem;
+      background: var(--bg-soft);
+    }
+    .lang-switch button {
+      border: 0;
+      border-radius: 999px;
+      padding: 0.42rem 0.8rem;
+      background: transparent;
+      color: var(--muted);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .lang-switch button.active {
+      background: #20335f;
+      color: var(--text);
+    }
+
+    .hero {
+      position: relative;
+      padding: 5.8rem 0 3.2rem;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 530px;
+      height: 530px;
+      right: -120px;
+      top: -140px;
+      border-radius: 999px;
+      background: radial-gradient(circle at center, rgba(79,151,255,.34), rgba(79,151,255,0));
+      pointer-events: none;
+    }
+    .kicker {
+      display: inline-block;
+      font-size: 0.78rem;
+      color: var(--ok);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0.8rem 0 1rem;
+      line-height: 1.05;
+      font-size: clamp(2.4rem, 5.8vw, 4.3rem);
+      max-width: 920px;
+      letter-spacing: -0.02em;
+    }
+    .lead {
+      max-width: 920px;
+      color: #c5d1f3;
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+    }
+    .cta {
+      margin-top: 1.4rem;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      border-radius: 12px;
+      padding: 0.75rem 1.05rem;
+      font-weight: 800;
+      border: 1px solid var(--line);
+      background: #1a2a51;
+      color: var(--text);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn.primary {
+      border-color: transparent;
+      background: linear-gradient(135deg, #3f92ff, #6a78ff);
+    }
+
+    .section { padding: 1rem 0; }
+    h2 {
+      margin: 0 0 0.7rem;
+      font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+      letter-spacing: -0.01em;
+    }
+    .muted { color: var(--muted); }
+    .grid { display: grid; gap: 1rem; }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card {
+      background: linear-gradient(180deg, rgba(16,31,63,.96), rgba(12,23,45,.98));
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1rem;
+    }
+    .card h3 { margin: 0 0 0.35rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .list {
+      margin: 0.55rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .list li { margin: 0.4rem 0; color: var(--muted); }
+    .list li::before { content: "✓ "; color: var(--ok); font-weight: 900; }
+    .badge {
+      display: inline-block;
+      margin: 0.15rem 0.2rem 0 0;
+      padding: 0.22rem 0.55rem;
+      font-size: 0.75rem;
+      border-radius: 999px;
+      border: 1px solid #38558f;
+      color: #b7c7f4;
+    }
+    .highlight {
+      border: 1px solid #3a5ea1;
+      background: linear-gradient(135deg, rgba(36,73,142,.35), rgba(24,40,76,.48));
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem 0 2rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .legal-trigger {
+      position: fixed;
+      right: 1.05rem;
+      bottom: 1.05rem;
+      z-index: 45;
+      border: 1px solid #39588f;
+      background: linear-gradient(135deg, rgba(27,50,96,.95), rgba(17,30,58,.95));
+      color: var(--text);
+      border-radius: 999px;
+      padding: 0.62rem 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0,0,0,.35);
+    }
+
+    .legal-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 6, 13, 0.7);
+      backdrop-filter: blur(5px);
+      z-index: 55;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .legal-modal.open { display: flex; }
+    .legal-dialog {
+      width: min(850px, 100%);
+      max-height: 92vh;
+      overflow: auto;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(13,22,42,.98), rgba(10,18,35,.99));
+      padding: 1rem;
+    }
+    .legal-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.6rem;
+      margin-bottom: 0.8rem;
+    }
+    .close {
+      border: 1px solid var(--line);
+      background: #182849;
+      color: var(--text);
+      border-radius: 10px;
+      padding: 0.35rem 0.7rem;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .lang-en, .lang-de { display: none; }
+    body[data-lang="en"] .lang-en { display: block; }
+    body[data-lang="de"] .lang-de { display: block; }
+    body[data-lang="en"] .lang-en-inline { display: inline; }
+    body[data-lang="de"] .lang-en-inline { display: none; }
+    body[data-lang="de"] .lang-de-inline { display: inline; }
+    body[data-lang="en"] .lang-de-inline { display: none; }
+
+    @media (max-width: 980px) {
+      .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      .hero { padding-top: 4.8rem; }
+      h1 { font-size: clamp(2.2rem, 8vw, 3.3rem); }
+    }
+  </style>
+</head>
+<body data-lang="en">
+  <header class="topbar">
+    <div class="wrap nav">
+      <div class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Omperia Vision</span>
+      </div>
+      <div class="lang-switch" role="tablist" aria-label="Language Switcher">
+        <button id="lang-en" class="active">EN</button>
+        <button id="lang-de">DE</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="lang-en">
+        <span class="kicker">AI-Powered Chat Infrastructure</span>
+        <h1>Scale support with intelligent automation and real human control.</h1>
+        <p class="lead">
+          Omperia Vision LLC has focused since last year on one mission: making modern chat support faster, more stable, and significantly more cost-efficient.
+          Our system combines extension technology, AI generation, and supervised moderation workflows to replace legacy support structures without losing operational control.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:omperiavision@gmail.com">Start a conversation</a>
+          <a class="btn" href="#about">How our system works</a>
+        </div>
+      </div>
+      <div class="lang-de">
+        <span class="kicker">KI-gestützte Chat-Infrastruktur</span>
+        <h1>Support skalieren mit intelligenter Automatisierung und echter menschlicher Kontrolle.</h1>
+        <p class="lead">
+          Omperia Vision LLC fokussiert sich seit letztem Jahr auf eine klare Mission: Chat-Support moderner, stabiler und deutlich kosteneffizienter zu machen.
+          Unser System verbindet Extension-Technologie, KI-Generierung und überwachte Moderations-Workflows, um klassische Support-Strukturen zu ersetzen, ohne die operative Kontrolle zu verlieren.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:omperiavision@gmail.com">Kontakt starten</a>
+          <a class="btn" href="#about">So funktioniert unser System</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section grid grid-3">
+      <article class="card">
+        <h3 class="lang-en">Technology Core</h3>
+        <h3 class="lang-de">Technologischer Kern</h3>
+        <p class="lang-en">A coordinated stack of extension tooling, AI response pipelines, quality gates, and supervision logic built for high-volume chat environments.</p>
+        <p class="lang-de">Ein abgestimmter Stack aus Extension-Tools, KI-Antwort-Pipelines, Qualitäts-Gates und Aufsichtslogik für Chat-Umgebungen mit hohem Volumen.</p>
+      </article>
+      <article class="card">
+        <h3 class="lang-en">Human-in-the-Loop Safety</h3>
+        <h3 class="lang-de">Human-in-the-Loop Sicherheit</h3>
+        <p class="lang-en">Automation handles repetitive operations, while trained supervisors retain decision power in sensitive, risky, or escalation-heavy scenarios.</p>
+        <p class="lang-de">Automatisierung übernimmt repetitive Abläufe, während geschulte Supervisoren in sensiblen, riskanten oder eskalierenden Fällen die Kontrolle behalten.</p>
+      </article>
+      <article class="card">
+        <h3 class="lang-en">Operational Throughput</h3>
+        <h3 class="lang-de">Operativer Durchsatz</h3>
+        <p class="lang-en">Run many parallel conversations with consistent response quality, short reaction times, and measurable process standards.</p>
+        <p class="lang-de">Viele parallele Gespräche mit gleichbleibender Antwortqualität, kurzen Reaktionszeiten und messbaren Prozessstandards.</p>
+      </article>
+    </section>
+
+    <section class="section grid grid-2">
+      <article class="card highlight">
+        <h2 class="lang-en">Why Companies Work With Us</h2>
+        <h2 class="lang-de">Warum Unternehmen mit uns arbeiten</h2>
+        <ul class="list lang-en">
+          <li>Lower operational cost compared to purely manual support teams</li>
+          <li>24/7 support continuity without fragile staffing dependencies</li>
+          <li>Better consistency and fewer quality fluctuations across shifts</li>
+          <li>Clear supervision model for risk-sensitive workflows</li>
+          <li>Strong scalability for growth phases and peak traffic windows</li>
+        </ul>
+        <ul class="list lang-de">
+          <li>Geringere operative Kosten als bei rein manuellen Support-Teams</li>
+          <li>24/7 Kontinuität ohne fragile Personalabhängigkeiten</li>
+          <li>Konstantere Qualität mit weniger Schwankungen über Schichten</li>
+          <li>Klares Aufsichtsmodell für risikosensitive Workflows</li>
+          <li>Hohe Skalierbarkeit für Wachstum und Peak-Zeiten</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2 class="lang-en">Typical Deployment Context</h2>
+        <h2 class="lang-de">Typischer Einsatzkontext</h2>
+        <p class="muted lang-en">
+          We support organizations that need reliable chat execution at scale: high inbound load, strict response targets, quality compliance, and tight operational budgets.
+        </p>
+        <p class="muted lang-de">
+          Wir unterstützen Unternehmen, die zuverlässige Chat-Ausführung in großem Umfang benötigen: hohes Eingangsvolumen, strenge Reaktionsziele, Qualitätsanforderungen und enge Budgets.
+        </p>
+        <div>
+          <span class="badge">24/7 Coverage</span>
+          <span class="badge">Automation + Oversight</span>
+          <span class="badge">Cost Efficiency</span>
+          <span class="badge">Consistent Quality</span>
+          <span class="badge">Parallel Capacity</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="section grid grid-2">
+      <article class="card">
+        <h2 class="lang-en">Our Approach</h2>
+        <h2 class="lang-de">Unser Ansatz</h2>
+        <p class="lang-en muted">
+          Omperia Vision LLC does not treat automation as a blind replacement layer.
+          We design controlled systems that combine speed from AI with accountable human oversight.
+          This balance allows clients to reduce cost while maintaining trust, structure, and business continuity.
+        </p>
+        <p class="lang-de muted">
+          Omperia Vision LLC versteht Automatisierung nicht als blinde Ersatzschicht.
+          Wir bauen kontrollierte Systeme, die KI-Geschwindigkeit mit nachvollziehbarer menschlicher Aufsicht verbinden.
+          Dadurch sinken Kosten, während Vertrauen, Struktur und Betriebssicherheit erhalten bleiben.
+        </p>
+      </article>
+      <article class="card">
+        <h2 class="lang-en">Contact</h2>
+        <h2 class="lang-de">Kontakt</h2>
+        <p class="muted lang-en">
+          For partnerships, implementation scope, or strategic collaboration, contact us directly by email.
+        </p>
+        <p class="muted lang-de">
+          Für Partnerschaften, Implementierungsumfang oder strategische Zusammenarbeit kontaktiere uns direkt per E-Mail.
+        </p>
+        <p><a href="mailto:omperiavision@gmail.com">omperiavision@gmail.com</a></p>
+      </article>
+    </section>
+
+    <footer>
+      <div class="lang-en">© <span id="year-en"></span> Omperia Vision LLC. All rights reserved.</div>
+      <div class="lang-de">© <span id="year-de"></span> Omperia Vision LLC. Alle Rechte vorbehalten.</div>
+    </footer>
+  </main>
+
+  <button id="open-legal" class="legal-trigger">
+    <span class="lang-en-inline">Legal</span>
+    <span class="lang-de-inline">Rechtliches</span>
+  </button>
+
+  <div id="legal-modal" class="legal-modal" aria-hidden="true">
+    <div class="legal-dialog" role="dialog" aria-modal="true" aria-labelledby="legal-title">
+      <div class="legal-head">
+        <h2 id="legal-title" class="lang-en">Legal Information</h2>
+        <h2 class="lang-de">Rechtliche Informationen</h2>
+        <button id="close-legal" class="close">
+          <span class="lang-en-inline">Close</span>
+          <span class="lang-de-inline">Schließen</span>
+        </button>
+      </div>
+
+      <article class="card">
+        <h3 class="lang-en">Imprint / Company Information</h3>
+        <h3 class="lang-de">Impressum / Firmenangaben</h3>
+        <p class="lang-en"><strong>OMPERIA VISION LLC</strong><br />30 N GOULD ST STE N SHERIDAN<br />82801 Wyoming<br />United States of America</p>
+        <p class="lang-de"><strong>OMPERIA VISION LLC</strong><br />30 N GOULD ST STE N SHERIDAN<br />82801 Wyoming<br />Vereinigte Staaten von Amerika</p>
+        <p><a href="mailto:omperiavision@gmail.com">omperiavision@gmail.com</a></p>
+      </article>
+
+      <article class="card" style="margin-top: .8rem;">
+        <h3 class="lang-en">Privacy Policy</h3>
+        <h3 class="lang-de">Datenschutzerklärung</h3>
+        <p class="lang-en">
+          This website is provided for business communication and information.
+          Personal data submitted via email is processed only to answer inquiries, coordinate communication, and support legitimate business interactions.
+        </p>
+        <p class="lang-de">
+          Diese Website dient der geschäftlichen Information und Kontaktaufnahme.
+          Personenbezogene Daten, die per E-Mail übermittelt werden, werden ausschließlich zur Bearbeitung von Anfragen, zur Kommunikation und für legitime geschäftliche Zwecke verarbeitet.
+        </p>
+      </article>
+
+      <article class="card" style="margin-top: .8rem;">
+        <h3 class="lang-en">Terms / Liability</h3>
+        <h3 class="lang-de">Nutzungsbedingungen / Haftung</h3>
+        <p class="lang-en">
+          All content is provided for general information purposes.
+          No guarantee is given for uninterrupted availability, completeness, or error-free access.
+          Responsibility for external links lies with their respective operators.
+        </p>
+        <p class="lang-de">
+          Alle Inhalte dienen allgemeinen Informationszwecken.
+          Für unterbrechungsfreie Verfügbarkeit, Vollständigkeit oder Fehlerfreiheit wird keine Gewähr übernommen.
+          Für Inhalte externer Links sind ausschließlich deren Betreiber verantwortlich.
+        </p>
+      </article>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var body = document.body;
+      var enBtn = document.getElementById("lang-en");
+      var deBtn = document.getElementById("lang-de");
+      var openLegal = document.getElementById("open-legal");
+      var closeLegal = document.getElementById("close-legal");
+      var legalModal = document.getElementById("legal-modal");
+      var key = "omperia_lang";
+
+      function setLang(lang) {
+        body.setAttribute("data-lang", lang);
+        enBtn.classList.toggle("active", lang === "en");
+        deBtn.classList.toggle("active", lang === "de");
+        document.documentElement.lang = lang;
+        try { localStorage.setItem(key, lang); } catch (_) {}
+      }
+
+      function openModal() {
+        legalModal.classList.add("open");
+        legalModal.setAttribute("aria-hidden", "false");
+      }
+      function closeModal() {
+        legalModal.classList.remove("open");
+        legalModal.setAttribute("aria-hidden", "true");
+      }
+
+      enBtn.addEventListener("click", function () { setLang("en"); });
+      deBtn.addEventListener("click", function () { setLang("de"); });
+      openLegal.addEventListener("click", openModal);
+      closeLegal.addEventListener("click", closeModal);
+      legalModal.addEventListener("click", function (e) {
+        if (e.target === legalModal) closeModal();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeModal();
+      });
+
+      var initial = "en";
+      try {
+        var saved = localStorage.getItem(key);
+        if (saved === "en" || saved === "de") initial = saved;
+      } catch (_) {}
+      setLang(initial);
+
+      var year = String(new Date().getFullYear());
+      var yEn = document.getElementById("year-en");
+      var yDe = document.getElementById("year-de");
+      if (yEn) yEn.textContent = year;
+      if (yDe) yDe.textContent = year;
+    })();
+  </script>
+</body>
+</html>
